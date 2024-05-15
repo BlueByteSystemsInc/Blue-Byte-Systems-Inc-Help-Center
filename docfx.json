@@ -1,0 +1,34 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "docs/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "docs",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "Products Helper Center",
+      "_appTitle": "Products Helper Center",
+      "_appFooter": "<span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>",
+      "_appLogoPath": "images/fav.png",
+      "_enableSearch": true,
+      "pdf": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "title": "Welcome to the Blue Byte Systems Product Help Center. | Products Helper Center",
+    "keywords": "Welcome to the Blue Byte Systems Product Help Center. In this website, you will find the offical documentation of our products. Before starting a support ticket, we highly recommend you review the the specific product documentation page here. To contact us page please, refer for more information. PDM Convert Task Extended: To review the documentation for this product, please click here. PDM2Excel : To review the documentation for this product, please click here."
+  },
+  "src/getting-started.html": {
+    "href": "src/getting-started.html",
+    "title": "Getting Started | Products Helper Center",
+    "keywords": "Getting Started"
+  },
+  "src/introduction.html": {
+    "href": "src/introduction.html",
+    "title": "Introduction | Products Helper Center",
+    "keywords": "Introduction"
+  }
+}
