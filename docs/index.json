@@ -1,11 +1,16 @@
 {
+  "README.html": {
+    "href": "README.html",
+    "title": "Old Documentation: | Products Helper Center",
+    "keywords": "Old Documentation: https://bluebyte.biz/docs/pdm2excel/ https://bluebyte.biz/docs/pdm-convert-task-extended/ https://bluebyte.biz/docs/revisionsync/ Build To build the docs: Clone repo cd to repo folder type bin\\docfx.exe docfx.json --serve and press enter go to http://localhost:8080 in your browser to view Ctrl + C to end the webserver git add . git commit -m \"added docs\" git push Live site Commits will take roughly a few minutes to render on github pages. See live site here. Edits Make changes to the src folder. It contains the toc.yml (Table of Content) and the articles in markdown (.md files) Images Add images to the images folder and use <img src=\"../images/myimage.png\"/> to render them. Links See how links work in introduction.md. Tool Use VSCode."
+  },
   "index.html": {
     "href": "index.html",
-    "title": "Welcome to the Blue Byte Systems Product Help Center. | Products Helper Center",
-    "keywords": "Welcome to the Blue Byte Systems Product Help Center. In this website, you will find the offical documentation of our products. Before starting a support ticket, we highly recommend you review the the specific product documentation page here. To contact us page please, refer for more information. PDM Convert Task Extended: To review the documentation for this product, please click here. PDM2Excel : To review the documentation for this product, please click here."
+    "title": "Old Documentation: | Products Helper Center",
+    "keywords": "Old Documentation: https://bluebyte.biz/docs/pdm2excel/ https://bluebyte.biz/docs/pdm-convert-task-extended/ https://bluebyte.biz/docs/revisionsync/ Welcome to the Blue Byte Systems Product Help Center. In this website, you will find the official documentation of our products. Before starting a support ticket, we highly recommend you review the the specific product documentation page here. To contact us page please, refer for more information. PDM Convert Task Extended: To review the documentation for this product, please click here. PDM2Excel : To review the documentation for this product, please click here. RevisionSync todo"
   },
-  "src/getting-started.html": {
-    "href": "src/getting-started.html",
+  "src/installingpdmconverttaskextended.html": {
+    "href": "src/installingpdmconverttaskextended.html",
     "title": "Getting Started | Products Helper Center",
     "keywords": "Getting Started"
   },
@@ -13,5 +18,15 @@
     "href": "src/introduction.html",
     "title": "Introduction | Products Helper Center",
     "keywords": "Introduction"
+  },
+  "src/pdm2excel.html": {
+    "href": "src/pdm2excel.html",
+    "title": "Getting Started | Products Helper Center",
+    "keywords": "Getting Started"
+  },
+  "src/pdmconverttaskextended.html": {
+    "href": "src/pdmconverttaskextended.html",
+    "title": "Getting Started | Products Helper Center",
+    "keywords": "Getting Started"
   }
 }

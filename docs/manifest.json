@@ -11,6 +11,16 @@
       }
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "images/fav.png",
       "output": {
@@ -32,10 +42,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/getting-started.md",
+      "source_relative_path": "src/installingpdmconverttaskextended.md",
       "output": {
         ".html": {
-          "relative_path": "src/getting-started.html"
+          "relative_path": "src/installingpdmconverttaskextended.html"
         }
       },
       "version": ""
@@ -46,6 +56,26 @@
       "output": {
         ".html": {
           "relative_path": "src/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excel.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmconverttaskextended.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmconverttaskextended.html"
         }
       },
       "version": ""
