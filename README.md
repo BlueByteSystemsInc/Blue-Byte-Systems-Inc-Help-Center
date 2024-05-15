@@ -1,3 +1,10 @@
+
+# Old Documentation: 
+https://bluebyte.biz/docs/pdm2excel/
+https://bluebyte.biz/docs/pdm-convert-task-extended/
+https://bluebyte.biz/docs/revisionsync/
+
+
 # Build 
 
 To build the docs: 
