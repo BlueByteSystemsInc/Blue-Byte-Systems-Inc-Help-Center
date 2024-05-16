@@ -11,7 +11,7 @@ To build the docs:
 
 - Clone repo
 - `cd` to repo folder
-- type `bin\docfx.exe docfx.json --serve` and press enter
+- type `.\bin\docfx.exe docfx.json --serve` and press enter
 - go to http://localhost:8080 in your browser to view
 - Ctrl + C to end the webserver
 - `git add .`
