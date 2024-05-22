@@ -41,6 +41,56 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendedactivatelicense.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendedactivatelicense.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendedaddingfiles.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendedaddingfiles.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendederror60.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendederror60.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendedmanagelicense.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendedmanagelicense.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendedoptionssetuppage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendedoptionssetuppage.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -82,6 +132,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/licensespdmconverttaskextended.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/licensespdmconverttaskextended.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/optionssetuppagepdmconverttaskextended.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/optionssetuppagepdmconverttaskextended.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdm2excel.md",
       "output": {
         ".html": {
@@ -109,6 +179,16 @@
         },
         ".json": {
           "relative_path": "src/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/usingautoupdaterpdmconverttaskextended.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/usingautoupdaterpdmconverttaskextended.html"
         }
       },
       "version": ""

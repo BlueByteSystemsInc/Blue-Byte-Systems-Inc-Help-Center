@@ -7,5 +7,11 @@
     href: gettingstartedpdmconverttaskextended.md
   - name: Installing the PDM Add-in
     href: installingpdmconverttaskextended.md  
+  - name: Installing PDM Convert Task Extended using the Blue Byte Systems Inc. auto-updater
+    href: usingautoupdaterpdmconverttaskextended.md
+  - name: License Information
+    href: licensespdmconverttaskextended.md
+  - name: Options setup page
+    href: optionssetuppagepdmconverttaskextended.md
 - name: PDM2Excel
   href: pdm2excel.md
