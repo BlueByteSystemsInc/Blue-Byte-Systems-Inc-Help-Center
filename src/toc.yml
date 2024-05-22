@@ -3,7 +3,9 @@
 - name: PDM Convert Task Extended
   href: pdmconverttaskextended.md
   items:
-  - name: Install the Addin
+  - name: Getting started...
+    href: gettingstartedpdmconverttaskextended.md
+  - name: Installing the PDM Add-in
     href: installingpdmconverttaskextended.md  
 - name: PDM2Excel
   href: pdm2excel.md

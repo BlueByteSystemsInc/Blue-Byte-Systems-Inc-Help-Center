@@ -9,10 +9,15 @@
     "title": "Old Documentation: | Products Helper Center",
     "keywords": "Old Documentation: https://bluebyte.biz/docs/pdm2excel/ https://bluebyte.biz/docs/pdm-convert-task-extended/ https://bluebyte.biz/docs/revisionsync/ Welcome to the Blue Byte Systems Product Help Center. In this website, you will find the official documentation of our products. Before starting a support ticket, we highly recommend you review the the specific product documentation page here. To contact us page please, refer for more information. PDM Convert Task Extended: To review the documentation for this product, please click here. PDM2Excel : To review the documentation for this product, please click here. RevisionSync todo"
   },
+  "src/gettingstartedpdmconverttaskextended.html": {
+    "href": "src/gettingstartedpdmconverttaskextended.html",
+    "title": "Getting started... | Products Helper Center",
+    "keywords": "Getting started... Thank you! Thank you for choosing PDM Convert Task Extended! About PDM Convert Task Extended is a SOLIDWORKS PDM Professional task Add-in that can export SOLIDWORKS documents to a large number of extensions and merge PDFs. Support For additional support, please contact us through the contact page. Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers."
+  },
   "src/installingpdmconverttaskextended.html": {
     "href": "src/installingpdmconverttaskextended.html",
-    "title": "Getting Started | Products Helper Center",
-    "keywords": "Getting Started"
+    "title": "Installing the PDM Add-in manually | Products Helper Center",
+    "keywords": "Installing the PDM Add-in manually This section contains information about installing the PDM Add-in using the binaries or the CEX file you find in your Blue Byte Systems Inc. account downloads section. PDM Professional Version The minimum version PDM Convert Task Extended supports is SOLIDWORKS PDM Professional 2018 SP0. Tip We highly recommend you use the latest version of PDM Professional. Where to find and download the CEX file? PDM Convert Task Extended comes packaged as a CEX file. The download can be found by the following: The order confirmation email when purchasing PDM Convert Task Extended. This email contains both the download link to the CEX file and a valid license key. By logging into your bluebyte.biz account here and navigating to the Downloads section. Downloading Note If you have a valid license and are unable to download the CEX file, please reach out to us via the contact page. The CEX will download within a .zip file. After downloading the file from the Downloads section of your account, you may need to check if your Windows security policies have blocked the download. Downloading a blocked .zip file In the downloads section of your web browser, do the following: Right click on the blocked .zip file. Go to Properties. Uncheck the block checkbox. Click Apply and then OK. Extracting the .zip file To unzip the .zip file: Right click the .zip file. Select Extract Loading the PDM Add-in into your vault To load the PDM Add-in, follow these steps: Open the PDM Administration tool Login to a user account that has permission to administer Add-ins. Go to File. Click Open... Browse to the CEX file. Select the CEX file and click Open. Drag the Add-in icon from the opened CEX window onto the Add-in node. Tip Refer to the following video for reference in this step. Updating the PDM Add-in To update the PDM Add-in, follow from the start of this page. Client machines For the change to be reflected on client computers, one of the following must be done: Restart the client computer. End the PDM Process, edmserver.exe and restart the File Explorer Process. Note To avoid this issue, please consider using our continuous delivery process."
   },
   "src/introduction.html": {
     "href": "src/introduction.html",
@@ -26,7 +31,7 @@
   },
   "src/pdmconverttaskextended.html": {
     "href": "src/pdmconverttaskextended.html",
-    "title": "Getting Started | Products Helper Center",
-    "keywords": "Getting Started"
+    "title": "| Products Helper Center",
+    "keywords": ""
   }
 }
