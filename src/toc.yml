@@ -11,7 +11,9 @@
     href: usingautoupdaterpdmconverttaskextended.md
   - name: License Information
     href: licensespdmconverttaskextended.md
-  - name: Options setup page
-    href: optionssetuppagepdmconverttaskextended.md
+  - name: Properties Page
+    href: propertiespagepdmconverttaskextended.md
+  - name: Frequently Asked Questions
+    href: pdmconverttaskextendedfaq.md
 - name: PDM2Excel
   href: pdm2excel.md

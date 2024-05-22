@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Introduction | Products Helper Center </title>
+      <title>Frequently Asked Questions | Products Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Introduction | Products Helper Center ">
+      <meta name="title" content="Frequently Asked Questions | Products Helper Center ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/introduction.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmconverttaskextendedfaq.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,14 +85,35 @@
         </div>
 
         <article data-uid="">
-<h1 id="introduction">Introduction</h1>
+<h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
 
-<p>Here is the introduction for the Blue Byte Systems Inc. products.</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I'm unable to consume my license</td>
+<td>Make sure your system/firewall allows for connections to be made to httsp://bluebyte.biz on <strong>port 443</strong>. <strong><a href="https://bluebyte.biz/contact/">Contact</a></strong> us if this problem still persists.</td>
+</tr>
+<tr>
+<td>I’m running the add-in on assembly and it is not capturing all the references.</td>
+<td>Make sure that the assembly and its references have local copies on the machine that runs the add-in. You can do that by doing a get-latest on the assembly and its references in the machine that runs the task. This is a by-design behavior of the PDM Convert Task Extended.</td>
+</tr>
+<tr>
+<td>The task is unable to check in the log file.</td>
+<td>This could be related to a number of issues. You may need to make sure the user running the add-in has proper file and folder permissions on the log folder. You also need to make sure that the txt file extension is NOT part of the <a href="https://help.solidworks.com/2017/english/enterprisepdm/admin/idd_page_file_adding.htm">auto-add user setting</a>.</td>
+</tr>
+</tbody>
+</table>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/introduction.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmconverttaskextendedfaq.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

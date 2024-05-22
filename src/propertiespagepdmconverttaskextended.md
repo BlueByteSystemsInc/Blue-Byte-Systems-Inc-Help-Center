@@ -1,5 +1,9 @@
 
-# Options Setup Page
+# Properties page
+
+This section will detail the setup pages that require explanation.
+
+## Options Setup Page
 
 When you choose PDM Task Convert Extended from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
 
@@ -14,7 +18,7 @@ When you choose PDM Task Convert Extended from the dropdown in the new task dial
 |**Watermark**|Add a watermark to the printed PDF. You can use the special value **($CustomProperty)** if the value of the desired watermark is found in a custom property.|
 |**Quantity**|Add the document quantity from the calculated BOM of the top-level assembly. Two options:<ul><li>Using custom property in your sheet format. Task writes quantity to custom property and rebuilds drawing.</li><li>Define the location and pretext of a note the task adds to drawing before printing to DPF. Use this option if you do not have a predefined custom property in your sheet format</li></ul>|
 
-## Important Notes About Creating Tasks
+### Important Notes About Creating Tasks
 
 Please consider the following recommendations when creating a new task using PDM Convert Task Extended:
 1. **Execution method**
@@ -34,3 +38,38 @@ To change the auto-add extensions list,
 4. *Click* on the ***Adding Files*** selection and edit the file extensions
 
 ![Adding Files](../images/pdmconverttaskextendedaddingfiles.png)
+
+## Conditions Setup Page
+
+Conditions can be added to a task to include or exclude files from being processed.  
+The task will only process files that evaluate all of the set conditions as *true*.
+
+![Conditions Setup Page](../images/pdmconverttaskextendedconditionssetuppage.png)
+
+> [!NOTE]
+> The condition above for example will only allow files where the Part Type variable from the @ tab is different than the value Purchased.
+
+To add a condition, *click* the ***Add*** button.
+
+### Condition Options
+
+|Option|Description|
+|---|---|
+|**Variable**|Variable name with the run the condition on.|
+|**Condition Type**|Operation type to process.|
+|**Value**|Value to evaluate the condition against.|
+|**Configuration**|Configuration: Specify the configuration from which to get the value of the variable. Use @ in general.|
+
+## Notes Setup Page
+
+Notes can be added to converted PDF documents via this the ***Notes*** setup page.
+
+![Notes Setup Page](../images/pdmconverttaskextendednotessetuppage.png)
+
+To add a note, *click* the ***Add*** or ***Import...*** button.  
+A note is defined by:
+1. Location
+    - Use the sliders on the right side of the note text area to define the location.
+2. Value
+    - The text area allows combinations of text and special values. The special values are evaluated for you during the task execution.
+

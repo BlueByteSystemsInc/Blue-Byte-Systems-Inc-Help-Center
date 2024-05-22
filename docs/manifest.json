@@ -62,6 +62,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendedconditionssetuppage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendedconditionssetuppage.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmconverttaskextendederror60.png",
       "output": {
         "resource": {
@@ -76,6 +86,16 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmconverttaskextendedmanagelicense.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextendednotessetuppage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextendednotessetuppage.png"
         }
       },
       "version": ""
@@ -142,16 +162,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/optionssetuppagepdmconverttaskextended.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/optionssetuppagepdmconverttaskextended.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "src/pdm2excel.md",
       "output": {
         ".html": {
@@ -166,6 +176,26 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmconverttaskextended.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmconverttaskextendedfaq.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmconverttaskextendedfaq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/propertiespagepdmconverttaskextended.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/propertiespagepdmconverttaskextended.html"
         }
       },
       "version": ""
