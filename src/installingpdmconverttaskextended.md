@@ -1,71 +1,90 @@
+# Installation
 
-# Installing the PDM Add-in manually
+This section contains information about installing the PDM add-in using the binaries or the CEX file available in your Blue Byte Systems Inc. account downloads section.
 
-This section contains information about installing the PDM Add-in using the binaries or the CEX file you find in your Blue Byte Systems Inc. account downloads section.
+#### Where to Find and Download the CEX File
 
-## PDM Professional Version
-The minimum version PDM Convert Task Extended supports is SOLIDWORKS PDM Professional 2018 SP0.  
-> [!Tip]
-> ***We highly recommend you use the latest version of PDM Professional.***
+PDM Convert Task Extended is packaged as a CEX file. You can download it as follows:
 
-## Where to find and download the CEX file?
+1. **Order Confirmation Email**: If you purchased PDM Convert Task Extended through our website, the order confirmation email contains both the download link to the CEX file and a valid license key.
+2. **Blue Byte Account**: Log into your Blue Byte account **[here](https://bluebyte.biz/my-account/)** and navigate to the **downloads** section.
 
-PDM Convert Task Extended comes packaged as a CEX file.
-The download can be found by the following:
+#### Downloading
 
-1. The order confirmation email when purchasing PDM Convert Task Extended.
-    - This email contains both the download link to the CEX file and a valid license key.
-2. By logging into your bluebyte.biz account **[here](https://bluebyte.biz/my-account/)** and navigating to the ***Downloads*** section.
+>[!Note]
+>If you have a valid license and are unable to download the CEX file, please reach out to us via the **[contact](https://bluebyte.biz/contact/)** page.
 
-## Downloading
+- After logging into your [account](https://bluebyte.biz/my-account/), go to **orders**.
+- In the **downloads** tab, find the latest version of the CEX file. The CEX files are named after the add-in and the compile date. The latest version will be at the bottom of the table.
+- The CEX will download within a .zip file.
+- You may need to check if your Windows security policies have blocked the download.
 
-> [!Note]
-> If you have a valid license and are unable to download the CEX file, please reach out to us via the **[contact](https://bluebyte.biz/contact/)** page.
-
-The CEX will download within a .zip file.  
-After downloading the file from the ***Downloads*** section of your **[account](https://bluebyte.biz/my-account/)**, you may need to check if your Windows security policies have blocked the download.  
-
-### Downloading a blocked .zip file
+###### Downloading a Blocked .zip File
 
 In the downloads section of your web browser, do the following:
 
-1. *Right click* on the blocked .zip file.
-2. Go to ***Properties***.
-3. *Uncheck* the ***block*** checkbox.
-4. *Click* ***Apply*** and then ***OK***.
+1. *Right-click* on the blocked .zip file.
+2. Go to **Properties**.
+3. *Uncheck* the **Unblock** checkbox.
+4. *Click* **Apply** and then **OK**.
 
-## Extracting the .zip file
+## Extracting the .zip File
 
 To unzip the .zip file:
 
-1. *Right click* the .zip file.
-2. *Select* ***Extract***
+1. *Right-click* the .zip file.
+2. *Select* **Extract**.
 
-## Loading the PDM Add-in into your vault
+#### Loading the PDM Add-in into Your Vault
 
-To load the PDM Add-in, follow these steps:
+To load the PDM add-in, follow these steps:
 
-1. *Open* the PDM Administration tool
-2. *Login* to a user account that **has** permission to administer Add-ins.
-3. *Go to* ***File***.
-4. *Click* ***Open...***
+1. *Open* the PDM Administration tool.
+2. *Log in* to a user account that **has** permission to administer add-ins.
+3. *Go to* **File**.
+4. *Click* **Open...**
 5. *Browse* to the CEX file.
-6. *Select* the CEX file and *click* ***Open***.
-7. *Drag* the Add-in icon from the opened CEX window onto the Add-in node. 
-> [!Tip]
-> Refer to the following video for reference in this step.
-<video src="../images/how-to-add-addin.mp4" controls type="video/mp4" width="800">
+6. *Select* the CEX file and *click* **Open**.
+7. *Drag* the add-in icon from the opened CEX window onto the add-in node.
 
-### Updating the PDM Add-in
-
-To update the PDM Add-in, follow from the **[start](#installing-the-pdm-add-in-manually)** of this page. 
-
-### Client machines
-For the change to be reflected on client computers, one of the following must be done:
-1. *Restart* the **client computer**.
-2. *End* the PDM Process, ***edmserver.exe*** and *restart* the File Explorer Process.
-
-> [!NOTE]
-> To avoid this issue, please consider using **[our continuous delivery process](https://bluebyte.biz/solidworks/auto-update-solidworks-pdm-add-ins/)**.
+<video src="../images/how-to-add-addin.mp4" controls type="video/mp4" width="600"/>
 
 
+
+>[!Important]
+>You need to permit the add-in in the task host configuration to show client computers in the execution method tab in the task setup dialog. You can permit the add-in by navigating to the PDM globe icon in the icon tray, right-clicking on it, and clicking *Task Host Configuration*.
+
+#### Updating the PDM Add-in
+
+To update the PDM add-in, follow the instructions from the **[start](#installing-the-pdm-add-in-manually)** of this page.
+
+###### Administrator
+
+>[!Warning]
+>Only perform updates when no one is using the task.
+
+As an administrator, the process of updating the add-in is very involved.
+
+- If you have existing tasks in the task list, we recommend that you export all the options from the task dialog. The options tab has an export button. You can re-import this data later when you recreate the task.
+- Log in to the vault in the administration tool and remove the add-in.
+- Perform the steps in the *Client* section below to refresh your PDM session.
+- Perform the steps in *Loading the PDM Add-in into Your Vault* to load the add-in.
+- Alert your PDM users to follow the instructions in the *Client* section to use the new add-in.
+
+###### Client
+
+Restarting your Windows session will take care of updating the add-in.
+
+You can also update the add-in without having to restart Windows by performing the following sequence of instructions on the client machines:
+
+1. Open Windows Task Manager.
+2. Under **Details**, locate **explorer.exe** and end the process.
+3. Do the same for the **edmserver.exe** process.
+4. Click on **File  Run...** and type in **explorer.exe** to restart File Explorer.
+5. Navigate to your local vault view and log in. You may experience a slight delay because your local client is downloading the new version of the add-in.
+
+>[!Tip]
+>To end a process in the Details tab, right-click on it and click **End**.
+
+>[!Note]
+>To avoid this issue, please consider using **[our continuous delivery process](https://bluebyte.biz/solidworks/auto-update-solidworks-pdm-add-ins/)**.

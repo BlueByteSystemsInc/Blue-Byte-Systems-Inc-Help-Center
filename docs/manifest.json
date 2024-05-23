@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/maver/repos/docs",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -111,21 +111,21 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
+      "type": "Resource",
+      "source_relative_path": "images/preview.mp4",
       "output": {
-        ".html": {
-          "relative_path": "index.html"
+        "resource": {
+          "relative_path": "images/preview.mp4"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/gettingstartedpdmconverttaskextended.md",
+      "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "src/gettingstartedpdmconverttaskextended.html"
+          "relative_path": "index.html"
         }
       },
       "version": ""
@@ -146,6 +146,16 @@
       "output": {
         ".html": {
           "relative_path": "src/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/licenseissues.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/licenseissues.html"
         }
       },
       "version": ""

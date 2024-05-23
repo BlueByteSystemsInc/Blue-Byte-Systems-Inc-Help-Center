@@ -1,12 +1,15 @@
 # PDM Convert Task Extended
 
-## Thank you!
-
 Thank you for choosing **[PDM Convert Task Extended](https://bluebyte.biz/product/pdm-convert-task-extended/)**!
 
-## About
+PDM Convert Task Extended is a SOLIDWORKS PDM task add-in that lets you **save** your SOLIDWORKS files using advanced filters and provides power capabilities to place **custom properties/datacard**, **BOM quantities** on PDFs and **merge** them.  
 
-PDM Convert Task Extended is a SOLIDWORKS PDM Professional task Add-in that can export SOLIDWORKS documents to a large number of extensions and merge PDFs.
+## Requirements
+
+The minimum version PDM Convert Task Extended supports is SOLIDWORKS PDM Professional 2018 SP0.  
+> [!Tip]
+> We highly recommend you use the latest version of PDM Professional.
+
 
 ## Support
 
