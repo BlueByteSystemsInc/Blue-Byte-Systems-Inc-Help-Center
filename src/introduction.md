@@ -14,6 +14,20 @@ PDM2Excel bridges the gap between your PDM system and Excel, enabling seamless d
 
 RevisionSync ensures consistency across your PDM system by synchronizing revisions automatically. This tool helps maintain the integrity of your data, preventing discrepancies and ensuring that all users have access to the latest version of files. It streamlines the revision process and enhances collaboration within your team.
 
+
+
+# Getting support 
+
 ## Continuous Improvement and Support
 
 At Blue Byte Systems, we are committed to continuous improvement and providing exceptional support to our customers. Our products are regularly updated with new features and enhancements based on user feedback. We also offer comprehensive documentation and dedicated support to help you get the most out of our solutions.
+
+
+> **How to reach out?**
+> 
+> If you need support, please reach out to us by clicking the button below:
+> 
+> [Get Support](mailto:support@bluebytesystemsinc.zohodesk.com)
+
+
+<a href="#" class="button big">Create Project</a>

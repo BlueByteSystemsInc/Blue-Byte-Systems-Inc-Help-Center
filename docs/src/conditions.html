@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Setting your task | Products Helper Center </title>
+      <title>Conditions Setup Page | Products Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Setting your task | Products Helper Center ">
+      <meta name="title" content="Conditions Setup Page | Products Helper Center ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/propertiespagepdmconverttaskextended.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/conditions.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,48 +85,48 @@
         </div>
 
         <article data-uid="">
-<h1 id="setting-your-task">Setting your task</h1>
+<h1 id="conditions-setup-page">Conditions Setup Page</h1>
 
-<p>This section will detail the setup pages that require explanation.</p>
-<p>When you create a new task, please choose PDM Convert Task Extended from the dropdown in the first page of the task setup dialog like below:</p>
-<img src="../images/newtask.png">
-<h1 id="setup-pages">Setup pages</h1>
-<img src="../images/tabs.png">
+<p>Conditions can be added to a task to include or exclude files from being processed.<br>
+The task will only process files that evaluate all of the set conditions as <em>true</em>.</p>
+<p><img src="../images/pdmconverttaskextendedconditionssetuppage.png" alt="Conditions Setup Page"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The condition above for example will only allow files where the Part Type variable from the @ tab is different than the value Purchased.</p>
+</div>
+<p>To add a condition, <em>click</em> the <em><strong>Add</strong></em> button.</p>
+<h3 id="condition-options">Condition Options</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Tab</th>
-<th style="text-align: left;">Description</th>
+<th>Option</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Conditions</td>
-<td style="text-align: left;">Defines which files to include in the save queues when processing top-level assemblies.</td>
+<td><strong>Variable</strong></td>
+<td>Variable name with the run the condition on.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Options</td>
-<td style="text-align: left;">Options define how files will be printed. See the options page for more details.</td>
+<td><strong>Condition Type</strong></td>
+<td>Operation type to process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Notes</td>
-<td style="text-align: left;">Defines aliased notes that can contain text and datacard variables and define their locations in the drawing.</td>
+<td><strong>Value</strong></td>
+<td>Value to evaluate the condition against.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Other</td>
-<td style="text-align: left;">The other pages named after extensions define the export settings of the SOLIDWORKS instance that will be used by task. These settings are found in SOLIDWORKS under Tools &gt; Options &gt; Export.</td>
+<td><strong>Configuration</strong></td>
+<td>Configuration: Specify the configuration from which to get the value of the variable. Use @ in general.</td>
 </tr>
 </tbody>
 </table>
-<div class="TIP">
-<h5>Tip</h5>
-<p>Start by defining the options page for your test runs.</p>
-</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/propertiespagepdmconverttaskextended.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/conditions.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

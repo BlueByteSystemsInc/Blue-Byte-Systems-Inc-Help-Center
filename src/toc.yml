@@ -14,6 +14,14 @@
     href: licenseissues.md
   - name: Setting your task
     href: propertiespagepdmconverttaskextended.md
+    expanded: true 
+    items:
+    - name: Options Tab
+      href: options.md
+    - name: Conditions Tab
+      href: Conditions.md
+    - name: Notes Tab
+      href: Notes.md
   - name: Frequently Asked Questions
     href: pdmconverttaskextendedfaq.md
 - name: PDM2Excel

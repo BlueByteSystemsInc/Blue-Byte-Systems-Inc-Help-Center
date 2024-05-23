@@ -42,6 +42,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/newtask.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/newtask.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmconverttaskextendedactivatelicense.png",
       "output": {
         "resource": {
@@ -121,11 +131,31 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/tabs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/tabs.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/conditions.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/conditions.html"
         }
       },
       "version": ""
@@ -166,6 +196,26 @@
       "output": {
         ".html": {
           "relative_path": "src/licensespdmconverttaskextended.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/notes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/options.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/options.html"
         }
       },
       "version": ""
