@@ -146,23 +146,28 @@
 <ul>
 <li>If you have existing tasks in the task list, we recommend that you export all the options from the task dialog. The options tab has an export button. You can re-import this data later when you recreate the task.</li>
 <li>Log in to the vault in the administration tool and remove the add-in.</li>
-<li>Perform the steps in the <em>Client</em> section below to refresh your PDM session.</li>
+<li>Perform the steps in the <em>Client</em> section below to clear your PDM session of an instances of the add-in or task in memory (PDM restart).</li>
 <li>Perform the steps in <em>Loading the PDM Add-in into Your Vault</em> to load the add-in.</li>
 <li>Alert your PDM users to follow the instructions in the <em>Client</em> section to use the new add-in.</li>
 </ul>
 <h6 id="client">Client</h6>
-<p>Restarting your Windows session will take care of updating the add-in.</p>
-<p>You can also update the add-in without having to restart Windows by performing the following sequence of instructions on the client machines:</p>
+<p>You have two options to restart PDM:</p>
+<ol>
+<li><p>Restarting your Windows session will take care of updating the add-in.</p>
+</li>
+<li><p>Restarting PDM without leaving your Windows session can be done by performing the following sequence of instructions on the client machine:</p>
 <ol>
 <li>Open Windows Task Manager.</li>
 <li>Under <strong>Details</strong>, locate <strong>explorer.exe</strong> and end the process.</li>
 <li>Do the same for the <strong>edmserver.exe</strong> process.</li>
 <li>Click on <strong>File  Run...</strong> and type in <strong>explorer.exe</strong> to restart File Explorer.</li>
-<li>Navigate to your local vault view and log in. You may experience a slight delay because your local client is downloading the new version of the add-in.</li>
+<li>Navigate to your local vault view and log in. You may experience a slight delay because your local client is downloading any new version of the add-in from the server.</li>
+</ol>
+</li>
 </ol>
 <div class="TIP">
 <h5>Tip</h5>
-<p>To end a process in the Details tab, right-click on it and click <strong>End</strong>.</p>
+<p>To end a process in the <strong>Details</strong> tab, right-click on it and click <strong>End</strong>.</p>
 </div>
 <div class="NOTE">
 <h5>Note</h5>

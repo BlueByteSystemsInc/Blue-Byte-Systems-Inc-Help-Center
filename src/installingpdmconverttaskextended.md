@@ -67,24 +67,25 @@ As an administrator, the process of updating the add-in is very involved.
 
 - If you have existing tasks in the task list, we recommend that you export all the options from the task dialog. The options tab has an export button. You can re-import this data later when you recreate the task.
 - Log in to the vault in the administration tool and remove the add-in.
-- Perform the steps in the *Client* section below to refresh your PDM session.
+- Perform the steps in the *Client* section below to clear your PDM session of an instances of the add-in or task in memory (PDM restart).
 - Perform the steps in *Loading the PDM Add-in into Your Vault* to load the add-in.
 - Alert your PDM users to follow the instructions in the *Client* section to use the new add-in.
 
 ###### Client
 
-Restarting your Windows session will take care of updating the add-in.
+You have two options to restart PDM:
 
-You can also update the add-in without having to restart Windows by performing the following sequence of instructions on the client machines:
+1. Restarting your Windows session will take care of updating the add-in.
 
-1. Open Windows Task Manager.
-2. Under **Details**, locate **explorer.exe** and end the process.
-3. Do the same for the **edmserver.exe** process.
-4. Click on **File  Run...** and type in **explorer.exe** to restart File Explorer.
-5. Navigate to your local vault view and log in. You may experience a slight delay because your local client is downloading the new version of the add-in.
+2. Restarting PDM without leaving your Windows session can be done by performing the following sequence of instructions on the client machine:
+    1. Open Windows Task Manager.
+    2. Under **Details**, locate **explorer.exe** and end the process.
+    3. Do the same for the **edmserver.exe** process.
+    4. Click on **File  Run...** and type in **explorer.exe** to restart File Explorer.
+    5. Navigate to your local vault view and log in. You may experience a slight delay because your local client is downloading any new version of the add-in from the server.
 
 >[!Tip]
->To end a process in the Details tab, right-click on it and click **End**.
+>To end a process in the **Details** tab, right-click on it and click **End**.
 
 >[!Note]
 >To avoid this issue, please consider using **[our continuous delivery process](https://bluebyte.biz/solidworks/auto-update-solidworks-pdm-add-ins/)**.
