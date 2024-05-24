@@ -37,7 +37,7 @@
   "src/notes.html": {
     "href": "src/notes.html",
     "title": "Notes Setup Page | Products Helper Center",
-    "keywords": "Notes Setup Page Notes can be added to converted PDF documents via this the Notes setup page. To add a note, click the Add or Import... button. A note is defined by: Location Use the sliders on the right side of the note text area to define the location. Value The text area allows combinations of text and special values. The special values are evaluated for you during the task execution."
+    "keywords": "Notes Setup Page Notes can be added to converted PDF documents via this the Notes setup page. To add a note, click the Add or Import... button. A note is defined by: Definition Description Location Use the sliders on the right side of the note text area to define the location. Value The text area allows combinations of text and special values. The special values are evaluated for you during the task execution."
   },
   "src/options.html": {
     "href": "src/options.html",
