@@ -3,7 +3,9 @@
 
 When you choose PDM Task Convert Extended from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
 
-![Options Setup Page](../images/pdmconverttaskextendedoptionssetuppage.png)
+<p align="center">
+  <img src="../images/pdmconverttaskextendedoptionssetuppage.png" alt="Options Setup Page" width="800">
+</p>
 
 |Option|Description|
 |:---|:---|
@@ -33,4 +35,6 @@ To change the auto-add extensions list,
 3. *Select* ***Settings***
 4. *Click* on the ***Adding Files*** selection and edit the file extensions
 
-![Adding Files](../images/pdmconverttaskextendedaddingfiles.png)
+<p align="center">
+  <img src="../images/pdmconverttaskextendedaddingfiles.png" alt="Adding Files" width="800">
+</p>

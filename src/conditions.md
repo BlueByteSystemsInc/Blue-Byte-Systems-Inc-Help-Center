@@ -3,7 +3,9 @@
 Conditions can be added to a task to include or exclude files from being processed.  
 The task will only process files that evaluate all of the set conditions as *true*.
 
-![Conditions Setup Page](../images/pdmconverttaskextendedconditionssetuppage.png)
+<p align="center">
+  <img src="../images/pdmconverttaskextendedconditionssetuppage.png" alt="Conditions Setup Page" width="800">
+</p>
 
 > [!NOTE]
 > The condition above for example will only allow files where the Part Type variable from the @ tab is different than the value Purchased.

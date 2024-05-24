@@ -1,12 +1,13 @@
+
 # Installation
 
 This section contains information about installing the PDM add-in using the binaries or the CEX file available in your Blue Byte Systems Inc. account downloads section.
 
 #### Where to Find and Download the CEX File
 
-PDM Convert Task Extended is packaged as a CEX file. You can download it as follows:
+PDM2Excel is packaged as a CEX file. You can download it as follows:
 
-1. **Order Confirmation Email**: If you purchased PDM Convert Task Extended through our website, the order confirmation email contains both the download link to the CEX file and a valid license key.
+1. **Order Confirmation Email**: If you purchased PDM2Excel through our website, the order confirmation email contains both the download link to the CEX file and a valid license key.
 2. **Blue Byte Account**: Log into your Blue Byte account **[here](https://bluebyte.biz/my-account/)** and navigate to the **downloads** section.
 
 #### Downloading
@@ -14,7 +15,7 @@ PDM Convert Task Extended is packaged as a CEX file. You can download it as foll
 >[!Note]
 >If you have a valid license and are unable to download the CEX file, please reach out to us via the **[contact](https://bluebyte.biz/contact/)** page.
 
-- After logging into your [account](https://bluebyte.biz/my-account/), go to **orders**.
+- After logging into your **[account](https://bluebyte.biz/my-account/)**, go to **orders**.
 - In the **downloads** tab, find the latest version of the CEX file. The CEX files are named after the add-in and the compile date. The latest version will be at the bottom of the table.
 - The CEX will download within a .zip file.
 - You may need to check if your Windows security policies have blocked the download.
@@ -48,7 +49,7 @@ To load the PDM add-in, follow these steps:
 7. *Drag* the add-in icon from the opened CEX window onto the add-in node.
 
 <center>
-    <video src="../images/how-to-add-addin.mp4" controls type="video/mp4" width="600"/>
+    <video src="../images/how-to-add-pdm2excel.mp4" controls type="video/mp4" width="600"/>
 </center>
 
 

@@ -2,7 +2,9 @@
 
 Notes can be added to converted PDF documents via this the ***Notes*** setup page.
 
-![Notes Setup Page](../images/pdmconverttaskextendednotessetuppage.png)
+<p align="center">
+  <img src="../images/pdmconverttaskextendednotessetuppage.png" alt="Notes Setup Page" width="800">
+</p>
 
 To add a note, *click* the ***Add*** or ***Import...*** button.  
 A note is defined by:

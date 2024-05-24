@@ -42,10 +42,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/how-to-add-pdm2excel.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "images/how-to-add-pdm2excel.mp4"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/newtask.png",
       "output": {
         "resource": {
           "relative_path": "images/newtask.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdm2excelmanagelicense.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excelmanagelicense.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdm2exceloptions.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2exceloptions.png"
         }
       },
       "version": ""
@@ -226,6 +256,66 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2excel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelautoupdater.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelautoupdater.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelinstalling.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelinstalling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excellicenseissues.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excellicenseissues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excellicensemanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excellicensemanagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelnewtask.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelnewtask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2exceloptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2exceloptions.html"
         }
       },
       "version": ""

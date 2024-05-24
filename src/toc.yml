@@ -26,3 +26,19 @@
     href: pdmconverttaskextendedfaq.md
 - name: PDM2Excel
   href: pdm2excel.md
+  expanded: true
+  items:
+    - name: Installation/Update
+      href: pdm2excelinstalling.md
+    - name: Installing/Updating using Auto-Updater
+      href: pdm2excelautoupdater.md
+    - name: License Management
+      href: pdm2excellicensemanagement.md
+    - name: License Common Issues
+      href: pdm2excellicenseissues.md
+    - name: Setting your task
+      href: pdm2excelnewtask.md
+      expanded: true
+      items:  
+      - name: Options Tab
+        href: pdm2exceloptions.md

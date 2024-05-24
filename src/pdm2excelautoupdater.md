@@ -1,6 +1,5 @@
+
 # Auto-updater add-in
-
-
 
 The auto-updater add-in is a tool developed by Blue Byte Systems, Inc. to streamline our code delivery process for our SOLIDWORKS PDM customers.
 

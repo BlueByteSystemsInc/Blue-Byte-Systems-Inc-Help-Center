@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Auto-updater add-in | Products Helper Center </title>
+      <title>License Information | Products Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Auto-updater add-in | Products Helper Center ">
+      <meta name="title" content="License Information | Products Helper Center ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/usingautoupdaterpdmconverttaskextended.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdm2excellicensemanagement.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,45 +85,59 @@
         </div>
 
         <article data-uid="">
-<h1 id="auto-updater-add-in">Auto-updater add-in</h1>
+<h1 id="license-information">License Information</h1>
 
-<p>The auto-updater add-in is a tool developed by Blue Byte Systems, Inc. to streamline our code delivery process for our SOLIDWORKS PDM customers.</p>
-<p>The tool is an add-in that allows you to access your purchased add-ins and all their versions.</p>
-<p>To install the add-in:</p>
-<ol>
-<li><strong>Download the auto-updater add-in</strong>. The link is in your order confirmation. It’s also accessible from the downloads section in your account.</li>
-<li>The auto-updater add-in is a zip archive, so make sure to right-click on it and unblock it from the file’s properties before you unzip its content.</li>
-<li>In your administration tool, log into your vault and then go to <strong>File &gt; Open</strong> and browse to <code>Auto-UpdaterAddInVX.cex</code> (unzipped content).</li>
-<li>Click <strong>OK</strong> to open the CEX file.</li>
-<li>Drag and drop the auto-updater add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.</li>
-<li>Right-click on the add-in and click on <strong>Server Credentials…</strong></li>
-<li>Add your server credentials and click on <strong>Close</strong>. Your server credentials are your Blue Byte Systems account credentials.</li>
-</ol>
-<p>To update an add-in:</p>
-<ol>
-<li>Right-click on the add-in and click on <strong>Update add-ins…</strong></li>
-<li>This will show the main dialog of the add-in where you can select from the dropdown list the program you would like to install.</li>
-<li>Click on the <strong>Install</strong> button to install the selected add-in.</li>
-<li>The process might take a few moments, so please wait.</li>
-<li>You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in.</li>
-</ol>
+<p>This section denotes how to manage a license.</p>
+<h2 id="managing-a-license">Managing a License</h2>
+<p>Your license is made of a <strong>secret key</strong> that was provided to you in the <em>order confirmation email</em>.</p>
+<p>Your license entitles you to use PDM2Excel:</p>
+<ul>
+<li>For a specified duration.</li>
+<li>A number of domains (number of vaults where you can install the add-in).</li>
+</ul>
+<p>To manage your license:</p>
+<ul>
+<li>Log into your vault from the PDM Administration tool.</li>
+<li><em>Right-click</em> the add-in from the <strong>Add-ins</strong> node and <em>select</em> <em><strong>Manage license...</strong></em></li>
+</ul>
 <p align="center">
-  <video src="../images/preview.mp4" controls="" type="video/mp4" width="800"></video>
+  <img src="../images/pdm2excelmanagelicense.png" alt="Manage license...">
 </p>
-<h1 id="warnings">Warnings</h1>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>You must backup your tasks. The auto-updater does not update your existing tasks or permit the add-in the <em>Task Host Configuration</em>.</p>
+<h3 id="activating-a-license">Activating a License</h3>
+<p>To activate a license:</p>
+<ul>
+<li><em>Enter</em> your license key and <em>click</em> <em><strong>Activate</strong></em> to consume the license from the <strong><a href="#managing-a-license">previous step</a></strong>.</li>
+</ul>
+<p><strong>TODO: Update image with PDM2Excel image</strong></p>
+<p align="center">
+  <img src="../images/pdmconverttaskextendedactivatelicense.png" alt="Activate license" width="800">
+</p>
+<h3 id="deactivating-a-license">Deactivating a License</h3>
+<p>To deactivate a license:</p>
+<ul>
+<li><em>Click</em> <em><strong>Deactivate</strong></em> on the <strong><a href="#activating-a-license">previous step</a></strong> to stop using the license on the logged-in vault.</li>
+</ul>
+<h2 id="renewing-a-license">Renewing a License</h2>
+<p>To renew the license, please follow these instructions:</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Do not commence the process below until you have your license key.</p>
 </div>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>All client computers using the add-in's tasks must be restarted to use the new version.</p>
-</div>
+<ol>
+<li><em>Open</em> the PDM Administration tool.</li>
+<li><em>Expand</em> the Add-in nodes and <em>right-click</em> on PDM2Excel.</li>
+<li><em>Click</em> <em><strong>Manage license…</strong></em></li>
+<li><em>Click</em> <em><strong>Deactivate</strong></em> (You must be connected to the Internet).</li>
+<li><em>Close</em> the window.</li>
+<li><em>Repeat</em> the process of clicking on Manage license…</li>
+<li><em>Enter</em> your license key and <em>click</em> <em><strong>Activate</strong></em>.</li>
+<li>Your new expiry date should appear when the license is renewed.</li>
+</ol>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/usingautoupdaterpdmconverttaskextended.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdm2excellicensemanagement.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
