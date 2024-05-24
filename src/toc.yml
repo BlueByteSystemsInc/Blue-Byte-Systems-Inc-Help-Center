@@ -42,3 +42,5 @@
       items:  
       - name: Options Tab
         href: pdm2exceloptions.md
+    - name: Need more help?
+      href: pdm2excelneedmorehelp.md

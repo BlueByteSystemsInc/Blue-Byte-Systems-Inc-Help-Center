@@ -69,6 +69,11 @@
     "title": "License Information | Products Helper Center",
     "keywords": "License Information This section denotes how to manage a license. Managing a License Your license is made of a secret key that was provided to you in the order confirmation email. Your license entitles you to use PDM2Excel: For a specified duration. A number of domains (number of vaults where you can install the add-in). To manage your license: Log into your vault from the PDM Administration tool. Right-click the add-in from the Add-ins node and select Manage license... Activating a License To activate a license: Enter your license key and click Activate to consume the license from the previous step. TODO: Update image with PDM2Excel image Deactivating a License To deactivate a license: Click Deactivate on the previous step to stop using the license on the logged-in vault. Renewing a License To renew the license, please follow these instructions: Important Do not commence the process below until you have your license key. Open the PDM Administration tool. Expand the Add-in nodes and right-click on PDM2Excel. Click Manage license… Click Deactivate (You must be connected to the Internet). Close the window. Repeat the process of clicking on Manage license… Enter your license key and click Activate. Your new expiry date should appear when the license is renewed."
   },
+  "src/pdm2excelneedmorehelp.html": {
+    "href": "src/pdm2excelneedmorehelp.html",
+    "title": "Need more help? | Products Helper Center",
+    "keywords": "Need more help? If you require help, please reach out to us from the contact page."
+  },
   "src/pdm2excelnewtask.html": {
     "href": "src/pdm2excelnewtask.html",
     "title": "Setting your task | Products Helper Center",

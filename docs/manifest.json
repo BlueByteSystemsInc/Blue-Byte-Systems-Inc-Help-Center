@@ -302,6 +302,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelneedmorehelp.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelneedmorehelp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdm2excelnewtask.md",
       "output": {
         ".html": {
