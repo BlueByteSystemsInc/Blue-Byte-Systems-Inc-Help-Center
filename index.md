@@ -8,11 +8,11 @@ Welcome to the Blue Byte Systems Product Help Center. Here, you will find the of
 
 ### PDM Convert Task Extended
 
-To review the documentation for PDM Convert Task Extended, please click [here](../src/pdmconverttaskextended.html).
+To review the documentation for PDM Convert Task Extended, please click [here](../docs/src/pdmconverttaskextended.html).
 
 ### PDM2Excel
 
-To review the documentation for PDM2Excel, please click [here](../src/pdm2excel.html).
+To review the documentation for PDM2Excel, please click [here](../docs/src/pdm2excel.html).
 
 ### RevisionSync
 
