@@ -8,7 +8,7 @@ CDPDM is a PDM add-in by Blue Byte Systems Inc. that facilitates the deployment 
 
 The add-in communicates with our servers and allows the installation and uninstallation of all versions of your PDM add-ins.
 
-# Pros
+## Pros
 
 The advantages of using CDPDM are numerous:
 
@@ -16,7 +16,7 @@ The advantages of using CDPDM are numerous:
 - Ability to switch between versions.
 - The manual installation process is very tedious and time-consuming.
 
-# Where to Find CDPDM
+## Where to Find CDPDM
 
 - CDPDM is provided in your project kick-off email.
 - The email contains:
@@ -24,7 +24,7 @@ The advantages of using CDPDM are numerous:
   - Link to the page with installation instructions.
   - Credentials.
 
-# How to Install
+## How to Install
 
 - Start by downloading the CEX file.
 - In Windows 11, 10, and 7, internet downloads are blocked. Right-click on the CEX file, go to Properties, check Unblock, then click Apply and OK.
@@ -35,7 +35,7 @@ The advantages of using CDPDM are numerous:
 
 ![CDPDM Installation](../images/cdpdm.png)
 
-# Configuration
+## Configuration
 
 - Right-click on CDPDM under Add-ins in the Administration tool and click Settings...
 
@@ -49,7 +49,7 @@ The advantages of using CDPDM are numerous:
 > You can also upload the Customer Configuration File by right-clicking on the add-in and clicking Upload Customer Configuration File...
 > The Customer Configuration File is provided to you as an attachment in your project kick-off email.
 
-# Updating Add-ins
+## Updating Add-ins
 
 - Right-click on CDPDM under Add-ins in the Administration tool and click Update Add-ins...
 - This process may take a few moments depending on how many add-ins are in your vault.
