@@ -4,7 +4,7 @@
 > This is only available for consulting projects. Our product line has its own CD pipeline.
 
 
-CDPDM (Continuous Deployment) is a PDM add-in by Blue Byte Systems Inc. that facilitates the deployment of PDM and task add-ins developed for you.
+CDPDM is a PDM add-in by Blue Byte Systems Inc. that facilitates the deployment of PDM and task add-ins developed for you.
 
 The add-in communicates with our servers and allows the installation and uninstallation of all versions of your PDM add-ins.
 
