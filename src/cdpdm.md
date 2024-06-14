@@ -44,6 +44,11 @@ The advantages of using CDPDM are numerous:
 - Add the credentials you received in the project kick-off email.
 - Close the settings window.
 
+
+>[!NOTE]
+> You can also upload the Customer Configuration File by right-clicking on the add-in and clicking Upload Customer Configuration File...
+> The Customer Configuration File is provided to you as an attachment in your project kick-off email.
+
 # Updating Add-ins
 
 - Right-click on CDPDM under Add-ins in the Administration tool and click Update Add-ins...
