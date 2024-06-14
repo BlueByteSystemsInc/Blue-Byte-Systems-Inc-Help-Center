@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Continuous Delivery | Products Helper Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Continuous Delivery | Products Helper Center ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/cdpdm.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="Products Helper Center">
+            Products Helper Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="continuous-delivery">Continuous Delivery</h1>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>This is only available for consulting projects. Our product line has its own CD pipeline.</p>
+</div>
+<p>CDPDM (Continuous Deployment) is a PDM add-in by Blue Byte Systems Inc. that facilitates the deployment of PDM and task add-ins developed for you.</p>
+<p>The add-in communicates with our servers and allows the installation and uninstallation of all versions of your PDM add-ins.</p>
+<h1 id="pros">Pros</h1>
+<p>The advantages of using CDPDM are numerous:</p>
+<ul>
+<li>No need to ask for or download CEX files.</li>
+<li>Ability to switch between versions.</li>
+<li>The manual installation process is very tedious and time-consuming.</li>
+</ul>
+<h1 id="where-to-find-cdpdm">Where to Find CDPDM</h1>
+<ul>
+<li>CDPDM is provided in your project kick-off email.</li>
+<li>The email contains:
+<ul>
+<li>CEX Attachment.</li>
+<li>Link to the page with installation instructions.</li>
+<li>Credentials.</li>
+</ul>
+</li>
+</ul>
+<h1 id="how-to-install">How to Install</h1>
+<ul>
+<li>Start by downloading the CEX file.</li>
+<li>In Windows 11, 10, and 7, internet downloads are blocked. Right-click on the CEX file, go to Properties, check Unblock, then click Apply and OK.</li>
+<li>Open the Administration tool.</li>
+<li>Log in to the vault. Please ensure you use a PDM user with Edit Add-Ins permission.</li>
+<li>In the Administration tool, click File &gt; Open and browse to the <code>CDPDM.cex</code> file.</li>
+<li>Drag and drop the add-in from the CEX window onto the Add-ins node and wait for a few moments for CDPDM to be installed.</li>
+</ul>
+<p><img src="../images/cdpdm.png" alt="CDPDM Installation"></p>
+<h1 id="configuration">Configuration</h1>
+<ul>
+<li>Right-click on CDPDM under Add-ins in the Administration tool and click Settings...</li>
+</ul>
+<p><img src="../images/cdpdm_menu.png" alt="CDPDM Menu"></p>
+<ul>
+<li>Add the credentials you received in the project kick-off email.</li>
+<li>Close the settings window.</li>
+</ul>
+<h1 id="updating-add-ins">Updating Add-ins</h1>
+<ul>
+<li>Right-click on CDPDM under Add-ins in the Administration tool and click Update Add-ins...</li>
+<li>This process may take a few moments depending on how many add-ins are in your vault.</li>
+<li>You will be prompted with a window like the following:</li>
+</ul>
+<p><img src="../images/cdpdm_updateaddins.png" alt="CDPDM Update"></p>
+<p>You can:</p>
+<ul>
+<li>Install the selected add-in from the list. From the Server Versions dropdown, you can select which version to install.</li>
+<li>Uninstall the add-in.</li>
+</ul>
+<p>The installation process will ask you if you want to restart PDM. This may be beneficial to do after every upgrade, especially if you're validating a feature.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/cdpdm.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

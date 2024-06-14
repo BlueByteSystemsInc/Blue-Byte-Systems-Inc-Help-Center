@@ -4,6 +4,8 @@
   href: pdmconverttaskextended.md
   expanded: true 
   items: 
+  - name: "Example: Parts Book Creator"
+    href: partsbookcreator.md  
   - name: Installation/Update
     href: installingpdmconverttaskextended.md  
   - name: Installing/Updating using Auto-Updater
@@ -44,3 +46,6 @@
         href: pdm2exceloptions.md
     - name: Need more help?
       href: pdm2excelneedmorehelp.md
+- name: CDPDM
+  href: cdpdm.md
+  expanded: true 
