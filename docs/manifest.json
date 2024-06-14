@@ -292,6 +292,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/partsbookcreator.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/partsbookcreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdm2excel.md",
       "output": {
         ".html": {
