@@ -22,6 +22,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/blocked.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/blocked.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/cdpdm.png",
       "output": {
         "resource": {
@@ -396,6 +406,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmconverttaskextendedfaq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmqa.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmqa.html"
         }
       },
       "version": ""

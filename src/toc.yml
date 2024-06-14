@@ -49,3 +49,6 @@
 - name: CDPDM
   href: cdpdm.md
   expanded: true 
+- name: PDM Add-ins Trouble shooting
+  href: pdmqa.md
+  expanded: true 
