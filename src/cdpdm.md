@@ -20,9 +20,9 @@ The advantages of using CDPDM are numerous:
 
 - CDPDM is provided in your project kick-off email.
 - The email contains:
-  - CEX Attachment.
-  - Link to the page with installation instructions.
-  - Credentials.
+  - Link to the CEX file.
+  - Link to this page with installation instructions.
+  - Link to your Customer Configuration File.
 
 ## How to Install
 
@@ -36,20 +36,16 @@ The advantages of using CDPDM are numerous:
 ![CDPDM Installation](../images/cdpdm.png)
 
 ## Configuration
-
+- Start by downloading the Customer Configuration File from the project kick-off e-mail.
 - You can upload the Customer Configuration File via the Administration tool. 
 - Right-click on the add-in and click Upload Customer Configuration File...
-- Browse to the Customer Configuration File. This file link in the project kick-off email. 
+- Browse to the Customer Configuration File.
 
 
 ![CDPDM Menu](../images/cdpdm_menu.png)
 
-You can configure the settings of CDPDM by adding the server credentials manually.
-
-- Right-click on CDPDM under Add-ins in the Administration tool and click Settings...
-- Add the credentials from our support team.
-- Close the settings window.
-
+>[!NOTE]
+> You can configure the settings of CDPDM by adding the credentials of the Customer Configuration File manually. Contact support for help.
 
 
 ## Updating Add-ins
