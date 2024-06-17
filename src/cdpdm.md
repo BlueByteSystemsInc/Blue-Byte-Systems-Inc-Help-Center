@@ -62,3 +62,6 @@ You can:
 - Uninstall the add-in.
 
 The installation process will ask you if you want to restart PDM. This may be beneficial to do after every upgrade, especially if you're validating a feature.
+
+>[!NOTE]
+> Please allow for a few moments after you click Install/Update. The add-in will be downloaded unblocked and added to the vault. This operation includes suppressing some PDM dialog boxes.
