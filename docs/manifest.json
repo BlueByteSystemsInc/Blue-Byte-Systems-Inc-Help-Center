@@ -211,6 +211,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/thumbnail.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/thumbnail.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {

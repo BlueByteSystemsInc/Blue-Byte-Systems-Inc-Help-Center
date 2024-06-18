@@ -4,17 +4,20 @@
 > This is only available for consulting projects. Our product line has its own CD pipeline.
 
 
+> [!Video https://www.loom.com/embed/0caf90c77d4344cab8d88b0d318d6dcf?sid=ecf596af-8fe9-460c-9177-a568db909600]
+
+
 CDPDM is a PDM add-in by Blue Byte Systems Inc. that facilitates the deployment of PDM and task add-ins developed for you.
 
 The add-in communicates with our servers and allows the installation and uninstallation of all versions of your PDM add-ins.
 
-## Pros
+## Advantages
 
 The advantages of using CDPDM are numerous:
 
-- No need to ask for or download CEX files.
-- Ability to switch between versions.
-- The manual installation process is very tedious and time-consuming.
+- ✔️ No need to ask for or download CEX files.
+- ✔️ Ability to switch between versions.
+- ✔️ The conventional process of installing and updating add-ins is very tedious and time-consuming.
 
 ## Where to Find CDPDM
 
@@ -36,6 +39,7 @@ The advantages of using CDPDM are numerous:
 ![CDPDM Installation](../images/cdpdm.png)
 
 ## Configuration
+
 - Start by downloading the Customer Configuration File from the project kick-off e-mail.
 - You can upload the Customer Configuration File via the Administration tool. 
 - Right-click on the add-in and click Upload Customer Configuration File...
