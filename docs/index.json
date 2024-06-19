@@ -6,8 +6,8 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "Welcome to the Blue Byte Systems Product Help Center | Helper Center",
-    "keywords": "Welcome to the Blue Byte Systems Product Help Center Welcome to the Blue Byte Systems Product Help Center. Here, you will find the official documentation for our products. Before starting a support ticket, we highly recommend reviewing the specific product documentation available on this site. PDM Convert Task Extended To review the documentation for PDM Convert Task Extended, please click here. PDM2Excel To review the documentation for PDM2Excel, please click here. RevisionSync Documentation for RevisionSync is coming soon. Contact Us For more information or to contact us, please refer to the Contact Us page. Legacy documentation: PDM2Excel PDM Convert Task Extended RevisionSync"
+    "title": "Blue Byte Systems Inc. Help Center | Helper Center",
+    "keywords": "Blue Byte Systems Inc. Help Center Welcome to the Blue Byte Systems Help Center. Here, you will find the official documentation for our products as well other help articles about PDM and our tooling. Before starting a support ticket, we highly recommend reviewing the specific product documentation available on this site. Getting Started Click on Help Center to get started. Quick Links PDM Convert Task Extended: To review the documentation for PDM Convert Task Extended, please click here. PDM2Excel:To review the documentation for PDM2Excel, please click here. Contact Us For more information or to contact us, please refer to the Contact Us page."
   },
   "src/cdpdm.html": {
     "href": "src/cdpdm.html",

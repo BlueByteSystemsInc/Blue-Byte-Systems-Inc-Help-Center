@@ -1,30 +1,17 @@
----
-layout: landing
----
+# <div align="center"> <img src="/images/logo.png" width="120" height="60" style="vertical-align:middle;"/> Blue Byte Systems Inc. Help Center
+</div>
 
-# Welcome to the Blue Byte Systems Product Help Center
+Welcome to the **Blue Byte Systems Help Center**. Here, you will find the official documentation for our products as well other help articles about PDM and our tooling. Before starting a support ticket, we highly recommend reviewing the specific product documentation available on this site.
 
-Welcome to the Blue Byte Systems Product Help Center. Here, you will find the official documentation for our products. Before starting a support ticket, we highly recommend reviewing the specific product documentation available on this site.
+## Getting Started 
+Click on Help Center to get [started](../src/introduction.html).
 
-### PDM Convert Task Extended
+## Quick Links
 
-To review the documentation for PDM Convert Task Extended, please click [here](../docs/src/pdmconverttaskextended.html).
+- **PDM Convert Task Extended**: To review the documentation for PDM Convert Task Extended, please click [here](../src/pdmconverttaskextended.html).
+- **PDM2Excel**:To review the documentation for PDM2Excel, please click [here](../src/pdm2excel.html).
 
-### PDM2Excel
-
-To review the documentation for PDM2Excel, please click [here](../docs/src/pdm2excel.html).
-
-### RevisionSync
-
-Documentation for RevisionSync is coming soon.
 
 ## Contact Us
 
 For more information or to contact us, please refer to the [Contact Us](https://bluebyte.biz/contact) page.
-
-
-
-> **Legacy documentation:** 
-> - [PDM2Excel](https://bluebyte.biz/docs/pdm2excel/)
-> - [PDM Convert Task Extended](https://bluebyte.biz/docs/pdm-convert-task-extended/)
-> - [RevisionSync](https://bluebyte.biz/docs/revisionsync/)
