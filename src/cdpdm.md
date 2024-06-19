@@ -63,7 +63,7 @@ The advantages of using CDPDM are numerous:
 You can:
 
 - Install the selected add-in from the list. From the *Versions Available On Server* dropdown, you can select which version to install.
-- Uninstall the add-in.
+- Uninstall the selected add-in from the vault (if it is installed).
 
 The installation process will ask you if you want to restart PDM. This may be beneficial to do after every upgrade, especially if you're validating a feature.
 
