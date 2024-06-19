@@ -1,4 +1,9 @@
 {
+  "sitemap": {
+    "baseUrl": "https://docs.bluebyte.biz/",
+    "changefreq": "daily",
+    "priority": 0.5
+  },
   "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
   "xrefmap": "xrefmap.yml",
   "files": [

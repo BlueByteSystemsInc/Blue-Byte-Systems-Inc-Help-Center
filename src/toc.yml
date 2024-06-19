@@ -1,56 +1,61 @@
+
+- name: Help Center
 - name: Introduction
   href: introduction.md
-- name: Products
+
+- name: SOLIDDWORKS PDM Products 
+- name: PDM Convert Task Extended
+  href: pdmconverttaskextended.md
+  expanded: true 
+  items: 
+  - name: Installation/Update
+    href: installingpdmconverttaskextended.md  
+  - name: Installing/Updating using Auto-Updater
+    href: usingautoupdaterpdmconverttaskextended.md
+  - name: License Management
+    href: licensespdmconverttaskextended.md
+  - name: License Common Issues
+    href: licenseissues.md
+  - name: Setting your task
+    href: propertiespagepdmconverttaskextended.md
+    expanded: true 
+    items:
+     - name: Options Tab
+       href: options.md
+     - name: Conditions Tab
+       href: Conditions.md
+     - name: Notes Tab
+       href: Notes.md
+     - name: Frequently Asked Questions
+       href: pdmconverttaskextendedfaq.md
+     - name: "Example: Parts Book Creator"
+       href: partsbookcreator.md  
+- name: PDM2Excel
+  href: pdm2excel.md
   expanded: true
   items:
-  - name: PDM Convert Task Extended
-    href: pdmconverttaskextended.md
-    expanded: true 
-    items: 
-    - name: Installation/Update
-      href: installingpdmconverttaskextended.md  
-    - name: Installing/Updating using Auto-Updater
-      href: usingautoupdaterpdmconverttaskextended.md
-    - name: License Management
-      href: licensespdmconverttaskextended.md
-    - name: License Common Issues
-      href: licenseissues.md
-    - name: Setting your task
-      href: propertiespagepdmconverttaskextended.md
-      expanded: true 
-      items:
+   - name: Installation/Update
+     href: pdm2excelinstalling.md
+   - name: Installing/Updating using Auto-Updater
+     href: pdm2excelautoupdater.md
+   - name: License Management
+     href: pdm2excellicensemanagement.md
+   - name: License Common Issues
+     href: pdm2excellicenseissues.md
+   - name: Setting your task
+     href: pdm2excelnewtask.md
+     expanded: true
+     items:  
       - name: Options Tab
-        href: options.md
-      - name: Conditions Tab
-        href: Conditions.md
-      - name: Notes Tab
-        href: Notes.md
-    - name: Frequently Asked Questions
-      href: pdmconverttaskextendedfaq.md
-    - name: "Example: Parts Book Creator"
-      href: partsbookcreator.md  
-  - name: PDM2Excel
-    href: pdm2excel.md
-    expanded: true
-    items:
-      - name: Installation/Update
-        href: pdm2excelinstalling.md
-      - name: Installing/Updating using Auto-Updater
-        href: pdm2excelautoupdater.md
-      - name: License Management
-        href: pdm2excellicensemanagement.md
-      - name: License Common Issues
-        href: pdm2excellicenseissues.md
-      - name: Setting your task
-        href: pdm2excelnewtask.md
-        expanded: true
-        items:  
-        - name: Options Tab
-          href: pdm2exceloptions.md
+        href: pdm2exceloptions.md
       - name: Need more help?
         href: pdm2excelneedmorehelp.md
+        
+- name: Blue Byte Systems Inc worktools
 - name: CDPDM
   href: cdpdm.md
+
+- name: Deployment FAQs
 - name: PDM Add-ins Trouble shooting
   href: pdmqa.md
  
