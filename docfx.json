@@ -33,7 +33,7 @@
       "_appFooter": "<span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁.</span>",
       "_appLogoPath": "images/fav.png",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": false
     }
   }
 }
