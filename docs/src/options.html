@@ -101,7 +101,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Output</strong></td>
-<td style="text-align: left;">This is where you specify the location where you want the exported documents to be saved. This location can be inside or outside the vault.</td>
+<td style="text-align: left;">This is where you specify the <strong>location</strong> and the <strong>filename</strong> where you want the exported documents to be saved. This location can be inside or outside the vault.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Extensions</strong></td>
@@ -109,19 +109,19 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Logging</strong></td>
-<td style="text-align: left;"><ul><li>Specify if you want the logs to be stored in the cloud.</li><li>Specify where you want the logs to be saved. The location must be in PDM.</li></ul></td>
+<td style="text-align: left;"><ul><li><strong>Enable logging</strong>: Enables task to create logs.</li><li><strong>Log to server</strong>: Specify if you want the logs to be stored in the cloud.</li><li><strong>Log folder</strong>: Specify where you want the logs to be saved. The location must be in PDM.</li></ul></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Export</strong></td>
-<td style="text-align: left;"><ul><li>Export referenced documents of assemblies: This means that if the processed file is an assembly, the task will attempt to export all the available references from the assembly.</li><li>Merge referenced documents<ul><li>This will merge all exported PDFs.</li></ul><li>Export all configurations<ul><li>This will attempt to export all configurations of parts and assemblies.</li><li>Please make sure you include the configuration name alias in the output filename.</li></ul></li><li>Work with latest version<ul><li>Task will attempt to get the latest version of the file to be printed.</li></ul></li><li>QuickView<ul><li>Opens documents in quick view or large design mode.</li><li>This option will increase performance with large documents.</li></ul><li>Archive<ul><li>Creates a zip file of the processed files</li></ul></li><li>Applies conditions<ul><li>Does not apply conditions when processing assemblies.</li></ul><li>Export sheet metal parts<ul><li>When enabled, task attempt to open referenced sheet metal parts from their drawing document and export their flat pattern as the specified dxf or dwg extension.</li><li>This option will not work if drawings are opened in quick view mode.</li><li>The notation flatPattern will be appended to the filename of the flat pattern.</li></ul></li></ul></td>
+<td style="text-align: left;"><ul><li><strong>Export referenced documents of a top-level assembly</strong>: This means that if the processed file is an assembly, the task will attempt to export all the available references from the assembly.</li><li><strong>Merge PDFs?</strong><ul><li>This will merge all exported PDFs.</li></ul><li><strong>Export all configurations</strong><ul><li>This will attempt to export all configurations of parts and assemblies.</li><li>Please make sure you include the configuration name alias in the output filename.</li></ul></li><li><strong>Work with latest version</strong><ul><li>Task will attempt to get the latest version of the file to be printed.</li></ul></li><li><strong>Quick view Mode (Drawings Only)</strong><ul><li>Opens documents in quick view or large design mode.</li><li>This option will increase performance with large documents.</li></ul><li><strong>Archive PDFs</strong><ul><li>Creates a zip file of the processed files</li></ul></li><li><strong>Applies conditions when processing referenced documents</strong><ul><li>Does not apply conditions when processing assemblies.</li></ul><li><strong>Export sheet metal parts as DXF</strong><ul><li>When enabled, task attempt to open referenced sheet metal parts from their drawing document and export their flat pattern as the specified dxf or dwg extension.</li><li>This option will not work if drawings are opened in quick view mode.</li><li>The notation flatPattern will be appended to the filename of the flat pattern.</li></ul></li></ul></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Watermark</strong></td>
+<td style="text-align: left;"><strong>Enable watermark</strong></td>
 <td style="text-align: left;">Add a watermark to the printed PDF. You can use the special value <strong>($CustomProperty)</strong> if the value of the desired watermark is found in a custom property.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Quantity</strong></td>
-<td style="text-align: left;">Add the document quantity from the calculated BOM of the top-level assembly. Two options:<ul><li>Using custom property in your sheet format. Task writes quantity to custom property and rebuilds drawing.</li><li>Define the location and pretext of a note the task adds to drawing before printing to DPF. Use this option if you do not have a predefined custom property in your sheet format</li></ul></td>
+<td style="text-align: left;">Make to sure to check <em>Add Quantity</em> to enable this feature. This feature adds the document quantity from the calculated BOM of the top-level assembly. <br>Two options:<ul><li>Using custom property in your sheet format. Task writes quantity to custom property and rebuilds drawing.</li><li>Define the location and pretext of a note the task adds to drawing before printing to DPF. Use this option if you do not have a predefined custom property in your sheet format</li></ul></td>
 </tr>
 </tbody>
 </table>
