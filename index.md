@@ -1,3 +1,7 @@
+---
+_layout: landing
+---
+
 # <div align="center"> <img src="/images/logo.png" width="120" height="60" style="vertical-align:middle;"/> Blue Byte Systems Inc. Help Center
 </div>
 
