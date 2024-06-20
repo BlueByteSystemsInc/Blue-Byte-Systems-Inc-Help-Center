@@ -26,8 +26,6 @@ To manage your license:
 To activate a license:
 - *Enter* your license key and *click* ***Activate*** to consume the license from the **[previous step](#managing-a-license)**.
 
-**TODO: Update image with PDM2Excel image**
-
 <p align="center">
   <img src="../images/pdmconverttaskextendedactivatelicense.png" alt="Activate license" width="800">
 </p>
