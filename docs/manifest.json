@@ -137,6 +137,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmconverttaskextended.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmconverttaskextended.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmconverttaskextendedactivatelicense.png",
       "output": {
         "resource": {
