@@ -28,8 +28,10 @@
        href: Notes.md
      - name: Frequently Asked Questions
        href: pdmconverttaskextendedfaq.md
-     - name: "Example: Parts Book Creator"
-       href: partsbookcreator.md  
+
+     - name: In depth articles
+     - name: Special/Dynamic Variables
+       href: pdmconverttaskextendedspecialvariable.md  
 - name: PDM2Excel
   href: pdm2excel.md
   expanded: true

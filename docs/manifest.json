@@ -217,6 +217,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/specialvariable.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/specialvariable.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/tabs.png",
       "output": {
         "resource": {
@@ -431,6 +441,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmconverttaskextendedfaq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmconverttaskextendedspecialvariable.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmconverttaskextendedspecialvariable.html"
         }
       },
       "version": ""
