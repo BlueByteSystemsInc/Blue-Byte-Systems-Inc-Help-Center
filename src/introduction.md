@@ -10,11 +10,6 @@ PDM Convert Task Extended simplifies the conversion of files within your SOLIDWO
 
 PDM2Excel bridges the gap between your PDM system and Excel, enabling seamless data export. This tool allows you to extract and organize PDM data into Excel spreadsheets for analysis, reporting, and sharing. It enhances data accessibility and helps you make informed decisions based on accurate information.
 
-## RevisionSync
-
-RevisionSync ensures consistency across your PDM system by synchronizing revisions automatically. This tool helps maintain the integrity of your data, preventing discrepancies and ensuring that all users have access to the latest version of files. It streamlines the revision process and enhances collaboration within your team.
-
-
 
 # Getting support 
 
