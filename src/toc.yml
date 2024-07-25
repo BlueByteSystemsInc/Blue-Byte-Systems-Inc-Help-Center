@@ -10,7 +10,7 @@
   items: 
   - name: Installation/Update
     href: installingpdmconverttaskextended.md  
-  - name: Installing/Updating using Auto-Updater
+  - name: Installing/Updating using CDPDM
     href: usingautoupdaterpdmconverttaskextended.md
   - name: License Management
     href: licensespdmconverttaskextended.md
@@ -38,7 +38,7 @@
   items:
    - name: Installation/Update
      href: pdm2excelinstalling.md
-   - name: Installing/Updating using Auto-Updater
+   - name: Installing/Updating using CDPDM
      href: pdm2excelautoupdater.md
    - name: License Management
      href: pdm2excellicensemanagement.md

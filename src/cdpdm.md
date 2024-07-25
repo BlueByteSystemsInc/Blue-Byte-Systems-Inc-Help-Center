@@ -1,7 +1,7 @@
 # Continuous Delivery
 
 >[!NOTE]
-> This is only available for consulting projects. Our product line has its own CD pipeline.
+> This is available for consulting projects and/or if you have purchased purchased a product from us.
 
 
 > [!Video https://www.loom.com/embed/0caf90c77d4344cab8d88b0d318d6dcf?sid=ecf596af-8fe9-460c-9177-a568db909600]
@@ -62,7 +62,7 @@ The advantages of using CDPDM are numerous:
 
 You can:
 
-- Install the selected add-in from the list. From the *Versions Available On Server* dropdown, you can select which version to install.
+- Install the selected add-in from the list. From the *Versions* dropdown, you can select which version to install.
 - Uninstall the selected add-in from the vault (if it is installed).
 
 The installation process will ask you if you want to restart PDM. This may be beneficial to do after every upgrade, especially if you're validating a feature.

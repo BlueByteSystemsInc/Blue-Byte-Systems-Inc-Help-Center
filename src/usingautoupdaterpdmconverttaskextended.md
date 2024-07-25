@@ -1,41 +1,35 @@
-# Auto-updater add-in
+# Updating PDM Convert Task with CDPDM
 
+This article is about updating the PDM Convert Task using the CDPDM add-in, developed by Blue Byte Systems, Inc. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.
 
+### Installation Steps:
 
-The auto-updater add-in is a tool developed by Blue Byte Systems, Inc. to streamline our code delivery process for our SOLIDWORKS PDM customers.
+1. **Download the CDPDM add-in**: The link is provided in your order confirmation and is also available in the downloads section of your account.
+2. **Unblock the downloaded file**: Right-click on the zip archive and select **Properties**. In the properties dialog, check the **Unblock** option and click **OK**.
+3. **Unzip the archive**: Extract the contents of the zip archive.
+4. **Open the administration tool**: Log into your vault.
+5. **Import the add-in**:
+    - Go to **File > Open** and browse to `CDPDM.cex` (unzipped content).
+    - Click **OK** to open the CEX file.
+    - Drag and drop the CDPDM add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.
+6. **Upload the customer configuration file**:
+    - Locate the customer configuration file from your order confirmation email.
+    - Unblock the downloaded configuration file: Right-click on the file, select **Properties**, check the **Unblock** option, and click **OK**.
+    - Right-click on the CDPDM add-in and click on **Update customer configuration file...**
+    - Browse to the unblocked customer configuration file and upload it.
 
-The tool is an add-in that allows you to access your purchased add-ins and all their versions.
+### Updating an Add-in:
 
-To install the add-in:
-
-1. **Download the auto-updater add-in**. The link is in your order confirmation. It’s also accessible from the downloads section in your account.
-2. The auto-updater add-in is a zip archive, so make sure to right-click on it and unblock it from the file’s properties before you unzip its content.
-3. In your administration tool, log into your vault and then go to **File > Open** and browse to `Auto-UpdaterAddInVX.cex` (unzipped content).
-4. Click **OK** to open the CEX file.
-5. Drag and drop the auto-updater add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.
-6. Right-click on the add-in and click on **Server Credentials…**
-7. Add your server credentials and click on **Close**. Your server credentials are your Blue Byte Systems account credentials.
-
-To update an add-in:
-
-1. Right-click on the add-in and click on **Update add-ins…**
+1. Right-click on the CDPDM add-in and click on **Update add-ins…**
 2. This will show the main dialog of the add-in where you can select from the dropdown list the program you would like to install.
 3. Click on the **Install** button to install the selected add-in.
 4. The process might take a few moments, so please wait.
 5. You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in.
 
-<p align="center">
-  <video src="../images/preview.mp4" controls type="video/mp4" width="800"/>
-</p>
+### Warnings
 
+> [!Warning]
+> You must back up your tasks. The CDPDM add-in does not update your existing tasks or permit the add-in the *Task Host Configuration*.
 
-# Warnings
-
->[!Warning]
-> You must backup your tasks. The auto-updater does not update your existing tasks or permit the add-in the *Task Host Configuration*.
-
-
->[!Warning]
+> [!Warning]
 > All client computers using the add-in's tasks must be restarted to use the new version.
-
-
