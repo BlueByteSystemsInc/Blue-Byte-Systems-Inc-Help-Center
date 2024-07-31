@@ -1,9 +1,5 @@
 # Continuous Delivery
 
->[!NOTE]
-> This is available for consulting projects and/or if you have purchased purchased a product from us.
-
-
 > [!Video https://www.loom.com/embed/0caf90c77d4344cab8d88b0d318d6dcf?sid=ecf596af-8fe9-460c-9177-a568db909600]
 
 
@@ -21,15 +17,26 @@ The advantages of using CDPDM are numerous:
 
 ## Where to Find CDPDM
 
-- CDPDM is provided in your project kick-off email.
+### If we have a developed a custom solution for you:
+
+- CDPDM is provided in your project onboarding email.
 - The email contains:
   - Link to the CEX file.
   - Link to this page with installation instructions.
   - Link to your Customer Configuration File.
 
+
+### If you have purchased a PDM product from us:
+
+- Your Blue Byte Systems Inc account has all the information you need. You can access your account from this link [here](https://bluebyte.biz/account).
+- From the Downloads tab, please download the archive file that contains `CDPDM.cex` and the Customer Configuration File.
+
+>[!NOTE]
+> If you have purchased one of our PDM products and have had us develop a custom solution for you, please reach to us so we can generate a Customer Configuration File that lets you access all of your assets.
+
 ## How to Install
 
-- Start by downloading the CEX file.
+- Locate `CDPDM.cex`.
 - In Windows 11, 10, and 7, internet downloads are blocked. Right-click on the CEX file, go to Properties, check Unblock, then click Apply and OK.
 - Open the Administration tool.
 - Log in to the vault. Please ensure you use a PDM user with Edit Add-Ins permission.
@@ -40,7 +47,7 @@ The advantages of using CDPDM are numerous:
 
 ## Configuration
 
-- Start by downloading the Customer Configuration File from the project kick-off e-mail.
+- Locate your Customer Configuration File.
 - You can upload the Customer Configuration File via the Administration tool. 
 - Right-click on the add-in and click Upload Customer Configuration File...
 - Browse to the Customer Configuration File.
