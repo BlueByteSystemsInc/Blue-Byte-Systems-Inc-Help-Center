@@ -287,16 +287,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/installingpdmconverttaskextended.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/installingpdmconverttaskextended.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "src/introduction.md",
       "output": {
         ".html": {
@@ -371,16 +361,6 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2excelautoupdater.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/pdm2excelinstalling.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/pdm2excelinstalling.html"
         }
       },
       "version": ""

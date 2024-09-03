@@ -8,8 +8,6 @@
   href: pdmconverttaskextended.md
   expanded: true 
   items: 
-  - name: Installation/Update
-    href: installingpdmconverttaskextended.md  
   - name: Installing/Updating using CDPDM
     href: usingautoupdaterpdmconverttaskextended.md
   - name: License Management
@@ -36,8 +34,6 @@
   href: pdm2excel.md
   expanded: true
   items:
-   - name: Installation/Update
-     href: pdm2excelinstalling.md
    - name: Installing/Updating using CDPDM
      href: pdm2excelautoupdater.md
    - name: License Management
