@@ -5,6 +5,15 @@ This article is about updating the PDM2Excel add-in using the CDPDM add-in, deve
 ### Installation Steps:
 
 1. **Download the CDPDM add-in**: The link is provided in your order confirmation and is also available in the downloads section of your account.
+
+
+<center>
+<p>
+<img  src="../images/confirmationemail.png"/>
+</p>
+</center>
+
+
 2. **Unblock the downloaded file**: Right-click on the zip archive and select **Properties**. In the properties dialog, check the **Unblock** option and click **OK**.
 3. **Unzip the archive**: Extract the contents of the zip archive.
 4. **Open the administration tool**: Log into your vault.
