@@ -1,7 +1,7 @@
 # PDM Publisher
 
 
-Thank you for choosing **[PDM Publisher](https://bluebyte.biz/product/pdm-convert-task-extended/)**!
+Thank you for choosing **[PDM Publisher](https://bluebyte.biz/product/pdmpublisher/)**!
 
 
 PDM Publisher is a SOLIDWORKS PDM task add-in that lets you **save** your SOLIDWORKS files using advanced filters and provides power capabilities to place **custom properties/datacard**, **BOM quantities** on PDFs and **merge** them.  
