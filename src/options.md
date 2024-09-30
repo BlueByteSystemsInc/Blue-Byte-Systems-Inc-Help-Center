@@ -1,7 +1,7 @@
 
 ## Options Setup Page
 
-When you choose PDM Task Convert Extended from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
+When you choose PDM Publisher from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
 
 <p align="center">
   <img src="../images/pdmconverttaskextendedoptionssetuppage.png" alt="Options Setup Page" width="800">
@@ -18,7 +18,7 @@ When you choose PDM Task Convert Extended from the dropdown in the new task dial
 
 ### Important Notes About Creating Tasks
 
-Please consider the following recommendations when creating a new task using PDM Convert Task Extended:
+Please consider the following recommendations when creating a new task using PDM Publisher:
 1. **Execution method**
     1. In the execution method tab that appears on the blue left sidebar, please: 
     2. Choose the radio box option **“Let the system decide which computer to execute the task“**.

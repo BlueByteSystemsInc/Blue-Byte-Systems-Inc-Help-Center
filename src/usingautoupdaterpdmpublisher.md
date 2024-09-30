@@ -1,6 +1,6 @@
-# Updating PDM Convert Task with CDPDM
+# Updating PDM Publisher with CDPDM
 
-This article is about updating the PDM Convert Task using the CDPDM add-in, developed by Blue Byte Systems, Inc. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.
+This article is about updating the PDM Publisher using the CDPDM add-in, developed by Blue Byte Systems, Inc. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.
 
 ### Installation Steps:
 

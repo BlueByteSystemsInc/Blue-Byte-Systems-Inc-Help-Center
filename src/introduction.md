@@ -2,9 +2,9 @@
 
 Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:
 
-## PDM Convert Task Extended
+## PDM Publisher
 
-PDM Convert Task Extended simplifies the conversion of files within your SOLIDWORKS PDM vault. This add-in automates the process, saving you time and reducing manual effort. It supports multiple file formats and provides flexible configuration options to suit your specific requirements.
+PDM Publisher simplifies the conversion of files within your SOLIDWORKS PDM vault. This add-in automates the process, saving you time and reducing manual effort. It supports multiple file formats and provides flexible configuration options to suit your specific requirements.
 
 ## PDM2Excel
 

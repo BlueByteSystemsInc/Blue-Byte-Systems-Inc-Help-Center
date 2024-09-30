@@ -277,6 +277,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/annotations.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/annotations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/cdpdm.md",
       "output": {
         ".html": {
@@ -317,20 +327,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/licensespdmconverttaskextended.md",
+      "source_relative_path": "src/licensespdmpublisher.md",
       "output": {
         ".html": {
-          "relative_path": "src/licensespdmconverttaskextended.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/notes.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/notes.html"
+          "relative_path": "src/licensespdmpublisher.html"
         }
       },
       "version": ""
@@ -427,30 +427,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/pdmconverttaskextended.md",
+      "source_relative_path": "src/pdmpublisher.md",
       "output": {
         ".html": {
-          "relative_path": "src/pdmconverttaskextended.html"
+          "relative_path": "src/pdmpublisher.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/pdmconverttaskextendedfaq.md",
+      "source_relative_path": "src/pdmpublisherextendedfaq.md",
       "output": {
         ".html": {
-          "relative_path": "src/pdmconverttaskextendedfaq.html"
+          "relative_path": "src/pdmpublisherextendedfaq.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/pdmconverttaskextendedspecialvariable.md",
+      "source_relative_path": "src/pdmpublisherspecialvariable.md",
       "output": {
         ".html": {
-          "relative_path": "src/pdmconverttaskextendedspecialvariable.html"
+          "relative_path": "src/pdmpublisherspecialvariable.html"
         }
       },
       "version": ""
@@ -467,10 +467,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/propertiespagepdmconverttaskextended.md",
+      "source_relative_path": "src/propertiespagepdmpublisher.md",
       "output": {
         ".html": {
-          "relative_path": "src/propertiespagepdmconverttaskextended.html"
+          "relative_path": "src/propertiespagepdmpublisher.html"
         }
       },
       "version": ""
@@ -490,10 +490,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/usingautoupdaterpdmconverttaskextended.md",
+      "source_relative_path": "src/usingautoupdaterpdmpublisher.md",
       "output": {
         ".html": {
-          "relative_path": "src/usingautoupdaterpdmconverttaskextended.html"
+          "relative_path": "src/usingautoupdaterpdmpublisher.html"
         }
       },
       "version": ""

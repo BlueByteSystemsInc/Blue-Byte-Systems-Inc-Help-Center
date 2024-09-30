@@ -1,9 +1,9 @@
-# Notes Setup Page
+# Annotations Setup Page
 
-Notes can be added to converted PDF documents via this the ***Notes*** setup page.
+Notes can be added to converted PDF documents via this the ***Annotations*** setup page.
 
 <p align="center">
-  <img src="../images/pdmconverttaskextendednotessetuppage.png" alt="Notes Setup Page" width="800">
+  <img src="../images/pdmconverttaskextendednotessetuppage.png" alt="Annotations Setup Page" width="800">
 </p>
 
 To add a note, *click* the ***Add*** or ***Import...*** button.  

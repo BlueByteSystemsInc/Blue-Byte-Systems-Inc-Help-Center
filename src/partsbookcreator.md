@@ -1,6 +1,6 @@
 # Example
 
-This page explains how to configure a PDM Convert Task Extended to create a parts book.
+This page explains how to configure a PDM Publisher to create a parts book.
 
 ## Parts Book
 

@@ -6,7 +6,7 @@ This section denotes how to manage a license.
 
 Your license is made of a **secret key** that was provided to you in the *order confirmation email*.  
 
-Your license entitles you to use PDM Convert Task Extended:
+Your license entitles you to use PDM Publisher:
 
 - For a specified duration.
 - A number of domains (number of vaults where you can install the add-in).
@@ -42,7 +42,7 @@ To renew the license, please follow these instructions:
 > Do not commence the process below until you have your license key.
 
 1. *Open* the PDM Administration tool.
-2. *Expand* the Add-in nodes and *right-click* on PDM Convert Task Extended.
+2. *Expand* the Add-in nodes and *right-click* on PDM Publisher.
 3. *Click* ***Manage license…***
 4. *Click* ***Deactivate*** (You must be connected to the Internet).
 5. *Close* the window.

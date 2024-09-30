@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Annotations Setup Page | Helper Center </title>
+      <title>Updating PDM Publisher with CDPDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Annotations Setup Page | Helper Center ">
+      <meta name="title" content="Updating PDM Publisher with CDPDM | Helper Center ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/notes.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/usingautoupdaterpdmpublisher.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,37 +85,60 @@
         </div>
 
         <article data-uid="">
-<h1 id="annotations-setup-page">Annotations Setup Page</h1>
+<h1 id="updating-pdm-publisher-with-cdpdm">Updating PDM Publisher with CDPDM</h1>
 
-<p>Notes can be added to converted PDF documents via this the <em><strong>Annotations</strong></em> setup page.</p>
+<p>This article is about updating the PDM Publisher using the CDPDM add-in, developed by Blue Byte Systems, Inc. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.</p>
+<h3 id="installation-steps">Installation Steps:</h3>
+<ol>
+<li><strong>Download the CDPDM add-in</strong>: The link is provided in your order confirmation and is also available in the downloads section of your account.</li>
+</ol>
 <p align="center">
-  <img src="../images/pdmconverttaskextendednotessetuppage.png" alt="Annotations Setup Page" width="800">
+  <img src="../images/confirmationemail.png" alt="Confirmation Email Example">
+  <br>
+  <em>Confirmation Email Example</em>
 </p>
-<p>To add a note, <em>click</em> the <em><strong>Add</strong></em> or <em><strong>Import...</strong></em> button.<br>
-A note is defined by:</p>
-<table>
-<thead>
-<tr>
-<th>Definition</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Location</td>
-<td>Use the sliders on the right side of the note text area to define the location.</td>
-</tr>
-<tr>
-<td>Value</td>
-<td>The text area allows combinations of text and special values. The special values are evaluated for you during the task execution.</td>
-</tr>
-</tbody>
-</table>
+<ol start="2">
+<li><strong>Unblock the downloaded file</strong>: Right-click on the zip archive and select <strong>Properties</strong>. In the properties dialog, check the <strong>Unblock</strong> option and click <strong>OK</strong>.</li>
+<li><strong>Unzip the archive</strong>: Extract the contents of the zip archive.</li>
+<li><strong>Open the administration tool</strong>: Log into your vault.</li>
+<li><strong>Import the add-in</strong>:
+<ul>
+<li>Go to <strong>File &gt; Open</strong> and browse to <code>CDPDM.cex</code> (unzipped content).</li>
+<li>Click <strong>OK</strong> to open the CEX file.</li>
+<li>Drag and drop the CDPDM add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.</li>
+</ul>
+</li>
+<li><strong>Upload the customer configuration file</strong>:
+<ul>
+<li>Locate the customer configuration file from your order confirmation email.</li>
+<li>Unblock the downloaded configuration file: Right-click on the file, select <strong>Properties</strong>, check the <strong>Unblock</strong> option, and click <strong>OK</strong>.</li>
+<li>Right-click on the CDPDM add-in and click on <strong>Update customer configuration file...</strong></li>
+<li>Browse to the unblocked customer configuration file and upload it.</li>
+</ul>
+</li>
+</ol>
+<h3 id="updating-an-add-in">Updating an Add-in:</h3>
+<ol>
+<li>Right-click on the CDPDM add-in and click on <strong>Update add-ins…</strong></li>
+<li>This will show the main dialog of the add-in where you can select from the dropdown list the program you would like to install.</li>
+<li>Click on the <strong>Install</strong> button to install the selected add-in.</li>
+<li>The process might take a few moments, so please wait.</li>
+<li>You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in.</li>
+</ol>
+<h3 id="warnings">Warnings</h3>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>You must back up your tasks. The CDPDM add-in does not update your existing tasks or permit the add-in the <em>Task Host Configuration</em>.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>All client computers using the add-in's tasks must be restarted to use the new version.</p>
+</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/notes.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/usingautoupdaterpdmpublisher.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

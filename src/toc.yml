@@ -4,32 +4,33 @@
   href: introduction.md
 
 - name: SOLIDDWORKS PDM Products 
-- name: PDM Convert Task Extended
-  href: pdmconverttaskextended.md
+- name: PDM Publisher
+  href: pdmpublisher.md
   expanded: true 
   items: 
   - name: Installing/Updating using CDPDM
-    href: usingautoupdaterpdmconverttaskextended.md
+    href: usingautoupdaterpdmpublisher.md
   - name: License Management
-    href: licensespdmconverttaskextended.md
+    href: licensespdmpublisher.md
   - name: License Common Issues
     href: licenseissues.md
   - name: Setting your task
-    href: propertiespagepdmconverttaskextended.md
+    href: propertiespagepdmpublisher.md
     expanded: true 
     items:
      - name: Options Tab
        href: options.md
      - name: Conditions Tab
        href: Conditions.md
-     - name: Notes Tab
-       href: Notes.md
+     - name: Annotations Tab
+       href: annotations.md
      - name: Frequently Asked Questions
-       href: pdmconverttaskextendedfaq.md
+       href: pdmpublisherfaq.md
 
      - name: In depth articles
      - name: Special/Dynamic Variables
-       href: pdmconverttaskextendedspecialvariable.md  
+       href: pdmpublisherspecialvariable.md  
+
 - name: PDM2Excel
   href: pdm2excel.md
   expanded: true

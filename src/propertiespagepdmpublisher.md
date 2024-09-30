@@ -3,7 +3,7 @@
 
 This section will detail the setup pages that require explanation.
 
-When you create a new task, please choose PDM Convert Task Extended from the dropdown in the first page of the task setup dialog like below: 
+When you create a new task, please choose PDM Publisher from the dropdown in the first page of the task setup dialog like below: 
 
 <p align="center">
   <img src="../images/newtask.png" alt="New Task" width="800">
