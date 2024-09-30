@@ -12,7 +12,7 @@ Click on Help Center to get [started](../src/introduction.html).
 
 ## Quick Links
 
-- **PDM Publisher**: To review the documentation for PDM Publisher, please click [here](../src/pdmconverttaskextended.html).
+- **PDM Publisher**: To review the documentation for PDM Publisher, please click [here](../src/pdmpublisher.html).
 - **PDM2Excel**:To review the documentation for PDM2Excel, please click [here](../src/pdm2excel.html).
 
 
