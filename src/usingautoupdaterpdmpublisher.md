@@ -32,6 +32,7 @@ This article is about updating the PDM Publisher using the CDPDM add-in, develop
 3. Click on the **Install** button to install the selected add-in.
 4. The process might take a few moments, so please wait.
 5. You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in.
+6. You may want to restart the administration tool (conisioadmin.exe) so the add-in reloads properly before you consume your license or create/edit your tasks.
 
 ### Warnings
 
