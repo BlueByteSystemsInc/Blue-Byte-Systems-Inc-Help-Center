@@ -3,13 +3,15 @@
 - name: Introduction
   href: introduction.md
 
-- name: SOLIDDWORKS PDM Products 
+- name: SOLIDDWORKS PDM Products   
+
+- name: Installing/Updating PDM add-ins with CDPDM
+  href: updateaddinswithcdpdm.md
+
 - name: PDM Publisher
   href: pdmpublisher.md
   expanded: true 
   items: 
-  - name: Installing/Updating using CDPDM
-    href: usingautoupdaterpdmpublisher.md
   - name: License Management
     href: licensespdmpublisher.md
   - name: License Common Issues
@@ -35,8 +37,6 @@
   href: pdm2excel.md
   expanded: true
   items:
-   - name: Installing/Updating using CDPDM
-     href: pdm2excelautoupdater.md
    - name: License Management
      href: pdm2excellicensemanagement.md
    - name: License Common Issues

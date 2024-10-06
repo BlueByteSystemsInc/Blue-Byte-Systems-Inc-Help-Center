@@ -377,16 +377,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/pdm2excelautoupdater.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/pdm2excelautoupdater.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "src/pdm2excellicenseissues.md",
       "output": {
         ".html": {
@@ -500,10 +490,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/usingautoupdaterpdmpublisher.md",
+      "source_relative_path": "src/updateaddinswithcdpdm.md",
       "output": {
         ".html": {
-          "relative_path": "src/usingautoupdaterpdmpublisher.html"
+          "relative_path": "src/updateaddinswithcdpdm.html"
         }
       },
       "version": ""
