@@ -22,8 +22,4 @@ For additional support, please contact us through the **[contact](https://blueby
 
 
 
-<br>
-
-![Animated Counter](../images/pdmconverttaskextended.gif)
-
 
