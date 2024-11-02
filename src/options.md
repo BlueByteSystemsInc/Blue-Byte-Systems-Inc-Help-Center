@@ -13,8 +13,8 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **File Formats** | This section specifies the file formats available for export. |
 | **Export History** | <ul><li>**Turn on activity tracking**: Enables tracking of activity.</li><li>**Server-Synced Activity Logs**: Logs are synchronized with the server.</li><li>**Log Folder (Vault)**: Specify the location in the vault where logs are stored.</li></ul> |
 | **Export** | <ul><li>**Export referenced components of the assembly to selected file formats individually**: Exports each referenced component to the chosen file format.</li><li>**Merge exported PDFs into one master PDF**: Merges all exported PDFs into a single file.</li><li>**Work with latest version**: Task will work with the latest version of the file.</li><li>**Quick view Mode (Drawings Only)**: Opens documents in quick view for better performance with large drawings.</li><li>**Convert Multiple Configurations**: Attempts to export all configurations.</li><li>**Archive all exported documents (.zip)**: Creates a zip file of all processed documents.</li><li>**Export sheet metal parts to 1:1 flat pattern DXF**: Exports sheet metal parts as DXF files.</li><li>**Use search to locate drawings**: Allows using search functionality to find drawings.</li></ul> |
-| **Table of Content** | <ul><li>**Add Table of Content to Top-Level Assembly PDF (Experimental)**: Includes a table of contents in the top-level assembly PDF.</li><li>**Paper size**: swDwgPaperAsize.</ul> |
-| **watermark** | Add a watermark to the printed PDF.  |
+| **Table of Content** | <ul><li>**Add Table of Content to Top-Level Assembly PDF**: Includes a table of contents in the top-level assembly PDF or a simple BOM. The simple BOM has description column and a quantity column.</li><li>**Paper size**: Size of the page used for the table of content of the simple BOM.</ul> |
+| **watermark** | Add a watermark to the printed PDF. This watermark is an evaluated expression. You can include a mix of text and variables. |
 
 
 ### Important Notes About Creating Tasks
