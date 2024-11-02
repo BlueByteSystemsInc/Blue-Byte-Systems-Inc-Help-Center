@@ -6,6 +6,19 @@ Thank you for choosing **[PDM Publisher](https://bluebyte.biz/product/pdmpublish
 
 PDM Publisher is a SOLIDWORKS PDM task add-in that lets you **save** your SOLIDWORKS files using advanced filters and provides power capabilities to place **custom properties/datacard**, **BOM quantities** on PDFs and **merge** them.  
 
+It can convert SOLIDWORKS files to the following extensions:
+
+1. **PDF (Portable Document Format)**: A versatile format for sharing documents that preserves formatting across different devices.
+2. **DWG (Drawing)**: A file format used in AutoCAD for creating and editing 2D and 3D drawings.
+3. **DXF (Drawing Exchange Format)**: A format designed for interoperability between AutoCAD and other software, facilitating data exchange.
+4. **U3D (Universal 3D)**: A file format for 3D models, commonly embedded in documents to provide interactive 3D visualization.
+5. **STL (Stereolithography)**: A widely used format for 3D printing that represents the surface geometry of a 3D object.
+6. **STEP (Standard for the Exchange of Product Model Data)**: A format that enables compatibility and data exchange between different CAD systems.
+7. **EPRT (eDrawings Part File)**: A file format used for 3D model representations in eDrawings software.
+8. **EASM (eDrawings Assembly File)**: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.
+9. **HTML (HyperText Markup Language)**: The standard markup language for creating web pages, allowing the display of text, images, and links.
+10. **X_T (Parasolid Model File)**: A format used for 3D modeling in CAD applications, representing geometric data.
+
 ## Requirements
 
 The minimum version PDM Publisher supports is SOLIDWORKS PDM Professional 2018 SP0.  
