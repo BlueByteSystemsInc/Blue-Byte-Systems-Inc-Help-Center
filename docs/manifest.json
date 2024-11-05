@@ -437,6 +437,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisherdemo.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisherdemo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublisherfaq.md",
       "output": {
         ".html": {

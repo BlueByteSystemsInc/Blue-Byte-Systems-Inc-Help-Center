@@ -12,6 +12,8 @@
   href: pdmpublisher.md
   expanded: true 
   items: 
+  - name: Quick Demo
+    href: pdmpublisherdemo.md
   - name: License Management
     href: licensespdmpublisher.md
   - name: License Common Issues
