@@ -1,16 +1,12 @@
 # Conditions Setup Page
 
 Conditions can be added to a task to include or exclude files from being processed.  
-The task will only process files that evaluate all of the set conditions as *true*.
+The task will only process files that evaluate any of the set conditions as *true*.
 
-<p align="center">
-  <img src="../images/pdmconverttaskextendedconditionssetuppage.png" alt="Conditions Setup Page" width="800">
-</p>
 
-> [!NOTE]
-> The condition above for example will only allow files where the Part Type variable from the @ tab is different than the value Purchased.
+To add a condition, *click* the ***Add*** button. 
 
-To add a condition, *click* the ***Add*** button.
+You can also  ***export*** and  ***import*** conditions.
 
 ### Condition Options
 

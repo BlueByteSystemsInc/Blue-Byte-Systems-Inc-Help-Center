@@ -88,56 +88,118 @@
 <h1 id="options">Options</h1>
 
 <p>The Options setup tab allows you to define the characteristics of the BOM you would like to export.</p>
-<p align="center">
-  <img src="../images/pdm2exceloptions.png" alt="New Task" width="800">
-</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Export Location</td>
-<td>Specify a location where to export the xlsx BOM. Right-click on the RMB to insert dynamic variables into the path. <br><br> For example, to export your bill of materials to a location in the vault, you can use the vault root folder dynamic variable. The add-in will evaluate it to the actual path of the local vault view where the export operation will be executed. <br> The list of dynamic variables are:<br> <ul><li>Vault root folder<ul><li>Path to the local vault view root folder</li></ul></li><li>File name without extension<ul><li>Name of the assembly file without extension.</li></ul></li><li>File name<ul><li>Name of the assembly file including the extension (sldasm).</li></ul></li><li>Configuration name<ul><li>Name of the configuration if available.</li><li>@ configuration is evaluated to <strong>At</strong>.</li></ul></li><li>Revision<ul><li>PDM Revision of the assembly.</li></ul></li><li>Version<ul><li>PDM Version number of the assembly.</li></ul></li><li>Date<ul><li>The current date time in the following format <strong>yyyy-mm-dd</strong>.</li></ul></li><li>Extension<ul><li>Extension of the affected document.</li></ul></li><li>User<ul><li>Username of the session's user where the export process will be executed.</li></ul></li><li>Launching user<ul><li>Name of the user that launched this operation.</li><li>Please use this only if the add-in is configured to be used as a task.</li></ul></li><li>PDM Variables<ul><li>Value of the PDM Variable for the affected documents.</li><li>Please make sure the Variable name does not contain any illegal path characters.</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Export Location</strong></td>
+<td style="text-align: left;">Specifies the location where the Bill of Materials (BOM) should be saved. The location can be within or outside the vault.</td>
 </tr>
 <tr>
-<td>Save copy in original folder?</td>
-<td>If the checkbox is checked, the task will save the xlsx BOM in the folder of the original document.</td>
+<td style="text-align: left;"><strong>Save copy in original folder?</strong></td>
+<td style="text-align: left;">If enabled, a copy of the exported file is saved in the same folder as the original document, preserving the file organization.</td>
 </tr>
 <tr>
-<td>File name</td>
-<td>The name of the exported xlsx.</td>
+<td style="text-align: left;"><strong>File name</strong></td>
+<td style="text-align: left;">The name of the exported Bill of Materials file. This name will be used when saving the file in the specified export location.</td>
 </tr>
 <tr>
-<td>Configuration options</td>
-<td><ul><li>Print all configurations<ul><li>Print all the configurations.</li></ul></li><li>Ignore @ configuration<ul><li>Ignores the @ configuration</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Hyperlink the filename column</strong></td>
+<td style="text-align: left;">Creates hyperlinks in the filename column of the BOM, linking to the document’s location in File Explorer.</td>
 </tr>
 <tr>
-<td>Templates</td>
-<td><ul><li>PDM BOM Layout<ul><li>The name of the BOM layout to use</li></ul></li><li>Xlsx template<ul><li>Use this if you want to include your company header in the exported bill of materials</li></ul></li><li>Start address<ul><li>The address where the add-in will add the BOM data.</li><li>By default, this is 1:1 (i.e. row one and column one or cell A1) but this will change depending on your template.</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Web2Client base url</strong></td>
+<td style="text-align: left;">Provides the base URL for the Web2Client, which can be used to create hyperlinks in the BOM for accessing files through a web-based interface.</td>
 </tr>
 <tr>
-<td>Hyperlink</td>
-<td><ul><li>Hyperlink the filename column<ul><li>Adds a conisio link that directly opens the row's affected document in file explorer.</li><li>This does not apply to weldment rows.</li></ul></li><li>Enable hyper to web2client<ul><li>Adds a hyperlink to the filename that opens the row's associated document in the web2 client interface (PDM in the browser).</li></ul></li><li>Web2client<ul><li>Base URL of your web2client</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Add a level column</strong></td>
+<td style="text-align: left;">Adds an additional column in the BOM that represents the hierarchical level of each assembly or part.</td>
 </tr>
 <tr>
-<td>Columns</td>
-<td><ul><li>Add level column<ul><li>Add a level column.</li><li>Use this when the BOM display style is set to be indented.</li></ul></li><li>Add parent column<ul><li>Add the parent column to the bill of materials.</li></ul></li><li>Ignore columns<ul><li>Name of the columns to ignore.</li><li>Separate column names with <strong>;</strong> (Column1;Column2;etc...).</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Add parent column</strong></td>
+<td style="text-align: left;">Includes a parent column in the BOM, showing the parent assembly for each part or sub-assembly in the BOM.</td>
 </tr>
 <tr>
-<td>Developer mode</td>
-<td><ul><li>Adds advanced error message for debugging.</li><li>Only use this when directed by tech support.</li></ul></td>
+<td style="text-align: left;"><strong>Thumbnail API Key</strong></td>
+<td style="text-align: left;">Specifies the API key required for fetching thumbnails of the documents. More details can be found on the SolidWorks website.</td>
 </tr>
 <tr>
-<td>Thumbnails</td>
-<td><ul><li>You need the document key manager to be able to use this feature. Request from the ? button.</li><li>Export location<ul><li>Specify the export location where you want to save the thumbnails as separate pngs.</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Individual Thumbnails Export Location</strong></td>
+<td style="text-align: left;">Defines the location where individual thumbnails (images of documents) will be exported. This is useful for visually identifying parts in the BOM.</td>
 </tr>
 <tr>
-<td>Bill of Materials Settings</td>
-<td><ul><li>Display state<ul><li>Intended</li><li>Parts only</li><li>Top level</li></ul></li><li>Process all sub-assemblies<ul><li>Process all sub-assemblies into separate bill of materials</li></ul></li><li>Top-level assembly row<ul><li>Add the top-level assembly as the 0th row.</li></ul></li></ul></td>
+<td style="text-align: left;"><strong>Ignore columns</strong></td>
+<td style="text-align: left;">Specifies which columns to ignore during export, using a semicolon (<code>;</code>) to separate multiple column names.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="export-settings">Export Settings</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Print All Configurations</strong></td>
+<td style="text-align: left;">When enabled, all configurations of an assembly will be printed in the BOM. Ensure the configuration names are included in the file name for clarity.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ignore @ configuration</strong></td>
+<td style="text-align: left;">If checked, the <code>@</code> configuration of the assembly will be ignored during the export process, which is often used for default or assembly-level configurations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Process all sub assemblies</strong></td>
+<td style="text-align: left;">Ensures that all sub-assemblies are processed and included in the BOM, not just the top-level assemblies.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Top-level assembly row</strong></td>
+<td style="text-align: left;">If enabled, a row representing the top-level assembly will be added to the BOM, ensuring that the highest-level part is clearly marked in the export.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bill-of-materials-bom-settings">Bill of Materials (BOM) Settings</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>PDM BOM Layout</strong></td>
+<td style="text-align: left;">Defines which BOM layout to use for exporting the Bill of Materials. Layouts might be pre-defined templates that determine the structure and order of BOM columns.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Starting address</strong></td>
+<td style="text-align: left;">Specifies the cell address in Excel where the BOM should begin. The format should be <code>Row:Column</code>, e.g., <code>10:12</code> for starting at row 10, column 12.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Display state</strong></td>
+<td style="text-align: left;">Determines the display state of the BOM, such as showing only top-level parts, indented structure, or all parts of an assembly.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="templates-settings">Templates Settings</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Xlsx template</strong></td>
+<td style="text-align: left;">Specifies the Excel template file (<code>.xls</code>, <code>.xlsx</code>, <code>.xlsm</code>) to be used when exporting the Bill of Materials, which can define formatting and data layout.</td>
 </tr>
 </tbody>
 </table>

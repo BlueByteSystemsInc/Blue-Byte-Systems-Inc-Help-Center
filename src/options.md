@@ -3,18 +3,56 @@
 
 When you choose PDM Publisher from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
 
-<p align="center">
-  <img src="../images/pdmconverttaskextendedoptionssetuppage.png" alt="Options Setup Page" width="800">
-</p>
+# Export Settings
 
-| Option | Description |
-|:---|:---|
-| **Output** | This is where you specify the **location** and the **filename** where you want the exported documents to be saved. This location can be inside or outside the vault. |
-| **File Formats** | This section specifies the file formats available for export. |
-| **Export History** | <ul><li>**Turn on activity tracking**: Enables tracking of activity.</li><li>**Server-Synced Activity Logs**: Logs are synchronized with the server.</li><li>**Log Folder (Vault)**: Specify the location in the vault where logs are stored.</li></ul> |
-| **Export** | <ul><li>**Export referenced components of the assembly to selected file formats individually**: Exports each referenced component to the chosen file format.</li><li>**Merge exported PDFs into one master PDF**: Merges all exported PDFs into a single file.</li><li>**Work with latest version**: Task will work with the latest version of the file.</li><li>**Quick view Mode (Drawings Only)**: Opens documents in quick view for better performance with large drawings.</li><li>**Convert Multiple Configurations**: Attempts to export all configurations.</li><li>**Archive all exported documents (.zip)**: Creates a zip file of all processed documents.</li><li>**Export sheet metal parts to 1:1 flat pattern DXF**: Exports sheet metal parts as DXF files.</li><li>**Use search to locate drawings**: Allows using search functionality to find drawings.</li></ul> |
-| **Table of Content** | <ul><li>**Add Table of Content to Top-Level Assembly PDF**: Includes a table of contents in the top-level assembly PDF or a simple BOM. The simple BOM has description column and a quantity column.</li><li>**Paper size**: Size of the page used for the table of content of the simple BOM.</ul> |
-| **watermark** | Add a watermark to the printed PDF. This watermark is an evaluated expression. You can include a mix of text and variables. |
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Export Location**                         | Location where to export the files. The location can be within or outside the vault. It is important that the path does **not** end with a backslash (`\`).       |
+| **File Formats**                            | Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others.                                            |
+| **Export referenced components of the assembly to selected file formats individually** | When enabled, all referenced components of the assembly will be exported to the selected file format individually, rather than as a single file.                |
+| **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.                                                 |
+| **Work with latest version**               | Ensures that the task works with the latest version of the file, automatically fetching the most recent version from the PDM vault.                             |
+| **Quick view mode (Drawings Only)**        | Enables quick view mode for drawings to improve performance, especially for large and complex drawings.                                                           |
+| **Convert multiple configurations**        | If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename. |
+| **Archive all exported documents (.zip)**  | Packages all exported documents into a single `.zip` file for easy storage and distribution.                                                                     |
+| **Add a pack & go of the top-level assembly to the archive (.zip)** | Adds a "Pack and Go" of the top-level assembly to the `.zip` archive, which includes all necessary files for that assembly.                                    |
+| **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
+| **Use search to locate drawings**          | When enabled, the task will search the PDM vault for drawings that are not found in the same folder as the assembly, ensuring they are still included in the export. |
+
+# Export History Settings
+
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Turn on activity tracking**              | Enables tracking of all task activity, generating a detailed log that documents each step performed during the task, which can be saved in the log folder.         |
+| **Server-Synced Activity Logs**             | Syncs the activity logs with the server, allowing for centralized storage and review of the task's history, including all performed steps.                        |
+| **Log Folder (Vault Only)**                 | Specifies the folder within the PDM vault where log files will be stored. This ensures that logs are maintained in a secure location, following PDM’s file structure. |
+
+# Table of Content Settings
+
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Add table of content to merged PDF**     | When enabled, a table of contents will be automatically generated and inserted into the merged PDF, making it easier to navigate and reference the document.       |
+| **Table type**                              | Specifies the type of table to include: either a Table of Contents (TOC) or a Simple Bill of Materials (BOM). The BOM includes item descriptions and quantities.    |
+| **Paper size**                              | Specifies the paper size used for the table of contents or BOM in the merged PDF. Options include standard sizes like A4, Letter, and others.                     |
+
+# Watermark Settings
+
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Watermark**                               | Defines the watermark that will be applied to the printed PDF documents. This can include both static text and dynamic expressions, such as filenames or dates.     |
+
+# SOLIDWORKS Settings
+
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Use this version of SOLIDWORKS**          | Specifies which version of SOLIDWORKS to use for processing the files. Options range from specific years (e.g., 2018, 2019) to the latest version available.        |
+
+# Miscellaneous Settings
+
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **PDF bookmarks**                           | Allows you to define the text pattern for the bookmarks section in the merged PDF, making it easier to navigate between sections within the document.               |
+
 
 
 ### Important Notes About Creating Tasks

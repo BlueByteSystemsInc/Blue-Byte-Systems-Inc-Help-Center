@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Helper Center </title>
+      <title>Export Settings | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Helper Center ">
+      <meta name="title" content="Export Settings | Helper Center ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -88,40 +88,149 @@
 
 <h2 id="options-setup-page">Options Setup Page</h2>
 <p>When you choose PDM Publisher from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:</p>
-<p align="center">
-  <img src="../images/pdmconverttaskextendedoptionssetuppage.png" alt="Options Setup Page" width="800">
-</p>
+<h1 id="export-settings">Export Settings</h1>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Option</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Output</strong></td>
-<td style="text-align: left;">This is where you specify the <strong>location</strong> and the <strong>filename</strong> where you want the exported documents to be saved. This location can be inside or outside the vault.</td>
+<td style="text-align: left;"><strong>Export Location</strong></td>
+<td style="text-align: left;">Location where to export the files. The location can be within or outside the vault. It is important that the path does <strong>not</strong> end with a backslash (<code>\</code>).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>File Formats</strong></td>
-<td style="text-align: left;">This section specifies the file formats available for export.</td>
+<td style="text-align: left;">Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Export History</strong></td>
-<td style="text-align: left;"><ul><li><strong>Turn on activity tracking</strong>: Enables tracking of activity.</li><li><strong>Server-Synced Activity Logs</strong>: Logs are synchronized with the server.</li><li><strong>Log Folder (Vault)</strong>: Specify the location in the vault where logs are stored.</li></ul></td>
+<td style="text-align: left;"><strong>Export referenced components of the assembly to selected file formats individually</strong></td>
+<td style="text-align: left;">When enabled, all referenced components of the assembly will be exported to the selected file format individually, rather than as a single file.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Export</strong></td>
-<td style="text-align: left;"><ul><li><strong>Export referenced components of the assembly to selected file formats individually</strong>: Exports each referenced component to the chosen file format.</li><li><strong>Merge exported PDFs into one master PDF</strong>: Merges all exported PDFs into a single file.</li><li><strong>Work with latest version</strong>: Task will work with the latest version of the file.</li><li><strong>Quick view Mode (Drawings Only)</strong>: Opens documents in quick view for better performance with large drawings.</li><li><strong>Convert Multiple Configurations</strong>: Attempts to export all configurations.</li><li><strong>Archive all exported documents (.zip)</strong>: Creates a zip file of all processed documents.</li><li><strong>Export sheet metal parts to 1:1 flat pattern DXF</strong>: Exports sheet metal parts as DXF files.</li><li><strong>Use search to locate drawings</strong>: Allows using search functionality to find drawings.</li></ul></td>
+<td style="text-align: left;"><strong>Merge exported PDFs into one master PDF</strong></td>
+<td style="text-align: left;">Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Table of Content</strong></td>
-<td style="text-align: left;"><ul><li><strong>Add Table of Content to Top-Level Assembly PDF</strong>: Includes a table of contents in the top-level assembly PDF or a simple BOM. The simple BOM has description column and a quantity column.</li><li><strong>Paper size</strong>: Size of the page used for the table of content of the simple BOM.</li></ul></td>
+<td style="text-align: left;"><strong>Work with latest version</strong></td>
+<td style="text-align: left;">Ensures that the task works with the latest version of the file, automatically fetching the most recent version from the PDM vault.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>watermark</strong></td>
-<td style="text-align: left;">Add a watermark to the printed PDF. This watermark is an evaluated expression. You can include a mix of text and variables.</td>
+<td style="text-align: left;"><strong>Quick view mode (Drawings Only)</strong></td>
+<td style="text-align: left;">Enables quick view mode for drawings to improve performance, especially for large and complex drawings.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Convert multiple configurations</strong></td>
+<td style="text-align: left;">If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Archive all exported documents (.zip)</strong></td>
+<td style="text-align: left;">Packages all exported documents into a single <code>.zip</code> file for easy storage and distribution.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Add a pack &amp; go of the top-level assembly to the archive (.zip)</strong></td>
+<td style="text-align: left;">Adds a &quot;Pack and Go&quot; of the top-level assembly to the <code>.zip</code> archive, which includes all necessary files for that assembly.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Export sheet metal parts to 1:1 flat pattern DXF</strong></td>
+<td style="text-align: left;">Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have <code>FlatPattern</code> appended.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Use search to locate drawings</strong></td>
+<td style="text-align: left;">When enabled, the task will search the PDM vault for drawings that are not found in the same folder as the assembly, ensuring they are still included in the export.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="export-history-settings">Export History Settings</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Turn on activity tracking</strong></td>
+<td style="text-align: left;">Enables tracking of all task activity, generating a detailed log that documents each step performed during the task, which can be saved in the log folder.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Server-Synced Activity Logs</strong></td>
+<td style="text-align: left;">Syncs the activity logs with the server, allowing for centralized storage and review of the task's history, including all performed steps.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Log Folder (Vault Only)</strong></td>
+<td style="text-align: left;">Specifies the folder within the PDM vault where log files will be stored. This ensures that logs are maintained in a secure location, following PDM’s file structure.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="table-of-content-settings">Table of Content Settings</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Add table of content to merged PDF</strong></td>
+<td style="text-align: left;">When enabled, a table of contents will be automatically generated and inserted into the merged PDF, making it easier to navigate and reference the document.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Table type</strong></td>
+<td style="text-align: left;">Specifies the type of table to include: either a Table of Contents (TOC) or a Simple Bill of Materials (BOM). The BOM includes item descriptions and quantities.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Paper size</strong></td>
+<td style="text-align: left;">Specifies the paper size used for the table of contents or BOM in the merged PDF. Options include standard sizes like A4, Letter, and others.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="watermark-settings">Watermark Settings</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Watermark</strong></td>
+<td style="text-align: left;">Defines the watermark that will be applied to the printed PDF documents. This can include both static text and dynamic expressions, such as filenames or dates.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="solidworks-settings">SOLIDWORKS Settings</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Use this version of SOLIDWORKS</strong></td>
+<td style="text-align: left;">Specifies which version of SOLIDWORKS to use for processing the files. Options range from specific years (e.g., 2018, 2019) to the latest version available.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="miscellaneous-settings">Miscellaneous Settings</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>PDF bookmarks</strong></td>
+<td style="text-align: left;">Allows you to define the text pattern for the bookmarks section in the merged PDF, making it easier to navigate between sections within the document.</td>
 </tr>
 </tbody>
 </table>
