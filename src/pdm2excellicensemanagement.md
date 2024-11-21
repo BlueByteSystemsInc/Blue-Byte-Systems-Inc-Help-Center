@@ -39,14 +39,8 @@ To deactivate a license:
 
 To renew the license, please follow these instructions:
 
-> [!IMPORTANT]
-> Do not commence the process below until you have your license key.
-
 1. *Open* the PDM Administration tool.
-2. *Expand* the Add-in nodes and *right-click* on PDM2Excel.
+2. *Expand* the Add-in nodes and *right-click* on PDM Publisher.
 3. *Click* ***Manage license…***
-4. *Click* ***Deactivate*** (You must be connected to the Internet).
-5. *Close* the window.
-6. *Repeat* the process of clicking on Manage license…
 7. *Enter* your license key and *click* ***Activate***.
 8. Your new expiry date should appear when the license is renewed.

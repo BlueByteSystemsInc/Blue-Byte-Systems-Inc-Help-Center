@@ -377,16 +377,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/pdm2excellicenseissues.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/pdm2excellicenseissues.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "src/pdm2excellicensemanagement.md",
       "output": {
         ".html": {

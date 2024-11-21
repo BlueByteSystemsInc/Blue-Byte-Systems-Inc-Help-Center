@@ -11,6 +11,8 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **File Formats**                            | Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others.                                            |
 | **Export referenced components of the assembly to selected file formats individually** | When enabled, all referenced components of the assembly will be exported to the selected file format individually, rather than as a single file.                |
 | **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.                                                 |
+| **Ignore sub-assemblies children when condition checks fail**          | When enabled, the children of, sub-assemblies that fail condition check, will be ignored (not processed). |
+| **Print top-level assembly document**          | Adds the top-level assembly to the processing queue. By default, this option is checked. |
 | **Work with latest version**               | Ensures that the task works with the latest version of the file, automatically fetching the most recent version from the PDM vault.                             |
 | **Quick view mode (Drawings Only)**        | Enables quick view mode for drawings to improve performance, especially for large and complex drawings.                                                           |
 | **Convert multiple configurations**        | If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename. |
@@ -18,6 +20,8 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Add a pack & go of the top-level assembly to the archive (.zip)** | Adds a "Pack and Go" of the top-level assembly to the `.zip` archive, which includes all necessary files for that assembly.                                    |
 | **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
 | **Use search to locate drawings**          | When enabled, the task will search the PDM vault for drawings that are not found in the same folder as the assembly, ensuring they are still included in the export. |
+
+
 
 # Export History Settings
 
