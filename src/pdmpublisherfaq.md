@@ -1,6 +1,17 @@
 
 # Frequently Asked Questions
 
+## Features
+
+| Question | Answer |
+|---|---|
+| How does PDMPublisher calculate the BOM quantities? | PDMPublisher creates a Bill of Materials in memory from the top-level assembly. It ignores all suppressed, virtual, envelope, and components that are excluded from the Bill of Materials. Most of these settings come from the component properties dialog. |
+| How do the conditions work? | Conditions are evaluated for the found PDM reference. If any of the conditions evaluate to true, the reference is added to the processing queue. |
+
+
+
+## Installation
+
 |Question|Answer|
 |---|---|
 |I'm unable to consume my license|Make sure your system/firewall allows for connections to be made to httsp://bluebyte.biz on **port 443**. **[Contact](https://bluebyte.biz/contact/)** us if this problem still persists.|
