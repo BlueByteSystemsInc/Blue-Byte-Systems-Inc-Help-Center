@@ -89,6 +89,10 @@
 
 <p>Conditions can be added to a task to include or exclude files from being processed.<br>
 The task will only process files that evaluate any of the set conditions as <em>true</em>.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Conditions are applied to references of the top-level assembly (parts or sub-assemblies).</p>
+</div>
 <p>To add a condition, <em>click</em> the <em><strong>Add</strong></em> button.</p>
 <p>You can also  <em><strong>export</strong></em> and  <em><strong>import</strong></em> conditions.</p>
 <h3 id="condition-options">Condition Options</h3>
@@ -118,6 +122,15 @@ The task will only process files that evaluate any of the set conditions as <em>
 </tr>
 </tbody>
 </table>
+<h3 id="special-variable">Special Variable</h3>
+<p>The variable list in the condition column starts with several entries that are special variables. They contain:</p>
+<ul>
+<li>FileName: Filename of the file.</li>
+<li>Revision: Current revision of the file (What's locally cached).</li>
+<li>Version: Current version of the file (What's locally cached).</li>
+<li>Workflow: Name of the workflow the file is in.</li>
+<li>State: Name of the state the file is in.</li>
+</ul>
 
 </article>
 
