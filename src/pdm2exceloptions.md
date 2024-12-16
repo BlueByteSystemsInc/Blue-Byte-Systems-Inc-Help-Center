@@ -1,8 +1,6 @@
-
-# Options
+## Options
 
 The Options setup tab allows you to define the characteristics of the BOM you would like to export.
-
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|

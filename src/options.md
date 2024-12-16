@@ -1,4 +1,3 @@
-
 ## Options Setup Page
 
 When you choose PDM Publisher from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
@@ -81,3 +80,11 @@ To change the auto-add extensions list,
 <p align="center">
   <img src="../images/pdmconverttaskextendedaddingfiles.png" alt="Adding Files" width="800">
 </p>
+
+
+
+### YouTube playlist 
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=yQhd5aaQ60HDTtPO&amp;list=PLnpGIvQNXY59j6jTrH1AMOxCD7sVj7ZA5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
