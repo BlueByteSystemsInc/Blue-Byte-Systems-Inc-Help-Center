@@ -35,18 +35,18 @@ The variable list in the condition column starts with several entries that are s
 
 |Operation|Description|
 |---|---|
-|**TextEqualTo**|Text Equal To (* as a wildcard)|
-|**TextNotEqualTo**|Text Not Equal To|
-|**TextLengthLessThan**|Text Length Less Than|
-|**TextLengthBiggerThan**|Text Length Bigger Than|
-|**TextContains**|Text Contains|
-|**TextDoesNotContain**|Text Does Not Contain|
-|**NumberEqualTo**|Number Equal To|
-|**NumberNotEqualTo**|Number Not Equal To|
-|**NumberLessThan**|Number Less Than|
-|**NumberBiggerThan**|Number Bigger Than|
-|**DateEqualTo**|Date Equal To|
-|**DateNotEqualTo**|Date Not Equal To|
-|**DateLessThan**|Date Less Than|
-|**DateBiggerThan**|Date Bigger Than|
-|**YesOrNoEqualTo**|Yes or No Equal To|
+|**TextEqualTo**|Checks if the text is exactly equal to the specified value. Supports * as a wildcard.|
+|**TextNotEqualTo**|Checks if the text is not equal to the specified value.|
+|**TextLengthLessThan**|Checks if the length of the text is less than the specified value.|
+|**TextLengthBiggerThan**|Checks if the length of the text is greater than the specified value.|
+|**TextContains**|Checks if the text contains the specified value.|
+|**TextDoesNotContain**|Checks if the text does not contain the specified value.|
+|**NumberEqualTo**|Checks if the number is equal to the specified value.|
+|**NumberNotEqualTo**|Checks if the number is not equal to the specified value.|
+|**NumberLessThan**|Checks if the number is less than the specified value.|
+|**NumberBiggerThan**|Checks if the number is greater than the specified value.|
+|**DateEqualTo**|Checks if the date is equal to the specified value.|
+|**DateNotEqualTo**|Checks if the date is not equal to the specified value.|
+|**DateLessThan**|Checks if the date is earlier than the specified value.|
+|**DateBiggerThan**|Checks if the date is later than the specified value.|
+|**YesOrNoEqualTo**|Checks if the value is equal to either Yes or No.|
