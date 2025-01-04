@@ -1,10 +1,8 @@
 - name: ❓ Help Center
   href: src/
-- name: 👤 My Account
-  href: https://bluebyte.biz/account/
-- name: 📥 Downloads
-  href: https://bluebyte.biz/account/downloads/
-- name: 📅 Schedule a Demo 
-  href: https://calendly.com/bluebyte/
+- name: 🛒 Products
+  href: https://bluebyte.biz/Shop/
+- name: 🎓 Courses & Training
+  href: https://bluebyte.biz/courses-2/
 - name: 🌐 BlueByte.biz 
   href: https://bluebyte.biz
