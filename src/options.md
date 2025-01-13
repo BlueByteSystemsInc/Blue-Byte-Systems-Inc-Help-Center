@@ -18,7 +18,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Archive all exported documents (.zip)**  | Packages all exported documents into a single `.zip` file for easy storage and distribution.                                                                     |
 | **Add a pack & go of the top-level assembly to the archive (.zip)** | Adds a "Pack and Go" of the top-level assembly to the `.zip` archive, which includes all necessary files for that assembly.                                    |
 | **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
-| **Use search to locate drawings**          | When enabled, the task will search the PDM vault for drawings that are not found in the same folder as the assembly, ensuring they are still included in the export. |
+| **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
 
 
 

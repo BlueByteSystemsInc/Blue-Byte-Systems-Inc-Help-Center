@@ -24,9 +24,10 @@
     },
     "output": "docs",
     "template": [
-      "default",
-      "modern"
+      "modern",
+       "_template/last-modified"
     ],
+ "postProcessors": ["LastModifiedPostProcessor"],
     "globalMetadata": {
       "_appName": "Helper Center",
       "_appTitle": "Helper Center",
