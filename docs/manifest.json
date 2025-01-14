@@ -9,6 +9,24 @@
   "files": [
     {
       "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/annotations.mp4",
       "output": {
         "resource": {
@@ -253,6 +271,242 @@
       "output": {
         "resource": {
           "relative_path": "images/thumbnail.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/annotations.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/annotations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/cdpdm.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/cdpdm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/conditions.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/conditions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/licenseissues.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/licenseissues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/licensespdmpublisher.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/licensespdmpublisher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/options.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/partsbookcreator.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/partsbookcreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excel.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excellicensemanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excellicensemanagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelneedmorehelp.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelneedmorehelp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelnewtask.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelnewtask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2exceloptions.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2exceloptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisherdemo.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisherdemo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisherfaq.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisherfaq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisherspecialvariable.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisherspecialvariable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmqa.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmqa.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/propertiespagepdmpublisher.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/propertiespagepdmpublisher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "src/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "src/toc.html"
+        },
+        ".json": {
+          "relative_path": "src/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/updateaddinswithcdpdm.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/updateaddinswithcdpdm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
