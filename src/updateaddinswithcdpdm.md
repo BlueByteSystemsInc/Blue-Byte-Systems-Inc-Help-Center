@@ -12,6 +12,16 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
   <em>Confirmation Email Example</em>
 </p>
 
+
+> [!Note]
+> To install CDPDM after downloading it, please follow the instructions in [this article](/src/cdpdm.html).
+
+
+> [!Warning]
+> **If CDPDM fails to install, the order confirmation e-mail contains a downloadable CEX file that contains the add-in**.
+
+
+
 2. **Unblock the downloaded file**: Right-click on the zip archive and select **Properties**. In the properties dialog, check the **Unblock** option and click **OK**.
 3. **Unzip the archive**: Extract the contents of the zip archive.
 4. **Open the administration tool**: Log into your vault.
