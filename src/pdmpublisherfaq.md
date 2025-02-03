@@ -5,6 +5,7 @@
 
 | Question | Answer |
 |---|---|
+| I'm getting some errors related to the bill of materials layout. | In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher will leverage the first BOM layout in your vault to calculate quantities. The layout must include a <RefCount> (Quantity) column and a <Configuration> (Configuration name) column. |
 | How does PDMPublisher calculate the BOM quantities? | PDMPublisher creates a Bill of Materials in memory from the top-level assembly. It ignores all suppressed, virtual, envelope, and components that are excluded from the Bill of Materials. Most of these settings come from the component properties dialog. |
 | How do the conditions work? | Conditions are evaluated for the found PDM reference. If any of the conditions evaluate to true, the reference is added to the processing queue. |
 

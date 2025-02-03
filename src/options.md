@@ -56,7 +56,8 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **PDF bookmarks**                           | Allows you to define the text pattern for the bookmarks section in the merged PDF, making it easier to navigate between sections within the document.               |
 
-
+### Ensuring Proper BOM Layout for PDMPublisher
+In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher leverages the first BOM layout in your vault to calculate quantities. To ensure proper functionality, the layout must include a <RefCount> (Quantity) column and a <Configuration> (Configuration name) column. If you are experiencing errors related to the bill of materials layout, verify that these required columns are present in your BOM setup.
 
 ### Important Notes About Creating Tasks
 
