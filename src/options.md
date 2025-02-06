@@ -16,7 +16,6 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Quick view mode (Drawings Only)**        | Enables quick view mode for drawings to improve performance, especially for large and complex drawings.                                                           |
 | **Convert multiple configurations**        | If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename. |
 | **Archive all exported documents (.zip)**  | Packages all exported documents into a single `.zip` file for easy storage and distribution.                                                                     |
-| **Add a pack & go of the top-level assembly to the archive (.zip)** | Adds a "Pack and Go" of the top-level assembly to the `.zip` archive, which includes all necessary files for that assembly.                                    |
 | **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
 | **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
 
