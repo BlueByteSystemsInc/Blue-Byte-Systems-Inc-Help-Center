@@ -8,7 +8,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Export Location**                         | Location where to export the files. The location can be within or outside the vault. It is important that the path does **not** end with a backslash (`\`).       |
 | **File Formats**                            | Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others.                                            |
-| **Export referenced components of the assembly to selected file formats individually** | When enabled, all referenced components of the assembly will be exported to the selected file format individually, rather than as a single file.                |
+| **Export document and its references to file formats individually** | When enabled, affected document and its references will be exported to the selected file format individually.                |
 | **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.                                                 |
 | **Ignore sub-assemblies children when condition checks fail**          | When enabled, the children of, sub-assemblies that fail condition check, will be ignored (not processed). |
 | **Print top-level assembly document**          | Adds the top-level assembly to the processing queue. By default, this option is checked. |
