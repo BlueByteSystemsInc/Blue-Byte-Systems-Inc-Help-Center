@@ -237,6 +237,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_rmb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_rmb.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/preview.mp4",
       "output": {
         "resource": {
