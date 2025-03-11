@@ -22,6 +22,14 @@ It can convert SOLIDWORKS files to the following extensions:
 9. **HTML (HyperText Markup Language)**: The standard markup language for creating web pages, allowing the display of text, images, and links.
 10. **X_T (Parasolid Model File)**: A format used for 3D modeling in CAD applications, representing geometric data.
 
+## Input files
+PDM Publisher can process individual **SOLIDWORKS part files** (`.sldprt`), **drawing files** (`.slddrw`), and **assemblies** (`.sldasm`) along with all their references. This ensures that all necessary components are correctly handled during processing, whether you're converting a single file or an entire assembly structure.  
+
+ 🔹 **Single Part (`.sldprt`)**: Processes and converts a part file to the extensions above.  
+ 🔹 **Single Drawing (`.slddrw`)**: Processes individual drawings.  
+ 🔹 **Assembly with References (`.sldasm`)**: Automatically includes all referenced parts and subassemblies and their drawings.  
+
+
 ## Requirements
 
 The minimum version PDM Publisher supports is SOLIDWORKS PDM Professional 2018 SP0.  
