@@ -21,7 +21,6 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
 
 
-
 # Export History Settings
 
 | **Option**                                  | **Description**                                                                                                                                                 |
@@ -29,6 +28,16 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Turn on activity tracking**              | Enables tracking of all task activity, generating a detailed log that documents each step performed during the task, which can be saved in the log folder.         |
 | **Server-Synced Activity Logs**             | Syncs the activity logs with the server, allowing for centralized storage and review of the task's history, including all performed steps.                        |
 | **Log Folder (Vault Only)**                 | Specifies the folder within the PDM vault where log files will be stored. This ensures that logs are maintained in a secure location, following PDM’s file structure. |
+
+# BOM Settings
+
+| **Option**                                  | **Description**                                                                                                                                                 |
+|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Template**          | Specifies the BOM template to be used. Users can select from available templates in the BOM layout source. **By default, the first template will be picked if not specified.** |
+| **Calculation method**          | Defines how the BOM is calculated. Options include **As Built** and **Show Selected**. [Learn more](https://help.solidworks.com/2021/english/enterprisepdm/fileexplorer/t_computing_boms_for_as-built_assemblies.htm).  |
+
+
+
 
 # Table of Content Settings
 
