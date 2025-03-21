@@ -19,6 +19,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Archive all exported documents (.zip)**  | Packages all exported documents into a single `.zip` file for easy storage and distribution.                                                                     |
 | **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
 | **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
+| **Use Microsoft Print To PDF to save PDFs**          | When enabled, the task will use the Microsoft Print To PDF printer instead of SOLIDWORKS's save as to save PDFs. |
 
 
 # Export History Settings
