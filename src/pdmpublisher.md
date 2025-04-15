@@ -1,5 +1,6 @@
 # PDM Publisher
 
+<img src="../images/pdmpublisher_logo.png" width="200" height="100"/>
 
 Thank you for choosing **[PDM Publisher](https://bluebyte.biz/product/pdmpublisher/)**! 
 
