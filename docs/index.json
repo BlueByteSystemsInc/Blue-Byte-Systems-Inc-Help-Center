@@ -52,7 +52,7 @@
   "src/pdm2excel.html": {
     "href": "src/pdm2excel.html",
     "title": "PDM2Excel | Helper Center",
-    "keywords": "PDM2Excel Thank you for choosing PDM2Excel! PDM2Excel is a SOLIDWORKS PDM task add-in that exports SOLIDWORKS PDM assemblies to xslx Bill Of Materials. Requirements The minimum version PDM2Excel supports is SOLIDWORKS PDM Professional 2017 SP0. Tip We highly recommend you use the latest version of PDM Professional. Support For additional support, please contact us through the contact page. Note Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers."
+    "keywords": "PDM2Excel Thank you for choosing PDM2Excel! PDM2Excel is a SOLIDWORKS PDM task add-in that exports SOLIDWORKS PDM assemblies to xslx Bill Of Materials. Requirements The minimum version PDM2Excel supports is SOLIDWORKS PDM Professional 2017 SP0. Tip We highly recommend you use the latest version of PDM Professional. Installation To install the PDM2Excel add-in, you have two options: Using CDPDM: You can use the CDPDM tool to install the add-in directly. This is the recommended method for seamless integration. Using the CEX File: Alternatively, you can download the .cex file from the order email you received after purchasing the add-in. Once downloaded, import the .cex file into your SOLIDWORKS PDM environment to complete the installation. Support For additional support, please contact us through the contact page. Note Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers."
   },
   "src/pdm2excellicensemanagement.html": {
     "href": "src/pdm2excellicensemanagement.html",
@@ -67,7 +67,7 @@
   "src/pdm2excelnewtask.html": {
     "href": "src/pdm2excelnewtask.html",
     "title": "Setting your task | Helper Center",
-    "keywords": "Setting your task This section will detail the setup pages that require explanation. When you create a new task, please choose PDM2Excel from the dropdown in the first page of the task setup dialog like below: TODO: Add PDM2Excel image Setup pages TODO: Add PDM2Excel image Tab Description Settings The Settings page define the export settings of what information is pulled from the assembly into the BOM."
+    "keywords": "Setting your task This section will detail the setup pages that require explanation. When you create a new task, please choose PDM2Excel from the dropdown in the first page of the task setup dialog like below: Setup Pages Overview The setup pages for this task are similar to the default task tabs you may already be familiar with. However, there is a new tab called Options. This tab is specifically designed to define the export settings for pulling information from the assembly into the BOM. For more detailed information about the Options tab and its configuration, please refer to the Options Documentation. Tab Description Options The Options page define the export settings of what information is pulled from the assembly into the BOM."
   },
   "src/pdm2exceloptions.html": {
     "href": "src/pdm2exceloptions.html",

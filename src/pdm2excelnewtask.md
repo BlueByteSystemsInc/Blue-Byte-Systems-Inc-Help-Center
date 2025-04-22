@@ -1,24 +1,22 @@
-
 # Setting your task
 
 This section will detail the setup pages that require explanation.
 
 When you create a new task, please choose PDM2Excel from the dropdown in the first page of the task setup dialog like below:
 
-**TODO: Add PDM2Excel image**
 
 <p align="center">
-  <img src="../images/newtask.png" alt="New Task" width="800">
+
+![alt text](/images/pdm2excel_newtask.png)
+
 </p>
 
-## Setup pages
+## Setup Pages Overview
 
-**TODO: Add PDM2Excel image**
+The setup pages for this task are similar to the default task tabs you may already be familiar with. However, there is a new tab called **Options**. This tab is specifically designed to define the export settings for pulling information from the assembly into the BOM.
 
-<p align="center">
-  <img src="../images/tabs.png" alt="New Task" width="800">
-</p>
+For more detailed information about the **Options** tab and its configuration, please refer to the [Options Documentation](/src/pdm2exceloptions.html).
 
 |Tab|Description|
 |---|---|
-|Settings|The Settings page define the export settings of what information is pulled from the assembly into the BOM.|
+|Options|The Options page define the export settings of what information is pulled from the assembly into the BOM.|
