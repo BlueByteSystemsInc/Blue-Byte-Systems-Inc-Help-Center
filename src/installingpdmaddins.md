@@ -1,9 +1,9 @@
 # How to Install PDM Add-ins
 
-Installing PDM add-ins from Blue Byte Systems Inc., is a simple process. \\
+Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.
 ## Step 1: Locate the `.cex` File
 
-After purchasing the add-in, you will receive an order configuration email. This email contains a link to download the `.cex` file required for the installation.
+After purchasing one of our PDM add-ins, you will receive an order email. This email contains a link to download the `.cex` file required for the installation.
 
 ## Step 2: Download and Unblock the `.cex` File
 
@@ -11,15 +11,18 @@ After purchasing the add-in, you will receive an order configuration email. This
 2. Once downloaded, right-click on the `.cex` file and select **Properties**.
 3. In the **Properties** window, check for the **Unblock** option at the bottom. If it is present, click **Unblock** and then click **OK**. This step ensures that the file is not blocked by Windows security.
 
+> [!NOTE]
+> You can always find the latest `.cex` files from the Downloads section in your [Blue Byte Systems account](https://bluebyte.biz/account). **Your account username is the email used to make the order.**
+
 ## Step 3: Open the SOLIDWORKS PDM Administration Tool
 
 1. Launch the **SOLIDWORKS PDM Administration** tool.
-2. Log in to your PDM vault with PDM administrative privileges.
+2. Log in to your PDM vault.
 
 ## Step 4: Add or Update an  Add-in
 
-1. In the **Administration** tool, go to **File > Open** and browse to the location of the `.cex` file.
-2. Select the `.cex` file and click **Open**. This will display the add-in in a new window inside the **administration** tool.
+1. In the **Administration** tool, go to **File > Open...** and browse to the location of the `.cex` file.
+2. Select the `.cex` file and click **Open**. This will display the add-in in a new window inside the **Administration** tool.
 3. Drag and drop the add-in from the window into the **Add-ins** node in the left-hand tree view.
 
 This process is similar when updating an existing add-in. Simply follow the same steps to replace the old version with the new one.
