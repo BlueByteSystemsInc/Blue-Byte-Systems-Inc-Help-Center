@@ -97,6 +97,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/how-to-add-addin.mp4",
       "output": {
         "resource": {
