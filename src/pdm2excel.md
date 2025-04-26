@@ -10,6 +10,15 @@ The minimum version PDM2Excel supports is SOLIDWORKS PDM Professional 2017 SP0.
 > [!Tip]
 > We highly recommend you use the latest version of PDM Professional.
 
+## Installation
+
+To install the PDM2Excel add-in, you have two options:
+
+1. **Using CDPDM**:  
+   You can use the **CDPDM** tool to install the add-in directly. This is the recommended method for seamless integration.
+
+2. **Using the CEX File**:  
+   Alternatively, you can download the `.cex` file from the order email you received after purchasing the add-in. Once downloaded, import the `.cex` file into your SOLIDWORKS PDM environment to complete the installation.
 
 ## Support
 

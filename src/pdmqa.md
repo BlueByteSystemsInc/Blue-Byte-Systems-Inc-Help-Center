@@ -1,3 +1,7 @@
+---
+title:  Troubleshooting SOLIDWORKS PDM Add-ins | SOLIDWORKS PDM
+description: General troubleshooting for SOLIDWORKS PDM Add-ins.
+---
 ## Troubleshooting SOLIDWORKS PDM Add-ins
 
 <br>

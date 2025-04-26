@@ -1,4 +1,7 @@
-
+---
+title: Creating a new task | PDMPublisher | SOLIDWORKS PDM
+description: This section will detail the setup pages that require explanation.
+---
 # Setting your task
 
 This section will detail the setup pages that require explanation.

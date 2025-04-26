@@ -1,3 +1,7 @@
+---
+title: Demo | PDMPublisher | SOLIDWORKS PDM
+description: In this demo, Amen from Blue Byte Systems Inc shows of to create a drawing PDF package with PDMPublisher.
+---
 # PDM Publisher Demo
 
 In this demo, Amen from Blue Byte Systems Inc shows of to create a drawing PDF package with PDMPublisher:

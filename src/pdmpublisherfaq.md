@@ -1,4 +1,7 @@
-
+---
+title: FAQ | PDMPublisher | SOLIDWORKS PDM
+description: PDMPublisher frequently asked questions.
+---
 # Frequently Asked Questions
 
 ## Features

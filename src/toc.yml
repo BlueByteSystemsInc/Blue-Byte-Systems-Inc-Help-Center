@@ -5,6 +5,8 @@
 
 - name: SOLIDDWORKS PDM Products   
 
+- name: Installing/Updating PDM add-ins (regular method)
+  href: installingpdmaddins.md
 - name: Installing/Updating PDM add-ins with CDPDM
   href: updateaddinswithcdpdm.md
 

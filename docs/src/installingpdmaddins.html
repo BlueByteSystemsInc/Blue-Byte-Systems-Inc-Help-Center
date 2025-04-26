@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Troubleshooting SOLIDWORKS PDM Add-ins | SOLIDWORKS PDM | Helper Center </title>
+      <title>How to Install PDM Add-ins | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Troubleshooting SOLIDWORKS PDM Add-ins | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content="How to Install PDM Add-ins | Helper Center ">
       
-      <meta name="description" content="General troubleshooting for SOLIDWORKS PDM Add-ins.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmqa.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/installingpdmaddins.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,44 +85,54 @@
         </div>
 
         <article data-uid="">
+<h1 id="how-to-install-pdm-add-ins">How to Install PDM Add-ins</h1>
 
-<h2 id="troubleshooting-solidworks-pdm-add-ins">Troubleshooting SOLIDWORKS PDM Add-ins</h2>
-<br>
-<h3 id="question--my-solidworks-pdm-add-in-is-not-loading-how-do-i-troubleshoot-this">Question:  My SOLIDWORKS PDM add-in is not loading. How do I troubleshoot this?</h3>
-<br>
-<p><strong>Answer:</strong> If your SOLIDWORKS PDM add-in fails to load, it is possible that is blocked by Windows. Follow these troubleshooting steps:</p>
-<ul>
-<li><strong>Navigate to the File in File Explorer:</strong> Locate the file that you want to unblock using File Explorer.</li>
-<li><strong>Right-click on the File:</strong> Right-click on the file to open the context menu.</li>
-<li><strong>Open Properties:</strong> In the context menu, click on &quot;Properties&quot; at the bottom. This will open the Properties dialog box for the file.</li>
-<li><strong>Unblock the File:</strong> In the Properties dialog box, if the file is blocked, you will see an &quot;Unblock&quot; checkbox near the bottom of the General tab. Check the &quot;Unblock&quot; checkbox if it is present.</li>
-<li><strong>Apply Changes:</strong> Click the &quot;Apply&quot; button if available, or simply click &quot;OK&quot; to apply the changes.</li>
-<li><strong>Confirm Unblock:</strong> If the file was successfully unblocked, you may need to reopen the Properties dialog box to verify that the &quot;Unblock&quot; checkbox is no longer present.</li>
-<li><strong>Access the File:</strong> After unblocking the file, you should now be able to access and use it as intended without any restrictions imposed by Windows' security settings.</li>
-</ul>
-<br>
-<center>
-<img src="../images/blocked.png">
-</center>
-<br>
-<br>
+<p>Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.</p>
+<h2 id="step-1-locate-the-cex-file">Step 1: Locate the <code>.cex</code> File</h2>
+<p>After purchasing one of our PDM add-ins, you will receive an order email. This email contains a link to download the <code>.cex</code> file required for the installation.</p>
+<h2 id="step-2-download-and-unblock-the-cex-file">Step 2: Download and Unblock the <code>.cex</code> File</h2>
+<ol>
+<li>Download the <code>.cex</code> file from the link provided in the email.</li>
+<li>Once downloaded, right-click on the <code>.cex</code> file and select <strong>Properties</strong>.</li>
+<li>In the <strong>Properties</strong> window, check for the <strong>Unblock</strong> option at the bottom. If it is present, click <strong>Unblock</strong> and then click <strong>OK</strong>. This step ensures that the file is not blocked by Windows security.</li>
+</ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Files can be blocked by Windows as a security measure primarily to protect your computer from potentially harmful content that may come from external sources, such as the internet or another computer. The main reasons files are blocked include:</p>
-<p><strong>Downloaded from the Internet:</strong>
-- Files downloaded from the internet are often marked as blocked by default. This is to prevent automatic execution of potentially malicious scripts or applications that could harm your system.</p>
-<p><strong>Attachment in Emails:</strong>
-- Email attachments, especially those from unknown or untrusted sources, may also be blocked to prevent inadvertent opening or execution of harmful content.</p>
-<p><strong>Copied from External Sources:</strong>
-- Files copied from removable media (like USB drives) or network shares may inherit their blocking status from the source, especially if the source is considered untrusted or comes from a different security zone.</p>
-<p><strong>Security Settings:</strong>
-- Windows applies security settings to files based on their origin and attributes. This includes marking files with a zone identifier (e.g., from the internet) which triggers the blocking mechanism.</p>
+<p>You can always find the latest <code>.cex</code> files from the Downloads section in your <a href="https://bluebyte.biz/account">Blue Byte Systems account</a>. <strong>Your account username is the email used to make the order.</strong></p>
+</div>
+<h2 id="step-3-open-the-solidworks-pdm-administration-tool">Step 3: Open the SOLIDWORKS PDM Administration Tool</h2>
+<ol>
+<li>Launch the <strong>SOLIDWORKS PDM Administration</strong> tool.</li>
+<li>Log in to your PDM vault.</li>
+</ol>
+<h2 id="step-4-add-or-update-an--add-in">Step 4: Add or Update an  Add-in</h2>
+<ol>
+<li>In the <strong>Administration</strong> tool, go to <strong>File &gt; Open...</strong> and browse to the location of the <code>.cex</code> file.</li>
+<li>Select the <code>.cex</code> file and click <strong>Open</strong>. This will display the add-in in a new window inside the <strong>Administration</strong> tool.</li>
+<li>Drag and drop the add-in from the window into the <strong>Add-ins</strong> node in the left-hand tree view.</li>
+</ol>
+<p>This process is similar when updating an existing add-in. Simply follow the same steps to replace the old version with the new one.</p>
+<h2 id="step-5-verify-the-installation">Step 5: Verify the Installation</h2>
+<ol>
+<li>After installing or updating the add-in from the <code>.cex</code> file, ensure that the add-in appears under the <strong>Add-ins</strong> node. Make sure the version matches with the order email.</li>
+<li>Test the functionality of the add-in to confirm that it has been installed correctly.</li>
+</ol>
+<hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Follow the steps below to install the add-in successfully. For a visual guide, you can watch this video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PZcqz4Q_YZ0?si=DiDlNDLug4FLhYb9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div>
+<hr>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you encounter any issues during the installation process, refer to the documentation provided with the add-in or contact support for assistance.</p>
 </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmqa.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/installingpdmaddins.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

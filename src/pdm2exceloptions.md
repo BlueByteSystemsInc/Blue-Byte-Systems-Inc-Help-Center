@@ -2,6 +2,8 @@
 
 The Options setup tab allows you to define the characteristics of the BOM you would like to export.
 
+![alt text](/images/pdm2excel_options.png)
+
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Export Location**                         | Specifies the location where the Bill of Materials (BOM) should be saved. The location can be within or outside the vault.                                        |

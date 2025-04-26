@@ -1,6 +1,6 @@
 {
   "sitemap": {
-    "baseUrl": "https://docs.bluebyte.biz/sitemap/",
+    "baseUrl": "https://docs.bluebyte.biz/",
     "changefreq": "weekly",
     "priority": 1.0
   },
@@ -97,6 +97,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/how-to-add-addin.mp4",
       "output": {
         "resource": {
@@ -131,6 +141,26 @@
       "output": {
         "resource": {
           "relative_path": "images/newtask.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdm2excel_newtask.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excel_newtask.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdm2excel_options.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excel_options.png"
         }
       },
       "version": ""
@@ -331,6 +361,16 @@
       "output": {
         ".html": {
           "relative_path": "src/conditions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/installingpdmaddins.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/installingpdmaddins.html"
         }
       },
       "version": ""
