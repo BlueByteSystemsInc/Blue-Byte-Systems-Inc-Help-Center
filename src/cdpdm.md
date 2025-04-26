@@ -1,3 +1,7 @@
+---
+title: CDPDM | PDMPublisher | SOLIDWORKS PDM
+description: How to use CDPDM to install PDMPublisher, PDM2Excel and other Blue Byte Systems SOLIDWORKS PDM plugins. 
+---
 # Continuous Delivery
 
 > [!Video https://www.loom.com/embed/0caf90c77d4344cab8d88b0d318d6dcf?sid=ecf596af-8fe9-460c-9177-a568db909600]

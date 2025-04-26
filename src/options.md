@@ -1,3 +1,7 @@
+---
+title: Options | PDMPublisher | SOLIDWORKS PDM
+description: This pages explains all the task setup page options in PDMPublisher.
+---
 ## Options Setup Page
 
 When you choose PDM Publisher from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:

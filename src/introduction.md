@@ -1,3 +1,7 @@
+---
+title: Getting Started | Blue Byte Systems Helper Center | SOLIDWORKS PDM
+description:  Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products.
+---
 # Introduction to Blue Byte Systems Products
 
 Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:

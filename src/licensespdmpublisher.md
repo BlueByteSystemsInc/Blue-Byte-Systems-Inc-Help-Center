@@ -1,3 +1,8 @@
+---
+title: Licensing | PDMPublisher | SOLIDWORKS PDM
+description: This section denotes how to manage a license.
+---
+
 # License Information
 
 This section denotes how to manage a license.

@@ -1,3 +1,7 @@
+---
+title: License troubleshooting | Blue Byte Systems Helper Center | SOLIDWORKS PDM
+description: How to manage your license.
+---
 # License Common Issues 
 
 If you attempt to deactivate and reactivate your license, you may get the following error: **Failed to get license information from the server. Error 60**

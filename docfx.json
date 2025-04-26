@@ -18,7 +18,7 @@
       }
     ],
     "sitemap": {
-      "baseUrl": "https://docs.bluebyte.biz/sitemap",
+      "baseUrl": "https://docs.bluebyte.biz",
       "priority": 1,
       "changefreq": "weekly"
     },
