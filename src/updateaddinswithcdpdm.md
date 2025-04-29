@@ -4,6 +4,10 @@ description: This article is about updating any SOLIDWORKS PDM add-in you purcha
 ---
 # Updating Blue Byte Systems PDM add-ins with CDPDM
 
+
+<video src="https://bluebyte.biz/wp-content/docsvideos/cdpdm.mp4" autoplay muted controls style="width: 100%; border-radius: 12px;"></video>
+
+
 This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the CDPDM add-in. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.
 
 ### Installation Steps:

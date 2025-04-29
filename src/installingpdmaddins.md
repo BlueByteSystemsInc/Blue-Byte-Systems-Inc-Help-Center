@@ -1,6 +1,7 @@
 # How to Install PDM Add-ins
 
 Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.
+
 ## Step 1: Locate the `.cex` File
 
 After purchasing one of our PDM add-ins, you will receive an order email. This email contains a link to download the `.cex` file required for the installation.

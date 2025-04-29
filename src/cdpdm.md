@@ -4,8 +4,7 @@ description: How to use CDPDM to install PDMPublisher, PDM2Excel and other Blue 
 ---
 # Continuous Delivery
 
-> [!Video https://www.loom.com/embed/0caf90c77d4344cab8d88b0d318d6dcf?sid=ecf596af-8fe9-460c-9177-a568db909600]
-
+<video src="https://bluebyte.biz/wp-content/docsvideos/cdpdm.mp4" autoplay muted controls style="width: 100%; border-radius: 12px;"></video>
 
 CDPDM is a PDM add-in by Blue Byte Systems Inc. that facilitates the deployment of PDM and task add-ins developed for you.
 
@@ -53,30 +52,29 @@ The advantages of using CDPDM are numerous:
 
 - Locate your Customer Configuration File.
 - You can upload the Customer Configuration File via the Administration tool. 
-- Right-click on the add-in and click Upload Customer Configuration File...
+- Right-click on the add-in and click *Upload Customer Configuration File...*
 - Browse to the Customer Configuration File.
 
 
 ![CDPDM Menu](../images/cdpdm_menu.png)
 
 >[!NOTE]
-> You can configure the settings of CDPDM by adding the credentials of the Customer Configuration File manually. Contact support for help.
+> You can configure the settings of CDPDM by adding the credentials of the Customer Configuration File manually. Contact support for help with the *Settings...* dialog.
 
 
-## Updating Add-ins
+## Installing/Updating Add-ins
 
-- Right-click on CDPDM under Add-ins in the Administration tool and click Update Add-ins...
+- Right-click on CDPDM under Add-ins in the Administration tool and click *Update AddIns...*
 - This process may take a few moments depending on how many add-ins are in your vault.
 - You will be prompted with a window like the following:
 
-![CDPDM Update](../images/cdpdm_updateaddins.png)
+![CDPDM Update](../images/cdpdm_updateaddins_updated.png)
 
-You can:
+1. Check the add-in(s) you'd like to install.
+2. Pick the version(s) from the Server Version column. 
+3. Click on *Install Checked Add-Ins* to install...
 
-- Install the selected add-in from the list. From the *Version To Install* dropdown, you can select which version to install and make sure to check the add-in.
-- Uninstall the selected add-in from the vault (if it is installed).
-
-The installation process will ask you if you want to restart PDM. This may be beneficial to do after every upgrade, especially if you're validating a feature.
+CDPDM will ask you if you want to restart PDM. This may be needed to do after every add-in update.
 
 >[!NOTE]
-> Please allow for a few moments after you click Install/Update. The add-in will be downloaded unblocked and added to the vault. This operation includes suppressing some PDM dialog boxes.
+> Please allow for a few moments after you click *Install Checked Add-Ins*. The add-in will be downloaded unblocked and added to the vault. This operation includes suppressing some PDM dialog boxes.
