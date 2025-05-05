@@ -367,6 +367,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/eula.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/eula.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/installingpdmaddins.md",
       "output": {
         ".html": {

@@ -3,8 +3,11 @@
 - name: Introduction
   href: introduction.md
 
-- name: SOLIDDWORKS PDM Products   
+- name: End User License Agreement
+- name: EULA
+  href: eula.md
 
+- name: SOLIDDWORKS PDM Products   
 - name: Installing/Updating PDM add-ins (regular method)
   href: installingpdmaddins.md
 - name: Installing/Updating PDM add-ins with CDPDM
