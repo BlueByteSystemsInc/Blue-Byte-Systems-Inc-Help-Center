@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 ---
 title: Creating a new task | PDM2Excel | SOLIDWORKS PDM
 description: This section will detail the setup pages that require explanation.
 ---
-=======
->>>>>>> 1e28ba2ee6d2ff5105a2d0132b7dd0d55109b898
 # Setting your task
 
 This section will detail the setup pages that require explanation.

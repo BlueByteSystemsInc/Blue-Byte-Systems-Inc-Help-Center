@@ -38,7 +38,7 @@ The Options setup tab allows you to define the characteristics of the BOM you wo
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Xlsx template**                           | Specifies the Excel template file (`.xls`, `.xlsx`, `.xlsm`) to be used when exporting the Bill of Materials, which can define formatting and data layout.         |
+| **Xlsx template**                           | Specifies the Excel template file (`.xlsx`) to be used when exporting the Bill of Materials, which can define formatting and data layout.         |
 
 > [!NOTE]
 > The Export and Import button allows you to save your settings and import them after upgrading. Only use them with task setup.
