@@ -9,7 +9,7 @@ This section denotes how to manage a license.
 
 ## Managing a License
 
-Your license is made of a **secret key** that was provided to you in the *order confirmation email*.  
+Your license is made of a **secret key** that was provided to you in the *order details email*.  
 
 Your license entitles you to use PDM Publisher:
 
