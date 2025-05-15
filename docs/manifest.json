@@ -217,6 +217,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdm2excel_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excel_logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdm2excel_newtask.png",
       "output": {
         "resource": {
@@ -351,6 +361,16 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher_rmb.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmreminder_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmreminder_logo.png"
         }
       },
       "version": ""
