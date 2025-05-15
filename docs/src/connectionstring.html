@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Example | Helper Center </title>
+      <title>Connection String | PDMReminder | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Example | Helper Center ">
+      <meta name="title" content="Connection String | PDMReminder | SOLIDWORKS PDM | Helper Center ">
       
-      
+      <meta name="description" content="Learn how to create and use a secure SQL Server connection string for PDMReminder to access your SOLIDWORKS PDM vault database efficiently.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/partsbookcreator.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/connectionstring.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,27 +85,63 @@
         </div>
 
         <article data-uid="">
-<h1 id="example">Example</h1>
+<h1 id="configuring-a-connection-string-for-pdmreminder">Configuring a Connection String for PDMReminder</h1>
 
-<p>This page explains how to configure a PDM Publisher to create a parts book.</p>
-<h2 id="parts-book">Parts Book</h2>
-<p>A parts book in manufacturing is a comprehensive reference document that provides detailed information about the various parts and components of a product or piece of machinery.</p>
-<p>In our case, the parts book will be created from a top-level assembly.</p>
-<h2 id="conditions">Conditions</h2>
-<p>To create a parts book, you may want to:</p>
+<p>PDMReminder requires a connection string to rapidly read from your SOLIDWORKS PDM vault database. This connection string allows the add-in to securely access the necessary data to send reminders and generate reports.</p>
+<p>You can create your own connection string, or use the form below to generate one easily.</p>
+<h2 id="why-is-a-connection-string-needed">Why is a Connection String Needed?</h2>
+<p>The connection string provides PDMReminder with the information it needs to connect to your SQL Server database. This enables the add-in to:</p>
 <ul>
-<li>Exclude certain components from the assembly (e.g., parts that are purchased).</li>
-<li>Create a PDF of each component.</li>
-<li>Create a DXF of each sheet metal component.</li>
-<li>Add manufacturing quantities to the printed PDF.</li>
-<li>Add additional notes to the printed PDFs such as the customer name, the project, the batch number, and the time of the print.</li>
-<li>Merge all PDFs together.</li>
+<li>Retrieve user and file information quickly.</li>
+<li>Generate accurate reminders and reports.</li>
+<li>Integrate seamlessly with your existing PDM infrastructure.</li>
 </ul>
+<h2 id="connection-string-creator">Connection String Creator</h2>
+<p>Fill in the details below to generate your connection string. The <strong>Instance</strong> field is optional—leave it blank if you are connecting to the default SQL Server instance.</p>
+<div style="max-width:400px; margin-bottom:1em;">
+  <form id="connForm" autocomplete="off">
+    <label for="server">Server:</label><br>
+    <input type="text" id="server" name="server" required="" style="width:100%"><br><br>
+    <label for="instance">Instance (optional):</label><br>
+    <input type="text" id="instance" name="instance" style="width:100%"><br><br>
+    <label for="dbname">Vault DB Name:</label><br>
+    <input type="text" id="dbname" name="dbname" required="" style="width:100%"><br><br>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required="" style="width:100%"><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required="" style="width:100%"><br><br>
+    <button type="button" onclick="generateConnStr()">Generate Connection String</button>
+  </form>
+</div>
+<p><strong>Your Connection String:</strong></p>
+<pre id="connStrOutput" style="background:#f4f4f4; color:#000000; padding:1em; border-radius:5px;"></pre>
+<script>
+function generateConnStr() {
+    var server = document.getElementById('server').value.trim();
+    var instance = document.getElementById('instance').value.trim();
+    var dbname = document.getElementById('dbname').value.trim();
+    var username = document.getElementById('username').value.trim();
+    var password = document.getElementById('password').value.trim();
+
+    var dataSource = server;
+    if(instance) {
+        dataSource += '\\' + instance;
+    }
+
+    var connStr = `Server=${dataSource};Database=${dbname};User Id=${username};Password=${password}`;
+
+    document.getElementById('connStrOutput').textContent = connStr;
+}
+</script>
+<blockquote>
+<p><strong>Note:</strong><br>
+Keep your connection string secure. Do not share it with unauthorized users.</p>
+</blockquote>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/partsbookcreator.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/connectionstring.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Example | Helper Center </title>
+      <title>Email Notifications and Whitelisting | PDMReminder | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Example | Helper Center ">
+      <meta name="title" content="Email Notifications and Whitelisting | PDMReminder | SOLIDWORKS PDM | Helper Center ">
       
-      
+      <meta name="description" content="Learn how to ensure you receive email notifications from Blue Byte Systems and troubleshoot common issues with PDM notifications.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/partsbookcreator.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/notificationsemails.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,27 +85,38 @@
         </div>
 
         <article data-uid="">
-<h1 id="example">Example</h1>
+<h1 id="faq-ensuring-delivery-of-email-notifications-from-blue-byte-systems">FAQ: Ensuring Delivery of Email Notifications from Blue Byte Systems</h1>
 
-<p>This page explains how to configure a PDM Publisher to create a parts book.</p>
-<h2 id="parts-book">Parts Book</h2>
-<p>A parts book in manufacturing is a comprehensive reference document that provides detailed information about the various parts and components of a product or piece of machinery.</p>
-<p>In our case, the parts book will be created from a top-level assembly.</p>
-<h2 id="conditions">Conditions</h2>
-<p>To create a parts book, you may want to:</p>
+<p>If you are using the PDMReminder emailing service with the default parameters, it is important to ensure that you receive all notification emails from Blue Byte Systems. Below are answers to common questions about whitelisting and troubleshooting notification delivery.</p>
+<hr>
+<h3 id="q-why-am-i-not-receiving-emails-from-emailing-service"><strong>Q: Why am I not receiving emails from Emailing Service?</strong></h3>
+<p><strong>A:</strong><br>
+Some email providers or company firewalls may block or filter automated emails. To ensure you receive all notifications, please whitelist the domain <strong>bluebyte.biz</strong> in your email system or spam filter settings. This will help prevent important reminders and alerts from being marked as spam or blocked.</p>
+<hr>
+<h3 id="q-what-should-i-do-if-pdm-notifications-are-not-appearing-in-my-inbox"><strong>Q: What should I do if PDM notifications are not appearing in my inbox?</strong></h3>
+<p><strong>A:</strong><br>
+SOLIDWORKS PDM notifications are sometimes delivered as internal inbox messages within the PDM client. If you are not receiving these notifications, it may be due to the <strong>SOLIDWORKS PDM Database Service</strong> not running on the server.<br>
+To resolve this:</p>
+<ol>
+<li>Open the Windows Services management console (<code>services.msc</code>).</li>
+<li>Locate <strong>SOLIDWORKS PDM Database Service</strong>.</li>
+<li>Ensure the service is started. If it is stopped, right-click and select <strong>Start</strong>.</li>
+</ol>
+<hr>
+<h3 id="q-what-else-can-i-do-to-ensure-reliable-notification-delivery"><strong>Q: What else can I do to ensure reliable notification delivery?</strong></h3>
+<p><strong>A:</strong></p>
 <ul>
-<li>Exclude certain components from the assembly (e.g., parts that are purchased).</li>
-<li>Create a PDF of each component.</li>
-<li>Create a DXF of each sheet metal component.</li>
-<li>Add manufacturing quantities to the printed PDF.</li>
-<li>Add additional notes to the printed PDFs such as the customer name, the project, the batch number, and the time of the print.</li>
-<li>Merge all PDFs together.</li>
+<li>Regularly check your spam or junk folder for missed emails.</li>
+<li>Ask your IT department to allow emails from <strong>bluebyte.biz</strong>.</li>
+<li>Verify that your email address is correctly configured in the PDMReminder settings.</li>
 </ul>
+<hr>
+<p>If you continue to experience issues, please contact <a href="https://bluebyte.biz/contact/">Blue Byte Systems Support</a> for further assistance.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/partsbookcreator.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/notificationsemails.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

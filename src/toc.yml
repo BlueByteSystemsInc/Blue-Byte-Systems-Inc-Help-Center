@@ -64,7 +64,10 @@
      href: pdmreminderconfiguration.md
    - name: Setting your task
      href: pdmremindernewtask.md
-        
+   - name: Connection String
+     href: connectionstring.md
+   - name: Notifications/Emails
+     href: notificationsemails.md     
 - name: Blue Byte Systems Inc worktools
 - name: CDPDM
   href: cdpdm.md
