@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -31,6 +31,16 @@
       "output": {
         "resource": {
           "relative_path": "images/_image.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addtask.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addtask.png"
         }
       },
       "version": ""
@@ -101,6 +111,16 @@
       "output": {
         "resource": {
           "relative_path": "images/confirmationemail.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/email.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/email.png"
         }
       },
       "version": ""
@@ -396,6 +416,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/useremailsetting.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/useremailsetting.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -621,6 +651,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmreminderconfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmremindereula.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmremindereula.html"
         }
       },
       "version": ""

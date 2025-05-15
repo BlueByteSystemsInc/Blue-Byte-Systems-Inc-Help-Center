@@ -29,6 +29,3 @@ To install the PDMReminder add-in, you have two options:
 ## Support
 
 For additional support, please contact us through the **[contact](https://bluebyte.biz/contact/)** page.
-
-> [!Note]
-> Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers.

@@ -4,9 +4,9 @@ description: Learn how to configure PDMReminder, including database connection, 
 ---
 ## Configuration 
 
-![Menu](../images/image.png)
+This configuration menu is accessed by right-clicking on the PDMReminder add-in under the Add-ins node in the SOLIDWORKS PDM Administration tool. It provides quick access to essential functions such as testing the database connection, configuring settings, generating reports, managing the license, and viewing dependencies. These options are intended for administrators to manage and troubleshoot the add-in effectively.
 
-This menu is accessed by right-clicking on the PDMReminder add-in under the Add-ins node in the SOLIDWORKS PDM Administration tool. It provides quick access to essential functions such as testing the database connection, configuring settings, generating reports, managing the license, and viewing dependencies. These options are intended for administrators to manage and troubleshoot the add-in effectively.
+![Menu](../images/image.png)
 
 | Menu Item                     | Description                                                                 |
 |------------------------------|-----------------------------------------------------------------------------|
@@ -16,22 +16,6 @@ This menu is accessed by right-clicking on the PDMReminder add-in under the Add-
 | Manage License...            | Allows activation, validation, or viewing of the current license.           |
 | Get dependencies...          | Lists required files or components needed for the tool to work properly.    |
 
-
----
-
-### Test connection to database...
-
-Tests the database connection using the connection string configured in **Settings**.  
-Only use this option after you've properly configured the connection string.
-
-You can generate a connection string using [connectionstrings.com](https://www.connectionstrings.com/sql-server/).
-
-> [!Warning]
-> Make sure to use a **read-only** connection string to prevent any accidental changes to the PDM database.
-
-If your connection string has been properly configured in the settings, you should get this dialogbox when you test your connection:
-
-![alt text](../images/image-1.png)
 
 ---
 ### Settings
@@ -53,8 +37,31 @@ If your connection string has been properly configured in the settings, you shou
 > [!Note]
 > All settings are automatically saved when the user closes the window.
 
+---
+### Test connection to database...
+
+To avoid a lengthly configuration, we have enabled a test command to validate using the add-in's connection with the database.  
 > [!Warning]
-> If **Use Emailing Service** is set to false, **PDMReminder** will use the PDM built-in messaging engine. 
+> Only use this option after you've properly configured the connection string (**Vault db connection string**).
+
+You can generate a connection string using [connectionstrings.com](https://www.connectionstrings.com/sql-server/).
+
+> [!Warning]
+> Make sure to use a **read-only** connection string to prevent any accidental changes to the PDM database.
+
+If your connection string has been properly configured in the settings, you should get this dialogbox after you click *Test connection to database...*:
+
+![alt text](../images/image-1.png)
+
+---
+
+### Important notes about the **Emailing Service**
+
+- If **Use Emailing Service** is set to false, **PDMReminder** will use the PDM built-in messaging engine. 
+- If **Use Emailing Service** is set to true, **PDMReminder** requires PDM user to have a valid e-mail: 
+
+  ![alt text](../images/useremailsetting.png) 
+
 
 ---
 ### Generate Report 

@@ -12,7 +12,7 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 
 ### Installation Steps:
 
-1. **Download CDPDM**: The link is provided in your order confirmation and is also available in the downloads section of your account. This file is an archive zip file and it contains `CDPDM.cex` and `CustomerConfigurationFile.cfg`
+1. **Download CDPDM**: The link is provided in your *order details email* and is also available in the downloads section of your account. This file is an archive zip file and it contains `CDPDM.cex` and `CustomerConfigurationFile.cfg`
 
 <p align="center">
   <img src="../images/confirmationemail.png" alt="Confirmation Email Example" />
@@ -26,7 +26,7 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 
 
 > [!Warning]
-> **If CDPDM fails to install, the order confirmation e-mail contains a downloadable CEX file that contains the add-in**.
+> **If CDPDM fails to install, the *order details* email contains a downloadable CEX file that contains the add-in**.
 
 
 

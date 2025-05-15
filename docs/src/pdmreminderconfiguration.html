@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmreminderconfiguration.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmreminderconfiguration.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -87,8 +87,8 @@
         <article data-uid="">
 
 <h2 id="configuration">Configuration</h2>
+<p>This configuration menu is accessed by right-clicking on the PDMReminder add-in under the Add-ins node in the SOLIDWORKS PDM Administration tool. It provides quick access to essential functions such as testing the database connection, configuring settings, generating reports, managing the license, and viewing dependencies. These options are intended for administrators to manage and troubleshoot the add-in effectively.</p>
 <p><img src="../images/image.png" alt="Menu"></p>
-<p>This menu is accessed by right-clicking on the PDMReminder add-in under the Add-ins node in the SOLIDWORKS PDM Administration tool. It provides quick access to essential functions such as testing the database connection, configuring settings, generating reports, managing the license, and viewing dependencies. These options are intended for administrators to manage and troubleshoot the add-in effectively.</p>
 <table>
 <thead>
 <tr>
@@ -119,17 +119,6 @@
 </tr>
 </tbody>
 </table>
-<hr>
-<h3 id="test-connection-to-database">Test connection to database...</h3>
-<p>Tests the database connection using the connection string configured in <strong>Settings</strong>.<br>
-Only use this option after you've properly configured the connection string.</p>
-<p>You can generate a connection string using <a href="https://www.connectionstrings.com/sql-server/">connectionstrings.com</a>.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>Make sure to use a <strong>read-only</strong> connection string to prevent any accidental changes to the PDM database.</p>
-</div>
-<p>If your connection string has been properly configured in the settings, you should get this dialogbox when you test your connection:</p>
-<p><img src="../images/image-1.png" alt="alt text"></p>
 <hr>
 <h3 id="settings">Settings</h3>
 <p><img src="../images/image-2.png" alt="alt text"></p>
@@ -203,10 +192,29 @@ Only use this option after you've properly configured the connection string.</p>
 <h5>Note</h5>
 <p>All settings are automatically saved when the user closes the window.</p>
 </div>
+<hr>
+<h3 id="test-connection-to-database">Test connection to database...</h3>
+<p>To avoid a lengthly configuration, we have enabled a test command to validate using the add-in's connection with the database.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>If <strong>Use Emailing Service</strong> is set to false, <strong>PDMReminder</strong> will use the PDM built-in messaging engine.</p>
+<p>Only use this option after you've properly configured the connection string (<strong>Vault db connection string</strong>).</p>
 </div>
+<p>You can generate a connection string using <a href="https://www.connectionstrings.com/sql-server/">connectionstrings.com</a>.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Make sure to use a <strong>read-only</strong> connection string to prevent any accidental changes to the PDM database.</p>
+</div>
+<p>If your connection string has been properly configured in the settings, you should get this dialogbox after you click <em>Test connection to database...</em>:</p>
+<p><img src="../images/image-1.png" alt="alt text"></p>
+<hr>
+<h3 id="important-notes-about-the-emailing-service">Important notes about the <strong>Emailing Service</strong></h3>
+<ul>
+<li><p>If <strong>Use Emailing Service</strong> is set to false, <strong>PDMReminder</strong> will use the PDM built-in messaging engine.</p>
+</li>
+<li><p>If <strong>Use Emailing Service</strong> is set to true, <strong>PDMReminder</strong> requires PDM user to have a valid e-mail:</p>
+<p><img src="../images/useremailsetting.png" alt="alt text"></p>
+</li>
+</ul>
 <hr>
 <h3 id="generate-report">Generate Report</h3>
 <p><img src="../images/image-3.png" alt="alt text"></p>
@@ -257,7 +265,7 @@ Only use this option after you've properly configured the connection string.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmreminderconfiguration.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmreminderconfiguration.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
