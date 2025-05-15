@@ -52,6 +52,16 @@
         href: pdm2exceloptions.md
       - name: Need more help?
         href: pdm2excelneedmorehelp.md
+- name: PDMReminder
+  href: PDMReminder.md
+  expanded: true
+  items:
+   - name: License Management
+     href: pdmreminderlicensemanagement.md
+   - name: Configuration
+     href: pdmreminderconfiguration.md
+   - name: Setting your task
+     href: pdmremindernewtask.md
         
 - name: Blue Byte Systems Inc worktools
 - name: CDPDM

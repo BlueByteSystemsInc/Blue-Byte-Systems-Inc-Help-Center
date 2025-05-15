@@ -16,8 +16,10 @@ Click on Help Center to get [started](src/introduction.html).
 
 - **PDM Publisher**: To review the documentation for PDM Publisher, please click [here](src/pdmpublisher.html).
 - **PDM2Excel**:To review the documentation for PDM2Excel, please click [here](src/pdm2excel.html).
+- **PDMReminder**:To review the documentation for PDMReminder, please click [here](src/PDMReminder.html).
 
 
 ## Contact Us
 
 For more information or to contact us, please refer to the [Contact Us](https://bluebyte.biz/contact) page.
+

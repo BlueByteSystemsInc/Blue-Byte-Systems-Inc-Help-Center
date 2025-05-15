@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Configuration | PDMReminder | SOLIDWORKS PDM | Helper Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Configuration | PDMReminder | SOLIDWORKS PDM | Helper Center ">
+      
+      <meta name="description" content="Learn how to configure PDMReminder, including database connection, settings, licensing, and reporting features.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmreminderconfiguration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="Helper Center">
+            Helper Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="configuration">Configuration</h2>
+<p><img src="../images/image.png" alt="Menu"></p>
+<p>This menu is accessed by right-clicking on the PDMReminder add-in under the Add-ins node in the SOLIDWORKS PDM Administration tool. It provides quick access to essential functions such as testing the database connection, configuring settings, generating reports, managing the license, and viewing dependencies. These options are intended for administrators to manage and troubleshoot the add-in effectively.</p>
+<table>
+<thead>
+<tr>
+<th>Menu Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test connection to database...</td>
+<td>Verifies if the database connection is valid and accessible.</td>
+</tr>
+<tr>
+<td>Generate report...</td>
+<td>Creates a summary report of reminders and their current status.</td>
+</tr>
+<tr>
+<td>Settings...</td>
+<td>Opens the configuration panel for general settings like email or scheduling.</td>
+</tr>
+<tr>
+<td>Manage License...</td>
+<td>Allows activation, validation, or viewing of the current license.</td>
+</tr>
+<tr>
+<td>Get dependencies...</td>
+<td>Lists required files or components needed for the tool to work properly.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="test-connection-to-database">Test connection to database...</h3>
+<p>Tests the database connection using the connection string configured in <strong>Settings</strong>.<br>
+Only use this option after you've properly configured the connection string.</p>
+<p>You can generate a connection string using <a href="https://www.connectionstrings.com/sql-server/">connectionstrings.com</a>.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Make sure to use a <strong>read-only</strong> connection string to prevent any accidental changes to the PDM database.</p>
+</div>
+<p>If your connection string has been properly configured in the settings, you should get this dialogbox when you test your connection:</p>
+<p><img src="../images/image-1.png" alt="alt text"></p>
+<hr>
+<h3 id="settings">Settings</h3>
+<p><img src="../images/image-2.png" alt="alt text"></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Setting Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advanced</td>
+<td>Developer Mode</td>
+<td>True</td>
+<td>Enables developer-specific options or debug info.</td>
+</tr>
+<tr>
+<td>Advanced</td>
+<td>File extensions to include</td>
+<td>sldprt;sldasm;slddrw</td>
+<td>File types to monitor for reminders.</td>
+</tr>
+<tr>
+<td>Messaging</td>
+<td>API Key</td>
+<td>●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●</td>
+<td>Required to use the emailing service (contact support for access).</td>
+</tr>
+<tr>
+<td>Messaging</td>
+<td>Attach files as xlsx</td>
+<td>True</td>
+<td>Sends reminder attachments as Excel files.</td>
+</tr>
+<tr>
+<td>Messaging</td>
+<td>Domain</td>
+<td>bluebyte.biz</td>
+<td>Sets the domain used in email links or references.</td>
+</tr>
+<tr>
+<td>Messaging</td>
+<td>From e-mail</td>
+<td>PDM Reminder <a href="mailto:donot-reply@bluebyte.biz">donot-reply@bluebyte.biz</a></td>
+<td>Sender email address for outgoing reminders.</td>
+</tr>
+<tr>
+<td>Messaging</td>
+<td>Reply e-mail</td>
+<td>PDM Reminder <a href="mailto:donot-reply@bluebyte.biz">donot-reply@bluebyte.biz</a></td>
+<td>Reply-to address for responses.</td>
+</tr>
+<tr>
+<td>Messaging</td>
+<td>Use Emailing Service</td>
+<td>True</td>
+<td>Enables or disables the external emailing service.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Vault db connection string</td>
+<td>●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●</td>
+<td>Connection string to read data from the PDM SQL database.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All settings are automatically saved when the user closes the window.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If <strong>Use Emailing Service</strong> is set to false, <strong>PDMReminder</strong> will use the PDM built-in messaging engine.</p>
+</div>
+<hr>
+<h3 id="generate-report">Generate Report</h3>
+<p><img src="../images/image-3.png" alt="alt text"></p>
+<p>The <strong>Generate report...</strong> window in <strong>PDMReminder</strong> provides administrators with a visual summary of files that match reminder criteria—such as being checked out too long or locked by a user.</p>
+<h4 id="features-and-commands">Features and Commands</h4>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>User List (left panel)</strong></td>
+<td>Displays a list of all users with checkboxes to include or exclude them from the report.</td>
+</tr>
+<tr>
+<td><strong>Date Picker (top center)</strong></td>
+<td>Allows filtering results by a specific date, showing files relevant to that day.</td>
+</tr>
+<tr>
+<td><strong>Results Grid (right panel)</strong></td>
+<td>Displays the report of the files that match the search parameters.</td>
+</tr>
+<tr>
+<td><strong>Select All Users...</strong></td>
+<td>Select or deselect all users in the report.</td>
+</tr>
+<tr>
+<td><strong>Export to Excel</strong></td>
+<td>Exports the currently visible results to an <code>.xlsx</code> file for reporting or review.</td>
+</tr>
+<tr>
+<td><strong>Generate Report...</strong></td>
+<td>Runs the report based on the selected filters and users.</td>
+</tr>
+<tr>
+<td><strong>File Count (bottom right)</strong></td>
+<td>Displays the total number of files found, e.g., <code>1 files found</code>.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>ℹ️ <strong>Note:</strong> The report dynamically updates based on the selected users and date filter.</p>
+</blockquote>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmreminderconfiguration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁 and Couscous 🍲.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

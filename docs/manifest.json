@@ -17,6 +17,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/_image-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/_image-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/_image.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/_image.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/annotations.mp4",
       "output": {
         "resource": {
@@ -121,6 +141,46 @@
       "output": {
         "resource": {
           "relative_path": "images/how-to-add-pdm2excel.mp4"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/image-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/image-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/image-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/image-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/image-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/image-3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/image.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/image.png"
         }
       },
       "version": ""
@@ -287,6 +347,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmremindermanagelicense.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmremindermanagelicense.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/preview.mp4",
       "output": {
         "resource": {
@@ -331,6 +401,16 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/PDMReminder.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/PDMReminder.html"
         }
       },
       "version": ""
@@ -531,6 +611,36 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmqa.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmreminderconfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmreminderconfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmreminderlicensemanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmreminderlicensemanagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmremindernewtask.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmremindernewtask.html"
         }
       },
       "version": ""

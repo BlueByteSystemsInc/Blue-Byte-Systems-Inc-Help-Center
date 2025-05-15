@@ -1,22 +1,22 @@
 ---
-title: PDM2Excel | SOLIDWORKS PDM
-description: Getting started with PDM2Excel.
+title: PDMReminder | SOLIDWORKS PDM
+description: Getting started with PDMReminder, including requirements, installation instructions, and support resources.
 ---
-# PDM2Excel
+# PDMReminder
 
-Thank you for choosing **[PDM2Excel](https://bluebyte.biz/product/pdm2excel/)**!
+Thank you for choosing **[PDMReminder](https://bluebyte.biz/product/PDMReminder/)**!
 
-PDM2Excel is a SOLIDWORKS PDM task add-in that exports SOLIDWORKS PDM assemblies to xslx Bill Of Materials. 
+PDMReminder is a SOLIDWORKS PDM task add-in that reminds users to check their files back into via email.
 
 ## Requirements
 
-The minimum version PDM2Excel supports is SOLIDWORKS PDM Professional 2017 SP0.  
+The minimum version PDMReminder supports is SOLIDWORKS PDM Professional 2017 SP0.  
 > [!Tip]
 > We highly recommend you use the latest version of PDM Professional.
 
 ## Installation
 
-To install the PDM2Excel add-in, you have two options:
+To install the PDMReminder add-in, you have two options:
 
 1. **[Using CDPDM](/src/updateaddinswithcdpdm.html)**:  
    You can use **[CDPDM](/src/cdpdm.html)** to install the add-in directly from the cloud. This is the recommended method.
