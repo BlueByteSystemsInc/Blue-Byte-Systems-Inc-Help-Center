@@ -17,26 +17,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "images/_image-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/_image-1.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/_image.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/_image.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "images/addtask.png",
       "output": {
         "resource": {
@@ -227,6 +207,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/newtaskpdmreminder.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/newtaskpdmreminder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdm2excel_newtask.png",
       "output": {
         "resource": {
@@ -381,6 +371,16 @@
       "output": {
         "resource": {
           "relative_path": "images/preview.mp4"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/settingstab.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/settingstab.png"
         }
       },
       "version": ""

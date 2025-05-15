@@ -3,11 +3,11 @@ title: Creating a new task | PDMReminder | SOLIDWORKS PDM
 description: Learn how to create a new task in PDM to remind users to check their back into the vault.
 ---
 
-![alt text](../images/_image-1.png)
+![alt text](../images/newtaskpdmreminder.png)
 
 ### Step-by-Step Instructions
 
-1. **Right-click "Tasks" in the PDM Admin Tool**  
+1. **Right-click "Tasks" in the PDM Administration tool**  
    Go to your vault (e.g., `bluebyte`) and right-click the **Tasks** node. Select **New Task...**.
 
 2. **Choose the Add-in**  
@@ -15,7 +15,7 @@ description: Learn how to create a new task in PDM to remind users to check thei
 
 3. **Go to the Settings tab**  
    
-    ![alt text](../images/_image.png)
+    ![alt text](../images/settingstab.png)
 
     The **Settings** tab allows you to define the condition that triggers the reminder:  
     
