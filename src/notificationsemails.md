@@ -22,11 +22,15 @@ Some email providers or company firewalls may block or filter automated emails. 
 SOLIDWORKS PDM notifications are sometimes delivered as internal inbox messages within the PDM client. If you are not receiving these notifications, it may be due to the **SOLIDWORKS PDM Database Service** not running on the server.  
 To resolve this:
 1. On the server, open **Database Server Configuration**.
+
 2. Make sure the SQL connection is configured with the `sa` username and password:
  <img src="../images/eventviewer.png" width="800">
+
 3. Open the Windows Services management console (`services.msc`).
+
 4. Locate **SOLIDWORKS PDM Database Service**:
 <img src="../images/databaseservice.png"  width="800">
+
 5. Ensure the service is started. If it is stopped, right-click and select **Start**.
 
 ---
@@ -35,7 +39,9 @@ To resolve this:
 
 **A:**  
 - Regularly check your spam or junk folder for missed emails.
+
 - Ask your IT department to allow emails from **bluebyte.biz**.
+
 - Verify that your email address is correctly configured in the PDMReminder settings.
 
 ---

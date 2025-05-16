@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -14,6 +14,26 @@
           "relative_path": "index.json"
         }
       }
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Samplenotificiation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Samplenotificiation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addinview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addinview.png"
+        }
+      },
+      "version": ""
     },
     {
       "type": "Resource",
@@ -81,6 +101,16 @@
       "output": {
         "resource": {
           "relative_path": "images/cdpdm_updateaddins_updated.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cdpdmpleasewait.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/cdpdmpleasewait.png"
         }
       },
       "version": ""
@@ -417,6 +447,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/rightclickcdpdm.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/rightclickcdpdm.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/settingstab.png",
       "output": {
         "resource": {
@@ -441,6 +481,16 @@
       "output": {
         "resource": {
           "relative_path": "images/tabs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/taskhostconfiguration.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/taskhostconfiguration.png"
         }
       },
       "version": ""

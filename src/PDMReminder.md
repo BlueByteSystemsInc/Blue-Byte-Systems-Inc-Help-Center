@@ -6,7 +6,11 @@ description: Getting started with PDMReminder, including requirements, installat
 
 Thank you for choosing **[PDMReminder](https://bluebyte.biz/product/PDMReminder/)**!
 
-PDMReminder is a SOLIDWORKS PDM task add-in that reminds users to check their files back into via email.
+PDMReminder is a SOLIDWORKS PDM task add-in that reminds users to check their files back into via email or PDM messaging engine.
+
+Sample notification:
+
+![Sample notificiation](../images/Samplenotificiation.png)
 
 ## Requirements
 
@@ -25,6 +29,11 @@ To install the PDMReminder add-in, you have two options:
    Alternatively, you can download the `.cex` file from the order email you received after purchase. Once downloaded, import the `.cex` file into your vault via the Administration tool to complete the installation. 
    > [!Warning]
    > [Make sure to unblock the downloaded file.](/src/pdmqa.html)
+
+
+## Configuration
+Please see [setting up your first task](/src/pdmremindernewtask.html).
+
 
 ## Support
 

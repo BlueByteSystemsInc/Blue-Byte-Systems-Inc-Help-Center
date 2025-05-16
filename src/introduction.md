@@ -2,18 +2,20 @@
 title: Getting Started | Blue Byte Systems Helper Center | SOLIDWORKS PDM
 description:  Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products.
 ---
-# Introduction to Blue Byte Systems Products
+# Helper Center 
+**Welcome to Blue Byte Systems**, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:
 
-Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:
+## PDMPublisher
 
-## PDM Publisher
-
-PDM Publisher simplifies the conversion of files within your SOLIDWORKS PDM vault. This add-in automates the process, saving you time and reducing manual effort. It supports multiple file formats and provides flexible configuration options to suit your specific requirements.
+[PDMPublisher](/src/pdmpublisher.html) streamlines the conversion and publishing of files within your SOLIDWORKS PDM vault. This powerful add-in automates routine tasks, supports a wide range of file formats, and offers advanced configuration options to match your workflow. By reducing manual effort, it helps you save time and minimize errors.
 
 ## PDM2Excel
 
-PDM2Excel bridges the gap between your PDM system and Excel, enabling seamless data export. This tool allows you to extract and organize PDM data into Excel spreadsheets for analysis, reporting, and sharing. It enhances data accessibility and helps you make informed decisions based on accurate information.
+[PDM2Excel](/src/pdm2excel.html) makes it easy to export and organize your PDM data directly into Excel. With just a few clicks, you can generate detailed spreadsheets for analysis, reporting, and sharing. This tool improves data accessibility and empowers you to make informed decisions based on up-to-date information.
 
+## PDMReminder
+
+[PDMReminder](/src/PDMReminder.html) ensures your team never forgets to check files back into the vault. This add-in automatically sends timely email reminders to users with checked-out files, helping maintain data integrity and keeping your projects on track.
 
 # Getting support 
 
@@ -26,7 +28,7 @@ At Blue Byte Systems, we are committed to continuous improvement and providing e
 > 
 > If you need support, please reach out to us by clicking the button below:
 > 
-> [Get Support](mailto:support@bluebytesystemsinc.zohodesk.com)
+> [Get Support](https://bluebyte.biz/contact)
 
 
 <a href="#" class="button big">Create Project</a>

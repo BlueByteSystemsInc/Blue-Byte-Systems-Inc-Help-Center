@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/updateaddinswithcdpdm.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/updateaddinswithcdpdm.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -91,10 +91,10 @@
 <p>This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the CDPDM add-in. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.</p>
 <h3 id="installation-steps">Installation Steps:</h3>
 <ol>
-<li><strong>Download CDPDM</strong>: The link is provided in your <em>order details email</em> and is also available in the downloads section of your account. This file is an archive zip file and it contains <code>CDPDM.cex</code> and <code>CustomerConfigurationFile.cfg</code></li>
+<li><strong>Download CDPDM</strong>: The link is provided in your <em>order email</em> and is also available in the downloads section of your account. This file is an archive zip file and it contains <code>CDPDM.cex</code> and <code>CustomerConfigurationFile.cfg</code></li>
 </ol>
 <p align="center">
-  <img src="../images/confirmationemail.png" alt="Confirmation Email Example">
+  <img src="../images/confirmationemail.png" alt="Order Email">
   <br>
   <em>Confirmation Email Example</em>
 </p>
@@ -104,41 +104,62 @@
 </div>
 <div class="WARNING">
 <h5>Warning</h5>
-<p><strong>If CDPDM fails to install, the <em>order details</em> email contains a downloadable CEX file that contains the add-in</strong>.</p>
+<p><strong>If CDPDM fails to install, the <em>order email</em> contains a downloadable CEX file that contains the add-in</strong>.</p>
 </div>
 <ol start="2">
-<li><strong>Unblock the downloaded file</strong>: Right-click on the zip archive and select <strong>Properties</strong>. In the properties dialog, check the <strong>Unblock</strong> option and click <strong>OK</strong>.</li>
-<li><strong>Unzip the archive</strong>: Extract the contents of the zip archive.</li>
-<li><strong>Open the administration tool</strong>: Log into your vault.</li>
-<li><strong>Import the add-in</strong>:
+<li><p><strong>Unblock the downloaded file</strong>: Right-click on the zip archive and select <strong>Properties</strong>. In the properties dialog, check the <strong>Unblock</strong> option and click <strong>OK</strong>.</p>
+</li>
+<li><p><strong>Unzip the archive</strong>: Extract the contents of the zip archive.</p>
+</li>
+<li><p><strong>Open the administration tool</strong>: Log into your vault.</p>
+</li>
+<li><p><strong>Import the add-in</strong>:</p>
 <ul>
-<li>Go to <strong>File &gt; Open</strong> and browse to <code>CDPDM.cex</code> (unzipped content).</li>
-<li>Click <strong>OK</strong> to open the CEX file.</li>
-<li>Drag and drop the CDPDM add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.</li>
+<li><p>Go to <strong>File &gt; Open</strong> and browse to <code>CDPDM.cex</code> (unzipped content).</p>
+</li>
+<li><p>Click <strong>OK</strong> to open the CEX file.</p>
+</li>
+<li><p>Drag and drop the CDPDM add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.</p>
+</li>
 </ul>
 </li>
-<li><strong>Upload the customer configuration file</strong>:
+<li><p><strong>Upload the customer configuration file</strong>:</p>
 <ul>
-<li>Locate the customer configuration file <code>CustomerConfigurationFile.cfg</code>.</li>
-<li>If needed unblock the downloaded configuration file: Right-click on the file, select <strong>Properties</strong>, check the <strong>Unblock</strong> option, and click <strong>OK</strong>.</li>
-<li>Right-click on the CDPDM add-in and click on <strong>Update customer configuration file...</strong></li>
-<li>Browse to the unblocked customer configuration file and upload it.</li>
+<li><p>Locate the customer configuration file <code>CustomerConfigurationFile.cfg</code>.</p>
+</li>
+<li><p>If needed unblock the downloaded configuration file: Right-click on the file, select <strong>Properties</strong>, check the <strong>Unblock</strong> option, and click <strong>OK</strong>.</p>
+</li>
+<li><p>Right-click on the CDPDM add-in and click on <strong>Update customer configuration file...</strong></p>
+</li>
+<li><p>Browse to the unblocked customer configuration file and upload it.</p>
+</li>
 </ul>
 </li>
 </ol>
 <h3 id="updating-an-add-in">Updating an Add-in:</h3>
 <ol>
-<li>Right-click on the CDPDM add-in and click on <strong>Update add-ins…</strong></li>
-<li>This will show the main dialog of the add-in where you can select from the dropdown list the program you would like to install.</li>
-<li>Click on the <strong>Install</strong> button to install the selected add-in.</li>
-<li>The process might take a few moments, so please wait.</li>
-<li>You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in.</li>
-<li>You may want to restart the administration tool (conisioadmin.exe) so the add-in reloads properly before you consume your license or create/edit your tasks.</li>
+<li>Right-click on CDPDM add-in (under Add-ins in the Administration tool):</li>
+</ol>
+<p><img src="/images/rightclickcdpdm.png" alt="rightclickcdpdm"></p>
+<ol start="2">
+<li>Click on <strong>Update AddIns…</strong> and confirm this dialog box:</li>
+</ol>
+<p><img src="/images/cdpdmpleasewait.png" alt="please wait"></p>
+<ol start="3">
+<li>The Add-in View Manager window will appear. This is where you can select from the dropdown list (and check the checkbox) the add-in you'd like to install:</li>
+</ol>
+<p><img src="/images/addinview.png" alt="addinview"></p>
+<ol start="4">
+<li><p>Click on the <strong>Install Checked Add-Ins...</strong> button to install the selected add-in. The process might take a few moments, so please wait.</p>
+</li>
+<li><p>You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in. <em>This is optional</em> but highly recommended for tasks that are triggered from File Explorer.</p>
+</li>
 </ol>
 <h3 id="warnings">Warnings</h3>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>You must back up your tasks. The CDPDM add-in does not update your existing tasks or permit the add-in the <em>Task Host Configuration</em>.</p>
+<p>CDPDM <strong>does not permit</strong> new task add-ins in the <em>Task Host Configuration</em>. You must do that manually:
+<img src="/images/taskhostconfiguration.png" alt="taskhostconfiguration"></p>
 </div>
 <div class="WARNING">
 <h5>Warning</h5>
@@ -148,7 +169,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/updateaddinswithcdpdm.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/updateaddinswithcdpdm.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

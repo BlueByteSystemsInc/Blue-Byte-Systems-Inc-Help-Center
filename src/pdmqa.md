@@ -13,11 +13,17 @@ description: General troubleshooting for SOLIDWORKS PDM Add-ins.
 **Answer:** If your SOLIDWORKS PDM add-in fails to load, it is possible that is blocked by Windows. Follow these troubleshooting steps:
 
 - **Navigate to the File in File Explorer:** Locate the file that you want to unblock using File Explorer.
+
 - **Right-click on the File:** Right-click on the file to open the context menu.
+
 - **Open Properties:** In the context menu, click on "Properties" at the bottom. This will open the Properties dialog box for the file.
+
 - **Unblock the File:** In the Properties dialog box, if the file is blocked, you will see an "Unblock" checkbox near the bottom of the General tab. Check the "Unblock" checkbox if it is present.
+
 - **Apply Changes:** Click the "Apply" button if available, or simply click "OK" to apply the changes.
+
 - **Confirm Unblock:** If the file was successfully unblocked, you may need to reopen the Properties dialog box to verify that the "Unblock" checkbox is no longer present.
+
 - **Access the File:** After unblocking the file, you should now be able to access and use it as intended without any restrictions imposed by Windows' security settings.
 
 <br>
