@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/notificationsemails.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/notificationsemails.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -98,8 +98,12 @@ Some email providers or company firewalls may block or filter automated emails. 
 SOLIDWORKS PDM notifications are sometimes delivered as internal inbox messages within the PDM client. If you are not receiving these notifications, it may be due to the <strong>SOLIDWORKS PDM Database Service</strong> not running on the server.<br>
 To resolve this:</p>
 <ol>
+<li>On the server, open <strong>Database Server Configuration</strong>.</li>
+<li>Make sure the SQL connection is configured with the <code>sa</code> username and password:
+<img src="../images/eventviewer.png" width="800"></li>
 <li>Open the Windows Services management console (<code>services.msc</code>).</li>
-<li>Locate <strong>SOLIDWORKS PDM Database Service</strong>.</li>
+<li>Locate <strong>SOLIDWORKS PDM Database Service</strong>:
+<img src="../images/databaseservice.png" width="800"></li>
 <li>Ensure the service is started. If it is stopped, right-click and select <strong>Start</strong>.</li>
 </ol>
 <hr>
@@ -116,7 +120,7 @@ To resolve this:</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/notificationsemails.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/notificationsemails.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

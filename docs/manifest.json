@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -97,10 +97,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/databaseservice.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/databaseservice.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/email.png",
       "output": {
         "resource": {
           "relative_path": "images/email.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/eventviewer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/eventviewer.png"
         }
       },
       "version": ""
