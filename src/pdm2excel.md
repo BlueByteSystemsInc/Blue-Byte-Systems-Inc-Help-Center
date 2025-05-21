@@ -32,3 +32,7 @@ For additional support, please contact us through the **[contact](https://blueby
 
 > [!Note]
 > Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers.
+
+<script
+  src='https://cdn.jotfor.ms/agent/embedjs/0196efe63b1f79818c409ffed296766d11af/embed.js?skipWelcome=1&maximizable=1'>
+</script>

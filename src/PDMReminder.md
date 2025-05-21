@@ -38,3 +38,6 @@ Please see [setting up your first task](/src/pdmremindernewtask.html).
 ## Support
 
 For additional support, please contact us through the **[contact](https://bluebyte.biz/contact/)** page.
+<script
+  src='https://cdn.jotfor.ms/agent/embedjs/0196efe63b1f79818c409ffed296766d11af/embed.js?skipWelcome=1&maximizable=1'>
+</script>
