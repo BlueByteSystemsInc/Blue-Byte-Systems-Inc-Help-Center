@@ -6,13 +6,19 @@ Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.
 
 After purchasing one of our PDM add-ins, you will receive an order email with the header *Thank you for your business! Your BLUE BYTE SYSTEMS INC. order has been completed*. 
 
-This email contains a link to download the `.cex` file required for the installation.
+This email has a link to download a `.zip` archive that contains a `.cex` file. The `.cex` file is what you open with the Administration tool and it has the latest version of the PDM add-in.
 
-## Step 2: Download and Unblock the `.cex` File
+<p align="center">
+  <img src="../images/confirmationemail.png" alt="Order Email" />
+  <br>
+  <em>Order email</em>
+</p>
 
-1. Download the `.cex` file from the link provided in the order email.
+## Step 2: Download and Unblock the `.zip` File
 
-2. Once downloaded, right-click on the `.cex` file and select **Properties**.
+1. Download the `.zip` archive from the link provided in the order email.
+
+2. Once downloaded, right-click on the `.zip` file and select **Properties**.
 
 3. In the **Properties** window, check for the **Unblock** option at the bottom. If it is present, click **Unblock** and then click **OK**. This step ensures that the file is not blocked by Windows security.
 
@@ -21,9 +27,11 @@ This email contains a link to download the `.cex` file required for the installa
 
 ## Step 3: Open the SOLIDWORKS PDM Administration Tool
 
-1. Launch the **SOLIDWORKS PDM Administration** tool.
+1. Extract the `.zip` archive file to get the `.cex` file.
 
-2. Log in to your PDM vault.
+2. Launch the **Administration** tool. 
+
+3. Log in to your PDM vault.
 
 ## Step 4: Add or Update an Add-in
 
