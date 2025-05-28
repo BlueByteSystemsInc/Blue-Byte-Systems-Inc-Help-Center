@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Creating a new task | PDMReminder | SOLIDWORKS PDM | Helper Center </title>
+      <title>Creating a new task | PDM2Excel | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Creating a new task | PDMReminder | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content="Creating a new task | PDM2Excel | SOLIDWORKS PDM | Helper Center ">
       
-      <meta name="description" content="Learn how to create a new task in PDM to remind users to check their back into the vault.">
+      <meta name="description" content="This section will detail the setup pages that require explanation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmremindernewtask.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdm2excelnewtasksteps.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,53 +85,70 @@
         </div>
 
         <article data-uid="">
+<h1 id="setting-your-task">Setting your task</h1>
 
-
-<p><img src="../images/newtaskpdmreminder.png" alt="alt text"></p>
-<h3 id="step-by-step-instructions">Step-by-Step Instructions</h3>
-<ol>
-<li><p><strong>Right-click &quot;Tasks&quot; in the PDM Administration tool</strong><br>
-Go to your vault (e.g., <code>bluebyte</code>) and right-click the <strong>Tasks</strong> node. Select <strong>New Task...</strong>.</p>
-</li>
-<li><p><strong>Choose the Add-in</strong><br>
-In the <strong>Add-in</strong> dropdown, select <strong>PDMReminder</strong>. This add-in must already be imported into the vault.</p>
-</li>
-<li><p><strong>Go to the Settings tab</strong></p>
-<p><img src="../images/settingstab.png" alt="alt text"></p>
-<p>The <strong>Settings</strong> tab allows you to define the condition that triggers the reminder:</p>
-<ul>
-<li><strong>&quot;Remind users who have files checked out longer than...&quot;</strong> a specified number of days. This is the core rule that determines which users will receive a reminder—based on how long their files have remained checked out in the vault. For example, entering <code>3</code> days will only include users with files checked out for more than 3 days.</li>
-</ul>
-</li>
-<li><p><strong>Configure the Scheduling tab</strong>: Set how often the task runs (e.g., daily at 7:00 AM). This ensures users get regular notifications and helps enforce good vault hygiene.</p>
-</li>
-<li><p><strong>Configure the exection method and permissions tab.</strong></p>
-</li>
-<li><p>If you have scheduled a task, it will run according to the interval and frequency set.</p>
-</li>
-<li><p><em>Optional</em>: You can trigger the task to run immediately, clicking on <strong>Add Task...</strong>
-<img src="../images/addtask.png" alt="alt text"></p>
-</li>
-</ol>
-<h3 id="results">Results</h3>
-<p>If you use the <strong>Emailing Service</strong>, PDM users will receive an email similar this the following:
-<img src="../images/email.png" alt="alt text"></p>
-<h3 id="considerations-for-using-the-email-service">Considerations for Using the Email Service</h3>
-<p>Before enabling the <strong>Emailing Service</strong>, keep the following points in mind:</p>
-<ol>
-<li><p><strong>Additional Fees</strong>:<br>
-The Emailing Service may incur additional fees depending on your subscription plan. Ensure you review the pricing details before enabling this feature.</p>
-</li>
-<li><p><strong>Email Delivery Issues</strong>:<br>
-Emails sent through the service are sent from outside your organization's domain. This could result in emails being flagged as spam or blocked by your organization's email filters. To mitigate this, consider whitelisting the sender's domain or consulting with your IT department.</p>
-</li>
-</ol>
-<p>By understanding these considerations, you can make an informed decision about whether to enable the Emailing Service for your PDMReminder tasks.</p>
+<p>This section will detail the setup pages that require explanation.</p>
+<p>When you create a new task, please choose <strong>PDM2Excel</strong> from the dropdown in the first page of the task setup dialog like below:</p>
+<p align="center">
+  <img src="/images/step1.png" alt="Select PDM2Excel task add-in">
+</p>
+<hr>
+<h2 id="enable-the-task-host">Enable the Task Host</h2>
+<p>Make sure the task host on your machine is enabled and the proper add-in is allowed to run.</p>
+<p>You can do this from the tray icon by selecting <strong>Task Host Configuration</strong>.</p>
+<p align="center">
+  <img src="/images/step2.png" alt="Access Task Host Configuration">
+</p>
+<hr>
+<h2 id="permit-the-add-in">Permit the Add-in</h2>
+<p>In the <strong>Task Host Configuration</strong> window, make sure that the checkbox for <strong>PDM2Excel</strong> is checked.</p>
+<p align="center">
+  <img src="/images/step3.png" alt="Permit PDM2Excel Add-in">
+</p>
+<hr>
+<h2 id="execution-method">Execution Method</h2>
+<p>In the <strong>Execution Method</strong> tab, define which computer(s) are allowed to execute the task.</p>
+<p align="center">
+  <img src="/images/step4.png" alt="Execution Method Configuration">
+</p>
+<hr>
+<h2 id="configure-export-options">Configure Export Options</h2>
+<p>The <strong>Options</strong> tab is specific to the PDM2Excel task and defines what will be included in the output Excel file, such as configurations, BOM display settings, and thumbnail support.</p>
+<p align="center">
+  <img src="/images/step5.png" alt="Configure Export Options">
+</p>
+<p>For more detailed information about the <strong>Options</strong> tab and its configuration, please refer to the <a href="/src/pdm2exceloptions.html">Options Documentation</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Options</td>
+<td>The Options page defines the export settings of what information is pulled from the assembly into the BOM.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="permissions">Permissions</h2>
+<p>In the <strong>Permissions</strong> tab, define which users or groups are allowed to run the task.</p>
+<p align="center">
+  <img src="/images/step6.png" alt="Task Permission Settings">
+</p>
+<hr>
+<h2 id="run-the-task">Run the Task</h2>
+<p>To run the task, right-click a file in your PDM vault, go to <strong>Tasks</strong>, and select the task you just created.</p>
+<p align="center">
+  <img src="/images/step7.png" alt="Run the PDM2Excel Task">
+</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmremindernewtask.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdm2excelnewtasksteps.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

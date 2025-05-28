@@ -48,6 +48,8 @@
      href: pdm2excelnewtask.md
      expanded: true
      items:  
+      - name: Creating a new task
+        href: pdm2excelnewtasksteps.md
       - name: Options Tab
         href: pdm2exceloptions.md
       - name: Need more help?

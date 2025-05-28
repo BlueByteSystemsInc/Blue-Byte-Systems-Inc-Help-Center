@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -477,6 +477,76 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/step2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/step3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/step4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/step5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/step6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/step7.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/step7.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/tabs.png",
       "output": {
         "resource": {
@@ -691,6 +761,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2excelnewtask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelnewtasksteps.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelnewtasksteps.html"
         }
       },
       "version": ""
