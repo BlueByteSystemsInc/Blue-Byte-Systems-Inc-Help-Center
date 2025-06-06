@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PDMPublisher for SOLIDWORKS 3D | Helper Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PDMPublisher for SOLIDWORKS 3D | Helper Center ">
+      
+      <meta name="description" content="Learn how to configure the PDMPublisher export for SOLIDWORKS 3D, including file output, merging PDFs, watermarking, and ERP integration.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmpublishersolidworks.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="Helper Center">
+            Helper Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="pdmpublisher-for-solidworks">PDMPublisher for SOLIDWORKS</h1>
+
+  <img src="../images/pdmpublishersolidworks.png" alt="Tabs" width="800">
+<hr>
+<p><strong>PDMPublisher</strong> is available as <strong>SOLIDWORKS add-in</strong>.</p>
+<p>PDMPublisher for SOLIDWORKS 3D has <em>the same features</em> as PDMPublisher for SOLIDWORKS PDM Professional.</p>
+<p>You can <strong>download PDMPublisher for SOLIDWORKS for free</strong> for SOLIDWORKS from the official product page:<br>
+<a href="https://bluebyte.biz/product/pdmpublisher-solidworks/">https://bluebyte.biz/product/pdmpublisher-solidworks/</a></p>
+<p>To directly trigger a download, use this link:<br>
+<a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher">https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher</a></p>
+<hr>
+<h2 id="output">Output</h2>
+<h3 id="export-location">Export Location</h3>
+<p>Defines the destination folder where exported files will be saved.<br>
+<strong>Example:</strong><br>
+<code>File Folder</code><br>
+<strong>Evaluated Value:</strong> <code>(FileFolder)</code></p>
+<h3 id="file-name">File Name</h3>
+<p>Controls the naming convention for output files.<br>
+<strong>Example:</strong><br>
+<code>File name without extension</code> + <code>Configuration name</code><br>
+<strong>Evaluated Value:</strong> <code>(FileNameWithoutExtension)(ConfigurationName)</code></p>
+<h3 id="file-formats">File Formats</h3>
+<p>Specifies the format(s) to export files as.<br>
+<strong>Default:</strong> <code>pdf</code></p>
+<hr>
+<h2 id="export-history">Export History</h2>
+<h3 id="server-synced-activity-logs">Server-Synced Activity Logs</h3>
+<p>When enabled, logs export activity and syncs with the server.</p>
+<h3 id="server-synced-activity-logs-1">Server-Synced Activity Logs</h3>
+<p>When enabled, logs export activity and syncs with the server.</p>
+<hr>
+<h2 id="export-options">Export Options</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export document and its references to file formats individually</td>
+<td>Exports each referenced part or drawing as a separate file.</td>
+</tr>
+<tr>
+<td>Merge exported PDFs into one master PDF</td>
+<td>Combines all exported PDFs into a single document.</td>
+</tr>
+<tr>
+<td>Ignore sub-assemblies children when condition checks fail</td>
+<td>Skips exporting sub-assembly children if conditional logic is not met.</td>
+</tr>
+<tr>
+<td>Print top-level assembly document</td>
+<td>Only exports the top-level assembly instead of all components.</td>
+</tr>
+<tr>
+<td>Work with latest version</td>
+<td>Always export the most recently checked-in version of files.</td>
+</tr>
+<tr>
+<td>Quick view mode (Drawings Only)</td>
+<td>Speeds up drawing exports by avoiding full model load.</td>
+</tr>
+<tr>
+<td>Use Microsoft Print To PDF to save PDFs</td>
+<td>Uses the Windows print driver instead of SOLIDWORKS built-in export.</td>
+</tr>
+<tr>
+<td>Convert multiple configurations</td>
+<td>Supports export of all configurations in the model.</td>
+</tr>
+<tr>
+<td>Ask user to select configuration on startup</td>
+<td>Prompts the user for configuration if not pre-defined.</td>
+</tr>
+<tr>
+<td>Archive all exported documents (.zip)</td>
+<td>Packages all exported files into a zip archive.</td>
+</tr>
+<tr>
+<td>Export sheet metal parts to 1:1 flat pattern DXF</td>
+<td>Automatically exports sheet metal parts as DXF in 1:1 scale.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="table-of-content">Table of Content</h2>
+<h3 id="add-table-of-content-to-merged-pdf">Add table of content to merged PDF</h3>
+<p>If enabled, inserts a table of content at the beginning of the merged PDF.</p>
+<h3 id="table-type">Table Type</h3>
+<p>Dropdown selection for TOC formatting style.<br>
+<strong>Default:</strong> <code>TOC</code></p>
+<h3 id="paper-size">Paper Size</h3>
+<p>Specifies paper size for the TOC page.<br>
+<strong>Default:</strong> <code>A4</code></p>
+<hr>
+<h2 id="watermark">Watermark</h2>
+<h3 id="watermark-1">Watermark</h3>
+<p>Text or evaluated variable to apply as a watermark on exported files.<br>
+<strong>Evaluated Value:</strong> As resolved at runtime.</p>
+<hr>
+<h2 id="pdf-bookmarks">PDF Bookmarks</h2>
+<h3 id="pdf-bookmarks-1">PDF Bookmarks</h3>
+<p>Adds bookmarks into the PDF using the specified variable.<br>
+<strong>Default:</strong> <code>{$Description}</code><br>
+<strong>Evaluated Value:</strong> <code>($Description)</code></p>
+<hr>
+<h2 id="erppdm-integrations">ERP/PDM Integrations</h2>
+<h3 id="available-erppdm-integrations">Available ERP/PDM Integrations</h3>
+<p>Displays the integration method for output.<br>
+<strong>Default:</strong> <code>No Integration (File Explorer)</code></p>
+<h4 id="supported-erppdms">Supported ERP/PDMs:</h4>
+<ul>
+<li>SOLIDWORKS PDM Professional</li>
+<li>SharePoint</li>
+</ul>
+<hr>
+<h2 id="export">Export</h2>
+<p>Click the <strong>Export</strong> button to run the configured export task using all defined options.</p>
+<hr>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmpublishersolidworks.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁 and Couscous 🍲.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
