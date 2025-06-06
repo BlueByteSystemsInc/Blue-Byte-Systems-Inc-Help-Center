@@ -13,7 +13,7 @@
 - name: Installing/Updating PDM add-ins with CDPDM
   href: updateaddinswithcdpdm.md
 
-- name: PDM Publisher
+- name: PDMPublisher
   href: pdmpublisher.md
   expanded: true 
   items: 

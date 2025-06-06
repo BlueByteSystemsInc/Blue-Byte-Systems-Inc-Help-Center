@@ -17,7 +17,7 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 <p align="center">
   <img src="../images/confirmationemail.png" alt="Order Email" />
   <br>
-  <em>Confirmation Email Example</em>
+  <em>Order email</em>
 </p>
 
 
