@@ -13,7 +13,7 @@ description: This section will detail the setup pages that require explanation.
 
 To create a new task with **PDMPublisher**: 
 
-- Right-click on *Tasks* in the Administration tool and click *New task...*
+- Right-click on *Tasks* in the Administration tool and click *New Task...*
   <p align="center">
     <img src="../images/pdmpublishernewtask.png"  width="300">
   </p>
