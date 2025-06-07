@@ -6,7 +6,7 @@ description: This section will detail the setup pages that require explanation.
 
 >[!Note]
 > This article *requires* that:
-> - **PDMPublisher**has been added to your vault.
+> - **PDMPublisher** has been added to your vault.
 > - you can have activated your license. [Follow instructions in this article to do that](../src/licensespdmpublisher.html). 
 
 ## Your first task
@@ -60,9 +60,6 @@ To create a new task with **PDMPublisher**:
 
 |Tab|Description|
 |:---|:---|
-|Options|Options define how files will be printed. See the options page for more details.|
-|Annotations|Defines aliased notes that can contain text and datacard variables and define their locations in the drawing.|
-|Conditions|Defines which files to include in the save queues when processing top-level assemblies.|
-
-> [!TIP]
-> Start by defining the options page for your test runs.
+|[Options](../src/options.html)|Options define how files will be printed. See the options page for more details.|
+|[Annotations](../src/annotations.html)|Defines aliased notes that can contain text and datacard variables and define their locations in the drawing.|
+|[Conditions](../src/conditions.html)|Defines which files to include in the save queues when processing top-level assemblies.|

@@ -10,7 +10,8 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Export Location**                         | Location where to export the files. The location can be within or outside the vault. It is important that the path does **not** end with a backslash (`\`).       |
+| **Export Location**                         | Location where to export the files. The location can be within or outside the vault. It is important that the path does **not** end with a backslash (`\`). [Please consult this article to learn more about customizing this field](../src/pdmpublisherspecialvariable.html).      |
+| **Filename**                         | Filename of the exported file. You do not need to include the extension. If you include the extension, it will be of the original file not the target extension. [Please consult this article to learn more about customizing this field](../src/pdmpublisherspecialvariable.html).      |
 | **File Formats**                            | Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others.                                            |
 | **Export document and its references to file formats individually** | When enabled, affected document and its references will be exported to the selected file format individually.   **Make sure this option is checked to process single documents.**  **If you only want the merged PDF of an assembly, you may uncheck this option to avoid saving individual PDFs in the export location.**           |
 | **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.                                                 |
@@ -38,7 +39,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Template**          | Specifies the BOM template to be used. Users can select from available templates in the BOM layout source. **By default, the first template will be picked if not specified.** |
+| **Template**          | Specifies the BOM template to be used. Users can select from available templates in the BOM layout source. **You must specify this field otherwise the BOM quantity calculation will fail.** |
 | **Calculation method**          | Defines how the BOM is calculated. Options include **As Built** and **Show Selected**. [Learn more](https://help.solidworks.com/2021/english/enterprisepdm/fileexplorer/t_computing_boms_for_as-built_assemblies.htm).  |
 
 
