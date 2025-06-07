@@ -47,6 +47,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/adminsettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/adminsettings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/annotations.mp4",
       "output": {
         "resource": {
@@ -397,6 +407,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmicontry.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmicontry.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher_logo.png",
       "output": {
         "resource": {
@@ -417,10 +437,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublishernewtask.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublishernewtask.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublishersolidworks.png",
       "output": {
         "resource": {
           "relative_path": "images/pdmpublishersolidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublishertaskrmb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublishertaskrmb.png"
         }
       },
       "version": ""
