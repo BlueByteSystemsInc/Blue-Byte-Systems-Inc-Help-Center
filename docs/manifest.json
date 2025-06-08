@@ -467,6 +467,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmreminder_inbox.[ng.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmreminder_inbox.[ng.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmreminder_inbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmreminder_inbox.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmreminder_logo.png",
       "output": {
         "resource": {
@@ -511,6 +531,16 @@
       "output": {
         "resource": {
           "relative_path": "images/settingstab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/smtp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/smtp.png"
         }
       },
       "version": ""

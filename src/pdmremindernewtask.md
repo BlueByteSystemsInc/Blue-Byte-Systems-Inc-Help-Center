@@ -31,8 +31,13 @@ description: Learn how to create a new task in PDM to remind users to check thei
 ![alt text](../images/addtask.png)
 
 ### Results 
-If you use the **Emailing Service**, PDM users will receive an email similar this the following: 
-![alt text](../images/email.png)
+   - If you use the **Emailing Service**, PDM users will receive an email similar this the following: 
+   ![alt text](../images/email.png)
+   - If you **do not** use the **Emailing Service**, PDM users will receive notifications in their **PDM inbox**: 
+   ![alt text](../images/pdmreminder_inbox.png)
+      >[!Note]
+      > If you are using SOLIDWORKS PDM Professional 2024 or newer, you can configure PDM to use your own SMTP server instead: 
+      >![stmp](../images/smtp.png)
 
 ### Considerations for Using the Email Service
 
