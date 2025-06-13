@@ -40,6 +40,10 @@
        href: pdmpublisherspecialvariable.md  
 - name: PDMPublisher for SOLIDWORKS 3D 
   href: pdmpublishersolidworks.md 
+  expanded: true
+  items: 
+   - name: Options Tab
+     href: pdmpublishersolidworks_options.md
 - name: PDM2Excel
   href: pdm2excel.md
   expanded: true

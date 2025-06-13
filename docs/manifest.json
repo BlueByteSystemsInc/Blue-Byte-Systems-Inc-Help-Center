@@ -907,6 +907,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_options.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublisherspecialvariable.md",
       "output": {
         ".html": {
