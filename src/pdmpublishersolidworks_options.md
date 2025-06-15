@@ -4,20 +4,16 @@ description: Learn how to configure the PDMPublisher in SOLIDWORKS.
 ---
 
 # PDMPublisher for SOLIDWORKS 
-
-  <img src="../images/pdmpublishersolidworks.png"  alt="Tabs" width="800">
-
-<div style="display: flex; gap: 1em; margin: 2em 0;">
+<div style="display: flex; center; gap: 1em; margin: 2em 0;">
     <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        📥 Download PDMPublisher>
+        📥 Download PDMPublisher (free version)
     </a>
     <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        🛒 PDMPublisher License
+        🛒 Purchase a License
     </a>
 </div>
 
----
-# PDMPublisher for SOLIDWORKS Options
+
 
 This section outlines all the options in the PDMPublisher tab:
 
@@ -25,7 +21,12 @@ This section outlines all the options in the PDMPublisher tab:
 
 ## Export Location
 
-Location where to export the files. The location can be in or outside the vault. Must not end with `\`.
+Location where to export the files. The location can be in or outside a SOLIDWORKS PDM vault. Must not end with `\`. 
+
+>[!NOTE]
+> Use the RMB button (right-click on it) to access the special/dynamic variables to customize the path.
+
+![Right-click button](/images/RMBButton.png)
 
 ---
 
@@ -39,11 +40,31 @@ Name of the file. You need to include extension.
 
 File formats to export. For example: PDF, DWG, DXF. You can select multiple formats.
 
+The supported file formats are: 
+
+- PDF
+- STEP
+- IGES
+- STL
+- ePRT
+- eASM
+- X_T
+- U3D
+- HTML (Requires eDrawings Professional to be installed)
+- DXF
+- DWG
+
 ---
 
 ## Export document and its references to file formats individually
 
 When enabled, this exports the document and its referenced documents individually to the selected output folder. This does not affect merging and archiving when it is off.
+
+---
+
+## Server Synced Activity Logs
+
+Stored a copy of your logs on Blue Byte Systems server for technical support. Logs are handled as per our privacy policy.
 
 ---
 
@@ -71,9 +92,13 @@ Adds the top-level assembly to the processing queue.
 
 ---
 
-## Work with latest version
+## Work with latest version 
 
 When enabled, the task will always work with the latest version of the file in PDM.
+
+
+>[!WARNING]
+> This is only supported if a SOLIDWORKS PDM Professional vault is accessible.
 
 ---
 
@@ -111,6 +136,9 @@ Exports the flat pattern of sheet metal parts as 1:1 DXF. The term 'FlatPattern'
 
 Locate drawings using PDM’s "Where Used" tab when they cannot be found in the same folder. The file names must match.
 
+
+>[!WARNING]
+> This is only supported if a SOLIDWORKS PDM Professional vault is accessible.
 
 ---
 

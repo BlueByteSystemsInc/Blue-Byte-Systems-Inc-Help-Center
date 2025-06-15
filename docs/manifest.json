@@ -17,6 +17,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/RMBButton.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/RMBButton.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/Samplenotificiation.png",
       "output": {
         "resource": {
@@ -141,6 +151,16 @@
       "output": {
         "resource": {
           "relative_path": "images/databaseservice.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/detailedlogs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/detailedlogs.png"
         }
       },
       "version": ""
@@ -431,6 +451,16 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher_rmb.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisherforsolidworks.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisherforsolidworks.mp4"
         }
       },
       "version": ""
@@ -907,10 +937,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_logs.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_logs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublishersolidworks_options.md",
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks_options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_sheetmetalpackage.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_sheetmetalpackage.html"
         }
       },
       "version": ""

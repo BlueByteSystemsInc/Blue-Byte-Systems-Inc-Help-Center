@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDMPublisher for SOLIDWORKS 3D (Options) | Helper Center </title>
+      <title>PDMPublisher for SOLIDWORKS 3D (Logs) | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDMPublisher for SOLIDWORKS 3D (Options) | Helper Center ">
+      <meta name="title" content="PDMPublisher for SOLIDWORKS 3D (Logs) | Helper Center ">
       
-      <meta name="description" content="Learn how to configure the PDMPublisher in SOLIDWORKS.">
+      <meta name="description" content="Logs">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmpublishersolidworks_options.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmpublishersolidworks_logs.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -95,99 +95,24 @@
         🛒 Purchase a License
     </a>
 </div>
-<p>This section outlines all the options in the PDMPublisher tab:</p>
-<hr>
-<h2 id="export-location">Export Location</h2>
-<p>Location where to export the files. The location can be in or outside a SOLIDWORKS PDM vault. Must not end with <code>\</code>.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Use the RMB button (right-click on it) to access the special/dynamic variables to customize the path.</p>
-</div>
-<p><img src="/images/RMBButton.png" alt="Right-click button"></p>
-<hr>
-<h2 id="file-name-must-include-extension">File name (must include extension)</h2>
-<p>Name of the file. You need to include extension.</p>
-<hr>
-<h2 id="file-formats">File Formats</h2>
-<p>File formats to export. For example: PDF, DWG, DXF. You can select multiple formats.</p>
-<p>The supported file formats are:</p>
+<p>Detailed logs are found in the logs tab.</p>
+<p>Each time you click <code>Export</code> button, a new a log called a <code>Job</code> with ID is created with detailed steps.</p>
 <ul>
-<li>PDF</li>
-<li>STEP</li>
-<li>IGES</li>
-<li>STL</li>
-<li>ePRT</li>
-<li>eASM</li>
-<li>X_T</li>
-<li>U3D</li>
-<li>HTML (Requires eDrawings Professional to be installed)</li>
-<li>DXF</li>
-<li>DWG</li>
+<li>Yellow lines are regular steps in progress.</li>
+<li>Green lines are successful steps.</li>
+<li>Red lines are errors.</li>
 </ul>
-<hr>
-<h2 id="export-document-and-its-references-to-file-formats-individually">Export document and its references to file formats individually</h2>
-<p>When enabled, this exports the document and its referenced documents individually to the selected output folder. This does not affect merging and archiving when it is off.</p>
-<hr>
-<h2 id="server-synced-activity-logs">Server Synced Activity Logs</h2>
-<p>Stored a copy of your logs on Blue Byte Systems server for technical support. Logs are handled as per our privacy policy.</p>
-<hr>
-<h2 id="merge-exported-pdfs-into-one-master-pdf">Merge exported PDFs into one master PDF</h2>
-<p>When enabled, all exported PDFs of the affected assembly are merged into a single PDF.</p>
-<hr>
-<h2 id="ignore-sub-assemblies-children-when-condition-checks-fail">Ignore sub-assemblies children when condition checks fail</h2>
-<p>When enabled, the children of sub-assemblies that fail condition checks will be ignored (not processed).</p>
-<hr>
-<h2 id="archive-all-exported-documents-zip">Archive all exported documents (.zip)</h2>
-<p>Create a zip file of all exported documents.</p>
-<hr>
-<h2 id="print-top-level-assembly-document">Print top-level assembly document</h2>
-<p>Adds the top-level assembly to the processing queue.</p>
-<hr>
-<h2 id="work-with-latest-version">Work with latest version</h2>
-<p>When enabled, the task will always work with the latest version of the file in PDM.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>This is only supported if a SOLIDWORKS PDM Professional vault is accessible.</p>
-</div>
-<hr>
-<h2 id="quick-view-mode-drawings-only">Quick view mode (Drawings Only)</h2>
-<p>Open drawings in quick view mode (for faster performance when drawings are large or linked to multiple references).</p>
-<hr>
-<h2 id="convert-multiple-configurations">Convert multiple configurations</h2>
-<p>Convert all part and assembly configurations. Make sure to include the configuration name in the file name.</p>
-<hr>
-<h2 id="add-table-of-content-to-merged-pdf">Add table of content to merged PDF</h2>
-<p>Automatically generates and inserts a table of content into the merged PDF.</p>
-<hr>
-<h2 id="use-microsoft-print-to-pdf-to-save-pdfs">Use Microsoft Print To PDF to save PDFs</h2>
-<p>Uses the built-in Microsoft Print To PDF feature to generate PDF files.</p>
-<hr>
-<h2 id="convert-sheet-metal-parts-to-11-flat-pattern-dxf">Convert sheet metal parts to 1:1 flat pattern DXF</h2>
-<p>Exports the flat pattern of sheet metal parts as 1:1 DXF. The term 'FlatPattern' will be appended to the filename.</p>
-<hr>
-<h2 id="use-pdm-search-to-locate-drawings">Use PDM search to locate drawings</h2>
-<p>Locate drawings using PDM’s &quot;Where Used&quot; tab when they cannot be found in the same folder. The file names must match.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>This is only supported if a SOLIDWORKS PDM Professional vault is accessible.</p>
-</div>
-<hr>
-<h2 id="table-type">Table type</h2>
-<p>Table of content or simple BOM table to include in the merged PDF.</p>
-<hr>
-<h2 id="paper-size">Paper size</h2>
-<p>Select the paper size used for the generated table of content or BOM document (e.g., A4, Letter, Tabloid).</p>
-<hr>
-<h2 id="watermark">Watermark</h2>
-<p>The watermark text to apply to the exported files.</p>
-<hr>
-<h2 id="pdf-bookmarks">PDF bookmarks</h2>
-<p>Define the pattern to use for bookmarks in the merged PDF (e.g., chapter titles, part names).</p>
+<p>You can clear logs or save them as a <code>.log</code> file.</p>
+<p><img src="/images/detailedlogs.png" alt="Detailed logs"></p>
+<h1 id="advanced-debugging">Advanced debugging</h1>
+<ul>
+<li>If you have the <code>Server-Synced Activity Logs</code> option checked, you can share the <code>Job ID</code> with technical support instead of the <code>.log</code> file.</li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmpublishersolidworks_options.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdmpublishersolidworks_logs.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
