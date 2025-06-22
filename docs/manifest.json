@@ -547,6 +547,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/revisionsyncconfig.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/revisionsyncconfig.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/revisionsyncrmb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/revisionsyncrmb.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/rightclickcdpdm.png",
       "output": {
         "resource": {
@@ -711,6 +731,16 @@
       "output": {
         ".html": {
           "relative_path": "src/PDMReminder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/RevisionSync.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/RevisionSync.html"
         }
       },
       "version": ""
@@ -1031,6 +1061,26 @@
       "output": {
         ".html": {
           "relative_path": "src/propertiespagepdmpublisher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/revisionsyncconfiguration.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/revisionsyncconfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/revisionsynclicensemanagement.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/revisionsynclicensemanagement.html"
         }
       },
       "version": ""

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started | Blue Byte Systems Helper Center | SOLIDWORKS PDM | Helper Center </title>
+      <title>RevisionSync | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started | Blue Byte Systems Helper Center | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content="RevisionSync | SOLIDWORKS PDM | Helper Center ">
       
-      <meta name="description" content="Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products.">
+      <meta name="description" content="Getting started with RevisionSnyc, including requirements, installation instructions, and support resources.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/introduction.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/RevisionSync.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,33 +85,61 @@
         </div>
 
         <article data-uid="">
-<h1 id="helper-center">Helper Center</h1>
+<h1 id="revisionsync">RevisionSync</h1>
 
-<p><strong>Welcome to Blue Byte Systems</strong>, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:</p>
-<h2 id="pdmpublisher">PDMPublisher</h2>
-<p><a href="/src/pdmpublisher.html">PDMPublisher</a> streamlines the conversion and publishing of files within your SOLIDWORKS PDM vault. This powerful add-in automates routine tasks, supports a wide range of file formats, and offers advanced configuration options to match your workflow. By reducing manual effort, it helps you save time and minimize errors.</p>
-<h2 id="pdm2excel">PDM2Excel</h2>
-<p><a href="/src/pdm2excel.html">PDM2Excel</a> makes it easy to export and organize your PDM data directly into Excel. With just a few clicks, you can generate detailed spreadsheets for analysis, reporting, and sharing. This tool improves data accessibility and empowers you to make informed decisions based on up-to-date information.</p>
-<h2 id="pdmreminder">PDMReminder</h2>
-<p><a href="/src/PDMReminder.html">PDMReminder</a> ensures your team never forgets to check files back into the vault. This add-in automatically sends timely email reminders to users with checked-out files, helping maintain data integrity and keeping your projects on track.</p>
-<h2 id="revisionsync">RevisionSync</h2>
-<p><a href="/src/RevisionSync.html">RevisionSync</a> allows to sync your models and drawings revision.</p>
-<h1 id="getting-support">Getting support</h1>
-<h2 id="continuous-improvement-and-support">Continuous Improvement and Support</h2>
-<p>At Blue Byte Systems, we are committed to continuous improvement and providing exceptional support to our customers. Our products are regularly updated with new features and enhancements based on user feedback. We also offer comprehensive documentation and dedicated support to help you get the most out of our solutions.</p>
-<blockquote>
-<p><strong>How to reach out?</strong></p>
-<p>If you need support, please reach out to us by clicking the button below:</p>
-<p><a href="https://bluebyte.biz/contact">Get Support</a></p>
-</blockquote>
-<p><a href="#" class="button big">Create Project</a></p>
+<p>Thank you for choosing <strong><a href="https://bluebyte.biz/product/RevisionSync/">RevisionSync</a></strong>!</p>
+<p>RevisionSync is a SOLIDWORKS PDM task add-in that sync <strong>revisions</strong> between your drawings and documents.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><p><strong>Two Sync Directions:</strong></p>
+<ul>
+<li><strong>From Drawing to Document</strong> (<code>SyncDrawingToDocument</code>):<br>
+Most common. Use this when the drawing is outdated. This will increment the document's revision.</li>
+<li><strong>From Document to Drawing</strong> (<code>SyncDocumentToDrawing</code>):<br>
+Use this when the document is outdated. This will increment the drawing's revision.</li>
+</ul>
+</li>
+<li><p>Sync both the <strong>PDM Revision</strong> and the <strong>PDM Revision Variable</strong> between drawings and documents.</p>
+</li>
+<li><p>Sync datacard values from the document to the drawing for <em>selected variables</em>.</p>
+</li>
+<li><p>Trigger revision or card sync as a <strong>task</strong>, typically during a <strong>workflow transition</strong>.</p>
+</li>
+<li><p><strong>Prevent file transitions</strong> if revisions do not match (acts as a gatekeeper).</p>
+</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>The minimum version RevisionSync supports is SOLIDWORKS PDM Professional 2017 SP0.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>We highly recommend you use the latest version of PDM Professional.</p>
+</div>
+<h2 id="installation">Installation</h2>
+<p>To install the RevisionSync add-in, you have two options:</p>
+<ol>
+<li><p><strong><a href="/src/updateaddinswithcdpdm.html">Using CDPDM</a></strong>:<br>
+You can use <strong><a href="/src/cdpdm.html">CDPDM</a></strong> to install the add-in directly from the cloud. This is the recommended method.</p>
+</li>
+<li><p><strong><a href="/src/installingpdmaddins.html">Using the CEX File</a></strong>:<br>
+Alternatively, you can download the <code>.cex</code> file from the order email you received after purchase. Once downloaded, import the <code>.cex</code> file into your vault via the Administration tool to complete the installation.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><a href="/src/pdmqa.html">Make sure to unblock the downloaded file.</a></p>
+</div>
+</li>
+</ol>
+<h2 id="settings">Settings</h2>
+<p>All settings are accessible from the right-click menu on the add-in node in the Administration Tool:</p>
+<p><img src="/images/revisionsyncrmb.png" alt="revisionsyncrmb"></p>
+<h2 id="support">Support</h2>
+<p>For additional support, please contact us through the <strong><a href="https://bluebyte.biz/contact/">contact</a></strong> page.</p>
 <script src='https://cdn.jotfor.ms/agent/embedjs/0196efe63b1f79818c409ffed296766d11af/embed.js?skipWelcome=1&maximizable=1'>
 </script>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/introduction.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/RevisionSync.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

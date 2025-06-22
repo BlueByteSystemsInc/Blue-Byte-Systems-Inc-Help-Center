@@ -1,5 +1,5 @@
 ---
-title: License troubleshooting | PDM2Excel | SOLIDWORKS PDM
+title: License troubleshooting | RevisionSync | SOLIDWORKS PDM
 description: This section denotes how to manage a license.
 ---
 # License Information
@@ -38,7 +38,7 @@ To deactivate a license:
 To renew the license, please follow these instructions:
 
 1. *Open* the PDM Administration tool.
-2. *Expand* the Add-in nodes and *right-click* on **PDM2Excel**.
+2. *Expand* the Add-in nodes and *right-click* on **RevisionSync**.
 3. *Click* ***Manage license…***
 7. *Enter* your license key and *click* ***Activate***.
 8. Your new expiry date should appear when the license is renewed.

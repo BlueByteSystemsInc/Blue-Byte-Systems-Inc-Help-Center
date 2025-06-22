@@ -64,6 +64,14 @@
         href: pdm2exceloptions.md
       - name: Need more help?
         href: pdm2excelneedmorehelp.md
+- name: RevisionSync
+  href: RevisionSync.md
+  expanded: true
+  items:
+   - name: License Management
+     href: revisionsynclicensemanagement.md
+   - name: Configuration
+     href: revisionsyncconfiguration.md
 - name: PDMReminder
   href: PDMReminder.md
   expanded: true

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started | Blue Byte Systems Helper Center | SOLIDWORKS PDM | Helper Center </title>
+      <title>RevisionSync Add-in Settings | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started | Blue Byte Systems Helper Center | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content="RevisionSync Add-in Settings | SOLIDWORKS PDM | Helper Center ">
       
-      <meta name="description" content="Welcome to Blue Byte Systems, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products.">
+      <meta name="description" content="Overview of the available configuration settings for the RevisionSync add-in by Blue Byte Systems Inc.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/introduction.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/revisionsyncconfiguration.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,33 +85,97 @@
         </div>
 
         <article data-uid="">
-<h1 id="helper-center">Helper Center</h1>
+<h1 id="revisionsync-settings">RevisionSync Settings</h1>
 
-<p><strong>Welcome to Blue Byte Systems</strong>, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:</p>
-<h2 id="pdmpublisher">PDMPublisher</h2>
-<p><a href="/src/pdmpublisher.html">PDMPublisher</a> streamlines the conversion and publishing of files within your SOLIDWORKS PDM vault. This powerful add-in automates routine tasks, supports a wide range of file formats, and offers advanced configuration options to match your workflow. By reducing manual effort, it helps you save time and minimize errors.</p>
-<h2 id="pdm2excel">PDM2Excel</h2>
-<p><a href="/src/pdm2excel.html">PDM2Excel</a> makes it easy to export and organize your PDM data directly into Excel. With just a few clicks, you can generate detailed spreadsheets for analysis, reporting, and sharing. This tool improves data accessibility and empowers you to make informed decisions based on up-to-date information.</p>
-<h2 id="pdmreminder">PDMReminder</h2>
-<p><a href="/src/PDMReminder.html">PDMReminder</a> ensures your team never forgets to check files back into the vault. This add-in automatically sends timely email reminders to users with checked-out files, helping maintain data integrity and keeping your projects on track.</p>
-<h2 id="revisionsync">RevisionSync</h2>
-<p><a href="/src/RevisionSync.html">RevisionSync</a> allows to sync your models and drawings revision.</p>
-<h1 id="getting-support">Getting support</h1>
-<h2 id="continuous-improvement-and-support">Continuous Improvement and Support</h2>
-<p>At Blue Byte Systems, we are committed to continuous improvement and providing exceptional support to our customers. Our products are regularly updated with new features and enhancements based on user feedback. We also offer comprehensive documentation and dedicated support to help you get the most out of our solutions.</p>
+<p>RevisionSync is a SOLIDWORKS PDM add-in that synchronizes revisions and data card variables between drawings and documents.</p>
+<h2 id="accessing-the-settings">Accessing the Settings</h2>
+<p>To configure the add-in:</p>
+<ol>
+<li><p>Right-click on <code>RevisionSync</code> under <em>Add-ins</em> in the <strong>Administration Tool</strong>.</p>
+<p><img src="/images/revisionsyncrmb.png" alt="revisionsyncrmb"></p>
+</li>
+<li><p>Choose from the available options:</p>
+<ul>
+<li><strong>Workflow transitions...</strong></li>
+<li><strong>Manage License...</strong></li>
+<li><strong>General settings...</strong></li>
+<li><strong>Data card variable sync settings...</strong></li>
+</ul>
+</li>
+</ol>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>You must activate your license from <em>Manage License...</em> command before starting to use RevisionSync.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Start by configuring the add-in from <strong>General Settings</strong>.</p>
+</div>
+<hr>
+<h2 id="general-settings-overview">General Settings Overview</h2>
+<p><img src="/images/revisionsyncconfig.png" alt="Settings"></p>
+<h3 id="sync-mode">Sync Mode</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SyncDrawingToDocument</code></td>
+<td>The <strong>drawing</strong> will be updated to match the revision of the <strong>document</strong>. This is the most common use case when the drawing is behind.</td>
+</tr>
+<tr>
+<td><code>SyncDocumentToDrawing</code></td>
+<td>The <strong>document</strong> will be updated to match the revision of the <strong>drawing</strong>. Use this if the document is behind.</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p><strong>How to reach out?</strong></p>
-<p>If you need support, please reach out to us by clicking the button below:</p>
-<p><a href="https://bluebyte.biz/contact">Get Support</a></p>
+<p><strong>Note:</strong> The selected sync mode will control the direction in which the revision is enforced.</p>
 </blockquote>
-<p><a href="#" class="button big">Create Project</a></p>
-<script src='https://cdn.jotfor.ms/agent/embedjs/0196efe63b1f79818c409ffed296766d11af/embed.js?skipWelcome=1&maximizable=1'>
-</script>
+<hr>
+<h3 id="task-settings">Task Settings</h3>
+<ul>
+<li><p><strong>Sync revision when used as a task</strong>:<br>
+Enables revision synchronization when the add-in is executed as a task.</p>
+</li>
+<li><p><strong>Sync variables when used as a task</strong>:<br>
+Controls whether variable values are synchronized when run as a task. Set to <code>True</code> to enable.</p>
+</li>
+</ul>
+<hr>
+<h3 id="variable-settings">Variable Settings</h3>
+<ul>
+<li><strong>Revision</strong>:<br>
+Specifies the variable name used for the revision (e.g., <code>Revision</code>).</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p><strong>You must set this</strong>.</p>
+</div>
+<ul>
+<li><strong>Update revision variable</strong>:<br>
+When set to <code>True</code>, the revision variable will be updated during sync.</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>This will perform a checkout and checkin operation. Please make sure the user running the add-in has the right-permissions.</p>
+</div>
+<hr>
+<h3 id="workflow-settings">Workflow Settings</h3>
+<ul>
+<li><strong>Enable transition watching</strong>:<br>
+When set to <code>True</code>, the add-in will listen for file workflow transitions and automatically <strong>only allow matchd revisions through</strong>.</li>
+</ul>
+<hr>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/introduction.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/revisionsyncconfiguration.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

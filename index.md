@@ -38,6 +38,15 @@ description: You will find the official documentation for our products as well o
     </a>
   </div>
 
+   <div style="background: #f8f9fa; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); width: 270px; text-align: center; padding: 1.5em;">
+    <a href="src/RevisionSync.html" style="text-decoration: none;">
+      
+      <h3 style="margin: 0.5em 0 0.2em 0; color: #0078d7;">RevisionSync</h3>
+      <p style="color: #333; font-size: 0.95em;">Documentation &rarr;</p>
+    </a>
+  </div>
+
+
 </div>
 
 ## Contact Us

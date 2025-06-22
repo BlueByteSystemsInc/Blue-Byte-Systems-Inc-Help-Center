@@ -17,6 +17,12 @@ description:  Welcome to Blue Byte Systems, a leading provider of innovative sol
 
 [PDMReminder](/src/PDMReminder.html) ensures your team never forgets to check files back into the vault. This add-in automatically sends timely email reminders to users with checked-out files, helping maintain data integrity and keeping your projects on track.
 
+
+## RevisionSync
+
+[RevisionSync](/src/RevisionSync.html) allows to sync your models and drawings revision.
+
+
 # Getting support 
 
 ## Continuous Improvement and Support
