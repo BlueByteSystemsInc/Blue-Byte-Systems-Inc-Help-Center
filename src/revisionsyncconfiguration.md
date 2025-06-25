@@ -15,10 +15,16 @@ To configure the add-in:
    ![revisionsyncrmb](/images/revisionsyncrmb.png)
 
 2. Choose from the available options:
-   - **Workflow transitions...**
-   - **Manage License...**
-   - **General settings...**
-   - **Data card variable sync settings...**
+    - **Workflow Transitions...**: This option allows you to cancel transitions if the file revisions do not match. In the workflow transition window, you can specify which transitions the add-in should monitor:
+     ![revisionsynctransition](/images/revisionsynctransition.png)
+
+    - **Manage License...**: Activate, deactivate your license.
+
+    - **General Settings...**: Configure how the add-in behaves, set the revision variable, and adjust other settings (see below for details).
+
+    - **Data Card Variable Sync Settings...**: Specify which variables should sync from the part or assembly to the drawing:
+    ![revisiondatacardsettings](/images/revisiondatacardsettings.png)
+   
 
 >[!WARNING]
 > You must activate your license from *Manage License...* command before starting to use RevisionSync.
@@ -76,7 +82,22 @@ To configure the add-in:
 ### Workflow Settings
 
 - **Enable transition watching**:  
-  When set to `True`, the add-in will listen for file workflow transitions and automatically **only allow matchd revisions through**.
+  When set to `True`, the add-in will listen for file workflow transitions and automatically **only allow files with matching revisions through**.
 
 ---
 
+
+## How do I trigger RevisionSync
+
+-**Manually:** From the right-click menu, go to **Blue Byte Systems**, and select **Sync data card variables...**.
+
+    ![data card sync](/images/datacardsync.png) 
+
+
+    You can: 
+    * Sync revisions: Copy the revision from/to the drawing (depending on the sync direction).
+    * Sync datacard: Push selected variables from model to drawing datacard.
+
+- **Automated action from workflow transition**: Trigger **RevisionSync** by creating a **task** from the task list. You can control the behavior of the task from the **General Settings**.
+
+    

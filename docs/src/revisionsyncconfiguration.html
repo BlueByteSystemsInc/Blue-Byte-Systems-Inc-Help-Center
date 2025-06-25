@@ -96,10 +96,16 @@
 </li>
 <li><p>Choose from the available options:</p>
 <ul>
-<li><strong>Workflow transitions...</strong></li>
-<li><strong>Manage License...</strong></li>
-<li><strong>General settings...</strong></li>
-<li><strong>Data card variable sync settings...</strong></li>
+<li><p><strong>Workflow Transitions...</strong>: This option allows you to cancel transitions if the file revisions do not match. In the workflow transition window, you can specify which transitions the add-in should monitor:
+<img src="/images/revisionsynctransition.png" alt="revisionsynctransition"></p>
+</li>
+<li><p><strong>Manage License...</strong>: Activate, deactivate your license.</p>
+</li>
+<li><p><strong>General Settings...</strong>: Configure how the add-in behaves, set the revision variable, and adjust other settings (see below for details).</p>
+</li>
+<li><p><strong>Data Card Variable Sync Settings...</strong>: Specify which variables should sync from the part or assembly to the drawing:
+<img src="/images/revisiondatacardsettings.png" alt="revisiondatacardsettings"></p>
+</li>
 </ul>
 </li>
 </ol>
@@ -168,9 +174,21 @@ When set to <code>True</code>, the revision variable will be updated during sync
 <h3 id="workflow-settings">Workflow Settings</h3>
 <ul>
 <li><strong>Enable transition watching</strong>:<br>
-When set to <code>True</code>, the add-in will listen for file workflow transitions and automatically <strong>only allow matchd revisions through</strong>.</li>
+When set to <code>True</code>, the add-in will listen for file workflow transitions and automatically <strong>only allow files with matching revisions through</strong>.</li>
 </ul>
 <hr>
+<h2 id="how-do-i-trigger-revisionsync">How do I trigger RevisionSync</h2>
+<p>-<strong>Manually:</strong> From the right-click menu, go to <strong>Blue Byte Systems</strong>, and select <strong>Sync data card variables...</strong>.</p>
+<pre><code>![data card sync](/images/datacardsync.png) 
+
+
+You can: 
+* Sync revisions: Copy the revision from/to the drawing (depending on the sync direction).
+* Sync datacard: Push selected variables from model to drawing datacard.
+</code></pre>
+<ul>
+<li><strong>Automated action from workflow transition</strong>: Trigger <strong>RevisionSync</strong> by creating a <strong>task</strong> from the task list. You can control the behavior of the task from the <strong>General Settings</strong>.</li>
+</ul>
 
 </article>
 

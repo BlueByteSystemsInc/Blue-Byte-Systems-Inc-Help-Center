@@ -157,6 +157,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/datacardsync.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/datacardsync.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/detailedlogs.png",
       "output": {
         "resource": {
@@ -547,6 +557,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/revisiondatacardsettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/revisiondatacardsettings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/revisionsyncconfig.png",
       "output": {
         "resource": {
@@ -561,6 +581,16 @@
       "output": {
         "resource": {
           "relative_path": "images/revisionsyncrmb.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/revisionsynctransition.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/revisionsynctransition.png"
         }
       },
       "version": ""
