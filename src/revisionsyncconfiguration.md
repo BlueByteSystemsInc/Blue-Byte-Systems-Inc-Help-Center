@@ -91,7 +91,7 @@ To configure the add-in:
 
 -**Manually:** From the right-click menu, go to **Blue Byte Systems**, and select **Sync data card variables...**.
 
-    ![data card sync](/images/datacardsync.png) 
+![data card sync](/images/datacardsync.png) 
 
 
     You can: 
