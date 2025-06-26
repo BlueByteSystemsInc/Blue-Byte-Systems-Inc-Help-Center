@@ -7,56 +7,59 @@
 - name: EULA
   href: eula.md
 
-- name: SOLIDDWORKS PDM Products   
+- name: How to Install Our PDM Add-ins
 - name: Installing/Updating PDM add-ins (regular method)
   href: installingpdmaddins.md
 - name: Installing/Updating PDM add-ins with CDPDM
   href: updateaddinswithcdpdm.md
 
+- name: Products
 - name: PDMPublisher
-- name: PDMPublisher for SOLIDWORKS PDM Professional 
-  href: pdmpublisher.md
-  expanded: true 
-  items: 
-  - name: Quick Demo
-    href: pdmpublisherdemo.md
-  - name: License Management
-    href: licensespdmpublisher.md
-  - name: Setting your first task
-    href: propertiespagepdmpublisher.md
-    expanded: true 
-    items:
-     - name: Options Tab
-       href: options.md
-     - name: Conditions Tab
-       href: Conditions.md
-     - name: Annotations Tab
-       href: annotations.md
-     - name: Frequently Asked Questions
-       href: pdmpublisherfaq.md
-
-     - name: In depth articles
-     - name: Special/Dynamic Variables
-       href: pdmpublisherspecialvariable.md  
-- name: PDMPublisher for SOLIDWORKS 3D 
-  href: pdmpublishersolidworks.md 
   expanded: true
-  items: 
-   - name: Options Tab
-     href: pdmpublishersolidworks_options.md
-   - name: Logs Tab
-     href: pdmpublishersolidworks_logs.md
-   - name: Sheet Metal Package (Example)
-     href: pdmpublishersolidworks_sheetmetalpackage.md
+  items:
+    - name: PDMPublisher for SOLIDWORKS PDM Professional 
+      expanded: false 
+      href: pdmpublisher.md
+      items: 
+      - name: Quick Demo
+        href: pdmpublisherdemo.md
+      - name: License Management
+        href: licensespdmpublisher.md
+      - name: Setting your first task
+        href: propertiespagepdmpublisher.md
+        expanded: true 
+        items:
+        - name: Options Tab
+          href: options.md
+        - name: Conditions Tab
+          href: Conditions.md
+        - name: Annotations Tab
+          href: annotations.md
+        - name: Frequently Asked Questions
+          href: pdmpublisherfaq.md
+
+        - name: In depth articles
+        - name: Special/Dynamic Variables
+          href: pdmpublisherspecialvariable.md  
+    - name: PDMPublisher for SOLIDWORKS 3D 
+      href: pdmpublishersolidworks.md 
+      expanded: false
+      items: 
+      - name: Options Tab
+        href: pdmpublishersolidworks_options.md
+      - name: Logs Tab
+        href: pdmpublishersolidworks_logs.md
+      - name: Sheet Metal Package (Example)
+        href: pdmpublishersolidworks_sheetmetalpackage.md
 - name: PDM2Excel
   href: pdm2excel.md
-  expanded: true
+  expanded: false
   items:
    - name: License Management
      href: pdm2excellicensemanagement.md
    - name: Setting your task
      href: pdm2excelnewtask.md
-     expanded: true
+     expanded: false
      items:  
       - name: Creating a new task
         href: pdm2excelnewtasksteps.md
@@ -66,7 +69,7 @@
         href: pdm2excelneedmorehelp.md
 - name: RevisionSync
   href: RevisionSync.md
-  expanded: true
+  expanded: false
   items:
    - name: License Management
      href: revisionsynclicensemanagement.md
@@ -74,7 +77,7 @@
      href: revisionsyncconfiguration.md
 - name: PDMReminder
   href: PDMReminder.md
-  expanded: true
+  expanded: false
   items:
    - name: EULA
      href: pdmremindereula.md
@@ -88,7 +91,7 @@
      href: connectionstring.md
    - name: Notifications/Emails
      href: notificationsemails.md     
-- name: Blue Byte Systems Inc worktools
+- name: Fast PDM Add-ins Depolyment 
 - name: CDPDM
   href: cdpdm.md
 
