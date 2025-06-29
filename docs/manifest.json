@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -81,6 +81,26 @@
       "output": {
         "resource": {
           "relative_path": "images/blocked.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bom.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bom.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bomsetting.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bomsetting.png"
         }
       },
       "version": ""
@@ -781,6 +801,16 @@
       "output": {
         ".html": {
           "relative_path": "src/annotations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/bomlayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/bomlayout.html"
         }
       },
       "version": ""

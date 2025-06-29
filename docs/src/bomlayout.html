@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>How to Install PDM Add-ins | Helper Center </title>
+      <title>Bill Of Materials | PDM2Excel | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="How to Install PDM Add-ins | Helper Center ">
+      <meta name="title" content="Bill Of Materials | PDM2Excel | SOLIDWORKS PDM | Helper Center ">
       
-      
+      <meta name="description" content="Configuring the PDM2Excel Task with the Correct BOM Template">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/installingpdmaddins.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/bomlayout.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,72 +85,52 @@
         </div>
 
         <article data-uid="">
-<h1 id="how-to-install-pdm-add-ins">How to Install PDM Add-ins</h1>
+<h1 id="configuring-the-pdm2excel-task-with-the-correct-bom-template">Configuring the PDM2Excel Task with the Correct BOM Template</h1>
 
-<p>Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.</p>
-<h2 id="step-1-locate-the-cex-file">Step 1: Locate the <code>.cex</code> File</h2>
-<p>After purchasing one of our PDM add-ins, you will receive an order email with the header <em>Thank you for your business! Your BLUE BYTE SYSTEMS INC. order has been completed</em>.</p>
-<p>This email has a link to download a <code>.zip</code> archive that contains a <code>.cex</code> file. The <code>.cex</code> file is what you open with the Administration tool and it has the latest version of the PDM add-in.</p>
-<p align="center">
-  <img src="../images/confirmationemail.png" alt="Order Email">
-  <br>
-  <em>Order email</em>
-</p>
-<h2 id="step-2-download-and-unblock-the-zip-file">Step 2: Download and Unblock the <code>.zip</code> File</h2>
+<p>To ensure the <strong>PDM2Excel</strong> task exports the correct Bill of Materials (BOM), it is critical to configure the task to use the appropriate BOM template. This ensures that the quantity and other key fields are included and accurately represented.</p>
+<h2 id="step-1-set-the-template-in-the-task-options">Step 1: Set the Template in the Task Options</h2>
+<p>When creating or editing a <strong>PDM2Excel</strong> task in the SOLIDWORKS PDM Administration Tool:</p>
 <ol>
-<li><p>Download the <code>.zip</code> archive from the link provided in the order email.</p>
+<li><p>Go to the <strong>Tasks</strong> section.</p>
 </li>
-<li><p>Once downloaded, right-click on the <code>.zip</code> file and select <strong>Properties</strong>.</p>
+<li><p>Right-click to create a <strong>New task...</strong> or edit an existing task.</p>
 </li>
-<li><p>In the <strong>Properties</strong> window, check for the <strong>Unblock</strong> option at the bottom. If it is present, click <strong>Unblock</strong> and then click <strong>OK</strong>. This step ensures that the file is not blocked by Windows security.</p>
+<li><p>In the <strong>Options</strong> tab, locate the <strong>Template</strong> dropdown.</p>
+</li>
+<li><p>Select a BOM template.</p>
+<p>For example: <strong>Engineering BOM</strong>
+<img src="/images/bomsetting.png" alt="bomsetting"></p>
 </li>
 </ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>You can always find the latest <code>.cex</code> files from the Downloads section in your <a href="https://bluebyte.biz/account">Blue Byte Systems account</a>. <strong>Your account username is the email used to make the order.</strong></p>
-</div>
-<h2 id="step-3-open-the-solidworks-pdm-administration-tool">Step 3: Open the SOLIDWORKS PDM Administration Tool</h2>
+<p><strong>Important:</strong> If the correct template is not selected, the exported Excel file may be missing essential fields like quantity, or may include incorrect ones.</p>
+<h2 id="step-2-verify-the-bom-layout-in-pdm">Step 2: Verify the BOM Layout in PDM</h2>
+<p>In the <strong>SOLIDWORKS PDM Administration Tool</strong>:</p>
 <ol>
-<li><p>Extract the <code>.zip</code> archive file to get the <code>.cex</code> file.</p>
+<li><p>Expand the <strong>Bills of Materials</strong> section.</p>
 </li>
-<li><p>Launch the <strong>Administration</strong> tool.</p>
+<li><p>Open the <strong>BOM</strong> template you previously set in your task.</p>
 </li>
-<li><p>Log in to your PDM vault.</p>
+<li><p>Ensure that the following columns are included:</p>
+<ul>
+<li><code>&lt;Name&gt;</code></li>
+<li><code>&lt;Description&gt;</code></li>
+<li><code>&lt;Configuration&gt;</code></li>
+<li><code>&lt;Part Number&gt;</code></li>
+<li><code>Revision</code></li>
+<li><code>&lt;Reference Count&gt;</code> (<strong>REQUIRED</strong>)</li>
+</ul>
 </li>
 </ol>
-<h2 id="step-4-add-or-update-an-add-in">Step 4: Add or Update an Add-in</h2>
-<ol>
-<li><p>In the <strong>Administration</strong> tool, go to <strong>File &gt; Open...</strong> and browse to the location of the <code>.cex</code> file.</p>
-</li>
-<li><p>Select the <code>.cex</code> file and click <strong>Open</strong>. This will display the add-in in a new window inside the <strong>Administration</strong> tool.</p>
-</li>
-<li><p>Drag and drop the add-in from the window into the <strong>Add-ins</strong> node in the left-hand tree view.</p>
-</li>
-</ol>
-<p>This process is similar when updating an existing add-in. Simply follow the same steps to replace the old version with the new one.</p>
-<h2 id="step-5-verify-the-installation">Step 5: Verify the Installation</h2>
-<ol>
-<li><p>After installing or updating the add-in from the <code>.cex</code> file, ensure that the add-in appears under the <strong>Add-ins</strong> node. Make sure the version matches with the order email.</p>
-</li>
-<li><p>Test the functionality of the add-in to confirm that it has been installed correctly.</p>
-</li>
-</ol>
-<hr>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Follow the steps below to install the add-in successfully. For a visual guide, you can watch this video:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PZcqz4Q_YZ0?si=DiDlNDLug4FLhYb9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-</div>
-<hr>
-<div class="NOTE">
-<h5>Note</h5>
-<p>If you encounter any issues during the installation process, refer to the documentation provided with the add-in or contact support for assistance.</p>
-</div>
+<p>The column <code>&lt;Reference Count&gt;</code> is essential as it represents the correct BOM quantity based on the number of references.</p>
+<p><img src="/images/bom.png" alt="bom"></p>
+<p><strong>Do not use</strong> discarded or deprecated quantity variables, as they may result in incorrect exports or missing data.</p>
+<h2 id="support">Support</h2>
+<p>For help configuring this setup, contact Blue Byte Systems Inc. at: amen@bluebyte.biz</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/installingpdmaddins.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/bomlayout.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
