@@ -65,6 +65,8 @@
         href: pdm2excelnewtasksteps.md
       - name: Options Tab
         href: pdm2exceloptions.md
+      - name: Create BOM from workflow transition
+        href: pdm2excelworkflow.md
       - name: Support for weldments and cutlist
         href: cutlist.md
       - name: Need more help?

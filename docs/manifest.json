@@ -397,6 +397,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdm2excelworkflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excelworkflow.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmconverttaskextended.gif",
       "output": {
         "resource": {
@@ -1011,6 +1021,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2exceloptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelworkflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelworkflow.html"
         }
       },
       "version": ""

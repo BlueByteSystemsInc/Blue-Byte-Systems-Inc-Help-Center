@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Triggering PDM2Excel from a Workflow Transition | SOLIDWORKS PDM | Helper Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Triggering PDM2Excel from a Workflow Transition | SOLIDWORKS PDM | Helper Center ">
+      
+      <meta name="description" content="How to configure a workflow transition in SOLIDWORKS PDM to trigger the PDM2Excel export task.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdm2excelworkflow.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="Helper Center">
+            Helper Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="triggering-the-pdm2excel-task-from-a-workflow-transition">Triggering the PDM2Excel Task from a Workflow Transition</h2>
+<p>You can configure SOLIDWORKS PDM to automatically trigger the <strong>PDM2Excel</strong> task as part of a workflow transition. This allows you to export a Bill of Materials (BOM) automatically when a file moves to a specific workflow state, such as <strong>Engineering Release</strong>.</p>
+<p>The image below shows a configuration example:</p>
+<p><img src="/images/pdm2excelworkflow.png" alt="workflow-task-binding"></p>
+<ul>
+<li>A <strong>Bill Of Materials</strong> task already exists in the <strong>Task List</strong> under the <strong>Tasks</strong> node.</li>
+<li>The workflow transition <strong>&quot;Major Engineering Change&quot;</strong> (from <em>Engineering Release</em> to <em>Dispatch Target 001</em>) has been configured to <strong>execute a task</strong>.</li>
+<li>In the <strong>Transition Action</strong> tab, the action type is set to <code>Execute task</code>, and the <strong>&quot;Bill Of Materials&quot;</strong> task is selected from the dropdown.</li>
+<li>The option <strong>&quot;Run for files&quot;</strong> is enabled, meaning the task will be executed for each file affected by the transition.</li>
+</ul>
+<h3 id="steps-to-set-this-up">Steps to Set This Up</h3>
+<ol>
+<li><p><strong>Create the PDM2Excel Task</strong><br>
+Ensure the PDM2Excel task is already created and configured in the Administration tool under <strong>Tasks &gt; Task List</strong>.</p>
+</li>
+<li><p><strong>Edit the Workflow Transition</strong></p>
+<ul>
+<li>Navigate to the workflow you want to modify (e.g., <em>Engineering</em>).</li>
+<li>Double-click the desired transition (e.g., <em>Major Engineering Change</em>).</li>
+</ul>
+</li>
+<li><p><strong>Add an Execute Task Action</strong></p>
+<ul>
+<li>Go to the <strong>Actions</strong> tab.</li>
+<li>Click <strong>Add Action</strong>.</li>
+<li>Set the <strong>Type</strong> to <code>Execute task</code>.</li>
+<li>Choose <strong>&quot;Run for files&quot;</strong> or the appropriate scope depending on your requirements.</li>
+<li>Select your task from the <strong>Select task to execute</strong> dropdown (e.g., <em>Bill Of Materials</em>).</li>
+</ul>
+</li>
+<li><p><strong>Save and Apply</strong></p>
+<ul>
+<li>Click <strong>OK</strong> to save the transition.</li>
+<li>Click <strong>Save</strong> to save the workflow.</li>
+</ul>
+</li>
+</ol>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>If you recently updated the PDM2Excel task, you may need to <strong>delete and recreate it</strong> in the Task List to ensure the transition references the latest version.</li>
+<li>Always remember to configure the task's <strong>execution method</strong> after pulling the latest version from source control.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdm2excelworkflow.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁 and Couscous 🍲.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
