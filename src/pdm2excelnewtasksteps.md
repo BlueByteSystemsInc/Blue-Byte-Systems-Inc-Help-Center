@@ -75,7 +75,10 @@ In the **Permissions** tab, define which users or groups are allowed to run the 
 
 ## Run the Task
 
-To run the task, right-click a file in your PDM vault, go to **Tasks**, and select the task you just created.
+To run the task, right-click a file in your PDM vault, go to **Tasks**, and select the task you just created: 
+
+- **You will be prompted to choose which configuration to process**.
+- If you checked **Export All Configurations BOMs** in the task setup dialog, the user input will be ignored.
 
 <p align="center">
   <img src="/images/step7.png" alt="Run the PDM2Excel Task" />
