@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> | Helper Center </title>
+      <title>Options | PDM2Excel | SOLIDWORKS PDM | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" | Helper Center ">
+      <meta name="title" content="Options | PDM2Excel | SOLIDWORKS PDM | Helper Center ">
       
-      
+      <meta name="description" content="Configure the Options page in the task setup dialog.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -87,7 +87,7 @@
         <article data-uid="">
 
 <h2 id="options">Options</h2>
-<p>The Options setup tab allows you to define the characteristics of the BOM you would like to export.</p>
+<p>The <strong>Options</strong> tab allows you to configure how the Bill of Materials (BOM) is exported to Excel, including layout, naming, structure, and formatting preferences.</p>
 <p><img src="/images/pdm2excel_options.png" alt="alt text"></p>
 <table>
 <thead>
@@ -99,43 +99,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Export Location</strong></td>
-<td style="text-align: left;">Specifies the location where the Bill of Materials (BOM) should be saved. The location can be within or outside the vault.</td>
+<td style="text-align: left;">The output folder where the Excel BOM will be saved. In the example, it's set to a path under the vault: <code>Vault root folder\API\Sandbox</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Save copy in original folder?</strong></td>
-<td style="text-align: left;">If enabled, a copy of the exported file is saved in the same folder as the original document, preserving the file organization.</td>
+<td style="text-align: left;">When enabled, also saves the exported file in the same folder as the original document. This is disabled in the current configuration.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>File name</strong></td>
-<td style="text-align: left;">The name of the exported Bill of Materials file. This name will be used when saving the file in the specified export location.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Hyperlink the filename column</strong></td>
-<td style="text-align: left;">Creates hyperlinks in the filename column of the BOM, linking to the document’s location in File Explorer.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Web2Client base url</strong></td>
-<td style="text-align: left;">Provides the base URL for the Web2Client, which can be used to create hyperlinks in the BOM for accessing files through a web-based interface.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Add a level column</strong></td>
-<td style="text-align: left;">Adds an additional column in the BOM that represents the hierarchical level of each assembly or part.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Add parent column</strong></td>
-<td style="text-align: left;">Includes a parent column in the BOM, showing the parent assembly for each part or sub-assembly in the BOM.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Thumbnail API Key</strong></td>
-<td style="text-align: left;">Specifies the API key required for fetching thumbnails of the documents. More details can be found on the SolidWorks website.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Individual Thumbnails Export Location</strong></td>
-<td style="text-align: left;">Defines the location where individual thumbnails (images of documents) will be exported. This is useful for visually identifying parts in the BOM.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Ignore columns</strong></td>
-<td style="text-align: left;">Specifies which columns to ignore during export, using a semicolon (<code>;</code>) to separate multiple column names.</td>
+<td style="text-align: left;">Defines how the output file is named. The current format uses: <code>$(Description)-{FileName\withoutExtension}-{ConfigurationName}</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -149,20 +121,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Print All Configurations</strong></td>
-<td style="text-align: left;">When enabled, all configurations of an assembly will be printed in the BOM. Ensure the configuration names are included in the file name for clarity.</td>
+<td style="text-align: left;"><strong>Export All Configurations BOMs</strong></td>
+<td style="text-align: left;">If enabled, exports BOMs for all configurations. This is unchecked in the current setup.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ignore @ configuration</strong></td>
-<td style="text-align: left;">If checked, the <code>@</code> configuration of the assembly will be ignored during the export process, which is often used for default or assembly-level configurations.</td>
+<td style="text-align: left;"><strong>Ignore @ Configuration</strong></td>
+<td style="text-align: left;">Skips the default <code>@</code> configuration during export. This is unchecked in the current setup.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Process all sub assemblies</strong></td>
-<td style="text-align: left;">Ensures that all sub-assemblies are processed and included in the BOM, not just the top-level assemblies.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Top-level assembly row</strong></td>
-<td style="text-align: left;">If enabled, a row representing the top-level assembly will be added to the BOM, ensuring that the highest-level part is clearly marked in the export.</td>
+<td style="text-align: left;"><strong>Add Level Column</strong></td>
+<td style="text-align: left;">Adds a level column to indicate the assembly hierarchy in the BOM. This is <strong>enabled</strong> in the current setup.</td>
 </tr>
 </tbody>
 </table>
@@ -177,19 +145,27 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>PDM BOM Layout</strong></td>
-<td style="text-align: left;">Defines which BOM layout to use for exporting the Bill of Materials. Layouts might be pre-defined templates that determine the structure and order of BOM columns.</td>
+<td style="text-align: left;">Specifies the BOM layout to use. In the example, the layout is set to <strong>Engineering BOM</strong>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Starting address</strong></td>
-<td style="text-align: left;">Specifies the cell address in Excel where the BOM should begin. The format should be <code>Row:Column</code>, e.g., <code>10:12</code> for starting at row 10, column 12.</td>
+<td style="text-align: left;"><strong>Group By</strong></td>
+<td style="text-align: left;">(Optional) Specifies a column to group BOM rows by (e.g., Part Number or Description). This is empty in the current setup.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Display state</strong></td>
-<td style="text-align: left;">Determines the display state of the BOM, such as showing only top-level parts, indented structure, or all parts of an assembly.</td>
+<td style="text-align: left;"><strong>Display Style(s)</strong></td>
+<td style="text-align: left;">Specifies how to display BOMs: <strong>Indented, PartsOnly, Flattened</strong>. Multiple styles can be selected.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Export All Sub-Assemblies As Separate BOMs</strong></td>
+<td style="text-align: left;">If enabled, creates separate BOM files for each sub-assembly. This is <strong>disabled</strong> in the current setup.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Omit Columns</strong></td>
+<td style="text-align: left;">Allows hiding specific columns during export. In the current setup, the columns <code>#</code>, <code>Description</code>, and <code>Revision</code> are omitted.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="templates-settings">Templates Settings</h2>
+<h2 id="excel-template">Excel Template</h2>
 <table>
 <thead>
 <tr>
@@ -200,14 +176,29 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Xlsx template</strong></td>
-<td style="text-align: left;">Specifies the Excel template file (<code>.xlsx</code>) to be used when exporting the Bill of Materials, which can define formatting and data layout.</td>
+<td style="text-align: left;">The Excel <code>.xlsx</code> template file to use for formatting the exported BOM. In the example, it is set to <code>Vault root folder\API\Sandbox\template.xlsx</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Starting address</strong></td>
+<td style="text-align: left;">Defines the starting cell (row:column) in Excel. The example uses <code>2:1</code>, meaning row 2, column 1.</td>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The Export and Import button allows you to save your settings and import them after upgrading. Only use them with task setup.</p>
-</div>
+<h2 id="thumbnails">Thumbnails</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Option</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Thumbnail API Key</strong></td>
+<td style="text-align: left;">API key required to embed thumbnails in the exported BOM. This is left empty in the current setup.</td>
+</tr>
+</tbody>
+</table>
 
 </article>
 
