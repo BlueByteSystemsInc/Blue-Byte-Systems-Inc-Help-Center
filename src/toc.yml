@@ -65,6 +65,8 @@
         href: pdm2excelnewtasksteps.md
       - name: Options Tab
         href: pdm2exceloptions.md
+      - name: Support for weldments and cutlist
+        href: cutlist.md
       - name: Need more help?
         href: pdm2excelneedmorehelp.md
 - name: RevisionSync
