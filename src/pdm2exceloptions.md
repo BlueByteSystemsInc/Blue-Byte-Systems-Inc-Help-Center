@@ -43,4 +43,5 @@ The **Options** tab allows you to configure how the Bill of Materials (BOM) is e
 
 | **Option**           | **Description**                                                                                       |
 |:---------------------|:------------------------------------------------------------------------------------------------------|
-| **Thumbnail API Key**| API key required to embed thumbnails in the exported BOM. This is left empty in the current setup.   |
+| **Enable Rhumbnails**| Adds  a thumbnail column.   |
+| **Background Color**| Background color for each level.   |
