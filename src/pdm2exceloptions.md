@@ -44,4 +44,4 @@ The **Options** tab allows you to configure how the Bill of Materials (BOM) is e
 | **Option**           | **Description**                                                                                       |
 |:---------------------|:------------------------------------------------------------------------------------------------------|
 | **Enable Rhumbnails**| Adds  a thumbnail column.   |
-| **Background Color**| Background color for each level.   |
+| **Background Color**| Background color (shades of green) for each level: ![background color](/images/pdm2excelbackcolor.png)   |

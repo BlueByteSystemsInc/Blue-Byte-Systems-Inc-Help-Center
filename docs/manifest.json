@@ -237,6 +237,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/exportimport.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/exportimport.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/fav.png",
       "output": {
         "resource": {
@@ -371,6 +381,16 @@
       "output": {
         "resource": {
           "relative_path": "images/pdm2excel_options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdm2excelbackcolor.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excelbackcolor.png"
         }
       },
       "version": ""
@@ -971,6 +991,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2excel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excel_exportimport.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excel_exportimport.html"
         }
       },
       "version": ""

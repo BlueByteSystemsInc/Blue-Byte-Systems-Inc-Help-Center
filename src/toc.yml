@@ -67,6 +67,8 @@
         href: pdm2exceloptions.md
    - name: Create BOM from workflow transition
      href: pdm2excelworkflow.md
+   - name: Export/Import Options
+     href: pdm2excel_exportimport.md
    - name: Support for weldments and cutlist
      href: cutlist.md
    - name: Need more help?
