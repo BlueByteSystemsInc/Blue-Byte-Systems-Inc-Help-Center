@@ -397,6 +397,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdm2excelbomlayout.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdm2excelbomlayout.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdm2excelmanagelicense.png",
       "output": {
         "resource": {
@@ -1001,6 +1011,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2excel_exportimport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdm2excelbomlayout.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdm2excelbomlayout.html"
         }
       },
       "version": ""

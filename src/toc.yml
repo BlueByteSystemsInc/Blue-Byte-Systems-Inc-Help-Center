@@ -53,10 +53,12 @@
         href: pdmpublishersolidworks_sheetmetalpackage.md
 - name: PDM2Excel
   href: pdm2excel.md
-  expanded: false
+  expanded: true
   items:
    - name: License Management
      href: pdm2excellicensemanagement.md
+   - name: Configuring your SOLIDWORKS PDM layout
+     href: pdm2excelbomlayout.md
    - name: Setting your task
      href: pdm2excelnewtask.md
      expanded: false

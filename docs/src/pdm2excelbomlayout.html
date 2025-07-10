@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Configuring your SOLIDWORKS PDM Bill Of Materials layout | PDM2Excel | SOLIDWORKS PDM | Helper Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Configuring your SOLIDWORKS PDM Bill Of Materials layout | PDM2Excel | SOLIDWORKS PDM | Helper Center ">
+      
+      <meta name="description" content="Configuring your SOLIDWORKS PDM Bill Of Materials layout for PDM2Excel">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdm2excelbomlayout.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/fav.png" alt="Helper Center">
+            Helper Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="configuring-your-solidworks-pdm-bill-of-materials-layout">Configuring your SOLIDWORKS PDM Bill Of Materials layout</h2>
+<p><span><center><img src="/images/pdm2excelbomlayout.png" alt="alt text"></center></span></p>
+<p>To ensure full compatibility with <strong>PDM2Excel</strong>, your <strong>Bill Of Materials layout</strong> in SOLIDWORKS PDM must include the following columns <strong>(highlighted in <span style="color:orange;">orange</span>)</strong>:</p>
+<ul>
+<li><code>&lt;Configuration&gt;</code> : Special column for the configuration name</li>
+<li><code>&lt;Reference Count&gt;</code> : Special column for quantity</li>
+<li><code>&lt;Name&gt;</code>: Special column for the item name</li>
+</ul>
+<p>These columns are <strong>required</strong>. If any are missing, the export may fail or generate incomplete or inaccurate data.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you do not want these columns in your final Bill Of Materials, you can hide them by specifying the column names in the <em>Omit Columns</em> field in the <strong>Options</strong> page. Example: <code>#;Name;Description</code> will the columbs with headers <code>#</code>, <code>Name</code> and <code>Description</code>.</p>
+</div>
+<h2 id="supporting-cut-lists">Supporting Cut Lists</h2>
+<p>If you want to include <strong>weldments</strong> and their <strong>cut list items</strong> in your exported BOM.</p>
+<h3 id="enable-include-cut-list-references"><strong>Enable &quot;Include cut list references&quot;</strong></h3>
+<p>In the PDM Administration Tool, go to the BOM layout settings and check the option <strong>&quot;Include cut list references&quot; and &quot;Weldment Cut list&quot; (highlighted in <span style="color:green;">green</span>)</strong>. This will allow cut list items from weldments to be included in the output.</p>
+<h2 id="solidworks-pdm-permissions">SOLIDWORKS PDM Permissions</h2>
+<p><strong>Activate Permissions (highlighted in <span style="color:red;">red</span>)</strong>: Ensure that the relevant users or groups have the permissions:</p>
+<ul>
+<li><strong>&quot;Activated computed BOM&quot;</strong></li>
+<li><strong>&quot;See computed BOM&quot;</strong></li>
+</ul>
+<p>Without these permissions, users will not be able to see or export the correct BOM layout.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/pdm2excelbomlayout.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁 and Couscous 🍲.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
