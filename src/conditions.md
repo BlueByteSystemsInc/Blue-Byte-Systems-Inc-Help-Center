@@ -14,8 +14,8 @@ The task will only process files that evaluate any of the set conditions as *tru
 > Conditions are applied to references of the top-level assembly (parts or sub-assemblies).
 
 > [!WARNING]  
-> PDMPublisher will evaluate only **one root condition** — whether it's a **single condition** or a **group** (AND/OR).  
-> If multiple root-level conditions are present, only the **first one** will be considered.
+> PDMPublisher will evaluate conditions at the **root level** — whether it's a **single condition** or a **group** (AND/OR)— as one **AND group**.  
+
 
 ##  Nested Groups Support (AND/OR)
 
