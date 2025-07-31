@@ -49,6 +49,8 @@
         href: pdmpublishersolidworks_options.md
       - name: Logs Tab
         href: pdmpublishersolidworks_logs.md
+      - name: Conditions Tab
+        href: conditions_solidworks.md   
       - name: Sheet Metal Package (Example)
         href: pdmpublishersolidworks_sheetmetalpackage.md
 - name: PDM2Excel

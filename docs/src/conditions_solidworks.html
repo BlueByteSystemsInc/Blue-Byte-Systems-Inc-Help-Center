@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Conditions | PDMPublisher | SOLIDWORKS PDM | Helper Center </title>
+      <title>Conditions | PDMPublisher | SOLIDWORKS 3D | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Conditions | PDMPublisher | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content="Conditions | PDMPublisher | SOLIDWORKS 3D | Helper Center ">
       
       <meta name="description" content="How to add conditions to filter files before printing or exporting.">
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/conditions.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/docs/blob/main/src/conditions_solidworks.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,11 +85,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="conditions-setup-page">Conditions Setup Page</h1>
+<h1 id="conditions-tab">Conditions Tab</h1>
 
-<p><img src="../images/conditions.png" alt="alt text"></p>
-<p>Conditions can be added to a task to include or exclude files from being processed.</p>
-<p>The task will only process files that evaluate any of the set conditions as <em>true</em>.</p>
+<div style="display: flex; center; gap: 1em; margin: 2em 0;">
+    <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        📥 Download PDMPublisher (free version)
+    </a>
+    <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        🛒 Purchase a License
+    </a>
+</div>
+<hr>
+<p><img src="../images/conditions_solidworks.png" alt="alt text"></p>
+<p>Conditions can be added to the add-in to include or exclude files from being processed.</p>
+<p>The add-in will only process files that evaluate any of the set conditions as <em>true</em>.</p>
 <h2 id="nested-groups-support-andor">Nested Groups Support (AND/OR)</h2>
 <p>PDMPublisher now supports <strong>nested condition groups</strong>, allowing you to create more advanced logical filters using <strong>AND/OR</strong> trees.</p>
 <div class="TIP">
@@ -206,11 +215,27 @@
 </tr>
 </tbody>
 </table>
+<h3 id="order-of-evaluation">Order of Evaluation</h3>
+<p><strong>PDMPublisher for SOLIDWORKS</strong> follows a specific order when evaluating variables and configurations:</p>
+<ol>
+<li><p><strong>Configuration-Specific Property Lookup</strong><br>
+When evaluating a variable, <strong>PDMPublisher for SOLIDWORKS</strong> first tries to retrieve its value from the <strong>referenced configuration</strong> of the file.</p>
+</li>
+<li><p><strong>Fallback to Custom Tab</strong><br>
+If the property is <strong>not found</strong> in the referenced configuration, <strong>PDMPublisher for SOLIDWORKS</strong> will <strong>fallback to the <code>Custom</code> tab</strong> to retrieve the value.</p>
+</li>
+<li><p><strong>Assembly References with Empty Configuration Field</strong><br>
+When processing an <strong>assembly</strong>, if a condition has an <strong>empty configuration field</strong>, <strong>PDMPublisher for SOLIDWORKS</strong> will evaluate the condition <strong>against the referenced configuration(s)</strong> of the document (e.g. parts or subassemblies).</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note</strong>: This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.</p>
+</blockquote>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/conditions.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/docs/blob/main/src/conditions_solidworks.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

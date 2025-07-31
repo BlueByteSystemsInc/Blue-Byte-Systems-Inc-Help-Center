@@ -1,15 +1,28 @@
 ---
-title: Conditions | PDMPublisher | SOLIDWORKS PDM
+title: Conditions | PDMPublisher | SOLIDWORKS 3D
 description: How to add conditions to filter files before printing or exporting. 
 ---
 
-# Conditions Setup Page
+# Conditions Tab
 
-![alt text](../images/conditions.png)
+<div style="display: flex; center; gap: 1em; margin: 2em 0;">
+    <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        📥 Download PDMPublisher (free version)
+    </a>
+    <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        🛒 Purchase a License
+    </a>
+</div>
 
-Conditions can be added to a task to include or exclude files from being processed.  
 
-The task will only process files that evaluate any of the set conditions as *true*.
+---
+
+![alt text](../images/conditions_solidworks.png)
+
+Conditions can be added to the add-in to include or exclude files from being processed.  
+
+The add-in will only process files that evaluate any of the set conditions as *true*.
+
 
 ##  Nested Groups Support (AND/OR)
 
@@ -62,3 +75,19 @@ These built-in entries appear at the top of the variable list:
 | **DateLessThan**        | True if date is earlier than the value.                                    |
 | **DateBiggerThan**      | True if date is later than the value.                                      |
 | **YesOrNoEqualTo**      | True if value equals Yes or No.                                            |
+
+
+### Order of Evaluation
+
+**PDMPublisher for SOLIDWORKS** follows a specific order when evaluating variables and configurations:
+
+1. **Configuration-Specific Property Lookup**  
+   When evaluating a variable, **PDMPublisher for SOLIDWORKS** first tries to retrieve its value from the **referenced configuration** of the file.
+
+2. **Fallback to Custom Tab**  
+   If the property is **not found** in the referenced configuration, **PDMPublisher for SOLIDWORKS** will **fallback to the `Custom` tab** to retrieve the value.
+
+3. **Assembly References with Empty Configuration Field**  
+   When processing an **assembly**, if a condition has an **empty configuration field**, **PDMPublisher for SOLIDWORKS** will evaluate the condition **against the referenced configuration(s)** of the document (e.g. parts or subassemblies).
+
+> **Note**: This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.

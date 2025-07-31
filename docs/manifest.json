@@ -167,6 +167,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/conditions_solidworks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/conditions_solidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/confirmationemail.png",
       "output": {
         "resource": {
@@ -901,6 +911,16 @@
       "output": {
         ".html": {
           "relative_path": "src/conditions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/conditions_solidworks.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/conditions_solidworks.html"
         }
       },
       "version": ""
