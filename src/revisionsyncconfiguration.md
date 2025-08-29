@@ -89,7 +89,8 @@ To configure the add-in:
 
 ## How do I trigger RevisionSync
 
--**Manually:** From the right-click menu, go to **Blue Byte Systems**, and select **Sync data card variables...**.
+-**Manually:** From the right-click menu, go to **Sync**, and select **Sync Revision (Match Model & Drawing)...** to sync revisions.
+-**Manually:** From the right-click menu, go to **Sync**, and select **Sync data card variables (Update Drawing Card From Model)...** to sync datacards.
 
 ![data card sync](/images/datacardsync.png) 
 
