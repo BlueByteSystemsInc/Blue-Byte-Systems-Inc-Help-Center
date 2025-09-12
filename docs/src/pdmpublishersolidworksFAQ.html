@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Bill Of Materials | PDM2Excel | SOLIDWORKS PDM | Helper Center </title>
+      <title>FAQ | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Bill Of Materials | PDM2Excel | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content="FAQ | Helper Center ">
       
-      <meta name="description" content="Configuring the PDM2Excel Task with the Correct BOM Template">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/bomlayout.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworksFAQ.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,52 +85,13 @@
         </div>
 
         <article data-uid="">
-<h1 id="configuring-the-pdm2excel-task-with-the-correct-bom-template">Configuring the PDM2Excel Task with the Correct BOM Template</h1>
+<h1 id="faq">FAQ</h1>
 
-<p>To ensure the <strong>PDM2Excel</strong> task exports the correct Bill of Materials (BOM), it is critical to configure the task to use the appropriate BOM template. This ensures that the quantity and other key fields are included and accurately represented.</p>
-<h2 id="step-1-set-the-template-in-the-task-options">Step 1: Set the Template in the Task Options</h2>
-<p>When creating or editing a <strong>PDM2Excel</strong> task in the SOLIDWORKS PDM Administration Tool:</p>
-<ol>
-<li><p>Go to the <strong>Tasks</strong> section.</p>
-</li>
-<li><p>Right-click to create a <strong>New task...</strong> or edit an existing task.</p>
-</li>
-<li><p>In the <strong>Options</strong> tab, locate the <strong>Template</strong> dropdown.</p>
-</li>
-<li><p>Select a BOM template.</p>
-<p>For example: <strong>Engineering BOM</strong>
-<img src="/images/bomsetting.png" alt="bomsetting"></p>
-</li>
-</ol>
-<p><strong>Important:</strong> If the correct template is not selected, the exported Excel file may be missing essential fields like quantity, or may include incorrect ones.</p>
-<h2 id="step-2-verify-the-bom-layout-in-pdm">Step 2: Verify the BOM Layout in PDM</h2>
-<p>In the <strong>SOLIDWORKS PDM Administration Tool</strong>:</p>
-<ol>
-<li><p>Expand the <strong>Bills of Materials</strong> section.</p>
-</li>
-<li><p>Open the <strong>BOM</strong> template you previously set in your task.</p>
-</li>
-<li><p>Ensure that the following columns are included:</p>
-<ul>
-<li><code>&lt;Name&gt;</code></li>
-<li><code>&lt;Description&gt;</code></li>
-<li><code>&lt;Configuration&gt;</code></li>
-<li><code>&lt;Part Number&gt;</code></li>
-<li><code>Revision</code></li>
-<li><code>&lt;Reference Count&gt;</code> (<strong>REQUIRED</strong>)</li>
-</ul>
-</li>
-</ol>
-<p>The column <code>&lt;Reference Count&gt;</code> is essential as it represents the correct BOM quantity based on the number of references.</p>
-<p><img src="/images/bom.png" alt="bom"></p>
-<p><strong>Do not use</strong> discarded or deprecated quantity variables, as they may result in incorrect exports or missing data.</p>
-<h2 id="support">Support</h2>
-<p>For help configuring this setup, contact Blue Byte Systems Inc. at: amen@bluebyte.biz</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/bomlayout.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworksFAQ.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

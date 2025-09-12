@@ -53,6 +53,8 @@
         href: conditions_solidworks.md   
       - name: Sheet Metal Package (Example)
         href: pdmpublishersolidworks_sheetmetalpackage.md
+      - name: Frequently Asked Questions
+        href: pdmpublishersolidworksFAQ.md
 - name: PDM2Excel
   href: pdm2excel.md
   expanded: true

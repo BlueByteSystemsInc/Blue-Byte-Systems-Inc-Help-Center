@@ -97,8 +97,9 @@ Adds the top-level assembly to the processing queue.
 When enabled, the task will always work with the latest version of the file in PDM.
 
 
->[!WARNING]
+>[!NOTE]
 > This is only supported if a SOLIDWORKS PDM Professional vault is accessible.
+
 
 ---
 

@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs",
+  "source_base_path": "C:/Users/dusti/source/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -1151,6 +1151,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworksFAQ.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworksFAQ.html"
         }
       },
       "version": ""
