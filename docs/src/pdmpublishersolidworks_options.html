@@ -95,91 +95,108 @@
         🛒 Purchase a License
     </a>
 </div>
-<p>This section outlines all the options in the PDMPublisher tab:</p>
+<p>This section outlines all the options in the PDMPublisher home tab:</p>
 <hr>
 <h2 id="export-location">Export Location</h2>
-<p>Location where to export the files. The location can be in or outside a SOLIDWORKS PDM vault. Must not end with <code>\</code>.</p>
+<p>Location where to export the files.</p>
+<ul>
+<li>The location can be in or outside  SOLIDWORKS PDM vault.</li>
+<li>The Browse button allows the user to specify the destination folder for the exported files, making it easy to direct them to any desired location.</li>
+<li>The export location can be defined dynamically, allowing the destination folder to be determined by the selected file properties.</li>
+<li>Must not end with <code>\</code>.</li>
+</ul>
+<p><img src="/images/RMBButton.png" alt="Export Location button"></p>
+<h2 id="customize-location">Customize Location</h2>
+<p>Custom export locations based on file extension.</p>
+<ul>
+<li>Customize location allows users to define export locations based on file extension, ensuring that each file type is assigned a unique destination path.</li>
+<li>The checkboxes indicate which file types will be exported to their specified locations. Any file type whose checkbox is not selected will default to the base export location.</li>
+</ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Use the RMB button (right-click on it) to access the special/dynamic variables to customize the path.</p>
+<p>This feature is available exclusively in the full version of PDMpublisher.</p>
 </div>
-<p><img src="/images/RMBButton.png" alt="Right-click button"></p>
+<p><img src="/images/CUSTOMEXPORTLOCATIONSSW.png" alt="Custom File Locations"></p>
 <hr>
 <h2 id="file-name-must-include-extension">File name (must include extension)</h2>
-<p>Name of the file. You need to include extension.</p>
+<p>Exported file name(s).</p>
+<ul>
+<li>The Filename field defines the name assigned to the generated file(s).</li>
+<li>This value is determined by the properties selected within the add-in.</li>
+<li>Characters can be manually entered between dynamic properties to separate the properties. For example: filename<code>_</code>revision (Certain characters are not permitted in filenames due to Windows Explorer restrictions)</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The list of SOLIDWORKS properties available for use in the filename is determined by the active document and the specific properties it contains.</p>
+</div>
+<p><img src="/images/FilenameProperties2.png" alt="Filename Properties"></p>
 <hr>
 <h2 id="file-formats">File Formats</h2>
-<p>File formats to export. For example: PDF, DWG, DXF. You can select multiple formats.</p>
+<p>File formats to export.</p>
+<p>Multiple file formats can be exported simultaneously by checking the corresponding boxes.</p>
 <p>The supported file formats are:</p>
 <ul>
 <li>PDF</li>
-<li>STEP</li>
-<li>IGES</li>
-<li>STL</li>
-<li>ePRT</li>
-<li>eASM</li>
-<li>X_T</li>
-<li>U3D</li>
-<li>HTML (Requires eDrawings Professional to be installed)</li>
-<li>DXF</li>
 <li>DWG</li>
+<li>DXF</li>
+<li>IGS</li>
+<li>U3D</li>
+<li>STL</li>
+<li>STEP</li>
+<li>EPRT</li>
+<li>EASM</li>
+<li>HTML (Requires eDrawings Professional to be installed)</li>
+<li>X_T</li>
 </ul>
 <hr>
-<h2 id="export-document-and-its-references-to-file-formats-individually">Export document and its references to file formats individually</h2>
+<h2 id="export-document-to-file-formats-individually">Export document to file formats individually</h2>
+<p>Export individual files.</p>
 <p>When enabled, this exports the document and its referenced documents individually to the selected output folder. This does not affect merging and archiving when it is off.</p>
 <hr>
-<h2 id="server-synced-activity-logs">Server Synced Activity Logs</h2>
-<p>Stored a copy of your logs on Blue Byte Systems server for technical support. Logs are handled as per our privacy policy.</p>
-<hr>
 <h2 id="merge-exported-pdfs-into-one-master-pdf">Merge exported PDFs into one master PDF</h2>
+<p>Merger all PDFs into a combined document.</p>
 <p>When enabled, all exported PDFs of the affected assembly are merged into a single PDF.</p>
 <hr>
 <h2 id="ignore-sub-assemblies-children-when-condition-checks-fail">Ignore sub-assemblies children when condition checks fail</h2>
-<p>When enabled, the children of sub-assemblies that fail condition checks will be ignored (not processed).</p>
+<p>Condition check on parent assemblies will ignore children when failed.</p>
+<p>When conditions are applied and this option is enabled, the children of sub-assemblies that fail the condition checks will be ignored (not processed).</p>
 <hr>
 <h2 id="archive-all-exported-documents-zip">Archive all exported documents (.zip)</h2>
 <p>Create a zip file of all exported documents.</p>
 <hr>
-<h2 id="print-top-level-assembly-document">Print top-level assembly document</h2>
-<p>Adds the top-level assembly to the processing queue.</p>
-<hr>
-<h2 id="work-with-latest-version">Work with latest version</h2>
-<p>When enabled, the task will always work with the latest version of the file in PDM.</p>
+<h2 id="convert-multiple-configurations">Convert multiple configurations</h2>
+<p>Convert all part and assembly configurations.</p>
+<p>When enabled, this option processes each configuration individually and exports them according to the selected criteria.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This is only supported if a SOLIDWORKS PDM Professional vault is accessible.</p>
+<p>Configuration Name is required in the filename field. (shown below)</p>
 </div>
-<hr>
-<h2 id="quick-view-mode-drawings-only">Quick view mode (Drawings Only)</h2>
-<p>Open drawings in quick view mode (for faster performance when drawings are large or linked to multiple references).</p>
-<hr>
-<h2 id="convert-multiple-configurations">Convert multiple configurations</h2>
-<p>Convert all part and assembly configurations. Make sure to include the configuration name in the file name.</p>
+<p><img src="/images/ConfigurationNameRequired.png" alt="Configuration Name"></p>
 <hr>
 <h2 id="add-table-of-content-to-merged-pdf">Add table of content to merged PDF</h2>
-<p>Automatically generates and inserts a table of content into the merged PDF.</p>
-<hr>
-<h2 id="use-microsoft-print-to-pdf-to-save-pdfs">Use Microsoft Print To PDF to save PDFs</h2>
-<p>Uses the built-in Microsoft Print To PDF feature to generate PDF files.</p>
+<p>Creates a table of contents for a merged PDF export.</p>
+<ul>
+<li>When enabled, automatically generates and inserts a table of content into the merged PDF.</li>
+<li>Users can choose to use the default settings or customize values to suit their specific requirements.</li>
+<li>Custom values are derived from the SOLIDWORKS file properties of the currently active document.</li>
+</ul>
+<p><img src="/images/TableOfContents1.png" alt="Defualt Table Of Contents"></p>
+<p><img src="/images/TableOfContentsCustomize.png" alt="Custom Table Of Contents"></p>
+<ul>
+<li>The example below shows a custom 'PartNumber','Status', and 'Qty' column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.</li>
+</ul>
+<p><img src="TableOfContentsExample1.png" alt="Example Custom Table Of Contents"></p>
 <hr>
 <h2 id="convert-sheet-metal-parts-to-11-flat-pattern-dxf">Convert sheet metal parts to 1:1 flat pattern DXF</h2>
-<p>Exports the flat pattern of sheet metal parts as 1:1 DXF. The term 'FlatPattern' will be appended to the filename.</p>
-<hr>
-<h2 id="use-pdm-search-to-locate-drawings">Use PDM search to locate drawings</h2>
-<p>Locate drawings using PDM’s &quot;Where Used&quot; tab when they cannot be found in the same folder. The file names must match.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>This is only supported if a SOLIDWORKS PDM Professional vault is accessible.</p>
+<p>Exports the flat pattern of sheet metal parts as 1:1 DXF.</p>
+<ul>
+<li>The term 'FlatPattern' will be appended to the filename.</li>
+<li>This feature will recongize sheet metal parts and export them as flat patterns.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This does not require the DXF file format to be selected for export in the File Formats.</p>
 </div>
-<hr>
-<h2 id="table-type">Table type</h2>
-<p>Table of content or simple BOM table to include in the merged PDF.</p>
-<hr>
-<h2 id="paper-size">Paper size</h2>
-<p>Select the paper size used for the generated table of content or BOM document (e.g., A4, Letter, Tabloid).</p>
-<hr>
-<h2 id="watermark">Watermark</h2>
-<p>The watermark text to apply to the exported files.</p>
 <hr>
 <h2 id="pdf-bookmarks">PDF bookmarks</h2>
 <p>Define the pattern to use for bookmarks in the merged PDF (e.g., chapter titles, part names).</p>

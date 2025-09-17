@@ -17,6 +17,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/CUSTOMEXPORTLOCATIONSSW.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/CUSTOMEXPORTLOCATIONSSW.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ConfigurationNameRequired.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ConfigurationNameRequired.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/FilenameProperties2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/FilenameProperties2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/RMBButton.png",
       "output": {
         "resource": {
@@ -31,6 +61,36 @@
       "output": {
         "resource": {
           "relative_path": "images/Samplenotificiation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TableOfContents1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TableOfContents1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TableOfContentsCustomize.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TableOfContentsCustomize.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TableOfContentsExample1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TableOfContentsExample1.png"
         }
       },
       "version": ""
