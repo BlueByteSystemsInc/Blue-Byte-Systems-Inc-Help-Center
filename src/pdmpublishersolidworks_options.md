@@ -140,7 +140,7 @@ Creates a table of contents for a merged PDF export.
 
 - The example below shows a custom 'PartNumber','Status', and 'Qty' column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.
 
-![Example Custom Table Of Contents](TableOfContentsExample1.png)
+![Example Custom Table Of Contents](/images/TableOfContentsExample1.png)
 
 ---
 
