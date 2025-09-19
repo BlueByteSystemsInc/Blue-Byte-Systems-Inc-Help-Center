@@ -1,9 +1,9 @@
 ---
-title: PDMPublisher for SOLIDWORKS 3D (Options)
+title: PDMPublisher for SOLIDWORKS 3D (Options Tab)
 description: Learn how to configure the PDMPublisher in SOLIDWORKS.
 ---
 
-# PDMPublisher for SOLIDWORKS 
+# Options Tab (Defualt Tab)
 <div style="display: flex; center; gap: 1em; margin: 2em 0;">
     <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
         📥 Download PDMPublisher (free version)
@@ -15,13 +15,13 @@ description: Learn how to configure the PDMPublisher in SOLIDWORKS.
 
 
 
-This section outlines all the options in the PDMPublisher home tab:
+This section outlines all the options in the **PDMPublisher** home tab:
 
 ---
 
 ## Export Location
 
-Location where to export the files. 
+Location where to export generated files. 
 
   - The location can be in or outside  SOLIDWORKS PDM vault.
   - The Browse button allows the user to specify the destination folder for the exported files, making it easy to direct them to any desired location.
@@ -30,6 +30,8 @@ Location where to export the files.
 
 
 ![Export Location button](/images/RMBButton.png)
+
+---
 
 ## Customize Location
 Custom export locations based on file extension.
@@ -44,12 +46,13 @@ Custom export locations based on file extension.
 
 ---
 
-## File name (must include extension)
+## File name
 
 Exported file name(s).
 
  - The Filename field defines the name assigned to the generated file(s). 
  - This value is determined by the properties selected within the add-in.
+ - At least one file property driven value must be applied to create unique file names.
  - Characters can be manually entered between dynamic properties to separate the properties. For example: filename`_`revision (Certain characters are not permitted in filenames due to Windows Explorer restrictions)
 
 >[!NOTE]
@@ -63,23 +66,23 @@ Exported file name(s).
 
 ## File Formats
 
-File formats to export.
+File formats selected for export.
 
 Multiple file formats can be exported simultaneously by checking the corresponding boxes.
 
 The supported file formats are: 
 
-- PDF
-- DWG
-- DXF
-- IGS
-- U3D
-- STL
-- STEP
-- EPRT
-- EASM
-- HTML (Requires eDrawings Professional to be installed)
-- X_T
+1. **PDF (Portable Document Format)**: A versatile format for sharing documents that preserves formatting across different devices.
+2. **DWG (Drawing)**: A file format used in AutoCAD for creating and editing 2D and 3D drawings.
+3. **DXF (Drawing Exchange Format)**: A format designed for interoperability between AutoCAD and other software, facilitating data exchange.
+4. **IGS (Initial Graphics Exchange Specification)**: A neutral file format used to exchange 2D and 3D CAD data between different software platforms.
+5. **U3D (Universal 3D)**: A file format for 3D models, commonly embedded in documents to provide interactive 3D visualization.
+6. **STL (Stereolithography)**: A widely used format for 3D printing that represents the surface geometry of a 3D object.
+7. **STEP (Standard for the Exchange of Product Model Data)**: A format that enables compatibility and data exchange between different CAD systems.
+8. **EPRT (eDrawings Part File)**: A file format used for 3D model representations in eDrawings software.
+9. **EASM (eDrawings Assembly File)**: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.
+10. **HTML (HyperText Markup Language)**: The standard markup language for creating web pages, allowing the display of text, images, and links.
+11. **X_T (Parasolid Model File)**: A format used for 3D modeling in CAD applications, representing geometric data.
 
 ---
 
@@ -93,13 +96,13 @@ When enabled, this exports the document and its referenced documents individuall
 
 ## Merge exported PDFs into one master PDF
 
-Merger all PDFs into a combined document.
+Merge all PDFs into a combined document.
 
 When enabled, all exported PDFs of the affected assembly are merged into a single PDF.
 
 ---
 
-## Ignore sub-assemblies children when condition checks fail
+## Ignore sub-assembly children when condition checks fail
 
 Condition check on parent assemblies will ignore children when failed.
 
@@ -138,7 +141,7 @@ Creates a table of contents for a merged PDF export.
 
 ![Custom Table Of Contents](/images/TableOfContentsCustomize.png)
 
-- The example below shows a custom 'PartNumber','Status', and 'Qty' column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.
+- The example below shows a custom **PartNumber**,**Status**, and **Qty** column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.
 
 ![Example Custom Table Of Contents](/images/TableOfContentsExample1.png)
 
@@ -162,3 +165,20 @@ Add bookmarks to merged PDFs.
 
 Define the pattern to use for bookmarks in the merged PDF (e.g., chapter titles, part names).
 
+---
+
+## Publish
+
+Time to export!
+
+The **Publish** button executes the add-in using all applied settings. The process can be canceled at any time by selecting the **Cancel** button in the progress bar.
+
+The **Publish** button also provides the option to select between available SOLIDWORKS PDM Vaults, if installed and configured. Use the down arrow on the right to access the installed vaults.
+
+![Publish Button](/images/PublishButtonWithVault.png)
+
+ >[!WARNING]
+  > Linking the **Publish** button to vault is critical to ensure the generated files are able to be checked in/out properly during the export process.
+
+>[!TIP]
+  > To unlink the **Publish** button from a vault, click the dropdown arrow and select the active vault name. This action will remove the vault association.

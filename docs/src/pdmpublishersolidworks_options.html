@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDMPublisher for SOLIDWORKS 3D (Options) | Helper Center </title>
+      <title>PDMPublisher for SOLIDWORKS 3D (Options Tab) | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDMPublisher for SOLIDWORKS 3D (Options) | Helper Center ">
+      <meta name="title" content="PDMPublisher for SOLIDWORKS 3D (Options Tab) | Helper Center ">
       
       <meta name="description" content="Learn how to configure the PDMPublisher in SOLIDWORKS.">
       <link rel="icon" href="../favicon.ico">
@@ -85,7 +85,7 @@
         </div>
 
         <article data-uid="">
-<h1 id="pdmpublisher-for-solidworks">PDMPublisher for SOLIDWORKS</h1>
+<h1 id="options-tab-defualt-tab">Options Tab (Defualt Tab)</h1>
 
 <div style="display: flex; center; gap: 1em; margin: 2em 0;">
     <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
@@ -95,10 +95,10 @@
         🛒 Purchase a License
     </a>
 </div>
-<p>This section outlines all the options in the PDMPublisher home tab:</p>
+<p>This section outlines all the options in the <strong>PDMPublisher</strong> home tab:</p>
 <hr>
 <h2 id="export-location">Export Location</h2>
-<p>Location where to export the files.</p>
+<p>Location where to export generated files.</p>
 <ul>
 <li>The location can be in or outside  SOLIDWORKS PDM vault.</li>
 <li>The Browse button allows the user to specify the destination folder for the exported files, making it easy to direct them to any desired location.</li>
@@ -106,6 +106,7 @@
 <li>Must not end with <code>\</code>.</li>
 </ul>
 <p><img src="/images/RMBButton.png" alt="Export Location button"></p>
+<hr>
 <h2 id="customize-location">Customize Location</h2>
 <p>Custom export locations based on file extension.</p>
 <ul>
@@ -118,11 +119,12 @@
 </div>
 <p><img src="/images/CUSTOMEXPORTLOCATIONSSW.png" alt="Custom File Locations"></p>
 <hr>
-<h2 id="file-name-must-include-extension">File name (must include extension)</h2>
+<h2 id="file-name">File name</h2>
 <p>Exported file name(s).</p>
 <ul>
 <li>The Filename field defines the name assigned to the generated file(s).</li>
 <li>This value is determined by the properties selected within the add-in.</li>
+<li>At least one file property driven value must be applied to create unique file names.</li>
 <li>Characters can be manually entered between dynamic properties to separate the properties. For example: filename<code>_</code>revision (Certain characters are not permitted in filenames due to Windows Explorer restrictions)</li>
 </ul>
 <div class="NOTE">
@@ -132,32 +134,32 @@
 <p><img src="/images/FilenameProperties2.png" alt="Filename Properties"></p>
 <hr>
 <h2 id="file-formats">File Formats</h2>
-<p>File formats to export.</p>
+<p>File formats selected for export.</p>
 <p>Multiple file formats can be exported simultaneously by checking the corresponding boxes.</p>
 <p>The supported file formats are:</p>
-<ul>
-<li>PDF</li>
-<li>DWG</li>
-<li>DXF</li>
-<li>IGS</li>
-<li>U3D</li>
-<li>STL</li>
-<li>STEP</li>
-<li>EPRT</li>
-<li>EASM</li>
-<li>HTML (Requires eDrawings Professional to be installed)</li>
-<li>X_T</li>
-</ul>
+<ol>
+<li><strong>PDF (Portable Document Format)</strong>: A versatile format for sharing documents that preserves formatting across different devices.</li>
+<li><strong>DWG (Drawing)</strong>: A file format used in AutoCAD for creating and editing 2D and 3D drawings.</li>
+<li><strong>DXF (Drawing Exchange Format)</strong>: A format designed for interoperability between AutoCAD and other software, facilitating data exchange.</li>
+<li><strong>IGS (Initial Graphics Exchange Specification)</strong>: A neutral file format used to exchange 2D and 3D CAD data between different software platforms.</li>
+<li><strong>U3D (Universal 3D)</strong>: A file format for 3D models, commonly embedded in documents to provide interactive 3D visualization.</li>
+<li><strong>STL (Stereolithography)</strong>: A widely used format for 3D printing that represents the surface geometry of a 3D object.</li>
+<li><strong>STEP (Standard for the Exchange of Product Model Data)</strong>: A format that enables compatibility and data exchange between different CAD systems.</li>
+<li><strong>EPRT (eDrawings Part File)</strong>: A file format used for 3D model representations in eDrawings software.</li>
+<li><strong>EASM (eDrawings Assembly File)</strong>: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.</li>
+<li><strong>HTML (HyperText Markup Language)</strong>: The standard markup language for creating web pages, allowing the display of text, images, and links.</li>
+<li><strong>X_T (Parasolid Model File)</strong>: A format used for 3D modeling in CAD applications, representing geometric data.</li>
+</ol>
 <hr>
 <h2 id="export-document-to-file-formats-individually">Export document to file formats individually</h2>
 <p>Export individual files.</p>
 <p>When enabled, this exports the document and its referenced documents individually to the selected output folder. This does not affect merging and archiving when it is off.</p>
 <hr>
 <h2 id="merge-exported-pdfs-into-one-master-pdf">Merge exported PDFs into one master PDF</h2>
-<p>Merger all PDFs into a combined document.</p>
+<p>Merge all PDFs into a combined document.</p>
 <p>When enabled, all exported PDFs of the affected assembly are merged into a single PDF.</p>
 <hr>
-<h2 id="ignore-sub-assemblies-children-when-condition-checks-fail">Ignore sub-assemblies children when condition checks fail</h2>
+<h2 id="ignore-sub-assembly-children-when-condition-checks-fail">Ignore sub-assembly children when condition checks fail</h2>
 <p>Condition check on parent assemblies will ignore children when failed.</p>
 <p>When conditions are applied and this option is enabled, the children of sub-assemblies that fail the condition checks will be ignored (not processed).</p>
 <hr>
@@ -183,7 +185,7 @@
 <p><img src="/images/TableOfContents1.png" alt="Defualt Table Of Contents"></p>
 <p><img src="/images/TableOfContentsCustomize.png" alt="Custom Table Of Contents"></p>
 <ul>
-<li>The example below shows a custom 'PartNumber','Status', and 'Qty' column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.</li>
+<li>The example below shows a custom <strong>PartNumber</strong>,<strong>Status</strong>, and <strong>Qty</strong> column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.</li>
 </ul>
 <p><img src="/images/TableOfContentsExample1.png" alt="Example Custom Table Of Contents"></p>
 <hr>
@@ -201,6 +203,20 @@
 <h2 id="pdf-bookmarks">PDF bookmarks</h2>
 <p>Add bookmarks to merged PDFs.</p>
 <p>Define the pattern to use for bookmarks in the merged PDF (e.g., chapter titles, part names).</p>
+<hr>
+<h2 id="publish">Publish</h2>
+<p>Time to export!</p>
+<p>The <strong>Publish</strong> button executes the add-in using all applied settings. The process can be canceled at any time by selecting the <strong>Cancel</strong> button in the progress bar.</p>
+<p>The <strong>Publish</strong> button also provides the option to select between available SOLIDWORKS PDM Vaults, if installed and configured. Use the down arrow on the right to access the installed vaults.</p>
+<p><img src="/images/PublishButtonWithVault.png" alt="Publish Button"></p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Linking the <strong>Publish</strong> button to vault is critical to ensure the generated files are able to be checked in/out properly during the export process.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To unlink the <strong>Publish</strong> button from a vault, click the dropdown arrow and select the active vault name. This action will remove the vault association.</p>
+</div>
 
 </article>
 

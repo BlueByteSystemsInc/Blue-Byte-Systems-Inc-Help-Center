@@ -47,6 +47,8 @@
       items: 
       - name: Options Tab
         href: pdmpublishersolidworks_options.md
+      - name: Annotations Tab
+        href: pdmpublishersolidworks_annotations.md
       - name: Logs Tab
         href: pdmpublishersolidworks_logs.md
       - name: Conditions Tab

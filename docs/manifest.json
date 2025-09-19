@@ -47,6 +47,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/PublishButtonWithVault.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/PublishButtonWithVault.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/RMBButton.png",
       "output": {
         "resource": {
@@ -1221,6 +1231,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworksFAQ.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_annotations.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_annotations.html"
         }
       },
       "version": ""
