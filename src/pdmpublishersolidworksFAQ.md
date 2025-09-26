@@ -1,6 +1,6 @@
 ---
 title: PDMPublisher for SOLIDWORKS 3D (Frequently Asked Questions)
-description: Sheet metal package example.
+description: Where all the questions get answered!
 ---
 
 # Frequently Asked Questions

@@ -1,9 +1,9 @@
 ---
-title: PDMPublisher for SOLIDWORKS 3D (Annotations)
-description: How to configure and use the annotations tab.
+title: PDMPublisher for SOLIDWORKS 3D (About Tab)
+description: Learn how to configure the PDMPublisher in SOLIDWORKS.
 ---
 
-# Annotations Tab
+# About Tab
 <div style="display: flex; center; gap: 1em; margin: 2em 0;">
     <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
         📥 Download PDMPublisher (free version)
@@ -13,4 +13,6 @@ description: How to configure and use the annotations tab.
     </a>
 </div>
 
-## Annotations Tab
+
+
+This section outlines all the options in the **PDMPublisher** About tab:

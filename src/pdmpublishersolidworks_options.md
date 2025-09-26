@@ -153,9 +153,20 @@ Exports the flat pattern of sheet metal parts as 1:1 DXF.
 
  - The term 'FlatPattern' will be appended to the filename.
  - This feature will recongize sheet metal parts and export them as a flat pattern.
+ - Several options can be selected using the checkboxes to configure the DXF export according to your requirements. These options are accessible by clicking the **Flat Pattern Settings** button. Below is the list of available options:
+ 1. Eport flat-pattern geometry
+ 2. Include hidden edges
+ 3. Export bend lines
+ 4. Include sketches
+ 5. Merge coplanar faces
+ 6. Export library features
+ 7. Export forming tools
+ 8. Export bounding box
 
  >[!NOTE]
 > This does not require the DXF file format to be selected for export in the File Formats.
+
+![Flat Pattern Settings](/images/FlatPatternSettings.png)
 
 ---
 

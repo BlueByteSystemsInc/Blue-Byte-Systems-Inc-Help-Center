@@ -25,10 +25,11 @@ You can **download PDMPublisher for SOLIDWORKS for free** for SOLIDWORKS from th
 
 ## Tabs
 
-When you first run **PDMPublisher for SOLIDWORKS**, there are several tabs:
+When you first run **PDMPublisher for SOLIDWORKS**, there are several tabs to get familiar with:
 
-- PDMPublisher (Default tab)
-- Annotations
-- Conditions
-- Logs
-- About 
+- [Options Tab (Defualt Tab)](pdmpublishersolidworks_options.md)
+- [Annotations Tab](pdmpublishersolidworks_annotations.md)
+- [Conditions Tab](conditions_solidworks.md)
+- [Logs Tab](pdmpublishersolidworks_logs.md)
+- [About Tab](pdmpublishersolidworks_about.md)
+

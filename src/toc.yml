@@ -18,8 +18,8 @@
   expanded: true
   items:
     - name: PDMPublisher for SOLIDWORKS PDM Professional 
-      expanded: false 
       href: pdmpublisher.md
+      expanded: false 
       items: 
       - name: Quick Demo
         href: pdmpublisherdemo.md
@@ -27,7 +27,7 @@
         href: licensespdmpublisher.md
       - name: Setting your first task
         href: propertiespagepdmpublisher.md
-        expanded: true 
+        expanded: false
         items:
         - name: Options Tab
           href: options.md
@@ -49,14 +49,16 @@
         href: pdmpublishersolidworks_options.md
       - name: Annotations Tab
         href: pdmpublishersolidworks_annotations.md
+      - name: Conditions Tab
+        href: conditions_solidworks.md  
       - name: Logs Tab
         href: pdmpublishersolidworks_logs.md
-      - name: Conditions Tab
-        href: conditions_solidworks.md   
+      - name: About Tab
+        href: pdmpublishersolidworks_About.md
+      - name: Frequently Asked Questions
+        href: pdmpublishersolidworksFAQ.md 
       - name: Sheet Metal Package (Example)
         href: pdmpublishersolidworks_sheetmetalpackage.md
-      - name: Frequently Asked Questions
-        href: pdmpublishersolidworksFAQ.md
 - name: PDM2Excel
   href: pdm2excel.md
   expanded: true

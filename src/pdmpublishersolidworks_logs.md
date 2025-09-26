@@ -1,6 +1,6 @@
 ---
 title: PDMPublisher for SOLIDWORKS 3D (Logs)
-description: Logs
+description: How to use the log files for troubleshooting.
 ---
 
 # Log Files
