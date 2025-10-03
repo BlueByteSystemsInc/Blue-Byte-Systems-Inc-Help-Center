@@ -17,11 +17,11 @@ description: Learn how to configure the PDMPublisher export for SOLIDWORKS 3D, i
 </div>
 
 ---
-**PDMPublisher** is available as **SOLIDWORKS add-in**.
+**PDMPublisher** is available as a **SOLIDWORKS add-in**.
 
 PDMPublisher for SOLIDWORKS 3D has *the same features* as PDMPublisher for SOLIDWORKS PDM Professional.
 
-You can **download PDMPublisher for SOLIDWORKS for free** for SOLIDWORKS from the official product page:  
+You can download **PDMPublisher for SOLIDWORKS** free of charge from the official product page:  
 
 ## Tabs
 
