@@ -97,10 +97,15 @@
 </div>
 <hr>
 <p><img src="../images/conditions_solidworks.png" alt="alt text"></p>
-<p>Conditions can be added to the add-in to include or exclude files from being processed.</p>
-<p>The add-in will only process files that evaluate any of the set conditions as <em>true</em>.</p>
+<p>Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The add-in will only process files that evaluate any of the set conditions as '<strong>true</strong>'.</p>
+</div>
+<hr>
 <h2 id="nested-groups-support-andor">Nested Groups Support (AND/OR)</h2>
 <p>PDMPublisher now supports <strong>nested condition groups</strong>, allowing you to create more advanced logical filters using <strong>AND/OR</strong> trees.</p>
+<p>Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>You can add a new group by clicking the <strong>+ (AND/OR)</strong> button next to any condition group.</p>
@@ -215,6 +220,7 @@
 </tr>
 </tbody>
 </table>
+<hr>
 <h3 id="order-of-evaluation">Order of Evaluation</h3>
 <p><strong>PDMPublisher for SOLIDWORKS</strong> follows a specific order when evaluating variables and configurations:</p>
 <ol>
@@ -228,9 +234,10 @@ If the property is <strong>not found</strong> in the referenced configuration, <
 When processing an <strong>assembly</strong>, if a condition has an <strong>empty configuration field</strong>, <strong>PDMPublisher for SOLIDWORKS</strong> will evaluate the condition <strong>against the referenced configuration(s)</strong> of the document (e.g. parts or subassemblies).</p>
 </li>
 </ol>
-<blockquote>
-<p><strong>Note</strong>: This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.</p>
-</blockquote>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.</p>
+</div>
 
 </article>
 

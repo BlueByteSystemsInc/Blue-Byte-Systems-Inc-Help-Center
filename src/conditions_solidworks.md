@@ -19,30 +19,33 @@ description: How to add conditions to filter files before printing or exporting.
 
 ![alt text](../images/conditions_solidworks.png)
 
-Conditions can be added to the add-in to include or exclude files from being processed.  
+Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.
 
-The add-in will only process files that evaluate any of the set conditions as *true*.
+>[!NOTE]
+>The add-in will only process files that evaluate any of the set conditions as '**true**'.
+
+---
 
 
 ##  Nested Groups Support (AND/OR)
 
-PDMPublisher now supports **nested condition groups**, allowing you to create more advanced logical filters using **AND/OR** trees.
+PDMPublisher for SOLIDWORKS now supports **nested condition groups**, allowing you to create more advanced logical filters using **AND/OR** trees.
+
+Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.
 
 > [!TIP]
 > You can add a new group by clicking the **+ (AND/OR)** button next to any condition group.
 
 ---
 
-### Condition Options
+## Condition Options
 
 | Option            | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
-| **Variable**       | Variable name to run the condition on.                                     |
+| **Variable**       | Variable name to run the condition on. This is not case sensitive.         |
 | **Condition Type** | Type of comparison or rule to apply.                                       |
-| **Value**          | Value to compare against.                                                  |
+| **Value**          | Value to compare against. This is not case sensitive.                      |
 | **Configuration**  | Configuration to read the variable from (use `@` for general use).         |
-
----
 
 ### Special Variables
 
@@ -54,9 +57,8 @@ These built-in entries appear at the top of the variable list:
 - **Workflow**: Workflow name of the file
 - **State**: Current state name of the file
 
----
 
-### Operation Types
+### Condition Types
 
 | Operation               | Description                                                                 |
 |-------------------------|-----------------------------------------------------------------------------|
@@ -76,6 +78,7 @@ These built-in entries appear at the top of the variable list:
 | **DateBiggerThan**      | True if date is later than the value.                                      |
 | **YesOrNoEqualTo**      | True if value equals Yes or No.                                            |
 
+---
 
 ### Order of Evaluation
 
@@ -90,4 +93,5 @@ These built-in entries appear at the top of the variable list:
 3. **Assembly References with Empty Configuration Field**  
    When processing an **assembly**, if a condition has an **empty configuration field**, **PDMPublisher for SOLIDWORKS** will evaluate the condition **against the referenced configuration(s)** of the document (e.g. parts or subassemblies).
 
-> **Note**: This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.
+>[!NOTE]
+> This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.
