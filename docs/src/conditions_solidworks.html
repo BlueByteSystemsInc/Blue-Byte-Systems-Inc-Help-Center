@@ -95,23 +95,25 @@
         🛒 Purchase a License
     </a>
 </div>
+<p>This section provides an overview of the <strong>Conditions</strong> tab and explains the available options for filtering which files are included in the publishing process.</p>
 <hr>
-<p><img src="../images/conditions_solidworks.png" alt="alt text"></p>
+<h2 id="creating-and-using-conditions">Creating and Using Conditions</h2>
 <p>Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.</p>
+<p><img src="../images/conditions_solidworks.png" alt="Conditions Tab"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The add-in will only process files that evaluate any of the set conditions as '<strong>true</strong>'.</p>
 </div>
 <hr>
 <h2 id="nested-groups-support-andor">Nested Groups Support (AND/OR)</h2>
-<p>PDMPublisher now supports <strong>nested condition groups</strong>, allowing you to create more advanced logical filters using <strong>AND/OR</strong> trees.</p>
+<p>PDMPublisher for SOLIDWORKS supports <strong>nested condition groups</strong>, allowing you to create more advanced logical filters using <strong>AND/OR</strong> trees.</p>
 <p>Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>You can add a new group by clicking the <strong>+ (AND/OR)</strong> button next to any condition group.</p>
 </div>
 <hr>
-<h3 id="condition-options">Condition Options</h3>
+<h2 id="condition-options">Condition Options</h2>
 <table>
 <thead>
 <tr>
@@ -122,7 +124,7 @@
 <tbody>
 <tr>
 <td><strong>Variable</strong></td>
-<td>Variable name to run the condition on.</td>
+<td>Variable (file property) name to run the condition on. This is not case sensitive.</td>
 </tr>
 <tr>
 <td><strong>Condition Type</strong></td>
@@ -130,7 +132,7 @@
 </tr>
 <tr>
 <td><strong>Value</strong></td>
-<td>Value to compare against.</td>
+<td>Value to compare against. This is not case sensitive.</td>
 </tr>
 <tr>
 <td><strong>Configuration</strong></td>
@@ -138,7 +140,6 @@
 </tr>
 </tbody>
 </table>
-<hr>
 <h3 id="special-variables">Special Variables</h3>
 <p>These built-in entries appear at the top of the variable list:</p>
 <ul>
@@ -148,8 +149,7 @@
 <li><strong>Workflow</strong>: Workflow name of the file</li>
 <li><strong>State</strong>: Current state name of the file</li>
 </ul>
-<hr>
-<h3 id="operation-types">Operation Types</h3>
+<h3 id="condition-types">Condition Types</h3>
 <table>
 <thead>
 <tr>

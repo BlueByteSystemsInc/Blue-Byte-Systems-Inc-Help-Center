@@ -13,10 +13,11 @@ description: How to use the log files for troubleshooting.
     </a>
 </div>
 
-
 Detailed logs are found in the logs tab. 
 
-Each time you click `Export` button, a new a log called a `Job` with ID is created with detailed steps.
+---
+
+Each time you click `Publish` button, a new a log called a `Job` with ID is created with detailed steps.
 
 - Yellow lines are regular steps in progress.
 - Green lines are successful steps.
@@ -24,9 +25,10 @@ Each time you click `Export` button, a new a log called a `Job` with ID is creat
 
 You can clear logs or save them as a `.log` file.
 
+The log files display detailed information such as BOM quantities retrieved, condition checks performed, identified sheet metal parts, and more. This information can be useful for troubleshooting and reviewing results if an unexpected outcome occurs during use of the tool.
+
 ![Detailed logs](/images/detailedlogs.png)
 
-# Advanced debugging
-
-- If you have the `Server-Synced Activity Logs` option checked, you can share the `Job ID` with technical support instead of the `.log` file. 
+>[!NOTE]
+>Each logged instance includes a unique ID number located at the bottom of the entry. This ID can be provided to Blue Bytes Support to assist with troubleshooting and issue resolution.
 

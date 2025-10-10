@@ -14,12 +14,15 @@ description: How to add conditions to filter files before printing or exporting.
     </a>
 </div>
 
+This section provides an overview of the **Conditions** tab and explains the available options for filtering which files are included in the publishing process.
 
 ---
 
-![alt text](../images/conditions_solidworks.png)
+## Creating and Using Conditions
 
 Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.
+
+![Conditions Tab](../images/conditions_solidworks.png)
 
 >[!NOTE]
 >The add-in will only process files that evaluate any of the set conditions as '**true**'.
@@ -29,7 +32,7 @@ Conditions act as filters to ensure only the desired files are processed. They w
 
 ##  Nested Groups Support (AND/OR)
 
-PDMPublisher for SOLIDWORKS now supports **nested condition groups**, allowing you to create more advanced logical filters using **AND/OR** trees.
+PDMPublisher for SOLIDWORKS supports **nested condition groups**, allowing you to create more advanced logical filters using **AND/OR** trees.
 
 Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.
 
@@ -42,7 +45,7 @@ Individual conditions or entire condition groups can be enabled or disabled usin
 
 | Option            | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
-| **Variable**       | Variable name to run the condition on. This is not case sensitive.         |
+| **Variable**       | Variable (file property) name to run the condition on. This is not case sensitive.         |
 | **Condition Type** | Type of comparison or rule to apply.                                       |
 | **Value**          | Value to compare against. This is not case sensitive.                      |
 | **Configuration**  | Configuration to read the variable from (use `@` for general use).         |

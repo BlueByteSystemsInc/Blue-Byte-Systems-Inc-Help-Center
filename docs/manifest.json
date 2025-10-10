@@ -107,6 +107,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/PDMPublisherSW_About.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/PDMPublisherSW_About.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/PublishButtonWithVault.png",
       "output": {
         "resource": {
@@ -1297,16 +1307,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "src/pdmpublishersolidworksFAQ.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/pdmpublishersolidworksFAQ.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "src/pdmpublishersolidworks_About.md",
       "output": {
         ".html": {
@@ -1341,16 +1341,6 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks_options.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/pdmpublishersolidworks_sheetmetalpackage.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/pdmpublishersolidworks_sheetmetalpackage.html"
         }
       },
       "version": ""

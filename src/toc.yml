@@ -19,8 +19,8 @@
   items:
     - name: PDMPublisher for SOLIDWORKS PDM Professional 
       href: pdmpublisher.md
-      expanded: false 
-      items: 
+      expanded: false
+      items:
       - name: Quick Demo
         href: pdmpublisherdemo.md
       - name: License Management
@@ -54,10 +54,6 @@
         href: pdmpublishersolidworks_logs.md
       - name: About Tab
         href: pdmpublishersolidworks_About.md
-      - name: Frequently Asked Questions
-        href: pdmpublishersolidworksFAQ.md 
-      - name: Sheet Metal Package (Example)
-        href: pdmpublishersolidworks_sheetmetalpackage.md
 - name: PDM2Excel
   href: pdm2excel.md
   expanded: true
