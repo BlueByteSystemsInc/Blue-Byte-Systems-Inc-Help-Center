@@ -98,3 +98,12 @@ These built-in entries appear at the top of the variable list:
 
 >[!NOTE]
 > This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.
+
+---
+### Import and Export
+
+**Import** and **Export** functions are used to back up or deploy settings across multiple installations of **PDMpublisher for SOLIDWORKS**.
+
+- The **Export** function creates a settings file that can be saved, shared, and imported into other installations of PDMpublisher for SOLIDWORKS.
+
+- The **Import** function applies the settings contained within a settings file that was previously created using the Export process.
