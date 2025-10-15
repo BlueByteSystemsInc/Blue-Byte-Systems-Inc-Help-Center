@@ -1,6 +1,6 @@
 # PDMPublisher
 
-<img src="../images/pdmpublisher_logo.png" width="200" height="100"/>
+<img src="../images/pdmpublisher_logo.png" width="300" height="300"/>
 
 Thank you for choosing **[PDMPublisher](https://bluebyte.biz/product/pdmpublisher/)**! 
 

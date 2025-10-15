@@ -30,5 +30,5 @@ The log files display detailed information such as BOM quantities retrieved, con
 ![Detailed logs](/images/detailedlogs.png)
 
 >[!NOTE]
->Each logged instance includes a unique ID number located at the bottom of the entry. This ID can be provided to Blue Bytes Support to assist with troubleshooting and issue resolution.
+>Each logged instance includes a unique ID number located at the bottom of the entry. This ID can be provided to Blue Byte Support to assist with troubleshooting and issue resolution.
 
