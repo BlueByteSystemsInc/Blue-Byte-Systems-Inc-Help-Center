@@ -1,12 +1,8 @@
 - name: ❓ Help
   href: src/
-- name: 🛒 Buy PDM2Excel
-  href: https://bluebyte.biz/product/pdm2excel/
-- name: 🛒 Buy PDMPublisher
-  href: https://bluebyte.biz/product/pdmpublisher/
-- name: 🎥 PDMPublisher Trial
-  href: https://calendly.com/bluebyte/pdm-convert-extended-demo-and-qa?back=1
-- name: 🎥 PDM2Excel Trial
-  href: https://calendly.com/bluebyte/pdm2excel-demo-and-qa?back=1
-- name: 📥 Contact Us
+- name: PDMPublisher (SOLIDWORKS)
+  href: https://pdmpublisher.com/solidworks-desktop/
+- name: PDMPublisher (PDM Professional)
+  href: https://pdmpublisher.com/pdm-professional/
+- name: Contact Us
   href: https://bluebyte.biz/contact/
