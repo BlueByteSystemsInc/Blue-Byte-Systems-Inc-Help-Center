@@ -11,6 +11,8 @@ Conditions can be added to a task to include or exclude files from being process
 
 The task will only process files that evaluate any of the set conditions as *true*.
 
+Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.
+
 ##  Nested Groups Support (AND/OR)
 
 PDMPublisher now supports **nested condition groups**, allowing you to create more advanced logical filters using **AND/OR** trees.

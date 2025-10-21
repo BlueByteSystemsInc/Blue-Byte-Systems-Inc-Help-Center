@@ -6,6 +6,21 @@ description: This pages explains all the task setup page options in PDMPublisher
 
 When you choose PDM Publisher from the dropdown in the new task dialog, you will be prompted a window that is similar to the one below:
 
+---
+
+## Execution Method
+
+| **Option** | **Description** |
+|------------|-----------------|
+| **Let the system choose the computers to execute the task** | The task will attempt to use any computer that is available to run the task. 
+| **Prompt the user to choose a computer when the task is initiated** | The task will trigger a prompt for the user to choose where to execute the task.|
+| **Execute on the computer where the task is initiated** | This will launch the task on the computer in which the task the executed |
+
+> [!NOTE]
+> See **Important Notes About Creating Tasks** at the bottom of this page for additional information.
+
+---
+
 # Export Settings
 
 | **Option**                                  | **Description**                                                                                                                                                 |
@@ -26,6 +41,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
 | **Use Microsoft Print To PDF to save PDFs**          | When enabled, the task will use the Microsoft Print To PDF printer instead of SOLIDWORKS's save as to save PDFs. |
 
+---
 
 # Export History Settings
 
@@ -35,6 +51,8 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Server-Synced Activity Logs**             | Syncs the activity logs with the server, allowing for centralized storage and review of the task's history, including all performed steps.                        |
 | **Log Folder (Vault Only)**                 | Specifies the folder within the PDM vault where log files will be stored. This ensures that logs are maintained in a secure location, following PDM’s file structure. |
 
+---
+
 # BOM Settings
 
 | **Option**                                  | **Description**                                                                                                                                                 |
@@ -43,6 +61,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Calculation method**          | Defines how the BOM is calculated. Options include **As Built** and **Show Selected**. [Learn more](https://help.solidworks.com/2021/english/enterprisepdm/fileexplorer/t_computing_boms_for_as-built_assemblies.htm).  |
 
 
+---
 
 
 # Table of Content Settings
@@ -53,17 +72,23 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Table type**                              | Specifies the type of table to include: either a Table of Contents (TOC) or a Simple Bill of Materials (BOM). The BOM includes item descriptions and quantities.    |
 | **Paper size**                              | Specifies the paper size used for the table of contents or BOM in the merged PDF. Options include standard sizes like A4, Letter, and others.                     |
 
+---
+
 # Watermark Settings
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Watermark**                               | Defines the watermark that will be applied to the printed PDF documents. This can include both static text and dynamic expressions, such as filenames or dates.     |
 
+---
+
 # SOLIDWORKS Settings
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Use this version of SOLIDWORKS**          | Specifies which version of SOLIDWORKS to use for processing the files. Options range from specific years (e.g., 2018, 2019) to the latest version available.        |
+
+---
 
 # Miscellaneous Settings
 

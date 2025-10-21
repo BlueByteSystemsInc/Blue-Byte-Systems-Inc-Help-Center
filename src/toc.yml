@@ -31,10 +31,10 @@
         items:
         - name: Options Tab
           href: options.md
-        - name: Conditions Tab
-          href: Conditions.md
         - name: Annotations Tab
           href: annotations.md
+        - name: Conditions Tab
+          href: Conditions.md
         - name: Frequently Asked Questions
           href: pdmpublisherfaq.md
         - name: In depth articles
