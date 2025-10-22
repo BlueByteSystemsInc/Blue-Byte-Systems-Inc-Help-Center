@@ -31,7 +31,6 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Export document and its references to file formats individually** | When enabled, affected document and its references will be exported to the selected file format individually.   **Make sure this option is checked to process single documents.**  **If you only want the merged PDF of an assembly, you may uncheck this option to avoid saving individual PDFs in the export location.**           |
 | **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.                                                 |
 | **Ignore sub-assemblies children when condition checks fail**          | When enabled, the children of, sub-assemblies that fail condition check, will be ignored (not processed). |
-| **Print top-level assembly document**          | Adds the top-level assembly to the processing queue. By default, this option is checked. |
 | **Work with latest version**               | Ensures that the task works with the latest version of the file, automatically fetching the most recent version from the PDM vault.                             |
 | **Quick view mode (Drawings Only)**        | Enables quick view mode for drawings to improve performance, especially for large and complex drawings.                                                           |
 | **Convert multiple configurations**        | If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename. |
@@ -39,7 +38,6 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Archive all exported documents (.zip)**  | Packages all exported documents into a single `.zip` file for easy storage and distribution.                                                                     |
 | **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
 | **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
-| **Use Microsoft Print To PDF to save PDFs**          | When enabled, the task will use the Microsoft Print To PDF printer instead of SOLIDWORKS's save as to save PDFs. |
 
 ---
 
@@ -69,8 +67,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Add table of content to merged PDF**     | When enabled, a table of contents will be automatically generated and inserted into the merged PDF, making it easier to navigate and reference the document.       |
-| **Table type**                              | Specifies the type of table to include: either a Table of Contents (TOC) or a Simple Bill of Materials (BOM). The BOM includes item descriptions and quantities.    |
-| **Paper size**                              | Specifies the paper size used for the table of contents or BOM in the merged PDF. Options include standard sizes like A4, Letter, and others.                     |
+| **Table columns**                              | Specifies the information included in the table. Just names, Names and Quantities, or Custom. The Custom columns feature will launch a new window in which you can choose the properties to include in the table of contents.   |
 
 ---
 
@@ -78,7 +75,7 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 
 | **Option**                                  | **Description**                                                                                                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Watermark**                               | Defines the watermark that will be applied to the printed PDF documents. This can include both static text and dynamic expressions, such as filenames or dates.     |
+| **Watermark**                               | Defines the watermark that will be applied to the printed PDF documents. This can include both static text and dynamic expressions, such as filenames or dates. The watermark is applied at a 45-degree angle on the drawing and rendered semi-transparent to avoid obscuring underlying content.    |
 
 ---
 
