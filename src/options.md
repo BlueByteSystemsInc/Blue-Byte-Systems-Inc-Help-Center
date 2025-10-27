@@ -16,9 +16,6 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 | **Prompt the user to choose a computer when the task is initiated** | The task will trigger a prompt for the user to choose where to execute the task.|
 | **Execute on the computer where the task is initiated** | This will launch the task on the computer in which the task the executed |
 
-> [!NOTE]
-> See **Important Notes About Creating Tasks** at the bottom of this page for additional information.
-
 ---
 
 # Export Settings
@@ -96,14 +93,6 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 ### Ensuring Proper BOM Layout for PDMPublisher
 In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher leverages the first BOM layout in your vault to calculate quantities. To ensure proper functionality, the layout must include a <RefCount> (Quantity) column and a <Configuration> (Configuration name) column. If you are experiencing errors related to the bill of materials layout, verify that these required columns are present in your BOM setup.
 
-### Important Notes About Creating Tasks
-
-Please consider the following recommendations when creating a new task using PDM Publisher:
-1. **Execution method**
-    1. In the execution method tab that appears on the blue left sidebar, please: 
-    2. Choose the radio box option **“Let the system decide which computer to execute the task“**.
-    3. Choose **one computer**. We recommend that our customers opt for the server. The server needs to have a SOLIDWORKS PDM Client installed with a local view as well as SOLIDWORKS 3D.
-2. On the first page of the task, execute the task with a user that has the right workflow and file/folder permissions.
 
 > [!TIP]
 > We also recommend disabling the auto-add extensions by removing all the extensions the task uses including txt.  

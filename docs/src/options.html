@@ -112,10 +112,6 @@
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>See <strong>Important Notes About Creating Tasks</strong> at the bottom of this page for additional information.</p>
-</div>
 <hr>
 <h1 id="export-settings">Export Settings</h1>
 <table>
@@ -294,18 +290,6 @@
 </table>
 <h3 id="ensuring-proper-bom-layout-for-pdmpublisher">Ensuring Proper BOM Layout for PDMPublisher</h3>
 <p>In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher leverages the first BOM layout in your vault to calculate quantities. To ensure proper functionality, the layout must include a <refcount> (Quantity) column and a <configuration> (Configuration name) column. If you are experiencing errors related to the bill of materials layout, verify that these required columns are present in your BOM setup.</configuration></refcount></p>
-<h3 id="important-notes-about-creating-tasks">Important Notes About Creating Tasks</h3>
-<p>Please consider the following recommendations when creating a new task using PDM Publisher:</p>
-<ol>
-<li><strong>Execution method</strong>
-<ol>
-<li>In the execution method tab that appears on the blue left sidebar, please:</li>
-<li>Choose the radio box option <strong>“Let the system decide which computer to execute the task“</strong>.</li>
-<li>Choose <strong>one computer</strong>. We recommend that our customers opt for the server. The server needs to have a SOLIDWORKS PDM Client installed with a local view as well as SOLIDWORKS 3D.</li>
-</ol>
-</li>
-<li>On the first page of the task, execute the task with a user that has the right workflow and file/folder permissions.</li>
-</ol>
 <div class="TIP">
 <h5>Tip</h5>
 <p>We also recommend disabling the auto-add extensions by removing all the extensions the task uses including txt.<br>
