@@ -177,6 +177,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/TaskAnnotations1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TaskAnnotations1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TaskAnnotations2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TaskAnnotations2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TaskAnnotations3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TaskAnnotations3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/TaskAnnotations4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/TaskAnnotations4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/WaterMark1.png",
       "output": {
         "resource": {
