@@ -18,6 +18,17 @@ This section provides an overview of the **Conditions** tab and explains the ava
 
 ---
 
+## Conditions Output Dialog
+
+From this dialog box, you can manually select which files to export. The dialog also displays useful information such as the number of assemblies, unique parts, and configurations identified during processing.
+
+![Poor Man's Conditions](../images/PoorMansConditions1.png)
+
+>[!NOTE]
+>To disable this option, uncheck the **Show Conditions Output** Dialog checkbox located at the bottom of the Conditions tab.
+
+---
+
 ## Creating and Using Conditions
 
 Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.

@@ -117,10 +117,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/PoorMansConditions1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/PoorMansConditions1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/PublishButtonWithVault.png",
       "output": {
         "resource": {
           "relative_path": "images/PublishButtonWithVault.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QRcodeCheckbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/QRcodeCheckbox.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/QRcodeExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/QRcodeExample.png"
         }
       },
       "version": ""

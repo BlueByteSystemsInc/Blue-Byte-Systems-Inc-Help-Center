@@ -58,6 +58,17 @@ This section provides an overview of the **Annotations tab** and explains the av
 
 ---
 
+## QR Code
+- This option converts the active annotation into a QR code that can be scanned using any smart device equipped with a camera. The same as any other annotation, the QR code can be placed anywhere on the drawing.
+
+![Adding an Annotation](/images/QRcodeCheckbox.png)
+![QR Code Example](/images/QRcodeExample.png)
+
+>[!NOTE]
+>The size of the QR code is controlled by the **Width** setting located to the right of the QR Code checkbox.
+
+---
+
 ## Annotation Position
 
 - Each annotation can be repositioned manually by clicking and dragging from its bottom-left corner to the desired location.
