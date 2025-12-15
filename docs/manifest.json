@@ -57,6 +57,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/AddingAnnotations5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/AddingAnnotations5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/AddingAnnotations6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/AddingAnnotations6.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/AnnotationSheets1.png",
       "output": {
         "resource": {

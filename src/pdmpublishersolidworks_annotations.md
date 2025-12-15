@@ -72,7 +72,31 @@ This section provides an overview of the **Annotations tab** and explains the av
 ## Annotation Position
 
 - Each annotation can be repositioned manually by clicking and dragging from its bottom-left corner to the desired location.
+
+![Adding an Annotation](/images/AddingAnnotations5.png)
+
 - Alternately, Each annotation can be set using the X and Y coordinates. X is a percentage relative to the width and Y is a percentage relative to the height of the sheet.
+
+- It is also possible to copy the position of existing annotations. This is done by following the steps below.
+
+    1. In PDMpublisher, navigate to the Annotations tab.
+
+    2. Select the PDMpublisher annotation that you want to position on the drawing.
+
+    3. In the active SOLIDWORKS drawing, select an existing note that will be used as a reference for positioning.
+
+    4. Return to the Annotations tab in PDMpublisher and click **Copy XY from Note**.
+
+    5. The X and Y coordinates of the selected SOLIDWORKS note are copied.
+
+    6. The PDMpublisher annotation is automatically positioned at the same location.
+
+    7. Once positioning is complete, delete the temporary SOLIDWORKS note from the drawing sheet.
+
+    8. Click Publish to generate the output.
+
+
+![Adding an Annotation](/images/AddingAnnotations6.png)
 
 ![Adding an Annotation](/images/AddingAnnotations4.png)
 
