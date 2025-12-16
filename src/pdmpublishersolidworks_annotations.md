@@ -93,7 +93,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 
     7. Once positioning is complete, delete the temporary SOLIDWORKS note from the drawing sheet.
 
-    8. Click Publish to generate the output.
+    8. Click **Publish** to generate the output.
 
 
 ![Adding an Annotation](/images/AddingAnnotations6.png)
