@@ -1147,6 +1147,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/cdpdmchangeslog.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/cdpdmchangeslog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/changeslog.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/changeslog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/conditions.md",
       "output": {
         ".html": {

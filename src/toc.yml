@@ -7,10 +7,16 @@
 - name: EULA
   href: eula.md
 
+- name: Changes 
+- name: PDMPublisher changes log
+  href: changeslog.md
+- name: PDMDeploy changes log
+  href: cdpdmchangeslog.md
+
 - name: How to Install Our PDM Add-ins
 - name: Installing/Updating PDM add-ins (regular method)
   href: installingpdmaddins.md
-- name: Installing/Updating PDM add-ins with CDPDM
+- name: Installing/Updating PDM add-ins with PDMDeploy
   href: updateaddinswithcdpdm.md
 
 - name: Products
@@ -54,7 +60,7 @@
       - name: About Tab
         href: pdmpublishersolidworks_About.md
 - name: Fast PDM Add-ins Depolyment 
-- name: CDPDM
+- name: PDMDeploy
   href: cdpdm.md
 
 - name: Deployment FAQs

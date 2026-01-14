@@ -1,18 +1,18 @@
 ---
-title: Updating Blue Byte Systems PDM add-ins with CDPDM | SOLIDWORKS PDM
-description: This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the CDPDM add-in.
+title: Updating Blue Byte Systems PDM add-ins with PDMDeploy | SOLIDWORKS PDM
+description: This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the PDMDeploy add-in.
 ---
-# Updating Blue Byte Systems PDM add-ins with CDPDM
+# Updating Blue Byte Systems PDM add-ins with PDMDeploy
 
 
 <video src="https://bluebyte.biz/wp-content/docsvideos/cdpdm.mp4" autoplay muted controls style="width: 100%; border-radius: 12px;"></video>
 
 
-This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the CDPDM add-in. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the CDPDM continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.
+This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the PDMDeploy add-in. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the PDMDeploy continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.
 
 ### Installation Steps:
 
-1. **Download CDPDM**: The link is provided in your *order email* and is also available in the downloads section of your account. This file is an archive zip file and it contains `CDPDM.cex` and `CustomerConfigurationFile.cfg`
+1. **Download PDMDeploy**: The link is provided in your *order email* and is also available in the downloads section of your account. This file is an archive zip file and it contains `PDMDeploy.cex` and `CustomerConfigurationFile.cfg`
 
 <p align="center">
   <img src="../images/confirmationemail.png" alt="Order Email" />
@@ -22,11 +22,11 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 
 
 > [!Note]
-> To install CDPDM after downloading it, please follow the instructions in [this article](/src/cdpdm.html).
+> To install PDMDeploy after downloading it, please follow the instructions in [this article](/src/cdpdm.html).
 
 
 > [!Warning]
-> **If CDPDM fails to install, the *order email* contains a downloadable CEX file that contains the add-in**.
+> **If PDMDeploy fails to install, the *order email* contains a downloadable CEX file that contains the add-in**.
 
 2. **Unblock the downloaded file**: Right-click on the zip archive and select **Properties**. In the properties dialog, check the **Unblock** option and click **OK**.
 
@@ -36,11 +36,11 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 
 5. **Import the add-in**:
     
-    - Go to **File > Open** and browse to `CDPDM.cex` (unzipped content).
+    - Go to **File > Open** and browse to `PDMDeploy.cex` (unzipped content).
     
     - Click **OK** to open the CEX file.
     
-    - Drag and drop the CDPDM add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.
+    - Drag and drop the PDMDeploy add-in icon onto the add-ins node in the administration tool. This will add the add-in into the add-ins node.
 
 6. **Upload the customer configuration file**:
     
@@ -48,13 +48,13 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
     
     - If needed unblock the downloaded configuration file: Right-click on the file, select **Properties**, check the **Unblock** option, and click **OK**.
     
-    - Right-click on the CDPDM add-in and click on **Update customer configuration file...**
+    - Right-click on the PDMDeploy add-in and click on **Update customer configuration file...**
     
     - Browse to the unblocked customer configuration file and upload it.
 
 ### Updating an Add-in:
 
-1. Right-click on CDPDM add-in (under Add-ins in the Administration tool):
+1. Right-click on PDMDeploy add-in (under Add-ins in the Administration tool):
 
 ![rightclickcdpdm](/images/rightclickcdpdm.png)
 
@@ -73,7 +73,7 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 ### Warnings
 
 > [!Warning]
-> CDPDM **does not permit** new task add-ins in the *Task Host Configuration*. You must do that manually:
+> PDMDeploy **does not permit** new task add-ins in the *Task Host Configuration*. You must do that manually:
 > ![taskhostconfiguration](/images/taskhostconfiguration.png)
 > [!Warning]
 > All client computers using the add-in's tasks must be restarted to use the new version.

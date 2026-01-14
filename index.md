@@ -8,22 +8,7 @@ description: You will find the official documentation for our products as well o
 </div>
 
 [Welcome to the **Blue Byte Systems Help Center**. Here, you will find the official documentation for our products as well other help articles about PDM and our tooling. Before starting a support ticket, we highly recommend reviewing the specific product documentation available on this site.](src/introduction.html).
-
-# <div align="center"> Products
-</div>
-
-<div style="display: flex; justify-content: center; gap: 2em; margin-top: 2em; margin-bottom: 2em; flex-wrap: wrap;">
-
-  <div style="background: #f8f9fa; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); width: 270px; text-align: center; padding: 1.5em;">
-    <a href="src/pdmpublisher.html" style="text-decoration: none;">
-      
-      <h3 style="margin: 0.5em 0 0.2em 0; color: #0078d7;">PDMPublisher</h3>
-      <p style="color: #333; font-size: 0.95em;">Documentation &rarr;</p>
-    </a>
-  </div>
-
-</div>
-
+ 
 ## Contact Us
 
 For more information or to contact us, please refer to the [Contact Us](https://bluebyte.biz/contact) page.
