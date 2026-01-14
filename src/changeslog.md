@@ -3,6 +3,9 @@ title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
 
+## 2026-01-16  
+*Applies to **SOLIDWORKS Add-in***
+- Fixed assembly conflict bug
 
 ## 2026-01-15  
 *Applies to both **PDM Task** and **SOLIDWORKS Add-in***
