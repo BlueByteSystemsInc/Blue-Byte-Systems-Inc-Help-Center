@@ -2,6 +2,10 @@
 title: PDMDeploy | PDMPublisher | SOLIDWORKS PDM
 description: How to use PDMDeploy to install PDMPublisher, PDM2Excel and other Blue Byte Systems SOLIDWORKS PDM plugins. 
 ---
+
+>[!Important]
+> **CDPDM is now PDMDeploy**. While screenshots and video tutorials are still referencing CDPDM, the changes in PDMDeploy are minimal.
+
 # Continuous Delivery
 
 <video src="https://bluebyte.biz/wp-content/docsvideos/cdpdm.mp4" autoplay muted controls style="width: 100%; border-radius: 12px;"></video>

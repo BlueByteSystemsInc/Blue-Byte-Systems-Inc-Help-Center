@@ -2,6 +2,10 @@
 title: Updating Blue Byte Systems PDM add-ins with PDMDeploy | SOLIDWORKS PDM
 description: This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the PDMDeploy add-in.
 ---
+
+>[!Important]
+> **CDPDM is now PDMDeploy**. While screenshots and video tutorials are still referencing CDPDM, the changes in PDMDeploy are minimal.
+
 # Updating Blue Byte Systems PDM add-ins with PDMDeploy
 
 
