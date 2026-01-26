@@ -2,7 +2,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Blue Byte Systems Help Center | SOLIDWORKS and PDM Add-ins | Helper Center",
-    "keywords": "Help Center Welcome to the Blue Byte Systems Help Center. Here, you will find the official documentation for our products as well other help articles about PDM and our tooling. Before starting a support ticket, we highly recommend reviewing the specific product documentation available on this site.. Contact Us For more information or to contact us, please refer to the Contact Us page."
+    "keywords": "Welcome to the Blue Byte Systems Help Center. Find official product documentation, setup guides, and troubleshooting resources for our SOLIDWORKS and PDM tools. Before starting a support ticket, we recommend reviewing the documentation for your specific product. Product Documentation Choose a product below to view documentation, examples, and common setup steps. PDMPublisher Automated export and publishing for SOLIDWORKS and SOLIDWORKS PDM. Open PDMPublisher Docs PDMShell Command-line automation tool for SOLIDWORKS PDM. Open PDMShell Docs PDM2Excel Export vault data and variable values to Excel/CSV for reporting and analysis. Open PDM2Excel Docs Quick Links Getting Started Installation & Updates Contact Us For more information or to contact us, please refer to the Contact Us page: https://bluebyte.biz/contact Support Assistant"
   },
   "src/PDMReminder.html": {
     "href": "src/PDMReminder.html",
