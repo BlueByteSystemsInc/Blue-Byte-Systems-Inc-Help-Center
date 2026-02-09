@@ -13,6 +13,7 @@ description: PDMPublisher frequently asked questions.
 | How do the conditions work? | Conditions are evaluated for the found PDM reference. If any of the conditions evaluate to true, the reference is added to the processing queue. |
 | I cannot see the exported files! | Make sure the export location in some where in your vault (or outside your vault) where you have the workflow and folder permissions to add and edit files. **The vault's root folder** is typically a folder that **is locked** for adding or editing files by PDM administrators. |
 | I have created a task. How can I launch it?  | PDMPublisher tasks can be attached to a workflow transition or triggered from the right-click menu on a file. You will find your created tasks under Tasks. In the right-click menu, tasks use the name defined the task setup page. See below: <img src="../images/pdmpublisher_rmb.png"/> |
+| I see this error "Cannot find or create the font 'Helvetica-Bold'. Some characters may not display or print correctly." when I open the merged PDF. | This error is related to your PDF reader. Please make sure to install the appropriate font See below: <img src="../images/pdmpublisher_merge.png"/> |
 
 
 

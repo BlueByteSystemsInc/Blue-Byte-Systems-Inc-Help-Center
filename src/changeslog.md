@@ -2,6 +2,20 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026-02-11 
+*Applies to **SOLIDWORKS Add-in***
+- Fixed bug: Incomplete references dialog data when top level assembly is opened in lightweight.
+- Decreased time it takes to build the reference tree in the progress dialog
+- Minor UI changes in the about page (Renamed buttons captions and added support email address)
+
+## 2026-02-10 
+- Ghost build
+
+## 2026-02-09 
+*Applies to both **PDM Task** and **SOLIDWORKS Add-in***
+- Started used seperator | instead of # (Caused issues with filenames containing #)
+- Updated FAQ about merging PDFs error.
+- Added `ConfigurationName` alias to conditions.
 
 ## 2026-01-17  
 *Applies to both **PDM Task** and **SOLIDWORKS Add-in***
