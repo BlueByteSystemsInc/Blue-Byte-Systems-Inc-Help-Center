@@ -2,6 +2,10 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026-02-12 
+*Applies to **SOLIDWORKS Add-in***
+- Improved references dialog load speed
+
 ## 2026-02-11 
 *Applies to **SOLIDWORKS Add-in***
 - Fixed bug: Incomplete references dialog data when top level assembly is opened in lightweight.
