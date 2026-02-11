@@ -2,6 +2,11 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.02.13
+*Applies to **SOLIDWORKS Add-in***
+- Fix: If taskpane fails, add-in will attempt to self re-register. You must be running SW as admin for this work.
+
+
 ## 2026-02-12 
 *Applies to **SOLIDWORKS Add-in***
 - Improved references dialog load speed
