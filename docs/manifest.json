@@ -1277,6 +1277,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/offlineactivator.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/offlineactivator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/options.md",
       "output": {
         ".html": {
