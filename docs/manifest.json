@@ -617,6 +617,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/offlineactivator.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/offlineactivator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdm2excel_logo.png",
       "output": {
         "resource": {

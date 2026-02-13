@@ -1,6 +1,8 @@
-# PDMPublisher Offline License Activator  
+# Offline License Activator  
 
 The **PDMPublisher Offline License Activator** (activator.exe) is a secure, standalone console utility designed for environments where internet connectivity is restricted or prohibited.
+
+![offlineactivator](/images/offlineactivator.png)
 
 This tool enables authorized administrators to consime a PDMPublisher license without requiring:
 
@@ -18,4 +20,3 @@ It is specifically intended for:
 - Isolated manufacturing systems  
 
 
-![Activator](image.png)
