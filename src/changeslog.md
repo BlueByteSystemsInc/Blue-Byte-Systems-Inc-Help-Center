@@ -3,6 +3,7 @@ title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
 ## 2026.02.17
+*Applies to **SOLIDWORKS Add-in***
 - Fix BOM calculation issue
 ## 2026.02.16
 ## 2026.02.15
