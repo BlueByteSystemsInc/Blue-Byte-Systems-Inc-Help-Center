@@ -18,6 +18,8 @@
   href: installingpdmaddins.md
 - name: Installing/Updating PDM add-ins with PDMDeploy
   href: updateaddinswithcdpdm.md
+- name: Offline Activator
+  href: offlineactivator.md  
 
 - name: Products
 - name: PDMPublisher
