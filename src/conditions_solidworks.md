@@ -70,7 +70,7 @@ These built-in entries appear at the top of the variable list:
 - **Version**: Current version cached
 - **Workflow**: Workflow name of the file
 - **State**: Current state name of the file
-
+- **ConfigurationName**: Referenced or active configuration
 
 ### Condition Types
 

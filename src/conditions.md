@@ -7,7 +7,7 @@ description: How to add conditions to filter files before printing or exporting.
 
 ![alt text](../images/conditions.png)
 
-Conditions can be added to a task to include or exclude files from being processed.  
+**Conditions can be added to a task to include or exclude files from being processed**.  
 
 The task will only process files that evaluate any of the set conditions as *true*.
 
@@ -42,7 +42,7 @@ These built-in entries appear at the top of the variable list:
 - **Version**: Current version cached
 - **Workflow**: Workflow name of the file
 - **State**: Current state name of the file
-
+- **ConfigurationName**: Referenced configuration or active configuration
 ---
 
 ### Operation Types
