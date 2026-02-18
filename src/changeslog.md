@@ -2,6 +2,20 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.02.21
+*Applies to **SOLIDWORKS Add-in***
+- Fix bug related to drawings not closing when printing to PDF.
+
+## 2026.02.20
+*Applies to **SOLIDWORKS Add-in***
+- Added ability to choose which configurations (include and exclude patterns) to process under the `Convert Multiple Configurations` option
+
+## 2026.02.19
+## 2026.02.18
+*Applies to **SOLIDWORKS Add-in***
+- Ghost rebuild
+
+
 ## 2026.02.17
 *Applies to **SOLIDWORKS Add-in***
 - Fix BOM calculation issue
