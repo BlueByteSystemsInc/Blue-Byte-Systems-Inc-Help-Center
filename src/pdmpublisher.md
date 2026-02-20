@@ -23,6 +23,7 @@ It can convert SOLIDWORKS files to the following extensions:
 8. **EASM (eDrawings Assembly File)**: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.
 9. **HTML (HyperText Markup Language)**: The standard markup language for creating web pages, allowing the display of text, images, and links.
 10. **X_T (Parasolid Model File)**: A format used for 3D modeling in CAD applications, representing geometric data.
+10. **3MF (3D Manufacturing Format)**: an open-source, XML-based archive format designed specifically for additive manufacturing (3D printing).
 
 ## Input files
 PDMPublisher can process individual **SOLIDWORKS part files** (`.sldprt`), **drawing files** (`.slddrw`), and **assemblies** (`.sldasm`) along with all their references. This ensures that all necessary components are correctly handled during processing, whether you're converting a single file or an entire assembly structure.  

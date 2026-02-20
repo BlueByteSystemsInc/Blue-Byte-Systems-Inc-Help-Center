@@ -2,6 +2,11 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.02.22
+*Applies to both **PDM Task** and **SOLIDWORKS Add-in***
+- Added support for filtering configurations to task enabled via the `Convert Multiple Configurations`
+- Added support for the `3mf` extension for parts
+
 ## 2026.02.21
 *Applies to **SOLIDWORKS Add-in***
 - Fix bug related to drawings not closing when printing to PDF.
