@@ -2,6 +2,11 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.02.23
+*Applies to both **PDM Task** and **SOLIDWORKS Add-in***
+- Fixed bug when exporting flat pattern when `Convert Multiple Configurations` is enabled
+- Added new option under Flat Pattern Settings to remove or add `-FlatPattern` to the dxf flat pattern filename.
+
 ## 2026.02.22
 *Applies to both **PDM Task** and **SOLIDWORKS Add-in***
 - Added support for filtering configurations to task enabled via the `Convert Multiple Configurations`
