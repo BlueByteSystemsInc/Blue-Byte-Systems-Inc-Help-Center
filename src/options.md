@@ -20,21 +20,21 @@ When you choose PDM Publisher from the dropdown in the new task dialog, you will
 
 # Export Settings
 
-| **Option**                                  | **Description**                                                                                                                                                 |
-|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Export Location**                         | Location where to export the files. The location can be within or outside the vault. It is important that the path does **not** end with a backslash (`\`). [Please consult this article to learn more about customizing this field](../src/pdmpublisherspecialvariable.html).      |
-| **Filename**                         | Filename of the exported file. You do not need to include the extension. If you include the extension, it will be of the original file not the target extension. [Please consult this article to learn more about customizing this field](../src/pdmpublisherspecialvariable.html).      |
-| **File Formats**                            | Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others.                                            |
-| **Export document and its references to file formats individually** | When enabled, affected document and its references will be exported to the selected file format individually.   **Make sure this option is checked to process single documents.**  **If you only want the merged PDF of an assembly, you may uncheck this option to avoid saving individual PDFs in the export location.**           |
-| **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate.                                                 |
-| **Ignore sub-assemblies children when condition checks fail**          | When enabled, the children of, sub-assemblies that fail condition check, will be ignored (not processed). |
-| **Work with latest version**               | Ensures that the task works with the latest version of the file, automatically fetching the most recent version from the PDM vault.                             |
-| **Quick view mode (Drawings Only)**        | Enables quick view mode for drawings to improve performance, especially for large and complex drawings.                                                           |
-| **Convert multiple configurations**        | If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename. |
-| **Ask user to select configuration on startup**        | If enabled, the task will prompt the user to select which configuration of the affected document to process on startup. |
-| **Archive all exported documents (.zip)**  | Packages all exported documents into a single `.zip` file for easy storage and distribution.                                                                     |
-| **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale. The filename will have `FlatPattern` appended.                                                            |
-| **Use search to locate drawings**          | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
+| **Option** | **Description** |
+|:--|:--|
+| **Export Location** | Location where to export the files. The location can be within or outside the vault. It is important that the path does **not** end with a backslash (`\`). [Please consult this article to learn more about customizing this field](../src/pdmpublisherspecialvariable.html). |
+| **Filename** | Filename of the exported file. You do not need to include the extension. If you include the extension, it will be of the original file not the target extension. [Please consult this article to learn more about customizing this field](../src/pdmpublisherspecialvariable.html). |
+| **File Formats** | Specifies the available file formats to export documents to, including formats like PDF, DWG, DXF, U3D, and others. |
+| **Export document and its references to file formats individually** | When enabled, affected document and its references will be exported to the selected file format individually. **Make sure this option is checked to process single documents.** **If you only want the merged PDF of an assembly, you may uncheck this option to avoid saving individual PDFs in the export location.** |
+| **Merge exported PDFs into one master PDF** | Combines all exported PDFs of the affected assembly into one master PDF file, rather than keeping them separate. |
+| **Ignore sub-assemblies children when condition checks fail** | When enabled, the children of sub-assemblies that fail condition check will be ignored (not processed). |
+| **Work with latest version** | Ensures that the task works with the latest version of the file, automatically fetching the most recent version from the PDM vault. |
+| **Quick view mode (Drawings Only)** | Enables quick view mode for drawings to improve performance, especially for large and complex drawings. |
+| **Convert multiple configurations** | If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename. <br><br>**Configuration Filter**: Allows the user to control which configurations are processed. `*` is a wildcard that matches any sequence of characters. Additionally, the user can exclude specified configurations. |
+| **Ask user to select configuration on startup** | If enabled, the task will prompt the user to select which configuration of the affected document to process on startup. |
+| **Archive all exported documents (.zip)** | Packages all exported documents into a single `.zip` file for easy storage and distribution. |
+| **Export sheet metal parts to 1:1 flat pattern DXF** | Exports sheet metal parts as DXF files in a 1:1 scale.<br><br>**Flat Pattern Settings:**<br>• **Export flat-pattern geometry** : Exports the flattened part geometry.<br>• **Include hidden edges** : Adds hidden edges to the exported geometry.<br>• **Export bend lines** : Adds bend lines to the flat pattern.<br>• **Include sketches** : Exports sketches to the DXF.<br>• **Merge coplanar faces** : Merges adjacent faces lying in the same plane.<br>• **Export library features** : <br>• **Export forming tools** : <br>• **Export bounding box** : Adds a bounding box around the flattened part geometry.<br>• **Only export the inner diamter of countersink holes** : This only works with countersinks created using the Hole Feature.<br>• **Append - `FlatPattern` to the flat pattern dxf file name** : This feature helps to avoid overwriting files when a .SLDDRW files is exported to DXF.  |
+| **Use search to locate drawings** | When enabled, the task will search in the Where Used for the first drawing that references the affected document. |
 
 ---
 
