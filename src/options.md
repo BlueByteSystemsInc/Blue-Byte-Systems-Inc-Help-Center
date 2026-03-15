@@ -2,14 +2,18 @@
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: This page explains all task setup page options in PDMPublisher that are available in SOLIDWORKS PDM.
 ---
+When you choose **PDMPublisher** from the dropdown in the new task dialog, you will be prompted with a window similar to the one below:
+
+
+![addinpage](/images/addinpage.png)
+
 
 ## Options Setup Page
 
-When you choose **PDM Publisher** from the dropdown in the new task dialog, you will be prompted with a window similar to the one below.
-
----
+![pdmpublishersoptionsdialog](/images/pdmpublishersoptionsdialog.png)
 
 ## Output
+
 
 | **Option** | **Description** |
 |:--|:--|
