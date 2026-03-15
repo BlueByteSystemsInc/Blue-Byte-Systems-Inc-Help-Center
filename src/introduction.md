@@ -5,11 +5,29 @@ description:  Welcome to Blue Byte Systems, a leading provider of innovative sol
 # Helper Center 
 **Welcome to Blue Byte Systems**, a leading provider of innovative solutions designed to enhance the efficiency and productivity of your business operations. Our suite of products is tailored to meet the diverse needs of industries utilizing SOLIDWORKS PDM, offering robust tools for data management, process automation, and task optimization. Below is an overview of our key products:
 
-## PDMPublisher (for SOLIDWORKS (add-in) and PDM Professional (task))
+## PDMPublisher (for SOLIDWORKS (add-in) and PDM Professional (as atask))
 
 [PDMPublisher](/src/pdmpublisher.html) streamlines the conversion and publishing of files within your SOLIDWORKS PDM vault. This powerful add-in automates routine tasks, supports a wide range of file formats, and offers advanced configuration options to match your workflow. By reducing manual effort, it helps you save time and minimize errors.
 
+## Supported extensions
+With the PDM task version of PDMPublisher, you can export to the following extensions:
 
+- `pdf`: 
+  - SOLIDWORKS drawings as `pdf`.
+  - SOLIDWORKS parts and assemblies as 3D `pdf`
+  - Office documents (Word and Excel) as `pdf`
+- `dxf` (You can also export the flat pattern of sheet metal parts)
+- `dwg`
+- `step`
+- `iges`
+- `x_t`
+- `stl`
+- `eprt`
+- `edrw`
+- `easm`
+- `ifc`
+- `3mf`
+- `html` (eDrawings Professional required)
 
 # Getting support 
 

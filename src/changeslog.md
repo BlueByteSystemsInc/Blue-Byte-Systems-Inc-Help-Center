@@ -8,7 +8,7 @@ description: View the PDMPublisher change log with detailed feature updates, enh
 - Added support for variable mapping between the destination file and the source file 
 - Added support for creating a custom reference between the destination file and the source file 
 - Added support for deleting duplicates outside the target destination
-- Added support for the following extensions: `ifc`, `3dpdf` (pdf but for the parts and assemblies) 
+- Added support for the following extensions: `ifc`,`3mf`, `3dpdf` (pdf but for the parts and assemblies) 
 - Minor bug fixes
 
 
