@@ -22,12 +22,18 @@ With the PDM task version of PDMPublisher, you can export to the following exten
 - `iges`
 - `x_t`
 - `stl`
+- `u3d`
 - `eprt`
 - `edrw`
 - `easm`
 - `ifc`
 - `3mf`
 - `html` (eDrawings Professional required)
+
+# Missing file format?
+
+If there is a missing file format that SOLIDWORKS supports, please reach out to us and our team will add it.
+
 
 # Getting support 
 

@@ -95,25 +95,36 @@
 <p><strong><a href="../src/pdmpublisherfaq.html">Please consult the FAQ section to get answers for the most asked questions.</a></strong></p>
 </div>
 <p>PDMPublisher is a SOLIDWORKS PDM task add-in that lets you <strong>save</strong> your SOLIDWORKS files using advanced filters and provides power capabilities to place <strong>custom properties/datacard</strong>, <strong>BOM quantities</strong> on PDFs and <strong>merge</strong> them.</p>
-<p>It can convert SOLIDWORKS files to the following extensions:</p>
-<ol>
-<li><strong>PDF (Portable Document Format)</strong>: A versatile format for sharing documents that preserves formatting across different devices.</li>
-<li><strong>DWG (Drawing)</strong>: A file format used in AutoCAD for creating and editing 2D and 3D drawings.</li>
-<li><strong>DXF (Drawing Exchange Format)</strong>: A format designed for interoperability between AutoCAD and other software, facilitating data exchange.</li>
-<li><strong>U3D (Universal 3D)</strong>: A file format for 3D models, commonly embedded in documents to provide interactive 3D visualization.</li>
-<li><strong>STL (Stereolithography)</strong>: A widely used format for 3D printing that represents the surface geometry of a 3D object.</li>
-<li><strong>STEP (Standard for the Exchange of Product Model Data)</strong>: A format that enables compatibility and data exchange between different CAD systems.</li>
-<li><strong>EPRT (eDrawings Part File)</strong>: A file format used for 3D model representations in eDrawings software.</li>
-<li><strong>EASM (eDrawings Assembly File)</strong>: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.</li>
-<li><strong>HTML (HyperText Markup Language)</strong>: The standard markup language for creating web pages, allowing the display of text, images, and links.</li>
-<li><strong>X_T (Parasolid Model File)</strong>: A format used for 3D modeling in CAD applications, representing geometric data.</li>
-<li><strong>3MF (3D Manufacturing Format)</strong>: an open-source, XML-based archive format designed specifically for additive manufacturing (3D printing).</li>
-</ol>
+<h2 id="supported-extensions">Supported extensions</h2>
+<p>With the PDM task version of PDMPublisher, you can export to the following extensions:</p>
+<ul>
+<li><code>pdf</code>:
+<ul>
+<li>SOLIDWORKS drawings as <code>pdf</code>.</li>
+<li>SOLIDWORKS parts and assemblies as 3D <code>pdf</code></li>
+<li>Office documents (Word and Excel) as <code>pdf</code></li>
+</ul>
+</li>
+<li><code>dxf</code> (You can also export the flat pattern of sheet metal parts)</li>
+<li><code>dwg</code></li>
+<li><code>step</code></li>
+<li><code>iges</code></li>
+<li><code>x_t</code></li>
+<li><code>stl</code></li>
+<li><code>u3d</code></li>
+<li><code>eprt</code></li>
+<li><code>edrw</code></li>
+<li><code>easm</code></li>
+<li><code>ifc</code></li>
+<li><code>3mf</code></li>
+<li><code>html</code> (eDrawings Professional required)</li>
+</ul>
 <h2 id="input-files">Input files</h2>
 <p>PDMPublisher can process individual <strong>SOLIDWORKS part files</strong> (<code>.sldprt</code>), <strong>drawing files</strong> (<code>.slddrw</code>), and <strong>assemblies</strong> (<code>.sldasm</code>) along with all their references. This ensures that all necessary components are correctly handled during processing, whether you're converting a single file or an entire assembly structure.</p>
 <p>🔹 <strong>Single Part (<code>.sldprt</code>)</strong>: Processes and converts a part file to the extensions above.<br>
 🔹 <strong>Single Drawing (<code>.slddrw</code>)</strong>: Processes individual drawings.<br>
-🔹 <strong>Assembly with References (<code>.sldasm</code>)</strong>: Automatically includes all referenced parts and subassemblies and their drawings.</p>
+🔹 <strong>Assembly with References (<code>.sldasm</code>)</strong>: Automatically includes all referenced parts and subassemblies and their drawings.<br>
+🔹 <strong>Microsoft Office Word and Excel</strong>: Office documents to PDF.</p>
 <h2 id="requirements">Requirements</h2>
 <p>The minimum version PDMPublisher supports is SOLIDWORKS PDM Professional 2018 SP0.</p>
 <div class="TIP">
