@@ -94,7 +94,7 @@ When **Export sheet metal parts to 1:1 flat pattern DXF** is enabled, the **Flat
 | **Method** | **Description** |
 |:--|:--|
 | **As Built** | Same references when the assembly was checked in. |
-| **Show Selected** | Latest references of the assembly. |
+| **Latest** | Latest references of the assembly. |
 
 ---
 
