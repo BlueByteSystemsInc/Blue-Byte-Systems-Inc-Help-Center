@@ -2,6 +2,16 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.03.16
+*Applies to **PDM Task** 
+- Added support for processing excel and word files to pdf 
+- Added support for variable mapping between the destination file and the source file 
+- Added support for creating a custom reference between the destination file and the source file 
+- Added support for deleting duplicates outside the target destination
+- Added support for the following extensions: `ifc`, `3dpdf` (pdf but for the parts and assemblies) 
+- Minor bug fixes
+
+
 ## 2026.02.23
 *Applies to both **PDM Task** and **SOLIDWORKS Add-in***
 - Fixed bug when exporting flat pattern when `Convert Multiple Configurations` is enabled
