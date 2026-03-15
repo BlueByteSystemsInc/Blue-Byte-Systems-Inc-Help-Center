@@ -96,6 +96,8 @@ When **Export sheet metal parts to 1:1 flat pattern DXF** is enabled, the **Flat
 | **As Built** | Same references when the assembly was checked in. |
 | **Latest** | Latest references of the assembly. |
 
+>[!IMPORTANT] Why does PDMPublisher use BOM layouts?
+> PDMPublisher uses the BOM layouts to calculate the quantities in case they are in the printed pdf as a custom annotation.
 ---
 
 ## Table of Content
