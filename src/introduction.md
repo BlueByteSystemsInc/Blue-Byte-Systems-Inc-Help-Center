@@ -29,6 +29,7 @@ With the PDM task version of PDMPublisher, you can export to the following exten
 - `ifc`
 - `3mf`
 - `html` (eDrawings Professional required)
+- `bmp`
 
 # Missing file format?
 

@@ -2,6 +2,11 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.03.22
+*Applies to **PDM Task** 
+- Merge and TOC bugs fixes.
+- Added support for exporting to `bmp`
+
 ## 2026.03.16
 *Applies to **PDM Task** 
 - Added support for processing excel and word files to pdf 
