@@ -15,7 +15,7 @@ description: View the PDMPublisher change log with detailed feature updates, enh
 - Added Download Center menu item in the Administration tool under the add-in for when PDMDeploy is blocked. This will take you to the PDMPublisher download center.
 
 ## 2026.03.22
-*Applies to **PDM Task***
+*Applies to **PDM Task** and **SOLIDWORKS Add-in***
 - Merge and TOC bugs fixes.
 - Added support for exporting to `bmp`
 
