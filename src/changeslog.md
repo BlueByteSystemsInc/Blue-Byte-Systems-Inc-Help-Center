@@ -5,22 +5,22 @@ description: View the PDMPublisher change log with detailed feature updates, enh
 
 
 ## 2026.03.27
-*Applies to *SOLIDWORKS add-in**
+*Applies to **SOLIDWORKS add-in***
 - Fixed crash related to GDI reaching +9999
 - Minor changes in the progress dialog 
 
 ## 2026.03.26
-*Applies to **PDM Task** 
+*Applies to **PDM Task***
 - Add custom quantity multiplier when the user is asked the configuration on startup.
 - Added Download Center menu item in the Administration tool under the add-in for when PDMDeploy is blocked. This will take you to the PDMPublisher download center.
 
 ## 2026.03.22
-*Applies to **PDM Task** 
+*Applies to **PDM Task***
 - Merge and TOC bugs fixes.
 - Added support for exporting to `bmp`
 
 ## 2026.03.16
-*Applies to **PDM Task** 
+*Applies to **PDM Task*** 
 - Added support for processing excel and word files to pdf 
 - Added support for variable mapping between the destination file and the source file 
 - Added support for creating a custom reference between the destination file and the source file 
