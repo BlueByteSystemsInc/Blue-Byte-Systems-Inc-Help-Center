@@ -4,6 +4,13 @@ description: View the PDMPublisher change log with detailed feature updates, enh
 ---
 
 
+
+## 2026.04.01
+*Applies to **PDM Task***
+- Added support for exporting views of sheet metal parts
+- Added check-in retry
+- Added extra logging to find when exported files are locked by other applications
+
 ## 2026.03.27
 *Applies to **SOLIDWORKS add-in***
 - Fixed crash related to GDI reaching +9999
