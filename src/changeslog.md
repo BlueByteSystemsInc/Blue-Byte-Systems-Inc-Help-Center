@@ -3,6 +3,21 @@ title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
 
+## 2026.04.17
+*Applies to **PDM Task***
+- Fixed issue related to sheet metal exports (views)
+
+## 2026.04.12
+*Applies to **PDM Task***
+- Small bug fixes
+
+## 2026.04.11
+*Applies to **PDM Task***
+- Fix bug when export location starts with `//`
+
+## 2026.04.10
+*Applies to **PDM Task***
+- Added retry when adding files and checking files back into the vault.
 
 
 ## 2026.04.01
