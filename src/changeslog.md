@@ -3,6 +3,10 @@ title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
 
+## 2026.04.21
+*Applies to **PDM Task***
+- Added feature to suppress task commands in the tasks right-click menu in File Explorer. Setting is in options.
+
 ## 2026.04.17
 *Applies to **PDM Task***
 - Fixed issue related to sheet metal exports (views)

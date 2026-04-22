@@ -55,6 +55,14 @@ When you choose **PDMPublisher** from the dropdown in the new task dialog, you w
 | **Flat Pattern Settings** | Opens a dialog to configure how the flat pattern DXF is created. |
 | **Use search to locate drawings** | When enabled, the task will search in the vault for the first drawing that references the affected document when a matching drawing cannot be found in the same folder. |
 
+### File Explorer Right-Click Menu
+
+This section has one setting that hides the task name from appearing under Tasks in the right-click menu in File Explorer. This allows PDM administrators to hide the task from users while still allowing it to run from a workflow transition:
+
+![rightclickmenu](/images/rightclickmenu.png)
+
+
+
 ### Flat Pattern Settings
 
 When **Export sheet metal parts to 1:1 flat pattern DXF** is enabled, the **Flat Pattern Settings** dialog provides the following options:

@@ -987,6 +987,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/rightclickmenu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/rightclickmenu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/settingstab.png",
       "output": {
         "resource": {
