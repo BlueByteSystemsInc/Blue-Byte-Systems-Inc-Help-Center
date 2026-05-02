@@ -2,6 +2,9 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+## 2026.05.01
+*Applies to **PDM Task***
+- Improved retry count and wait time between retries during file checkin and file add.
 
 ## 2026.04.21
 *Applies to **PDM Task***
