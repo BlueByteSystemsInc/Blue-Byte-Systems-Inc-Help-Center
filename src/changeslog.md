@@ -2,7 +2,7 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
-# PDMPublisher Change Log
+# PDMPublisher Changes Log
 
 This page tracks all changes, fixes, improvements, and new features introduced in PDMPublisher, the SOLIDWORKS PDM Professional task add-in, and PDMPublisher for SOLIDWORKS, the SOLIDWORKS add-in.
 
