@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>FAQ | PDMPublisher | SOLIDWORKS PDM | Helper Center </title>
+      <title> | Helper Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="FAQ | PDMPublisher | SOLIDWORKS PDM | Helper Center ">
+      <meta name="title" content=" | Helper Center ">
       
-      <meta name="description" content="PDMPublisher frequently asked questions.">
+      
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisherfaq.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher_roadmap.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,71 +85,12 @@
         </div>
 
         <article data-uid="">
-<h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
 
-<h2 id="features">Features</h2>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Answer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I'm getting some errors related to the bill of materials layout.</td>
-<td>In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher will leverage the first BOM layout in your vault to calculate quantities (You can set which layout to use in the Options tab). The layout must include a <refcount> (Quantity) column and a <configuration> (Configuration name) column.</configuration></refcount></td>
-</tr>
-<tr>
-<td>How does PDMPublisher calculate the BOM quantities?</td>
-<td>PDMPublisher creates a Bill of Materials in memory from the top-level assembly. It ignores all suppressed, virtual, envelope, and components that are excluded from the Bill of Materials. Most of these settings come from the component properties dialog.</td>
-</tr>
-<tr>
-<td>How do the conditions work?</td>
-<td>Conditions are evaluated for the found PDM reference. If any of the conditions evaluate to true, the reference is added to the processing queue.</td>
-</tr>
-<tr>
-<td>I cannot see the exported files!</td>
-<td>Make sure the export location in some where in your vault (or outside your vault) where you have the workflow and folder permissions to add and edit files. <strong>The vault's root folder</strong> is typically a folder that <strong>is locked</strong> for adding or editing files by PDM administrators.</td>
-</tr>
-<tr>
-<td>I have created a task. How can I launch it?</td>
-<td>PDMPublisher tasks can be attached to a workflow transition or triggered from the right-click menu on a file. You will find your created tasks under Tasks. In the right-click menu, tasks use the name defined the task setup page. See below: <img src="../images/pdmpublisher_rmb.png"></td>
-</tr>
-<tr>
-<td>I see this error &quot;Cannot find or create the font 'Helvetica-Bold'. Some characters may not display or print correctly.&quot; when I open the merged PDF.</td>
-<td>This error is related to your PDF reader. Please make sure to install the appropriate font See below: <img src="../images/pdmpublisher_merge.png"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="installation">Installation</h2>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th>Answer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I'm unable to consume my license</td>
-<td>Make sure your system/firewall allows for connections to be made to httsp://bluebyte.biz on <strong>port 443</strong>. <strong><a href="https://bluebyte.biz/contact/">Contact</a></strong> us if this problem still persists.</td>
-</tr>
-<tr>
-<td>I’m running the add-in on assembly and it is not capturing all the references.</td>
-<td>Make sure that the assembly and its references have local copies on the machine that runs the add-in. You can do that by doing a get-latest on the assembly and its references in the machine that runs the task. This is a by-design behavior of the PDM Publisher.</td>
-</tr>
-<tr>
-<td>The task is unable to check in the log file.</td>
-<td>This could be related to a number of issues. You may need to make sure the user running the add-in has proper file and folder permissions on the log folder. You also need to make sure that the txt file extension is NOT part of the <strong><a href="https://help.solidworks.com/2017/english/enterprisepdm/admin/idd_page_file_adding.htm">auto-add user setting</a></strong>.</td>
-</tr>
-</tbody>
-</table>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisherfaq.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher_roadmap.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

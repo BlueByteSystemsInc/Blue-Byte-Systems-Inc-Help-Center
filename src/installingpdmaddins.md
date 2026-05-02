@@ -6,46 +6,40 @@ Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.
 
 After purchasing one of our PDM add-ins, you will receive an order email with the header *Thank you for your business! Your BLUE BYTE SYSTEMS INC. order has been completed*. 
 
-This email has a link to download a `.zip` archive that contains a `.cex` file. The `.cex` file is what you open with the Administration tool and it has the latest version of the PDM add-in.
-
-<p align="center">
-  <img src="../images/confirmationemail.png" alt="Order Email" />
-  <br>
-  <em>Order email</em>
-</p>
-
-## Step 2: Download and Unblock the `.zip` File
-
-1. Download the `.zip` archive from the link provided in the order email.
-
-2. Once downloaded, right-click on the `.zip` file and select **Properties**.
-
-3. In the **Properties** window, check for the **Unblock** option at the bottom. If it is present, click **Unblock** and then click **OK**. This step ensures that the file is not blocked by Windows security.
-
 > [!NOTE]
-> You can always find the latest `.cex` files from the Downloads section in your [Blue Byte Systems account](https://bluebyte.biz/account). **Your account username is the email used to make the order.**
+> Your account is created using the email address provided during purchase. If you are the PDM administrator and the order was placed by your accounting department, please reach out to us for assistance.
+
+
+
+## Step 2: Download 
+
+1. Download the product's file (CEX file or ZIP file) from [your account](https://bluebyte.biz/account).
+
+2. Once downloaded, right-click on the file and select Properties.
+
+3. In the Properties window, check for the Unblock option at the bottom. If it is present, click Unblock and then click OK. This step ensures that the file is not blocked by Windows security.
 
 ## Step 3: Open the SOLIDWORKS PDM Administration Tool
 
-1. Extract the `.zip` archive file to get the `.cex` file.
+1. Locate the CEX file in your Downloads folder.
 
-2. Launch the **Administration** tool. 
+2. Launch the Administration tool. 
 
 3. Log in to your PDM vault.
 
 ## Step 4: Add or Update an Add-in
 
-1. In the **Administration** tool, go to **File > Open...** and browse to the location of the `.cex` file.
+1. In the Administration tool, go to File > Open... and browse to the location of the `.cex` file.
 
-2. Select the `.cex` file and click **Open**. This will display the add-in in a new window inside the **Administration** tool.
+2. Select the `.cex` file and click Open. This will display the add-in in a new window inside the Administration tool.
 
-3. Drag and drop the add-in from the window into the **Add-ins** node in the left-hand tree view.
+3. Drag and drop the add-in from the window into the Add-ins node in the left-hand tree view.
 
 This process is similar when updating an existing add-in. Simply follow the same steps to replace the old version with the new one.
 
 ## Step 5: Verify the Installation
 
-1. After installing or updating the add-in from the `.cex` file, ensure that the add-in appears under the **Add-ins** node. Make sure the version matches with the order email.
+1. After installing or updating the add-in from the `.cex` file, ensure that the add-in appears under the Add-ins node. Make sure the version matches with the order email.
 
 2. Test the functionality of the add-in to confirm that it has been installed correctly.
 ---

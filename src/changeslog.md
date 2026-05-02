@@ -2,6 +2,18 @@
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
 ---
+# PDMPublisher Change Log
+
+This page tracks all changes, fixes, improvements, and new features introduced in PDMPublisher, the SOLIDWORKS PDM Professional task add-in, and PDMPublisher for SOLIDWORKS, the SOLIDWORKS add-in.
+
+Versions are identified by their compile date, which represents the build date of the released version. Each entry may include updates such as new functionality, bug fixes, performance improvements, compatibility updates, configuration changes, and known behavior changes.
+
+> [!TIP]
+> If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+
+
+
 ## 2026.05.01
 *Applies to **PDM Task***
 - Improved retry count and wait time between retries during file checkin and file add.

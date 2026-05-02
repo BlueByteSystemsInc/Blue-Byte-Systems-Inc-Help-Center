@@ -8,7 +8,7 @@ description: PDMPublisher frequently asked questions.
 
 | Question | Answer |
 |---|---|
-| I'm getting some errors related to the bill of materials layout. | In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher will leverage the first BOM layout in your vault to calculate quantities. The layout must include a <RefCount> (Quantity) column and a <Configuration> (Configuration name) column. |
+| I'm getting some errors related to the bill of materials layout. | In recent versions, we have started using the PDM BOM instead of the SOLIDWORKS BOM. PDMPublisher will leverage the first BOM layout in your vault to calculate quantities (You can set which layout to use in the Options tab). The layout must include a <RefCount> (Quantity) column and a <Configuration> (Configuration name) column. |
 | How does PDMPublisher calculate the BOM quantities? | PDMPublisher creates a Bill of Materials in memory from the top-level assembly. It ignores all suppressed, virtual, envelope, and components that are excluded from the Bill of Materials. Most of these settings come from the component properties dialog. |
 | How do the conditions work? | Conditions are evaluated for the found PDM reference. If any of the conditions evaluate to true, the reference is added to the processing queue. |
 | I cannot see the exported files! | Make sure the export location in some where in your vault (or outside your vault) where you have the workflow and folder permissions to add and edit files. **The vault's root folder** is typically a folder that **is locked** for adding or editing files by PDM administrators. |

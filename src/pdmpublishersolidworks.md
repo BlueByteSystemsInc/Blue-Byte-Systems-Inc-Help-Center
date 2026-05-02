@@ -9,7 +9,7 @@ description: Learn how to configure the PDMPublisher export for SOLIDWORKS 3D, i
 
 <div style="display: flex; gap: 1em; margin: 2em 0;">
     <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        📥 Download PDMPublisher>
+        📥 Download PDMPublisher for SOLIDWORKS
     </a>
     <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
         🛒 PDMPublisher License
@@ -21,7 +21,7 @@ description: Learn how to configure the PDMPublisher export for SOLIDWORKS 3D, i
 
 PDMPublisher for SOLIDWORKS 3D has *the same features* as PDMPublisher for SOLIDWORKS PDM Professional.
 
-You can download **PDMPublisher for SOLIDWORKS** free of charge from the official product page:  
+You can download **PDMPublisher for SOLIDWORKS** free of charge from the official [product page](https://pdmpublisher.com).  
 
 ## Tabs
 
