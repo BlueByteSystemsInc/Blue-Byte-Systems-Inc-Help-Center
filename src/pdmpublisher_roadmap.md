@@ -17,7 +17,7 @@ The roadmap is organized by quarter and provides visibility into features curren
 
 ## 2026 Q2
 
-## Multi-Body Support {#multi-body-support}
+## Multi-Body Support 
 
 Planned support for exporting and processing multi-body parts, including sheet metal flat patterns.
 
@@ -35,7 +35,7 @@ Target: End of Q2 2026
 
 ## 2026 Q3
 
-## Presets / Profiles {#presets-profiles}
+## Presets / Profiles 
 
 Planned support for reusable presets or profiles.
 
@@ -51,7 +51,7 @@ Planned areas of focus include:
 
 Target: End of Q3 2026
 
-## Shareable Settings / Profile Sharing by PIN Code {#shareable-settings-pin-code}
+## Shareable Settings / Profile Sharing by PIN Code 
 
 Planned support for sharing PDMPublisher settings or profiles using a PIN code.
 
@@ -69,7 +69,7 @@ Target: End of Q3 2026
 
 ## 2026 Q4
 
-## Drawing Creator {#drawing-creator}
+## Drawing Creator
 
 Planned support for a Drawing Creator feature.
 
