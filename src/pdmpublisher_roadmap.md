@@ -10,10 +10,10 @@ This page outlines planned features and enhancements for PDMPublisher, the SOLID
 The roadmap is organized by quarter and provides visibility into features currently planned for future releases. Timelines are estimates and may change based on development priorities, customer feedback, testing results, and SOLIDWORKS or SOLIDWORKS PDM compatibility requirements.
 
 > [!NOTE]
-> This roadmap is intended to communicate product direction. Features listed here are planned but are not guaranteed until they are officially released and included in the PDMPublisher Change Log.
+> This roadmap is intended to communicate product direction. Features listed here are planned but are not guaranteed until they are officially released and included in the PDMPublisher Changes Log.
 
 > [!TIP]
-> To see the list of implemented changes, please click [here](/src/changelogs.html).
+> To see the list of implemented changes, please click [here](/src/changeslog.html).
 
 ## 2026 Q2
 
