@@ -15,9 +15,17 @@ The roadmap is organized by quarter and provides visibility into features curren
 > [!TIP]
 > To see the list of implemented changes, please click [here](/src/changeslog.html).
 
+# 2026 
+
 ## 2026 Q2
 
+## Details Page
+**Applies to: task**
+
+- Added a tab to the details page of the task outlining success and failures.
+
 ## Multi-Body Support 
+**Applies to: SOLIDWORKS add-in / task**
 
 Planned support for exporting and processing multi-body parts, including sheet metal flat patterns.
 
@@ -36,6 +44,7 @@ Target: End of Q2 2026
 ## 2026 Q3
 
 ## Presets / Profiles 
+**Applies to: SOLIDWORKS add-in**
 
 Planned support for reusable presets or profiles.
 
@@ -52,6 +61,7 @@ Planned areas of focus include:
 Target: End of Q3 2026
 
 ## Shareable Settings / Profile Sharing by PIN Code 
+**Applies to: SOLIDWORKS add-in**
 
 Planned support for sharing PDMPublisher settings or profiles using a PIN code.
 
@@ -70,6 +80,7 @@ Target: End of Q3 2026
 ## 2026 Q4
 
 ## Drawing Creator
+**Applies to: SOLIDWORKS Add-in**
 
 Planned support for a Drawing Creator feature.
 
