@@ -39,12 +39,13 @@ To activate a license:
 To deactivate a license:
 - *Click* ***Deactivate*** on the **[previous step](#activating-a-license)** to stop using the license on the logged-in vault.
 
-## To renew a License
+## To Reactivate a License
 
-To renew the license, please follow these instructions:
+To reactivate the license, please follow these instructions:
 
 1. *Open* the PDM Administration tool.
-2. *Expand* the Add-in nodes and *right-click* on PDM Publisher.
+2. *Expand* the Add-in nodes and *right-click* on PDMPublisher.
 3. *Click* ***Manage license…***
-7. *Enter* your license key and *click* ***Activate***.
-8. Your new expiry date should appear when the license is renewed.
+4. *Enter* your license key. If you are reactivating the same license key after expiry, you don't need to re-enter the license key. 
+5. Click* ***Activate*** 
+6. Your new expiry date should appear.
