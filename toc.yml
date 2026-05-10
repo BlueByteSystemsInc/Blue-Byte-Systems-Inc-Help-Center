@@ -1,8 +1,10 @@
-- name: ❓ Help
+- name: Get Started
   href: src/
 - name: PDMPublisher (SOLIDWORKS)
   href: https://pdmpublisher.com/solidworks-desktop/
 - name: PDMPublisher (PDM Professional)
   href: https://pdmpublisher.com/pdm-professional/
+- name: PDMShell
+  href: https://pdmshell.com/
 - name: Contact Us
   href: https://bluebyte.biz/contact/

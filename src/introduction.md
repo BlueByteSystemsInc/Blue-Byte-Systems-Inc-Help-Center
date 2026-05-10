@@ -14,19 +14,28 @@ Our solutions help organizations streamline repetitive tasks, automate publishin
 
 [PDMPublisher](/src/pdmpublisher.html) streamlines the conversion and publishing of files within your SOLIDWORKS PDM vault. This powerful add-in automates routine tasks, supports a wide range of file formats, and offers advanced configuration options to match your workflow. By reducing manual effort, it helps you save time and minimize errors.
 
-> [!NOTE]
-> Many companies use PDMPublisher because it can create and merge PDFs quickly and reliably compared to the standard [SOLIDWORKS PDM Convert task](https://help.solidworks.com/2018/english/enterprisepdm/admin/t_configure_convert_task.htm). PDMPublisher is designed for larger publishing workflows where stability, speed, and fewer failed exports are important.
+> [!Did You Know?]
+> Many companies use PDMPublisher because it can create and merge PDFs quickly and reliably compared to the standard [SOLIDWORKS PDM Convert task](https://help.solidworks.com/2018/english/enterprisepdm/admin/t_configure_convert_task.htm). PDMPublisher is designed for larger publishing workflows where stability, speed, and fewer failed exports are important. 
+
+> [!TIP]
+> [Check out this detailed comparison between the standard convert task and PDMPublisher](https://pdmpublisher.com/getpremium/).
+
 
 PDMPublisher is one product with one code base, available in two versions.
 
 ### [PDMPublisher (Task)](http://pdmpublisher.com/solidworks-professional/)
+
+![pdmpublishertask](/images/pdmpublishertask.png)
+
 - Runs as a SOLIDWORKS PDM Professional task add-in
 - Use it for centralized, vault-based export automation
 - Best when exports should be configured by administrators and executed through the PDM task framework
 
 ### [PDMPublisher for SOLIDWORKS](https://pdmpublisher.com/solidworks-desktop/)
 
-- Runs as a*SOLIDWORKS add-in
+![pdmpublishersolidworksaddin](/images/pdmpublishersolidworksaddin.png)
+
+- Runs as a SOLIDWORKS add-in
 - Use it for exporting directly from the SOLIDWORKS desktop application
 - Best when users need an interactive publishing workflow or when using SOLIDWORKS without PDM Professional
 
@@ -58,27 +67,26 @@ With PDMPublisher, you can export to the following extensions:
 If there is a missing file format that SOLIDWORKS supports, [please reach out to us and our team will add it](https://bluebyte.biz/contact).
 
 
+> [!TIP]
+> Keep an eye on our roadmap of features for the current year and next year by vising the [roadmap page](/src/pdmpublisher_roadmap.html) frequently.
+
+
 ### Getting started 
 
 Please see our guide for the SOLIDWORKS add-in [here](/src/pdmpublishersolidworks.html) and the PDM task [here](/src/pdmpublisher.html) .
 
 ## PDMShell (PDM Professional Only) 
 
-PDMShell is a command-line automation tool for SOLIDWORKS PDM Professional. It helps automate common vault operations such as searching files, updating data cards, running batch processes, and performing migration or maintenance tasks.
+PDMShell is a command-line automation tool for SOLIDWORKS PDM Professional. It helps automate common vault operations such as searching files, updating data cards, running batch processes, and per
+\forming migration or maintenance tasks.
 
 For more information, please visit [PDMShell.com](https://pdmshell.com).
 
+## PDM2Excel
+PDM2Excel is a task add-in for exporting SOLIDWORKS assemblies as Excel spreadsheets with thumbnails. Since the introduction of PDM2Excel’s core functionality in SOLIDWORKS PDM 2025, we are in the process of retiring this product.
+
 # Getting support 
 
-## Continuous Improvement and Support 
-
-At Blue Byte Systems, we are committed to continuous improvement and providing exceptional support to our customers. Our products are regularly updated with new features and enhancements based on user feedback. We also offer comprehensive documentation and dedicated support to help you get the most out of our solutions.
-
-
-> **How to reach out?**
-> 
-> If you need support, please reach out to us by clicking the button below:
-> 
 > [Get Support](https://bluebyte.biz/contact)
 
  

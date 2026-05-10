@@ -35,7 +35,7 @@ This Agreement shall be governed by and construed in accordance with the laws of
 
 ## 9. Contact Information
 If you have any questions about this Agreement or the Software, please contact the Company at:
-- **Email**: support@bluebyte.biz
+- **Email**: info@bluebyte.biz
 - **Website**: [https://bluebyte.biz](https://bluebyte.biz)
 
 By using the Software, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement.

@@ -1,5 +1,10 @@
 {
   "build": {
+     "markdownEngineProperties": {
+      "alerts": {
+        "Did You Know?": "alert alert-success"
+      }
+    },
     "content": [
       {
         "files": [

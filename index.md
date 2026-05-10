@@ -168,6 +168,7 @@ description: Official product documentation and support resources for Blue Byte 
 <div class="bbs-page">
 
 <div class="bbs-hero">
+<image height="100" src="/images/large_logo.png"/>
 <h1>Blue Byte Systems Help Center</h1>
 <p>Official documentation, setup guides, and troubleshooting resources for SOLIDWORKS and SOLIDWORKS PDM tools.</p>
 <a class="bbs-hero-btn" href="src/introduction.html">Get started</a>
