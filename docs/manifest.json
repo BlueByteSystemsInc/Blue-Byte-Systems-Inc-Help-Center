@@ -557,6 +557,66 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/icons/assembly.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/assembly.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/directory.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/directory.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/drawing.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/drawing.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/edrawing.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/edrawing.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icons/part.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icons/part.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/image-1.png",
       "output": {
         "resource": {
