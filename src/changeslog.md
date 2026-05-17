@@ -13,8 +13,18 @@ Versions are identified by their compile date, which represents the build date o
 
 
 ## 2026.05.30
-**PDM Task***
-- Added support for a details page. See [here](/src/pdmpublisher_task_details.html)
+**PDM Task**:
+- Added a log page in the details tab. See [here](/src/pdmpublisher_task_details.html).
+- Added support for splitting multi-body part. See [here](/src/options.html).
+- Limited `u3d` extension to assemblies export only.
+- Fixed a bug when clicking on Add Task in the administration tool under Task List. The task now asks the user to select which files to process:
+![Addtask](/images/add_task.png)
+
+**SOLIDWORKS Add-in**:
+- Fixed icon transparency issue in the taskpane and the add-in manager dialog in SOLIDWORKS
+- Added support for splitting multi-body part. See [here](/src/pdmpublishersolidworks_options.html).  
+- Limited `u3d` extension to assemblies export only.
+
 
 ## 2026.05.01
 *Applies to **PDM Task***

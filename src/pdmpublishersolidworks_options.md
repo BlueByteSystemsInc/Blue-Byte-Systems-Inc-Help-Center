@@ -172,6 +172,13 @@ Exports the flat pattern of sheet metal parts as 1:1 DXF.
 ### Sheet Metal Part Views
 You have the ability to specify whether you want additional views of the sheet metal parts.
 
+ >[!NOTE]
+> This does not require the DXF file format to be selected for export in the File Formats.
+
+![Flat Pattern Settings](/images/FlatPatternSettings.png)
+
+---
+
 ## Split Bodies
 Splits multi-body parts into separate files.
 
@@ -182,13 +189,7 @@ The body name is appended to the end of the filename.
 >[!IMPORTANT]
 >This does not apply to sheet metal flat patterns.
 
- >[!NOTE]
-> This does not require the DXF file format to be selected for export in the File Formats.
-
-![Flat Pattern Settings](/images/FlatPatternSettings.png)
-
 ---
-
 ## PDF bookmarks
 
 Add bookmarks to merged PDFs.

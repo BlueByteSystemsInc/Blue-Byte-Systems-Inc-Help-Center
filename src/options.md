@@ -169,6 +169,16 @@ Exports only the inner diameter of countersink holes. This option only works wit
 
 Appends `FlatPattern` to the DXF file name. This helps avoid overwriting files when a `.SLDDRW` file is also exported to DXF.
 
+### Sheet Metal Part Views
+You have the ability to specify whether you want additional views of the sheet metal parts.
+
+## Split Bodies
+Splits multi-body parts into separate files. For the HTML extension, this is only supported in SOLIDWORKS 2025 and newer.
+
+The body name is appended to the end of the filename.
+
+>[!IMPORTANT]
+>This does not apply to sheet metal flat patterns.
 ---
 
 ### Export History

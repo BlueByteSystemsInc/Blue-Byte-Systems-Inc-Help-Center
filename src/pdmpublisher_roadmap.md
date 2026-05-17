@@ -16,31 +16,24 @@ The roadmap is organized by quarter and provides visibility into features curren
 > To see the list of implemented changes, please click [here](/src/changeslog.html).
 
 # 2026 
-
+---
 ## 2026 Q2
+## Details Page 
+✅ Implemented 
 
-## Details Page (✅ Implemented)
-**Applies to: task**
+**Applies to: PDM Task**
 
 - Added a tab to the details page of the task outlining successful files. See details [here](/src/pdmpublisher_task_details.html).
 
-## Multi-Body Support 
-**Applies to: SOLIDWORKS add-in / task**
+## Multi-Body Support
+✅ Implemented 
 
-Planned support for exporting and processing multi-body parts, including sheet metal flat patterns.
+**Applies to: SOLIDWORKS add-in / PDM Task** 
 
-This enhancement is intended to improve workflows where a single SOLIDWORKS part contains multiple sheet metal bodies that need to be exported as DXF flat patterns or other manufacturing outputs.
-
-Planned areas of focus include:
-
-- Detecting multiple sheet metal bodies in the same part
-- Exporting individual flat patterns per body
-- Supporting clearer output naming for each exported body
-- Improving compatibility with sheet metal export settings
-- Reducing manual preparation before batch export
+- Planned support for exporting and processing multi-body parts, excluding sheet metal flat patterns.
 
 Target: End of Q2 2026
-
+---
 ## 2026 Q3
 
 ## Presets / Profiles 
@@ -76,8 +69,17 @@ Planned areas of focus include:
 - Reducing configuration mistakes between users or machines
 
 Target: End of Q3 2026
-
+---
 ## 2026 Q4
+**Applies to: PDM Task**
+- Add support for scheduling to process:
+  - Selected files
+  - Selected directory
+  - Favorite Search
+---
+# 2027
+
+## 2027 Q1
 
 ## Drawing Creator
 **Applies to: SOLIDWORKS Add-in**
@@ -99,4 +101,4 @@ Planned areas of focus include:
 - Supporting reusable drawing setup rules
 - Preparing drawings for downstream export through PDMPublisher
 
-Target: End of Q4 2026
+Target: End of Q1 Q2027

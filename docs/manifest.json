@@ -277,6 +277,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/add_task.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add_task.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/addinpage.png",
       "output": {
         "resource": {
