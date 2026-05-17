@@ -91,293 +91,98 @@
 <p><img src="/images/addinpage.png" alt="addinpage"></p>
 <h2 id="options-setup-page">Options Setup Page</h2>
 <p><img src="/images/pdmpublishersoptionsdialog.png" alt="pdmpublishersoptionsdialog"></p>
-<h2 id="output">Output</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Export Location</strong></td>
-<td style="text-align: left;">Location where to export the files. The location can be within or outside the vault. It is important that the path does <strong>not</strong> end with a backslash (<code>\</code>).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Extension-specific Location...</strong></td>
-<td style="text-align: left;">Opens a dialog that allows you to customize the export location for each selected output extension independently.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Filename</strong></td>
-<td style="text-align: left;">Filename of the exported file. You do not need to include the extension.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>File Formats</strong></td>
-<td style="text-align: left;">Specifies the available file formats to export documents to, including formats such as <code>PDF</code>, <code>DWG</code>, <code>DXF</code>, <code>U3D</code>, <code>IGS</code>, <code>STL</code>, <code>STEP</code>, <code>EPRT</code>, <code>EASM</code>, <code>HTML</code>, <code>X_T</code>, <code>3MF</code>, <code>IFC</code>, and <code>_3DPDF</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>create reference from dest file to source file</strong></td>
-<td style="text-align: left;">Creates a reference from the exported destination file to the source file.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Use @ Tab to Evaluate Paths.</strong></td>
-<td style="text-align: left;">Uses the <code>@</code> configuration tab to evaluate variables in the export location and filename.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="export-location">Export Location</h3>
+<p><strong>Export Location</strong> defines where PDMPublisher exports the generated files. The location can be inside or outside the vault. Make sure the path does <strong>not</strong> end with a backslash (<code>\</code>).</p>
+<p><strong>Extension-specific Location...</strong> opens a dialog where you can define a separate export location for each selected output extension.</p>
+<p><strong>Filename</strong> defines the exported file name. You do not need to include the file extension.</p>
+<p><strong>File Formats</strong> defines the formats PDMPublisher can export to, including <code>PDF</code>, <code>DWG</code>, <code>DXF</code>, <code>U3D</code>, <code>IGS</code>, <code>STL</code>, <code>STEP</code>, <code>EPRT</code>, <code>EASM</code>, <code>HTML</code>, <code>X_T</code>, <code>3MF</code>, <code>IFC</code>, <code>BMP</code>.</p>
+<p><strong>Create reference from destination file to source file</strong> creates a PDM reference from the exported destination file back to the original source file.</p>
+<p><strong>Use @ Tab to Evaluate Paths</strong> uses the <code>@</code> configuration tab when evaluating variables used in the export location and filename.</p>
 <hr>
-<h2 id="duplicating-handling">Duplicating Handling</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Delete duplicates outside the destination folder</strong></td>
-<td style="text-align: left;">Deletes duplicate files that exist outside the destination folder.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="duplicate-handling">Duplicate Handling</h3>
+<p><strong>Delete duplicates outside the destination folder</strong> deletes duplicate files that exist outside the configured destination folder.</p>
 <hr>
-<h2 id="export">Export</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Merge exported PDFs into one master PDF</strong></td>
-<td style="text-align: left;">Combines all exported PDFs of the affected assembly into one master PDF file instead of keeping them separate.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Ignore sub-assemblies children when condition checks fail</strong></td>
-<td style="text-align: left;">When enabled, the children of sub-assemblies that fail the condition check will be ignored and not processed.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Export affected document</strong></td>
-<td style="text-align: left;">Exports the affected top-level document.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Export references to file formats individually</strong></td>
-<td style="text-align: left;">When enabled, references of the active document are exported individually to the selected file formats. This does not affect merging or archiving when disabled.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Work with latest version</strong></td>
-<td style="text-align: left;">Ensures that the task works with the latest version of the file by retrieving the newest version from the vault before processing.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Quick view mode (Drawings Only)</strong></td>
-<td style="text-align: left;">Opens drawings in Quick View mode to improve performance, especially for larger drawings.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Use Microsoft Print To PDF to save PDFs</strong></td>
-<td style="text-align: left;">Uses Microsoft Print to PDF when generating PDF output.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Convert multiple configurations</strong></td>
-<td style="text-align: left;">If enabled, the task will attempt to export all part and assembly configurations. The configurations will be saved with the configuration name appended to the filename.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Configuration Filter</strong></td>
-<td style="text-align: left;">Allows the user to control which configurations are processed. <code>*</code> is a wildcard that matches any sequence of characters. Additionally, the user can exclude specified configurations.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Map variables between source and destination file</strong></td>
-<td style="text-align: left;">Enables mapping of variables between the source file and the exported destination file.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Variable Mapping...</strong></td>
-<td style="text-align: left;">Opens the variable mapping dialog where source and destination variables can be configured.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Ask user to select configuration on startup</strong></td>
-<td style="text-align: left;">If enabled, the task will prompt the user to select which configuration of the affected document to process on startup.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Archive all exported documents (.zip)</strong></td>
-<td style="text-align: left;">Packages all exported documents into a single <code>.zip</code> file for easy storage and distribution.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Export sheet metal parts to 1:1 flat pattern DXF</strong></td>
-<td style="text-align: left;">Exports sheet metal parts as DXF files in a 1:1 scale.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Flat Pattern Settings</strong></td>
-<td style="text-align: left;">Opens a dialog to configure how the flat pattern DXF is created.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Use search to locate drawings</strong></td>
-<td style="text-align: left;">When enabled, the task will search in the vault for the first drawing that references the affected document when a matching drawing cannot be found in the same folder.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="export-options">Export Options</h3>
+<p><strong>Merge exported PDFs into one master PDF</strong> combines all exported PDFs from the affected assembly into one master PDF instead of keeping them as separate files.</p>
+<p><strong>Ignore sub-assemblies children when condition checks fail</strong> prevents PDMPublisher from processing the children of sub-assemblies when the sub-assembly itself fails the condition check.</p>
+<p><strong>Export affected document</strong> exports the affected top-level document.</p>
+<p><strong>Export references to file formats individually</strong> exports references of the active document individually to the selected file formats. Disabling this option does not affect PDF merging or ZIP archiving.</p>
+<p><strong>Work with latest version</strong> retrieves the latest version of the file from the vault before processing.</p>
+<p><strong>Quick view mode (Drawings Only)</strong> opens drawings in Quick View mode to improve performance, especially for large drawings.</p>
+<p><strong>Use Microsoft Print To PDF to save PDFs</strong> uses Microsoft Print to PDF when generating PDF output.</p>
+<p><strong>Convert multiple configurations</strong> exports all part and assembly configurations. The configuration name is appended to the exported filename.</p>
+<p><strong>Configuration Filter</strong> controls which configurations are processed. The <code>*</code> character can be used as a wildcard. You can also exclude specific configurations.</p>
+<p><strong>Map variables between source and destination file</strong> enables variable mapping between the source file and the exported destination file.</p>
+<p><strong>Variable Mapping...</strong> opens the variable mapping dialog where source and destination variables can be configured.</p>
+<p><strong>Ask user to select configuration on startup</strong> prompts the user to select the configuration to process when the task starts.</p>
+<p><strong>Archive all exported documents (.zip)</strong> packages all exported documents into a single <code>.zip</code> file.</p>
+<p><strong>Export sheet metal parts to 1:1 flat pattern DXF</strong> exports sheet metal parts as 1:1 scale DXF flat patterns.</p>
+<p><strong>Flat Pattern Settings</strong> opens the dialog used to configure the flat pattern DXF export options.</p>
+<p><strong>Use search to locate drawings</strong> searches the vault for the first drawing that references the affected document when a matching drawing cannot be found in the same folder.</p>
+<hr>
 <h3 id="file-explorer-right-click-menu">File Explorer Right-Click Menu</h3>
-<p>This section has one setting that hides the task name from appearing under Tasks in the right-click menu in File Explorer. This allows PDM administrators to hide the task from users while still allowing it to run from a workflow transition:</p>
-<p><img src="/images/rightclickmenu.png" alt="rightclickmenu"></p>
+<p>This option hides the task name from appearing under <strong>Tasks</strong> in the File Explorer right-click menu. This allows PDM administrators to hide the task from users while still allowing the task to run from a workflow transition.</p>
+<p><img src="../images/rightclickmenu.png" alt="Right-click menu"></p>
+<hr>
 <h3 id="flat-pattern-settings">Flat Pattern Settings</h3>
-<p>When <strong>Export sheet metal parts to 1:1 flat pattern DXF</strong> is enabled, the <strong>Flat Pattern Settings</strong> dialog provides the following options:</p>
-<ul>
-<li><strong>Export flat-pattern geometry</strong>: Exports the flattened part geometry.</li>
-<li><strong>Include hidden edges</strong>: Adds hidden edges to the exported geometry.</li>
-<li><strong>Export bend lines</strong>: Adds bend lines to the flat pattern.</li>
-<li><strong>Include sketches</strong>: Exports sketches to the DXF.</li>
-<li><strong>Merge coplanar faces</strong>: Merges adjacent faces lying in the same plane.</li>
-<li><strong>Export library features</strong></li>
-<li><strong>Export forming tools</strong></li>
-<li><strong>Export bounding box</strong>: Adds a bounding box around the flattened part geometry.</li>
-<li><strong>Only export the inner diameter of countersink holes</strong>: This only works with countersinks created using the Hole Feature.</li>
-<li><strong>Append <code>FlatPattern</code> to the flat pattern DXF file name</strong>: Helps avoid overwriting files when a <code>.SLDDRW</code> file is also exported to DXF.</li>
-</ul>
+<p>When <strong>Export sheet metal parts to 1:1 flat pattern DXF</strong> is enabled, the <strong>Flat Pattern Settings</strong> dialog controls how the DXF is generated.</p>
+<p><strong>Export flat-pattern geometry</strong> exports the flattened sheet metal geometry.</p>
+<p><strong>Include hidden edges</strong> adds hidden edges to the exported DXF.</p>
+<p><strong>Export bend lines</strong> includes bend lines in the flat pattern.</p>
+<p><strong>Include sketches</strong> exports sketches to the DXF.</p>
+<p><strong>Merge coplanar faces</strong> merges adjacent coplanar faces into the exported output.</p>
+<p><strong>Export library features</strong> includes library features in the DXF export.</p>
+<p><strong>Export forming tools</strong> includes forming tools in the DXF export.</p>
+<p><strong>Export bounding box</strong> adds a bounding box around the flattened part geometry.</p>
+<p><strong>Only export the inner diameter of countersink holes</strong> exports only the inner diameter of countersink holes. This option only works with countersinks created using the Hole Wizard feature.</p>
+<p><strong>Append <code>FlatPattern</code> to the flat pattern DXF file name</strong> appends <code>FlatPattern</code> to the DXF file name. This helps avoid overwriting files when a <code>.SLDDRW</code> file is also exported to DXF.</p>
 <hr>
-<h2 id="export-history">Export History</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Turn on activity tracking</strong></td>
-<td style="text-align: left;">Enables tracking of all task activity and generates a detailed log file documenting each step performed by the task.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Server-Synced Activity Logs</strong></td>
-<td style="text-align: left;">Sends activity logs to the server for centralized storage and review.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Log Folder (Vault Only)</strong></td>
-<td style="text-align: left;">Specifies the folder in the PDM vault where the task log files will be stored. This path must be inside the vault and must <strong>not</strong> end with a backslash (<code>\</code>).</td>
-</tr>
-</tbody>
-</table>
+<h3 id="export-history">Export History</h3>
+<p><strong>Turn on activity tracking</strong> enables detailed task logging. This log records the activity performed by the task.</p>
+<p><strong>Server-Synced Activity Logs</strong> sends task logs to the server for centralized storage and review.</p>
+<p><strong>Log Folder (Vault Only)</strong> defines the vault folder where task log files are stored. This folder must be inside the vault, and the path must <strong>not</strong> end with a backslash (<code>\</code>).</p>
 <hr>
-<h2 id="bom">BOM</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Template</strong></td>
-<td style="text-align: left;">Specifies the BOM template to be used. Users can select from the available BOM layouts in the vault.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Calculation method</strong></td>
-<td style="text-align: left;">Defines how the BOM is calculated. Options include <strong>As Built</strong> and <strong>Latest</strong>.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="calculation-methods">Calculation Methods</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Method</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>As Built</strong></td>
-<td style="text-align: left;">Same references when the assembly was checked in.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Latest</strong></td>
-<td style="text-align: left;">Latest references of the assembly.</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-</blockquote>
-<h2 id="important-why-does-pdmpublisher-use-bom-layoutspdmpublisher-uses-the-bom-layouts-to-calculate-the-quantities-in-case-they-are-in-the-printed-pdf-as-a-custom-annotation">[!IMPORTANT] Why does PDMPublisher use BOM layouts?
-PDMPublisher uses the BOM layouts to calculate the quantities in case they are in the printed pdf as a custom annotation.</h2>
-<h2 id="table-of-content">Table of Content</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Add table of content to merged PDF</strong></td>
-<td style="text-align: left;">When enabled, a table of contents is automatically generated and inserted into the merged PDF, making it easier to navigate and reference the document.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Table columns</strong></td>
-<td style="text-align: left;">Specifies the information included in the table of contents. Available options are <strong>Just Name</strong>, <strong>Name and Quantity</strong>, and <strong>Custom</strong>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Customize Table...</strong></td>
-<td style="text-align: left;">Opens a dialog that allows you to choose the custom columns to include in the table of contents.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="bom-settings">BOM Settings</h3>
+<p><strong>Template</strong> defines the BOM template used by PDMPublisher. Users can select from the available BOM layouts in the vault.</p>
+<p><strong>Calculation method</strong> defines how the BOM is calculated. Available options include <strong>As Built</strong> and <strong>Latest</strong>.</p>
+<p><strong>As Built</strong> uses the references from the version of the assembly that was checked in.</p>
+<p><strong>Latest</strong> uses the latest references of the assembly.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>PDMPublisher uses BOM layouts to calculate quantities when quantities are used in the printed PDF as custom annotations.</p>
+</div>
 <hr>
-<h2 id="solidworks">SOLIDWORKS</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Use this version of SOLIDWORKS</strong></td>
-<td style="text-align: left;">Specifies which version of SOLIDWORKS to use for processing the files. Options range from specific years to the latest available version.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="table-of-contents">Table of Contents</h3>
+<p><strong>Add table of content to merged PDF</strong> automatically inserts a table of contents into the merged PDF.</p>
+<p><strong>Table columns</strong> defines the information included in the table of contents. Available options are <strong>Just Name</strong>, <strong>Name and Quantity</strong>, and <strong>Custom</strong>.</p>
+<p><strong>Customize Table...</strong> opens a dialog where you can choose the custom columns to include in the table of contents.</p>
 <hr>
-<h2 id="pdf-bookmarks">PDF bookmarks</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Option</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>PDF bookmarks</strong></td>
-<td style="text-align: left;">Allows you to define the text pattern for the bookmarks section in the merged PDF, making it easier to navigate between sections within the document.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="solidworks-version">SOLIDWORKS Version</h3>
+<p><strong>Use this version of SOLIDWORKS</strong> specifies which SOLIDWORKS version PDMPublisher should use to process files. The list can include specific installed versions and the latest available version.</p>
 <hr>
-<h2 id="ensuring-proper-bom-layout-for-pdmpublisher">Ensuring Proper BOM Layout for PDMPublisher</h2>
-<p>In recent versions, PDMPublisher uses the <strong>PDM BOM</strong> instead of the SOLIDWORKS BOM. PDMPublisher leverages the <strong>first BOM layout in your vault</strong> to calculate quantities.</p>
-<p>To ensure proper functionality, the layout must include:</p>
+<h3 id="pdf-bookmarks">PDF Bookmarks</h3>
+<p><strong>PDF bookmarks</strong> defines the text pattern used to create bookmarks in the merged PDF. Bookmarks make it easier to navigate between sections in the exported PDF package.</p>
+<hr>
+<h3 id="ensuring-proper-bom-layout-for-pdmpublisher">Ensuring Proper BOM Layout for PDMPublisher</h3>
+<p>In recent versions, PDMPublisher uses the <strong>PDM BOM</strong> instead of the SOLIDWORKS BOM. PDMPublisher uses the <strong>first BOM layout in your vault</strong> to calculate quantities.</p>
+<p>To work correctly, the BOM layout must include the following columns:</p>
 <ul>
 <li><code>&lt;RefCount&gt;</code> for the quantity</li>
 <li><code>&lt;Configuration&gt;</code> for the configuration name</li>
 </ul>
-<p>If you are experiencing BOM-related errors, verify that these required columns are present in your BOM setup.</p>
+<p>If you are experiencing BOM-related errors, verify that these required columns exist in your BOM layout.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>We recommend disabling the auto-add extensions by removing all the extensions the task uses, including <code>txt</code>.<br>
-This helps prevent race conditions between SOLIDWORKS PDM and the task during the file add process.</p>
+<p>We recommend disabling auto-add extensions for all extensions used by the task, including <code>txt</code>.</p>
+<p>This helps prevent race conditions between SOLIDWORKS PDM and the task during the file add process.</p>
 </div>
 <p>To change the auto-add extensions list:</p>
 <ol>
-<li><em>Go to</em> the <strong>PDM Administration</strong> tool</li>
-<li><em>Right-click</em> on the username, or <strong>All Users</strong></li>
-<li><em>Select</em> <strong>Settings</strong></li>
-<li><em>Click</em> on <strong>Adding Files</strong></li>
-<li>Edit the file extensions list</li>
+<li>Open the <strong>PDM Administration</strong> tool.</li>
+<li>Right-click the username or <strong>All Users</strong>.</li>
+<li>Select <strong>Settings</strong>.</li>
+<li>Click <strong>Adding Files</strong>.</li>
+<li>Edit the file extensions list.</li>
 </ol>
 <p align="center">
   <img src="../images/pdmconverttaskextendedaddingfiles.png" alt="Adding Files" width="800">

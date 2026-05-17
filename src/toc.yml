@@ -37,20 +37,18 @@
         href: licensespdmpublisher.md
       - name: Setting your first task
         href: propertiespagepdmpublisher.md
-        expanded: false
-        items:
-        - name: Options Tab
-          href: options.md
-        - name: Annotations Tab
-          href: annotations.md
-        - name: Conditions Tab
-          href: Conditions.md
-        - name: Frequently Asked Questions
-          href: pdmpublisherfaq.md
-        - name: Special/Dynamic Variables
-          href: pdmpublisherspecialvariable.md  
-        - name: Task Details
-          href: pdmpublisher_task_details.md  
+      - name: Options Task Page
+        href: options.md
+      - name: Annotations Task Page
+        href: annotations.md
+      - name: Conditions Task Page
+        href: Conditions.md
+      - name: Frequently Asked Questions
+        href: pdmpublisherfaq.md
+      - name: Special/Dynamic Variables
+        href: pdmpublisherspecialvariable.md  
+      - name: Task Details
+        href: pdmpublisher_task_details.md 
     - name: PDMPublisher for SOLIDWORKS 3D 
       href: pdmpublishersolidworks.md 
       expanded: false
