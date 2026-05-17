@@ -49,6 +49,8 @@
           href: pdmpublisherfaq.md
         - name: Special/Dynamic Variables
           href: pdmpublisherspecialvariable.md  
+        - name: Task Details
+          href: pdmpublisher_task_details.md  
     - name: PDMPublisher for SOLIDWORKS 3D 
       href: pdmpublishersolidworks.md 
       expanded: false
