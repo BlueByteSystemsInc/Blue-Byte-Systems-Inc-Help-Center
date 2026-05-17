@@ -153,7 +153,11 @@ Exports the flat pattern of sheet metal parts as 1:1 DXF.
 
  - The term 'FlatPattern' will be appended to the filename.
  - This feature will recongize sheet metal parts and export them as a flat pattern.
- - Several options can be selected using the checkboxes to configure the DXF export according to your requirements. These options are accessible by clicking the **Flat Pattern Settings** button. Below is the list of available options:
+ - Several options can be selected using the checkboxes to configure the DXF export according to your requirements. 
+ 
+ These options are accessible by clicking the **Flat Pattern Settings** button:
+ 
+ ### Sheet Metal Options:
  1. Eport flat-pattern geometry
  2. Include hidden edges
  3. Export bend lines
@@ -162,6 +166,21 @@ Exports the flat pattern of sheet metal parts as 1:1 DXF.
  6. Export library features
  7. Export forming tools
  8. Export bounding box
+ 9. Ignore countersink holes
+ 10. Append Flat-pattern to the filename.
+
+### Sheet Metal Part Views
+You have the ability to specify whether you want additional views of the sheet metal parts.
+
+## Split Bodies
+Splits multi-body parts into separate files.
+
+For the HTML extension, this is only supported in SOLIDWORKS 2025 and newer.
+
+The body name is appended to the end of the filename.
+
+>[!IMPORTANT]
+>This does not apply to sheet metal flat patterns.
 
  >[!NOTE]
 > This does not require the DXF file format to be selected for export in the File Formats.
