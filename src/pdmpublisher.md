@@ -41,9 +41,6 @@ PDMPublisher can process individual SOLIDWORKS part files (`.sldprt`), drawing f
  🔹 Microsoft Office Word and Excel: Office documents to PDF.
 
 
-
-# PDMPublisher (Task)
-
 ## Requirements
 
 The minimum version PDMPublisher supports is SOLIDWORKS PDM Professional 2018 SP0.  
@@ -70,14 +67,6 @@ To install the PDMPublisher, you have two options:
 
 ## Creating your first task
 Please follow the instructions in this [article](/src/propertiespagepdmpublisher.html).  
-
-### [PDMPublisher for SOLIDWORKS](https://pdmpublisher.com/solidworks-desktop/)
-
-![pdmpublishersolidworksaddin](/images/pdmpublishersolidworksaddin.png)
-
-PDMPublisher for SOLIDWORKS is available for download from [PDMPublisher.com](https://pdmpublisher.com/solidworks-desktop/).
-
-For setup instructions and additional documentation, see the [PDMPublisher for SOLIDWORKS documentation](https://docs.bluebyte.biz/src/pdmpublishersolidworks.html).
 
 ## Support
 For additional support, please contact us through the [contact](https://bluebyte.biz/contact/) page or via our support email support@bluebytesystemsinc.zohodesk.com.
