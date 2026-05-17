@@ -41,6 +41,9 @@ PDMPublisher can process individual SOLIDWORKS part files (`.sldprt`), drawing f
  🔹 Microsoft Office Word and Excel: Office documents to PDF.
 
 
+
+# PDMPublisher (Task)
+
 ## Requirements
 
 The minimum version PDMPublisher supports is SOLIDWORKS PDM Professional 2018 SP0.  
@@ -50,7 +53,7 @@ The minimum version PDMPublisher supports is SOLIDWORKS PDM Professional 2018 SP
 
 ## Installation
 
-To install the PDMPublisher add-in, you have two options:
+To install the PDMPublisher, you have two options:
 
 1. [Using PDMDeploy](/src/updateaddinswithcdpdm.html):  
    You can use [PDMDeploy](/src/cdpdm.html) to install the add-in directly from the cloud. This is the recommended method.
@@ -68,15 +71,16 @@ To install the PDMPublisher add-in, you have two options:
 ## Creating your first task
 Please follow the instructions in this [article](/src/propertiespagepdmpublisher.html).  
 
+### [PDMPublisher for SOLIDWORKS](https://pdmpublisher.com/solidworks-desktop/)
+
+![pdmpublishersolidworksaddin](/images/pdmpublishersolidworksaddin.png)
+
+PDMPublisher for SOLIDWORKS is available for download from [PDMPublisher.com](https://pdmpublisher.com/solidworks-desktop/).
+
+For setup instructions and additional documentation, see the [PDMPublisher for SOLIDWORKS documentation](https://docs.bluebyte.biz/src/pdmpublishersolidworks.html).
+
 ## Support
 For additional support, please contact us through the [contact](https://bluebyte.biz/contact/) page or via our support email support@bluebytesystemsinc.zohodesk.com.
 
 > [!Note]
 > Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers.
-
-
-
-
-<script
-  src='https://cdn.jotfor.ms/agent/embedjs/0196efe63b1f79818c409ffed296766d11af/embed.js?skipWelcome=1&maximizable=1'>
-</script>
