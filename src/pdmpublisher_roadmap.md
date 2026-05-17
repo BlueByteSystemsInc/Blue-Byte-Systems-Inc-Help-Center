@@ -19,10 +19,10 @@ The roadmap is organized by quarter and provides visibility into features curren
 
 ## 2026 Q2
 
-## Details Page
+## Details Page (✅ Implemented)
 **Applies to: task**
 
-- Added a tab to the details page of the task outlining success and failures.
+- Added a tab to the details page of the task outlining successful files. See details [here](/src/pdmpublisher_task_details.html).
 
 ## Multi-Body Support 
 **Applies to: SOLIDWORKS add-in / task**
