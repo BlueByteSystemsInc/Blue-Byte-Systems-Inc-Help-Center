@@ -487,6 +487,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/detailstab.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/detailstab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/email.png",
       "output": {
         "resource": {
