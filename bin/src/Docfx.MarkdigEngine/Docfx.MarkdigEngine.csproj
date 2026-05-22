@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Markdig" />
+    <PackageReference Include="Newtonsoft.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" VersionOverride="0.54.0" />
+    <ProjectReference Include="..\Docfx.MarkdigEngine.Extensions\Docfx.MarkdigEngine.Extensions.csproj" />
+    <ProjectReference Include="..\Docfx.Common\Docfx.Common.csproj" />
+    <ProjectReference Include="..\Docfx.YamlSerialization\Docfx.YamlSerialization.csproj" />
+  </ItemGroup>
+
+</Project>

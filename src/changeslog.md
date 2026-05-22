@@ -11,6 +11,9 @@ Versions are identified by their compile date, which represents the build date o
 > [!TIP]
 > If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
+## 2026.05.31
+*Applies to **PDM Task** and **SOLIDWORKS Add-in***
+- Hot fix: PDF not printing due to split bodies.
 
 ## 2026.05.30
 **PDM Task**:
