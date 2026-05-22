@@ -18,14 +18,14 @@ The roadmap is organized by quarter and provides visibility into features curren
 # 2026 
 ---
 ## 2026 Q2
-## Details Page 
+### Details Page 
 ✅ Implemented 
 
 **Applies to: PDM Task**
 
 - Added a tab to the details page of the task outlining successful files. See details [here](/src/pdmpublisher_task_details.html).
 
-## Multi-Body Support
+#### Multi-Body Support
 ✅ Implemented 
 
 **Applies to: SOLIDWORKS add-in / PDM Task** 
@@ -35,8 +35,8 @@ The roadmap is organized by quarter and provides visibility into features curren
 Target: End of Q2 2026
 ---
 ## 2026 Q3
-
-## Presets / Profiles 
+---
+### Presets / Profiles 
 **Applies to: SOLIDWORKS add-in**
 
 Planned support for reusable presets or profiles.
@@ -52,8 +52,8 @@ Planned areas of focus include:
 - Improving consistency across users and workstations
 
 Target: End of Q3 2026
-
-## Shareable Settings / Profile Sharing by PIN Code 
+---
+### Shareable Settings / Profile Sharing by PIN Code 
 **Applies to: SOLIDWORKS add-in**
 
 Planned support for sharing PDMPublisher settings or profiles using a PIN code.
@@ -70,7 +70,7 @@ Planned areas of focus include:
 
 Target: End of Q3 2026
 ---
-## 2026 Q4
+### 2026 Q4
 **Applies to: PDM Task**
 - Add support for scheduling to process:
   - Selected files
@@ -78,10 +78,10 @@ Target: End of Q3 2026
   - Favorite Search
 ---
 # 2027
-
+---
 ## 2027 Q1
-
-## Drawing Creator
+---
+### Drawing Creator
 **Applies to: SOLIDWORKS Add-in**
 
 Planned support for a Drawing Creator feature.
