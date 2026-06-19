@@ -1,3 +1,10 @@
+﻿---
+title: How to Install PDM Add-ins
+description: Learn how to install or update Blue Byte Systems SOLIDWORKS PDM add-ins using a CEX file.
+ms.date: 06/19/2026
+ms.topic: how-to
+---
+
 # How to Install PDM Add-ins
 
 Installing PDM add-ins from Blue Byte Systems Inc., is a simple process.
@@ -43,10 +50,10 @@ This process is similar when updating an existing add-in. Simply follow the same
 
 2. Test the functionality of the add-in to confirm that it has been installed correctly.
 ---
-> [!Note]
+> [!NOTE]
 > Follow the steps below to install the add-in successfully. For a visual guide, you can watch this video:
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/PZcqz4Q_YZ0?si=DiDlNDLug4FLhYb9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
-> [!Note]
+> [!NOTE]
 > If you encounter any issues during the installation process, refer to the documentation provided with the add-in or contact support for assistance.
 

@@ -1,6 +1,8 @@
----
+﻿---
 title: Conditions | PDMPublisher | SOLIDWORKS PDM
 description: How to add conditions to filter files before printing or exporting. 
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Conditions Setup Page

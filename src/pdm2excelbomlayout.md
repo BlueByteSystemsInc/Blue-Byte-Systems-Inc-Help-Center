@@ -1,7 +1,11 @@
----
+﻿---
 title: Configuring your SOLIDWORKS PDM Bill Of Materials layout | PDM2Excel | SOLIDWORKS PDM
 description: Configuring your SOLIDWORKS PDM Bill Of Materials layout for PDM2Excel
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Configuring your SOLIDWORKS PDM Bill Of Materials layout
 
 ## Configuring your SOLIDWORKS PDM Bill Of Materials layout
 
@@ -16,7 +20,7 @@ To ensure full compatibility with **PDM2Excel**, your **Bill Of Materials layout
 
 These columns are **required**. If any are missing, the export may fail or generate incomplete or inaccurate data.
 
->[!Note]
+> [!NOTE]
 > If you do not want these columns in your final Bill Of Materials, you can hide them by specifying the column names in the *Omit Columns* field in the **Options** page. Example: `#;Name;Description` will the columbs with headers `#`, `Name` and `Description`.
 
 ## Supporting Cut Lists

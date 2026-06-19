@@ -1,6 +1,8 @@
----
+﻿---
 title: PDMPublisher for SOLIDWORKS 3D (Options Tab)
 description: Learn how to configure the PDMPublisher in SOLIDWORKS.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Options Tab (Default Tab)
@@ -39,7 +41,7 @@ Custom export locations based on file extension.
   - Customize location allows users to define export locations based on file extension, ensuring that each file type is assigned a unique destination path. 
   - The checkboxes indicate which file types will be exported to their specified locations. Any file type whose checkbox is not selected will default to the base export location.
 
->[!NOTE]
+> [!NOTE]
 > This feature is available exclusively in the full version of PDMpublisher.
 
 ![Custom File Locations](/images/CUSTOMEXPORTLOCATIONSSW.png)
@@ -55,7 +57,7 @@ Exported file name(s).
  - At least one file property driven value must be applied to create unique file names.
  - Characters can be manually entered between dynamic properties to separate the properties. For example: filename`_`revision (Certain characters are not permitted in filenames due to Windows Explorer restrictions)
 
->[!NOTE]
+> [!NOTE]
 > The list of SOLIDWORKS properties available for use in the filename is determined by the active document and the specific properties it contains.
 
 
@@ -82,7 +84,8 @@ The supported file formats are:
 8. **EPRT (eDrawings Part File)**: A file format used for 3D model representations in eDrawings software.
 9. **EASM (eDrawings Assembly File)**: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.
 10. **HTML (HyperText Markup Language)**: The standard markup language for creating web pages, allowing the display of text, images, and links.
-11. **X_T (Parasolid Model File)**: A format used for 3D modeling in CAD applications, representing geometric data.
+11. **X_T (Parasolid Text File)**: A Parasolid text format used for 3D modeling in CAD applications.
+12. **X_B (Parasolid Binary File)**: A Parasolid binary format used for 3D modeling in CAD applications.
 
 ---
 
@@ -122,7 +125,7 @@ Convert all part and assembly configurations.
 
 When enabled, this option processes each configuration individually and exports them according to the selected criteria.
 
->[!NOTE]
+> [!NOTE]
 > Configuration Name is required in the filename field. (shown below)
 
 ![Configuration Name](/images/ConfigurationNameRequired.png)
@@ -172,7 +175,7 @@ Exports the flat pattern of sheet metal parts as 1:1 DXF.
 ### Sheet Metal Part Views
 You have the ability to specify whether you want additional views of the sheet metal parts.
 
- >[!NOTE]
+ > [!NOTE]
 > This does not require the DXF file format to be selected for export in the File Formats.
 
 ![Flat Pattern Settings](/images/FlatPatternSettings.png)
@@ -186,7 +189,7 @@ For the HTML extension, this is only supported in SOLIDWORKS 2025 and newer.
 
 The body name is appended to the end of the filename.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >This does not apply to sheet metal flat patterns.
 
 ---
@@ -208,8 +211,8 @@ The **Publish** button also provides the option to select between available SOLI
 
 ![Publish Button](/images/PublishButtonWithVault.png)
 
- >[!WARNING]
+ > [!WARNING]
   > Linking the **Publish** button to vault is critical to ensure the generated files are able to be checked in/out properly during the export process.
 
->[!TIP]
+> [!TIP]
   > To unlink the **Publish** button from a vault, click the dropdown arrow and select the active vault name. This action will remove the vault association.

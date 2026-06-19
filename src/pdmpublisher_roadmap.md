@@ -1,6 +1,8 @@
----
+﻿---
 title: PDMPublisher Product Roadmap | Upcoming Features & Planned Enhancements
 description: View the PDMPublisher product roadmap with planned features, upcoming enhancements, and future development priorities by quarter.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # PDMPublisher Product Roadmap
@@ -15,18 +17,32 @@ The roadmap is organized by quarter and provides visibility into features curren
 > [!TIP]
 > To see the list of implemented changes, please click [here](/src/changeslog.html).
 
-# 2026 
+## 2026 
 ---
-## 2026 Q2
-### Details Page 
-✅ Implemented 
+### 2026 Q2
+#### Scheduled Items Task Page
+Implemented
+
+**Applies to: PDM Task**
+
+- Added a Scheduled Items setup page for scheduled tasks that need to process configured files when no files are passed in by the PDM task trigger. See details [here](/src/scheduleditems.html).
+
+#### Parasolid Binary Export
+Implemented
+
+**Applies to: SOLIDWORKS add-in / PDM Task**
+
+- Added support for exporting Parasolid binary files with the `x_b` extension.
+
+#### Details Page 
+Implemented 
 
 **Applies to: PDM Task**
 
 - Added a tab to the details page of the task outlining successful files. See details [here](/src/pdmpublisher_task_details.html).
 
 #### Multi-Body Support
-✅ Implemented 
+Implemented 
 
 **Applies to: SOLIDWORKS add-in / PDM Task** 
 
@@ -34,9 +50,9 @@ The roadmap is organized by quarter and provides visibility into features curren
 
 Target: End of Q2 2026
 ---
-## 2026 Q3
+### 2026 Q3
 ---
-### Presets / Profiles 
+#### Presets / Profiles 
 **Applies to: SOLIDWORKS add-in**
 
 Planned support for reusable presets or profiles.
@@ -53,7 +69,7 @@ Planned areas of focus include:
 
 Target: End of Q3 2026
 ---
-### Shareable Settings / Profile Sharing by PIN Code 
+#### Shareable Settings / Profile Sharing by PIN Code 
 **Applies to: SOLIDWORKS add-in**
 
 Planned support for sharing PDMPublisher settings or profiles using a PIN code.
@@ -73,15 +89,14 @@ Target: End of Q3 2026
 ### 2026 Q4
 **Applies to: PDM Task**
 - Add support for scheduling to process:
-  - Selected files
   - Selected directory
   - Favorite Search
 ---
-# 2027
+## 2027
 ---
-## 2027 Q1
+### 2027 Q1
 ---
-### Drawing Creator
+#### Drawing Creator
 **Applies to: SOLIDWORKS Add-in**
 
 Planned support for a Drawing Creator feature.
@@ -101,4 +116,4 @@ Planned areas of focus include:
 - Supporting reusable drawing setup rules
 - Preparing drawings for downstream export through PDMPublisher
 
-Target: End of Q1 Q2027
+Target: End of Q1 2027

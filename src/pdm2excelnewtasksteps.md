@@ -1,6 +1,8 @@
----
+﻿---
 title: Creating a new task | PDM2Excel | SOLIDWORKS PDM
 description: This section will detail the setup pages that require explanation.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Setting your task

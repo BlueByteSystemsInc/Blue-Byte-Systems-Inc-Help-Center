@@ -1,6 +1,8 @@
----
+﻿---
 title: PDMPublisher for SOLIDWORKS 3D (Annotations)
 description: How to configure and use the annotations tab.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Annotations Tab
@@ -27,7 +29,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 ## Adding Annotation Text
  - From the newly created annotation box, you can enter custom text and/or link the annotation to properties contained within the file.
 
->[!NOTE]
+> [!NOTE]
 > The list of SOLIDWORKS properties available for use in the annotation is determined by the active document and the specific properties it contains.
 
 ![Adding an Annotation](/images/AddingAnnotations2.png)
@@ -36,7 +38,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 ## Formating the Annotation Text
 - Once the annotation text is added, you can adjust its formatting, including font, size, bold, or italicize.
 
->[!NOTE]
+> [!NOTE]
 >Each annotation can use a different font type and size, and they can be controlled independently. The active annotation being edited is highlighted with a blue shadow for easy identification.
 
 ![Adding an Annotation](/images/AddingAnnotations3.png)
@@ -53,7 +55,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 
 ## Active Checkbox
 - The **Active** checkbox determines whether the selected annotation will be included in the published output.
->[!NOTE]
+> [!NOTE]
 >New annotations are active by default.
 
 ---
@@ -64,7 +66,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 ![Adding an Annotation](/images/QRcodeCheckbox.png)
 ![QR Code Example](/images/QRcodeExample.png)
 
->[!NOTE]
+> [!NOTE]
 >The size of the QR code is controlled by the **Width** setting located to the right of the QR Code checkbox.
 
 ---

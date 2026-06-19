@@ -1,6 +1,8 @@
----
+﻿---
 title: Email Notifications and Whitelisting | PDMReminder | SOLIDWORKS PDM
 description: Learn how to ensure you receive email notifications from Blue Byte Systems and troubleshoot common issues with PDM notifications.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # FAQ: Ensuring Delivery of Email Notifications from Blue Byte Systems

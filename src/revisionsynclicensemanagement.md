@@ -1,6 +1,8 @@
----
+﻿---
 title: License troubleshooting | RevisionSync | SOLIDWORKS PDM
 description: This section denotes how to manage a license.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 # License Information
 

@@ -35,14 +35,16 @@
         href: pdmpublisherdemo.md
       - name: License Management
         href: licensespdmpublisher.md
-      - name: Setting your first task
+      - name: Setting up your first task
         href: propertiespagepdmpublisher.md
       - name: Options Task Page
         href: options.md
       - name: Annotations Task Page
         href: annotations.md
       - name: Conditions Task Page
-        href: Conditions.md
+        href: conditions.md
+      - name: Scheduled Items Task Page
+        href: scheduleditems.md
       - name: Frequently Asked Questions
         href: pdmpublisherfaq.md
       - name: Special/Dynamic Variables
@@ -90,7 +92,7 @@
    - name: Need more help?
      href: pdm2excelneedmorehelp.md
      
-- name: Fast PDM Add-ins Depolyment 
+- name: Fast PDM Add-ins Deployment 
 - name: PDMDeploy
   href: cdpdm.md
 

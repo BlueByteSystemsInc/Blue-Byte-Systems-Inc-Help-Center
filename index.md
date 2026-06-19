@@ -50,6 +50,31 @@ description: Official product documentation and support resources for Blue Byte 
   margin-top: 16px;
 }
 
+.bbs-partner-badge {
+  display: block;
+  height: 86px;
+  margin: 8px 0 0 auto;
+}
+
+.bbs-partner {
+  text-align: right;
+  margin: 0;
+}
+
+.bbs-partner-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bbs-footer-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: end;
+  margin: 0 0 8px;
+}
+
 .bbs-section-label {
   font-size: 11px;
   font-weight: 700;
@@ -104,11 +129,11 @@ description: Official product documentation and support resources for Blue Byte 
 
 .bbs-quicklinks {
   border-radius: 10px !important;
-  padding: 18px 20px !important;
+  padding: 0 !important;
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 10px 26px !important;
-  margin: 0 0 40px !important;
+  margin: 0 !important;
 }
 
 .bbs-quicklinks a {
@@ -124,6 +149,19 @@ description: Official product documentation and support resources for Blue Byte 
 @media (max-width: 720px) {
   .bbs-products {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .bbs-footer-band {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .bbs-partner {
+    text-align: left;
+  }
+
+  .bbs-partner-badge {
+    margin-left: 0;
   }
 }
 
@@ -194,14 +232,22 @@ description: Official product documentation and support resources for Blue Byte 
 
 </div>
 
+<div class="bbs-footer-band">
+<div>
 <div class="bbs-section-label">Quick links</div>
-
 <div class="bbs-quicklinks">
 <a href="src/introduction.html">Getting started</a>
 <a href="https://bluebyte.biz/contact">Contact us</a>
 <a href="https://pdmshell.com">PDMShell.com</a>
 <a href="https://pdmpublisher.com">PDMPublisher.com</a>
 <a href="https://bluebytesystems.com">BlueByteSystems.com</a>
+</div>
+</div>
+
+<div class="bbs-partner">
+<p class="bbs-partner-text">Blue Byte Systems is a SOLIDWORKS Solution Partner.</p>
+<img class="bbs-partner-badge" src="/images/solution_partner_logo.png" alt="SOLIDWORKS Solution Partner"/>
+</div>
 </div>
 
 </div>

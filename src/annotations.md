@@ -1,3 +1,10 @@
+﻿---
+title: Annotations Setup Page | PDMPublisher | SOLIDWORKS PDM
+description: Learn how to add annotations and watermarks to converted PDF documents in the PDMPublisher task setup page.
+ms.date: 06/19/2026
+ms.topic: how-to
+---
+
 # Annotations Setup Page
 
 Notes can be added to converted PDF documents via this the ***Annotations*** setup page.
@@ -17,7 +24,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 ## Adding Annotation Text
  - From the newly created annotation box, you can enter custom text and/or link the annotation to variables already setup in the vault environment.
 
->[!NOTE]
+> [!NOTE]
 > The list of SOLIDWORKS variables available for use in the annotation is determined by the variables setup within SOLIDWORKS PDM.
 
 ![Adding an Annotation](/images/TaskAnnotations2.png)
@@ -26,7 +33,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 ## Formating the Annotation Text
 - Once the annotation text is added, you can adjust its formatting, including font, size, bold, or italicize.
 
->[!NOTE]
+> [!NOTE]
 >Each annotation can use a different font type and size, and they can be controlled independently. The active annotation being edited is highlighted with a blue shadow for easy identification.
 
 ![Adding an Annotation](/images/TaskAnnotations3.png)
@@ -43,7 +50,7 @@ This section provides an overview of the **Annotations tab** and explains the av
 
 ## Active Checkbox
 - The **Active** checkbox determines whether the selected annotation will be included in the published output.
->[!NOTE]
+> [!NOTE]
 >New annotations are active by default.
 
 ---

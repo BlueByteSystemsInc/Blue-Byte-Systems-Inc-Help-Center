@@ -1,6 +1,8 @@
----
+﻿---
 title: Task Details Log tab | PDMPublisher | SOLIDWORKS PDM
 description: Explains the Task Details Log tab in PDMPublisher and how it reads successful file information from task logs.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Task Details tab
@@ -38,7 +40,7 @@ For the Details Log tab to work correctly:
 
 If the log file cannot be accessed, the Details Log tab may not be able to display the successful files.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Files saved outside the PDM vault are **not tracked** in the Details Log tab. The Details Log tab only reports files that were saved or checked in to SOLIDWORKS PDM and recorded in the task log.
 
 

@@ -1,9 +1,11 @@
----
+﻿---
 title: Updating Blue Byte Systems PDM add-ins with PDMDeploy | SOLIDWORKS PDM
 description: This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the PDMDeploy add-in.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
->[!Important]
+> [!IMPORTANT]
 > CDPDM is now PDMDeploy. While screenshots and video tutorials are still referencing CDPDM, the changes in PDMDeploy are minimal.
 
 # Updating Blue Byte Systems PDM add-ins with PDMDeploy
@@ -73,8 +75,8 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 
 ### Warnings
 
-> [!Warning]
+> [!WARNING]
 > PDMDeploy does not permit new task add-ins in the *Task Host Configuration*. You must do that manually:
 > ![taskhostconfiguration](/images/taskhostconfiguration.png)
-> [!Warning]
+> [!WARNING]
 > All client computers using the add-in's tasks must be restarted to use the new version.

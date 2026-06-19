@@ -1,7 +1,11 @@
----
+﻿---
 title: Triggering PDM2Excel from a Workflow Transition | SOLIDWORKS PDM
 description: How to configure a workflow transition in SOLIDWORKS PDM to trigger the PDM2Excel export task.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Triggering PDM2Excel from a Workflow Transition
 
 ## Triggering the PDM2Excel Task from a Workflow Transition
 

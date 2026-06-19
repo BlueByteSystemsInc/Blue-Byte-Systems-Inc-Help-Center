@@ -1,6 +1,8 @@
----
+﻿---
 title: Connection String | PDMReminder | SOLIDWORKS PDM
 description: Learn how to create and use a secure SQL Server connection string for PDMReminder to access your SOLIDWORKS PDM vault database efficiently.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Configuring a Connection String for PDMReminder

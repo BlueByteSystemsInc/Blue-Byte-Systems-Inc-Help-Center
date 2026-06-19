@@ -1,6 +1,8 @@
----
+﻿---
 title: PDMPublisher for SOLIDWORKS 3D (Logs)
 description: How to use the log files for troubleshooting.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Log Files
@@ -29,6 +31,6 @@ The log files display detailed information such as BOM quantities retrieved, con
 
 ![Detailed logs](/images/detailedlogs.png)
 
->[!NOTE]
+> [!NOTE]
 >Each logged instance includes a unique ID number located at the bottom of the entry. This ID can be provided to Blue Byte Support to assist with troubleshooting and issue resolution.
 

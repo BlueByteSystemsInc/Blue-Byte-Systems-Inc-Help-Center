@@ -1,7 +1,12 @@
----
+﻿---
 title: PDMDeploy Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMDeploy change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# PDMDeploy Change Log
+
 ## 30
 *CDPDM Add-in is now PDMDeploy*
 

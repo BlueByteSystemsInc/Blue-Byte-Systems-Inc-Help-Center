@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Blue Byte Systems Help Center | SOLIDWORKS and PDM Add-ins | Helper Center </title>
+      <title>Blue Byte Systems Help Center | SOLIDWORKS and PDM Add-ins | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Blue Byte Systems Help Center | SOLIDWORKS and PDM Add-ins | Helper Center ">
+      <meta name="title" content="Blue Byte Systems Help Center | SOLIDWORKS and PDM Add-ins | Help Center ">
       
       <meta name="description" content="Official product documentation and support resources for Blue Byte Systems SOLIDWORKS and PDM tools. Start here before opening a support ticket.">
       <link rel="icon" href="favicon.ico">
@@ -44,8 +44,8 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="images/fav.png" alt="Helper Center">
-            Helper Center
+            <img id="logo" class="svg" src="images/fav.png" alt="Help Center">
+            Help Center
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
@@ -118,6 +118,31 @@
   margin-top: 16px;
 }
 
+.bbs-partner-badge {
+  display: block;
+  height: 86px;
+  margin: 8px 0 0 auto;
+}
+
+.bbs-partner {
+  text-align: right;
+  margin: 0;
+}
+
+.bbs-partner-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bbs-footer-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: end;
+  margin: 0 0 8px;
+}
+
 .bbs-section-label {
   font-size: 11px;
   font-weight: 700;
@@ -172,11 +197,11 @@
 
 .bbs-quicklinks {
   border-radius: 10px !important;
-  padding: 18px 20px !important;
+  padding: 0 !important;
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 10px 26px !important;
-  margin: 0 0 40px !important;
+  margin: 0 !important;
 }
 
 .bbs-quicklinks a {
@@ -192,6 +217,19 @@
 @media (max-width: 720px) {
   .bbs-products {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .bbs-footer-band {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .bbs-partner {
+    text-align: left;
+  }
+
+  .bbs-partner-badge {
+    margin-left: 0;
   }
 }
 
@@ -249,6 +287,8 @@
 <a class="bbs-product-link" href="https://bluebyte.biz/contact">Contact us &rarr;</a>
 </div>
 </div>
+<div class="bbs-footer-band">
+<div>
 <div class="bbs-section-label">Quick links</div>
 <div class="bbs-quicklinks">
 <a href="src/introduction.html">Getting started</a>
@@ -256,6 +296,12 @@
 <a href="https://pdmshell.com">PDMShell.com</a>
 <a href="https://pdmpublisher.com">PDMPublisher.com</a>
 <a href="https://bluebytesystems.com">BlueByteSystems.com</a>
+</div>
+</div>
+<div class="bbs-partner">
+<p class="bbs-partner-text">Blue Byte Systems is a SOLIDWORKS Solution Partner.</p>
+<img class="bbs-partner-badge" src="/images/solution_partner_logo.png" alt="SOLIDWORKS Solution Partner">
+</div>
 </div>
 </div>
 
@@ -279,7 +325,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁 and Couscous 🍲.</span>
+          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Built by Blue Byte Systems.</span>
         </div>
       </div>
     </footer>

@@ -1,6 +1,8 @@
----
+﻿---
 title: License troubleshooting | PDMReminder | SOLIDWORKS PDM
 description: Learn how to manage, activate, deactivate, and renew your PDMReminder license, including troubleshooting tips.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 # License Information
 

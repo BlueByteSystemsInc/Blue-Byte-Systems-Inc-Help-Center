@@ -1,11 +1,13 @@
----
+﻿---
 title: Troubleshooting Blocked Files in Windows | SOLIDWORKS PDM
 description: Learn how to unblock files in Windows that are downloaded from the internet or external sources, including SOLIDWORKS PDM add-ins.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # A file I downloaded (like a SOLIDWORKS PDM add-in) isn't working. How do I check if it's blocked?
 
->[!WARNING]
+> [!WARNING]
 > **Please unblock your downloads. Blocked files will affect the proper execution of our products in your systems**.
 
 

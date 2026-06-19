@@ -1,6 +1,8 @@
----
+﻿---
 title: RevisionSync Add-in Settings | SOLIDWORKS PDM
 description: Overview of the available configuration settings for the RevisionSync add-in by Blue Byte Systems Inc.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # RevisionSync Settings
@@ -26,10 +28,10 @@ To configure the add-in:
     ![revisiondatacardsettings](/images/revisiondatacardsettings.png)
    
 
->[!WARNING]
+> [!WARNING]
 > You must activate your license from *Manage License...* command before starting to use RevisionSync.
 
->[!NOTE]
+> [!NOTE]
 > Start by configuring the add-in from **General Settings**.
 
 
@@ -67,14 +69,14 @@ To configure the add-in:
 - **Revision**:  
   Specifies the variable name used for the revision (e.g., `Revision`).
 
->[!WARNING]
+> [!WARNING]
 > **You must set this**.
 
 
 - **Update revision variable**:  
   When set to `True`, the revision variable will be updated during sync.
 
->[!WARNING]
+> [!WARNING]
 > This will perform a checkout and checkin operation. Please make sure the user running the add-in has the right-permissions.
 
 ---

@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -937,6 +937,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_scheduled_items.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_scheduled_items.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_task_addin_dropdown.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_task_addin_dropdown.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_task_addin_selected.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_task_addin_selected.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisherforsolidworks.mp4",
       "output": {
         "resource": {
@@ -1131,6 +1161,16 @@
       "output": {
         "resource": {
           "relative_path": "images/smtp.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/solution_partner_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/solution_partner_logo.png"
         }
       },
       "version": ""
@@ -1741,6 +1781,16 @@
       "output": {
         ".html": {
           "relative_path": "src/revisionsynclicensemanagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/scheduleditems.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/scheduleditems.html"
         }
       },
       "version": ""

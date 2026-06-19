@@ -1,6 +1,8 @@
----
+﻿---
 title: Conditions | PDMPublisher | SOLIDWORKS 3D
 description: How to add conditions to filter files before printing or exporting. 
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Conditions Tab
@@ -24,7 +26,7 @@ From this dialog box, you can manually select which files to export. The dialog 
 
 ![Poor Man's Conditions](../images/PoorMansConditions1.png)
 
->[!NOTE]
+> [!NOTE]
 >To disable this option, uncheck the **Show Conditions Output** Dialog checkbox located at the bottom of the Conditions tab.
 
 ---
@@ -35,7 +37,7 @@ Conditions act as filters to ensure only the desired files are processed. They w
 
 ![Conditions Tab](../images/conditions_solidworks.png)
 
->[!NOTE]
+> [!NOTE]
 >The add-in will only process files that evaluate any of the set conditions as '**true**'.
 
 ---
@@ -107,7 +109,7 @@ These built-in entries appear at the top of the variable list:
 3. **Assembly References with Empty Configuration Field**  
    When processing an **assembly**, if a condition has an **empty configuration field**, **PDMPublisher for SOLIDWORKS** will evaluate the condition **against the referenced configuration(s)** of the document (e.g. parts or subassemblies).
 
->[!NOTE]
+> [!NOTE]
 > This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.
 
 ---

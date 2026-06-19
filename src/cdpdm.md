@@ -1,9 +1,11 @@
----
+﻿---
 title: PDMDeploy | PDMPublisher | SOLIDWORKS PDM
 description: How to use PDMDeploy to install PDMPublisher, PDM2Excel and other Blue Byte Systems SOLIDWORKS PDM plugins. 
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
->[!Important]
+> [!IMPORTANT]
 > **CDPDM is now PDMDeploy**. While screenshots and video tutorials are still referencing CDPDM, the changes in PDMDeploy are minimal.
 
 # Continuous Delivery
@@ -43,7 +45,7 @@ The advantages of using PDMDeploy are numerous:
 
 - From the Downloads tab, please download the archive file that contains `PDMDeploy.cex` and the Customer Configuration File.
 
->[!NOTE]
+> [!NOTE]
 > If you have purchased one of our PDM products and have had us develop a custom solution for you, please reach to us so we can generate a Customer Configuration File that lets you access all of your assets.
 
 ## How to Install
@@ -74,7 +76,7 @@ The advantages of using PDMDeploy are numerous:
 
 ![PDMDeploy Menu](../images/cdpdm_menu.png)
 
->[!NOTE]
+> [!NOTE]
 > You can configure the settings of PDMDeploy by adding the credentials of the Customer Configuration File manually. Contact support for help with the *Settings...* dialog.
 
 
@@ -96,5 +98,5 @@ The advantages of using PDMDeploy are numerous:
 
 PDMDeploy will ask you if you want to restart PDM. This may be needed to do after every add-in update.
 
->[!NOTE]
+> [!NOTE]
 > Please allow for a few moments after you click *Install Checked Add-Ins*. The add-in will be downloaded unblocked and added to the vault. This operation includes suppressing some PDM dialog boxes.

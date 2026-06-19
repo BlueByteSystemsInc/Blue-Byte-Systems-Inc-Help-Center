@@ -1,7 +1,11 @@
----
+﻿---
 title: Import and Export Task Settings | PDM2Excel | SOLIDWORKS PDM
 description: How to use the import and export functionality for PDM2Excel tasks in the Options table.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Import and Export Task Settings
 
 ## Importing and Exporting Task Settings in PDM2Excel
 
@@ -10,7 +14,7 @@ PDM2Excel makes it easy to share or reuse task settings through its built-in **I
 
 This feature is especially helpful when configuring multiple vaults, migrating settings, or distributing a standard configuration across teams.
 
->[!WARNING]
+> [!WARNING]
 > **Important:** Do **not** copy and paste an existing task in the Administration tool. This can result in broken task settings or outdated references. Instead, always create a **new task**, then **import** your previously exported configuration file.
 
 

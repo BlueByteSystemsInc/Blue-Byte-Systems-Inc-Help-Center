@@ -1,6 +1,8 @@
----
+﻿---
 title: PDM2Excel | SOLIDWORKS PDM
 description: Getting started with PDM2Excel.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 # PDM2Excel
 
@@ -11,7 +13,7 @@ PDM2Excel is a SOLIDWORKS PDM task add-in that exports SOLIDWORKS PDM assemblies
 ## Requirements
 
 The minimum version PDM2Excel supports is SOLIDWORKS PDM Professional 2017 SP0.  
-> [!Tip]
+> [!TIP]
 > We highly recommend you use the latest version of PDM Professional.
 
 ## Installation
@@ -23,14 +25,14 @@ To install the PDM2Excel add-in, you have two options:
 
 2. **[Using the CEX File](/src/installingpdmaddins.html)**:  
    Alternatively, you can download the `.cex` file from the order email you received after purchase. Once downloaded, import the `.cex` file into your vault via the Administration tool to complete the installation. 
-   > [!Warning]
+   > [!WARNING]
    > [Make sure to unblock the downloaded file.](/src/pdmqa.html)
 
 ## Support
 
 For additional support, please contact us through the **[contact](https://bluebyte.biz/contact/)** page.
 
-> [!Note]
+> [!NOTE]
 > Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers.
 
 <script

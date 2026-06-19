@@ -1,8 +1,11 @@
----
+﻿---
 title: Weldments and cutlists | PDM2Excel | SOLIDWORKS PDM
 description: How to work with weldments and cut-lists in PDM2Excel.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
+# Weldments and cutlists
 
 ## Weldments and Cut Lists in PDM2Excel
 

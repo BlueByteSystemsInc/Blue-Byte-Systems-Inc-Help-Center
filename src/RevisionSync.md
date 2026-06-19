@@ -1,6 +1,8 @@
----
+﻿---
 title: RevisionSync | SOLIDWORKS PDM
 description: Getting started with RevisionSnyc, including requirements, installation instructions, and support resources.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 # RevisionSync
 
@@ -27,7 +29,7 @@ RevisionSync is a SOLIDWORKS PDM task add-in that sync **revisions** between you
 ## Requirements
 
 The minimum version RevisionSync supports is SOLIDWORKS PDM Professional 2017 SP0.  
-> [!Tip]
+> [!TIP]
 > We highly recommend you use the latest version of PDM Professional.
 
 ## Installation
@@ -39,7 +41,7 @@ To install the RevisionSync add-in, you have two options:
 
 2. **[Using the CEX File](/src/installingpdmaddins.html)**:  
    Alternatively, you can download the `.cex` file from the order email you received after purchase. Once downloaded, import the `.cex` file into your vault via the Administration tool to complete the installation. 
-   > [!Warning]
+   > [!WARNING]
    > [Make sure to unblock the downloaded file.](/src/pdmqa.html)
 
 ## Settings 

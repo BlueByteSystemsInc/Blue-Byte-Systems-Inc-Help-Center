@@ -1,3 +1,10 @@
+﻿---
+title: Parts Book Creator Example | PDMPublisher | SOLIDWORKS PDM
+description: Learn how to configure PDMPublisher to create a parts book from a top-level assembly.
+ms.date: 06/19/2026
+ms.topic: tutorial
+---
+
 # Example
 
 This page explains how to configure a PDM Publisher to create a parts book.

@@ -1,7 +1,12 @@
----
+﻿---
 title: Configuration | PDMReminder | SOLIDWORKS PDM
 description: Learn how to configure PDMReminder, including database connection, settings, licensing, and reporting features.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Configuration
+
 ## Configuration 
 
 This configuration menu is accessed by right-clicking on the PDMReminder add-in under the Add-ins node in the SOLIDWORKS PDM Administration tool. It provides quick access to essential functions such as testing the database connection, configuring settings, generating reports, managing the license, and viewing dependencies. These options are intended for administrators to manage and troubleshoot the add-in effectively.
@@ -34,19 +39,19 @@ This configuration menu is accessed by right-clicking on the PDMReminder add-in 
 | Messaging  | Use Emailing Service      | True                             | Enables or disables the external emailing service.                         |
 | SQL        | Vault db connection string| ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●  | Connection string to read data from the PDM SQL database.                  |
 
-> [!Note]
+> [!NOTE]
 > All settings are automatically saved when the user closes the window.
 
 ---
 ### Test connection to database...
 
 To avoid a lengthly configuration, we have enabled a test command to validate using the add-in's connection with the database.  
-> [!Warning]
+> [!WARNING]
 > Only use this option after you've properly configured the connection string (**Vault db connection string**).
 
 You can generate a connection string using [connectionstrings.com](https://www.connectionstrings.com/sql-server/).
 
-> [!Warning]
+> [!WARNING]
 > Make sure to use a **read-only** connection string to prevent any accidental changes to the PDM database.
 
 If your connection string has been properly configured in the settings, you should get this dialogbox after you click *Test connection to database...*:

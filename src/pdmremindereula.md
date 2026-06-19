@@ -1,6 +1,8 @@
----
+﻿---
 title: EULA | PDMReminder | SOLIDWORKS PDM
 description: End User License Agreement for PDMReminder, including terms of use, licensing, and additional fees for services.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # End User License Agreement (EULA) for PDMReminder

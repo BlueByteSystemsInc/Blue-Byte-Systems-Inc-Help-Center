@@ -1,3 +1,10 @@
+﻿---
+title: End User License Agreement (EULA)
+description: Review the End User License Agreement for Blue Byte Systems software products.
+ms.date: 06/19/2026
+ms.topic: legal
+---
+
 # End User License Agreement (EULA)
 
 This End User License Agreement ("Agreement") is a legal agreement between you ("User") and Blue Byte Systems Inc. ("Company") for the use of the software products **PDMPublisher**, **PDMPublisher (SOLIDWORKS)**, **PDM2Excel**, and **PDMReminder** ("Software"). By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement.

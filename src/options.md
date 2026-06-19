@@ -1,7 +1,11 @@
----
+﻿---
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: This page explains all task setup page options in PDMPublisher that are available in SOLIDWORKS PDM.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Options
 
 When you choose **PDMPublisher** from the dropdown in the new task dialog, you will be prompted with a window similar to the one below:
 
@@ -27,7 +31,7 @@ Defines the exported file name. You do not need to include the file extension.
 
 #### File Formats
 
-Defines the formats PDMPublisher can export to, including `PDF`, `DWG`, `DXF`, `U3D`, `IGS`, `STL`, `STEP`, `EPRT`, `EASM`, `HTML`, `X_T`, `3MF`, `IFC`, and `BMP`.
+Defines the formats PDMPublisher can export to, including `PDF`, `DWG`, `DXF`, `U3D`, `IGS`, `STL`, `STEP`, `EPRT`, `EASM`, `HTML`, `X_T`, `X_B`, `3MF`, `IFC`, and `BMP`.
 
 #### Create reference from destination file to source file
 
@@ -177,7 +181,7 @@ Splits multi-body parts into separate files. For the HTML extension, this is onl
 
 The body name is appended to the end of the filename.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >This does not apply to sheet metal flat patterns.
 
 ---

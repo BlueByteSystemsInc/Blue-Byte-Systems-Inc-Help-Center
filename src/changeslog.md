@@ -1,6 +1,8 @@
----
+﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
+ms.date: 06/20/2026
+ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
 
@@ -10,6 +12,12 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.06.20
+*Applies to **PDM Task***
+- Added the **Scheduled Items** setup page. This page lets administrators choose files that PDMPublisher should process when a scheduled task runs without selected files. See [here](/src/scheduleditems.html).
+- Added support for exporting Parasolid binary files with the `x_b` extension.
+- Updated Scheduled Items task-run handling and task details log lookup behavior.
 
 ## 2026.05.31
 *Applies to **PDM Task** and **SOLIDWORKS Add-in***

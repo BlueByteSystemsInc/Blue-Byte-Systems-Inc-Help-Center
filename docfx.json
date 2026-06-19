@@ -1,4 +1,4 @@
-{
+﻿{
   "build": {
      "markdownEngineProperties": {
       "alerts": {
@@ -33,9 +33,9 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "Helper Center",
-      "_appTitle": "Helper Center",
-      "_appFooter": "<span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Made with Maple syrup 🍁 and Couscous 🍲.</span>",
+      "_appName": "Help Center",
+      "_appTitle": "Help Center",
+      "_appFooter": "<span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Built by Blue Byte Systems.</span>",
       "_appLogoPath": "images/fav.png",
       "_enableSearch": true,
       "pdf": false

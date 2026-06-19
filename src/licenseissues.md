@@ -1,6 +1,8 @@
----
-title: License troubleshooting | Blue Byte Systems Helper Center | SOLIDWORKS PDM
+﻿---
+title: License troubleshooting | Blue Byte Systems Help Center | SOLIDWORKS PDM
 description: How to manage your license.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 # License Common Issues 
 

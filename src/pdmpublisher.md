@@ -1,3 +1,10 @@
+﻿---
+title: PDMPublisher | SOLIDWORKS PDM
+description: Learn about PDMPublisher for SOLIDWORKS PDM Professional, including supported export formats, input files, requirements, installation, and licensing.
+ms.date: 06/19/2026
+ms.topic: overview
+---
+
 # PDMPublisher
 
 <p align="center">
@@ -5,7 +12,7 @@
 
 Thank you for choosing [PDMPublisher](https://bluebyte.biz/product/pdmpublisher/)! 
 
-> [!Note]
+> [!NOTE]
 > [Please consult the FAQ section to get answers for the most asked questions.](../src/pdmpublisherfaq.html)
 
 
@@ -23,6 +30,7 @@ With the PDM task version of PDMPublisher, you can export to the following exten
 - `step`
 - `iges`
 - `x_t`
+- `x_b`
 - `stl`
 - `u3d`
 - `eprt`
@@ -35,16 +43,16 @@ With the PDM task version of PDMPublisher, you can export to the following exten
 ## Input files
 PDMPublisher can process individual SOLIDWORKS part files (`.sldprt`), drawing files (`.slddrw`), and assemblies (`.sldasm`) along with all their references. This ensures that all necessary components are correctly handled during processing, whether you're converting a single file or an entire assembly structure.  
 
- 🔹 Single Part (`.sldprt`): Processes and converts a part file to the extensions above.  
- 🔹 Single Drawing (`.slddrw`): Processes individual drawings.  
- 🔹 Assembly with References (`.sldasm`): Automatically includes all referenced parts and subassemblies and their drawings.  
- 🔹 Microsoft Office Word and Excel: Office documents to PDF.
+- Single Part (`.sldprt`): Processes and converts a part file to the extensions above.  
+- Single Drawing (`.slddrw`): Processes individual drawings.  
+- Assembly with References (`.sldasm`): Automatically includes all referenced parts and subassemblies and their drawings.  
+- Microsoft Office Word and Excel: Office documents to PDF.
 
 
 ## Requirements
 
 The minimum version PDMPublisher supports is SOLIDWORKS PDM Professional 2018 SP0.  
-> [!Tip]
+> [!TIP]
 > We highly recommend you use the latest version of PDM Professional.
 
 
@@ -57,7 +65,7 @@ To install the PDMPublisher, you have two options:
 
 2. [Using the CEX File](/src/installingpdmaddins.html):  
    Alternatively, you can download the `.cex` file from the *order email* you received after purchase. Once downloaded, import the `.cex` file into your vault via the Administration tool to complete the installation.
-    > [!Warning]
+    > [!WARNING]
     > [Make sure to unblock the downloaded file.](/src/pdmqa.html)
 
 ## Consuming your license key
@@ -71,5 +79,5 @@ Please follow the instructions in this [article](/src/propertiespagepdmpublisher
 ## Support
 For additional support, please contact us through the [contact](https://bluebyte.biz/contact/) page or via our support email support@bluebytesystemsinc.zohodesk.com.
 
-> [!Note]
+> [!NOTE]
 > Before reaching out, we highly suggest you read the content of this page. We have compiled these help topics to respond to the frequently asked questions by our customers.

@@ -1,6 +1,8 @@
----
+﻿---
 title: PDMPublisher for SOLIDWORKS 3D
 description: Learn how to configure the PDMPublisher export for SOLIDWORKS 3D, including file output, merging PDFs, watermarking, and ERP integration.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # PDMPublisher for SOLIDWORKS 

@@ -1,6 +1,8 @@
----
+﻿---
 title: Bill Of Materials | PDM2Excel | SOLIDWORKS PDM
 description:  Configuring the PDM2Excel Task with the Correct BOM Template
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 
 # Configuring the PDM2Excel Task with the Correct BOM Template

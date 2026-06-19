@@ -1,7 +1,11 @@
----
+﻿---
 title: Creating a new task | PDMReminder | SOLIDWORKS PDM
 description: Learn how to create a new task in PDM to remind users to check their back into the vault.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Creating a new task
 
 ![alt text](../images/newtaskpdmreminder.png)
 
@@ -35,7 +39,7 @@ description: Learn how to create a new task in PDM to remind users to check thei
    ![alt text](../images/email.png)
    - If you **do not** use the **Emailing Service**, PDM users will receive notifications in their **PDM inbox**: 
    ![alt text](../images/pdmreminder_inbox.png)
-      >[!Note]
+      > [!NOTE]
       > If you are using SOLIDWORKS PDM Professional 2024 or newer, you can configure PDM to use your own SMTP server instead: 
       >![stmp](../images/smtp.png)
 

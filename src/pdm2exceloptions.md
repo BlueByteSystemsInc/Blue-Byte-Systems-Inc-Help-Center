@@ -1,7 +1,12 @@
----
+﻿---
 title: Options | PDM2Excel | SOLIDWORKS PDM
 description: Configure the Options page in the task setup dialog.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
+
+# Options
+
 ## Options
 
 The **Options** tab allows you to configure how the Bill of Materials (BOM) is exported to Excel, including layout, naming, structure, and formatting preferences.

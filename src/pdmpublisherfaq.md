@@ -1,6 +1,8 @@
----
+﻿---
 title: FAQ | PDMPublisher | SOLIDWORKS PDM
 description: PDMPublisher frequently asked questions.
+ms.date: 06/19/2026
+ms.topic: conceptual
 ---
 # Frequently Asked Questions
 
