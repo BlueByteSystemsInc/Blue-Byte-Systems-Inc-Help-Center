@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Product Roadmap | Upcoming Features & Planned Enhancements
 description: View the PDMPublisher product roadmap with planned features, upcoming enhancements, and future development priorities by quarter.
-ms.date: 06/19/2026
+ms.date: 06/21/2026
 ms.topic: conceptual
 ---
 
@@ -20,6 +20,14 @@ The roadmap is organized by quarter and provides visibility into features curren
 ## 2026 
 ---
 ### 2026 Q2
+#### Task Launch File Selection Dialog
+Implemented
+
+**Applies to: PDM Task**
+
+- Added an interactive launch dialog for tasks that ask users to specify files at runtime.
+- Added CSV import, automatic reference calculation, view-only drawing rows, launch-specific file format selection, and export location visibility.
+
 #### Scheduled Items Task Page
 Implemented
 

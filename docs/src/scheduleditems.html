@@ -131,6 +131,27 @@
 <li>If this page contains files, those files are used even when the task is launched from a selected file in File Explorer.</li>
 <li>If no files are selected at launch and no scheduled items are configured, the task will stop with an error.</li>
 </ul>
+<h2 id="selecting-files-at-task-launch">Selecting files at task launch</h2>
+<p>Version <strong>2026.06.21</strong> adds an interactive file selection dialog for tasks configured to ask the user which files to process at launch.</p>
+<p align="center">
+  <img src="../images/pdmpublisher_task_launch_selection.png" alt="PDMPublisher task launch file selection dialog" width="900">
+</p>
+<p>The dialog lets the user:</p>
+<ul>
+<li>Add files from the vault.</li>
+<li>Import file names from a CSV file.</li>
+<li>Review automatically calculated assembly references.</li>
+<li>See related drawings as view-only child rows.</li>
+<li>Choose launch-specific file formats for the task run.</li>
+<li>Review the configured export location before starting the task.</li>
+</ul>
+<p>The warning at the top reminds users that task export behavior is configured by an administrator in the SOLIDWORKS PDM Administration tool.</p>
+<h3 id="csv-import">CSV import</h3>
+<p>Click <strong>From CSV</strong> to import files from a comma-separated file list.</p>
+<p>PDMPublisher reads file names from a recognized file column such as <code>filename</code>, <code>file</code>, <code>filepath</code>, or <code>path</code>. If no recognized header is found, PDMPublisher scans each row for the first usable file name. Full paths are supported because only the file name is used for the vault search.</p>
+<p>For each imported row, PDMPublisher searches the vault and uses the first matching result. Duplicate files already shown in the dialog are skipped.</p>
+<h3 id="drawing-rows">Drawing rows</h3>
+<p>When a referenced part or assembly has an associated drawing, the drawing is shown under that item for review. Drawing rows marked <strong>View only</strong> are not passed to the task input list. They are checked only when a 2D output format such as <code>pdf</code>, <code>dwg</code>, or <code>dxf</code> is selected and the parent file is checked.</p>
 
 </article>
 

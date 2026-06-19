@@ -967,6 +967,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_task_launch_selection.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_task_launch_selection.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisherforsolidworks.mp4",
       "output": {
         "resource": {

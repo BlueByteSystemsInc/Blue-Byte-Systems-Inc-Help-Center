@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 06/20/2026
+ms.date: 06/21/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,14 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.06.21
+*Applies to **PDM Task***
+- Added an interactive task launch file selection dialog for tasks that ask users to specify files at launch.
+- Added CSV import to the task launch dialog. PDMPublisher reads file names or paths from the CSV, searches the vault, and uses the first matching result while skipping duplicates.
+- Added automatic assembly reference calculation in the launch dialog.
+- Added view-only drawing rows under parts and assemblies. These rows are shown for review but are not passed to the task input list.
+- Added launch-time file format selection, export location visibility, and an administration notice that explains task export settings are controlled from the SOLIDWORKS PDM Administration tool. See [Scheduled Items Task Page](/src/scheduleditems.html).
 
 ## 2026.06.20
 *Applies to **PDM Task***
