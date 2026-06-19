@@ -94,7 +94,11 @@
 </p>
 <h2 id="when-to-use-this-page">When to use this page</h2>
 <p>Use <strong>Scheduled Items</strong> when the task is expected to run on a schedule or from an automation that does not pass selected files to PDMPublisher.</p>
-<p>If files are selected when the task is launched, PDMPublisher processes the selected files as usual. If no files are selected, PDMPublisher uses the files configured on this page.</p>
+<p>If files are configured on this page, PDMPublisher uses the Scheduled Items list as the task input.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Scheduled Items take priority over files selected from the right-click <strong>Tasks</strong> menu or any other launch method that passes selected files to PDMPublisher. If this page contains files, PDMPublisher processes the files listed here and ignores the files selected during launch. Only configure Scheduled Items for tasks that are intended to process the same saved list of files.</p>
+</div>
 <h2 id="adding-files">Adding files</h2>
 <p>Click <strong>Add</strong> to choose one or more SOLIDWORKS files from the vault.</p>
 <p>PDMPublisher stores the selected file ID and parent folder ID. These IDs are used later to rebuild the task input list when the scheduled task runs.</p>
@@ -124,7 +128,8 @@
 <li>The selected files must remain available in the vault.</li>
 <li>The task host must have permission to access the selected files and their folders.</li>
 <li>The task still uses the settings from the other setup pages, including <strong>Options</strong>, <strong>Annotations</strong>, and <strong>Conditions</strong>.</li>
-<li>If the task runs without selected files and no scheduled items are configured, the task will stop with an error.</li>
+<li>If this page contains files, those files are used even when the task is launched from a selected file in File Explorer.</li>
+<li>If no files are selected at launch and no scheduled items are configured, the task will stop with an error.</li>
 </ul>
 
 </article>

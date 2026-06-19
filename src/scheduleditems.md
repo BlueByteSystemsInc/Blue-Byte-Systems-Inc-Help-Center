@@ -18,7 +18,10 @@ This is useful for scheduled tasks and automated task launches where SOLIDWORKS 
 
 Use **Scheduled Items** when the task is expected to run on a schedule or from an automation that does not pass selected files to PDMPublisher.
 
-If files are selected when the task is launched, PDMPublisher processes the selected files as usual. If no files are selected, PDMPublisher uses the files configured on this page.
+If files are configured on this page, PDMPublisher uses the Scheduled Items list as the task input.
+
+> [!IMPORTANT]
+> Scheduled Items take priority over files selected from the right-click **Tasks** menu or any other launch method that passes selected files to PDMPublisher. If this page contains files, PDMPublisher processes the files listed here and ignores the files selected during launch. Only configure Scheduled Items for tasks that are intended to process the same saved list of files.
 
 ## Adding files
 
@@ -42,4 +45,5 @@ Select one or more rows and click **Remove** to remove them from the scheduled i
 - The selected files must remain available in the vault.
 - The task host must have permission to access the selected files and their folders.
 - The task still uses the settings from the other setup pages, including **Options**, **Annotations**, and **Conditions**.
-- If the task runs without selected files and no scheduled items are configured, the task will stop with an error.
+- If this page contains files, those files are used even when the task is launched from a selected file in File Explorer.
+- If no files are selected at launch and no scheduled items are configured, the task will stop with an error.

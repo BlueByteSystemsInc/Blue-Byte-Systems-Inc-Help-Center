@@ -71,4 +71,4 @@ To create a new task with **PDMPublisher**:
 |[Options](../src/options.html)|Options define how files will be printed. See the options page for more details.|
 |[Annotations](../src/annotations.html)|Defines aliased notes that can contain text and datacard variables and define their locations in the drawing.|
 |[Conditions](../src/conditions.html)|Defines which files to include in the save queues when processing top-level assemblies.|
-|[Scheduled Items](../src/scheduleditems.html)|Defines which files should be processed when a scheduled task runs without selected files.|
+|[Scheduled Items](../src/scheduleditems.html)|Defines a saved list of files for the task to process. If this list contains files, it takes priority over files selected from the right-click Tasks menu.|
