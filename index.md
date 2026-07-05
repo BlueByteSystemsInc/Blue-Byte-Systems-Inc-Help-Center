@@ -6,10 +6,23 @@ description: Official documentation and support resources for Blue Byte Systems 
 
 <style>
 .bbs-page {
+  --bbs-surface: var(--bs-body-bg, #fff);
+  --bbs-surface-soft: #f4f9ff;
+  --bbs-border: #dde6ef;
+  --bbs-border-strong: #b7d4ef;
+  --bbs-text-muted: var(--bs-secondary-color, #5f6b7a);
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 24px 64px;
+}
+
+[data-bs-theme="dark"] .bbs-page {
+  --bbs-surface: #161b22;
+  --bbs-surface-soft: #102235;
+  --bbs-border: #2d3744;
+  --bbs-border-strong: #2f6fa9;
+  --bbs-text-muted: #b7c2d0;
 }
 
 .bbs-hero {
@@ -36,6 +49,7 @@ description: Official documentation and support resources for Blue Byte Systems 
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.65;
+  color: var(--bbs-text-muted);
 }
 
 .bbs-actions {
@@ -52,7 +66,7 @@ description: Official documentation and support resources for Blue Byte Systems 
   justify-content: center;
   min-height: 42px;
   padding: 9px 18px;
-  border: 1px solid #b7d4ef;
+  border: 1px solid var(--bbs-border-strong);
   border-radius: 6px;
   text-decoration: none !important;
   font-weight: 500;
@@ -83,9 +97,10 @@ description: Official documentation and support resources for Blue Byte Systems 
 .bbs-product {
   text-align: center;
   padding: 20px 18px;
-  border: 1px solid #dde6ef;
+  border: 1px solid var(--bbs-border);
   border-radius: 8px;
-  background: #fff;
+  background: var(--bbs-surface);
+  color: var(--bs-body-color);
 }
 
 .bbs-product h2 {
@@ -100,6 +115,7 @@ description: Official documentation and support resources for Blue Byte Systems 
   font-size: 14px;
   line-height: 1.55;
   margin: 0 0 14px;
+  color: var(--bbs-text-muted);
 }
 
 .bbs-product a {
@@ -112,9 +128,10 @@ description: Official documentation and support resources for Blue Byte Systems 
   margin: 0 auto 34px;
   padding: 22px 20px;
   text-align: center;
-  border: 1px solid #b7d4ef;
+  border: 1px solid var(--bbs-border-strong);
   border-radius: 8px;
-  background: #f4f9ff;
+  background: var(--bbs-surface-soft);
+  color: var(--bs-body-color);
 }
 
 .bbs-support h2 {
@@ -125,6 +142,7 @@ description: Official documentation and support resources for Blue Byte Systems 
 .bbs-support p {
   margin: 0 0 12px;
   line-height: 1.55;
+  color: var(--bbs-text-muted);
 }
 
 .bbs-support a {
@@ -140,6 +158,7 @@ description: Official documentation and support resources for Blue Byte Systems 
   font-size: 14px;
   font-weight: 500;
   margin: 0;
+  color: var(--bbs-text-muted);
 }
 
 .bbs-partner-badge {

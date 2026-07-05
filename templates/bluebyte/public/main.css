@@ -80,7 +80,8 @@ footer {
   margin-top: 48px;
   font-size: 14px;
   height: auto !important;
-  background: #f8fafc;
+  background: var(--bs-tertiary-bg, #f8fafc);
+  border-top: 1px solid var(--bs-border-color, #dee2e6);
 }
 
 footer > .container-xxl {
@@ -110,10 +111,11 @@ footer .flex-fill {
 }
 
 .bbs-highlight-panel {
-  border: 1px solid #9cc7f4;
+  border: 1px solid var(--bs-border-color, #9cc7f4);
   border-left: 5px solid #1f7ed0;
   border-radius: 8px;
-  background: #f4f9ff;
+  background: var(--bs-tertiary-bg, #f4f9ff);
+  color: var(--bs-body-color);
   padding: 18px 20px;
   margin: 18px 0 24px;
 }
@@ -145,10 +147,10 @@ footer .flex-fill {
 .bbs-activation-code {
   display: inline-block;
   padding: 8px 10px;
-  border: 1px solid #b7cce4;
+  border: 1px solid var(--bs-border-color, #b7cce4);
   border-radius: 6px;
-  background: #fff;
-  color: #16385f;
+  background: var(--bs-body-bg, #fff);
+  color: var(--bs-body-color, #16385f);
   font-size: 15px;
   font-weight: 600;
   overflow-wrap: anywhere;
