@@ -7,7 +7,7 @@
       <meta name="title" content="Updating Blue Byte Systems PDM add-ins with PDMDeploy | SOLIDWORKS PDM | Help Center ">
       
       <meta name="description" content="This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the PDMDeploy add-in.">
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/fav.png" alt="Help Center">
+            <img id="logo" class="svg" src="../images/bluebyte-mark.png" alt="Help Center">
             Help Center
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,24 +89,32 @@
 
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>CDPDM is now PDMDeploy. While screenshots and video tutorials are still referencing CDPDM, the changes in PDMDeploy are minimal.</p>
+<p>CDPDM is now PDMDeploy. Starting with PDMDeploy V31, the add-in features a redesigned dark interface and activation codes. Older screenshots and video tutorials referencing CDPDM show the previous interface.</p>
 </div>
 <h1 id="updating-blue-byte-systems-pdm-add-ins-with-pdmdeploy">Updating Blue Byte Systems PDM add-ins with PDMDeploy</h1>
 <p><video src="https://bluebyte.biz/wp-content/docsvideos/cdpdm.mp4" autoplay="" muted="" controls="" style="width: 100%; border-radius: 12px;"></video></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This video was recorded with an older version of PDMDeploy (CDPDM) and shows the previous interface. The workflow is the same. Refer to the screenshots below for the current interface (V31 and later).</p>
+</div>
 <p>This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue Byte Systems Inc using the PDMDeploy add-in. This tool streamlines the code delivery process for SOLIDWORKS PDM customers by utilizing the PDMDeploy continuous delivery platform. It allows you to access and update your purchased add-ins and all their versions efficiently.</p>
 <h3 id="installation-steps">Installation Steps:</h3>
+<div class="bbs-highlight-panel">
+<h3 id="download-pdmdeploy">Download PDMDeploy</h3>
+<p><a class="bbs-download-button" href="/pdmdeploy/PDMDeploy31.cex">Download PDMDeploy V31</a></p>
+<h3 id="public-activation-code">Public activation code</h3>
+<p><code class="bbs-activation-code">E2A50448-9F15-42D9-B2F3-290409E81F94</code></p>
+</div>
 <ol>
-<li><p>PDMDeploy is available in the downloads section of <a href="https://bluebyte.biz/account">your account</a>. It is an archive zip file and it contains <code>PDMDeploy.cex</code> and <code>CustomerConfigurationFile.cfg</code>. To install PDMDeploy after downloading it, please follow the instructions in <a href="/src/cdpdm.html">this article</a>.</p>
+<li><p>For our standard products, use the public activation code above. If we developed a custom solution for you, use the private activation code from your welcome email instead. To install PDMDeploy after downloading it, please follow the instructions in <a href="/src/cdpdm.html">this article</a>.</p>
 </li>
-<li><p>Unblock the downloaded file: Right-click on the zip archive and select Properties. In the properties dialog, check the Unblock option and click OK.</p>
+<li><p>Unblock the downloaded file: Right-click on <code>PDMDeploy.cex</code> and select Properties. In the properties dialog, check the Unblock option and click OK.</p>
 </li>
-<li><p>Unzip the archive: Extract the contents of the zip archive.</p>
-</li>
-<li><p>Open the administration tool: Log into your vault.</p>
+<li><p>Open the administration tool: Log into your vault with a PDM user that has the Edit Add-Ins permission.</p>
 </li>
 <li><p>Import the add-in:</p>
 <ul>
-<li><p>Go to File &gt; Open and browse to <code>PDMDeploy.cex</code> (unzipped content).</p>
+<li><p>Go to File &gt; Open and browse to <code>PDMDeploy.cex</code>.</p>
 </li>
 <li><p>Click OK to open the CEX file.</p>
 </li>
@@ -114,48 +122,50 @@
 </li>
 </ul>
 </li>
-<li><p>Upload the customer configuration file:</p>
+<li><p>Load your configuration:</p>
 <ul>
-<li><p>Locate the customer configuration file <code>CustomerConfigurationFile.cfg</code>.</p>
+<li>Right-click on the PDMDeploy add-in and click <em>Load Customer Configuration (Activation Code or File)...</em></li>
+</ul>
+<p><img src="/images/pdmdeploy31_menu.png" alt="PDMDeploy menu"></p>
+<ul>
+<li>Enter the activation code from your welcome email and click <em>Activate</em>.</li>
+</ul>
+<p><img src="/images/pdmdeploy31_loadconfig.png" alt="PDMDeploy load configuration"></p>
+<ul>
+<li><p>Alternatively, click <em>Browse for .cdg file...</em> if you received a Customer Configuration File instead. If the file was downloaded from the internet, unblock it first (right-click the file, Properties, check Unblock, OK).</p>
 </li>
-<li><p>If needed unblock the downloaded configuration file: Right-click on the file, select Properties, check the Unblock option, and click OK.</p>
-</li>
-<li><p>Right-click on the PDMDeploy add-in and click on Update customer configuration file...</p>
-</li>
-<li><p>Browse to the unblocked customer configuration file and upload it.</p>
-</li>
-<li><p>You will be prompted a message that reads &quot;Customer Configuration File Uploaded!&quot;</p>
+<li><p>You will be prompted with a message that reads &quot;Configuration loaded successfully!&quot;</p>
 </li>
 </ul>
 </li>
-<li><p>Right-click on PDMDeploy in the add-ins and click Update Add-ins...</p>
+<li><p>Right-click on PDMDeploy in the add-ins node and click <em>Update AddIns...</em></p>
 </li>
-<li><p>Confirm the dialog box that shows up.</p>
+<li><p>Check the add-in you want to install from the list, select the version you need from the Server version dropdown (the newest is preselected), and click <em>Install selected</em>.</p>
 </li>
-<li><p>Check the add-in you want to install from the list, select the version you need from the versions dropdown and click on Install Checked Add-ins...</p>
-</li>
-<li><p>Confirm subsequent dialog boxes to restart PDM and the adminsitration tool.</p>
+<li><p>Confirm subsequent dialog boxes to restart PDM and the administration tool.</p>
 </li>
 </ol>
 <h3 id="updating-an-add-in">Updating an Add-in:</h3>
 <ol>
-<li>Right-click on PDMDeploy add-in (under Add-ins in the Administration tool):</li>
+<li>Right-click on the PDMDeploy add-in (under Add-ins in the Administration tool) and click <em>Update AddIns...</em>:</li>
 </ol>
-<p><img src="/images/rightclickcdpdm.png" alt="rightclickcdpdm"></p>
+<p><img src="/images/pdmdeploy31_menu.png" alt="PDMDeploy menu"></p>
 <ol start="2">
-<li>Click on Update AddIns… and confirm this dialog box:</li>
+<li>The PDMDeploy window opens immediately, with no waiting dialog. The status bar at the bottom first reads your installed add-ins from the vault, then loads the available add-ins from the server:</li>
 </ol>
-<p><img src="/images/cdpdmpleasewait.png" alt="please wait"></p>
+<p><img src="/images/pdmdeploy31_manager.png" alt="PDMDeploy add-in manager"></p>
 <ol start="3">
-<li>The Add-in View Manager window will appear. This is where you can select from the dropdown list (and check the checkbox) the add-in you'd like to install:</li>
-</ol>
-<p><img src="/images/addinview.png" alt="addinview"></p>
-<ol start="4">
-<li><p>Click on the Install Checked Add-Ins... button to install the selected add-in. The process might take a few moments, so please wait.</p>
+<li><p>The Status column shows where you stand for each add-in: <em>Not installed</em>, <em>Update available</em>, or <em>Up to date</em>. The Server version dropdown preselects the newest version. Pick an older one only if instructed by support.</p>
+</li>
+<li><p>Check the add-in(s) to update (the header checkbox selects all) and click <em>Install selected</em>. The status bar shows which add-in is being downloaded and installed. The process might take a few moments.</p>
 </li>
 <li><p>You will be prompted at the end to restart your PDM session. This allows your local client to get the new version of the installed add-in. <em>This is optional</em> but highly recommended for tasks that are triggered from File Explorer.</p>
 </li>
 </ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If PDMDeploy has not been configured yet, the window shows an activation panel instead of the add-in list. Enter your activation code or browse to your <code>.cdg</code> file right there.</p>
+</div>
 <h3 id="warnings">Warnings</h3>
 <div class="WARNING">
 <h5>Warning</h5>
@@ -187,7 +197,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Built by Blue Byte Systems.</span>
+          <div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. All rights reserved.</div>
         </div>
       </div>
     </footer>

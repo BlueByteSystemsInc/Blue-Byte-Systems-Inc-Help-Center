@@ -1,3 +1,8 @@
+# Safety net: ensure the custom CSS overrides land in the build output
+# (some docfx versions do not merge extra template folders reliably).
+Copy-Item -Path "templates\bluebyte\public\main.css" -Destination "docs\public\main.css" -Force
+Write-Host "Custom main.css copied into docs/public."
+
 # Path to your HTML file
 $filePath = "docs\index.html"
 
@@ -16,7 +21,7 @@ $tagsToInsert = @"
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Blue Byte Systems Docs – PDMPublisher & PDM2Excel" />
+    <meta name="twitter:title" content="Blue Byte Systems Docs - PDMPublisher & PDM2Excel" />
     <meta name="twitter:description" content="Official documentation and usage guides for Blue Byte Systems Inc. products PDMPublisher and PDM2Excel." />
     <meta name="twitter:image" content="https://docs.bluebyte.biz/images/logo.png" />
 

@@ -7,7 +7,7 @@
       <meta name="title" content="PDMDeploy Change Log | Feature Updates, Enhancements &amp; Fixes | Help Center ">
       
       <meta name="description" content="View the PDMDeploy change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.">
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -44,7 +44,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../images/fav.png" alt="Help Center">
+            <img id="logo" class="svg" src="../images/bluebyte-mark.png" alt="Help Center">
             Help Center
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,6 +87,29 @@
         <article data-uid="">
 <h1 id="pdmdeploy-change-log">PDMDeploy Change Log</h1>
 
+<h2 id="31">31</h2>
+<p><em>Redesigned interface and activation codes</em></p>
+<ul>
+<li>New dark interface across the add-in manager, the configuration dialog, and the settings window.</li>
+<li>Activation codes: configure PDMDeploy by typing the code from your welcome email, with no more emailing configuration files around. The <code>.cdg</code> Customer Configuration File remains fully supported as a fallback. The menu command is now called <em>Load Customer Configuration (Activation Code or File)...</em></li>
+<li>Add-in manager improvements:
+<ul>
+<li>The window opens instantly and loads in the background. The blocking &quot;Please wait&quot; dialog is gone. A status bar shows live progress (reading installed add-ins, then loading from the server).</li>
+<li>New Status column: <em>Not installed</em>, <em>Update available</em>, or <em>Up to date</em> at a glance.</li>
+<li>The newest server version is preselected for each add-in.</li>
+<li>Single-click checkboxes and a select-all checkbox in the header.</li>
+<li>First-run experience: if PDMDeploy is not configured, the window shows the activation panel directly instead of an empty list.</li>
+<li>Window title shows the PDMDeploy version and the vault name.</li>
+</ul>
+</li>
+<li>Reliability fixes:
+<ul>
+<li>Clear error messages instead of silent failures when loading configurations or contacting the server.</li>
+<li>Add-in COM registration failures are now detected and reported (previously they could fail silently), and registration uses the correct 64-bit framework.</li>
+<li>The installed-version column updates immediately after an install.</li>
+</ul>
+</li>
+</ul>
 <h2 id="30">30</h2>
 <p><em>CDPDM Add-in is now PDMDeploy</em></p>
 <ul>
@@ -114,7 +137,7 @@
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Built by Blue Byte Systems.</span>
+          <div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. All rights reserved.</div>
         </div>
       </div>
     </footer>

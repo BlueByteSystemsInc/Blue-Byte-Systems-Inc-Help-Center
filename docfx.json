@@ -1,6 +1,6 @@
-﻿{
+{
   "build": {
-     "markdownEngineProperties": {
+    "markdownEngineProperties": {
       "alerts": {
         "Did You Know?": "alert alert-success"
       }
@@ -18,7 +18,8 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "pdmdeploy/**"
         ]
       }
     ],
@@ -30,13 +31,15 @@
     "output": "docs",
     "template": [
       "default",
-      "modern"
+      "modern",
+      "templates/bluebyte"
     ],
     "globalMetadata": {
       "_appName": "Help Center",
       "_appTitle": "Help Center",
-      "_appFooter": "<span><a href='https://bluebyte.biz'>Blue Byte Systems Inc</a>. Built by Blue Byte Systems.</span>",
-      "_appLogoPath": "images/fav.png",
+      "_appFooter": "<div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. All rights reserved.</div>",
+      "_appLogoPath": "images/bluebyte-mark.png",
+      "_appFaviconPath": "images/bluebyte-mark.png",
       "_enableSearch": true,
       "pdf": false
     }

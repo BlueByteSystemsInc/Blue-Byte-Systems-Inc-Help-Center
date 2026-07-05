@@ -4,7 +4,7 @@
     "changefreq": "weekly",
     "priority": 1.0
   },
-  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/docs/Blue-Byte-Systems-Inc-Help-Center",
+  "source_base_path": "C:/Users/jlili/source/repos/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -351,6 +351,26 @@
       "output": {
         "resource": {
           "relative_path": "images/blocked.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bluebyte-b.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bluebyte-b.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bluebyte-mark.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/bluebyte-mark.png"
         }
       },
       "version": ""
@@ -897,6 +917,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmdeploy31_loadconfig.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmdeploy31_loadconfig.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmdeploy31_manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmdeploy31_manager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmdeploy31_menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmdeploy31_menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmicontry.png",
       "output": {
         "resource": {
@@ -1311,6 +1361,16 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "pdmdeploy/PDMDeploy31.cex",
+      "output": {
+        "resource": {
+          "relative_path": "pdmdeploy/PDMDeploy31.cex"
         }
       },
       "version": ""
