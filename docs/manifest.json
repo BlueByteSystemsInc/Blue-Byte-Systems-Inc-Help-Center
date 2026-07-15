@@ -1367,20 +1367,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "pdmdeploy/PDMDeploy31.cex",
+      "source_relative_path": "pdmdeploy/PDMDeploy.cex",
       "output": {
         "resource": {
-          "relative_path": "pdmdeploy/PDMDeploy31.cex"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "pdmdeploy/PDMDeploy34.cex",
-      "output": {
-        "resource": {
-          "relative_path": "pdmdeploy/PDMDeploy34.cex"
+          "relative_path": "pdmdeploy/PDMDeploy.cex"
         }
       },
       "version": ""
