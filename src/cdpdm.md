@@ -37,7 +37,7 @@ PDMDeploy is publicly available:
 
 ### Download PDMDeploy
 
-<a class="bbs-download-button" href="/pdmdeploy/PDMDeploy34.cex">Download PDMDeploy</a>
+<a class="bbs-download-button" href="/pdmdeploy/PDMDeploy.cex">Download PDMDeploy</a>
 
 ### Public activation code
 
