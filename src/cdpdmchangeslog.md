@@ -7,6 +7,9 @@ ms.topic: conceptual
 
 # PDMDeploy Change Log
 
+## 34
+- Fixed bug related to registry nodes permissions.
+
 ## 31
 *Redesigned interface and activation codes*
 

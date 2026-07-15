@@ -1376,6 +1376,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "pdmdeploy/PDMDeploy34.cex",
+      "output": {
+        "resource": {
+          "relative_path": "pdmdeploy/PDMDeploy34.cex"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "src/PDMReminder.md",
       "output": {
