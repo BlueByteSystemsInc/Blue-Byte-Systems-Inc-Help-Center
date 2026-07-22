@@ -13,6 +13,11 @@ Versions are identified by their compile date, which represents the build date o
 > [!TIP]
 > If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
+## 2026.0718
+*Applies to **PDM Task***
+- Fixed issue related to PDM failing to add files during check-in (E_EDM_FILE_SHARE_ERROR: HResult 0x8004020B) 
+- Fixed issue related to creating TOC table when the character '#' is used.
+
 ## 2026.06.21
 *Applies to **PDM Task***
 - Added an interactive task launch file selection dialog for tasks that ask users to specify files at launch.
