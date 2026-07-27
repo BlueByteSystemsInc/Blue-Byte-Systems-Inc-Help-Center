@@ -13,7 +13,10 @@ Versions are identified by their compile date, which represents the build date o
 > [!TIP]
 > If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
-## 2026.0718
+## 2026.07.27
+*Applies to **PDM Task***
+- Added (FolderName) for as a condition. 
+## 2026.07.18
 *Applies to **PDM Task***
 - Fixed issue related to PDM failing to add files during check-in (E_EDM_FILE_SHARE_ERROR: HResult 0x8004020B) 
 - Fixed issue related to creating TOC table when the character '#' is used.
