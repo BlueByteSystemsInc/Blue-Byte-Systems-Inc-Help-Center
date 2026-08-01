@@ -40,6 +40,9 @@ PDMPublisher now supports **nested condition groups**, allowing you to create mo
 These built-in entries appear at the top of the variable list:
 
 - **FileName**: File name (e.g. `123456.SLDDRW`)
+- **FilePath**: Complete file path (e.g. `C:\Vault\Project\123456.SLDDRW`)
+- **FolderName**: Name of the folder (e.g. `Project`)
+- **FolderPath**: Complete folder path
 - **Revision**: Current revision cached
 - **Version**: Current version cached
 - **Workflow**: Workflow name of the file

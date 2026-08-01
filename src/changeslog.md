@@ -13,6 +13,10 @@ Versions are identified by their compile date, which represents the build date o
 > [!TIP]
 > If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
+## 2026.01.28
+*Applies to **PDM Task***
+- Fixed bug when creating new tasks. 
+
 ## 2026.07.27
 *Applies to **PDM Task***
 - Added (FolderName) for as a condition. 
