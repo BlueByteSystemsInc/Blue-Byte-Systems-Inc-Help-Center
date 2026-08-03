@@ -11,12 +11,19 @@ This page tracks all changes, fixes, improvements, and new features introduced i
 Versions are identified by their compile date, which represents the build date of the released version. Each entry may include updates such as new functionality, bug fixes, performance improvements, compatibility updates, configuration changes, and known behavior changes.
 
 > [!TIP]
-> If you use PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+> If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.03
+*Applies to **PDM Task***
+- Improve path normalization, cleanup temp folder.
+- Better UNC path handling.
+- Add logic to delete temporary folder after successful task run, with error handling and warning message on failure.
+
 
 ## 2026.08.02
 ## 2026.08.01
 *Applies to **PDM Task***
-- Fixed bug when creating new tasks. 
+- Fixed bug when creating new tasks (Empty .net framework error dialog)
 
 ## 2026.07.27
 *Applies to **PDM Task***
