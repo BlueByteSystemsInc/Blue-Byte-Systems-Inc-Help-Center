@@ -209,6 +209,11 @@
     "title": "Special and Dynamic Variables | PDMPublisher | SOLIDWORKS PDM | Help Center",
     "keywords": "Special/Dynamic Variables With PDM Publisher, special/dynamic variable allow you to create advanced custom paths when printing PDFs. This quick demo showcases how you can make use of this powerful feature. Note Special or dynamic variables are also used in our other product PDM2Excel."
   },
+  "src/pdmpublishertrial.html": {
+    "href": "src/pdmpublishertrial.html",
+    "title": "Request a Trial License | PDMPublisher | Help Center",
+    "keywords": "Request a PDMPublisher trial license You can request a free trial of PDMPublisher for SOLIDWORKS PDM Professional from the Blue Byte Systems online store. Note PDMPublisher requires SOLIDWORKS 2018 or later and SOLIDWORKS PDM Professional 2018 or later. Request your trial Open the PDMPublisher trial page. Review the product requirements and select the number of seats that best represents your team. The displayed seat pricing is for reference only; your trial request is free. Select Add to cart. Open your cart and proceed to checkout. Enter the requested contact and company information, then submit the order. The total due for the trial should be US$0.00. Follow the instructions in the confirmation email to install PDMPublisher and activate the trial license. Important Before submitting the order, confirm that the checkout total is US$0.00 and that the product is identified as PDMPublisher (Trial). After you receive your trial license Install PDMPublisher with PDMDeploy, or use the installation instructions included in your confirmation email. Activate the license. Set up your first PDMPublisher task. If you do not receive the confirmation email or need help with your request, contact Blue Byte Systems or email support@bluebytesystemsinc.zohodesk.com."
+  },
   "src/pdmqa.html": {
     "href": "src/pdmqa.html",
     "title": "Troubleshooting Blocked Files in Windows | SOLIDWORKS PDM | Help Center",

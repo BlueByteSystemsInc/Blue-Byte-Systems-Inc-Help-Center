@@ -1777,6 +1777,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishertrial.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishertrial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmqa.md",
       "output": {
         ".html": {
