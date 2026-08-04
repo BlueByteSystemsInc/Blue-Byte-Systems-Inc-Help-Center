@@ -1,7 +1,7 @@
 ﻿---
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: This page explains all task setup page options in PDMPublisher that are available in SOLIDWORKS PDM.
-ms.date: 06/19/2026
+ms.date: 08/04/2026
 ms.topic: conceptual
 ---
 
@@ -116,6 +116,22 @@ Opens the dialog used to configure the flat pattern DXF export options.
 #### Use search to locate drawings
 
 Searches the vault for the first drawing that references the affected document when a matching drawing cannot be found in the same folder.
+
+---
+
+### Drawing Sheets
+
+The **Drawing Sheets** section controls which sheets PDMPublisher exports from a SOLIDWORKS drawing.
+
+![Drawing Sheets mode selection](../images/pdmpublisher_drawing_sheets.png)
+
+#### Sheets to export
+
+Selects the sheet export mode. Choose **All sheets** to export every sheet in the drawing. When you select a mode that filters sheets by name, use **Sheet name pattern** to define which sheets are included.
+
+#### Sheet name pattern
+
+Defines the sheet-name pattern used by the selected export mode. Select **>...** to build the pattern with task variables. The evaluated value shown below the field lets you verify the resulting pattern before saving the task.
 
 ---
 

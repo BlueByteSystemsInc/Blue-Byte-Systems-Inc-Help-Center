@@ -957,6 +957,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_drawing_sheets.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_drawing_sheets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher_logo.png",
       "output": {
         "resource": {

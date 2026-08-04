@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 06/21/2026
+ms.date: 08/04/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,11 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.04
+*Applies to **PDM Task***
+- Added a drawing sheet mode selector to control which sheets are exported.
+- Added a sheet name pattern field for export modes that filter drawing sheets by name.
 
 ## 2026.08.03
 *Applies to **PDM Task***
