@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Export Location | PDMPublisher Options | Help Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Export Location | PDMPublisher Options | Help Center ">
+      
+      <meta name="description" content="Configure where PDMPublisher writes exported files.">
+      <link rel="icon" href="../../images/bluebyte-mark.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/export-location.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/bluebyte-mark.png" alt="Help Center">
+            Help Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="bbs-content-trials d-print-none" aria-label="Trial requests">
+          <div class="bbs-content-trials-copy">
+            <span class="bbs-content-trials-icon" aria-hidden="true">
+              <i class="bi bi-calendar3"></i>
+              <i class="bi bi-key-fill bbs-content-trials-key"></i>
+            </span>
+            <img class="bbs-content-trials-logo" src="../../images/large_logo.png" alt="Blue Byte Systems Inc.">
+            <span class="bbs-content-trials-text">
+              <span class="bbs-content-trials-title">Get a 7-day trial</span>
+              <span class="bbs-content-trials-note">No commitment or credit card required. Professional email required.</span>
+            </span>
+          </div>
+          <div class="bbs-content-trials-actions">
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmshell-trial/">
+              <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
+              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="export-location">Export Location</h1>
+
+<p><img src="/images/pdmpublisher/screenshots/options-013-property-export-location.png" alt="Export Location setting"></p>
+<p>Sets the folder where PDMPublisher writes generated files. The export location can point to a folder inside the vault, a relative path, a UNC/server path, or a folder outside the vault.</p>
+<h2 id="path-types">Path Types</h2>
+<p>PDMPublisher accepts several path styles:</p>
+<table>
+<thead>
+<tr>
+<th>Path type</th>
+<th>Example</th>
+<th>Use when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vault path</td>
+<td><code>(VaultRootFolder)\Released PDFs</code></td>
+<td>The exported files should be added back to the vault. Use the <code>VaultRootFolder</code> placeholder from the <code>&gt;...</code> menu.</td>
+</tr>
+<tr>
+<td>Relative path</td>
+<td><code>Exports\PDF</code></td>
+<td>The destination should be based on the source file or task working context.</td>
+</tr>
+<tr>
+<td>UNC/server path</td>
+<td><code>\\server\engineering\exports</code></td>
+<td>The output should be written to a shared network location.</td>
+</tr>
+<tr>
+<td>Outside the vault</td>
+<td><code>D:\Exports\PDMPublisher</code></td>
+<td>The exported files should stay outside PDM.</td>
+</tr>
+</tbody>
+</table>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If the location is inside the vault, the task user must have permission to create, check out, check in, and overwrite files in that folder.</p>
+</div>
+<p>If the export folder does not exist, PDMPublisher creates it before saving the exported file.</p>
+<p><code>(VaultRootFolder)</code> is the preferred way to build a vault path because it resolves to the local vault root on the task machine.</p>
+<h2 id="browse-button">Browse Button</h2>
+<p>The browse button simply lets you select a static folder location and writes that folder path into <strong>Export Location</strong>.</p>
+<p>Use it when the task should always export to the same fixed folder. If the path needs to change based on the file, revision, state, or folder, use placeholders from the <code>&gt;...</code> menu instead.</p>
+<h2 id="placeholders">Placeholders</h2>
+<p>The blue entries in the export location field are placeholders. A placeholder is a dynamic value that PDMPublisher resolves at run time.</p>
+<p>For example:</p>
+<p><code>(TopAssemblyFolder)\Exports\(State)\(Revision)</code></p>
+<p>If the top assembly is in:</p>
+<p><code>C:\PDMVault\Projects\1001</code></p>
+<p>and the file state is <code>Released</code> with revision <code>B</code>, PDMPublisher resolves the export location to:</p>
+<p><code>C:\PDMVault\Projects\1001\Exports\Released\B</code></p>
+<p><code>(TopAssemblyFolder)</code> means the folder of the top-level file being processed. If the task is run on a single part or a single drawing instead of an assembly, PDMPublisher uses that part or drawing folder as the top folder.</p>
+<p>For example, if the task is run on:</p>
+<p><code>C:\PDMVault\Projects\1001\Bracket.SLDPRT</code></p>
+<p>then:</p>
+<p><code>(TopAssemblyFolder)\Exports</code></p>
+<p>resolves to:</p>
+<p><code>C:\PDMVault\Projects\1001\Exports</code></p>
+<p>Placeholders are useful when the same task must write files to different folders depending on the file being processed. You can use them to include values such as the source folder, file name, revision, state, workflow, configuration, or other PDM/SOLIDWORKS variables exposed by the placeholder menu.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Use placeholders for repeatable task setups. Hard-coded paths are fine for one fixed export folder, but placeholders make the task adapt to each source file.</p>
+</div>
+<p>If the path uses variables stored on the file's <code>@</code> tab, see <a href="use-at-tab-to-evaluate-paths.html">Use @ Tab to Evaluate Paths</a>.</p>
+<h2 id="extension-specific-locations">Extension-Specific Locations</h2>
+<p>Use <strong>Customize Location</strong> when different file formats need different output folders.</p>
+<p><img src="/images/pdmpublisher/screenshots/options-dialog-extension-specific-location.png" alt="Extension-specific export location dialog"></p>
+<p>When an extension-specific location is enabled for a file format, it overrides the main <strong>Export Location</strong> for that format only.</p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Main Export Location</th>
+<th>Extension-specific location</th>
+<th>Final output folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PDF</td>
+<td><code>C:\PDMVault\Exports</code></td>
+<td><code>C:\PDMVault\Exports\PDF</code></td>
+<td><code>C:\PDMVault\Exports\PDF</code></td>
+</tr>
+<tr>
+<td>DXF</td>
+<td><code>C:\PDMVault\Exports</code></td>
+<td><code>\\server\laser\DXF</code></td>
+<td><code>\\server\laser\DXF</code></td>
+</tr>
+<tr>
+<td>STEP</td>
+<td><code>C:\PDMVault\Exports</code></td>
+<td>Not enabled</td>
+<td><code>C:\PDMVault\Exports</code></td>
+</tr>
+</tbody>
+</table>
+<p>Only checked/enabled formats use their custom location. Any format without an extension-specific override continues to use the main <strong>Export Location</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When activity tracking is enabled, the task log records that PDMPublisher is using a customized path for formats that have an extension-specific location enabled. This helps confirm which path was selected on the machine that launched the task.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Do not end the export location or extension-specific location with a trailing backslash.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/export-location.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

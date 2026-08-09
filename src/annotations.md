@@ -1,75 +1,28 @@
-﻿---
-title: Annotations Setup Page | PDMPublisher | SOLIDWORKS PDM
-description: Learn how to add annotations and watermarks to converted PDF documents in the PDMPublisher task setup page.
-ms.date: 06/19/2026
+---
+title: Annotations Task Page | PDMPublisher | SOLIDWORKS PDM
+description: Add notes, watermarks, and sheet-specific text to exported PDF documents.
+ms.date: 08/09/2026
 ms.topic: how-to
 ---
 
-# Annotations Setup Page
+# Annotations Task Page
 
-Notes can be added to converted PDF documents via this the ***Annotations*** setup page.
+Use the Annotations task page to add text notes or watermarks to exported PDF documents.
 
+![PDMPublisher Annotations page](/images/pdmpublisher/screenshots/task-setup-annotations.png)
 
-This section provides an overview of the **Annotations tab** and explains the available options for customizing exported annotations.
+Each annotation can have its own text, formatting, position, sheet rule, and active state.
 
----
+The annotation table is the large workspace below the toolbar. It shows the annotations configured for the task and lets you select which annotation you are editing.
 
-## Creating Custom Annotations and/or Watermarks
+## Annotation Settings
 
- - Select the  **"A"** button (Add annotation) in the top right corner. A new annotation box will appear in the window below.
-
-![Adding an Annotation](/images/TaskAnnotations1.png)
-
----
-## Adding Annotation Text
- - From the newly created annotation box, you can enter custom text and/or link the annotation to variables already setup in the vault environment.
-
-> [!NOTE]
-> The list of SOLIDWORKS variables available for use in the annotation is determined by the variables setup within SOLIDWORKS PDM.
-
-![Adding an Annotation](/images/TaskAnnotations2.png)
-
----
-## Formating the Annotation Text
-- Once the annotation text is added, you can adjust its formatting, including font, size, bold, or italicize.
-
-> [!NOTE]
->Each annotation can use a different font type and size, and they can be controlled independently. The active annotation being edited is highlighted with a blue shadow for easy identification.
-
-![Adding an Annotation](/images/TaskAnnotations3.png)
-
----
-
-## Watermarks
-
-- Selecting the **Watermark** checkbox will rotate the active annotation 45 degrees during publishing. The text will also be made semi-transparent to avoid obscuring the content of the published file.
-
-![Watermark Example](/images/WaterMark1.png)
-
----
-
-## Active Checkbox
-- The **Active** checkbox determines whether the selected annotation will be included in the published output.
-> [!NOTE]
->New annotations are active by default.
-
----
-
-## Annotation Position
-
-- Each annotation can be repositioned manually by clicking and dragging from its bottom-left corner to the desired location.
-- Alternately, Each annotation can be set using the X and Y coordinates. X is a percentage relative to the width and Y is a percentage relative to the height of the sheet.
-
-![Adding an Annotation](/images/AddingAnnotations4.png)
-
----
-
-## Sheets
-
- - **Sheets** specifies which page where the annotation(s) will be placed on multiple page drawings. Each annotation is individually controlled by the **Sheets** feature.
-
-![Sheets Options](/images/AnnotationSheets1.png)
-
-
-
-
+| Setting | Summary | Details |
+|---|---|---|
+| Add Annotation | Create a new annotation box. | [Open](pdmpublisher-annotations/add-annotation.md) |
+| Annotation Text | Enter fixed text or use PDM variables. | [Open](pdmpublisher-annotations/annotation-text.md) |
+| Text Formatting | Set font, size, and text style. | [Open](pdmpublisher-annotations/text-formatting.md) |
+| Watermark | Rotate and fade an annotation for watermark-style output. | [Open](pdmpublisher-annotations/watermark.md) |
+| Active | Include or skip an annotation without deleting it. | [Open](pdmpublisher-annotations/active.md) |
+| Position | Move the annotation or set X/Y percentages. | [Open](pdmpublisher-annotations/position.md) |
+| Sheets | Choose which drawing sheets receive the annotation. | [Open](pdmpublisher-annotations/sheets.md) |

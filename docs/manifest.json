@@ -957,10 +957,1090 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/ask-user-specify-configuration-dialog.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/ask-user-specify-configuration-dialog.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/ask-user-specify-files-dialog.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/ask-user-specify-files-dialog.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/conditions-(2)-000-condition-conditionleaf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/conditions-(2)-000-condition-conditionleaf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/conditions-(2)-001-condition-conditionsviewmodel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/conditions-(2)-001-condition-conditionsviewmodel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/conditions-(2)-002-condition-root-.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/conditions-(2)-002-condition-root-.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/conditions-(2)-dropdown-000-condition-placeholder-values.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/conditions-(2)-dropdown-000-condition-placeholder-values.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/conditions-(2)-dropdown-001-condition-type-values.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/conditions-(2)-dropdown-001-condition-type-values.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-000-feature-❌.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-000-feature-❌.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-001-feature-border.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-001-feature-border.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-002-feature-export....png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-002-feature-export....png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-003-feature-import....png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-003-feature-import....png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-004-feature-🗖-popout-in-separate-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-004-feature-🗖-popout-in-separate-window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-004-property-add-table-of-content-to-merged-pdf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-004-property-add-table-of-content-to-merged-pdf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-005-property-add-table-of-content-to-merged-pdf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-005-property-add-table-of-content-to-merged-pdf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-005-property-archive-all-exported-documents-(.zip).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-005-property-archive-all-exported-documents-(.zip).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-006-property-archive-all-exported-documents-(.zip).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-006-property-archive-all-exported-documents-(.zip).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-006-property-ask-user-to-select-configuration-on-startup.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-006-property-ask-user-to-select-configuration-on-startup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-007-property-ask-user-to-select-configuration-on-startup.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-007-property-ask-user-to-select-configuration-on-startup.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-007-property-ask-user-to-specify-files-on-task-launch.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-007-property-ask-user-to-specify-files-on-task-launch.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-008-property-ask-user-to-specify-files-on-task-launch.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-008-property-ask-user-to-specify-files-on-task-launch.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-008-property-calculation-method.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-008-property-calculation-method.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-009-property-calculation-method.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-009-property-calculation-method.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-009-property-convert-multiple-configurations.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-009-property-convert-multiple-configurations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-010-property-convert-multiple-configurations.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-010-property-convert-multiple-configurations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-010-property-create-reference-from-dest-file-to-source-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-010-property-create-reference-from-dest-file-to-source-file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-011-property-create-reference-from-dest-file-to-source-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-011-property-create-reference-from-dest-file-to-source-file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-011-property-delete-duplicates-outside-the-destination-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-011-property-delete-duplicates-outside-the-destination-folder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-012-property-delete-duplicates-outside-the-destination-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-012-property-delete-duplicates-outside-the-destination-folder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-012-property-export-affected-document.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-012-property-export-affected-document.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-013-property-export-affected-document.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-013-property-export-affected-document.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-013-property-export-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-013-property-export-location.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-014-property-export-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-014-property-export-location.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-014-property-export-references-to-file-formats-individually.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-014-property-export-references-to-file-formats-individually.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-015-property-export-references-to-file-formats-individually.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-015-property-export-references-to-file-formats-individually.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-015-property-export-sheet-metal-parts-to-1-1-flat-pattern-dxf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-015-property-export-sheet-metal-parts-to-1-1-flat-pattern-dxf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-016-property-export-sheet-metal-parts-to-1-1-flat-pattern-dxf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-016-property-export-sheet-metal-parts-to-1-1-flat-pattern-dxf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-016-property-file-formats.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-016-property-file-formats.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-017-property-file-formats.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-017-property-file-formats.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-017-property-filename.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-017-property-filename.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-018-property-filename.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-018-property-filename.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-018-property-hide-task-in-file-explorer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-018-property-hide-task-in-file-explorer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-019-property-hide-task-in-file-explorer.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-019-property-hide-task-in-file-explorer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-019-property-ignore-sub-assemblies-children-when-condition-checks-fail.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-019-property-ignore-sub-assemblies-children-when-condition-checks-fail.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-020-property-ignore-sub-assemblies-children-when-condition-checks-fail.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-020-property-ignore-sub-assemblies-children-when-condition-checks-fail.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-020-property-log-folder-(vault-only).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-020-property-log-folder-(vault-only).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-021-property-log-folder-(vault-only).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-021-property-log-folder-(vault-only).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-021-property-map-variables-between-source-and-destination-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-021-property-map-variables-between-source-and-destination-file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-022-property-map-variables-between-source-and-destination-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-022-property-map-variables-between-source-and-destination-file.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-022-property-merge-exported-pdfs-into-one-master-pdf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-022-property-merge-exported-pdfs-into-one-master-pdf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-023-property-merge-exported-pdfs-into-one-master-pdf.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-023-property-merge-exported-pdfs-into-one-master-pdf.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-023-property-pdf-bookmarks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-023-property-pdf-bookmarks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-024-property-pdf-bookmarks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-024-property-pdf-bookmarks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-024-property-quick-view-mode-(drawings-only).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-024-property-quick-view-mode-(drawings-only).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-025-property-quick-view-mode-(drawings-only).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-025-property-quick-view-mode-(drawings-only).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-025-property-server-synced-activity-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-025-property-server-synced-activity-logs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-026-property-server-synced-activity-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-026-property-server-synced-activity-logs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-026-property-sheet-name-pattern.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-026-property-sheet-name-pattern.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-027-property-sheet-name-pattern.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-027-property-sheet-name-pattern.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-027-property-sheets-to-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-027-property-sheets-to-export.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-028-property-sheets-to-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-028-property-sheets-to-export.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-028-property-split-bodies.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-028-property-split-bodies.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-029-property-split-bodies.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-029-property-split-bodies.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-029-property-table-columns.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-029-property-table-columns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-030-property-table-columns.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-030-property-table-columns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-030-property-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-030-property-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-031-property-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-031-property-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-031-property-turn-on-activity-tracking.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-031-property-turn-on-activity-tracking.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-032-property-turn-on-activity-tracking.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-032-property-turn-on-activity-tracking.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-032-property-use-@-tab-to-evaluate-paths..png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-032-property-use-@-tab-to-evaluate-paths..png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-033-property-use-@-tab-to-evaluate-paths..png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-033-property-use-@-tab-to-evaluate-paths..png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-033-property-use-microsoft-print-to-pdf-to-save-pdfs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-033-property-use-microsoft-print-to-pdf-to-save-pdfs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-034-property-use-microsoft-print-to-pdf-to-save-pdfs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-034-property-use-microsoft-print-to-pdf-to-save-pdfs.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-034-property-use-search-to-locate-drawings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-034-property-use-search-to-locate-drawings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-035-property-use-search-to-locate-drawings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-035-property-use-search-to-locate-drawings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-035-property-use-this-version-of-solidworks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-035-property-use-this-version-of-solidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-036-property-use-this-version-of-solidworks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-036-property-use-this-version-of-solidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-036-property-work-with-latest-version.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-036-property-work-with-latest-version.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-037-property-work-with-latest-version.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-037-property-work-with-latest-version.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-button-convert-multiple-configurations-configuration-filter-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-button-convert-multiple-configurations-configuration-filter-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-button-map-variables-variable-mapping-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-button-map-variables-variable-mapping-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-button-table-columns-customize-table-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-button-table-columns-customize-table-button.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-buttonmenu-000-pdf-bookmarks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-buttonmenu-000-pdf-bookmarks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dialog-configuration-filter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dialog-configuration-filter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dialog-custom-toc-table.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dialog-custom-toc-table.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dialog-extension-specific-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dialog-extension-specific-location.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dialog-flat-pattern-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dialog-flat-pattern-settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dialog-variable-mapping.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dialog-variable-mapping.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dropdown-001-sheets-to-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dropdown-001-sheets-to-export.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dropdown-002-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dropdown-002-template.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dropdown-003-calculation-method.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dropdown-003-calculation-method.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dropdown-004-table-columns.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dropdown-004-table-columns.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-dropdown-005-use-this-version-of-solidworks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-dropdown-005-use-this-version-of-solidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/page-annotations.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/page-annotations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/page-conditions-(2).png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/page-conditions-(2).png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/page-options.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/page-options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/page-scheduled-items.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/page-scheduled-items.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/scheduled-items-000-add.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/scheduled-items-000-add.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/scheduled-items-001-remove.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/scheduled-items-001-remove.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/scheduled-items-002-grid.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/scheduled-items-002-grid.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-addin.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-addin.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-annotations.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-annotations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-conditions.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-conditions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-execution-method.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-execution-method.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-options.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-scheduled-items.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-scheduled-items.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/task-setup-scheduling.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/task-setup-scheduling.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher_drawing_sheets.png",
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher_drawing_sheets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher_license_manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher_license_manager.png"
         }
       },
       "version": ""
@@ -1671,6 +2751,466 @@
       "output": {
         ".html": {
           "relative_path": "src/pdm2excelworkflow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/active.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/active.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/add-annotation.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/add-annotation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/annotation-text.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/annotation-text.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/position.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/position.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/sheets.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/sheets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/text-formatting.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/text-formatting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/watermark.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/watermark.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-conditions/add-conditions-and-groups.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-conditions/add-conditions-and-groups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-conditions/condition-fields.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-conditions/condition-fields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-conditions/condition-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-conditions/condition-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-conditions/evaluation-rules.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-conditions/evaluation-rules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-conditions/special-variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-conditions/special-variables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/add-table-of-content-to-merged-pdf.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/add-table-of-content-to-merged-pdf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/archive-all-exported-documents.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/archive-all-exported-documents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/ask-user-to-select-configuration-on-startup.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/ask-user-to-select-configuration-on-startup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/ask-user-to-specify-files-on-task-launch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/calculation-method.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/calculation-method.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/convert-multiple-configurations.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/convert-multiple-configurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/create-reference-from-destination-file-to-source-file.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/create-reference-from-destination-file-to-source-file.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/delete-duplicates-outside-destination-folder.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/delete-duplicates-outside-destination-folder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/export-active-document.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/export-active-document.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/export-location.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/export-location.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/export-references-individually.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/export-references-individually.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/file-formats.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/file-formats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/filename.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/filename.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/hide-task-in-file-explorer.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/hide-task-in-file-explorer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/log-folder-vault-only.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/log-folder-vault-only.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/map-variables-between-source-and-destination-file.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/map-variables-between-source-and-destination-file.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/merge-exported-pdfs.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/merge-exported-pdfs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/pdf-bookmarks.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/pdf-bookmarks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/quick-view-mode.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/quick-view-mode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/server-synced-activity-logs.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/server-synced-activity-logs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/sheet-name-pattern.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/sheet-name-pattern.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/sheets-to-export.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/sheets-to-export.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/split-bodies.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/split-bodies.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/table-columns.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/table-columns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/template.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/turn-on-activity-tracking.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/turn-on-activity-tracking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/use-at-tab-to-evaluate-paths.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/use-at-tab-to-evaluate-paths.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/use-microsoft-print-to-pdf.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/use-microsoft-print-to-pdf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/use-pdm-search-to-locate-drawings.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/use-pdm-search-to-locate-drawings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/use-this-version-of-solidworks.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/use-this-version-of-solidworks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/work-with-latest-version.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/work-with-latest-version.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-task-menu-missing.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-task-menu-missing.html"
         }
       },
       "version": ""

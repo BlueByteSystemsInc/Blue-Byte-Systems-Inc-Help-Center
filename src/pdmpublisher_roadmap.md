@@ -21,7 +21,7 @@ The roadmap is organized by quarter and provides visibility into features curren
 ---
 ### 2026 Q2
 #### Task Launch File Selection Dialog
-Implemented
+✅ Implemented
 
 **Applies to: PDM Task**
 
@@ -29,28 +29,28 @@ Implemented
 - Added CSV import, automatic reference calculation, view-only drawing rows, launch-specific file format selection, and export location visibility.
 
 #### Scheduled Items Task Page
-Implemented
+✅ Implemented
 
 **Applies to: PDM Task**
 
 - Added a Scheduled Items setup page for scheduled tasks that need to process configured files when no files are passed in by the PDM task trigger. See details [here](/src/scheduleditems.html).
 
 #### Parasolid Binary Export
-Implemented
+✅ Implemented
 
 **Applies to: SOLIDWORKS add-in / PDM Task**
 
 - Added support for exporting Parasolid binary files with the `x_b` extension.
 
 #### Details Page 
-Implemented 
+✅ Implemented 
 
 **Applies to: PDM Task**
 
 - Added a tab to the details page of the task outlining successful files. See details [here](/src/pdmpublisher_task_details.html).
 
 #### Multi-Body Support
-Implemented 
+✅ Implemented 
 
 **Applies to: SOLIDWORKS add-in / PDM Task** 
 

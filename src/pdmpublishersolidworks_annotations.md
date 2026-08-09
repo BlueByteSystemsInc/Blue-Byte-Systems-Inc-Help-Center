@@ -17,6 +17,8 @@ ms.topic: conceptual
 
 This section provides an overview of the **Annotations tab** and explains the available options for customizing exported annotations.
 
+![PDMPublisher Annotations page](/images/pdmpublisher/screenshots/page-annotations.png)
+
 ---
 
 ## Creating Custom Annotations and/or Watermarks

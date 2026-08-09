@@ -1,302 +1,94 @@
-﻿---
+---
 title: Options | PDMPublisher | SOLIDWORKS PDM
-description: This page explains all task setup page options in PDMPublisher that are available in SOLIDWORKS PDM.
-ms.date: 08/04/2026
+description: Short reference for every PDMPublisher task setup option available in SOLIDWORKS PDM Professional.
+ms.date: 08/09/2026
 ms.topic: conceptual
 ---
 
-# Options
-
-When you choose **PDMPublisher** from the dropdown in the new task dialog, you will be prompted with a window similar to the one below:
-
-![addinpage](/images/addinpage.png)
-
-## Options Setup Page
-
-![pdmpublishersoptionsdialog](/images/pdmpublishersoptionsdialog.png)
-
-### Export Location
-
-#### Export Location
-
-Defines where PDMPublisher exports the generated files. The location can be inside or outside the vault. Make sure the path does **not** end with a backslash (`\`).
-
-#### Extension-specific Location...
-
-Opens a dialog where you can define a separate export location for each selected output extension.
-
-#### Filename
-
-Defines the exported file name. You do not need to include the file extension.
-
-#### File Formats
-
-Defines the formats PDMPublisher can export to, including `PDF`, `DWG`, `DXF`, `U3D`, `IGS`, `STL`, `STEP`, `EPRT`, `EASM`, `HTML`, `X_T`, `X_B`, `3MF`, `IFC`, and `BMP`.
-
-#### Create reference from destination file to source file
-
-Creates a PDM reference from the exported destination file back to the original source file.
-
-#### Use @ Tab to Evaluate Paths
-
-Uses the `@` configuration tab when evaluating variables used in the export location and filename.
-
----
-
-### Duplicate Handling
-
-#### Delete duplicates outside the destination folder
-
-Deletes duplicate files that exist outside the configured destination folder.
-
----
-
-### Export Options
-
-#### Merge exported PDFs into one master PDF
-
-Combines all exported PDFs from the affected assembly into one master PDF instead of keeping them as separate files.
-
-#### Ignore sub-assemblies children when condition checks fail
-
-Prevents PDMPublisher from processing the children of sub-assemblies when the sub-assembly itself fails the condition check.
-
-#### Export affected document
-
-Exports the affected top-level document.
-
-#### Export references to file formats individually
-
-Exports references of the active document individually to the selected file formats. Disabling this option does not affect PDF merging or ZIP archiving.
-
-#### Work with latest version
-
-Retrieves the latest version of the file from the vault before processing.
-
-#### Quick view mode (Drawings Only)
-
-Opens drawings in Quick View mode to improve performance, especially for large drawings.
-
-#### Use Microsoft Print To PDF to save PDFs
-
-Uses Microsoft Print to PDF when generating PDF output.
-
-#### Convert multiple configurations
-
-Exports all part and assembly configurations. The configuration name is appended to the exported filename.
-
-#### Configuration Filter
-
-Controls which configurations are processed. The `*` character can be used as a wildcard. You can also exclude specific configurations.
-
-#### Map variables between source and destination file
-
-Enables variable mapping between the source file and the exported destination file.
-
-#### Variable Mapping...
-
-Opens the variable mapping dialog where source and destination variables can be configured.
-
-#### Ask user to select configuration on startup
-
-Prompts the user to select the configuration to process when the task starts.
-
-#### Archive all exported documents (.zip)
-
-Packages all exported documents into a single `.zip` file.
-
-#### Export sheet metal parts to 1:1 flat pattern DXF
-
-Exports sheet metal parts as 1:1 scale DXF flat patterns.
-
-#### Flat Pattern Settings
-
-Opens the dialog used to configure the flat pattern DXF export options.
-
-#### Use search to locate drawings
-
-Searches the vault for the first drawing that references the affected document when a matching drawing cannot be found in the same folder.
-
----
-
-### Drawing Sheets
-
-The **Drawing Sheets** section controls which sheets PDMPublisher exports from a SOLIDWORKS drawing.
-
-![Drawing Sheets mode selection](../images/pdmpublisher_drawing_sheets.png)
-
-#### Sheets to export
-
-Selects the sheet export mode. Choose **All sheets** to export every sheet in the drawing. When you select a mode that filters sheets by name, use **Sheet name pattern** to define which sheets are included.
-
-#### Sheet name pattern
-
-Defines the sheet-name pattern used by the selected export mode. Select **>...** to build the pattern with task variables. The evaluated value shown below the field lets you verify the resulting pattern before saving the task.
-
----
-
-### File Explorer Right-Click Menu
-
-#### Hide task from File Explorer right-click menu
-
-Hides the task name from appearing under **Tasks** in the File Explorer right-click menu. This allows PDM administrators to hide the task from users while still allowing the task to run from a workflow transition.
-
-![Right-click menu](../images/rightclickmenu.png)
-
----
-
-### Flat Pattern Settings
-
-When **Export sheet metal parts to 1:1 flat pattern DXF** is enabled, the **Flat Pattern Settings** dialog controls how the DXF is generated.
-
-#### Export flat-pattern geometry
-
-Exports the flattened sheet metal geometry.
-
-#### Include hidden edges
-
-Adds hidden edges to the exported DXF.
-
-#### Export bend lines
-
-Includes bend lines in the flat pattern.
-
-#### Include sketches
-
-Exports sketches to the DXF.
-
-#### Merge coplanar faces
-
-Merges adjacent coplanar faces into the exported output.
-
-#### Export library features
-
-Includes library features in the DXF export.
-
-#### Export forming tools
-
-Includes forming tools in the DXF export.
-
-#### Export bounding box
-
-Adds a bounding box around the flattened part geometry.
-
-#### Only export the inner diameter of countersink holes
-
-Exports only the inner diameter of countersink holes. This option only works with countersinks created using the Hole Wizard feature.
-
-#### Append `FlatPattern` to the flat pattern DXF file name
-
-Appends `FlatPattern` to the DXF file name. This helps avoid overwriting files when a `.SLDDRW` file is also exported to DXF.
-
-### Sheet Metal Part Views
-You have the ability to specify whether you want additional views of the sheet metal parts.
-
-## Split Bodies
-Splits multi-body parts into separate files. For the HTML extension, this is only supported in SOLIDWORKS 2025 and newer.
-
-The body name is appended to the end of the filename.
-
-> [!IMPORTANT]
->This does not apply to sheet metal flat patterns.
-
----
-
-### Export History
-
-#### Turn on activity tracking
-
-Enables detailed task logging. This log records the activity performed by the task.
-
-#### Server-Synced Activity Logs
-
-Sends task logs to the server for centralized storage and review.
-
-#### Log Folder (Vault Only)
-
-Defines the vault folder where task log files are stored. This folder must be inside the vault, and the path must **not** end with a backslash (`\`).
-
----
-
-### BOM Settings
-
-#### Template
-
-Defines the BOM template used by PDMPublisher. Users can select from the available BOM layouts in the vault.
-
-#### Calculation method
-
-Defines how the BOM is calculated. Available options include **As Built** and **Latest**.
-
-#### As Built
-
-Uses the references from the version of the assembly that was checked in.
-
-#### Latest
-
-Uses the latest references of the assembly.
-
-> [!IMPORTANT]
-> PDMPublisher uses BOM layouts to calculate quantities when quantities are used in the printed PDF as custom annotations.
-
----
-
-### Table of Contents
-
-#### Add table of content to merged PDF
-
-Automatically inserts a table of contents into the merged PDF.
-
-#### Table columns
-
-Defines the information included in the table of contents. Available options are **Just Name**, **Name and Quantity**, and **Custom**.
-
-#### Customize Table...
-
-Opens a dialog where you can choose the custom columns to include in the table of contents.
-
----
-
-### SOLIDWORKS Version
-
-#### Use this version of SOLIDWORKS
-
-Specifies which SOLIDWORKS version PDMPublisher should use to process files. The list can include specific installed versions and the latest available version.
-
----
-
-### PDF Bookmarks
-
-#### PDF bookmarks
-
-Defines the text pattern used to create bookmarks in the merged PDF. Bookmarks make it easier to navigate between sections in the exported PDF package.
-
----
-
-### Ensuring Proper BOM Layout for PDMPublisher
-
-In recent versions, PDMPublisher uses the **PDM BOM** instead of the SOLIDWORKS BOM. PDMPublisher uses the **first BOM layout in your vault** to calculate quantities.
-
-To work correctly, the BOM layout must include the following columns:
-
-- `<RefCount>` for the quantity
-- `<Configuration>` for the configuration name
-
-If you are experiencing BOM-related errors, verify that these required columns exist in your BOM layout.
-
-> [!TIP]
-> We recommend disabling auto-add extensions for all extensions used by the task, including `txt`.
->
-> This helps prevent race conditions between SOLIDWORKS PDM and the task during the file add process.
-
-To change the auto-add extensions list:
-
-1. Open the **PDM Administration** tool.
-2. Right-click the username or **All Users**.
-3. Select **Settings**.
-4. Click **Adding Files**.
-5. Edit the file extensions list.
-
-<p align="center">
-  <img src="../images/pdmconverttaskextendedaddingfiles.png" alt="Adding Files" width="800">
-</p>
+# Options Task Page
+
+The **Options** task page controls where PDMPublisher writes exported files, which formats are created, how PDFs are merged, and how the PDM task behaves when it runs.
+
+![PDMPublisher Options task page](/images/pdmpublisher/screenshots/task-setup-options.png)
+
+Use this page as a quick map. Each setting links to its own feature page with the matching screenshot, explanation, and notes.
+
+## Recommended First Setup
+
+Review these settings before saving a new task:
+
+- [Export Location](pdmpublisher-options/export-location.md)
+- [Filename](pdmpublisher-options/filename.md)
+- [File Formats](pdmpublisher-options/file-formats.md)
+- [Use this version of SOLIDWORKS](pdmpublisher-options/use-this-version-of-solidworks.md)
+- [Template](pdmpublisher-options/template.md), when processing assemblies or quantities
+- [Activity Tracking](pdmpublisher-options/turn-on-activity-tracking.md), when testing a new task
+
+## Output
+
+| Setting | Summary | Details |
+|---|---|---|
+| Export Location | Destination folder or dynamic path pattern for generated files. | [Open](pdmpublisher-options/export-location.md) |
+| Filename | Output filename pattern. Use variables to keep exported files unique. | [Open](pdmpublisher-options/filename.md) |
+| File Formats | Select one or more export formats such as PDF, DXF, DWG, STEP, eDrawings, 3MF, IFC, and others. | [Open](pdmpublisher-options/file-formats.md) |
+| Use @ Tab to Evaluate Paths | Allows the `@` configuration tab to resolve variables used in the export path or filename. | [Open](pdmpublisher-options/use-at-tab-to-evaluate-paths.md) |
+| Create Reference from Destination File to Source File | Creates a PDM reference from the exported file back to the source file. | [Open](pdmpublisher-options/create-reference-from-destination-file-to-source-file.md) |
+| Delete Duplicates Outside the Destination Folder | Removes duplicate output files outside the destination folder. | [Open](pdmpublisher-options/delete-duplicates-outside-destination-folder.md) |
+| Map Variables Between Source and Destination File | Copies mapped metadata from the source file to the generated output file. | [Open](pdmpublisher-options/map-variables-between-source-and-destination-file.md) |
+
+## Export Behavior
+
+| Setting | Summary | Details |
+|---|---|---|
+| Export affected document | Exports the top-level file that triggered the task. | [Open](pdmpublisher-options/export-active-document.md) |
+| Export references to file formats individually | Exports referenced documents as separate output files. | [Open](pdmpublisher-options/export-references-individually.md) |
+| Convert multiple configurations | Processes every part and assembly configuration instead of only one configuration. | [Open](pdmpublisher-options/convert-multiple-configurations.md) |
+| Ask user to select configuration on startup | Prompts the user for the configuration when the task starts. | [Open](pdmpublisher-options/ask-user-to-select-configuration-on-startup.md) |
+| Ask user to specify files on task launch | Prompts the user to choose files, references, and formats at launch. | [Open](pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md) |
+| Archive all exported documents (.zip) | Creates a ZIP package containing the exported files. | [Open](pdmpublisher-options/archive-all-exported-documents.md) |
+| Export sheet metal parts to 1:1 flat pattern DXF | Exports sheet metal flat patterns as 1:1 DXF files. | [Open](pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md) |
+| Split Bodies | Saves multi-body parts as separate body files. | [Open](pdmpublisher-options/split-bodies.md) |
+| Use Microsoft Print To PDF to save PDFs | Uses the Windows PDF printer path for PDF creation. | [Open](pdmpublisher-options/use-microsoft-print-to-pdf.md) |
+
+## PDF
+
+| Setting | Summary | Details |
+|---|---|---|
+| Merge exported PDFs into one master PDF | Combines PDF outputs into one master PDF. | [Open](pdmpublisher-options/merge-exported-pdfs.md) |
+| Add table of content to merged PDF | Inserts a generated table of contents into the merged PDF. | [Open](pdmpublisher-options/add-table-of-content-to-merged-pdf.md) |
+| Table columns | Controls the columns shown on the generated PDF table of contents. | [Open](pdmpublisher-options/table-columns.md) |
+| PDF bookmarks | Defines bookmark text for merged PDFs. | [Open](pdmpublisher-options/pdf-bookmarks.md) |
+
+## Drawing Sheets
+
+| Setting | Summary | Details |
+|---|---|---|
+| Sheets to export | Choose all drawing sheets or only sheets matching a pattern. | [Open](pdmpublisher-options/sheets-to-export.md) |
+| Sheet name pattern | Wildcard pattern used when exporting matching sheets only. | [Open](pdmpublisher-options/sheet-name-pattern.md) |
+
+## PDM and SOLIDWORKS
+
+| Setting | Summary | Details |
+|---|---|---|
+| Work with latest version | Forces PDM to get the latest file version before publishing. | [Open](pdmpublisher-options/work-with-latest-version.md) |
+| Quick view mode (Drawings Only) | Opens drawings in quick view mode where supported. | [Open](pdmpublisher-options/quick-view-mode.md) |
+| Use search to locate drawings | Uses PDM search behavior when drawings are not beside the model. | [Open](pdmpublisher-options/use-pdm-search-to-locate-drawings.md) |
+| Use this version of SOLIDWORKS | Selects which installed SOLIDWORKS version should run the task. | [Open](pdmpublisher-options/use-this-version-of-solidworks.md) |
+| Hide Task in File Explorer | Hides the task command from the PDM File Explorer right-click menu. | [Open](pdmpublisher-options/hide-task-in-file-explorer.md) |
+
+## BOM, History, and Advanced
+
+| Setting | Summary | Details |
+|---|---|---|
+| Template | Selects the BOM template/layout used for quantity-aware output. | [Open](pdmpublisher-options/template.md) |
+| Calculation method | Chooses how references are calculated for BOM and quantity evaluation. | [Open](pdmpublisher-options/calculation-method.md) |
+| Turn on activity tracking | Creates detailed logs when publishing starts. | [Open](pdmpublisher-options/turn-on-activity-tracking.md) |
+| Server-Synced Activity Logs | Sends activity logs to the server for future support review. | [Open](pdmpublisher-options/server-synced-activity-logs.md) |
+| Log Folder (Vault Only) | PDM vault folder where logs are stored. | [Open](pdmpublisher-options/log-folder-vault-only.md) |
+| Ignore sub-assemblies children when condition checks fail | Prevents children of failed sub-assemblies from being processed. | [Open](pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md) |
+
+## Related Pages
+
+- [Annotations Task Page](annotations.md)
+- [Conditions Task Page](conditions.md)
+- [Scheduled Items Task Page](scheduleditems.md)

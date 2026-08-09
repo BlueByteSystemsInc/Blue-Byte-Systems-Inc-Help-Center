@@ -1,71 +1,24 @@
-﻿---
-title: Conditions | PDMPublisher | SOLIDWORKS PDM
-description: How to add conditions to filter files before printing or exporting. 
-ms.date: 06/19/2026
+---
+title: Conditions Task Page | PDMPublisher | SOLIDWORKS PDM
+description: Use conditions to include or exclude files before exporting.
+ms.date: 08/09/2026
 ms.topic: conceptual
 ---
 
-# Conditions Setup Page
+# Conditions Task Page
 
-![alt text](../images/conditions.png)
+Use the Conditions task page to decide which files should be processed by the task.
 
-**Conditions can be added to a task to include or exclude files from being processed**.  
+![PDMPublisher Conditions page](/images/pdmpublisher/screenshots/task-setup-conditions.png)
 
-The task will only process files that evaluate any of the set conditions as *true*.
+Conditions are checked before export. Files that do not match the condition rules are skipped.
 
-Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.
+## Condition Settings
 
-##  Nested Groups Support (AND/OR)
-
-PDMPublisher now supports **nested condition groups**, allowing you to create more advanced logical filters using **AND/OR** trees.
-
-> [!TIP]
-> You can add a new group by clicking the **+ (AND/OR)** button next to any condition group.
-
----
-
-### Condition Options
-
-| Option            | Description                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| **Variable**       | Variable name to run the condition on.                                     |
-| **Condition Type** | Type of comparison or rule to apply.                                       |
-| **Value**          | Value to compare against.                                                  |
-| **Configuration**  | Configuration to read the variable from (use `@` for general use).         |
-
----
-
-### Special Variables
-
-These built-in entries appear at the top of the variable list:
-
-- **FileName**: File name (e.g. `123456.SLDDRW`)
-- **FilePath**: Complete file path (e.g. `C:\Vault\Project\123456.SLDDRW`)
-- **FolderName**: Name of the folder (e.g. `Project`)
-- **FolderPath**: Complete folder path
-- **Revision**: Current revision cached
-- **Version**: Current version cached
-- **Workflow**: Workflow name of the file
-- **State**: Current state name of the file
-- **ConfigurationName**: Referenced configuration or active configuration
----
-
-### Operation Types
-
-| Operation               | Description                                                                 |
-|-------------------------|-----------------------------------------------------------------------------|
-| **TextEqualTo**         | Checks if the text is exactly equal to the value. Supports `*` wildcard.   |
-| **TextNotEqualTo**      | Checks if the text is not equal to the value.                              |
-| **TextLengthLessThan**  | True if text length is less than the value.                                |
-| **TextLengthBiggerThan**| True if text length is greater than the value.                             |
-| **TextContains**        | True if the text contains the value.                                       |
-| **TextDoesNotContain**  | True if the text does not contain the value.                               |
-| **NumberEqualTo**       | True if number equals the value.                                           |
-| **NumberNotEqualTo**    | True if number is not equal to the value.                                  |
-| **NumberLessThan**      | True if number is less than the value.                                     |
-| **NumberBiggerThan**    | True if number is greater than the value.                                  |
-| **DateEqualTo**         | True if date equals the value.                                             |
-| **DateNotEqualTo**      | True if date is not equal to the value.                                    |
-| **DateLessThan**        | True if date is earlier than the value.                                    |
-| **DateBiggerThan**      | True if date is later than the value.                                      |
-| **YesOrNoEqualTo**      | True if value equals Yes or No.                                            |
+| Setting | Summary | Details |
+|---|---|---|
+| Add Conditions and Groups | Build simple or nested AND/OR condition rules. | [Open](pdmpublisher-conditions/add-conditions-and-groups.md) |
+| Condition Fields | Choose the variable, comparison type, value, and configuration. | [Open](pdmpublisher-conditions/condition-fields.md) |
+| Special Variables | Use built-in values such as file name, state, revision, and workflow. | [Open](pdmpublisher-conditions/special-variables.md) |
+| Condition Types | Select text, number, date, or yes/no comparisons. | [Open](pdmpublisher-conditions/condition-types.md) |
+| Evaluation Rules | Understand how configurations and condition groups are evaluated. | [Open](pdmpublisher-conditions/evaluation-rules.md) |

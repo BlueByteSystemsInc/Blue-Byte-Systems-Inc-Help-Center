@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Ask User to Specify Files on Task Launch | PDMPublisher Options | Help Center </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Ask User to Specify Files on Task Launch | PDMPublisher Options | Help Center ">
+      
+      <meta name="description" content="Prompt users to select files and formats when publishing starts.">
+      <link rel="icon" href="../../images/bluebyte-mark.png">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/bluebyte-mark.png" alt="Help Center">
+            Help Center
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="bbs-content-trials d-print-none" aria-label="Trial requests">
+          <div class="bbs-content-trials-copy">
+            <span class="bbs-content-trials-icon" aria-hidden="true">
+              <i class="bi bi-calendar3"></i>
+              <i class="bi bi-key-fill bbs-content-trials-key"></i>
+            </span>
+            <img class="bbs-content-trials-logo" src="../../images/large_logo.png" alt="Blue Byte Systems Inc.">
+            <span class="bbs-content-trials-text">
+              <span class="bbs-content-trials-title">Get a 7-day trial</span>
+              <span class="bbs-content-trials-note">No commitment or credit card required. Professional email required.</span>
+            </span>
+          </div>
+          <div class="bbs-content-trials-actions">
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmshell-trial/">
+              <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
+              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="ask-user-to-specify-files-on-task-launch">Ask User to Specify Files on Task Launch</h1>
+
+<p><img src="/images/pdmpublisher/screenshots/options-007-property-ask-user-to-specify-files-on-task-launch.png" alt="Ask user to specify files setting"></p>
+<p>When this option is enabled, PDMPublisher shows a file selection dialog on task launch. The user can choose which files to export, which configurations to process, which formats to create, and where the output should go on the machine that launched the task.</p>
+<p><img src="/images/pdmpublisher/screenshots/ask-user-specify-files-dialog.png" alt="Ask user to specify files dialog"></p>
+<p>Use this option when the person launching the task should be able to choose the files, configurations, formats, and export location instead of using only the fixed task configuration from the SOLIDWORKS PDM Administration tool.</p>
+<h2 id="add-files">Add Files</h2>
+<p>Select <strong>Add</strong> to manually add files on task launch. This is useful when the user knows exactly which assembly, part, drawing, or document needs to be exported.</p>
+<p>After a file is added, it appears in the file list with a checkbox. Checked files are included when publishing starts. Unchecked files stay visible in the dialog but are skipped when the user selects <strong>OK</strong>.</p>
+<h2 id="import-from-csv">Import From CSV</h2>
+<p>Select <strong>From CSV</strong> to add multiple files from a CSV list. This is useful for repeatable batches, release packages, or lists generated from another system.</p>
+<p>The files in the CSV must resolve to files the user can access in the vault or local cache. After import, the user can still review the list, clear checkboxes for files that should be skipped, and adjust configuration or format choices before publishing.</p>
+<h2 id="file-list">File List</h2>
+<p>The left side of the dialog shows the files that will be considered for export.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>File Name</strong></td>
+<td>The file selected for export. Assemblies can expand to show referenced parts and drawings.</td>
+</tr>
+<tr>
+<td><strong>Configuration</strong></td>
+<td>The configuration that will be processed for that row. Drawings commonly show view-only because the drawing sheet is being exported rather than a model configuration.</td>
+</tr>
+<tr>
+<td><strong>Found In</strong></td>
+<td>The vault or local cache folder where PDMPublisher found the file.</td>
+</tr>
+</tbody>
+</table>
+<p>Assemblies can be expanded so users can include or exclude referenced components. When drawing lookup is enabled, related drawings can appear under the model file so the user can decide whether the drawing should be exported too.</p>
+<h2 id="selected-file-details">Selected File Details</h2>
+<p>The right side of the dialog changes based on the selected row.</p>
+<p>The file name and path at the top confirm which file is currently selected. This helps users verify that they are editing the correct file, especially when multiple files have similar names.</p>
+<p>The <strong>Configuration</strong> list controls which configuration is used for the selected file. Users can choose a different configuration per file when the task needs to publish multiple variants.</p>
+<p>The <strong>File Formats</strong> checklist controls the output formats for the selected file. For example, a drawing may be exported to PDF, DWG, or DXF, while a part or assembly may be exported to STEP, STL, eDrawings, or another supported model format. See <a href="file-formats.html">File Formats</a> for format-specific behavior.</p>
+<h2 id="export-location">Export Location</h2>
+<p>The export location at the bottom shows the output path pattern selected on task launch. It can include placeholders such as <code>(FileFolder)</code> so exported files are placed relative to the source file.</p>
+<p>For example:</p>
+<pre><code class="lang-text">(FileFolder)\Sheet\Export
+</code></pre>
+<p>This places exported files in a <code>Sheet\Export</code> folder under the selected file's folder.</p>
+<p>The export path can use the same placeholder rules as the main task option. See <a href="export-location.html">Export Location</a> for placeholder examples, vault paths, network paths, and extension-specific overrides.</p>
+<h2 id="administration-message">Administration Message</h2>
+<p>The yellow message explains that the administrator can still control how Create STEP, PDF, and eDrawings exports are configured from the SOLIDWORKS PDM Administration tool.</p>
+<p>This dialog does not replace the administrator settings. It gives the user a controlled way to choose files, configurations, formats, and output location on the machine that launched the task.</p>
+<h2 id="start-or-cancel">Start Or Cancel</h2>
+<p>Select <strong>OK</strong> to start publishing with the selected files, configurations, formats, and export location.</p>
+<p>Select <strong>Cancel</strong> to close the dialog without running the task.</p>
+<p>For fully automated workflows, leave this option disabled and configure the task settings directly in the administration tool.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

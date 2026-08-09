@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Conditions | PDMPublisher | SOLIDWORKS PDM | Help Center </title>
+      <title>Conditions Task Page | PDMPublisher | SOLIDWORKS PDM | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Conditions | PDMPublisher | SOLIDWORKS PDM | Help Center ">
+      <meta name="title" content="Conditions Task Page | PDMPublisher | SOLIDWORKS PDM | Help Center ">
       
-      <meta name="description" content="How to add conditions to filter files before printing or exporting.">
+      <meta name="description" content="Use conditions to include or exclude files before exporting.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
@@ -76,6 +76,28 @@
       </div>
 
       <div class="content">
+        <div class="bbs-content-trials d-print-none" aria-label="Trial requests">
+          <div class="bbs-content-trials-copy">
+            <span class="bbs-content-trials-icon" aria-hidden="true">
+              <i class="bi bi-calendar3"></i>
+              <i class="bi bi-key-fill bbs-content-trials-key"></i>
+            </span>
+            <img class="bbs-content-trials-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc.">
+            <span class="bbs-content-trials-text">
+              <span class="bbs-content-trials-title">Get a 7-day trial</span>
+              <span class="bbs-content-trials-note">No commitment or credit card required. Professional email required.</span>
+            </span>
+          </div>
+          <div class="bbs-content-trials-actions">
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmshell-trial/">
+              <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
+              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
         <div class="actionbar">
           <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
@@ -85,129 +107,45 @@
         </div>
 
         <article data-uid="">
-<h1 id="conditions-setup-page">Conditions Setup Page</h1>
+<h1 id="conditions-task-page">Conditions Task Page</h1>
 
-<p><img src="../images/conditions.png" alt="alt text"></p>
-<p><strong>Conditions can be added to a task to include or exclude files from being processed</strong>.</p>
-<p>The task will only process files that evaluate any of the set conditions as <em>true</em>.</p>
-<p>Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.</p>
-<h2 id="nested-groups-support-andor">Nested Groups Support (AND/OR)</h2>
-<p>PDMPublisher now supports <strong>nested condition groups</strong>, allowing you to create more advanced logical filters using <strong>AND/OR</strong> trees.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>You can add a new group by clicking the <strong>+ (AND/OR)</strong> button next to any condition group.</p>
-</div>
-<hr>
-<h3 id="condition-options">Condition Options</h3>
+<p>Use the Conditions task page to decide which files should be processed by the task.</p>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-conditions.png" alt="PDMPublisher Conditions page"></p>
+<p>Conditions are checked before export. Files that do not match the condition rules are skipped.</p>
+<h2 id="condition-settings">Condition Settings</h2>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>Setting</th>
+<th>Summary</th>
+<th>Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Variable</strong></td>
-<td>Variable name to run the condition on.</td>
+<td>Add Conditions and Groups</td>
+<td>Build simple or nested AND/OR condition rules.</td>
+<td><a href="pdmpublisher-conditions/add-conditions-and-groups.html">Open</a></td>
 </tr>
 <tr>
-<td><strong>Condition Type</strong></td>
-<td>Type of comparison or rule to apply.</td>
+<td>Condition Fields</td>
+<td>Choose the variable, comparison type, value, and configuration.</td>
+<td><a href="pdmpublisher-conditions/condition-fields.html">Open</a></td>
 </tr>
 <tr>
-<td><strong>Value</strong></td>
-<td>Value to compare against.</td>
+<td>Special Variables</td>
+<td>Use built-in values such as file name, state, revision, and workflow.</td>
+<td><a href="pdmpublisher-conditions/special-variables.html">Open</a></td>
 </tr>
 <tr>
-<td><strong>Configuration</strong></td>
-<td>Configuration to read the variable from (use <code>@</code> for general use).</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="special-variables">Special Variables</h3>
-<p>These built-in entries appear at the top of the variable list:</p>
-<ul>
-<li><strong>FileName</strong>: File name (e.g. <code>123456.SLDDRW</code>)</li>
-<li><strong>FilePath</strong>: Complete file path (e.g. <code>C:\Vault\Project\123456.SLDDRW</code>)</li>
-<li><strong>FolderName</strong>: Name of the folder (e.g. <code>Project</code>)</li>
-<li><strong>FolderPath</strong>: Complete folder path</li>
-<li><strong>Revision</strong>: Current revision cached</li>
-<li><strong>Version</strong>: Current version cached</li>
-<li><strong>Workflow</strong>: Workflow name of the file</li>
-<li><strong>State</strong>: Current state name of the file</li>
-<li><strong>ConfigurationName</strong>: Referenced configuration or active configuration</li>
-</ul>
-<hr>
-<h3 id="operation-types">Operation Types</h3>
-<table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>TextEqualTo</strong></td>
-<td>Checks if the text is exactly equal to the value. Supports <code>*</code> wildcard.</td>
+<td>Condition Types</td>
+<td>Select text, number, date, or yes/no comparisons.</td>
+<td><a href="pdmpublisher-conditions/condition-types.html">Open</a></td>
 </tr>
 <tr>
-<td><strong>TextNotEqualTo</strong></td>
-<td>Checks if the text is not equal to the value.</td>
-</tr>
-<tr>
-<td><strong>TextLengthLessThan</strong></td>
-<td>True if text length is less than the value.</td>
-</tr>
-<tr>
-<td><strong>TextLengthBiggerThan</strong></td>
-<td>True if text length is greater than the value.</td>
-</tr>
-<tr>
-<td><strong>TextContains</strong></td>
-<td>True if the text contains the value.</td>
-</tr>
-<tr>
-<td><strong>TextDoesNotContain</strong></td>
-<td>True if the text does not contain the value.</td>
-</tr>
-<tr>
-<td><strong>NumberEqualTo</strong></td>
-<td>True if number equals the value.</td>
-</tr>
-<tr>
-<td><strong>NumberNotEqualTo</strong></td>
-<td>True if number is not equal to the value.</td>
-</tr>
-<tr>
-<td><strong>NumberLessThan</strong></td>
-<td>True if number is less than the value.</td>
-</tr>
-<tr>
-<td><strong>NumberBiggerThan</strong></td>
-<td>True if number is greater than the value.</td>
-</tr>
-<tr>
-<td><strong>DateEqualTo</strong></td>
-<td>True if date equals the value.</td>
-</tr>
-<tr>
-<td><strong>DateNotEqualTo</strong></td>
-<td>True if date is not equal to the value.</td>
-</tr>
-<tr>
-<td><strong>DateLessThan</strong></td>
-<td>True if date is earlier than the value.</td>
-</tr>
-<tr>
-<td><strong>DateBiggerThan</strong></td>
-<td>True if date is later than the value.</td>
-</tr>
-<tr>
-<td><strong>YesOrNoEqualTo</strong></td>
-<td>True if value equals Yes or No.</td>
+<td>Evaluation Rules</td>
+<td>Understand how configurations and condition groups are evaluated.</td>
+<td><a href="pdmpublisher-conditions/evaluation-rules.html">Open</a></td>
 </tr>
 </tbody>
 </table>

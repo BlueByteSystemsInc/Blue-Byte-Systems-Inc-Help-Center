@@ -9,7 +9,7 @@
       <meta name="description" content="Learn how to use the Scheduled Items task setup page in PDMPublisher to define files that should be processed when a task runs without selected files.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
@@ -76,6 +76,28 @@
       </div>
 
       <div class="content">
+        <div class="bbs-content-trials d-print-none" aria-label="Trial requests">
+          <div class="bbs-content-trials-copy">
+            <span class="bbs-content-trials-icon" aria-hidden="true">
+              <i class="bi bi-calendar3"></i>
+              <i class="bi bi-key-fill bbs-content-trials-key"></i>
+            </span>
+            <img class="bbs-content-trials-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc.">
+            <span class="bbs-content-trials-text">
+              <span class="bbs-content-trials-title">Get a 7-day trial</span>
+              <span class="bbs-content-trials-note">No commitment or credit card required. Professional email required.</span>
+            </span>
+          </div>
+          <div class="bbs-content-trials-actions">
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmshell-trial/">
+              <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
+              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
         <div class="actionbar">
           <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
@@ -87,17 +109,17 @@
         <article data-uid="">
 <h1 id="scheduled-items-task-page">Scheduled Items Task Page</h1>
 
-<p>The <strong>Scheduled Items</strong> page lets administrators define the files PDMPublisher should process when a task is launched without selected files.</p>
-<p>This is useful for scheduled tasks and automated task launches where SOLIDWORKS PDM does not provide a file selection to the task at runtime.</p>
-<p align="center">
-  <img src="../images/pdmpublisher_scheduled_items.png" alt="Scheduled Items setup page" width="800">
-</p>
+<p>The <strong>Scheduled Items</strong> page lets administrators define the files PDMPublisher should process when the task launches.</p>
+<p>This is useful for scheduled tasks and automated task launches where SOLIDWORKS PDM does not provide a file selection to the task.</p>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-scheduled-items.png" alt="Scheduled Items setup page"></p>
+<p>Scheduling itself is handled by SOLIDWORKS PDM's own scheduling framework. The <strong>Scheduling</strong> page controls when the task starts. The <strong>Scheduled Items</strong> page controls which saved files PDMPublisher processes when that scheduled task starts.</p>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-scheduling.png" alt="SOLIDWORKS PDM Scheduling page"></p>
 <h2 id="when-to-use-this-page">When to use this page</h2>
 <p>Use <strong>Scheduled Items</strong> when the task is expected to run on a schedule or from an automation that does not pass selected files to PDMPublisher.</p>
 <p>If files are configured on this page, PDMPublisher uses the Scheduled Items list as the task input.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Scheduled Items take priority over files selected from the right-click <strong>Tasks</strong> menu or any other launch method that passes selected files to PDMPublisher. If this page contains files, PDMPublisher processes the files listed here and ignores the files selected during launch. Only configure Scheduled Items for tasks that are intended to process the same saved list of files.</p>
+<p>Scheduled Items override every other file selection. If this page contains files, PDMPublisher processes the files listed here and ignores files selected from the right-click <strong>Tasks</strong> menu, files selected on task launch, or files passed by another launch method. Only configure Scheduled Items for tasks that should always process the same saved list of files.</p>
 </div>
 <h2 id="adding-files">Adding files</h2>
 <p>Click <strong>Add</strong> to choose one or more SOLIDWORKS files from the vault.</p>
@@ -129,6 +151,7 @@
 <li>The task host must have permission to access the selected files and their folders.</li>
 <li>The task still uses the settings from the other setup pages, including <strong>Options</strong>, <strong>Annotations</strong>, and <strong>Conditions</strong>.</li>
 <li>If this page contains files, those files are used even when the task is launched from a selected file in File Explorer.</li>
+<li>If this page contains files, those files are also used when the task starts from SOLIDWORKS PDM scheduling.</li>
 <li>If no files are selected at launch and no scheduled items are configured, the task will stop with an error.</li>
 </ul>
 <h2 id="selecting-files-at-task-launch">Selecting files at task launch</h2>

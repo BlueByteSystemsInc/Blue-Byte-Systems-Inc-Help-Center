@@ -18,6 +18,8 @@ ms.topic: conceptual
 
 This section provides an overview of the **Conditions** tab and explains the available options for filtering which files are included in the publishing process.
 
+![PDMPublisher Conditions tab](/images/pdmpublisher/screenshots/page-conditions-(2).png)
+
 ---
 
 ## Conditions Output Dialog
@@ -35,7 +37,7 @@ From this dialog box, you can manually select which files to export. The dialog 
 
 Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.
 
-![Conditions Tab](../images/conditions_solidworks.png)
+![Conditions Tab](/images/pdmpublisher/screenshots/conditions-(2)-001-condition-conditionsviewmodel.png)
 
 > [!NOTE]
 >The add-in will only process files that evaluate any of the set conditions as '**true**'.

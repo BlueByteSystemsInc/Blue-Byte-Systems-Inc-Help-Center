@@ -29,7 +29,7 @@
   items:
     - name: PDMPublisher for SOLIDWORKS PDM Professional 
       href: pdmpublisher.md
-      expanded: false
+      expanded: true
       items:
       - name: Request a Trial License
         href: pdmpublishertrial.md
@@ -39,12 +39,144 @@
         href: licensespdmpublisher.md
       - name: Setting up your first task
         href: propertiespagepdmpublisher.md
+      - name: Why is the Tasks menu missing?
+        href: pdmpublisher-task-menu-missing.md
       - name: Options Task Page
         href: options.md
+        expanded: true
+        items:
+        - name: Output Paths and Names
+          expanded: true
+          items:
+          - name: Export Location
+            href: pdmpublisher-options/export-location.md
+            expanded: true
+            items:
+            - name: Use @ Tab for Paths
+              href: pdmpublisher-options/use-at-tab-to-evaluate-paths.md
+          - name: Filename
+            href: pdmpublisher-options/filename.md
+          - name: File Formats
+            href: pdmpublisher-options/file-formats.md
+          - name: Archive Exported Documents
+            href: pdmpublisher-options/archive-all-exported-documents.md
+        - name: Assembly and BOM
+          expanded: true
+          items:
+          - name: Export Affected Document
+            href: pdmpublisher-options/export-active-document.md
+          - name: Export References Individually
+            href: pdmpublisher-options/export-references-individually.md
+          - name: Template
+            href: pdmpublisher-options/template.md
+            expanded: true
+            items:
+            - name: Calculation Method
+              href: pdmpublisher-options/calculation-method.md
+          - name: Ignore Sub-Assembly Children
+            href: pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
+        - name: Task Launch Prompts
+          expanded: true
+          items:
+          - name: Ask User to Select Configuration
+            href: pdmpublisher-options/ask-user-to-select-configuration-on-startup.md
+          - name: Ask User to Specify Files
+            href: pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md
+        - name: Configurations and Versions
+          expanded: true
+          items:
+          - name: Convert Multiple Configurations
+            href: pdmpublisher-options/convert-multiple-configurations.md
+          - name: Work with Latest Version
+            href: pdmpublisher-options/work-with-latest-version.md
+          - name: SOLIDWORKS Version
+            href: pdmpublisher-options/use-this-version-of-solidworks.md
+        - name: Drawings and PDFs
+          expanded: true
+          items:
+          - name: Microsoft Print To PDF
+            href: pdmpublisher-options/use-microsoft-print-to-pdf.md
+          - name: Merge Exported PDFs
+            href: pdmpublisher-options/merge-exported-pdfs.md
+          - name: Table of Content
+            href: pdmpublisher-options/add-table-of-content-to-merged-pdf.md
+            expanded: true
+            items:
+            - name: Table Columns
+              href: pdmpublisher-options/table-columns.md
+          - name: PDF Bookmarks
+            href: pdmpublisher-options/pdf-bookmarks.md
+          - name: Sheets to Export
+            href: pdmpublisher-options/sheets-to-export.md
+            expanded: true
+            items:
+            - name: Sheet Name Pattern
+              href: pdmpublisher-options/sheet-name-pattern.md
+          - name: Quick View Mode
+            href: pdmpublisher-options/quick-view-mode.md
+          - name: Use PDM Search
+            href: pdmpublisher-options/use-pdm-search-to-locate-drawings.md
+        - name: Manufacturing Outputs
+          expanded: true
+          items:
+          - name: Sheet Metal Flat Pattern DXF
+            href: pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
+          - name: Split Bodies
+            href: pdmpublisher-options/split-bodies.md
+        - name: Activity Logs
+          expanded: true
+          items:
+          - name: Activity Tracking
+            href: pdmpublisher-options/turn-on-activity-tracking.md
+            expanded: true
+            items:
+            - name: Server-Synced Activity Logs
+              href: pdmpublisher-options/server-synced-activity-logs.md
+            - name: Log Folder
+              href: pdmpublisher-options/log-folder-vault-only.md
+        - name: Vault References and Variables
+          expanded: true
+          items:
+          - name: Create PDM Reference
+            href: pdmpublisher-options/create-reference-from-destination-file-to-source-file.md
+          - name: Delete Duplicates
+            href: pdmpublisher-options/delete-duplicates-outside-destination-folder.md
+          - name: Map Variables
+            href: pdmpublisher-options/map-variables-between-source-and-destination-file.md
+          - name: Hide Task in File Explorer
+            href: pdmpublisher-options/hide-task-in-file-explorer.md
       - name: Annotations Task Page
         href: annotations.md
+        expanded: true
+        items:
+        - name: Add Annotation
+          href: pdmpublisher-annotations/add-annotation.md
+        - name: Annotation Text
+          href: pdmpublisher-annotations/annotation-text.md
+        - name: Text Formatting
+          href: pdmpublisher-annotations/text-formatting.md
+        - name: Watermark
+          href: pdmpublisher-annotations/watermark.md
+        - name: Active
+          href: pdmpublisher-annotations/active.md
+        - name: Position
+          href: pdmpublisher-annotations/position.md
+        - name: Sheets
+          href: pdmpublisher-annotations/sheets.md
       - name: Conditions Task Page
         href: conditions.md
+        expanded: true
+        items:
+        - name: Add Conditions and Groups
+          href: pdmpublisher-conditions/add-conditions-and-groups.md
+        - name: Condition Fields
+          href: pdmpublisher-conditions/condition-fields.md
+        - name: Special Variables
+          href: pdmpublisher-conditions/special-variables.md
+        - name: Condition Types
+          href: pdmpublisher-conditions/condition-types.md
+        - name: Evaluation Rules
+          href: pdmpublisher-conditions/evaluation-rules.md
       - name: Scheduled Items Task Page
         href: scheduleditems.md
       - name: Frequently Asked Questions

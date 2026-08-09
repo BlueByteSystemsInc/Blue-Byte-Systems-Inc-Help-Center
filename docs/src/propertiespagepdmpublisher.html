@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Creating a new task | PDMPublisher | SOLIDWORKS PDM | Help Center </title>
+      <title>Creating a New Task | PDMPublisher | SOLIDWORKS PDM | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Creating a new task | PDMPublisher | SOLIDWORKS PDM | Help Center ">
+      <meta name="title" content="Creating a New Task | PDMPublisher | SOLIDWORKS PDM | Help Center ">
       
-      <meta name="description" content="This section will detail the setup pages that require explanation.">
+      <meta name="description" content="Create your first PDMPublisher task in SOLIDWORKS PDM Administration.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
@@ -76,6 +76,28 @@
       </div>
 
       <div class="content">
+        <div class="bbs-content-trials d-print-none" aria-label="Trial requests">
+          <div class="bbs-content-trials-copy">
+            <span class="bbs-content-trials-icon" aria-hidden="true">
+              <i class="bi bi-calendar3"></i>
+              <i class="bi bi-key-fill bbs-content-trials-key"></i>
+            </span>
+            <img class="bbs-content-trials-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc.">
+            <span class="bbs-content-trials-text">
+              <span class="bbs-content-trials-title">Get a 7-day trial</span>
+              <span class="bbs-content-trials-note">No commitment or credit card required. Professional email required.</span>
+            </span>
+          </div>
+          <div class="bbs-content-trials-actions">
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmshell-trial/">
+              <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
+              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
         <div class="actionbar">
           <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
@@ -85,104 +107,113 @@
         </div>
 
         <article data-uid="">
-<h1 id="setting-your-first-task">Setting your first task</h1>
+<h1 id="set-up-your-first-pdmpublisher-task">Set Up Your First PDMPublisher Task</h1>
 
+<p class="bbs-read-time">Read time: 2 minutes</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>This article <em>requires</em> that:</p>
+<p>Before creating a task, make sure:</p>
 <ul>
 <li><strong>PDMPublisher</strong> has been added to your vault.</li>
-<li>you can have activated your license. <a href="../src/licensespdmpublisher.html">Follow instructions in this article to do that</a>.</li>
+<li>You have activated your license. See <a href="licensespdmpublisher.html">Licensing</a>.</li>
+</ul>
+<p>After validating the license and before saving your first task, review these important settings:</p>
+<ul>
+<li>Select the correct <a href="pdmpublisher-options/template.html">Template</a>. This is critical when PDMPublisher needs to calculate assembly references, configurations, or quantities.</li>
+<li>Confirm <a href="pdmpublisher-options/use-this-version-of-solidworks.html">Use this version of SOLIDWORKS</a> points to a SOLIDWORKS version installed on the task host computer.</li>
+<li>Set a valid <a href="pdmpublisher-options/export-location.html">Export Location</a> and <a href="pdmpublisher-options/filename.html">Filename</a>. Avoid trailing backslashes in export paths, and use filename placeholders such as revision, configuration, or sheet name when one source file can create multiple outputs.</li>
+<li>If you need troubleshooting records, enable <a href="pdmpublisher-options/turn-on-activity-tracking.html">Turn on Activity Tracking</a> and set <a href="pdmpublisher-options/log-folder-vault-only.html">Log Folder (Vault Only)</a> to <code>(VaultRootFolder)\Logs\PDMPublisher</code>. Create this folder manually and make sure the user running the task, or the task host account, can add log files there.</li>
 </ul>
 </div>
-<h2 id="your-first-task">Your first task</h2>
-<p>To create a new task with <strong>PDMPublisher</strong>:</p>
-<ul>
-<li><p>Right-click on <em>Tasks</em> in the Administration tool and click <em>New Task...</em></p>
+<h2 id="create-the-task">Create the Task</h2>
+<ol>
+<li><p>Open the SOLIDWORKS PDM Administration tool.</p>
+</li>
+<li><p>Right-click <strong>Tasks</strong>, then select <strong>New Task...</strong>.</p>
 <p align="center">
-  <img src="../images/pdmpublishernewtask.png" width="300">
+  <img src="../images/pdmpublishernewtask.png" alt="Create a new PDM task" width="300">
 </p>
 </li>
-<li><p>Choose a unique name for the task.</p>
+<li><p>Enter a unique name for the task. Use a name that clearly describes what the task exports, then review the notes above before saving.</p>
 </li>
-<li><p>Choose <strong>PDMPublisher</strong> from the <strong>Add-in</strong> dropdown on the first page of the task setup dialog.</p>
+<li><p>On the <strong>Add-in</strong> page, choose <strong>PDMPublisher</strong> from the <strong>Add-in</strong> dropdown.</p>
 <p align="center">
-  <img src="../images/pdmpublisher_task_addin_dropdown.png" alt="Select PDMPublisher from the Add-in dropdown" width="800">
+  <img src="../images/pdmpublisher/screenshots/task-setup-addin.png" alt="PDMPublisher selected as the task add-in" width="800">
 </p>
 </li>
-<li><p>After selecting <strong>PDMPublisher</strong>, click <strong>Next</strong> to continue.</p>
+<li><p>Click <strong>Next</strong>.</p>
+</li>
+<li><p>On the <strong>Execution Method</strong> page, choose which computers are allowed to run the task.</p>
+<p>This page comes after the add-in selection. Only computers checked in this list are considered as task execution machines.</p>
 <p align="center">
-  <img src="../images/pdmpublisher_task_addin_selected.png" alt="PDMPublisher selected as the task add-in" width="800">
+  <img src="../images/pdmpublisher/screenshots/task-setup-execution-method.png" alt="PDMPublisher task execution method" width="800">
+</p>
+<p>If the computer list is empty, right-click the SOLIDWORKS PDM icon in the Windows tray and open <strong>Task Host Configuration</strong>.</p>
+<p align="center">
+  <img src="../images/pdmicontry.png" alt="SOLIDWORKS PDM tray icon" width="300">
 </p>
 </li>
-<li><p>Configure the <em>Execution Method</em> page to allow which computers in your organization's network to run the task.</p>
-<ul>
-<li><p>If the computers list is empty, right-click on the SOLIDWORKS PDM icon in the icon tray to access the <em>Task Host Configuration</em>.</p>
+<li><p>In <strong>Task Host Configuration</strong>, permit <strong>PDMPublisher</strong> on the task host computer.</p>
 <p align="center">
-  <img src="../images/pdmicontry.png" width="300">
+  <img src="../images/taskhostconfiguration.png" alt="Permit PDMPublisher in Task Host Configuration" width="800">
 </p>
 </li>
-<li><p>You must <em>permit</em> <strong>PDMPublisher</strong> in the <em>Task Host Configuration</em> dialog.</p>
+<li><p>Configure the <strong>Scheduling</strong> page if SOLIDWORKS PDM should launch this task automatically. See <a href="scheduleditems.html">Scheduled Items</a> when the scheduled task should process a saved list of files.</p>
 <p align="center">
-  <img src="../images/taskhostconfiguration.png" width="800">
+  <img src="../images/pdmpublisher/screenshots/task-setup-scheduling.png" alt="SOLIDWORKS PDM task scheduling page" width="800">
 </p>
+<p>Scheduling is SOLIDWORKS PDM's own scheduling framework. It controls when the task starts.</p>
 </li>
-</ul>
+<li><p>Review the PDMPublisher setup pages listed below.</p>
 </li>
-<li><p>Configure the setup pages:</p>
-<ul>
-<li><strong>Options</strong></li>
-<li><strong>Annotations</strong></li>
-<li><strong>Conditions</strong></li>
-<li><strong>Scheduled Items</strong></li>
-</ul>
+<li><p>Click <strong>OK</strong> to save the task.</p>
 </li>
-<li><p>Click OK to save your task.</p>
-</li>
-<li><p>Your task will be accessible from the right-click menu Under <em>Tasks</em> in your vault's File Explorer:</p>
+</ol>
+<p>The task appears in File Explorer under <strong>Tasks</strong> in the right-click menu.</p>
+<p>If the <strong>Tasks</strong> menu does not appear, see <a href="pdmpublisher-task-menu-missing.html">Why is the Tasks menu missing?</a>.</p>
 <p align="center">
-  <img src="../images/pdmpublishertaskrmb.png" alt="Tabs" width="800">
+  <img src="../images/pdmpublishertaskrmb.png" alt="PDMPublisher task in the File Explorer right-click menu" width="800">
 </p>
-</li>
-</ul>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>If you <strong>do not see</strong> the <em>Tasks</em> menu in File Explorer, it is possible that your PDM user setting have been configured to hide add-ins. You can configure the user settings dialog in the Administration tool:</p>
-<p align="center">
- <img src="../images/adminsettings.png" alt="Tabs" width="800">
-</p>
-</div>
-<hr>
 <h2 id="setup-pages">Setup Pages</h2>
-<p align="center">
-  <img src="../images/tabs.png" alt="Tabs" width="800">
-</p>
+<p>Use these pages to configure what PDMPublisher exports and how it handles each file.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Tab</th>
-<th style="text-align: left;">Description</th>
+<th>Tab</th>
+<th>Use this page to</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../src/options.html">Options</a></td>
-<td style="text-align: left;">Options define how files will be printed. See the options page for more details.</td>
+<td><a href="options.html">Options</a></td>
+<td>Configure file formats, output paths, filenames, SOLIDWORKS version, templates, logs, and other export behavior.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../src/annotations.html">Annotations</a></td>
-<td style="text-align: left;">Defines aliased notes that can contain text and datacard variables and define their locations in the drawing.</td>
+<td><a href="annotations.html">Annotations</a></td>
+<td>Add notes or watermarks that can include fixed text, PDM variables, and SOLIDWORKS properties.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../src/conditions.html">Conditions</a></td>
-<td style="text-align: left;">Defines which files to include in the save queues when processing top-level assemblies.</td>
+<td><a href="conditions.html">Conditions</a></td>
+<td>Decide which referenced files should be included when processing assemblies.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../src/scheduleditems.html">Scheduled Items</a></td>
-<td style="text-align: left;">Defines a saved list of files for the task to process. If this list contains files, it takes priority over files selected from the right-click Tasks menu.</td>
+<td><a href="scheduleditems.html">Scheduled Items</a></td>
+<td>Define files that should be processed when the task runs without selected files.</td>
 </tr>
 </tbody>
 </table>
+<h3 id="options">Options</h3>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-options.png" alt="PDMPublisher Options setup page"></p>
+<p>Review the recommended setup items in <a href="options.html">Options Task Page</a>, especially export location, filename, file formats, SOLIDWORKS version, template, and activity tracking.</p>
+<h3 id="annotations">Annotations</h3>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-annotations.png" alt="PDMPublisher Annotations setup page"></p>
+<p>The annotation table is the workspace where you create and manage notes or watermarks that will be placed on exported PDFs. Each annotation can have its own text, formatting, position, sheet rule, and active state.</p>
+<h3 id="conditions">Conditions</h3>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-conditions.png" alt="PDMPublisher Conditions setup page"></p>
+<p>Use conditions to control which referenced files are processed when publishing assemblies.</p>
+<h3 id="scheduled-items">Scheduled Items</h3>
+<p><img src="/images/pdmpublisher/screenshots/task-setup-scheduled-items.png" alt="PDMPublisher Scheduled Items setup page"></p>
+<p>Use Scheduled Items when this task should always process a saved list of files. Scheduled Items override other selected files.</p>
 
 </article>
 
