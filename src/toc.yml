@@ -153,10 +153,8 @@
           href: pdmpublisher-annotations/add-annotation.md
         - name: Annotation Text
           href: pdmpublisher-annotations/annotation-text.md
-          expanded: true
-          items:
-          - name: SQL Query Placeholders
-            href: pdmpublisher-annotations/sql-query-placeholders.md
+        - name: SQL Query Placeholders
+          href: pdmpublisher-annotations/sql-query-placeholders.md
         - name: Text Formatting
           href: pdmpublisher-annotations/text-formatting.md
         - name: Watermark
