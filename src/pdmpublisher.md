@@ -13,7 +13,7 @@ ms.topic: overview
 Thank you for choosing [PDMPublisher](https://bluebyte.biz/product/pdmpublisher/)! 
 
 > [!NOTE]
-> [Please consult the FAQ section to get answers for the most asked questions.](../src/pdmpublisherfaq.html)
+> [Please consult the FAQ section to get answers for the most asked questions.](pdmpublisherfaq.md)
 
 
 PDMPublisher is a SOLIDWORKS PDM task add-in that lets you save your SOLIDWORKS files using advanced filters and provides power capabilities to place custom properties/datacard, BOM quantities on PDFs and merge them.  

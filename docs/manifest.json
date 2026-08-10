@@ -957,6 +957,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/ask-user-specify-configuration-dialog.png",
       "output": {
         "resource": {
@@ -2801,6 +2811,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublisher-annotations/sheets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-annotations/sql-query-placeholders.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-annotations/sql-query-placeholders.html"
         }
       },
       "version": ""

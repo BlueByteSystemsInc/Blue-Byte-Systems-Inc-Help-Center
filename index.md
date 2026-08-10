@@ -193,7 +193,7 @@ description: Official documentation and support resources for Blue Byte Systems 
 <h1>Blue Byte Systems Help Center</h1>
 <p>Documentation, downloads, and support resources for Blue Byte Systems SOLIDWORKS PDM tools.</p>
 <div class="bbs-actions">
-<a class="bbs-action bbs-action-primary" href="src/introduction.html">Start here</a>
+<a class="bbs-action bbs-action-primary" href="src/introduction.md">Start here</a>
 </div>
 </section>
 
@@ -203,19 +203,19 @@ description: Official documentation and support resources for Blue Byte Systems 
 <div class="bbs-product">
 <h2>PDMPublisher</h2>
 <p>Automated publishing and export for SOLIDWORKS PDM.</p>
-<a href="src/pdmpublisher.html">Open docs &rarr;</a>
+<a href="src/pdmpublisher.md">Open docs &rarr;</a>
 </div>
 
 <div class="bbs-product">
 <h2>PDM2Excel</h2>
 <p>Export vault data, variables, and BOM information to Excel or CSV.</p>
-<a href="src/pdm2excel.html">Open docs &rarr;</a>
+<a href="src/pdm2excel.md">Open docs &rarr;</a>
 </div>
 
 <div class="bbs-product">
 <h2>PDMDeploy</h2>
 <p>Install and update Blue Byte Systems PDM add-ins using an activation code.</p>
-<a href="src/cdpdm.html">Open docs &rarr;</a>
+<a href="src/cdpdm.md">Open docs &rarr;</a>
 </div>
 
 <div class="bbs-product">

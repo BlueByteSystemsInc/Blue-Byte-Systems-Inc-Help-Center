@@ -1,22 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Sheet Name Pattern | PDMPublisher Options | Help Center </title>
+      <title>SQL Query Placeholders | PDMPublisher Annotations | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Sheet Name Pattern | PDMPublisher Options | Help Center ">
-      
-      <meta name="description" content="Filter drawing sheets by name.">
+      <meta name="title" content="SQL Query Placeholders | PDMPublisher Annotations | Help Center ">
+
+      <meta name="description" content="Retrieve annotation text from a SQL database by using file-aware query placeholders.">
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../../toc.html">
       <meta name="docfx:tocrel" content="../toc.html">
-      
+
       <meta name="docfx:rel" content="../../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/sheet-name-pattern.md/#L1">
+
+
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-annotations/sql-query-placeholders.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -107,58 +107,81 @@
         </div>
 
         <article data-uid="">
-<h1 id="sheet-name-pattern">Sheet Name Pattern</h1>
+<h1 id="sql-query-placeholders">SQL Query Placeholders</h1>
 
-<p><img src="/images/pdmpublisher/screenshots/options-026-property-sheet-name-pattern.png" alt="Sheet name pattern setting"></p>
-<p>Wildcard pattern used when <strong>Sheets to export</strong> is set to matching sheet names.</p>
-<p>Use <code>*</code> to match any text and <code>?</code> to match one character.</p>
-<p>Examples:</p>
-<ul>
-<li><code>*</code> matches every sheet.</li>
-<li><code>Sheet*</code> matches <code>Sheet1</code>, <code>Sheet2</code>, and <code>Sheet-Main</code>.</li>
-<li><code>REV?</code> matches <code>REV1</code> or <code>REVA</code>.</li>
-<li><code>DXF*</code> matches sheets whose names start with <code>DXF</code>.</li>
-</ul>
-<h2 id="match-the-configuration-name">Match the Configuration Name</h2>
-<p>Use <code>(ConfigurationName)</code> when a drawing sheet is named after the configuration being exported. PDMPublisher evaluates the placeholder before matching the sheet name.</p>
-<p>For example, if the selected configuration is <code>Machined</code>:</p>
+<p>Use an SQL query placeholder when annotation text must come from a SQL database. PDMPublisher replaces the file placeholder in the query, runs the query, and uses the returned value in the annotation.</p>
+<p><img src="/images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png" alt="Edit SQL Query dialog showing the connection string, query, output, and SQL placeholders"></p>
+<h2 id="configure-the-query">Configure the Query</h2>
+<ol>
+<li>Add or select the annotation.</li>
+<li>Add an SQL value to the annotation, then select the pencil icon to open <strong>Edit SQL Query</strong>.</li>
+<li>Enter the SQL Server connection string.</li>
+<li>Enter a query that includes the placeholder for the file type you need.</li>
+<li>Select <strong>Test Query</strong> and confirm that the expected value appears under <strong>Output</strong>.</li>
+</ol>
+<p>For example, a Windows-authenticated connection string can look like this:</p>
+<pre><code class="lang-text">Server=localhost;Database=TestPDMSql;Trusted_Connection=True;
+</code></pre>
+<h2 id="available-placeholders">Available Placeholders</h2>
 <table>
 <thead>
 <tr>
-<th>Sheet name pattern</th>
-<th>Evaluated pattern</th>
-<th>Matches</th>
-<th>Does not match</th>
+<th>Placeholder</th>
+<th>Value used in the query</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>(ConfigurationName)</code></td>
-<td><code>Machined</code></td>
-<td><code>Machined</code></td>
-<td><code>Default</code>, <code>Machined-DXF</code></td>
+<td><code>{$SQL-Filename}</code></td>
+<td>The filename being processed.</td>
 </tr>
 <tr>
-<td><code>(ConfigurationName)*</code></td>
-<td><code>Machined*</code></td>
-<td><code>Machined</code>, <code>Machined-DXF</code></td>
-<td><code>Default</code></td>
+<td><code>{$SQL-Part}</code></td>
+<td>The part value associated with the file.</td>
 </tr>
 <tr>
-<td><code>*(ConfigurationName)*</code></td>
-<td><code>*Machined*</code></td>
-<td><code>Machined</code>, <code>DXF-Machined</code>, <code>Machined-REV-A</code></td>
-<td><code>Default</code></td>
+<td><code>{$SQL-Assembly}</code></td>
+<td>The assembly value associated with the file.</td>
+</tr>
+<tr>
+<td><code>{$SQL-Drawing}</code></td>
+<td>The drawing value associated with the file.</td>
 </tr>
 </tbody>
 </table>
-<p>As another example, suppose a drawing contains sheets named <code>Default</code>, <code>Machined</code>, and <code>Welded</code>. When the selected configuration is <code>Welded</code> and the pattern is <code>(ConfigurationName)</code>, only the <code>Welded</code> sheet is exported.</p>
-<p>This setting is used by <a href="sheets-to-export.html">Sheets to Export</a> when that option is set to <code>Sheets matching name</code>.</p>
+<p>Choose the placeholder that matches the record stored in your database. For example, use <code>{$SQL-Assembly}</code> when the database row is identified by the assembly filename, even when the annotation is being added to an exported drawing.</p>
+<h2 id="filename-example">Filename Example</h2>
+<p>The following query looks up a project number by the current filename:</p>
+<pre><code class="lang-sql">SELECT ProjectNumber
+FROM FileProperties
+WHERE FileName = '{$SQL-Filename}'
+</code></pre>
+<p>If the filename is <code>Bracket.sldprt</code>, PDMPublisher evaluates the query as:</p>
+<pre><code class="lang-sql">SELECT ProjectNumber
+FROM FileProperties
+WHERE FileName = 'Bracket.sldprt'
+</code></pre>
+<h2 id="assembly-example">Assembly Example</h2>
+<p>The following query looks up material using the assembly filename:</p>
+<pre><code class="lang-sql">SELECT Material
+FROM PartProperties
+WHERE FileName = '{$SQL-Assembly}'
+</code></pre>
+<p>When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a launched task. For example:</p>
+<pre><code class="lang-sql">SELECT Material
+FROM PartProperties
+WHERE FileName = 'Full_Grill_Assembly.sldasm'
+</code></pre>
+<p>The <strong>Output</strong> area shows the test result. Confirm that the query returns the text you want displayed in the annotation before saving the task.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Use a database account with only the permissions required to read the annotation data. If the connection string contains credentials, restrict access to the task configuration.</p>
+</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/sheet-name-pattern.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-annotations/sql-query-placeholders.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

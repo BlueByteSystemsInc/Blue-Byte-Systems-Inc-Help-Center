@@ -17,3 +17,5 @@ Annotation text can be fixed text or values from PDM variables.
 > The available variables come from the variables configured in SOLIDWORKS PDM.
 
 Use variables when the annotation should include values such as part number, revision, project, customer, state, or other vault metadata.
+
+To retrieve annotation text from a SQL database, see [SQL Query Placeholders](sql-query-placeholders.md).

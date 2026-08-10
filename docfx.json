@@ -11,7 +11,9 @@
           "**/*.{md,yml}"
         ],
         "exclude": [
-          "docs/**"
+          "docs/**",
+          "pdmpublisher-site/**",
+          "pdmpublisher.com/**"
         ]
       }
     ],

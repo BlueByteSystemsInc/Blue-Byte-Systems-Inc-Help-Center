@@ -21,6 +21,7 @@ The annotation table is the large workspace below the toolbar. It shows the anno
 |---|---|---|
 | Add Annotation | Create a new annotation box. | [Open](pdmpublisher-annotations/add-annotation.md) |
 | Annotation Text | Enter fixed text or use PDM variables. | [Open](pdmpublisher-annotations/annotation-text.md) |
+| SQL Query Placeholders | Retrieve annotation text from a SQL database using the filename, part, assembly, or drawing value. | [Open](pdmpublisher-annotations/sql-query-placeholders.md) |
 | Text Formatting | Set font, size, and text style. | [Open](pdmpublisher-annotations/text-formatting.md) |
 | Watermark | Rotate and fade an annotation for watermark-style output. | [Open](pdmpublisher-annotations/watermark.md) |
 | Active | Include or skip an annotation without deleting it. | [Open](pdmpublisher-annotations/active.md) |

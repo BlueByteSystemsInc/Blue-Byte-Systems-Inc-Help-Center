@@ -25,7 +25,7 @@ This article is about updating any SOLIDWORKS PDM add-in you purchase from Blue 
 
 ### Download PDMDeploy
 
-<a class="bbs-download-button" href="/pdmdeploy/PDMDeploy31.cex">Download PDMDeploy V31</a>
+<a class="bbs-download-button" href="/pdmdeploy/PDMDeploy.cex">Download PDMDeploy</a>
 
 ### Public activation code
 

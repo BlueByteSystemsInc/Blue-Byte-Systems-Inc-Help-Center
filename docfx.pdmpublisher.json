@@ -1,0 +1,87 @@
+{
+  "build": {
+    "markdownEngineProperties": {
+      "alerts": {
+        "Did You Know?": "alert alert-success"
+      }
+    },
+    "content": [
+      {
+        "files": [
+          "index.md",
+          "toc.yml"
+        ],
+        "src": "pdmpublisher-site"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "pdmpublisher-site/src",
+        "dest": "src"
+      },
+      {
+        "files": [
+          "pdmpublisher*.md",
+          "propertiespagepdmpublisher.md",
+          "licensespdmpublisher.md",
+          "options.md",
+          "annotations.md",
+          "conditions.md",
+          "conditions_solidworks.md",
+          "scheduleditems.md",
+          "changeslog.md",
+          "eula.md",
+          "installingpdmaddins.md",
+          "offlineactivator.md",
+          "cdpdm.md",
+          "cdpdmchangeslog.md",
+          "updateaddinswithcdpdm.md",
+          "pdmqa.md",
+          "pdmpublisher-options/**/*.md",
+          "pdmpublisher-annotations/**/*.md",
+          "pdmpublisher-conditions/**/*.md"
+        ],
+        "src": "src",
+        "dest": "src"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "pdmdeploy/**"
+        ],
+        "exclude": [
+          "images/*pdm2excel*",
+          "images/*pdmreminder*",
+          "images/*revisionsync*",
+          "images/*partsbook*",
+          "images/*pdmshell*",
+          "images/*cutlist*"
+        ]
+      }
+    ],
+    "sitemap": {
+      "baseUrl": "https://pdmpublisher.com/help",
+      "priority": 1,
+      "changefreq": "weekly"
+    },
+    "output": "pdmpublisher.com/help",
+    "template": [
+      "default",
+      "modern",
+      "templates/bluebyte"
+    ],
+    "globalMetadata": {
+      "_appName": "PDMPublisher Help",
+      "_appTitle": "PDMPublisher Help Center",
+      "_appFooter": "<div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. All rights reserved.</div>",
+      "_appLogoPath": "images/bluebyte-mark.png",
+      "_appFaviconPath": "images/bluebyte-mark.png",
+      "_enableSearch": true,
+      "_pdmpublisherOnly": true,
+      "pdf": false
+    }
+  }
+}

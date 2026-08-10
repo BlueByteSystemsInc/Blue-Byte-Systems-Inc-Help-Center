@@ -13,4 +13,4 @@ With PDM Publisher, special/dynamic variable allow you to create advanced custom
 
 
 > [!NOTE]
-> Special or dynamic variables are also used in our other product [PDM2Excel](../src/pdm2excel.html).
+> PDMPublisher evaluates special and dynamic variables when it creates output paths and filenames.

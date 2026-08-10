@@ -20,4 +20,18 @@ Examples:
 - `REV?` matches `REV1` or `REVA`.
 - `DXF*` matches sheets whose names start with `DXF`.
 
+## Match the Configuration Name
+
+Use `(ConfigurationName)` when a drawing sheet is named after the configuration being exported. PDMPublisher evaluates the placeholder before matching the sheet name.
+
+For example, if the selected configuration is `Machined`:
+
+| Sheet name pattern | Evaluated pattern | Matches | Does not match |
+| --- | --- | --- | --- |
+| `(ConfigurationName)` | `Machined` | `Machined` | `Default`, `Machined-DXF` |
+| `(ConfigurationName)*` | `Machined*` | `Machined`, `Machined-DXF` | `Default` |
+| `*(ConfigurationName)*` | `*Machined*` | `Machined`, `DXF-Machined`, `Machined-REV-A` | `Default` |
+
+As another example, suppose a drawing contains sheets named `Default`, `Machined`, and `Welded`. When the selected configuration is `Welded` and the pattern is `(ConfigurationName)`, only the `Welded` sheet is exported.
+
 This setting is used by [Sheets to Export](sheets-to-export.md) when that option is set to `Sheets matching name`.
