@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/10/2026
+ms.date: 08/11/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,11 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.06
+*Applies to **PDM Task***
+- Fixed a keyboard focus issue on the Conditions page so users can type in the Value and Configuration columns after adding a condition.
+- Made the SOLIDWORKS PDM task setup dialog resizable. The PDMPublisher setup pages now expand with the dialog.
 
 ## 2026.08.05
 *Applies to **PDM Task** and **SOLIDWORKS Add-in***
