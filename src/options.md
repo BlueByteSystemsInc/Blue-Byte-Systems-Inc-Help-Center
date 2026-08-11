@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 The **Options** task page controls where PDMPublisher writes exported files, which formats are created, how PDFs are merged, and how the PDM task behaves when it runs.
 
-![PDMPublisher Options task page](/images/pdmpublisher/screenshots/task-setup-options.png)
+![PDMPublisher Options task page](/images/pdmpublisher/screenshots/page-options.png)
 
 Use this page as a quick map. Each setting links to its own feature page with the matching screenshot, explanation, and notes.
 
@@ -22,7 +22,7 @@ Review these settings before saving a new task:
 - [File Formats](pdmpublisher-options/file-formats.md)
 - [Use this version of SOLIDWORKS](pdmpublisher-options/use-this-version-of-solidworks.md)
 - [Template](pdmpublisher-options/template.md), when processing assemblies or quantities
-- [Activity Tracking](pdmpublisher-options/turn-on-activity-tracking.md), when testing a new task
+- [Vault Activity Logs](pdmpublisher-options/turn-on-activity-tracking.md), when testing a new task
 
 ## Output
 
@@ -76,13 +76,13 @@ Review these settings before saving a new task:
 | Use this version of SOLIDWORKS | Selects which installed SOLIDWORKS version should run the task. | [Open](pdmpublisher-options/use-this-version-of-solidworks.md) |
 | Hide Task in File Explorer | Hides the task command from the PDM File Explorer right-click menu. | [Open](pdmpublisher-options/hide-task-in-file-explorer.md) |
 
-## BOM, History, and Advanced
+## BOM, Activity Logs, and Advanced
 
 | Setting | Summary | Details |
 |---|---|---|
 | Template | Selects the BOM template/layout used for quantity-aware output. | [Open](pdmpublisher-options/template.md) |
 | Calculation method | Chooses how references are calculated for BOM and quantity evaluation. | [Open](pdmpublisher-options/calculation-method.md) |
-| Turn on activity tracking | Creates detailed logs when publishing starts. | [Open](pdmpublisher-options/turn-on-activity-tracking.md) |
+| Vault Activity Logs | Creates detailed logs in the configured vault folder when publishing starts. | [Open](pdmpublisher-options/turn-on-activity-tracking.md) |
 | Server-Synced Activity Logs | Sends activity logs to the server for future support review. | [Open](pdmpublisher-options/server-synced-activity-logs.md) |
 | Log Folder (Vault Only) | PDM vault folder where logs are stored. | [Open](pdmpublisher-options/log-folder-vault-only.md) |
 | Ignore sub-assemblies children when condition checks fail | Prevents children of failed sub-assemblies from being processed. | [Open](pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md) |

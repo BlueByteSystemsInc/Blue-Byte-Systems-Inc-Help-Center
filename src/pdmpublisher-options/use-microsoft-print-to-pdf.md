@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Use Microsoft Print To PDF to Save PDFs
 
-![Use Microsoft Print To PDF setting](/images/pdmpublisher/screenshots/options-033-property-use-microsoft-print-to-pdf-to-save-pdfs.png)
+![Use Microsoft Print To PDF setting](/images/pdmpublisher/screenshots/options-032-property-use-microsoft-print-to-pdf-to-save-pdfs.png)
 
 Uses the Windows **Microsoft Print to PDF** printer path when creating PDFs.
 

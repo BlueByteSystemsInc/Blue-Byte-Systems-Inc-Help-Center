@@ -11,7 +11,7 @@ ms.topic: reference
 
 Sets the PDM vault folder where log files are deposited.
 
-This setting is related to [Turn on Activity Tracking](turn-on-activity-tracking.md). It controls where the activity log files are stored in the vault.
+This setting is related to [Vault Activity Logs](turn-on-activity-tracking.md). It controls where the activity log files are stored in the vault.
 
 Recommended path:
 

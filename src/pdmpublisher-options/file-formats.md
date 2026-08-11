@@ -1,7 +1,7 @@
 ---
 title: File Formats | PDMPublisher Options
 description: Select the file formats PDMPublisher exports.
-ms.date: 08/09/2026
+ms.date: 08/10/2026
 ms.topic: reference
 ---
 
@@ -13,9 +13,43 @@ Selects the output formats created during publishing. Multiple formats can be se
 
 ![File Formats dropdown](/images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png)
 
+## Format Names and Icons
+
+Starting with version `2026.08.05`, the selector shows a descriptive format name, its output extension, and a file-type icon. The icon is supplied by Windows and may vary with the applications and file associations installed on the computer. It is only a visual identifier and does not change the export.
+
 ## Supported Outputs
 
 PDMPublisher can export SOLIDWORKS files to the formats shown in the **File Formats** list. It also supports exporting Microsoft Word and Excel documents to PDF when those Office documents are processed by the task.
+
+The complete selector is organized as follows:
+
+| Group | Formats |
+| --- | --- |
+| PDF and MBD | Adobe PDF (`pdf`), 3D PDF - MBD (`_3dpdf`) |
+| Drawings | DWG (`dwg`), DXF (`dxf`) |
+| eDrawings | eDrawings Part (`eprt`), eDrawings Assembly (`easm`), eDrawings Drawing (`edrw`) |
+| CAD and interchange | STEP (`step`), IGES (`igs`), STL (`stl`), Parasolid Text (`x_t`), Parasolid Binary (`x_b`), ACIS (`sat`), 3D XML (`3dxml`), 3MF (`3mf`), IFC (`ifc`), Universal 3D (`u3d`), VRML (`wrl`), VDAFS (`vda`), CATIA Graphics (`cgr`), HCG (`hcg`), HOOPS HSF (`hsf`) |
+| Web and images | HTML (`html`), Microsoft XAML (`xaml`), JPEG (`jpg`), TIF (`tif`), Bitmap (`bmp`), Adobe Illustrator (`ai`), Adobe Photoshop (`psd`) |
+
+## Added in Version 2026.08.05
+
+Version `2026.08.05` adds these output choices:
+
+- ACIS (`sat`)
+- 3D XML (`3dxml`)
+- VRML (`wrl`)
+- VDAFS (`vda`)
+- CATIA Graphics (`cgr`)
+- HCG (`hcg`)
+- HOOPS HSF (`hsf`)
+- Microsoft XAML (`xaml`)
+- JPEG (`jpg`)
+- TIF (`tif`)
+- Adobe Illustrator (`ai`)
+- Adobe Photoshop (`psd`)
+
+> [!NOTE]
+> PDMPublisher removes formats that are not valid for the source document type. Some formats also depend on the selected SOLIDWORKS version and the export capabilities installed on the computer running the task.
 
 If SOLIDWORKS supports an export format that is not currently listed here, contact Blue Byte Systems and request support for that format:
 
@@ -51,6 +85,3 @@ When `DXF` is selected for a drawing, PDMPublisher exports the drawing as DXF.
 Flat pattern DXF export is controlled by its own option at the bottom of the Export section: [Export Sheet Metal Parts to 1:1 Flat Pattern DXF](export-sheet-metal-flat-pattern-dxf.md).
 
 You do not need to select `DXF` in **File Formats** for that flat pattern feature to run.
-
-> [!NOTE]
-> Some formats depend on the source document type or installed SOLIDWORKS/eDrawings capabilities.

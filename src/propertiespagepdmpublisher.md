@@ -18,7 +18,7 @@ ms.topic: conceptual
 > - Select the correct [Template](pdmpublisher-options/template.md). This is critical when PDMPublisher needs to calculate assembly references, configurations, or quantities.
 > - Confirm [Use this version of SOLIDWORKS](pdmpublisher-options/use-this-version-of-solidworks.md) points to a SOLIDWORKS version installed on the task host computer.
 > - Set a valid [Export Location](pdmpublisher-options/export-location.md) and [Filename](pdmpublisher-options/filename.md). Avoid trailing backslashes in export paths, and use filename placeholders such as revision, configuration, or sheet name when one source file can create multiple outputs.
-> - If you need troubleshooting records, enable [Turn on Activity Tracking](pdmpublisher-options/turn-on-activity-tracking.md) and set [Log Folder (Vault Only)](pdmpublisher-options/log-folder-vault-only.md) to `(VaultRootFolder)\Logs\PDMPublisher`. Create this folder manually and make sure the user running the task, or the task host account, can add log files there.
+> - If you need troubleshooting records, enable [Vault Activity Logs](pdmpublisher-options/turn-on-activity-tracking.md) and set [Log Folder (Vault Only)](pdmpublisher-options/log-folder-vault-only.md) to `(VaultRootFolder)\Logs\PDMPublisher`. Create this folder manually and make sure the user running the task, or the task host account, can add log files there.
 
 ## Create the Task
 

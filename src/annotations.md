@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Use the Annotations task page to add text notes or watermarks to exported PDF documents.
 
-![PDMPublisher Annotations page](/images/pdmpublisher/screenshots/task-setup-annotations.png)
+![PDMPublisher Annotations page](/images/pdmpublisher/screenshots/page-annotations.png)
 
 Each annotation can have its own text, formatting, position, sheet rule, and active state.
 

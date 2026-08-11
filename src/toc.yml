@@ -126,7 +126,7 @@
         - name: Activity Logs
           expanded: true
           items:
-          - name: Activity Tracking
+          - name: Vault Activity Logs
             href: pdmpublisher-options/turn-on-activity-tracking.md
             expanded: true
             items:

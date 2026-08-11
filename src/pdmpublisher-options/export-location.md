@@ -78,6 +78,8 @@ Use **Customize Location** when different file formats need different output fol
 
 ![Extension-specific export location dialog](/images/pdmpublisher/screenshots/options-dialog-extension-specific-location.png)
 
+The dialog uses the same format names and file-type icons described on the [File Formats](file-formats.md) page. Each row lets you enable a custom location for that output format.
+
 When an extension-specific location is enabled for a file format, it overrides the main **Export Location** for that format only.
 
 For example:

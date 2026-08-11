@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Use @ Tab to Evaluate Paths
 
-![Use @ tab to evaluate paths setting](/images/pdmpublisher/screenshots/options-032-property-use-@-tab-to-evaluate-paths..png)
+![Use @ tab to evaluate paths setting](/images/pdmpublisher/screenshots/options-031-property-use-@-tab-to-evaluate-paths..png)
 
 Evaluates dynamic variables in the export location and filename using the `@` tab.
 

@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/04/2026
+ms.date: 08/10/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,12 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.05
+*Applies to **PDM Task** and **SOLIDWORKS Add-in***
+- Added ACIS, 3D XML, VRML, VDAFS, CATIA Graphics, HCG, HOOPS HSF, Microsoft XAML, JPEG, TIF, Adobe Illustrator, and Adobe Photoshop export formats. See [File Formats](/src/pdmpublisher-options/file-formats.html).
+- Added descriptive format names and Windows file-type icons to the File Formats selector and extension-specific export locations.
+- Added visual icons to the BOM template and SOLIDWORKS version selectors.
 
 ## 2026.08.04
 *Applies to **PDM Task***

@@ -1637,6 +1637,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-031-property-use-@-tab-to-evaluate-paths..png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-031-property-use-@-tab-to-evaluate-paths..png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/options-032-property-turn-on-activity-tracking.png",
       "output": {
         "resource": {
@@ -1651,6 +1661,16 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher/screenshots/options-032-property-use-@-tab-to-evaluate-paths..png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-032-property-use-microsoft-print-to-pdf-to-save-pdfs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-032-property-use-microsoft-print-to-pdf-to-save-pdfs.png"
         }
       },
       "version": ""
@@ -1677,6 +1697,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-033-property-use-search-to-locate-drawings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-033-property-use-search-to-locate-drawings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/options-034-property-use-microsoft-print-to-pdf-to-save-pdfs.png",
       "output": {
         "resource": {
@@ -1697,6 +1727,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-034-property-use-this-version-of-solidworks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-034-property-use-this-version-of-solidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/options-035-property-use-search-to-locate-drawings.png",
       "output": {
         "resource": {
@@ -1711,6 +1751,16 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher/screenshots/options-035-property-use-this-version-of-solidworks.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-035-property-vault-activity-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-035-property-vault-activity-logs.png"
         }
       },
       "version": ""

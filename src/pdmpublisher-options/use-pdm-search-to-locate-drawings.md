@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Use PDM Search to Locate Drawings
 
-![Use PDM search to locate drawings setting](/images/pdmpublisher/screenshots/options-034-property-use-search-to-locate-drawings.png)
+![Use PDM search to locate drawings setting](/images/pdmpublisher/screenshots/options-033-property-use-search-to-locate-drawings.png)
 
 Uses PDM search or Where Used behavior when a drawing cannot be found in the same folder as the model.
 

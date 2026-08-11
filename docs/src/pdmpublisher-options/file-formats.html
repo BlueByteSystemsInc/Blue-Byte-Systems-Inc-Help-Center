@@ -112,8 +112,61 @@
 <p><img src="/images/pdmpublisher/screenshots/options-016-property-file-formats.png" alt="File Formats setting"></p>
 <p>Selects the output formats created during publishing. Multiple formats can be selected on task launch when the task allows user selection.</p>
 <p><img src="/images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png" alt="File Formats dropdown"></p>
+<h2 id="format-names-and-icons">Format Names and Icons</h2>
+<p>Starting with version <code>2026.08.05</code>, the selector shows a descriptive format name, its output extension, and a file-type icon. The icon is supplied by Windows and may vary with the applications and file associations installed on the computer. It is only a visual identifier and does not change the export.</p>
 <h2 id="supported-outputs">Supported Outputs</h2>
 <p>PDMPublisher can export SOLIDWORKS files to the formats shown in the <strong>File Formats</strong> list. It also supports exporting Microsoft Word and Excel documents to PDF when those Office documents are processed by the task.</p>
+<p>The complete selector is organized as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Formats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PDF and MBD</td>
+<td>Adobe PDF (<code>pdf</code>), 3D PDF - MBD (<code>_3dpdf</code>)</td>
+</tr>
+<tr>
+<td>Drawings</td>
+<td>DWG (<code>dwg</code>), DXF (<code>dxf</code>)</td>
+</tr>
+<tr>
+<td>eDrawings</td>
+<td>eDrawings Part (<code>eprt</code>), eDrawings Assembly (<code>easm</code>), eDrawings Drawing (<code>edrw</code>)</td>
+</tr>
+<tr>
+<td>CAD and interchange</td>
+<td>STEP (<code>step</code>), IGES (<code>igs</code>), STL (<code>stl</code>), Parasolid Text (<code>x_t</code>), Parasolid Binary (<code>x_b</code>), ACIS (<code>sat</code>), 3D XML (<code>3dxml</code>), 3MF (<code>3mf</code>), IFC (<code>ifc</code>), Universal 3D (<code>u3d</code>), VRML (<code>wrl</code>), VDAFS (<code>vda</code>), CATIA Graphics (<code>cgr</code>), HCG (<code>hcg</code>), HOOPS HSF (<code>hsf</code>)</td>
+</tr>
+<tr>
+<td>Web and images</td>
+<td>HTML (<code>html</code>), Microsoft XAML (<code>xaml</code>), JPEG (<code>jpg</code>), TIF (<code>tif</code>), Bitmap (<code>bmp</code>), Adobe Illustrator (<code>ai</code>), Adobe Photoshop (<code>psd</code>)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="added-in-version-20260805">Added in Version 2026.08.05</h2>
+<p>Version <code>2026.08.05</code> adds these output choices:</p>
+<ul>
+<li>ACIS (<code>sat</code>)</li>
+<li>3D XML (<code>3dxml</code>)</li>
+<li>VRML (<code>wrl</code>)</li>
+<li>VDAFS (<code>vda</code>)</li>
+<li>CATIA Graphics (<code>cgr</code>)</li>
+<li>HCG (<code>hcg</code>)</li>
+<li>HOOPS HSF (<code>hsf</code>)</li>
+<li>Microsoft XAML (<code>xaml</code>)</li>
+<li>JPEG (<code>jpg</code>)</li>
+<li>TIF (<code>tif</code>)</li>
+<li>Adobe Illustrator (<code>ai</code>)</li>
+<li>Adobe Photoshop (<code>psd</code>)</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>PDMPublisher removes formats that are not valid for the source document type. Some formats also depend on the selected SOLIDWORKS version and the export capabilities installed on the computer running the task.</p>
+</div>
 <p>If SOLIDWORKS supports an export format that is not currently listed here, contact Blue Byte Systems and request support for that format:</p>
 <ul>
 <li><a href="https://bluebyte.biz/contact/">Contact Blue Byte Systems</a></li>
@@ -139,10 +192,6 @@
 <h2 id="flat-pattern-dxf">Flat Pattern DXF</h2>
 <p>Flat pattern DXF export is controlled by its own option at the bottom of the Export section: <a href="export-sheet-metal-flat-pattern-dxf.html">Export Sheet Metal Parts to 1:1 Flat Pattern DXF</a>.</p>
 <p>You do not need to select <code>DXF</code> in <strong>File Formats</strong> for that flat pattern feature to run.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Some formats depend on the source document type or installed SOLIDWORKS/eDrawings capabilities.</p>
-</div>
 
 </article>
 

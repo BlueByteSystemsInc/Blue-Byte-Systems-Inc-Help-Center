@@ -1,7 +1,7 @@
 ---
 title: Template | PDMPublisher Options
 description: Select the BOM template used for quantity-aware publishing.
-ms.date: 08/09/2026
+ms.date: 08/10/2026
 ms.topic: reference
 ---
 
@@ -12,6 +12,8 @@ ms.topic: reference
 Selects the BOM template or layout used for quantity-aware publishing.
 
 ![Template dropdown](/images/pdmpublisher/screenshots/options-dropdown-002-template.png)
+
+The BOM layout icon is a visual identifier. The selected template name determines which PDM BOM layout PDMPublisher uses.
 
 The selected BOM template is used when PDMPublisher needs to calculate assembly references, configurations, and quantities.
 

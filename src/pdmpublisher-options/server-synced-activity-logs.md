@@ -11,7 +11,7 @@ ms.topic: reference
 
 Sends activity logs to the server so they can be reviewed later for support and troubleshooting.
 
-This setting is related to [Turn on Activity Tracking](turn-on-activity-tracking.md). Enable activity tracking first so the task has logs to send.
+This setting is related to [Vault Activity Logs](turn-on-activity-tracking.md). Enable vault activity logs first so the task has logs to send.
 
 > [!WARNING]
 > Confirm your company's policy before enabling server-synced logs if filenames, paths, variable names, or job history are considered sensitive.

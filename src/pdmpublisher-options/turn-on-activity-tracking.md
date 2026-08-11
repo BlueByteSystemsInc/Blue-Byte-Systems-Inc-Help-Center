@@ -1,17 +1,17 @@
 ---
-title: Turn on Activity Tracking | PDMPublisher Options
+title: Vault Activity Logs | PDMPublisher Options
 description: Create detailed logs for PDMPublisher runs.
-ms.date: 08/09/2026
+ms.date: 08/10/2026
 ms.topic: reference
 ---
 
-# Turn on Activity Tracking
+# Vault Activity Logs
 
-![Turn on activity tracking setting](/images/pdmpublisher/screenshots/options-031-property-turn-on-activity-tracking.png)
+![Vault Activity Logs setting](/images/pdmpublisher/screenshots/options-035-property-vault-activity-logs.png)
 
 Creates detailed task logs that show the steps performed during publishing.
 
-Use this when validating a new task configuration or troubleshooting export behavior.
+Enable this when validating a new task configuration or troubleshooting export behavior.
 
 Use [Server-Synced Activity Logs](server-synced-activity-logs.md) only when those activity logs should also be available for support review.
 
