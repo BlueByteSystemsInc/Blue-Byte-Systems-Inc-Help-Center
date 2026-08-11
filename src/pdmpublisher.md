@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher | SOLIDWORKS PDM
 description: Learn about PDMPublisher for SOLIDWORKS PDM Professional, including supported export formats, input files, requirements, installation, and licensing.
-ms.date: 06/19/2026
+ms.date: 08/10/2026
 ms.topic: overview
 ---
 
@@ -19,26 +19,19 @@ Thank you for choosing [PDMPublisher](https://bluebyte.biz/product/pdmpublisher/
 PDMPublisher is a SOLIDWORKS PDM task add-in that lets you save your SOLIDWORKS files using advanced filters and provides power capabilities to place custom properties/datacard, BOM quantities on PDFs and merge them.  
 
 ## Supported extensions
-With the PDM task version of PDMPublisher, you can export to the following extensions:
+With the PDM task version of PDMPublisher, you can export to the following formats:
 
-- `pdf`: 
-  - SOLIDWORKS drawings as `pdf`.
-  - SOLIDWORKS parts and assemblies as 3D `pdf`
-  - Office documents (Word and Excel) as `pdf`
-- `dxf` (You can also export the flat pattern of sheet metal parts)
-- `dwg`
-- `step`
-- `iges`
-- `x_t`
-- `x_b`
-- `stl`
-- `u3d`
-- `eprt`
-- `edrw`
-- `easm`
-- `ifc`
-- `3mf`
-- `html` (eDrawings Professional required)
+- PDF and MBD: `pdf`, `_3dpdf`
+- Drawings: `dwg`, `dxf`
+- eDrawings: `eprt`, `easm`, `edrw`
+- CAD and interchange: `step`, `igs`, `stl`, `x_t`, `x_b`, `sat`, `3dxml`, `3mf`, `ifc`, `u3d`, `wrl`, `vda`, `cgr`, `hcg`, `hsf`
+- Web and images: `html`, `xaml`, `jpg`, `tif`, `bmp`, `ai`, `psd`
+
+The `pdf` format exports SOLIDWORKS drawings and converts Microsoft Word and Excel documents to PDF. The `_3dpdf` selection exports SOLIDWORKS parts and assemblies as 3D PDF.
+
+Drawing files can be exported as `dxf`. To create manufacturing-ready flat patterns from sheet metal parts, use [Export Sheet Metal Parts to 1:1 Flat Pattern DXF](pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md).
+
+The `html` format requires eDrawings Professional. See [File Formats](pdmpublisher-options/file-formats.md) for format names, source-file behavior, screenshots, and version-specific notes.
 
 ## Input files
 PDMPublisher can process individual SOLIDWORKS part files (`.sldprt`), drawing files (`.slddrw`), and assemblies (`.sldasm`) along with all their references. This ensures that all necessary components are correctly handled during processing, whether you're converting a single file or an entire assembly structure.  

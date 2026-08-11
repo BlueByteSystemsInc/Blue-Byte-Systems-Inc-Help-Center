@@ -1,7 +1,7 @@
 ﻿---
 title: Getting Started | Blue Byte Systems Help Center | SOLIDWORKS PDM
 description: Welcome to Blue Byte Systems, a provider of solutions for SOLIDWORKS PDM automation, publishing, migration, data quality, and task optimization.
-ms.date: 06/19/2026
+ms.date: 08/10/2026
 ms.topic: conceptual
 ---
 
@@ -46,27 +46,19 @@ PDMPublisher is one product with one code base, available in two versions.
 
 
 ### Supported extensions 
-With PDMPublisher, you can export to the following extensions:
+With PDMPublisher, you can export to the following formats:
 
-- `pdf`: 
-  - SOLIDWORKS drawings as `pdf`.
-  - SOLIDWORKS parts and assemblies as 3D `pdf`
-  - Office documents (Word and Excel) as `pdf`
-- `dxf` (You can also export the flat pattern of sheet metal parts)
-- `dwg`
-- `step`
-- `iges`
-- `x_t`
-- `x_b`
-- `stl`
-- `u3d`
-- `eprt`
-- `edrw`
-- `easm`
-- `ifc`
-- `3mf`
-- `html` (eDrawings Professional required)
-- `bmp`
+- PDF and MBD: `pdf`, `_3dpdf`
+- Drawings: `dwg`, `dxf`
+- eDrawings: `eprt`, `easm`, `edrw`
+- CAD and interchange: `step`, `igs`, `stl`, `x_t`, `x_b`, `sat`, `3dxml`, `3mf`, `ifc`, `u3d`, `wrl`, `vda`, `cgr`, `hcg`, `hsf`
+- Web and images: `html`, `xaml`, `jpg`, `tif`, `bmp`, `ai`, `psd`
+
+The `pdf` format exports SOLIDWORKS drawings and converts Microsoft Word and Excel documents to PDF. The `_3dpdf` selection exports SOLIDWORKS parts and assemblies as 3D PDF.
+
+Drawing files can be exported as `dxf`. To create manufacturing-ready flat patterns from sheet metal parts, use [Export Sheet Metal Parts to 1:1 Flat Pattern DXF](/src/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.html).
+
+The `html` format requires eDrawings Professional. See [File Formats](/src/pdmpublisher-options/file-formats.html) for format names, source-file behavior, screenshots, and version-specific notes.
 
 ### Missing file format? 
 

@@ -118,30 +118,17 @@
 </div>
 <p>PDMPublisher is a SOLIDWORKS PDM task add-in that lets you save your SOLIDWORKS files using advanced filters and provides power capabilities to place custom properties/datacard, BOM quantities on PDFs and merge them.</p>
 <h2 id="supported-extensions">Supported extensions</h2>
-<p>With the PDM task version of PDMPublisher, you can export to the following extensions:</p>
+<p>With the PDM task version of PDMPublisher, you can export to the following formats:</p>
 <ul>
-<li><code>pdf</code>:
-<ul>
-<li>SOLIDWORKS drawings as <code>pdf</code>.</li>
-<li>SOLIDWORKS parts and assemblies as 3D <code>pdf</code></li>
-<li>Office documents (Word and Excel) as <code>pdf</code></li>
+<li>PDF and MBD: <code>pdf</code>, <code>_3dpdf</code></li>
+<li>Drawings: <code>dwg</code>, <code>dxf</code></li>
+<li>eDrawings: <code>eprt</code>, <code>easm</code>, <code>edrw</code></li>
+<li>CAD and interchange: <code>step</code>, <code>igs</code>, <code>stl</code>, <code>x_t</code>, <code>x_b</code>, <code>sat</code>, <code>3dxml</code>, <code>3mf</code>, <code>ifc</code>, <code>u3d</code>, <code>wrl</code>, <code>vda</code>, <code>cgr</code>, <code>hcg</code>, <code>hsf</code></li>
+<li>Web and images: <code>html</code>, <code>xaml</code>, <code>jpg</code>, <code>tif</code>, <code>bmp</code>, <code>ai</code>, <code>psd</code></li>
 </ul>
-</li>
-<li><code>dxf</code> (You can also export the flat pattern of sheet metal parts)</li>
-<li><code>dwg</code></li>
-<li><code>step</code></li>
-<li><code>iges</code></li>
-<li><code>x_t</code></li>
-<li><code>x_b</code></li>
-<li><code>stl</code></li>
-<li><code>u3d</code></li>
-<li><code>eprt</code></li>
-<li><code>edrw</code></li>
-<li><code>easm</code></li>
-<li><code>ifc</code></li>
-<li><code>3mf</code></li>
-<li><code>html</code> (eDrawings Professional required)</li>
-</ul>
+<p>The <code>pdf</code> format exports SOLIDWORKS drawings and converts Microsoft Word and Excel documents to PDF. The <code>_3dpdf</code> selection exports SOLIDWORKS parts and assemblies as 3D PDF.</p>
+<p>Drawing files can be exported as <code>dxf</code>. To create manufacturing-ready flat patterns from sheet metal parts, use <a href="pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.html">Export Sheet Metal Parts to 1:1 Flat Pattern DXF</a>.</p>
+<p>The <code>html</code> format requires eDrawings Professional. See <a href="pdmpublisher-options/file-formats.html">File Formats</a> for format names, source-file behavior, screenshots, and version-specific notes.</p>
 <h2 id="input-files">Input files</h2>
 <p>PDMPublisher can process individual SOLIDWORKS part files (<code>.sldprt</code>), drawing files (<code>.slddrw</code>), and assemblies (<code>.sldasm</code>) along with all their references. This ensures that all necessary components are correctly handled during processing, whether you're converting a single file or an entire assembly structure.</p>
 <ul>
