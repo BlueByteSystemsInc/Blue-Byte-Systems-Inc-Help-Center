@@ -1,7 +1,7 @@
 ---
 title: Export Location | PDMPublisher Options
 description: Configure where PDMPublisher writes exported files.
-ms.date: 08/09/2026
+ms.date: 08/13/2026
 ms.topic: reference
 ---
 
@@ -66,6 +66,8 @@ resolves to:
 `C:\PDMVault\Projects\1001\Exports`
 
 Placeholders are useful when the same task must write files to different folders depending on the file being processed. You can use them to include values such as the source folder, file name, revision, state, workflow, configuration, or other PDM/SOLIDWORKS variables exposed by the placeholder menu.
+
+Use `(FileNameNumberRange)` to organize numeric filenames into folders covering 1,000 numbers. For example, `11345.SLDPRT` returns `11000-11999`. See [File Name Number Range](../pdmpublisherspecialvariable.md#file-name-number-range) for complete behavior and fallback examples.
 
 > [!TIP]
 > Use placeholders for repeatable task setups. Hard-coded paths are fine for one fixed export folder, but placeholders make the task adapt to each source file.

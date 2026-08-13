@@ -37,6 +37,8 @@
         href: pdmpublisherdemo.md
       - name: License Management
         href: licensespdmpublisher.md
+      - name: Theme Settings
+        href: pdmpublisher-theme-settings.md
       - name: Setting up your first task
         href: propertiespagepdmpublisher.md
       - name: Why is the Tasks menu missing?

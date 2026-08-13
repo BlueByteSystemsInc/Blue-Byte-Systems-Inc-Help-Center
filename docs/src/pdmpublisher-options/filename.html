@@ -112,6 +112,7 @@
 <p><img src="/images/pdmpublisher/screenshots/options-017-property-filename.png" alt="Filename setting"></p>
 <p>Defines the output filename pattern. You can combine static text with SOLIDWORKS custom properties or PDM variables.</p>
 <p>Use unique values such as part number, revision, configuration name, or sheet name when one source file may create several exports.</p>
+<p>Use <code>(FileNameNumberRange)</code> when numeric source filenames should be grouped into ranges of 1,000. For example, <code>11345.SLDPRT</code> evaluates to <code>11000-11999</code>. See <a href="../pdmpublisherspecialvariable.html#file-name-number-range">File Name Number Range</a> for examples and non-numeric filename behavior.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>If <strong>Convert multiple configurations</strong> is enabled, include <code>ConfigurationName</code> or another configuration-specific value in the filename.</p>

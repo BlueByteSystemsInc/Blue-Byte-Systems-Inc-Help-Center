@@ -957,6 +957,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/dark-theme-options.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/dark-theme-options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png",
       "output": {
         "resource": {
@@ -2081,6 +2091,26 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher/screenshots/task-setup-scheduling.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/theme-settings-confirmation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/theme-settings-confirmation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/theme-settings-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/theme-settings-menu.png"
         }
       },
       "version": ""
@@ -3281,6 +3311,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublisher-task-menu-missing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-theme-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-theme-settings.html"
         }
       },
       "version": ""

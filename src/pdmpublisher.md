@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher | SOLIDWORKS PDM
 description: Learn about PDMPublisher for SOLIDWORKS PDM Professional, including supported export formats, input files, requirements, installation, and licensing.
-ms.date: 08/10/2026
+ms.date: 08/13/2026
 ms.topic: overview
 ---
 
@@ -68,6 +68,10 @@ To install the PDMPublisher, you have two options:
 
 ## Creating your first task
 Please follow the instructions in this [article](/src/propertiespagepdmpublisher.html).  
+
+## Theme Settings
+
+PDMPublisher can optionally follow the Windows light or dark app theme. Theme synchronization is controlled from the PDMPublisher add-in menu in the SOLIDWORKS PDM Administration tool. See [Theme Settings](pdmpublisher-theme-settings.md).
 
 ## Support
 For additional support, please contact us through the [contact](https://bluebyte.biz/contact/) page or via our support email support@bluebytesystemsinc.zohodesk.com.

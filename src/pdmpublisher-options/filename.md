@@ -1,7 +1,7 @@
 ---
 title: Filename | PDMPublisher Options
 description: Configure the output filename pattern used by PDMPublisher.
-ms.date: 08/09/2026
+ms.date: 08/13/2026
 ms.topic: reference
 ---
 
@@ -12,6 +12,8 @@ ms.topic: reference
 Defines the output filename pattern. You can combine static text with SOLIDWORKS custom properties or PDM variables.
 
 Use unique values such as part number, revision, configuration name, or sheet name when one source file may create several exports.
+
+Use `(FileNameNumberRange)` when numeric source filenames should be grouped into ranges of 1,000. For example, `11345.SLDPRT` evaluates to `11000-11999`. See [File Name Number Range](../pdmpublisherspecialvariable.md#file-name-number-range) for examples and non-numeric filename behavior.
 
 > [!IMPORTANT]
 > If **Convert multiple configurations** is enabled, include `ConfigurationName` or another configuration-specific value in the filename.

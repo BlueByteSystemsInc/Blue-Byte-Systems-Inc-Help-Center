@@ -169,6 +169,7 @@
 <p>resolves to:</p>
 <p><code>C:\PDMVault\Projects\1001\Exports</code></p>
 <p>Placeholders are useful when the same task must write files to different folders depending on the file being processed. You can use them to include values such as the source folder, file name, revision, state, workflow, configuration, or other PDM/SOLIDWORKS variables exposed by the placeholder menu.</p>
+<p>Use <code>(FileNameNumberRange)</code> to organize numeric filenames into folders covering 1,000 numbers. For example, <code>11345.SLDPRT</code> returns <code>11000-11999</code>. See <a href="../pdmpublisherspecialvariable.html#file-name-number-range">File Name Number Range</a> for complete behavior and fallback examples.</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>Use placeholders for repeatable task setups. Hard-coded paths are fine for one fixed export folder, but placeholders make the task adapt to each source file.</p>

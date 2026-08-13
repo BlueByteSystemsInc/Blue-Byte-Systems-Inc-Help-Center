@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/11/2026
+ms.date: 08/13/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,12 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.07
+*Applies to **PDM Task***
+- Added optional Windows light and dark theme synchronization for PDMPublisher task setup pages. Administrators can turn synchronization on or off from **Add-ins > PDMPublisher > Theme settings...**. See [Theme Settings](/src/pdmpublisher-theme-settings.html).
+- Added the `(FileNameNumberRange)` placeholder for organizing numeric filenames into ranges of 1,000. See [File Name Number Range](/src/pdmpublisherspecialvariable.html#file-name-number-range).
+- Updated drawing sheet selection so a drawing with only one sheet exports that sheet without applying the sheet-name matching pattern. Sheet-name matching continues to apply to drawings with two or more sheets.
 
 ## 2026.08.06
 *Applies to **PDM Task***

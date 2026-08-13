@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>SQL Query Placeholders | PDMPublisher Annotations | Help Center </title>
+      <title>Theme Settings | PDMPublisher | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="SQL Query Placeholders | PDMPublisher Annotations | Help Center ">
+      <meta name="title" content="Theme Settings | PDMPublisher | Help Center ">
       
-      <meta name="description" content="Retrieve annotation text from a SQL database by using file-aware query placeholders.">
-      <link rel="icon" href="../../images/bluebyte-mark.png">
-      <link rel="stylesheet" href="../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
-      <meta name="docfx:navrel" content="../../toc.html">
-      <meta name="docfx:tocrel" content="../toc.html">
+      <meta name="description" content="Enable or disable Windows light and dark theme synchronization for PDMPublisher task setup pages.">
+      <link rel="icon" href="../images/bluebyte-mark.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-annotations/sql-query-placeholders.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-theme-settings.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./../../public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -43,8 +43,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../images/bluebyte-mark.png" alt="Help Center">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/bluebyte-mark.png" alt="Help Center">
             Help Center
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +82,7 @@
               <i class="bi bi-calendar3"></i>
               <i class="bi bi-key-fill bbs-content-trials-key"></i>
             </span>
-            <img class="bbs-content-trials-logo" src="../../images/large_logo.png" alt="Blue Byte Systems Inc.">
+            <img class="bbs-content-trials-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc.">
             <span class="bbs-content-trials-text">
               <span class="bbs-content-trials-title">Get a 7-day trial</span>
               <span class="bbs-content-trials-note">No commitment or credit card required. Professional email required.</span>
@@ -107,81 +107,43 @@
         </div>
 
         <article data-uid="">
-<h1 id="sql-query-placeholders">SQL Query Placeholders</h1>
+<h1 id="theme-settings">Theme Settings</h1>
 
-<p>Use an SQL query placeholder when annotation text must come from a SQL database. PDMPublisher replaces the file placeholder in the query, runs the query, and uses the returned value in the annotation.</p>
-<p><img src="/images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png" alt="Edit SQL Query dialog showing the connection string, query, output, and SQL placeholders"></p>
-<h2 id="configure-the-query">Configure the Query</h2>
+<p>PDMPublisher can follow the current Windows app theme. When theme synchronization is enabled, the PDMPublisher task setup pages use light or dark colors to match Windows.</p>
+<p><img src="/images/pdmpublisher/dark-theme-options.png" alt="PDMPublisher Options page using the Windows dark theme"></p>
+<p>Theme synchronization changes colors only. It does not change the design, location, or behavior of the task settings.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Theme synchronization is off by default. When it is off, PDMPublisher keeps its original light colors and ignores Windows theme changes.</p>
+</div>
+<h2 id="turn-theme-synchronization-on-or-off">Turn Theme Synchronization On or Off</h2>
 <ol>
-<li>Add or select the annotation.</li>
-<li>Add an SQL value to the annotation, then select the pencil icon to open <strong>Edit SQL Query</strong>.</li>
-<li>Enter the SQL Server connection string.</li>
-<li>Enter a query that includes the placeholder for the file type you need.</li>
-<li>Select <strong>Test Query</strong> and confirm that the expected value appears under <strong>Output</strong>.</li>
+<li>Open the SOLIDWORKS PDM Administration tool.</li>
+<li>Expand <strong>Add-ins</strong> and right-click <strong>PDMPublisher</strong>.</li>
+<li>Select <strong>Theme settings...</strong>.</li>
 </ol>
-<p>For example, a Windows-authenticated connection string can look like this:</p>
-<pre><code class="lang-text">Server=localhost;Database=TestPDMSql;Trusted_Connection=True;
-</code></pre>
-<h2 id="available-placeholders">Available Placeholders</h2>
-<table>
-<thead>
-<tr>
-<th>Placeholder</th>
-<th>Value used in the query</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>{$SQL-Filename}</code></td>
-<td>The filename being processed.</td>
-</tr>
-<tr>
-<td><code>{$SQL-Part}</code></td>
-<td>The part value associated with the file.</td>
-</tr>
-<tr>
-<td><code>{$SQL-Assembly}</code></td>
-<td>The assembly value associated with the file.</td>
-</tr>
-<tr>
-<td><code>{$SQL-Drawing}</code></td>
-<td>The drawing value associated with the file.</td>
-</tr>
-</tbody>
-</table>
-<p>Choose the placeholder that matches the record stored in your database. For example, use <code>{$SQL-Assembly}</code> when the database row is identified by the assembly filename, even when the annotation is being added to an exported drawing.</p>
-<h2 id="filename-example">Filename Example</h2>
-<p>The following query looks up a project number by the current filename:</p>
-<pre><code class="lang-sql">SELECT ProjectNumber
-FROM FileProperties
-WHERE FileName = '{$SQL-Filename}'
-</code></pre>
-<p>If the filename is <code>Bracket.sldprt</code>, PDMPublisher evaluates the query as:</p>
-<pre><code class="lang-sql">SELECT ProjectNumber
-FROM FileProperties
-WHERE FileName = 'Bracket.sldprt'
-</code></pre>
-<h2 id="assembly-example">Assembly Example</h2>
-<p>The following query looks up material using the assembly filename:</p>
-<pre><code class="lang-sql">SELECT Material
-FROM PartProperties
-WHERE FileName = '{$SQL-Assembly}'
-</code></pre>
-<p>When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a launched task. For example:</p>
-<pre><code class="lang-sql">SELECT Material
-FROM PartProperties
-WHERE FileName = 'Full_Grill_Assembly.sldasm'
-</code></pre>
-<p>The <strong>Output</strong> area shows the test result. Confirm that the query returns the text you want displayed in the annotation before saving the task.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>Use a database account with only the permissions required to read the annotation data. If the connection string contains credentials, restrict access to the task configuration.</p>
+<p><img src="/images/pdmpublisher/theme-settings-menu.png" alt="Theme settings command in the PDMPublisher add-in menu"></p>
+<p>The confirmation dialog shows:</p>
+<ul>
+<li>The current Windows theme: <strong>Light</strong> or <strong>Dark</strong>.</li>
+<li>Whether PDMPublisher theme synchronization is currently <strong>On</strong> or <strong>Off</strong>.</li>
+<li>The change that will be made if you select <strong>Yes</strong>.</li>
+</ul>
+<p><img src="/images/pdmpublisher/theme-settings-confirmation.png" alt="Theme synchronization confirmation dialog"></p>
+<p>Select <strong>Yes</strong> to change the setting or <strong>No</strong> to leave it unchanged.</p>
+<ul>
+<li>Turning synchronization <strong>on</strong> makes PDMPublisher follow the current Windows theme and future Windows theme changes.</li>
+<li>Turning synchronization <strong>off</strong> returns PDMPublisher to its original light colors and ignores future Windows theme changes.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Close and reopen any task setup page that was already open if all controls do not refresh immediately after changing this setting.</p>
 </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-annotations/sql-query-placeholders.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-theme-settings.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

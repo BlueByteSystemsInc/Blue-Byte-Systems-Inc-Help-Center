@@ -1,7 +1,7 @@
 ---
 title: Sheet Name Pattern | PDMPublisher Options
 description: Filter drawing sheets by name.
-ms.date: 08/09/2026
+ms.date: 08/13/2026
 ms.topic: reference
 ---
 
@@ -10,6 +10,9 @@ ms.topic: reference
 ![Sheet name pattern setting](/images/pdmpublisher/screenshots/options-026-property-sheet-name-pattern.png)
 
 Wildcard pattern used when **Sheets to export** is set to matching sheet names.
+
+> [!NOTE]
+> Sheet-name matching applies only when a drawing contains two or more sheets. If a drawing contains one sheet, PDMPublisher ignores the pattern and exports that sheet.
 
 Use `*` to match any text and `?` to match one character.
 

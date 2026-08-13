@@ -115,6 +115,66 @@
 <h5>Note</h5>
 <p>PDMPublisher evaluates special and dynamic variables when it creates output paths and filenames.</p>
 </div>
+<h2 id="file-name-number-range">File Name Number Range</h2>
+<p>Use <code>(FileNameNumberRange)</code> to group files with numeric filenames into folders or output names covering 1,000 numbers.</p>
+<p>PDMPublisher removes the file extension, reads the complete filename as a number, rounds down to the nearest thousand, and returns the beginning and end of that range.</p>
+<table>
+<thead>
+<tr>
+<th>Source filename</th>
+<th><code>(FileNameNumberRange)</code> result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1000.SLDPRT</code></td>
+<td><code>1000-1999</code></td>
+</tr>
+<tr>
+<td><code>11345.SLDASM</code></td>
+<td><code>11000-11999</code></td>
+</tr>
+<tr>
+<td><code>19999.SLDDRW</code></td>
+<td><code>19000-19999</code></td>
+</tr>
+<tr>
+<td><code>25001.SLDPRT</code></td>
+<td><code>25000-25999</code></td>
+</tr>
+</tbody>
+</table>
+<p>For example, this export location:</p>
+<p><code>(VaultRootFolder)\Released PDFs\(FileNameNumberRange)</code></p>
+<p>evaluates for <code>11345.SLDPRT</code> as:</p>
+<p><code>C:\PDMVault\Released PDFs\11000-11999</code></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The complete filename without its extension must be numeric. A filename such as <code>11345-A.SLDPRT</code>, <code>PART11345.SLDPRT</code>, or <code>Bracket.SLDPRT</code> is not treated as a number. When the filename is not numeric, <code>(FileNameNumberRange)</code> returns the actual filename without the extension.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Source filename</th>
+<th>Fallback result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>11345-A.SLDPRT</code></td>
+<td><code>11345-A</code></td>
+</tr>
+<tr>
+<td><code>PART11345.SLDPRT</code></td>
+<td><code>PART11345</code></td>
+</tr>
+<tr>
+<td><code>Bracket.SLDPRT</code></td>
+<td><code>Bracket</code></td>
+</tr>
+</tbody>
+</table>
+<p>You can insert this placeholder from the <code>&gt;...</code> placeholder menu in fields that support dynamic values, including <a href="pdmpublisher-options/export-location.html">Export Location</a> and <a href="pdmpublisher-options/filename.html">Filename</a>.</p>
 
 </article>
 
