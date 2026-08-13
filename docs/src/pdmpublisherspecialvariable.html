@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Special and Dynamic Variables | PDMPublisher | SOLIDWORKS PDM | Help Center </title>
+      <title>Placeholder Reference | PDMPublisher | SOLIDWORKS PDM | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Special and Dynamic Variables | PDMPublisher | SOLIDWORKS PDM | Help Center ">
+      <meta name="title" content="Placeholder Reference | PDMPublisher | SOLIDWORKS PDM | Help Center ">
       
-      <meta name="description" content="Learn how to use special and dynamic variables to create advanced custom output paths in PDMPublisher.">
+      <meta name="description" content="Reference every built-in, PDM variable, and SQL placeholder available in PDMPublisher.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -107,14 +107,213 @@
         </div>
 
         <article data-uid="">
-<h1 id="specialdynamic-variables">Special/Dynamic Variables</h1>
+<h1 id="placeholders-and-dynamic-variables">Placeholders and Dynamic Variables</h1>
 
-<p>With PDM Publisher, special/dynamic variable allow you to create advanced custom paths when printing PDFs. This quick demo showcases how you can make use of this powerful feature.</p>
+<p>Placeholders let one task create paths, filenames, sheet filters, bookmarks, and annotations from information about the file being processed. PDMPublisher evaluates each placeholder on the machine that processes the task and replaces it with its current value.</p>
 <div class="embeddedvideo"><iframe src="https://www.loom.com/embed/377f21c2f0b4423c914fae5767b44a21?sid=02cb620e-f91c-421e-8b25-7576d6e5cb0b" frameborder="0" allowfullscreen="true"></iframe></div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>PDMPublisher evaluates special and dynamic variables when it creates output paths and filenames.</p>
+<p>The placeholders available in a field are shown in its <code>&gt;...</code> menu. Not every field offers every placeholder.</p>
 </div>
+<h2 id="built-in-placeholders">Built-in Placeholders</h2>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(VaultRootFolder)</code></td>
+<td>Local root folder of the current PDM vault on the task host.</td>
+<td><code>C:\PDMVault</code></td>
+</tr>
+<tr>
+<td><code>(FileNameWithoutExtension)</code></td>
+<td>Source filename without its extension.</td>
+<td><code>Bracket</code></td>
+</tr>
+<tr>
+<td><code>(FileName)</code></td>
+<td>Source filename with period characters removed.</td>
+<td><code>BracketSLDPRT</code> for <code>Bracket.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRange)</code></td>
+<td>Numeric filename grouped into a range of 1,000. Non-numeric names return the filename without its extension.</td>
+<td><code>11000-11999</code> for <code>11345.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileFolder)</code></td>
+<td>Local folder containing the file currently being processed.</td>
+<td><code>C:\PDMVault\Projects\Speaker</code></td>
+</tr>
+<tr>
+<td><code>(TopAssemblyFolder)</code></td>
+<td>Folder of the top-level file that launched the task. For a task launched on one part or drawing, this is that file's folder.</td>
+<td><code>C:\PDMVault\Projects\Speaker</code></td>
+</tr>
+<tr>
+<td><code>(TopAssemblyName)</code></td>
+<td>Filename of the top-level file without its extension. This also represents the top-level part or drawing when the task was not launched on an assembly.</td>
+<td><code>speaker</code></td>
+</tr>
+<tr>
+<td><code>(State)</code></td>
+<td>Current PDM workflow state of the source file.</td>
+<td><code>Released</code></td>
+</tr>
+<tr>
+<td><code>(ConfigurationName)</code></td>
+<td>SOLIDWORKS configuration being exported. The PDM <code>@</code> configuration is written as <code>At</code>.</td>
+<td><code>Default</code> or <code>Machined</code></td>
+</tr>
+<tr>
+<td><code>(Version)</code></td>
+<td>Current PDM file version number.</td>
+<td><code>12</code></td>
+</tr>
+<tr>
+<td><code>(Revision)</code></td>
+<td>Current PDM revision. The result is empty if the file has no revision.</td>
+<td><code>B</code></td>
+</tr>
+<tr>
+<td><code>(Date)</code></td>
+<td>Current date on the task host, using its short-date format with <code>/</code> replaced by <code>-</code>.</td>
+<td><code>8-13-2026</code></td>
+</tr>
+<tr>
+<td><code>(Extension)</code></td>
+<td>Source file extension without the period.</td>
+<td><code>sldprt</code></td>
+</tr>
+<tr>
+<td><code>(TargetExtension)</code></td>
+<td>Destination format extension when the current operation supplies a target format.</td>
+<td><code>pdf</code>, <code>dxf</code>, or <code>step</code></td>
+</tr>
+<tr>
+<td><code>(User)</code></td>
+<td>PDM user logged in on the computer processing the task.</td>
+<td><code>TaskHostUser</code></td>
+</tr>
+<tr>
+<td><code>(LaunchingUser)</code></td>
+<td>PDM user who launched the task. This can differ from <code>(User)</code> when another computer or account processes it.</td>
+<td><code>jsmith</code></td>
+</tr>
+<tr>
+<td><code>(BOMQuantity)</code></td>
+<td>Quantity calculated for the file from the selected BOM template and task reference data.</td>
+<td><code>4</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="file-and-top-level-values">File and Top-Level Values</h3>
+<p><code>(FileFolder)</code> follows the individual file currently being exported. <code>(TopAssemblyFolder)</code> and <code>(TopAssemblyName)</code> remain tied to the file that launched the task while PDMPublisher processes its references.</p>
+<p>For example, when <code>Speaker.SLDASM</code> launches a task and PDMPublisher processes <code>Components\Cone.SLDPRT</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Example result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(FileFolder)</code></td>
+<td><code>C:\PDMVault\Projects\Speaker\Components</code></td>
+</tr>
+<tr>
+<td><code>(TopAssemblyFolder)</code></td>
+<td><code>C:\PDMVault\Projects\Speaker</code></td>
+</tr>
+<tr>
+<td><code>(TopAssemblyName)</code></td>
+<td><code>Speaker</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuration-name">Configuration Name</h3>
+<p><code>(ConfigurationName)</code> returns the configuration associated with the current output. It is especially important when <a href="pdmpublisher-options/convert-multiple-configurations.html">Convert Multiple Configurations</a> is enabled because it prevents outputs from different configurations from using the same name.</p>
+<p>The placeholder can also be used by <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a>. For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets.</p>
+<h3 id="bom-quantity">BOM Quantity</h3>
+<p><code>(BOMQuantity)</code> uses the quantity calculated from the selected <a href="pdmpublisher-options/template.html">Template</a>. Reference-aware quantity calculation requires the template fields described on that page.</p>
+<p>When <a href="pdmpublisher-options/ask-user-to-select-configuration-on-startup.html">Ask User to Select Configuration</a> is enabled, the quantity entered on task launch multiplies <code>(BOMQuantity)</code>. For example, a calculated quantity of <code>2</code> and a custom multiplier of <code>3</code> produce <code>6</code>. The task log records the applied quantity information.</p>
+<h3 id="source-and-target-extensions">Source and Target Extensions</h3>
+<p><code>(Extension)</code> describes the source file. For example, a drawing exported to PDF has an <code>(Extension)</code> value of <code>slddrw</code>.</p>
+<p><code>(TargetExtension)</code> describes the requested output format when that operation supplies one. PDMPublisher normally adds the output extension automatically, so do not add another period and extension after this placeholder unless the destination field specifically requires it.</p>
+<h2 id="pdm-variable-placeholders">PDM Variable Placeholders</h2>
+<p>PDM variables use this format:</p>
+<p><code>($VariableName)</code></p>
+<p>The <code>PDM Variables</code> submenu lists the variables available in the vault. Select a variable from the menu instead of typing it manually so its name and <code>$</code> prefix are correct.</p>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Example value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>($Document Number)</code></td>
+<td><code>11345</code></td>
+</tr>
+<tr>
+<td><code>($ProjectNumber)</code></td>
+<td><code>P-24017</code></td>
+</tr>
+<tr>
+<td><code>($Description)</code></td>
+<td><code>Speaker frame</code></td>
+</tr>
+</tbody>
+</table>
+<p>By default, PDMPublisher reads the value associated with the configuration being processed. Enable <a href="pdmpublisher-options/use-at-tab-to-evaluate-paths.html">Use @ Tab to Evaluate Paths</a> when the variables used by Export Location or Filename are stored on the file's <code>@</code> tab.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>An empty or unavailable PDM variable evaluates to an empty value. When PDMPublisher evaluates an associated drawing and its value is empty, it may read the variable from the matching part or assembly.</p>
+</div>
+<h2 id="sql-placeholders-for-annotations">SQL Placeholders for Annotations</h2>
+<p>SQL placeholders are available only for annotation SQL queries. They replace the token in the query with a filename before PDMPublisher runs the query.</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Filename supplied to the query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>($SQL-Filename)</code></td>
+<td>Current filename with its existing extension.</td>
+</tr>
+<tr>
+<td><code>($SQL-Part)</code></td>
+<td>Current filename changed to <code>.sldprt</code>.</td>
+</tr>
+<tr>
+<td><code>($SQL-Assembly)</code></td>
+<td>Current filename changed to <code>.sldasm</code>.</td>
+</tr>
+<tr>
+<td><code>($SQL-Drawing)</code></td>
+<td>Current filename changed to <code>.slddrw</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>For connection strings, query examples, testing, and security guidance, see <a href="pdmpublisher-annotations/sql-query-placeholders.html">SQL Query Placeholders</a>.</p>
+<h2 id="combined-path-example">Combined Path Example</h2>
+<p>The following Export Location combines built-in and PDM variable placeholders:</p>
+<pre><code class="lang-text">(VaultRootFolder)\Released PDFs\($ProjectNumber)\(FileNameNumberRange)\(State)
+</code></pre>
+<p>For <code>11345.SLDPRT</code>, project <code>P-24017</code>, and state <code>Released</code>, it evaluates to:</p>
+<pre><code class="lang-text">C:\PDMVault\Released PDFs\P-24017\11000-11999\Released
+</code></pre>
 <h2 id="file-name-number-range">File Name Number Range</h2>
 <p>Use <code>(FileNameNumberRange)</code> to group files with numeric filenames into folders or output names covering 1,000 numbers.</p>
 <p>PDMPublisher removes the file extension, reads the complete filename as a number, rounds down to the nearest thousand, and returns the beginning and end of that range.</p>
@@ -175,6 +374,10 @@
 </tbody>
 </table>
 <p>You can insert this placeholder from the <code>&gt;...</code> placeholder menu in fields that support dynamic values, including <a href="pdmpublisher-options/export-location.html">Export Location</a> and <a href="pdmpublisher-options/filename.html">Filename</a>.</p>
+<p>For filenames below <code>1000</code>, the range begins at zero. For example, <code>245.SLDPRT</code> returns <code>0-999</code>. Leading zeros are not preserved: <code>00123.SLDPRT</code> also returns <code>0-999</code>.</p>
+<h2 id="invalid-characters-and-empty-values">Invalid Characters and Empty Values</h2>
+<p>When placeholders are used to create paths or filenames, values containing characters that Windows does not permit in a filename are cleaned before the output is saved. The task reports the variable that contained an invalid character.</p>
+<p>If a value such as Revision or a PDM variable is empty, the placeholder contributes an empty string. Include separators carefully so an empty value does not leave an unwanted trailing dash or extra folder level.</p>
 
 </article>
 

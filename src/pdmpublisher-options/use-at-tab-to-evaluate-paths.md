@@ -1,7 +1,7 @@
 ---
 title: Use @ Tab to Evaluate Paths | PDMPublisher Options
 description: Evaluate export paths and filenames from the @ configuration tab.
-ms.date: 08/09/2026
+ms.date: 08/13/2026
 ms.topic: reference
 ---
 
@@ -18,7 +18,7 @@ This is useful when folder names, customer names, project numbers, release folde
 For example, if the export location uses a variable from `@`:
 
 ```text
-(VaultRootFolder)\Released PDFs\(ProjectNumber)
+(VaultRootFolder)\Released PDFs\($ProjectNumber)
 ```
 
 PDMPublisher reads `ProjectNumber` from the `@` tab and uses it to construct the final export path.

@@ -165,7 +165,7 @@
     href: ../../src/scheduleditems.md
   - name: Frequently Asked Questions
     href: ../../src/pdmpublisherfaq.md
-  - name: Special and Dynamic Variables
+  - name: Placeholder Reference
     href: ../../src/pdmpublisherspecialvariable.md
   - name: Task Details
     href: ../../src/pdmpublisher_task_details.md

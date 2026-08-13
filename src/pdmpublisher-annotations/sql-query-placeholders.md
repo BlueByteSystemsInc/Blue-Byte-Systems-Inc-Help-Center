@@ -1,7 +1,7 @@
 ---
 title: SQL Query Placeholders | PDMPublisher Annotations
 description: Retrieve annotation text from a SQL database by using file-aware query placeholders.
-ms.date: 08/10/2026
+ms.date: 08/13/2026
 ms.topic: how-to
 ---
 
@@ -29,12 +29,12 @@ Server=localhost;Database=TestPDMSql;Trusted_Connection=True;
 
 | Placeholder | Value used in the query |
 | --- | --- |
-| `{$SQL-Filename}` | The filename being processed. |
-| `{$SQL-Part}` | The part value associated with the file. |
-| `{$SQL-Assembly}` | The assembly value associated with the file. |
-| `{$SQL-Drawing}` | The drawing value associated with the file. |
+| `($SQL-Filename)` | The filename being processed. |
+| `($SQL-Part)` | The filename changed to the `.sldprt` extension. |
+| `($SQL-Assembly)` | The filename changed to the `.sldasm` extension. |
+| `($SQL-Drawing)` | The filename changed to the `.slddrw` extension. |
 
-Choose the placeholder that matches the record stored in your database. For example, use `{$SQL-Assembly}` when the database row is identified by the assembly filename, even when the annotation is being added to an exported drawing.
+Choose the placeholder that matches the record stored in your database. For example, use `($SQL-Assembly)` when the database row is identified by the assembly filename, even when the annotation is being added to an exported drawing.
 
 ## Filename Example
 
@@ -43,7 +43,7 @@ The following query looks up a project number by the current filename:
 ```sql
 SELECT ProjectNumber
 FROM FileProperties
-WHERE FileName = '{$SQL-Filename}'
+WHERE FileName = '($SQL-Filename)'
 ```
 
 If the filename is `Bracket.sldprt`, PDMPublisher evaluates the query as:
@@ -61,7 +61,7 @@ The following query looks up material using the assembly filename:
 ```sql
 SELECT Material
 FROM PartProperties
-WHERE FileName = '{$SQL-Assembly}'
+WHERE FileName = '($SQL-Assembly)'
 ```
 
 When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a launched task. For example:

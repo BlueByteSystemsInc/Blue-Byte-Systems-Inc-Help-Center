@@ -114,7 +114,7 @@
 <p>Use this when the information needed to build the export path is stored on the file's <code>@</code> tab instead of a model-specific configuration tab.</p>
 <p>This is useful when folder names, customer names, project numbers, release folders, or other path values are maintained on <code>@</code>.</p>
 <p>For example, if the export location uses a variable from <code>@</code>:</p>
-<pre><code class="lang-text">(VaultRootFolder)\Released PDFs\(ProjectNumber)
+<pre><code class="lang-text">(VaultRootFolder)\Released PDFs\($ProjectNumber)
 </code></pre>
 <p>PDMPublisher reads <code>ProjectNumber</code> from the <code>@</code> tab and uses it to construct the final export path.</p>
 <p>Use this with <a href="export-location.html">Export Location</a> when the export folder depends on variables stored on <code>@</code>.</p>

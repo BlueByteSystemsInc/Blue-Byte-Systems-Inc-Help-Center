@@ -132,29 +132,29 @@
 </thead>
 <tbody>
 <tr>
-<td><code>{$SQL-Filename}</code></td>
+<td><code>($SQL-Filename)</code></td>
 <td>The filename being processed.</td>
 </tr>
 <tr>
-<td><code>{$SQL-Part}</code></td>
-<td>The part value associated with the file.</td>
+<td><code>($SQL-Part)</code></td>
+<td>The filename changed to the <code>.sldprt</code> extension.</td>
 </tr>
 <tr>
-<td><code>{$SQL-Assembly}</code></td>
-<td>The assembly value associated with the file.</td>
+<td><code>($SQL-Assembly)</code></td>
+<td>The filename changed to the <code>.sldasm</code> extension.</td>
 </tr>
 <tr>
-<td><code>{$SQL-Drawing}</code></td>
-<td>The drawing value associated with the file.</td>
+<td><code>($SQL-Drawing)</code></td>
+<td>The filename changed to the <code>.slddrw</code> extension.</td>
 </tr>
 </tbody>
 </table>
-<p>Choose the placeholder that matches the record stored in your database. For example, use <code>{$SQL-Assembly}</code> when the database row is identified by the assembly filename, even when the annotation is being added to an exported drawing.</p>
+<p>Choose the placeholder that matches the record stored in your database. For example, use <code>($SQL-Assembly)</code> when the database row is identified by the assembly filename, even when the annotation is being added to an exported drawing.</p>
 <h2 id="filename-example">Filename Example</h2>
 <p>The following query looks up a project number by the current filename:</p>
 <pre><code class="lang-sql">SELECT ProjectNumber
 FROM FileProperties
-WHERE FileName = '{$SQL-Filename}'
+WHERE FileName = '($SQL-Filename)'
 </code></pre>
 <p>If the filename is <code>Bracket.sldprt</code>, PDMPublisher evaluates the query as:</p>
 <pre><code class="lang-sql">SELECT ProjectNumber
@@ -165,7 +165,7 @@ WHERE FileName = 'Bracket.sldprt'
 <p>The following query looks up material using the assembly filename:</p>
 <pre><code class="lang-sql">SELECT Material
 FROM PartProperties
-WHERE FileName = '{$SQL-Assembly}'
+WHERE FileName = '($SQL-Assembly)'
 </code></pre>
 <p>When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a launched task. For example:</p>
 <pre><code class="lang-sql">SELECT Material
