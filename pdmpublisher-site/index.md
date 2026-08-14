@@ -161,6 +161,7 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 <h1>PDMPublisher Help Center</h1>
 <p>Setup, licensing, task configuration, export options, and troubleshooting for PDMPublisher and PDMDeploy.</p>
 <div class="pdp-actions">
+<a class="pdp-action" href="../src/introduction.md">Welcome to PDMPublisher</a>
 <a class="pdp-action pdp-action-primary" href="../src/propertiespagepdmpublisher.md">Set up your first task</a>
 <a class="pdp-action" href="../src/pdmpublishertrial.md">Get a 7-day trial</a>
 </div>
