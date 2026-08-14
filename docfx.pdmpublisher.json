@@ -15,7 +15,8 @@
       },
       {
         "files": [
-          "toc.yml"
+          "toc.yml",
+          "welcome.md"
         ],
         "src": "pdmpublisher-site/src",
         "dest": "src"
@@ -23,7 +24,6 @@
       {
         "files": [
           "pdmpublisher*.md",
-          "introduction.md",
           "propertiespagepdmpublisher.md",
           "licensespdmpublisher.md",
           "options.md",

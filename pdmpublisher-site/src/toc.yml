@@ -2,7 +2,7 @@
   expanded: true
   items:
   - name: Welcome
-    href: ../../src/introduction.md
+    href: welcome.md
   - name: PDMPublisher Overview
     href: ../../src/pdmpublisher.md
   - name: Get a 7-day Trial
