@@ -1,6 +1,8 @@
 ﻿- name: Start Here
   expanded: true
   items:
+  - name: Introduction
+    href: ../../src/introduction.md
   - name: PDMPublisher Overview
     href: ../../src/pdmpublisher.md
   - name: Get a 7-day Trial

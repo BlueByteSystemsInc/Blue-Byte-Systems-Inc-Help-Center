@@ -23,6 +23,7 @@
       {
         "files": [
           "pdmpublisher*.md",
+          "introduction.md",
           "propertiespagepdmpublisher.md",
           "licensespdmpublisher.md",
           "options.md",
