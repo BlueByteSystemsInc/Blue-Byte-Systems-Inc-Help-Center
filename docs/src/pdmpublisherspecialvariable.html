@@ -146,6 +146,46 @@
 <td><code>11000-11999</code> for <code>11345.SLDPRT</code></td>
 </tr>
 <tr>
+<td><code>(FileNameNumberFirst3Digits)</code></td>
+<td>First 3 digits of the first numeric sequence in the filename.</td>
+<td><code>123</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberFirst4Digits)</code></td>
+<td>First 4 digits of the first numeric sequence in the filename.</td>
+<td><code>1234</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberFirst5Digits)</code></td>
+<td>First 5 digits of the first numeric sequence in the filename.</td>
+<td><code>12345</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberFirst6Digits)</code></td>
+<td>First 6 digits of the first numeric sequence in the filename.</td>
+<td><code>123456</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst3Digits)</code></td>
+<td>Range calculated from the first 3 digits of the first numeric sequence.</td>
+<td><code>100-199</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst4Digits)</code></td>
+<td>Range calculated from the first 4 digits of the first numeric sequence.</td>
+<td><code>1000-1999</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst5Digits)</code></td>
+<td>Range calculated from the first 5 digits of the first numeric sequence.</td>
+<td><code>10000-19999</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst6Digits)</code></td>
+<td>Range calculated from the first 6 digits of the first numeric sequence.</td>
+<td><code>100000-199999</code> for <code>PART-123456-A.SLDPRT</code></td>
+</tr>
+<tr>
 <td><code>(FileFolder)</code></td>
 <td>Local folder containing the file currently being processed.</td>
 <td><code>C:\PDMVault\Projects\Speaker</code></td>
@@ -375,6 +415,78 @@
 </table>
 <p>You can insert this placeholder from the <code>&gt;...</code> placeholder menu in fields that support dynamic values, including <a href="pdmpublisher-options/export-location.html">Export Location</a> and <a href="pdmpublisher-options/filename.html">Filename</a>.</p>
 <p>For filenames below <code>1000</code>, the range begins at zero. For example, <code>245.SLDPRT</code> returns <code>0-999</code>. Leading zeros are not preserved: <code>00123.SLDPRT</code> also returns <code>0-999</code>.</p>
+<h2 id="file-number-placeholders">File Number Placeholders</h2>
+<p>Version <code>2026.08.08</code> adds placeholders that extract the beginning of the first continuous numeric sequence found anywhere in the filename. The file extension is not included in the search.</p>
+<p>You can find these placeholders under <strong>File Number</strong> in the <code>&gt;...</code> placeholder menu.</p>
+<p>For <code>PART-123456-A.SLDPRT</code>, the first numeric sequence is <code>123456</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(FileNameNumberFirst3Digits)</code></td>
+<td><code>123</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberFirst4Digits)</code></td>
+<td><code>1234</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberFirst5Digits)</code></td>
+<td><code>12345</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberFirst6Digits)</code></td>
+<td><code>123456</code></td>
+</tr>
+</tbody>
+</table>
+<p>If a filename contains more than one numeric sequence, PDMPublisher uses the first one. For example, <code>(FileNameNumberFirst3Digits)</code> returns <code>123</code> for <code>PART-123-REV-02.SLDPRT</code>.</p>
+<p>If the numeric sequence is shorter than the requested length, PDMPublisher returns all available digits. For example, <code>(FileNameNumberFirst6Digits)</code> returns <code>42</code> for <code>PART-42-A.SLDPRT</code>.</p>
+<p>If the filename contains no digits, the placeholder returns the complete filename without its extension. For example, <code>(FileNameNumberFirst3Digits)</code> returns <code>Bracket</code> for <code>Bracket.SLDPRT</code>.</p>
+<h2 id="file-number-range-placeholders">File Number Range Placeholders</h2>
+<p>The <strong>File Number Range</strong> menu contains the original <code>(FileNameNumberRange)</code> placeholder and four new prefix-based range placeholders.</p>
+<p>The new placeholders first extract 3, 4, 5, or 6 digits using the corresponding <strong>File Number</strong> behavior. They then round that number down to a range based on the extracted length:</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Result for <code>PART-123456-A.SLDPRT</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(FileNameNumberRangeFirst3Digits)</code></td>
+<td><code>100-199</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst4Digits)</code></td>
+<td><code>1000-1999</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst5Digits)</code></td>
+<td><code>10000-19999</code></td>
+</tr>
+<tr>
+<td><code>(FileNameNumberRangeFirst6Digits)</code></td>
+<td><code>100000-199999</code></td>
+</tr>
+</tbody>
+</table>
+<p>For example, the export location:</p>
+<p><code>(VaultRootFolder)\Released PDFs\(FileNameNumberRangeFirst4Digits)</code></p>
+<p>evaluates for <code>PART-123456-A.SLDPRT</code> as:</p>
+<p><code>C:\PDMVault\Released PDFs\1000-1999</code></p>
+<p>If fewer digits are available than requested, the range uses the number of digits that were found. For example, <code>(FileNameNumberRangeFirst6Digits)</code> returns <code>10-19</code> for <code>PART-12-A.SLDPRT</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Range results do not preserve leading zeros. For example, <code>(FileNameNumberFirst3Digits)</code> returns <code>001</code> for <code>PART-001234.SLDPRT</code>, but <code>(FileNameNumberRangeFirst3Digits)</code> returns <code>0-99</code>.</p>
+</div>
+<p>If the filename contains no numeric sequence, a range placeholder returns the complete filename without its extension.</p>
 <h2 id="invalid-characters-and-empty-values">Invalid Characters and Empty Values</h2>
 <p>When placeholders are used to create paths or filenames, values containing characters that Windows does not permit in a filename are cleaned before the output is saved. The task reports the variable that contained an invalid character.</p>
 <p>If a value such as Revision or a PDM variable is empty, the placeholder contributes an empty string. Include separators carefully so an empty value does not leave an unwanted trailing dash or extra folder level.</p>

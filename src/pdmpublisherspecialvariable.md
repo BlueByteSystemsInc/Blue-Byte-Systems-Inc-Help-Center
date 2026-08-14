@@ -22,6 +22,14 @@ Placeholders let one task create paths, filenames, sheet filters, bookmarks, and
 | `(FileNameWithoutExtension)` | Source filename without its extension. | `Bracket` |
 | `(FileName)` | Source filename with period characters removed. | `BracketSLDPRT` for `Bracket.SLDPRT` |
 | `(FileNameNumberRange)` | Numeric filename grouped into a range of 1,000. Non-numeric names return the filename without its extension. | `11000-11999` for `11345.SLDPRT` |
+| `(FileNameNumberFirst3Digits)` | First 3 digits of the first numeric sequence in the filename. | `123` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberFirst4Digits)` | First 4 digits of the first numeric sequence in the filename. | `1234` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberFirst5Digits)` | First 5 digits of the first numeric sequence in the filename. | `12345` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberFirst6Digits)` | First 6 digits of the first numeric sequence in the filename. | `123456` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberRangeFirst3Digits)` | Range calculated from the first 3 digits of the first numeric sequence. | `100-199` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberRangeFirst4Digits)` | Range calculated from the first 4 digits of the first numeric sequence. | `1000-1999` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberRangeFirst5Digits)` | Range calculated from the first 5 digits of the first numeric sequence. | `10000-19999` for `PART-123456-A.SLDPRT` |
+| `(FileNameNumberRangeFirst6Digits)` | Range calculated from the first 6 digits of the first numeric sequence. | `100000-199999` for `PART-123456-A.SLDPRT` |
 | `(FileFolder)` | Local folder containing the file currently being processed. | `C:\PDMVault\Projects\Speaker` |
 | `(TopAssemblyFolder)` | Folder of the top-level file that launched the task. For a task launched on one part or drawing, this is that file's folder. | `C:\PDMVault\Projects\Speaker` |
 | `(TopAssemblyName)` | Filename of the top-level file without its extension. This also represents the top-level part or drawing when the task was not launched on an assembly. | `speaker` |
@@ -147,6 +155,55 @@ evaluates for `11345.SLDPRT` as:
 You can insert this placeholder from the `>...` placeholder menu in fields that support dynamic values, including [Export Location](pdmpublisher-options/export-location.md) and [Filename](pdmpublisher-options/filename.md).
 
 For filenames below `1000`, the range begins at zero. For example, `245.SLDPRT` returns `0-999`. Leading zeros are not preserved: `00123.SLDPRT` also returns `0-999`.
+
+## File Number Placeholders
+
+Version `2026.08.08` adds placeholders that extract the beginning of the first continuous numeric sequence found anywhere in the filename. The file extension is not included in the search.
+
+You can find these placeholders under **File Number** in the `>...` placeholder menu.
+
+For `PART-123456-A.SLDPRT`, the first numeric sequence is `123456`:
+
+| Placeholder | Result |
+| --- | --- |
+| `(FileNameNumberFirst3Digits)` | `123` |
+| `(FileNameNumberFirst4Digits)` | `1234` |
+| `(FileNameNumberFirst5Digits)` | `12345` |
+| `(FileNameNumberFirst6Digits)` | `123456` |
+
+If a filename contains more than one numeric sequence, PDMPublisher uses the first one. For example, `(FileNameNumberFirst3Digits)` returns `123` for `PART-123-REV-02.SLDPRT`.
+
+If the numeric sequence is shorter than the requested length, PDMPublisher returns all available digits. For example, `(FileNameNumberFirst6Digits)` returns `42` for `PART-42-A.SLDPRT`.
+
+If the filename contains no digits, the placeholder returns the complete filename without its extension. For example, `(FileNameNumberFirst3Digits)` returns `Bracket` for `Bracket.SLDPRT`.
+
+## File Number Range Placeholders
+
+The **File Number Range** menu contains the original `(FileNameNumberRange)` placeholder and four new prefix-based range placeholders.
+
+The new placeholders first extract 3, 4, 5, or 6 digits using the corresponding **File Number** behavior. They then round that number down to a range based on the extracted length:
+
+| Placeholder | Result for `PART-123456-A.SLDPRT` |
+| --- | --- |
+| `(FileNameNumberRangeFirst3Digits)` | `100-199` |
+| `(FileNameNumberRangeFirst4Digits)` | `1000-1999` |
+| `(FileNameNumberRangeFirst5Digits)` | `10000-19999` |
+| `(FileNameNumberRangeFirst6Digits)` | `100000-199999` |
+
+For example, the export location:
+
+`(VaultRootFolder)\Released PDFs\(FileNameNumberRangeFirst4Digits)`
+
+evaluates for `PART-123456-A.SLDPRT` as:
+
+`C:\PDMVault\Released PDFs\1000-1999`
+
+If fewer digits are available than requested, the range uses the number of digits that were found. For example, `(FileNameNumberRangeFirst6Digits)` returns `10-19` for `PART-12-A.SLDPRT`.
+
+> [!NOTE]
+> Range results do not preserve leading zeros. For example, `(FileNameNumberFirst3Digits)` returns `001` for `PART-001234.SLDPRT`, but `(FileNameNumberRangeFirst3Digits)` returns `0-99`.
+
+If the filename contains no numeric sequence, a range placeholder returns the complete filename without its extension.
 
 ## Invalid Characters and Empty Values
 

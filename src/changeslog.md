@@ -13,6 +13,12 @@ Versions are identified by their compile date, which represents the build date o
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
+## 2026.08.08
+*Applies to **PDM Task***
+- Added **File Number** placeholders that return the first 3, 4, 5, or 6 digits from the first numeric sequence in a filename.
+- Added **File Number Range** placeholders that group those 3-, 4-, 5-, or 6-digit values into numeric ranges.
+- Organized the new placeholders into **File Number** and **File Number Range** groups in the `>...` placeholder menu. See [File Number Placeholders](/src/pdmpublisherspecialvariable.html#file-number-placeholders).
+
 ## 2026.08.07
 *Applies to **PDM Task***
 - Added optional Windows light and dark theme synchronization for PDMPublisher task setup pages. Administrators can turn synchronization on or off from **Add-ins > PDMPublisher > Theme settings...**. See [Theme Settings](/src/pdmpublisher-theme-settings.html).

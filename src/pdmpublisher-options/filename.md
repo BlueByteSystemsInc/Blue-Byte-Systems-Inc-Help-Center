@@ -13,7 +13,7 @@ Defines the output filename pattern. You can combine static text with SOLIDWORKS
 
 Use unique values such as part number, revision, configuration name, or sheet name when one source file may create several exports.
 
-Use `(FileNameNumberRange)` when numeric source filenames should be grouped into ranges of 1,000. For example, `11345.SLDPRT` evaluates to `11000-11999`. See [File Name Number Range](../pdmpublisherspecialvariable.md#file-name-number-range) for examples and non-numeric filename behavior.
+Use the **File Number** placeholders to extract the first 3, 4, 5, or 6 digits from the first numeric sequence in a source filename. Use the **File Number Range** placeholders to organize outputs into numeric ranges. See [File Number Placeholders](../pdmpublisherspecialvariable.md#file-number-placeholders) for all available placeholders, examples, and fallback behavior.
 
 > [!IMPORTANT]
 > If **Convert multiple configurations** is enabled, include `ConfigurationName` or another configuration-specific value in the filename.
