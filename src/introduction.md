@@ -1,7 +1,7 @@
 ﻿---
 title: Getting Started | Blue Byte Systems Help Center | SOLIDWORKS PDM
 description: Welcome to Blue Byte Systems, a provider of solutions for SOLIDWORKS PDM automation, publishing, migration, data quality, and task optimization.
-ms.date: 08/10/2026
+ms.date: 08/13/2026
 ms.topic: conceptual
 ---
 
@@ -12,7 +12,11 @@ BLUE BYTE SYSTEMS INC. provides specialized products and consulting services des
 Our solutions help organizations streamline repetitive tasks, automate publishing and migration workflows, improve data quality, and customize SOLIDWORKS PDM to better support their business processes.
 
 <p align="center">
-<img src="../images/solution_partner_logo.png" alt="SOLIDWORKS Solution Partner" width="260"/>
+<a href="https://www.solidworks.com/partner-product/pdmpublisher" target="_blank" rel="noopener noreferrer"><img src="../images/solution_partner_logo.png" alt="SOLIDWORKS Solution Partner" width="260"/></a>
+</p>
+
+<p align="center">
+<a class="bbs-download-button" href="https://www.solidworks.com/partner-product/pdmpublisher" target="_blank" rel="noopener noreferrer">View on SOLIDWORKS.com</a>
 </p>
 
 ## PDMPublisher  
