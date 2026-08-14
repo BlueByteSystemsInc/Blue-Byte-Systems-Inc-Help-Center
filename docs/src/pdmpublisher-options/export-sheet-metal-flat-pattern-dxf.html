@@ -112,10 +112,164 @@
 <p><img src="/images/pdmpublisher/screenshots/options-015-property-export-sheet-metal-parts-to-1-1-flat-pattern-dxf.png" alt="Export sheet metal flat pattern setting"></p>
 <p>Exports sheet metal parts as 1:1 flat pattern DXF files.</p>
 <p><img src="/images/pdmpublisher/screenshots/options-dialog-flat-pattern-settings.png" alt="Flat pattern settings dialog"></p>
+<h2 id="sheet-metal-flat-pattern-settings">Sheet Metal Flat Pattern Settings</h2>
+<p>Select <strong>Flat Pattern Settings</strong> beside the main option to control which entities PDMPublisher writes to the DXF.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Export flat-pattern geometry</strong></td>
+<td>Exports the flattened outside profile, internal cutouts, and other visible flat-pattern edges. This is the normal starting point for a manufacturing DXF and is selected by default.</td>
+</tr>
+<tr>
+<td><strong>Include hidden edges</strong></td>
+<td>Adds edges that are hidden in the flat pattern. Leave this cleared for most laser, plasma, or waterjet workflows unless the downstream process specifically needs hidden geometry.</td>
+</tr>
+<tr>
+<td><strong>Export bend lines</strong></td>
+<td>Adds the bend lines from the SOLIDWORKS flat pattern so manufacturing can identify where bends occur.</td>
+</tr>
+<tr>
+<td><strong>Include sketches</strong></td>
+<td>Includes visible sketch entities from the sheet-metal part in the exported DXF. Use this for manufacturing marks or other sketch geometry that must accompany the profile.</td>
+</tr>
+<tr>
+<td><strong>Merge coplanar faces</strong></td>
+<td>Merges adjacent faces that lie on the same plane, removing unnecessary lines between those coplanar regions.</td>
+</tr>
+<tr>
+<td><strong>Export library features</strong></td>
+<td>Includes geometry created by SOLIDWORKS library features.</td>
+</tr>
+<tr>
+<td><strong>Export forming tools</strong></td>
+<td>Includes geometry representing forming-tool features such as louvers, lances, embosses, or similar formed features. The exact result also depends on the part's SOLIDWORKS sheet-metal document settings.</td>
+</tr>
+<tr>
+<td><strong>Export bounding box</strong></td>
+<td>Adds the rectangular bounding box around the flat pattern. This can be useful for estimating stock size or nesting.</td>
+</tr>
+<tr>
+<td><strong>Only export the inner diameter of countersink holes (Hole feature)</strong></td>
+<td>For countersinks created with the SOLIDWORKS Hole Wizard, exports the inner hole diameter and omits the larger countersink outline. This can provide cleaner cutting geometry when the countersink is created in a later operation.</td>
+</tr>
+<tr>
+<td><strong>Export flat pattern bodies separately (Multi-body sheet metal parts)</strong></td>
+<td>Reserved for exporting each sheet-metal body into a separate file. This feature is marked <strong>not implemented yet</strong> in the current dialog and should not be used.</td>
+</tr>
+<tr>
+<td><strong>Append <code>-FlatPattern</code> to the flat pattern DXF file name</strong></td>
+<td>Adds <code>-FlatPattern</code> before <code>.dxf</code>. Enable it when a drawing and its associated sheet-metal part can both export to DXF, preventing one output from overwriting the other.</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For a typical fabrication DXF, start with <strong>Export flat-pattern geometry</strong> and <strong>Export bend lines</strong>. Add sketches, forming tools, or the bounding box only when your manufacturing process consumes those entities.</p>
+</div>
+<h2 id="model-views-to-export">Model Views to Export</h2>
+<p>The lower section of the dialog lets you export SOLIDWORKS model views to DXF. The predefined choices are:</p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Direction represented</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*Front</code></td>
+<td>Front view</td>
+</tr>
+<tr>
+<td><code>*Back</code></td>
+<td>Back view</td>
+</tr>
+<tr>
+<td><code>*Top</code></td>
+<td>Top view</td>
+</tr>
+<tr>
+<td><code>*Bottom</code></td>
+<td>Bottom view</td>
+</tr>
+<tr>
+<td><code>*Left</code></td>
+<td>Left view</td>
+</tr>
+<tr>
+<td><code>*Right</code></td>
+<td>Right view</td>
+</tr>
+<tr>
+<td><code>*Isometric</code></td>
+<td>Isometric view</td>
+</tr>
+</tbody>
+</table>
+<p>Select the checkbox beside every view you want to export.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Selecting one or more model views changes the export from a sheet-metal flat-pattern export to a SOLIDWORKS annotation-view export. If your goal is a manufacturing-ready unfolded profile, leave all model views cleared and use the flat-pattern settings above.</p>
+</div>
+<h3 id="add-a-custom-view">Add a custom view</h3>
+<p>You can also export a named view saved in the SOLIDWORKS part:</p>
+<ol>
+<li>Enter the exact SOLIDWORKS view name in the text box.</li>
+<li>Select the checkbox beside the text box if the new view should be enabled immediately.</li>
+<li>Select <strong>+</strong> to add the view to the list.</li>
+<li>To remove a custom view, enter its name and select <strong>-</strong>.</li>
+</ol>
+<p>Custom view names must match the names stored in the SOLIDWORKS model. The standard views use their SOLIDWORKS API names, including the leading <code>*</code>.</p>
+<h2 id="recommended-configurations">Recommended configurations</h2>
+<table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Recommended selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic cutting profile</td>
+<td><strong>Export flat-pattern geometry</strong></td>
+</tr>
+<tr>
+<td>Cutting and bending</td>
+<td><strong>Export flat-pattern geometry</strong> and <strong>Export bend lines</strong></td>
+</tr>
+<tr>
+<td>Include manufacturing marks</td>
+<td>Add <strong>Include sketches</strong></td>
+</tr>
+<tr>
+<td>Show formed features</td>
+<td>Add <strong>Export forming tools</strong></td>
+</tr>
+<tr>
+<td>Record required stock size</td>
+<td>Add <strong>Export bounding box</strong></td>
+</tr>
+<tr>
+<td>Avoid a drawing DXF filename collision</td>
+<td>Enable <strong>Append <code>-FlatPattern</code> to the flat pattern DXF file name</strong></td>
+</tr>
+<tr>
+<td>Export a projected model view instead of the unfolded pattern</td>
+<td>Select the required entry under <strong>Model views to export</strong></td>
+</tr>
+</tbody>
+</table>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The DXF file format does not need to be selected separately for this flat pattern feature.</p>
 </div>
+<p>The first eight geometry controls and the bounding-box control correspond to SOLIDWORKS sheet-metal DXF export options. For additional technical background, see the <a href="https://help.solidworks.com/2026/English/api/sldworksapi/SolidWorks.Interop.sldworks%7ESolidWorks.Interop.sldworks.IPartDoc%7EIExportToDWG2.html">SOLIDWORKS <code>IExportToDWG2</code> API documentation</a>.</p>
 
 </article>
 
