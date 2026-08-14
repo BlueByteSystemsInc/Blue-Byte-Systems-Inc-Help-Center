@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher for SOLIDWORKS 3D
 description: Learn how to configure the PDMPublisher export for SOLIDWORKS 3D, including file output, merging PDFs, watermarking, and ERP integration.
-ms.date: 06/19/2026
+ms.date: 08/13/2026
 ms.topic: conceptual
 ---
 
@@ -27,9 +27,9 @@ You can download **PDMPublisher for SOLIDWORKS** free of charge from the officia
 
 ## Tabs
 
-When you first run **PDMPublisher for SOLIDWORKS**, there are several tabs to get familiar with:
+When you first run **PDMPublisher for SOLIDWORKS**, familiarize yourself with the following tabs:
 
-- [Options Tab (Defualt Tab)](pdmpublishersolidworks_options.md)
+- [Options Tab (Default Tab)](pdmpublishersolidworks_options.md)
 - [Annotations Tab](pdmpublishersolidworks_annotations.md)
 - [Conditions Tab](conditions_solidworks.md)
 - [Logs Tab](pdmpublishersolidworks_logs.md)
