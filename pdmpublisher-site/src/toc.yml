@@ -3,8 +3,6 @@
   items:
   - name: Welcome
     href: welcome.md
-  - name: PDMPublisher Overview
-    href: ../../src/pdmpublisher.md
   - name: Get a 7-day Trial
     href: ../../src/pdmpublishertrial.md
   - name: Quick Demo
@@ -21,6 +19,8 @@
 - name: PDMPublisher for PDM Professional
   expanded: true
   items:
+  - name: Overview
+    href: ../../src/pdmpublisher.md
   - name: PDM Task vs SOLIDWORKS Add-in
     href: ../../src/pdmpublisher-product-differences.md
   - name: Set Up Your First Task
