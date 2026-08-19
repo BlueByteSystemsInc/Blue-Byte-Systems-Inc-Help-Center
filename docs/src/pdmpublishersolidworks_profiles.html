@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDMPublisher for SOLIDWORKS | Help Center </title>
+      <title>Profiles and Templates | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDMPublisher for SOLIDWORKS | Help Center ">
+      <meta name="title" content="Profiles and Templates | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Use PDMPublisher inside SOLIDWORKS to export documents and references with reusable profiles, annotations, conditions, and detailed logs.">
+      <meta name="description" content="Create, select, rename, export, import, and delete reusable PDMPublisher for SOLIDWORKS profiles.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_profiles.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -107,73 +107,71 @@
         </div>
 
         <article data-uid="">
-<h1 id="pdmpublisher-for-solidworks">PDMPublisher for SOLIDWORKS</h1>
+<h1 id="profiles-and-templates">Profiles and Templates</h1>
 
-<p>PDMPublisher for SOLIDWORKS is the SOLIDWORKS add-in version of PDMPublisher. It publishes the document open in SOLIDWORKS and can process its referenced files without requiring a SOLIDWORKS PDM task.</p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>This documentation describes the SOLIDWORKS add-in, not the PDMPublisher task configured in the SOLIDWORKS PDM Administration tool.</p>
-</div>
-<p><img src="/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher for SOLIDWORKS 2026.08.08 open in SOLIDWORKS 2026"></p>
-<h2 id="start-a-publish-job">Start a Publish Job</h2>
-<ol>
-<li>Open the part, assembly, or drawing to publish in SOLIDWORKS.</li>
-<li>Open the <strong>PDMPublisher (SOLIDWORKS)</strong> task pane.</li>
-<li>Select an existing <a href="pdmpublishersolidworks_profiles.html">profile</a>, or create one.</li>
-<li>Review the Options, Annotations, and Conditions tabs.</li>
-<li>Select <strong>PUBLISH</strong>.</li>
-</ol>
-<p>The current profile controls the export location, filename, formats, reference processing, annotations, conditions, and other publishing behavior.</p>
-<h2 id="main-tabs">Main Tabs</h2>
+<p>A profile is a reusable set of PDMPublisher settings. Use profiles to switch between workflows without rebuilding the Options, Annotations, and Conditions configuration each time.</p>
+<p><img src="/images/pdmpublisher/solidworks/profile-toolbar.png" alt="PDMPublisher profile toolbar"></p>
+<h2 id="select-a-profile">Select a Profile</h2>
+<p>Use the profile list at the top of the task pane to select the active profile. The settings shown on the PDMPublisher, Annotations, and Conditions tabs belong to that profile.</p>
+<p>Give profiles names that describe their output, such as <code>Released PDF</code>, <code>Laser DXF</code>, or <code>PDF And Step</code>.</p>
+<h2 id="create-a-profile">Create a Profile</h2>
+<p>Open the <strong>New</strong> menu and choose one of these commands:</p>
+<ul>
+<li><strong>New...</strong> creates a profile that you can configure from the beginning.</li>
+<li><strong>New From</strong> creates a profile from a supplied starter template.</li>
+</ul>
+<p><img src="/images/pdmpublisher/solidworks/profile-new-from.png" alt="New profile and starter templates"></p>
+<p>The supplied templates are:</p>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
-<th>Purpose</th>
+<th>Template</th>
+<th>Starting purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="pdmpublishersolidworks_options.html">PDMPublisher</a></td>
-<td>Configure output files, drawing sheets, reference processing, configurations, flat patterns, and PDF behavior.</td>
+<td><code>DXF</code></td>
+<td>Drawing or manufacturing DXF output.</td>
 </tr>
 <tr>
-<td><a href="pdmpublishersolidworks_annotations.html">Annotations</a></td>
-<td>Add text, properties, watermarks, or QR codes to exported drawings and PDFs.</td>
+<td><code>PDF And Step</code></td>
+<td>PDF documentation and STEP model output.</td>
 </tr>
 <tr>
-<td><a href="conditions_solidworks.html">Conditions</a></td>
-<td>Filter the active document and references using property-based rules and AND/OR groups.</td>
-</tr>
-<tr>
-<td><a href="pdmpublishersolidworks_logs.html">Logs</a></td>
-<td>Review the steps, results, warnings, and errors from each publish job.</td>
-</tr>
-<tr>
-<td><a href="pdmpublishersolidworks_About.html">About</a></td>
-<td>View the installed version, update and licensing links, and appearance settings.</td>
+<td><code>STEP</code></td>
+<td>STEP model output.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="navigation-width">Navigation Width</h2>
-<p>Select <strong>Minimize</strong> at the bottom of the navigation to leave more room for settings.</p>
-<p><img src="/images/pdmpublisher/solidworks/navigation-minimize.png" alt="Minimize navigation command"></p>
-<p>When minimized, the tab names are displayed vertically. Select the arrow at the bottom to restore the full navigation.</p>
-<p><img src="/images/pdmpublisher/solidworks/navigation-collapsed.png" alt="Collapsed PDMPublisher navigation"></p>
-<h2 id="profiles">Profiles</h2>
-<p>Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. The add-in includes starter templates for DXF, PDF and STEP, and STEP publishing. See <a href="pdmpublishersolidworks_profiles.html">Profiles and Templates</a>.</p>
-<h2 id="download-and-licensing">Download and Licensing</h2>
+<p>Templates are starting points. Review the export location, filename, formats, and reference behavior before publishing.</p>
+<h2 id="rename-a-profile">Rename a Profile</h2>
+<ol>
+<li>Select the profile.</li>
+<li>Select <strong>Edit</strong>.</li>
+<li>Change the name in the profile field.</li>
+<li>Select <strong>Save</strong>.</li>
+</ol>
+<p><img src="/images/pdmpublisher/solidworks/profile-edit.png" alt="Editing a profile name"></p>
+<p><img src="/images/pdmpublisher/solidworks/profile-save.png" alt="Saving a profile name"></p>
+<p>While the profile name is being edited, other profile commands are unavailable until the name is saved.</p>
+<h2 id="move-profiles-between-computers">Move Profiles Between Computers</h2>
 <ul>
-<li><a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher">Download PDMPublisher for SOLIDWORKS</a></li>
-<li><a href="https://bluebyte.biz/product/pdmpublisher-solidworks">Purchase a PDMPublisher for SOLIDWORKS license</a></li>
-<li><a href="licensespdmpublisher.html">License management</a></li>
+<li><strong>Export...</strong> writes the selected profile to a file that can be backed up or shared.</li>
+<li><strong>Load From...</strong> creates or loads a profile from a previously exported profile file.</li>
 </ul>
-<p>For support, contact <code>support@bluebytesystemsinc.zohodesk.com</code>.</p>
+<p>Use profile export before changing computers or before making major changes to an established publishing setup.</p>
+<h2 id="delete-a-profile">Delete a Profile</h2>
+<p>Select the profile and choose <strong>Delete</strong>. Deleting a profile removes that saved configuration; it does not delete exported documents.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Confirm that another copy is not needed before deleting a profile. Export the profile first when it may be needed later.</p>
+</div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_profiles.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -2097,6 +2097,136 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/about.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/about.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/annotations.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/annotations.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/conditions.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/conditions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/drawing-sheets.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/drawing-sheets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/file-formats.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/file-formats.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/navigation-collapsed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/navigation-collapsed.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/navigation-minimize.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/navigation-minimize.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/overview-20260808.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/overview-20260808.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-edit.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-new-from.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-new-from.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-save.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-save.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-toolbar.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-toolbar.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/theme-toggle.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/theme-toggle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/theme-settings-confirmation.png",
       "output": {
         "resource": {
@@ -3421,6 +3551,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks_options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_profiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_profiles.html"
         }
       },
       "version": ""

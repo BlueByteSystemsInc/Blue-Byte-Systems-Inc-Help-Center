@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Conditions | PDMPublisher | SOLIDWORKS 3D | Help Center </title>
+      <title>Conditions | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Conditions | PDMPublisher | SOLIDWORKS 3D | Help Center ">
+      <meta name="title" content="Conditions | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="How to add conditions to filter files before printing or exporting.">
+      <meta name="description" content="Filter the active document and assembly references with property conditions and nested AND/OR groups.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -107,178 +107,63 @@
         </div>
 
         <article data-uid="">
-<h1 id="conditions-tab">Conditions Tab</h1>
+<h1 id="conditions">Conditions</h1>
 
-<div style="display: flex; center; gap: 1em; margin: 2em 0;">
-    <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        📥 Download PDMPublisher (free version)
-    </a>
-    <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        🛒 Purchase a License
-    </a>
+<p>Conditions decide which files are included in a publish job. They are most useful when the active document is an assembly and <strong>Export references to file formats individually</strong> is enabled.</p>
+<p><img src="/images/pdmpublisher/solidworks/conditions.png" alt="PDMPublisher for SOLIDWORKS Conditions page"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Conditions affect assembly references and the assembly. Enable <strong>Export references to file formats individually</strong> on the PDMPublisher tab when conditions must filter referenced files.</p>
 </div>
-<p>This section provides an overview of the <strong>Conditions</strong> tab and explains the available options for filtering which files are included in the publishing process.</p>
-<p><img src="/images/pdmpublisher/screenshots/page-conditions-(2).png" alt="PDMPublisher Conditions tab"></p>
-<hr>
-<h2 id="conditions-output-dialog">Conditions Output Dialog</h2>
-<p>From this dialog box, you can manually select which files to export. The dialog also displays useful information such as the number of assemblies, unique parts, and configurations identified during processing.</p>
-<p><img src="../images/PoorMansConditions1.png" alt="Poor Man's Conditions"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>To disable this option, uncheck the <strong>Show Conditions Output</strong> Dialog checkbox located at the bottom of the Conditions tab.</p>
-</div>
-<hr>
-<h2 id="creating-and-using-conditions">Creating and Using Conditions</h2>
-<p>Conditions act as filters to ensure only the desired files are processed. They work by evaluating the properties of each file and can be used to include or exclude files from the publishing process.</p>
-<p><img src="/images/pdmpublisher/screenshots/conditions-(2)-001-condition-conditionsviewmodel.png" alt="Conditions Tab"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The add-in will only process files that evaluate any of the set conditions as '<strong>true</strong>'.</p>
-</div>
-<hr>
-<h2 id="nested-groups-support-andor">Nested Groups Support (AND/OR)</h2>
-<p>PDMPublisher for SOLIDWORKS supports <strong>nested condition groups</strong>, allowing you to create more advanced logical filters using <strong>AND/OR</strong> trees.</p>
-<p>Individual conditions or entire condition groups can be enabled or disabled using their corresponding checkboxes on the left.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>You can add a new group by clicking the <strong>+ (AND/OR)</strong> button next to any condition group.</p>
-</div>
-<hr>
-<h2 id="condition-options">Condition Options</h2>
+<h2 id="build-a-condition-tree">Build a Condition Tree</h2>
+<ul>
+<li><strong>+ (Condition)</strong> adds a comparison to the selected group.</li>
+<li><strong>+ (AND/OR)</strong> adds a nested condition group.</li>
+<li>The <strong>And/Or</strong> selector determines whether all enabled children or any enabled child must pass.</li>
+<li>The checkbox beside a condition or group enables or disables it.</li>
+<li>The red delete control removes the condition or group.</li>
+</ul>
+<p>Groups can be nested and reordered by dragging them.</p>
+<h2 id="condition-fields">Condition Fields</h2>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>Field</th>
+<th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Variable</strong></td>
-<td>Variable (file property) name to run the condition on. This is not case sensitive.</td>
+<td>File property or built-in value to evaluate.</td>
 </tr>
 <tr>
-<td><strong>Condition Type</strong></td>
-<td>Type of comparison or rule to apply.</td>
+<td><strong>Comparison</strong></td>
+<td>Text, number, date, or Yes/No comparison.</td>
 </tr>
 <tr>
 <td><strong>Value</strong></td>
-<td>Value to compare against. This is not case sensitive.</td>
+<td>Expected value or pattern. Text comparisons are not case-sensitive.</td>
 </tr>
 <tr>
 <td><strong>Configuration</strong></td>
-<td>Configuration to read the variable from (use <code>@</code> for general use).</td>
+<td>Configuration from which to read the property. Leave it empty to use the referenced configuration where supported.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="special-variables">Special Variables</h3>
-<p>These built-in entries appear at the top of the variable list:</p>
+<p>Built-in variables include Filename, FolderName, Revision, Version, Workflow, State, and ConfigurationName. The variable list also includes properties available from the active SOLIDWORKS document.</p>
+<h2 id="evaluation-behavior">Evaluation Behavior</h2>
+<p>PDMPublisher first tries to read a property from the referenced configuration. If the property is not present, it falls back to the document's Custom tab.</p>
+<p>For an assembly reference with an empty Configuration field, the add-in evaluates the referenced configuration used by the assembly.</p>
+<h2 id="conditions-output-dialog">Conditions Output Dialog</h2>
+<p>Enable <strong>Show conditions output dialog</strong> to review the files that passed before export and to adjust the final selection. Disable it when the condition tree should run without that confirmation step.</p>
+<h2 id="import-export-and-help">Import, Export, and Help</h2>
 <ul>
-<li><strong>FileName</strong>: File name (e.g. <code>123456.SLDDRW</code>)</li>
-<li><strong>Revision</strong>: Current revision cached</li>
-<li><strong>Version</strong>: Current version cached</li>
-<li><strong>Workflow</strong>: Workflow name of the file</li>
-<li><strong>State</strong>: Current state name of the file</li>
-<li><strong>ConfigurationName</strong>: Referenced or active configuration</li>
+<li><strong>Export...</strong> saves the condition setup for backup or transfer.</li>
+<li><strong>Import...</strong> loads a previously exported condition setup.</li>
+<li><strong>Help...</strong> opens the condition documentation.</li>
 </ul>
-<h3 id="condition-types">Condition Types</h3>
-<table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>TextEqualTo</strong></td>
-<td>Checks if the text is exactly equal to the value. Supports <code>*</code> wildcard.</td>
-</tr>
-<tr>
-<td><strong>TextNotEqualTo</strong></td>
-<td>Checks if the text is not equal to the value.</td>
-</tr>
-<tr>
-<td><strong>TextLengthLessThan</strong></td>
-<td>True if text length is less than the value.</td>
-</tr>
-<tr>
-<td><strong>TextLengthBiggerThan</strong></td>
-<td>True if text length is greater than the value.</td>
-</tr>
-<tr>
-<td><strong>TextContains</strong></td>
-<td>True if the text contains the value.</td>
-</tr>
-<tr>
-<td><strong>TextDoesNotContain</strong></td>
-<td>True if the text does not contain the value.</td>
-</tr>
-<tr>
-<td><strong>NumberEqualTo</strong></td>
-<td>True if number equals the value.</td>
-</tr>
-<tr>
-<td><strong>NumberNotEqualTo</strong></td>
-<td>True if number is not equal to the value.</td>
-</tr>
-<tr>
-<td><strong>NumberLessThan</strong></td>
-<td>True if number is less than the value.</td>
-</tr>
-<tr>
-<td><strong>NumberBiggerThan</strong></td>
-<td>True if number is greater than the value.</td>
-</tr>
-<tr>
-<td><strong>DateEqualTo</strong></td>
-<td>True if date equals the value.</td>
-</tr>
-<tr>
-<td><strong>DateNotEqualTo</strong></td>
-<td>True if date is not equal to the value.</td>
-</tr>
-<tr>
-<td><strong>DateLessThan</strong></td>
-<td>True if date is earlier than the value.</td>
-</tr>
-<tr>
-<td><strong>DateBiggerThan</strong></td>
-<td>True if date is later than the value.</td>
-</tr>
-<tr>
-<td><strong>YesOrNoEqualTo</strong></td>
-<td>True if value equals Yes or No.</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="order-of-evaluation">Order of Evaluation</h3>
-<p><strong>PDMPublisher for SOLIDWORKS</strong> follows a specific order when evaluating variables and configurations:</p>
-<ol>
-<li><p><strong>Configuration-Specific Property Lookup</strong><br>
-When evaluating a variable, <strong>PDMPublisher for SOLIDWORKS</strong> first tries to retrieve its value from the <strong>referenced configuration</strong> of the file.</p>
-</li>
-<li><p><strong>Fallback to Custom Tab</strong><br>
-If the property is <strong>not found</strong> in the referenced configuration, <strong>PDMPublisher for SOLIDWORKS</strong> will <strong>fallback to the <code>Custom</code> tab</strong> to retrieve the value.</p>
-</li>
-<li><p><strong>Assembly References with Empty Configuration Field</strong><br>
-When processing an <strong>assembly</strong>, if a condition has an <strong>empty configuration field</strong>, <strong>PDMPublisher for SOLIDWORKS</strong> will evaluate the condition <strong>against the referenced configuration(s)</strong> of the document (e.g. parts or subassemblies).</p>
-</li>
-</ol>
-<div class="NOTE">
-<h5>Note</h5>
-<p>This behavior ensures maximum compatibility with different file property setups, especially in multi-configuration parts and complex assemblies.</p>
-</div>
-<hr>
-<h3 id="import-and-export">Import and Export</h3>
-<p><strong>Import</strong> and <strong>Export</strong> functions are used to back up or deploy settings across multiple installations of <strong>PDMpublisher for SOLIDWORKS</strong>.</p>
-<ul>
-<li><p>The <strong>Export</strong> function creates a settings file that can be saved, shared, and imported into other installations of PDMpublisher for SOLIDWORKS.</p>
-</li>
-<li><p>The <strong>Import</strong> function applies the settings contained within a settings file that was previously created using the Export process.</p>
-</li>
-</ul>
+<p>Select <strong>Popout in separate window</strong> when more room is needed to edit a large condition tree.</p>
 
 </article>
 

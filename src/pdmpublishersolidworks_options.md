@@ -1,218 +1,82 @@
-﻿---
-title: PDMPublisher for SOLIDWORKS 3D (Options Tab)
-description: Learn how to configure the PDMPublisher in SOLIDWORKS.
-ms.date: 06/19/2026
-ms.topic: conceptual
+---
+title: Options | PDMPublisher for SOLIDWORKS
+description: Configure output paths, filenames, formats, drawing sheets, references, configurations, flat patterns, and PDF output.
+ms.date: 08/18/2026
+ms.topic: how-to
 ---
 
-# Options Tab (Default Tab)
-<div style="display: flex; center; gap: 1em; margin: 2em 0;">
-    <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        📥 Download PDMPublisher (free version)
-    </a>
-    <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        🛒 Purchase a License
-    </a>
-</div>
+# PDMPublisher Options
 
+The PDMPublisher tab contains the output and processing settings for the selected [profile](pdmpublishersolidworks_profiles.md).
 
+![PDMPublisher for SOLIDWORKS Options page](/images/pdmpublisher/solidworks/overview-20260808.png)
 
-This section outlines all the options in the **PDMPublisher** home tab:
+## Output
 
----
+### Export Location
 
-## Export Location
+Enter the folder where generated files will be written, or select **Browse...** to choose a fixed folder. Use the `>...` menu to build a dynamic path from file properties and built-in values.
 
-Location where to export generated files. 
+Select **Customize Location...** when individual formats need different folders. An enabled format-specific location overrides the main Export Location for that format.
 
-  - The location can be in or outside  SOLIDWORKS PDM vault.
-  - The Browse button allows the user to specify the destination folder for the exported files, making it easy to direct them to any desired location.
-  - The export location can be defined dynamically, allowing the destination folder to be determined by the selected file properties.
-  - Must not end with `\`.
+See [Export Location](pdmpublisher-options/export-location.md) and the [Placeholder Reference](pdmpublisherspecialvariable.md) for path examples.
 
+### Filename
 
-![Export Location button](/images/RMBButton.png)
+The Filename field controls the output name without its final file extension. Combine text with values from the `>...` menu. Include a configuration-specific value when one source file can create several outputs.
 
----
+See [Filename](pdmpublisher-options/filename.md).
 
-## Customize Location
-Custom export locations based on file extension.
+### File Formats
 
-  - Customize location allows users to define export locations based on file extension, ensuring that each file type is assigned a unique destination path. 
-  - The checkboxes indicate which file types will be exported to their specified locations. Any file type whose checkbox is not selected will default to the base export location.
+Open the format selector and check every output format required by the profile. Multiple formats can be generated in one publish job.
+
+![Selecting multiple output file formats](/images/pdmpublisher/solidworks/file-formats.png)
+
+The selector uses descriptive names and file-type icons. Format availability depends on the source document, SOLIDWORKS version, and installed eDrawings capabilities. See [File Formats](pdmpublisher-options/file-formats.md) for the complete list and source-file behavior.
+
+### Open Export Location on Completion
+
+Enable this option to open the output folder after a successful publish job.
+
+## Drawing Sheets
+
+Use **Sheets to export** to choose all drawing sheets or only sheets whose names match a pattern.
+
+![Drawing sheet selection and configuration-name pattern](/images/pdmpublisher/solidworks/drawing-sheets.png)
+
+- **All sheets** exports every sheet in the drawing.
+- **Sheets matching name** evaluates **Sheet name pattern** and exports matching sheets.
+
+The pattern supports `*`, `?`, and placeholders such as `(ConfigurationName)`. See [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md) for examples.
 
 > [!NOTE]
-> This feature is available exclusively in the full version of PDMpublisher.
+> Sheet-name matching applies only when a drawing contains two or more sheets. A drawing with one sheet exports its only sheet without evaluating the pattern.
 
-![Custom File Locations](/images/CUSTOMEXPORTLOCATIONSSW.png)
+## Export Processing
 
----
+| Option | Behavior |
+| --- | --- |
+| **Export references to file formats individually** | Processes the active assembly and its referenced files as individual outputs. |
+| **Ignore sub-assemblies children when condition checks fail** | Skips the children of a subassembly when that subassembly fails its condition checks. |
+| **Convert multiple configurations** | Exports multiple configurations. Include `(ConfigurationName)` or another configuration-specific value in Filename. |
+| **Archive all exported documents (.zip)** | Creates a ZIP package containing the exported documents. |
+| **Export sheet metal parts to 1:1 flat pattern DXF** | Creates manufacturing flat-pattern DXFs for sheet metal parts. Use **Flat Pattern Settings** to configure the result. |
+| **Split Bodies** | Exports bodies from a multibody part as separate files. This does not apply to sheet metal flat patterns. |
 
-## File name
-
-Exported file name(s).
-
- - The Filename field defines the name assigned to the generated file(s). 
- - This value is determined by the properties selected within the add-in.
- - At least one file property driven value must be applied to create unique file names.
- - Characters can be manually entered between dynamic properties to separate the properties. For example: filename`_`revision (Certain characters are not permitted in filenames due to Windows Explorer restrictions)
-
-> [!NOTE]
-> The list of SOLIDWORKS properties available for use in the filename is determined by the active document and the specific properties it contains.
-
-
-![Filename Properties](/images/FilenameProperties2.png)
-
-
----
-
-## File Formats
-
-File formats selected for export.
-
-Multiple file formats can be exported simultaneously by checking the corresponding boxes.
-
-The supported file formats are: 
-
-1. **PDF (Portable Document Format)**: A versatile format for sharing documents that preserves formatting across different devices.
-2. **DWG (Drawing)**: A file format used in AutoCAD for creating and editing 2D and 3D drawings.
-3. **DXF (Drawing Exchange Format)**: A format designed for interoperability between AutoCAD and other software, facilitating data exchange.
-4. **IGS (Initial Graphics Exchange Specification)**: A neutral file format used to exchange 2D and 3D CAD data between different software platforms.
-5. **U3D (Universal 3D)**: A file format for 3D models, commonly embedded in documents to provide interactive 3D visualization.
-6. **STL (Stereolithography)**: A widely used format for 3D printing that represents the surface geometry of a 3D object.
-7. **STEP (Standard for the Exchange of Product Model Data)**: A format that enables compatibility and data exchange between different CAD systems.
-8. **EPRT (eDrawings Part File)**: A file format used for 3D model representations in eDrawings software.
-9. **EASM (eDrawings Assembly File)**: A format for representing assemblies in eDrawings, allowing visualization of multi-part models.
-10. **HTML (HyperText Markup Language)**: The standard markup language for creating web pages, allowing the display of text, images, and links.
-11. **X_T (Parasolid Text File)**: A Parasolid text format used for 3D modeling in CAD applications.
-12. **X_B (Parasolid Binary File)**: A Parasolid binary format used for 3D modeling in CAD applications.
-
----
-
-## Export document to file formats individually
-
-Export individual files.
-
-When enabled, this exports the document and its referenced documents individually to the selected output folder. This does not affect merging and archiving when it is off.
-
----
-
-## Merge exported PDFs into one master PDF
-
-Merge all PDFs into a combined document.
-
-When enabled, all exported PDFs of the affected assembly are merged into a single PDF.
-
----
-
-## Ignore sub-assembly children when condition checks fail
-
-Condition check on parent assemblies will ignore children when failed.
-
-When conditions are applied and this option is enabled, the children of sub-assemblies that fail the condition checks will be ignored (not processed). 
-
----
-
-## Archive all exported documents (.zip)
-
-Create a zip file of all exported documents.
-
----
-
-## Convert multiple configurations
-
-Convert all part and assembly configurations. 
-
-When enabled, this option processes each configuration individually and exports them according to the selected criteria.
-
-> [!NOTE]
-> Configuration Name is required in the filename field. (shown below)
-
-![Configuration Name](/images/ConfigurationNameRequired.png)
-
----
-
-## Add table of content to merged PDF
-
-Creates a table of contents for a merged PDF export.
-
- - When enabled, automatically generates and inserts a table of content into the merged PDF.
- - Users can choose to use the default settings or customize values to suit their specific requirements.
- - Custom values are derived from the SOLIDWORKS file properties of the currently active document.
-
-![Defualt Table Of Contents](/images/TableOfContents1.png)
-
-![Custom Table Of Contents](/images/TableOfContentsCustomize.png)
-
-- The example below shows a custom **PartNumber**,**Status**, and **Qty** column. When a property does not exist in the SOLIDWORKS file(s), the column will be blank.
-
-![Example Custom Table Of Contents](/images/TableOfContentsExample1.png)
-
----
-
-## Convert sheet metal parts to 1:1 flat pattern DXF
-
-Exports the flat pattern of sheet metal parts as 1:1 DXF.
-
- - The term 'FlatPattern' will be appended to the filename.
- - This feature will recongize sheet metal parts and export them as a flat pattern.
- - Several options can be selected using the checkboxes to configure the DXF export according to your requirements. 
- 
- These options are accessible by clicking the **Flat Pattern Settings** button:
- 
- ### Sheet Metal Options:
- 1. Eport flat-pattern geometry
- 2. Include hidden edges
- 3. Export bend lines
- 4. Include sketches
- 5. Merge coplanar faces
- 6. Export library features
- 7. Export forming tools
- 8. Export bounding box
- 9. Ignore countersink holes
- 10. Append Flat-pattern to the filename.
-
-### Sheet Metal Part Views
-You have the ability to specify whether you want additional views of the sheet metal parts.
-
- > [!NOTE]
-> This does not require the DXF file format to be selected for export in the File Formats.
-
-![Flat Pattern Settings](/images/FlatPatternSettings.png)
-
----
-
-## Split Bodies
-Splits multi-body parts into separate files.
-
-For the HTML extension, this is only supported in SOLIDWORKS 2025 and newer.
-
-The body name is appended to the end of the filename.
+Use **Configuration Filter** to include or exclude configurations by pattern when multiple-configuration export is enabled.
 
 > [!IMPORTANT]
->This does not apply to sheet metal flat patterns.
+> Reference processing, conditions, BOM quantities, PDF merging, and assembly-level outputs depend on the active assembly and the references SOLIDWORKS can resolve.
 
----
-## PDF bookmarks
+## PDF Options
 
-Add bookmarks to merged PDFs.
-
-Define the pattern to use for bookmarks in the merged PDF (e.g., chapter titles, part names).
-
----
+The PDF section contains merged-PDF, bookmarks, table-of-contents, and related PDF behavior. Options that depend on PDF references become relevant when PDF is selected and assembly references are processed.
 
 ## Publish
 
-Time to export!
+Select **PUBLISH** at the bottom of the task pane to process the active SOLIDWORKS document with the current profile.
 
-The **Publish** button executes the add-in using all applied settings. The process can be canceled at any time by selecting the **Cancel** button in the progress bar.
+If SOLIDWORKS PDM vaults are installed and configured, the arrow beside **PUBLISH** can associate publishing with a vault. Use the correct vault when generated files must be added, checked out, or checked in through PDM.
 
-The **Publish** button also provides the option to select between available SOLIDWORKS PDM Vaults, if installed and configured. Use the down arrow on the right to access the installed vaults.
-
-![Publish Button](/images/PublishButtonWithVault.png)
-
- > [!WARNING]
-  > Linking the **Publish** button to vault is critical to ensure the generated files are able to be checked in/out properly during the export process.
-
-> [!TIP]
-  > To unlink the **Publish** button from a vault, click the dropdown arrow and select the active vault name. This action will remove the vault association.
+The Logs tab records progress, successful steps, warnings, and failures. See [Logs](pdmpublishersolidworks_logs.md).

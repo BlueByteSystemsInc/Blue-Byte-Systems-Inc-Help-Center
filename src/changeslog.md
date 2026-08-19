@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/13/2026
+ms.date: 08/18/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,7 +14,18 @@ Versions are identified by their compile date, which represents the build date o
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
 ## 2026.08.08
-*Applies to **PDM Task***
+*Applies to **PDM Task** and **SOLIDWORKS Add-in***
+
+**SOLIDWORKS Add-in**:
+- Added reusable profiles with controls to create, rename, save, export, load, and delete publishing configurations.
+- Added starter profile templates for DXF, PDF and STEP, and STEP workflows.
+- Added collapsible task-pane navigation to provide more room for settings.
+- Added optional Windows light/dark theme support. Theme changes apply after SOLIDWORKS restarts.
+- Added drawing sheet selection with sheet-name pattern and `(ConfigurationName)` matching.
+- Updated the multi-format selector with descriptive names and file-type icons.
+- Updated the Options, Annotations, Conditions, and About interfaces. See [PDMPublisher for SOLIDWORKS](/src/pdmpublishersolidworks.html).
+
+**PDM Task**:
 - Added **File Number** placeholders that return the first 3, 4, 5, or 6 digits from the first numeric sequence in a filename.
 - Added **File Number Range** placeholders that group those 3-, 4-, 5-, or 6-digit values into numeric ranges.
 - Organized the new placeholders into **File Number** and **File Number Range** groups in the `>...` placeholder menu. See [File Number Placeholders](/src/pdmpublisherspecialvariable.html#file-number-placeholders).

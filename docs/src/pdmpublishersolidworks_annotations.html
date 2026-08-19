@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDMPublisher for SOLIDWORKS 3D (Annotations) | Help Center </title>
+      <title>Annotations | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDMPublisher for SOLIDWORKS 3D (Annotations) | Help Center ">
+      <meta name="title" content="Annotations | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="How to configure and use the annotations tab.">
+      <meta name="description" content="Add and position text, property values, watermarks, and QR codes on exported drawing sheets.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -107,108 +107,41 @@
         </div>
 
         <article data-uid="">
-<h1 id="annotations-tab">Annotations Tab</h1>
+<h1 id="annotations">Annotations</h1>
 
-<div style="display: flex; center; gap: 1em; margin: 2em 0;">
-    <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        📥 Download PDMPublisher (free version)
-    </a>
-    <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        🛒 Purchase a License
-    </a>
-</div>
-<p>This section provides an overview of the <strong>Annotations tab</strong> and explains the available options for customizing exported annotations.</p>
-<p><img src="/images/pdmpublisher/screenshots/page-annotations.png" alt="PDMPublisher Annotations page"></p>
-<hr>
-<h2 id="creating-custom-annotations-andor-watermarks">Creating Custom Annotations and/or Watermarks</h2>
-<ul>
-<li>Select the  <strong>&quot;A&quot;</strong> button (Add annotation) in the top right corner. A new annotation box will appear in the window below.</li>
-</ul>
-<p><img src="/images/AddingAnnotations1.png" alt="Adding an Annotation"></p>
-<hr>
-<h2 id="adding-annotation-text">Adding Annotation Text</h2>
-<ul>
-<li>From the newly created annotation box, you can enter custom text and/or link the annotation to properties contained within the file.</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The list of SOLIDWORKS properties available for use in the annotation is determined by the active document and the specific properties it contains.</p>
-</div>
-<p><img src="/images/AddingAnnotations2.png" alt="Adding an Annotation"></p>
-<hr>
-<h2 id="formating-the-annotation-text">Formating the Annotation Text</h2>
-<ul>
-<li>Once the annotation text is added, you can adjust its formatting, including font, size, bold, or italicize.</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Each annotation can use a different font type and size, and they can be controlled independently. The active annotation being edited is highlighted with a blue shadow for easy identification.</p>
-</div>
-<p><img src="/images/AddingAnnotations3.png" alt="Adding an Annotation"></p>
-<hr>
-<h2 id="watermarks">Watermarks</h2>
-<ul>
-<li>Selecting the <strong>Watermark</strong> checkbox will rotate the active annotation 45 degrees during publishing. The text will also be made semi-transparent to avoid obscuring the content of the published file.</li>
-</ul>
-<p><img src="/images/WaterMark1.png" alt="Watermark Example"></p>
-<hr>
-<h2 id="active-checkbox">Active Checkbox</h2>
-<ul>
-<li>The <strong>Active</strong> checkbox determines whether the selected annotation will be included in the published output.</li>
-</ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p>New annotations are active by default.</p>
-</div>
-<hr>
-<h2 id="qr-code">QR Code</h2>
-<ul>
-<li>This option converts the active annotation into a QR code that can be scanned using any smart device equipped with a camera. The same as any other annotation, the QR code can be placed anywhere on the drawing.</li>
-</ul>
-<p><img src="/images/QRcodeCheckbox.png" alt="Adding an Annotation">
-<img src="/images/QRcodeExample.png" alt="QR Code Example"></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The size of the QR code is controlled by the <strong>Width</strong> setting located to the right of the QR Code checkbox.</p>
-</div>
-<hr>
-<h2 id="annotation-position">Annotation Position</h2>
-<ul>
-<li>Each annotation can be repositioned manually by clicking and dragging from its bottom-left corner to the desired location.</li>
-</ul>
-<p><img src="/images/AddingAnnotations5.png" alt="Adding an Annotation"></p>
-<ul>
-<li><p>Alternately, Each annotation can be set using the X and Y coordinates. X is a percentage relative to the width and Y is a percentage relative to the height of the sheet.</p>
-</li>
-<li><p>It is also possible to copy the position of existing annotations. This is done by following the steps below.</p>
+<p>Annotations place text, SOLIDWORKS property values, watermarks, or QR codes on exported drawing sheets and PDFs. Annotation settings are stored with the selected profile.</p>
+<p><img src="/images/pdmpublisher/solidworks/annotations.png" alt="PDMPublisher for SOLIDWORKS Annotations page"></p>
+<h2 id="add-annotation-content">Add Annotation Content</h2>
 <ol>
-<li><p>In PDMpublisher, navigate to the Annotations tab.</p>
-</li>
-<li><p>Select the PDMpublisher annotation that you want to position on the drawing.</p>
-</li>
-<li><p>In the active SOLIDWORKS drawing, select an existing note that will be used as a reference for positioning.</p>
-</li>
-<li><p>Return to the Annotations tab in PDMpublisher and click <strong>Copy XY from Note</strong>.</p>
-</li>
-<li><p>The X and Y coordinates of the selected SOLIDWORKS note are copied.</p>
-</li>
-<li><p>The PDMpublisher annotation is automatically positioned at the same location.</p>
-</li>
-<li><p>Once positioning is complete, delete the temporary SOLIDWORKS note from the drawing sheet.</p>
-</li>
-<li><p>Click <strong>Publish</strong> to generate the output.</p>
-</li>
+<li>Select <strong>A+</strong> to add an annotation.</li>
+<li>Enter fixed text in the annotation box.</li>
+<li>Use <code>&gt;...</code> to insert file properties or supported placeholders.</li>
+<li>Select the annotation to format or position it.</li>
 </ol>
-</li>
-</ul>
-<p><img src="/images/AddingAnnotations6.png" alt="Adding an Annotation"></p>
-<p><img src="/images/AddingAnnotations4.png" alt="Adding an Annotation"></p>
-<hr>
-<h2 id="sheets">Sheets</h2>
+<p>The properties offered by the menu depend on the active SOLIDWORKS document and its available custom properties.</p>
+<h2 id="formatting-controls">Formatting Controls</h2>
+<p>Use the toolbar to set the font, size, bold, italic, watermark, visibility, and QR-code behavior for the selected annotation.</p>
 <ul>
-<li><strong>Sheets</strong> specifies which page where the annotation(s) will be placed on multiple page drawings. Each annotation is individually controlled by the <strong>Sheets</strong> feature.</li>
+<li><strong>Watermark</strong> rotates the annotation and makes it partially transparent.</li>
+<li>The active/visibility control determines whether the annotation is included.</li>
+<li>QR-code mode renders the annotation value as a scannable code.</li>
+<li>The color selector controls the annotation color.</li>
 </ul>
-<p><img src="/images/AnnotationSheets1.png" alt="Sheets Options"></p>
+<p>Each annotation can have independent text and formatting.</p>
+<h2 id="position">Position</h2>
+<p>Drag an annotation in the preview for an approximate visual position. Use the <strong>X</strong> and <strong>Y</strong> percentage fields for an exact location relative to the sheet width and height.</p>
+<p><strong>Copy X/Y</strong> copies a position from a selected SOLIDWORKS drawing note when that workflow is available. The copied coordinates can then be reused by the PDMPublisher annotation.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The preview is approximate. Use X and Y when repeatable placement is required across drawing sizes.</p>
+</div>
+<h2 id="sheets">Sheets</h2>
+<p>Use <strong>Sheets</strong> to control where the selected annotation appears in a multi-sheet drawing. Sheet selection is configured independently for each annotation.</p>
+<h2 id="remove-an-annotation">Remove an Annotation</h2>
+<p>Select the red delete control on the annotation to remove it from the profile.</p>
+<h2 id="pop-out">Pop Out</h2>
+<p>Select <strong>Popout in separate window</strong> when the task-pane width is too narrow for detailed annotation editing.</p>
+<p>For the shared annotation concepts and SQL-backed text, see <a href="pdmpublisher-annotations/annotation-text.html">Annotation Text</a> and <a href="pdmpublisher-annotations/sql-query-placeholders.html">SQL Query Placeholders</a>.</p>
 
 </article>
 

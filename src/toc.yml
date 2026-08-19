@@ -189,10 +189,12 @@
         href: pdmpublisherspecialvariable.md  
       - name: Task Details
         href: pdmpublisher_task_details.md 
-    - name: PDMPublisher for SOLIDWORKS 3D 
+    - name: PDMPublisher for SOLIDWORKS
       href: pdmpublishersolidworks.md 
-      expanded: false
+      expanded: true
       items: 
+      - name: Profiles and Templates
+        href: pdmpublishersolidworks_profiles.md
       - name: Options Tab
         href: pdmpublishersolidworks_options.md
       - name: Annotations Tab

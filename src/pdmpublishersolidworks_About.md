@@ -1,38 +1,48 @@
-﻿---
-title: PDMPublisher for SOLIDWORKS 3D (About Tab)
-description: Learn how to configure the PDMPublisher in SOLIDWORKS.
-ms.date: 06/19/2026
-ms.topic: conceptual
+---
+title: About, Updates, Theme, and Licensing | PDMPublisher for SOLIDWORKS
+description: Check the PDMPublisher version, control Windows theme syncing, download updates, and manage licensing.
+ms.date: 08/18/2026
+ms.topic: how-to
 ---
 
-# About Tab
-<div style="display: flex; center; gap: 1em; margin: 2em 0;">
-    <a href="https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher" class="download-button" style="display: inline-block; padding: 10px 20px; background-color: #0078d7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        Download PDMPublisher (free version)
-    </a>
-    <a href="https://bluebyte.biz/product/pdmpublisher-solidworks" class="download-button" style="display: inline-block; padding: 10px 20px; background-color:rgb(17, 78, 20); color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        Purchase a License
-    </a>
-</div>
+# About, Updates, Theme, and Licensing
 
+The About tab shows the installed version, available update, appearance settings, licensing commands, product links, EULA, and support address.
 
+![PDMPublisher for SOLIDWORKS About page for version 2026.08.08](/images/pdmpublisher/solidworks/about.png)
 
-This section outlines all the options in the **PDMPublisher** About tab:
+## Version and Updates
 
----
+- **Current Version** identifies the installed add-in build.
+- **A new version is available** appears when an update can be downloaded.
+- **Download the latest version...** opens the latest installer download.
 
-The About tab is where you will find the following:
+The version shown in this release is `2026.08.08`.
 
-| Option                   | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| **Enable funny mode**           | This provides some entertainment on the progress bar. (Does not affect performance.)                           |
-| **Download the latest version** | This is used to manually download the latest version of add-in.                                            |
-| **License Manager**             | Opens the License Manager window. Here you can activate and deactivate your license.                       |
-| **Website**                     | Opens the Blue Byte Systems website, where you can access product information and additional tools.   |
-| **Buy Now**                     | Use this button to purchase a license and take the add-in to the next level.                               |
-| **EULA**                        | End User License Agreement                                                                                 |
+## Windows Light and Dark Theme
 
+Enable **Use Windows light/dark theme (applies on restart)** to make PDMPublisher follow the Windows app theme.
 
+![Windows light and dark theme option](/images/pdmpublisher/solidworks/theme-toggle.png)
 
+Restart SOLIDWORKS after changing this option. When disabled, PDMPublisher uses its original light appearance.
 
-![About Tab](../images/PDMPublisherSW_About.png)
+> [!NOTE]
+> Theme syncing changes colors only. It does not change the settings, profile data, or publishing behavior.
+
+## Licensing and Links
+
+| Command | Purpose |
+| --- | --- |
+| **Activate or Deactivate Product** | Opens product license management. |
+| **PDMPublisher.com** | Opens the product website. |
+| **Purchase A License (bluebyte.biz)** | Opens the license purchase page. |
+| **End User License Agreement (EULA)** | Opens the product license terms. |
+
+See [License Management](licensespdmpublisher.md) for activation and deactivation instructions.
+
+## Funny Mode
+
+**Enable funny mode** changes progress-bar messages for entertainment. It does not change processing behavior or performance.
+
+For support, use `support@bluebytesystemsinc.zohodesk.com`.

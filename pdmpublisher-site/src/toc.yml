@@ -177,6 +177,8 @@
   items:
   - name: Overview
     href: ../../src/pdmpublishersolidworks.md
+  - name: Profiles and Templates
+    href: ../../src/pdmpublishersolidworks_profiles.md
   - name: Options Tab
     href: ../../src/pdmpublishersolidworks_options.md
   - name: Annotations Tab
