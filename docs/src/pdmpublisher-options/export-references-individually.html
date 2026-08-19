@@ -111,18 +111,35 @@
 
 <p><img src="/images/pdmpublisher/screenshots/options-014-property-export-references-to-file-formats-individually.png" alt="Export references individually setting"></p>
 <p>Exports referenced components as their own files in the selected formats.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting is shared by the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>, but the two products obtain their assembly references differently.</p>
+</div>
 <p>In practice, this is used when an assembly publish should also create output for the components in that assembly. It is most useful for assemblies with repeated components, multiple configurations, or nested references.</p>
-<h2 id="requirements">Requirements</h2>
-<p>This option requires a few things to work correctly:</p>
-<ul>
-<li>The task must run on an assembly. References are calculated from the assembly structure.</li>
-<li>A BOM template must be selected in the PDMPublisher <a href="template.html">Template</a> option.</li>
-<li>The selected BOM template must expose the columns PDMPublisher needs to calculate references and quantities.</li>
-</ul>
+<h2 id="requirements-by-product">Requirements by Product</h2>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PDM task</strong></td>
+<td>Run the task on an assembly and select a BOM <a href="template.html">Template</a> with the required name, configuration, and quantity columns.</td>
+</tr>
+<tr>
+<td><strong>SOLIDWORKS add-in</strong></td>
+<td>Open the assembly in SOLIDWORKS. The add-in reads the resolved assembly references directly and does not require the PDM task BOM Template setting.</td>
+</tr>
+</tbody>
+</table>
+<p>In both products, suppressed, unresolved, excluded, or condition-filtered components can change the set of references processed.</p>
 <h2 id="bom-template">BOM Template</h2>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>It is critical to configure the PDMPublisher <a href="template.html">Template</a> option before enabling this setting. If the template is not selected, or if it does not include the required name, configuration, and quantity columns, PDMPublisher may export missing or incorrect reference files.</p>
+<p>For the <strong>PDM task</strong>, it is critical to configure the PDMPublisher <a href="template.html">Template</a> option before enabling this setting. If the template is not selected, or if it does not include the required name, configuration, and quantity columns, PDMPublisher may export missing or incorrect reference files. This requirement does not apply to the SOLIDWORKS add-in.</p>
 </div>
 <p>For template setup requirements, see <a href="template.html">Template</a>.</p>
 <div class="NOTE">

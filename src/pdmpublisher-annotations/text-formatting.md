@@ -9,6 +9,9 @@ ms.topic: reference
 
 Use formatting controls to change how the annotation appears on the exported PDF.
 
+> [!NOTE]
+> These controls work the same in the **PDM task** and **SOLIDWORKS add-in**.
+
 ![Annotation text formatting](/images/TaskAnnotations3.png)
 
 Common formatting includes:

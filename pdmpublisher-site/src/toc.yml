@@ -21,6 +21,8 @@
 - name: PDMPublisher for PDM Professional
   expanded: true
   items:
+  - name: PDM Task vs SOLIDWORKS Add-in
+    href: ../../src/pdmpublisher-product-differences.md
   - name: Set Up Your First Task
     href: ../../src/propertiespagepdmpublisher.md
   - name: Why Is the Tasks Menu Missing?
@@ -177,18 +179,105 @@
   items:
   - name: Overview
     href: ../../src/pdmpublishersolidworks.md
+  - name: PDM Task vs SOLIDWORKS Add-in
+    href: ../../src/pdmpublisher-product-differences.md
   - name: Profiles and Templates
     href: ../../src/pdmpublishersolidworks_profiles.md
   - name: Options Tab
     href: ../../src/pdmpublishersolidworks_options.md
+    expanded: true
+    items:
+    - name: Output Paths and Names
+      expanded: true
+      items:
+      - name: Export Location
+        href: ../../src/pdmpublisher-options/export-location.md
+      - name: Filename
+        href: ../../src/pdmpublisher-options/filename.md
+      - name: File Formats
+        href: ../../src/pdmpublisher-options/file-formats.md
+      - name: Open Export Location
+        href: ../../src/pdmpublishersolidworks-open-export-location.md
+      - name: Archive Exported Documents
+        href: ../../src/pdmpublisher-options/archive-all-exported-documents.md
+    - name: Assembly and References
+      expanded: true
+      items:
+      - name: Export References Individually
+        href: ../../src/pdmpublisher-options/export-references-individually.md
+      - name: Ignore Sub-Assembly Children
+        href: ../../src/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
+    - name: Configurations
+      expanded: true
+      items:
+      - name: Convert Multiple Configurations
+        href: ../../src/pdmpublisher-options/convert-multiple-configurations.md
+    - name: Drawings and PDFs
+      expanded: true
+      items:
+      - name: Merge Exported PDFs
+        href: ../../src/pdmpublisher-options/merge-exported-pdfs.md
+      - name: Table of Content
+        href: ../../src/pdmpublisher-options/add-table-of-content-to-merged-pdf.md
+        expanded: true
+        items:
+        - name: Table Columns
+          href: ../../src/pdmpublisher-options/table-columns.md
+      - name: PDF Bookmarks
+        href: ../../src/pdmpublisher-options/pdf-bookmarks.md
+      - name: Sheets to Export
+        href: ../../src/pdmpublisher-options/sheets-to-export.md
+        expanded: true
+        items:
+        - name: Sheet Name Pattern
+          href: ../../src/pdmpublisher-options/sheet-name-pattern.md
+    - name: Manufacturing Outputs
+      expanded: true
+      items:
+      - name: Sheet Metal Flat Pattern DXF
+        href: ../../src/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
+      - name: Split Bodies
+        href: ../../src/pdmpublisher-options/split-bodies.md
   - name: Annotations Tab
     href: ../../src/pdmpublishersolidworks_annotations.md
+    expanded: true
+    items:
+    - name: Add Annotation
+      href: ../../src/pdmpublisher-annotations/add-annotation.md
+    - name: Annotation Text
+      href: ../../src/pdmpublisher-annotations/annotation-text.md
+    - name: SQL Query Placeholders
+      href: ../../src/pdmpublisher-annotations/sql-query-placeholders.md
+    - name: Text Formatting
+      href: ../../src/pdmpublisher-annotations/text-formatting.md
+    - name: Watermark
+      href: ../../src/pdmpublisher-annotations/watermark.md
+    - name: Active
+      href: ../../src/pdmpublisher-annotations/active.md
+    - name: Position
+      href: ../../src/pdmpublisher-annotations/position.md
+    - name: Sheets
+      href: ../../src/pdmpublisher-annotations/sheets.md
   - name: Conditions Tab
     href: ../../src/conditions_solidworks.md
+    expanded: true
+    items:
+    - name: Add Conditions and Groups
+      href: ../../src/pdmpublisher-conditions/add-conditions-and-groups.md
+    - name: Condition Fields
+      href: ../../src/pdmpublisher-conditions/condition-fields.md
+    - name: Special Variables
+      href: ../../src/pdmpublisher-conditions/special-variables.md
+    - name: Condition Types
+      href: ../../src/pdmpublisher-conditions/condition-types.md
+    - name: Evaluation Rules
+      href: ../../src/pdmpublisher-conditions/evaluation-rules.md
   - name: Logs Tab
     href: ../../src/pdmpublishersolidworks_logs.md
   - name: About Tab
     href: ../../src/pdmpublishersolidworks_About.md
+  - name: Placeholder Reference
+    href: ../../src/pdmpublisherspecialvariable.md
 
 - name: PDMDeploy
   expanded: true

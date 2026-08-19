@@ -110,6 +110,10 @@
 <h1 id="sql-query-placeholders">SQL Query Placeholders</h1>
 
 <p>Use an SQL query placeholder when annotation text must come from a SQL database. PDMPublisher replaces the file placeholder in the query, runs the query, and uses the returned value in the annotation.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>SQL query placeholders are available in both the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>. The placeholder is evaluated for the file currently being processed by that product.</p>
+</div>
 <p><img src="/images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png" alt="Edit SQL Query dialog showing the connection string, query, output, and SQL placeholders"></p>
 <h2 id="configure-the-query">Configure the Query</h2>
 <ol>
@@ -167,7 +171,7 @@ WHERE FileName = 'Bracket.sldprt'
 FROM PartProperties
 WHERE FileName = '($SQL-Assembly)'
 </code></pre>
-<p>When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a launched task. For example:</p>
+<p>When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a publish job. For example:</p>
 <pre><code class="lang-sql">SELECT Material
 FROM PartProperties
 WHERE FileName = 'Full_Grill_Assembly.sldasm'
@@ -175,7 +179,7 @@ WHERE FileName = 'Full_Grill_Assembly.sldasm'
 <p>The <strong>Output</strong> area shows the test result. Confirm that the query returns the text you want displayed in the annotation before saving the task.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>Use a database account with only the permissions required to read the annotation data. If the connection string contains credentials, restrict access to the task configuration.</p>
+<p>Use a database account with only the permissions required to read the annotation data. If the connection string contains credentials, restrict access to the PDM task definition or exported SOLIDWORKS add-in profile.</p>
 </div>
 
 </article>

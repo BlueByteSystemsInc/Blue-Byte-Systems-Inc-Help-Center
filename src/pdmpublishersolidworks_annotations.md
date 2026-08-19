@@ -11,6 +11,21 @@ Annotations place text, SOLIDWORKS property values, watermarks, or QR codes on e
 
 ![PDMPublisher for SOLIDWORKS Annotations page](/images/pdmpublisher/solidworks/annotations.png)
 
+## Annotation Settings
+
+The detail pages below are shared with the PDM task because the controls behave the same. Each page identifies where its available values come from in the add-in.
+
+| Setting | Summary | Details |
+| --- | --- | --- |
+| Add Annotation | Create a new annotation box in the selected profile. | [Open](pdmpublisher-annotations/add-annotation.md) |
+| Annotation Text | Enter fixed text or values from the active SOLIDWORKS document. | [Open](pdmpublisher-annotations/annotation-text.md) |
+| SQL Query Placeholders | Retrieve text from SQL using the file being published. | [Open](pdmpublisher-annotations/sql-query-placeholders.md) |
+| Text Formatting | Set font, size, bold, italic, and color. | [Open](pdmpublisher-annotations/text-formatting.md) |
+| Watermark | Rotate and fade an annotation. | [Open](pdmpublisher-annotations/watermark.md) |
+| Active | Include or skip an annotation without deleting it. | [Open](pdmpublisher-annotations/active.md) |
+| Position | Set approximate visual or exact X/Y placement. | [Open](pdmpublisher-annotations/position.md) |
+| Sheets | Select the drawing sheets that receive an annotation. | [Open](pdmpublisher-annotations/sheets.md) |
+
 ## Add Annotation Content
 
 1. Select **A+** to add an annotation.
@@ -52,4 +67,4 @@ Select the red delete control on the annotation to remove it from the profile.
 
 Select **Popout in separate window** when the task-pane width is too narrow for detailed annotation editing.
 
-For the shared annotation concepts and SQL-backed text, see [Annotation Text](pdmpublisher-annotations/annotation-text.md) and [SQL Query Placeholders](pdmpublisher-annotations/sql-query-placeholders.md).
+For the PDM task version of this workspace, see [Annotations Task Page](annotations.md).

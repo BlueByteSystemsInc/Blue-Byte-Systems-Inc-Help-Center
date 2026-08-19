@@ -11,4 +11,7 @@ ms.topic: reference
 
 Creates a ZIP archive containing the exported documents.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
+
 Use this for release packages, supplier packages, or when a workflow needs one file to move through review.

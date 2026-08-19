@@ -11,6 +11,9 @@ ms.topic: reference
 
 Processes all part and assembly configurations instead of only the active or selected configuration.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**. The task begins with its selected or launched configuration; the add-in begins with the configuration active in SOLIDWORKS.
+
 > [!IMPORTANT]
 > Add `ConfigurationName` to the [filename pattern](filename.md) before enabling this option. Without a configuration-specific filename, exports from different configurations can overwrite each other.
 

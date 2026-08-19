@@ -9,6 +9,8 @@ ms.topic: reference
 
 The Active checkbox controls whether an annotation is included in the exported PDF.
 
+This setting works the same in the **PDM task** and **SOLIDWORKS add-in**.
+
 New annotations are active by default.
 
 Turn Active off when you want to keep the annotation setup but skip it during publishing.

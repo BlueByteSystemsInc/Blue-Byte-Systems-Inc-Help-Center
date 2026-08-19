@@ -14,6 +14,18 @@ Conditions decide which files are included in a publish job. They are most usefu
 > [!IMPORTANT]
 > Conditions affect assembly references and the assembly. Enable **Export references to file formats individually** on the PDMPublisher tab when conditions must filter referenced files.
 
+## Condition Settings
+
+The detail pages below are shared with the PDM task because the condition editor and comparison rules are the same. Each page identifies how the available values differ in the add-in.
+
+| Setting | Summary | Details |
+| --- | --- | --- |
+| Add Conditions and Groups | Build nested AND/OR rules. | [Open](pdmpublisher-conditions/add-conditions-and-groups.md) |
+| Condition Fields | Choose the property, comparison, expected value, and configuration. | [Open](pdmpublisher-conditions/condition-fields.md) |
+| Special Variables | Use filename, folder, configuration, and other available built-in values. | [Open](pdmpublisher-conditions/special-variables.md) |
+| Condition Types | Select text, number, date, or Yes/No comparisons. | [Open](pdmpublisher-conditions/condition-types.md) |
+| Evaluation Rules | Understand groups, configurations, and property fallback. | [Open](pdmpublisher-conditions/evaluation-rules.md) |
+
 ## Build a Condition Tree
 
 - **+ (Condition)** adds a comparison to the selected group.

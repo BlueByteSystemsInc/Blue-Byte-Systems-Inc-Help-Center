@@ -11,6 +11,9 @@ ms.topic: reference
 
 Controls which columns appear in the generated PDF table of contents.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
+
 ![Table columns dropdown](/images/pdmpublisher/screenshots/options-dropdown-004-table-columns.png)
 
 Options:

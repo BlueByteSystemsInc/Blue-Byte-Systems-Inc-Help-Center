@@ -11,5 +11,8 @@ ms.topic: reference
 
 When conditions reject a sub-assembly, this option prevents that sub-assembly's children from being processed.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**. It affects assembly reference processing and has no effect on a standalone part or drawing.
+
 > [!WARNING]
 > If a rejected sub-assembly contains children that should still be exported independently, leave this option off.

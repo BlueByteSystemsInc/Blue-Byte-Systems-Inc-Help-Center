@@ -9,6 +9,9 @@ ms.topic: how-to
 
 Use the Annotations task page to add text notes or watermarks to exported PDF documents.
 
+> [!IMPORTANT]
+> This is the **PDM task** Annotations page. The annotation controls are also used by the SOLIDWORKS add-in, but PDM variables come from the vault task context. See [SOLIDWORKS Add-in Annotations](pdmpublishersolidworks_annotations.md).
+
 ![PDMPublisher Annotations page](/images/pdmpublisher/screenshots/page-annotations.png)
 
 Each annotation can have its own text, formatting, position, sheet rule, and active state.

@@ -110,12 +110,16 @@
 <h1 id="pdmpublisher-options">PDMPublisher Options</h1>
 
 <p>The PDMPublisher tab contains the output and processing settings for the selected <a href="pdmpublishersolidworks_profiles.html">profile</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This is the SOLIDWORKS add-in Options page. The TOC below it mirrors the PDM task categories, but task-only options are intentionally omitted. See <a href="pdmpublisher-product-differences.html">PDM Task vs SOLIDWORKS Add-in</a>.</p>
+</div>
 <p><img src="/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher for SOLIDWORKS Options page"></p>
 <h2 id="output">Output</h2>
 <h3 id="export-location">Export Location</h3>
 <p>Enter the folder where generated files will be written, or select <strong>Browse...</strong> to choose a fixed folder. Use the <code>&gt;...</code> menu to build a dynamic path from file properties and built-in values.</p>
 <p>Select <strong>Customize Location...</strong> when individual formats need different folders. An enabled format-specific location overrides the main Export Location for that format.</p>
-<p>See <a href="pdmpublisher-options/export-location.html">Export Location</a> and the <a href="pdmpublisherspecialvariable.html">Placeholder Reference</a> for path examples.</p>
+<p>See <a href="pdmpublisher-options/export-location.html">Export Location</a> and the <a href="pdmpublisherspecialvariable.html">Placeholder Reference</a> for path examples and add-in-specific behavior.</p>
 <h3 id="filename">Filename</h3>
 <p>The Filename field controls the output name without its final file extension. Combine text with values from the <code>&gt;...</code> menu. Include a configuration-specific value when one source file can create several outputs.</p>
 <p>See <a href="pdmpublisher-options/filename.html">Filename</a>.</p>
@@ -124,7 +128,7 @@
 <p><img src="/images/pdmpublisher/solidworks/file-formats.png" alt="Selecting multiple output file formats"></p>
 <p>The selector uses descriptive names and file-type icons. Format availability depends on the source document, SOLIDWORKS version, and installed eDrawings capabilities. See <a href="pdmpublisher-options/file-formats.html">File Formats</a> for the complete list and source-file behavior.</p>
 <h3 id="open-export-location-on-completion">Open Export Location on Completion</h3>
-<p>Enable this option to open the output folder after a successful publish job.</p>
+<p>Enable this option to open the output folder after a successful publish job. See <a href="pdmpublishersolidworks-open-export-location.html">Open Export Location on Completion</a>.</p>
 <h2 id="drawing-sheets">Drawing Sheets</h2>
 <p>Use <strong>Sheets to export</strong> to choose all drawing sheets or only sheets whose names match a pattern.</p>
 <p><img src="/images/pdmpublisher/solidworks/drawing-sheets.png" alt="Drawing sheet selection and configuration-name pattern"></p>
@@ -173,12 +177,14 @@
 </tbody>
 </table>
 <p>Use <strong>Configuration Filter</strong> to include or exclude configurations by pattern when multiple-configuration export is enabled.</p>
+<p>The add-in obtains references directly from the active SOLIDWORKS assembly. It does not require the PDM task BOM Template setting.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>Reference processing, conditions, BOM quantities, PDF merging, and assembly-level outputs depend on the active assembly and the references SOLIDWORKS can resolve.</p>
 </div>
 <h2 id="pdf-options">PDF Options</h2>
 <p>The PDF section contains merged-PDF, bookmarks, table-of-contents, and related PDF behavior. Options that depend on PDF references become relevant when PDF is selected and assembly references are processed.</p>
+<p>Use the categorized pages in the TOC for the same detailed option references used by the PDM task documentation. Each page identifies where the add-in workflow differs.</p>
 <h2 id="publish">Publish</h2>
 <p>Select <strong>PUBLISH</strong> at the bottom of the task pane to process the active SOLIDWORKS document with the current profile.</p>
 <p>If SOLIDWORKS PDM vaults are installed and configured, the arrow beside <strong>PUBLISH</strong> can associate publishing with a vault. Use the correct vault when generated files must be added, checked out, or checked in through PDM.</p>

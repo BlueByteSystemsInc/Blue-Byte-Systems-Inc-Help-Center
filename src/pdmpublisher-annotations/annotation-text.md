@@ -11,11 +11,11 @@ Enter the text that should appear on the exported PDF.
 
 ![Annotation text](/images/TaskAnnotations2.png)
 
-Annotation text can be fixed text or values from PDM variables.
+Annotation text can be fixed text or dynamic property values.
 
 > [!NOTE]
-> The available variables come from the variables configured in SOLIDWORKS PDM.
+> In the **PDM task**, the menu includes variables configured in SOLIDWORKS PDM. In the **SOLIDWORKS add-in**, it includes SOLIDWORKS custom properties and supported values from the active document.
 
-Use variables when the annotation should include values such as part number, revision, project, customer, state, or other vault metadata.
+Use dynamic values when the annotation should include information such as part number, revision, project, customer, state, or other document metadata available to the current product.
 
 To retrieve annotation text from a SQL database, see [SQL Query Placeholders](sql-query-placeholders.md).

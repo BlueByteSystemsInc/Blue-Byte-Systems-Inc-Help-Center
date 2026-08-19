@@ -110,6 +110,10 @@
 <h1 id="condition-fields">Condition Fields</h1>
 
 <p>Each condition compares a file value against the rule you define.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The fields are shared by the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>, but the available variables and configuration source depend on the product.</p>
+</div>
 <p><img src="/images/pdmpublisher/screenshots/conditions-(2)-000-condition-conditionleaf.png" alt="Condition row"></p>
 <table>
 <thead>
@@ -133,7 +137,7 @@
 </tr>
 <tr>
 <td>Configuration</td>
-<td>Configuration to read the variable from. Use <code>@</code> for values stored on the <code>@</code> tab.</td>
+<td>Configuration to read the value from. In the PDM task, use <code>@</code> for values stored on the file's <code>@</code> tab. In the add-in, leave it empty to use the referenced or active SOLIDWORKS configuration where supported.</td>
 </tr>
 </tbody>
 </table>

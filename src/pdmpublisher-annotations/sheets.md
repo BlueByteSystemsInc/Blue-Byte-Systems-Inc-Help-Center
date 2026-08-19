@@ -9,6 +9,9 @@ ms.topic: reference
 
 Use Sheets to control which drawing pages receive the annotation.
 
+> [!NOTE]
+> Sheet assignment works the same in the **PDM task** and **SOLIDWORKS add-in**.
+
 ![Annotation sheets options](/images/AnnotationSheets1.png)
 
 Each annotation has its own sheet setting. This lets you place one annotation on every sheet and another annotation only on specific sheets.

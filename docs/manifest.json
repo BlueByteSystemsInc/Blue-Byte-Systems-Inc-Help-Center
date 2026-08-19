@@ -3437,6 +3437,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-product-differences.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-product-differences.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublisher-task-menu-missing.md",
       "output": {
         ".html": {
@@ -3501,6 +3511,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublisherfaq.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-open-export-location.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-open-export-location.html"
         }
       },
       "version": ""

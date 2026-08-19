@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Annotations | PDMPublisher for SOLIDWORKS | Help Center </title>
+      <title>Open Export Location on Completion | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Annotations | PDMPublisher for SOLIDWORKS | Help Center ">
+      <meta name="title" content="Open Export Location on Completion | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Add and position text, property values, watermarks, and QR codes on exported drawing sheets.">
+      <meta name="description" content="Open the output folder after a PDMPublisher for SOLIDWORKS publish job completes.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_annotations.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks-open-export-location.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -107,99 +107,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="annotations">Annotations</h1>
+<h1 id="open-export-location-on-completion">Open Export Location on Completion</h1>
 
-<p>Annotations place text, SOLIDWORKS property values, watermarks, or QR codes on exported drawing sheets and PDFs. Annotation settings are stored with the selected profile.</p>
-<p><img src="/images/pdmpublisher/solidworks/annotations.png" alt="PDMPublisher for SOLIDWORKS Annotations page"></p>
-<h2 id="annotation-settings">Annotation Settings</h2>
-<p>The detail pages below are shared with the PDM task because the controls behave the same. Each page identifies where its available values come from in the add-in.</p>
-<table>
-<thead>
-<tr>
-<th>Setting</th>
-<th>Summary</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Add Annotation</td>
-<td>Create a new annotation box in the selected profile.</td>
-<td><a href="pdmpublisher-annotations/add-annotation.html">Open</a></td>
-</tr>
-<tr>
-<td>Annotation Text</td>
-<td>Enter fixed text or values from the active SOLIDWORKS document.</td>
-<td><a href="pdmpublisher-annotations/annotation-text.html">Open</a></td>
-</tr>
-<tr>
-<td>SQL Query Placeholders</td>
-<td>Retrieve text from SQL using the file being published.</td>
-<td><a href="pdmpublisher-annotations/sql-query-placeholders.html">Open</a></td>
-</tr>
-<tr>
-<td>Text Formatting</td>
-<td>Set font, size, bold, italic, and color.</td>
-<td><a href="pdmpublisher-annotations/text-formatting.html">Open</a></td>
-</tr>
-<tr>
-<td>Watermark</td>
-<td>Rotate and fade an annotation.</td>
-<td><a href="pdmpublisher-annotations/watermark.html">Open</a></td>
-</tr>
-<tr>
-<td>Active</td>
-<td>Include or skip an annotation without deleting it.</td>
-<td><a href="pdmpublisher-annotations/active.html">Open</a></td>
-</tr>
-<tr>
-<td>Position</td>
-<td>Set approximate visual or exact X/Y placement.</td>
-<td><a href="pdmpublisher-annotations/position.html">Open</a></td>
-</tr>
-<tr>
-<td>Sheets</td>
-<td>Select the drawing sheets that receive an annotation.</td>
-<td><a href="pdmpublisher-annotations/sheets.html">Open</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="add-annotation-content">Add Annotation Content</h2>
-<ol>
-<li>Select <strong>A+</strong> to add an annotation.</li>
-<li>Enter fixed text in the annotation box.</li>
-<li>Use <code>&gt;...</code> to insert file properties or supported placeholders.</li>
-<li>Select the annotation to format or position it.</li>
-</ol>
-<p>The properties offered by the menu depend on the active SOLIDWORKS document and its available custom properties.</p>
-<h2 id="formatting-controls">Formatting Controls</h2>
-<p>Use the toolbar to set the font, size, bold, italic, watermark, visibility, and QR-code behavior for the selected annotation.</p>
-<ul>
-<li><strong>Watermark</strong> rotates the annotation and makes it partially transparent.</li>
-<li>The active/visibility control determines whether the annotation is included.</li>
-<li>QR-code mode renders the annotation value as a scannable code.</li>
-<li>The color selector controls the annotation color.</li>
-</ul>
-<p>Each annotation can have independent text and formatting.</p>
-<h2 id="position">Position</h2>
-<p>Drag an annotation in the preview for an approximate visual position. Use the <strong>X</strong> and <strong>Y</strong> percentage fields for an exact location relative to the sheet width and height.</p>
-<p><strong>Copy X/Y</strong> copies a position from a selected SOLIDWORKS drawing note when that workflow is available. The copied coordinates can then be reused by the PDMPublisher annotation.</p>
+<p>Enable <strong>Open Export Location On Completion</strong> to open the main output folder after a successful publish job.</p>
+<p>This setting is available in <strong>PDMPublisher for SOLIDWORKS</strong>. It is useful for an interactive publish workflow because the generated files are immediately available for review.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The preview is approximate. Use X and Y when repeatable placement is required across drawing sizes.</p>
+<p>This option opens the main <a href="pdmpublisher-options/export-location.html">Export Location</a>. When extension-specific locations are enabled, other formats may have been written to their configured override folders.</p>
 </div>
-<h2 id="sheets">Sheets</h2>
-<p>Use <strong>Sheets</strong> to control where the selected annotation appears in a multi-sheet drawing. Sheet selection is configured independently for each annotation.</p>
-<h2 id="remove-an-annotation">Remove an Annotation</h2>
-<p>Select the red delete control on the annotation to remove it from the profile.</p>
-<h2 id="pop-out">Pop Out</h2>
-<p>Select <strong>Popout in separate window</strong> when the task-pane width is too narrow for detailed annotation editing.</p>
-<p>For the PDM task version of this workspace, see <a href="annotations.html">Annotations Task Page</a>.</p>
+<p>Disable the setting when publishing to a network location that should not open automatically or when the folder opening would interrupt the current SOLIDWORKS workflow.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_annotations.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks-open-export-location.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

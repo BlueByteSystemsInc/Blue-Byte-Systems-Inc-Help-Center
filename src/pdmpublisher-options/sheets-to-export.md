@@ -11,6 +11,9 @@ ms.topic: reference
 
 Controls whether drawing PDF exports include all sheets or only sheets whose names match a pattern.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
+
 ![Sheets to export dropdown](/images/pdmpublisher/screenshots/options-dropdown-001-sheets-to-export.png)
 
 Options:

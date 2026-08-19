@@ -110,6 +110,10 @@
 <h1 id="evaluation-rules">Evaluation Rules</h1>
 
 <p>PDMPublisher checks conditions before exporting a file.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>These group rules are shared by the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>. The PDM task can evaluate PDM card variables; the add-in evaluates properties from the active SOLIDWORKS document and resolved references.</p>
+</div>
 <p><img src="/images/pdmpublisher/screenshots/conditions-(2)-002-condition-root-.png" alt="Condition group"></p>
 <p>General rules:</p>
 <ul>
@@ -117,7 +121,7 @@
 <li>Disabled conditions and disabled groups are skipped.</li>
 <li>A file is processed only when the condition setup allows it.</li>
 <li>If a condition uses a specific configuration, PDMPublisher reads the value from that configuration.</li>
-<li>Use <code>@</code> when the value is stored on the file's <code>@</code> tab.</li>
+<li>In the PDM task, use <code>@</code> when the value is stored on the file's <code>@</code> tab.</li>
 </ul>
 <p>For assembly publishing, conditions are evaluated against the files being considered for export.</p>
 

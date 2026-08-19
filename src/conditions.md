@@ -9,6 +9,9 @@ ms.topic: conceptual
 
 Use the Conditions task page to decide which files should be processed by the task.
 
+> [!IMPORTANT]
+> This is the **PDM task** Conditions page. The condition editor is also used by the SOLIDWORKS add-in, but its values come from the active SOLIDWORKS document and references. See [SOLIDWORKS Add-in Conditions](conditions_solidworks.md).
+
 ![PDMPublisher Conditions page](/images/pdmpublisher/screenshots/task-setup-conditions.png)
 
 Conditions are checked before export. Files that do not match the condition rules are skipped.

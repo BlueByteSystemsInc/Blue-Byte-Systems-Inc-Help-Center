@@ -12,6 +12,8 @@ PDMPublisher for SOLIDWORKS is the SOLIDWORKS add-in version of PDMPublisher. It
 > [!IMPORTANT]
 > This documentation describes the SOLIDWORKS add-in, not the PDMPublisher task configured in the SOLIDWORKS PDM Administration tool.
 
+See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md) for a side-by-side comparison and links to the settings shared by both products.
+
 ![PDMPublisher for SOLIDWORKS 2026.08.08 open in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/overview-20260808.png)
 
 ## Start a Publish Job
@@ -33,6 +35,12 @@ The current profile controls the export location, filename, formats, reference p
 | [Conditions](conditions_solidworks.md) | Filter the active document and references using property-based rules and AND/OR groups. |
 | [Logs](pdmpublishersolidworks_logs.md) | Review the steps, results, warnings, and errors from each publish job. |
 | [About](pdmpublishersolidworks_About.md) | View the installed version, update and licensing links, and appearance settings. |
+
+## Documentation Structure
+
+The SOLIDWORKS add-in documentation follows the same category order as the PDM task documentation. Shared settings link to one common reference page so their explanations remain consistent. Add-in-only pages cover profiles, interactive publishing, logs, and About settings.
+
+Settings that require the PDM task framework are intentionally excluded from the add-in TOC. This includes scheduling, task-launch prompts, BOM templates, task-host SOLIDWORKS selection, and vault activity logs.
 
 ## Navigation Width
 

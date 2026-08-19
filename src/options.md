@@ -9,6 +9,9 @@ ms.topic: conceptual
 
 The **Options** task page controls where PDMPublisher writes exported files, which formats are created, how PDFs are merged, and how the PDM task behaves when it runs.
 
+> [!IMPORTANT]
+> This is the **PDM task** Options page. Settings shared with the SOLIDWORKS add-in use the same detail pages and identify their product-specific behavior. See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md).
+
 ![PDMPublisher Options task page](/images/pdmpublisher/screenshots/page-options.png)
 
 Use this page as a quick map. Each setting links to its own feature page with the matching screenshot, explanation, and notes.

@@ -11,5 +11,8 @@ ms.topic: reference
 
 Exports bodies from a multi-body part into separate files. The body name is appended to the generated filename.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
+
 > [!IMPORTANT]
 > This does not apply to sheet metal flat pattern exports.

@@ -11,6 +11,9 @@ ms.topic: reference
 
 Adds a generated table of contents page to the merged PDF.
 
+> [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in** and depends on merged assembly PDF output.
+
 ![Customize TOC table dialog](/images/pdmpublisher/screenshots/options-dialog-custom-toc-table.png)
 
 Use this with [Merge Exported PDFs into One Master PDF](merge-exported-pdfs.md). The table of content is created for the merged PDF, not for separate PDF files.

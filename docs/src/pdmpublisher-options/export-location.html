@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Export Location | PDMPublisher Options | Help Center ">
       
-      <meta name="description" content="Configure where PDMPublisher writes exported files.">
+      <meta name="description" content="Configure where the PDMPublisher PDM task or SOLIDWORKS add-in writes exported files.">
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
@@ -111,6 +111,10 @@
 
 <p><img src="/images/pdmpublisher/screenshots/options-013-property-export-location.png" alt="Export Location setting"></p>
 <p>Sets the folder where PDMPublisher writes generated files. The export location can point to a folder inside the vault, a relative path, a UNC/server path, or a folder outside the vault.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting is shared by the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>. The PDM task can use vault placeholders and vault operations. The add-in evaluates the path from the document currently open in SOLIDWORKS and the selected profile.</p>
+</div>
 <h2 id="path-types">Path Types</h2>
 <p>PDMPublisher accepts several path styles:</p>
 <table>
@@ -123,14 +127,14 @@
 </thead>
 <tbody>
 <tr>
-<td>Vault path</td>
+<td>Vault path (PDM task)</td>
 <td><code>(VaultRootFolder)\Released PDFs</code></td>
 <td>The exported files should be added back to the vault. Use the <code>VaultRootFolder</code> placeholder from the <code>&gt;...</code> menu.</td>
 </tr>
 <tr>
 <td>Relative path</td>
 <td><code>Exports\PDF</code></td>
-<td>The destination should be based on the source file or task working context.</td>
+<td>The destination should be based on the source file or current publishing context.</td>
 </tr>
 <tr>
 <td>UNC/server path</td>
@@ -146,35 +150,35 @@
 </table>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>If the location is inside the vault, the task user must have permission to create, check out, check in, and overwrite files in that folder.</p>
+<p>If the location is inside the vault, the PDM task user or the user publishing from the add-in must have permission to create, check out, check in, and overwrite files in that folder.</p>
 </div>
 <p>If the export folder does not exist, PDMPublisher creates it before saving the exported file.</p>
-<p><code>(VaultRootFolder)</code> is the preferred way to build a vault path because it resolves to the local vault root on the task machine.</p>
+<p><code>(VaultRootFolder)</code> is the preferred way to build a vault path in the PDM task because it resolves to the local vault root on the task computer.</p>
 <h2 id="browse-button">Browse Button</h2>
 <p>The browse button simply lets you select a static folder location and writes that folder path into <strong>Export Location</strong>.</p>
 <p>Use it when the task should always export to the same fixed folder. If the path needs to change based on the file, revision, state, or folder, use placeholders from the <code>&gt;...</code> menu instead.</p>
 <h2 id="placeholders">Placeholders</h2>
-<p>The blue entries in the export location field are placeholders. A placeholder is a dynamic value that PDMPublisher resolves at run time.</p>
+<p>The blue entries in the export location field are placeholders. A placeholder is a dynamic value that PDMPublisher resolves when publishing starts.</p>
 <p>For example:</p>
 <p><code>(TopAssemblyFolder)\Exports\(State)\(Revision)</code></p>
 <p>If the top assembly is in:</p>
 <p><code>C:\PDMVault\Projects\1001</code></p>
 <p>and the file state is <code>Released</code> with revision <code>B</code>, PDMPublisher resolves the export location to:</p>
 <p><code>C:\PDMVault\Projects\1001\Exports\Released\B</code></p>
-<p><code>(TopAssemblyFolder)</code> means the folder of the top-level file being processed. If the task is run on a single part or a single drawing instead of an assembly, PDMPublisher uses that part or drawing folder as the top folder.</p>
+<p><code>(TopAssemblyFolder)</code> means the folder of the top-level file being processed. For the PDM task, that is the file that launched the task. For the SOLIDWORKS add-in, it is the document currently open in SOLIDWORKS. If the top-level file is a single part or drawing, PDMPublisher uses that file's folder.</p>
 <p>For example, if the task is run on:</p>
 <p><code>C:\PDMVault\Projects\1001\Bracket.SLDPRT</code></p>
 <p>then:</p>
 <p><code>(TopAssemblyFolder)\Exports</code></p>
 <p>resolves to:</p>
 <p><code>C:\PDMVault\Projects\1001\Exports</code></p>
-<p>Placeholders are useful when the same task must write files to different folders depending on the file being processed. You can use them to include values such as the source folder, file name, revision, state, workflow, configuration, or other PDM/SOLIDWORKS variables exposed by the placeholder menu.</p>
+<p>Placeholders are useful when the same task or add-in profile must write files to different folders depending on the file being processed. You can use values exposed by the <code>&gt;...</code> menu, such as source folder, filename, configuration, or SOLIDWORKS custom properties. The PDM task can also expose vault values such as revision, state, workflow, and PDM variables.</p>
 <p>Use the <strong>File Number</strong> and <strong>File Number Range</strong> placeholders to organize exports using the first numeric sequence in a source filename. You can extract its first 3, 4, 5, or 6 digits or create a range from that prefix. See <a href="../pdmpublisherspecialvariable.html#file-number-placeholders">File Number Placeholders</a> for all available placeholders, examples, and fallback behavior.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Use placeholders for repeatable task setups. Hard-coded paths are fine for one fixed export folder, but placeholders make the task adapt to each source file.</p>
+<p>Use placeholders for repeatable task setups and add-in profiles. Hard-coded paths are fine for one fixed export folder, but placeholders make the path adapt to each source file.</p>
 </div>
-<p>If the path uses variables stored on the file's <code>@</code> tab, see <a href="use-at-tab-to-evaluate-paths.html">Use @ Tab to Evaluate Paths</a>.</p>
+<p>For the PDM task, if the path uses variables stored on the file's <code>@</code> tab, see <a href="use-at-tab-to-evaluate-paths.html">Use @ Tab to Evaluate Paths</a>. This task-only option is not shown in the SOLIDWORKS add-in.</p>
 <h2 id="extension-specific-locations">Extension-Specific Locations</h2>
 <p>Use <strong>Customize Location</strong> when different file formats need different output folders.</p>
 <p><img src="/images/pdmpublisher/screenshots/options-dialog-extension-specific-location.png" alt="Extension-specific export location dialog"></p>
@@ -214,7 +218,7 @@
 <p>Only checked/enabled formats use their custom location. Any format without an extension-specific override continues to use the main <strong>Export Location</strong>.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>When activity tracking is enabled, the task log records that PDMPublisher is using a customized path for formats that have an extension-specific location enabled. This helps confirm which path was selected on the machine that launched the task.</p>
+<p>The PDM task activity log and the SOLIDWORKS add-in <strong>Logs</strong> tab identify customized paths used by extension-specific locations.</p>
 </div>
 <div class="WARNING">
 <h5>Warning</h5>

@@ -12,6 +12,9 @@ ms.topic: reference
 Wildcard pattern used when **Sheets to export** is set to matching sheet names.
 
 > [!NOTE]
+> This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
+
+> [!NOTE]
 > Sheet-name matching applies only when a drawing contains two or more sheets. If a drawing contains one sheet, PDMPublisher ignores the pattern and exports that sheet.
 
 Use `*` to match any text and `?` to match one character.

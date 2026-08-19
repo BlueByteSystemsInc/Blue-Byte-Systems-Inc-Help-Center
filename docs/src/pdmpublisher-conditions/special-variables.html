@@ -110,6 +110,10 @@
 <h1 id="special-variables">Special Variables</h1>
 
 <p>Special variables let conditions check common file information without requiring a PDM variable.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>PDM task</strong> includes vault values such as workflow, state, revision, and version. The <strong>SOLIDWORKS add-in</strong> includes the built-in values and custom properties available from the active document and its references. The dropdown only shows values available in the current product context.</p>
+</div>
 <p><img src="/images/pdmpublisher/screenshots/conditions-(2)-dropdown-000-condition-placeholder-values.png" alt="Condition variable dropdown"></p>
 <p>Common special variables include:</p>
 <ul>
@@ -123,7 +127,7 @@
 <li><code>State</code></li>
 <li><code>ConfigurationName</code></li>
 </ul>
-<p>Use these when the condition depends on the file name, folder, current state, revision, workflow, or configuration.</p>
+<p>Use these when the condition depends on common file information. Vault-only values require the PDM task or an available PDM context.</p>
 
 </article>
 

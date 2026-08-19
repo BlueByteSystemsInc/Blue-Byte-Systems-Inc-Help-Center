@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Filename | PDMPublisher Options | Help Center ">
       
-      <meta name="description" content="Configure the output filename pattern used by PDMPublisher.">
+      <meta name="description" content="Configure the output filename pattern used by the PDMPublisher PDM task and SOLIDWORKS add-in.">
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
@@ -111,6 +111,10 @@
 
 <p><img src="/images/pdmpublisher/screenshots/options-017-property-filename.png" alt="Filename setting"></p>
 <p>Defines the output filename pattern. You can combine static text with SOLIDWORKS custom properties or PDM variables.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This setting is shared by the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>. PDM variables are available when publishing in a vault context; SOLIDWORKS custom properties and built-in placeholders are available from the active file context.</p>
+</div>
 <p>Use unique values such as part number, revision, configuration name, or sheet name when one source file may create several exports.</p>
 <p>Use the <strong>File Number</strong> placeholders to extract the first 3, 4, 5, or 6 digits from the first numeric sequence in a source filename. Use the <strong>File Number Range</strong> placeholders to organize outputs into numeric ranges. See <a href="../pdmpublisherspecialvariable.html#file-number-placeholders">File Number Placeholders</a> for all available placeholders, examples, and fallback behavior.</p>
 <div class="IMPORTANT">
@@ -118,7 +122,7 @@
 <p>If <strong>Convert multiple configurations</strong> is enabled, include <code>ConfigurationName</code> or another configuration-specific value in the filename.</p>
 </div>
 <h2 id="existing-files-in-pdm">Existing Files in PDM</h2>
-<p>If the exported file already exists in PDM, PDMPublisher overwrites the file by creating a new version.</p>
+<p>If the exported file already exists in PDM, the PDM task overwrites the file by creating a new version. The SOLIDWORKS add-in does the same when publishing through a selected vault context and the user has the required permissions.</p>
 <p>When PDMPublisher adds or checks in the exported file, the check-in comment identifies that the file was added or checked in by PDMPublisher.</p>
 
 </article>

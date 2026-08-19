@@ -9,6 +9,9 @@ ms.topic: how-to
 
 Use an SQL query placeholder when annotation text must come from a SQL database. PDMPublisher replaces the file placeholder in the query, runs the query, and uses the returned value in the annotation.
 
+> [!NOTE]
+> SQL query placeholders are available in both the **PDM task** and **SOLIDWORKS add-in**. The placeholder is evaluated for the file currently being processed by that product.
+
 ![Edit SQL Query dialog showing the connection string, query, output, and SQL placeholders](/images/pdmpublisher/screenshots/annotations-sql-query-placeholder.png)
 
 ## Configure the Query
@@ -64,7 +67,7 @@ FROM PartProperties
 WHERE FileName = '($SQL-Assembly)'
 ```
 
-When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a launched task. For example:
+When testing this query in the dialog, replace the placeholder with an actual assembly filename because the test does not have the file context supplied by a publish job. For example:
 
 ```sql
 SELECT Material
@@ -75,4 +78,4 @@ WHERE FileName = 'Full_Grill_Assembly.sldasm'
 The **Output** area shows the test result. Confirm that the query returns the text you want displayed in the annotation before saving the task.
 
 > [!WARNING]
-> Use a database account with only the permissions required to read the annotation data. If the connection string contains credentials, restrict access to the task configuration.
+> Use a database account with only the permissions required to read the annotation data. If the connection string contains credentials, restrict access to the PDM task definition or exported SOLIDWORKS add-in profile.

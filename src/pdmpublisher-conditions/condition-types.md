@@ -9,6 +9,9 @@ ms.topic: reference
 
 Condition Type controls how PDMPublisher compares the selected variable to the entered value.
 
+> [!NOTE]
+> Comparison types are shared by the **PDM task** and **SOLIDWORKS add-in**.
+
 ![Condition type dropdown](/images/pdmpublisher/screenshots/conditions-(2)-dropdown-001-condition-type-values.png)
 
 | Type | Use when |

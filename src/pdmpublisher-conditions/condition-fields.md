@@ -9,6 +9,9 @@ ms.topic: reference
 
 Each condition compares a file value against the rule you define.
 
+> [!NOTE]
+> The fields are shared by the **PDM task** and **SOLIDWORKS add-in**, but the available variables and configuration source depend on the product.
+
 ![Condition row](/images/pdmpublisher/screenshots/conditions-(2)-000-condition-conditionleaf.png)
 
 | Field | Meaning |
@@ -16,6 +19,6 @@ Each condition compares a file value against the rule you define.
 | Variable | Variable or built-in value to check. |
 | Condition Type | The comparison rule to apply. |
 | Value | The value to compare against. |
-| Configuration | Configuration to read the variable from. Use `@` for values stored on the `@` tab. |
+| Configuration | Configuration to read the value from. In the PDM task, use `@` for values stored on the file's `@` tab. In the add-in, leave it empty to use the referenced or active SOLIDWORKS configuration where supported. |
 
 Text comparisons are not case sensitive.

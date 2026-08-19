@@ -1,6 +1,6 @@
 ---
 title: File Formats | PDMPublisher Options
-description: Select the file formats PDMPublisher exports.
+description: Select the file formats exported by the PDMPublisher PDM task or SOLIDWORKS add-in.
 ms.date: 08/10/2026
 ms.topic: reference
 ---
@@ -9,7 +9,10 @@ ms.topic: reference
 
 ![File Formats setting](/images/pdmpublisher/screenshots/options-016-property-file-formats.png)
 
-Selects the output formats created during publishing. Multiple formats can be selected on task launch when the task allows user selection.
+Selects the output formats created during publishing. Both products can generate multiple formats in one job.
+
+> [!NOTE]
+> This setting is shared by the **PDM task** and **SOLIDWORKS add-in**. The task can process selected PDM files, including supported Office documents. The add-in exports the SOLIDWORKS document currently open and its resolved references.
 
 ![File Formats dropdown](/images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png)
 
@@ -19,7 +22,7 @@ Starting with version `2026.08.05`, the selector shows a descriptive format name
 
 ## Supported Outputs
 
-PDMPublisher can export SOLIDWORKS files to the formats shown in the **File Formats** list. It also supports exporting Microsoft Word and Excel documents to PDF when those Office documents are processed by the task.
+PDMPublisher can export SOLIDWORKS files to the formats shown in the **File Formats** list. The PDM task also supports exporting Microsoft Word and Excel documents to PDF when those Office documents are processed by the task.
 
 The complete selector is organized as follows:
 
@@ -49,7 +52,7 @@ Version `2026.08.05` adds these output choices:
 - Adobe Photoshop (`psd`)
 
 > [!NOTE]
-> PDMPublisher removes formats that are not valid for the source document type. Some formats also depend on the selected SOLIDWORKS version and the export capabilities installed on the computer running the task.
+> PDMPublisher removes formats that are not valid for the source document type. Some formats also depend on the SOLIDWORKS version and export capabilities installed on the computer. The task uses its configured SOLIDWORKS version; the add-in uses the currently running version.
 
 If SOLIDWORKS supports an export format that is not currently listed here, contact Blue Byte Systems and request support for that format:
 
@@ -58,7 +61,7 @@ If SOLIDWORKS supports an export format that is not currently listed here, conta
 
 ## PDF Output
 
-When `PDF` is selected and the task runs on a SOLIDWORKS part or assembly, PDMPublisher is smart enough to look for a drawing with the same name in the same folder.
+When `PDF` is selected for a SOLIDWORKS part or assembly, PDMPublisher looks for a drawing with the same name in the same folder.
 
 For example, if the task runs on:
 
@@ -71,7 +74,7 @@ PDMPublisher checks for:
 If the matching drawing is found, PDMPublisher opens the drawing and prints/exports the drawing to PDF. This lets a task run from a model while still producing the drawing PDF users expect.
 
 > [!NOTE]
-> If the matching drawing is not in the same folder, use [Use PDM Search to Locate Drawings](use-pdm-search-to-locate-drawings.md) when your vault structure requires a search-based lookup.
+> In the PDM task, [Use PDM Search to Locate Drawings](use-pdm-search-to-locate-drawings.md) can locate a drawing that is not in the same folder. This task-only search option is not available in the SOLIDWORKS add-in.
 
 ## DXF Output
 
