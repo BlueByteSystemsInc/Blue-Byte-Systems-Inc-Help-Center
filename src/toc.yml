@@ -197,7 +197,7 @@
       items:
       - name: PDM Task vs SOLIDWORKS Add-in
         href: pdmpublisher-product-differences.md
-      - name: Profiles and Templates
+      - name: Profiles and Presets
         href: pdmpublishersolidworks_profiles.md
       - name: Options Tab
         href: pdmpublishersolidworks_options.md

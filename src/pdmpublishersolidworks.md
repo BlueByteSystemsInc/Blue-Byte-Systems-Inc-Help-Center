@@ -52,9 +52,9 @@ When minimized, the tab names are displayed vertically. Select the arrow at the 
 
 ![Collapsed PDMPublisher navigation](/images/pdmpublisher/solidworks/navigation-collapsed.png)
 
-## Profiles
+## Profiles and Presets
 
-Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. The add-in includes starter templates for DXF, PDF and STEP, and STEP publishing. See [Profiles and Templates](pdmpublishersolidworks_profiles.md).
+Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. Built-in presets provide starting configurations for DXF, PDF and STEP, and STEP publishing. See [Profiles and Presets](pdmpublishersolidworks_profiles.md).
 
 ## Download and Licensing
 

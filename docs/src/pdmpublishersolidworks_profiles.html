@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Profiles and Templates | PDMPublisher for SOLIDWORKS | Help Center </title>
+      <title>Profiles and Presets | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Profiles and Templates | PDMPublisher for SOLIDWORKS | Help Center ">
+      <meta name="title" content="Profiles and Presets | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Create, select, rename, export, import, and delete reusable PDMPublisher for SOLIDWORKS profiles.">
+      <meta name="description" content="Create, select, rename, export, import, and delete reusable PDMPublisher for SOLIDWORKS profiles or start from a built-in preset.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -107,25 +107,44 @@
         </div>
 
         <article data-uid="">
-<h1 id="profiles-and-templates">Profiles and Templates</h1>
+<h1 id="profiles-and-presets">Profiles and Presets</h1>
 
 <p>A profile is a reusable set of PDMPublisher settings. Use profiles to switch between workflows without rebuilding the Options, Annotations, and Conditions configuration each time.</p>
+<p>This feature belongs to <strong>PDMPublisher for SOLIDWORKS</strong>. The PDM task stores its settings in a task definition and does not use add-in profiles.</p>
 <p><img src="/images/pdmpublisher/solidworks/profile-toolbar.png" alt="PDMPublisher profile toolbar"></p>
-<h2 id="select-a-profile">Select a Profile</h2>
-<p>Use the profile list at the top of the task pane to select the active profile. The settings shown on the PDMPublisher, Annotations, and Conditions tabs belong to that profile.</p>
-<p>Give profiles names that describe their output, such as <code>Released PDF</code>, <code>Laser DXF</code>, or <code>PDF And Step</code>.</p>
-<h2 id="create-a-profile">Create a Profile</h2>
-<p>Open the <strong>New</strong> menu and choose one of these commands:</p>
-<ul>
-<li><strong>New...</strong> creates a profile that you can configure from the beginning.</li>
-<li><strong>New From</strong> creates a profile from a supplied starter template.</li>
-</ul>
-<p><img src="/images/pdmpublisher/solidworks/profile-new-from.png" alt="New profile and starter templates"></p>
-<p>The supplied templates are:</p>
+<h2 id="profiles-and-presets-1">Profiles and Presets</h2>
 <table>
 <thead>
 <tr>
-<th>Template</th>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Profile</strong></td>
+<td>A named, saved publishing configuration containing Options, Annotations, and Conditions. Select a profile before publishing.</td>
+</tr>
+<tr>
+<td><strong>Preset</strong></td>
+<td>A built-in starting configuration available under <strong>New &gt; New From</strong>. Selecting a preset creates a new profile that you can edit and save.</td>
+</tr>
+</tbody>
+</table>
+<p>Changing a profile created from a preset does not change the original preset. You can create several profiles from the same preset and customize each one for a different customer, project, or output location.</p>
+<h2 id="select-a-profile">Select a Profile</h2>
+<p>Use the profile list at the top of the task pane to select the active profile. The settings shown on the PDMPublisher, Annotations, and Conditions tabs belong to that profile.</p>
+<p>Give profiles names that describe their output, such as <code>Released PDF</code>, <code>Laser DXF</code>, or <code>PDF And Step</code>.</p>
+<h2 id="create-a-blank-profile">Create a Blank Profile</h2>
+<p>Select <strong>New &gt; New...</strong> to create a profile that you can configure from the beginning. Set its Export Location, Filename, File Formats, reference behavior, Annotations, and Conditions before publishing.</p>
+<h2 id="create-a-profile-from-a-preset">Create a Profile from a Preset</h2>
+<p>Select <strong>New &gt; New From</strong>, then choose a supplied preset.</p>
+<p><img src="/images/pdmpublisher/solidworks/profile-new-from.png" alt="New profile and starter templates"></p>
+<p>The supplied presets are:</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
 <th>Starting purpose</th>
 </tr>
 </thead>
@@ -144,7 +163,11 @@
 </tr>
 </tbody>
 </table>
-<p>Templates are starting points. Review the export location, filename, formats, and reference behavior before publishing.</p>
+<p>Presets are starting points, not locked configurations. Review the export location, filename, formats, reference behavior, annotations, and conditions before publishing.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>A preset does not publish by itself. <strong>New From</strong> creates a profile from the preset; the profile is the configuration selected when you choose <strong>PUBLISH</strong>.</p>
+</div>
 <h2 id="rename-a-profile">Rename a Profile</h2>
 <ol>
 <li>Select the profile.</li>
@@ -161,6 +184,7 @@
 <li><strong>Load From...</strong> creates or loads a profile from a previously exported profile file.</li>
 </ul>
 <p>Use profile export before changing computers or before making major changes to an established publishing setup.</p>
+<p>An exported profile preserves your customized configuration. It is different from a built-in preset and can be loaded on another computer with <strong>Load From...</strong>.</p>
 <h2 id="delete-a-profile">Delete a Profile</h2>
 <p>Select the profile and choose <strong>Delete</strong>. Deleting a profile removes that saved configuration; it does not delete exported documents.</p>
 <div class="IMPORTANT">
