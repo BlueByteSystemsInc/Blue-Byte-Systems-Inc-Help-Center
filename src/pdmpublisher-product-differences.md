@@ -37,7 +37,7 @@ Each shared page identifies any difference between the PDM task and the SOLIDWOR
 
 ## PDM Task Only
 
-Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-launch prompts, BOM templates, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, and File Explorer task visibility.
+Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-launch prompts, BOM templates, drawing-derived BOMs, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, and File Explorer task visibility.
 
 ## SOLIDWORKS Add-in Only
 

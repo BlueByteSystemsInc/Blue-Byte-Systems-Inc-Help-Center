@@ -1,7 +1,7 @@
 ---
 title: Sheet Name Pattern | PDMPublisher Options
-description: Filter drawing sheets by name.
-ms.date: 08/13/2026
+description: Filter drawing sheets by name and understand the fallback when an evaluated pattern matches no sheets.
+ms.date: 08/19/2026
 ms.topic: reference
 ---
 
@@ -14,8 +14,14 @@ Wildcard pattern used when **Sheets to export** is set to matching sheet names.
 > [!NOTE]
 > This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
 
-> [!NOTE]
-> Sheet-name matching applies only when a drawing contains two or more sheets. If a drawing contains one sheet, PDMPublisher ignores the pattern and exports that sheet.
+## Selection Rules
+
+- For a one-sheet drawing, PDMPublisher ignores the pattern and exports the only sheet.
+- For a drawing with two or more sheets, PDMPublisher exports the matching sheets.
+- If the evaluated pattern matches no sheets, PDMPublisher falls back to exporting all sheets.
+
+> [!WARNING]
+> A spelling error, missing property value, or unexpected configuration name can cause the pattern to match nothing. In version `2026.08.09` and later, that result exports every drawing sheet and writes a fallback message to the log.
 
 Use `*` to match any text and `?` to match one character.
 
@@ -39,5 +45,7 @@ For example, if the selected configuration is `Machined`:
 | `*(ConfigurationName)*` | `*Machined*` | `Machined`, `DXF-Machined`, `Machined-REV-A` | `Default` |
 
 As another example, suppose a drawing contains sheets named `Default`, `Machined`, and `Welded`. When the selected configuration is `Welded` and the pattern is `(ConfigurationName)`, only the `Welded` sheet is exported.
+
+If the selected configuration is `Painted` and none of those sheets is named `Painted`, all three sheets are exported because the evaluated pattern has no matches.
 
 This setting is used by [Sheets to Export](sheets-to-export.md) when that option is set to `Sheets matching name`.

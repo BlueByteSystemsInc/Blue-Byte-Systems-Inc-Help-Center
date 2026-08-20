@@ -30,6 +30,8 @@ In both products, suppressed, unresolved, excluded, or condition-filtered compon
 > [!IMPORTANT]
 > For the **PDM task**, it is critical to configure the PDMPublisher [Template](template.md) option before enabling this setting. If the template is not selected, or if it does not include the required name, configuration, and quantity columns, PDMPublisher may export missing or incorrect reference files. This requirement does not apply to the SOLIDWORKS add-in.
 
+The PDM task can optionally use the first named BOM saved on the associated assembly drawing. See [Use Drawing-Derived BOM](use-drawing-derived-bom.md). The configured Template remains required as a fallback.
+
 For template setup requirements, see [Template](template.md).
 
 > [!NOTE]

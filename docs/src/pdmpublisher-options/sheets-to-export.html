@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Sheets to Export | PDMPublisher Options | Help Center ">
       
-      <meta name="description" content="Choose which drawing sheets are exported.">
+      <meta name="description" content="Choose which drawing sheets are exported and understand the all-sheets fallback when no names match.">
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
@@ -119,11 +119,17 @@
 <p>Options:</p>
 <ul>
 <li><code>All sheets</code> exports every sheet in the drawing.</li>
-<li><code>Sheets matching name</code> exports only sheets that match <a href="sheet-name-pattern.html">Sheet Name Pattern</a>.</li>
+<li><code>Sheets matching name</code> exports sheets that match <a href="sheet-name-pattern.html">Sheet Name Pattern</a>. If no sheets match, PDMPublisher exports all sheets.</li>
 </ul>
-<div class="NOTE">
-<h5>Note</h5>
-<p><code>Sheets matching name</code> is applied only to drawings with two or more sheets. A drawing with one sheet always exports its only sheet; PDMPublisher does not evaluate the sheet-name pattern for that file.</p>
+<h2 id="matching-fallback">Matching Fallback</h2>
+<ul>
+<li>A drawing with one sheet always exports its only sheet without evaluating the pattern.</li>
+<li>A drawing with two or more sheets exports only the matching sheets when one or more names match.</li>
+<li>If a drawing with two or more sheets has no matching sheet names, PDMPublisher exports every sheet and records the fallback in the log.</li>
+</ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>A pattern that matches nothing no longer produces an empty sheet selection. Review the task log or add-in Logs tab if all sheets were exported unexpectedly.</p>
 </div>
 <p>Use <code>Sheets matching name</code> when drawings contain manufacturing, reference, or internal sheets that should not be exported.</p>
 

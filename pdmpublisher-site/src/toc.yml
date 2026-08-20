@@ -59,6 +59,8 @@
         items:
         - name: Calculation Method
           href: ../../src/pdmpublisher-options/calculation-method.md
+      - name: Use Drawing-Derived BOM
+        href: ../../src/pdmpublisher-options/use-drawing-derived-bom.md
       - name: Ignore Sub-Assembly Children
         href: ../../src/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
     - name: Task Launch Prompts

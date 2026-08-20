@@ -85,6 +85,7 @@ Review these settings before saving a new task:
 |---|---|---|
 | Template | Selects the BOM template/layout used for quantity-aware output. | [Open](pdmpublisher-options/template.md) |
 | Calculation method | Chooses how references are calculated for BOM and quantity evaluation. | [Open](pdmpublisher-options/calculation-method.md) |
+| Use drawing-derived BOM | Uses the first named BOM saved on the associated assembly drawing, with the configured calculated BOM as a fallback. | [Open](pdmpublisher-options/use-drawing-derived-bom.md) |
 | Vault Activity Logs | Creates detailed logs in the configured vault folder when publishing starts. | [Open](pdmpublisher-options/turn-on-activity-tracking.md) |
 | Server-Synced Activity Logs | Sends activity logs to the server for future support review. | [Open](pdmpublisher-options/server-synced-activity-logs.md) |
 | Log Folder (Vault Only) | PDM vault folder where logs are stored. | [Open](pdmpublisher-options/log-folder-vault-only.md) |

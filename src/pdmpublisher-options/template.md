@@ -17,6 +17,8 @@ The BOM layout icon is a visual identifier. The selected template name determine
 
 The selected BOM template is used when PDMPublisher needs to calculate assembly references, configurations, and quantities.
 
+When [Use Drawing-Derived BOM](use-drawing-derived-bom.md) is enabled, PDMPublisher first tries to read the first named BOM saved on the associated drawing. This Template remains required because PDMPublisher uses it to calculate the BOM when the drawing or a usable derived BOM is unavailable.
+
 This matters most when [Export References to File Formats Individually](export-references-individually.md) is enabled.
 
 Use [Calculation Method](calculation-method.md) to control whether reference and quantity calculation uses as-built references or the latest references.

@@ -1,7 +1,7 @@
 ---
 title: Options | PDMPublisher for SOLIDWORKS
 description: Configure output paths, filenames, formats, drawing sheets, references, configurations, flat patterns, and PDF output.
-ms.date: 08/18/2026
+ms.date: 08/19/2026
 ms.topic: how-to
 ---
 
@@ -54,7 +54,7 @@ Use **Sheets to export** to choose all drawing sheets or only sheets whose names
 The pattern supports `*`, `?`, and placeholders such as `(ConfigurationName)`. See [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md) for examples.
 
 > [!NOTE]
-> Sheet-name matching applies only when a drawing contains two or more sheets. A drawing with one sheet exports its only sheet without evaluating the pattern.
+> A drawing with one sheet exports its only sheet without evaluating the pattern. For a multi-sheet drawing, PDMPublisher exports the matching sheets; if no sheet names match, it falls back to exporting all sheets and records the fallback in the Logs tab.
 
 ## Export Processing
 

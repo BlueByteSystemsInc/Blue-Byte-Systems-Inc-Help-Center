@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/18/2026
+ms.date: 08/19/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,16 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.09
+*Applies to **PDM Task** and **SOLIDWORKS Add-in***
+
+**PDM Task**:
+- Added **Use drawing-derived BOM**. The task can use the first named BOM saved on an assembly's associated drawing to determine references, configurations, and quantities. If the drawing or a usable derived BOM is unavailable, PDMPublisher falls back to the configured calculated BOM. See [Use Drawing-Derived BOM](/src/pdmpublisher-options/use-drawing-derived-bom.html).
+
+**PDM Task and SOLIDWORKS Add-in**:
+- Changed drawing sheet matching so a multi-sheet drawing with no sheets matching the evaluated pattern exports all sheets instead of producing no sheet output.
+- One-sheet drawings continue to export their only sheet without evaluating the sheet-name pattern. See [Sheet Name Pattern](/src/pdmpublisher-options/sheet-name-pattern.html).
 
 ## 2026.08.08
 *Applies to **PDM Task** and **SOLIDWORKS Add-in***

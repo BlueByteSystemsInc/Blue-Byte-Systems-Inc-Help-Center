@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Export References to File Formats Individually | PDMPublisher Options | Help Center </title>
+      <title>Use Drawing-Derived BOM | PDMPublisher Options | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Export References to File Formats Individually | PDMPublisher Options | Help Center ">
+      <meta name="title" content="Use Drawing-Derived BOM | PDMPublisher Options | Help Center ">
       
-      <meta name="description" content="Export referenced documents as standalone output files.">
+      <meta name="description" content="Use the first named BOM saved on an assembly drawing to determine PDMPublisher references, configurations, and quantities.">
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/export-references-individually.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/use-drawing-derived-bom.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -107,51 +107,61 @@
         </div>
 
         <article data-uid="">
-<h1 id="export-references-to-file-formats-individually">Export References to File Formats Individually</h1>
+<h1 id="use-drawing-derived-bom">Use Drawing-Derived BOM</h1>
 
-<p><img src="/images/pdmpublisher/screenshots/options-014-property-export-references-to-file-formats-individually.png" alt="Export references individually setting"></p>
-<p>Exports referenced components as their own files in the selected formats.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>This setting is shared by the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>, but the two products obtain their assembly references differently.</p>
-</div>
-<p>In practice, this is used when an assembly publish should also create output for the components in that assembly. It is most useful for assemblies with repeated components, multiple configurations, or nested references.</p>
-<h2 id="requirements-by-product">Requirements by Product</h2>
-<table>
-<thead>
-<tr>
-<th>Product</th>
-<th>Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>PDM task</strong></td>
-<td>Run the task on an assembly and select a BOM <a href="template.html">Template</a> with the required name, configuration, and quantity columns.</td>
-</tr>
-<tr>
-<td><strong>SOLIDWORKS add-in</strong></td>
-<td>Open the assembly in SOLIDWORKS. The add-in reads the resolved assembly references directly and does not require the PDM task BOM Template setting.</td>
-</tr>
-</tbody>
-</table>
-<p>In both products, suppressed, unresolved, excluded, or condition-filtered components can change the set of references processed.</p>
-<h2 id="bom-template">BOM Template</h2>
+<p><img src="/images/pdmpublisher/screenshots/options-034-property-use-drawing-derived-bom.png" alt="Use drawing-derived BOM setting"></p>
+<p>Uses the first derived (named) BOM saved on the associated SOLIDWORKS drawing instead of calculating the BOM directly from the assembly.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>For the <strong>PDM task</strong>, it is critical to configure the PDMPublisher <a href="template.html">Template</a> option before enabling this setting. If the template is not selected, or if it does not include the required name, configuration, and quantity columns, PDMPublisher may export missing or incorrect reference files. This requirement does not apply to the SOLIDWORKS add-in.</p>
+<p>This option is available only in <strong>PDMPublisher for SOLIDWORKS PDM Professional</strong>. It is not shown in the SOLIDWORKS add-in.</p>
 </div>
-<p>The PDM task can optionally use the first named BOM saved on the associated assembly drawing. See <a href="use-drawing-derived-bom.html">Use Drawing-Derived BOM</a>. The configured Template remains required as a fallback.</p>
-<p>For template setup requirements, see <a href="template.html">Template</a>.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>This setting is independent from PDF merging and ZIP archiving.</p>
+<p>Use this option when the drawing BOM defines the assembly structure and quantities that should drive publishing. This allows a task launched on an assembly to obtain its BOM from the assembly's drawing.</p>
+<h2 id="how-pdmpublisher-finds-the-drawing">How PDMPublisher Finds the Drawing</h2>
+<p>PDMPublisher first locates the drawing associated with the assembly:</p>
+<ol>
+<li>If <a href="use-pdm-search-to-locate-drawings.html">Use PDM Search to Locate Drawings</a> is enabled, PDMPublisher searches the assembly's immediate <strong>Where Used</strong> parents for a drawing.</li>
+<li>If the search does not return a drawing, or the search option is disabled, PDMPublisher looks in the assembly folder for a drawing with the same base name.</li>
+</ol>
+<p>For example:</p>
+<pre><code class="lang-text">Assembly: C:\PDMVault\Projects\Speaker\Speaker.sldasm
+Drawing:  C:\PDMVault\Projects\Speaker\Speaker.slddrw
+</code></pre>
+<h2 id="how-the-bom-is-selected">How the BOM Is Selected</h2>
+<p>After locating the drawing, PDMPublisher requests the derived named BOMs saved on that drawing and uses the first BOM returned by SOLIDWORKS PDM. It loads the current view of that BOM, then continues with the standard reference, configuration, quantity, and condition processing.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>If a drawing contains several derived BOMs, PDMPublisher uses the first one returned by PDM. Confirm that the intended named BOM is the first available BOM before relying on this option.</p>
 </div>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>The task must process a SOLIDWORKS assembly.</li>
+<li>The assembly must have an associated SOLIDWORKS drawing in PDM.</li>
+<li>The drawing must contain at least one saved derived (named) BOM.</li>
+<li>The BOM rows must identify references and configurations that PDM can resolve.</li>
+<li>A valid calculated BOM <a href="template.html">Template</a> must remain configured for fallback processing.</li>
+</ul>
+<h2 id="calculated-bom-fallback">Calculated BOM Fallback</h2>
+<p>If PDMPublisher cannot find the drawing, the drawing has no usable named BOM, the BOM cannot be loaded, or the BOM contains no usable rows, it falls back to the configured calculated BOM.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Do not leave <strong>Template</strong> empty. The task still requires a valid calculated BOM template when drawing-derived BOM processing is unavailable.</p>
+</div>
+<p>The selected <a href="calculation-method.html">Calculation Method</a> applies when this calculated BOM fallback is used.</p>
+<h2 id="logs">Logs</h2>
+<p>Task logs prefix these messages with <code>Drawing-derived BOM:</code>. The log records:</p>
+<ul>
+<li>How the drawing was located</li>
+<li>Which named BOMs were found</li>
+<li>Which BOM was selected</li>
+<li>How many rows were loaded</li>
+<li>Why the calculated BOM fallback was used, when required</li>
+</ul>
+<p>Review these entries when the exported reference list or quantities do not match the expected drawing BOM.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/export-references-individually.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/use-drawing-derived-bom.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

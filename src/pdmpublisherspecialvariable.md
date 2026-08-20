@@ -60,7 +60,7 @@ For example, when `Speaker.SLDASM` launches a task and PDMPublisher processes `C
 
 `(ConfigurationName)` returns the configuration associated with the current output. It is especially important when [Convert Multiple Configurations](pdmpublisher-options/convert-multiple-configurations.md) is enabled because it prevents outputs from different configurations from using the same name.
 
-The placeholder can also be used by [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets.
+The placeholder can also be used by [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets. If the evaluated configuration name matches no sheet, version `2026.08.09` and later exports all drawing sheets and logs the fallback.
 
 ### BOM Quantity
 

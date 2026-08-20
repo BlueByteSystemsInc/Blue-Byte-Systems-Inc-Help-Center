@@ -115,6 +115,17 @@
 <h5>Tip</h5>
 <p>If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see <a href="/src/cdpdm.html">here</a>.</p>
 </div>
+<h2 id="20260809">2026.08.09</h2>
+<p><em>Applies to <strong>PDM Task</strong> and <strong>SOLIDWORKS Add-in</strong></em></p>
+<p><strong>PDM Task</strong>:</p>
+<ul>
+<li>Added <strong>Use drawing-derived BOM</strong>. The task can use the first named BOM saved on an assembly's associated drawing to determine references, configurations, and quantities. If the drawing or a usable derived BOM is unavailable, PDMPublisher falls back to the configured calculated BOM. See <a href="/src/pdmpublisher-options/use-drawing-derived-bom.html">Use Drawing-Derived BOM</a>.</li>
+</ul>
+<p><strong>PDM Task and SOLIDWORKS Add-in</strong>:</p>
+<ul>
+<li>Changed drawing sheet matching so a multi-sheet drawing with no sheets matching the evaluated pattern exports all sheets instead of producing no sheet output.</li>
+<li>One-sheet drawings continue to export their only sheet without evaluating the sheet-name pattern. See <a href="/src/pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a>.</li>
+</ul>
 <h2 id="20260808">2026.08.08</h2>
 <p><em>Applies to <strong>PDM Task</strong> and <strong>SOLIDWORKS Add-in</strong></em></p>
 <p><strong>SOLIDWORKS Add-in</strong>:</p>

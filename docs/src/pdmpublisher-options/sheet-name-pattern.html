@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Sheet Name Pattern | PDMPublisher Options | Help Center ">
       
-      <meta name="description" content="Filter drawing sheets by name.">
+      <meta name="description" content="Filter drawing sheets by name and understand the fallback when an evaluated pattern matches no sheets.">
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
@@ -115,9 +115,15 @@
 <h5>Note</h5>
 <p>This setting is available in both the <strong>PDM task</strong> and <strong>SOLIDWORKS add-in</strong>.</p>
 </div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Sheet-name matching applies only when a drawing contains two or more sheets. If a drawing contains one sheet, PDMPublisher ignores the pattern and exports that sheet.</p>
+<h2 id="selection-rules">Selection Rules</h2>
+<ul>
+<li>For a one-sheet drawing, PDMPublisher ignores the pattern and exports the only sheet.</li>
+<li>For a drawing with two or more sheets, PDMPublisher exports the matching sheets.</li>
+<li>If the evaluated pattern matches no sheets, PDMPublisher falls back to exporting all sheets.</li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>A spelling error, missing property value, or unexpected configuration name can cause the pattern to match nothing. In version <code>2026.08.09</code> and later, that result exports every drawing sheet and writes a fallback message to the log.</p>
 </div>
 <p>Use <code>*</code> to match any text and <code>?</code> to match one character.</p>
 <p>Examples:</p>
@@ -161,6 +167,7 @@
 </tbody>
 </table>
 <p>As another example, suppose a drawing contains sheets named <code>Default</code>, <code>Machined</code>, and <code>Welded</code>. When the selected configuration is <code>Welded</code> and the pattern is <code>(ConfigurationName)</code>, only the <code>Welded</code> sheet is exported.</p>
+<p>If the selected configuration is <code>Painted</code> and none of those sheets is named <code>Painted</code>, all three sheets are exported because the evaluated pattern has no matches.</p>
 <p>This setting is used by <a href="sheets-to-export.html">Sheets to Export</a> when that option is set to <code>Sheets matching name</code>.</p>
 
 </article>

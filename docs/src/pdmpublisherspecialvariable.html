@@ -279,7 +279,7 @@
 </table>
 <h3 id="configuration-name">Configuration Name</h3>
 <p><code>(ConfigurationName)</code> returns the configuration associated with the current output. It is especially important when <a href="pdmpublisher-options/convert-multiple-configurations.html">Convert Multiple Configurations</a> is enabled because it prevents outputs from different configurations from using the same name.</p>
-<p>The placeholder can also be used by <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a>. For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets.</p>
+<p>The placeholder can also be used by <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a>. For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets. If the evaluated configuration name matches no sheet, version <code>2026.08.09</code> and later exports all drawing sheets and logs the fallback.</p>
 <h3 id="bom-quantity">BOM Quantity</h3>
 <p><code>(BOMQuantity)</code> uses the quantity calculated from the selected <a href="pdmpublisher-options/template.html">Template</a>. Reference-aware quantity calculation requires the template fields described on that page.</p>
 <p>When <a href="pdmpublisher-options/ask-user-to-select-configuration-on-startup.html">Ask User to Select Configuration</a> is enabled, the quantity entered on task launch multiplies <code>(BOMQuantity)</code>. For example, a calculated quantity of <code>2</code> and a custom multiplier of <code>3</code> produce <code>6</code>. The task log records the applied quantity information.</p>

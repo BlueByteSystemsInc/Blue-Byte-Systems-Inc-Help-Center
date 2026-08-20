@@ -1717,6 +1717,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-034-property-use-drawing-derived-bom.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-034-property-use-drawing-derived-bom.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/options-034-property-use-microsoft-print-to-pdf-to-save-pdfs.png",
       "output": {
         "resource": {
@@ -3391,6 +3401,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublisher-options/use-at-tab-to-evaluate-paths.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/use-drawing-derived-bom.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/use-drawing-derived-bom.html"
         }
       },
       "version": ""

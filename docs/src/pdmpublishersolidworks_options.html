@@ -139,7 +139,7 @@
 <p>The pattern supports <code>*</code>, <code>?</code>, and placeholders such as <code>(ConfigurationName)</code>. See <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a> for examples.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Sheet-name matching applies only when a drawing contains two or more sheets. A drawing with one sheet exports its only sheet without evaluating the pattern.</p>
+<p>A drawing with one sheet exports its only sheet without evaluating the pattern. For a multi-sheet drawing, PDMPublisher exports the matching sheets; if no sheet names match, it falls back to exporting all sheets and records the fallback in the Logs tab.</p>
 </div>
 <h2 id="export-processing">Export Processing</h2>
 <table>
