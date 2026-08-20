@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Product Roadmap | Upcoming Features & Planned Enhancements
 description: View the PDMPublisher product roadmap with planned features, upcoming enhancements, and future development priorities by quarter.
-ms.date: 06/21/2026
+ms.date: 08/19/2026
 ms.topic: conceptual
 ---
 
@@ -61,21 +61,23 @@ Target: End of Q2 2026
 ### 2026 Q3
 ---
 #### Presets / Profiles 
+✅ Implemented in 2026.08.08
+
 **Applies to: SOLIDWORKS add-in**
 
-Planned support for reusable presets or profiles.
+Added reusable profiles and built-in starter presets to PDMPublisher for SOLIDWORKS.
 
-This feature will allow users and administrators to save commonly used PDMPublisher settings and apply them quickly instead of manually configuring the same options each time.
+Profiles save the Options, Annotations, and Conditions for a publishing workflow. Users can create, rename, save, export, load, and delete profiles, or create a profile from a built-in preset.
 
-Planned areas of focus include:
+The released feature includes:
 
 - Saving export settings as reusable profiles
-- Loading existing profiles for common export workflows
+- Exporting and loading profiles for common export workflows
 - Creating profiles for different departments, customers, projects, or output packages
-- Reducing setup time for repeat publishing jobs
-- Improving consistency across users and workstations
+- Creating profiles from the built-in `DXF`, `PDF And Step`, and `STEP` presets
+- Reusing consistent publishing settings across users and workstations
 
-Target: End of Q3 2026
+See [Profiles and Presets](/src/pdmpublishersolidworks_profiles.html) for setup instructions.
 ---
 #### Shareable Settings / Profile Sharing by PIN Code 
 **Applies to: SOLIDWORKS add-in**
