@@ -66,16 +66,30 @@ While the profile name is being edited, other profile commands are unavailable u
 
 ## Move Profiles Between Computers
 
-- **Export > Export to File...** writes the selected profile to a file that can be backed up or shared.
-- **Load From... > Load from File...** creates or loads a profile from a previously exported profile file.
-- **Export > Share using PIN...** uploads selected profile sections and returns a six-digit PIN.
-- **Load From... > Load using PIN...** downloads, saves, and applies profile sections shared by PIN.
+Use file transfer when you need a permanent backup or want to move the complete profile without using a PIN.
 
-Use profile export before changing computers or before making major changes to an established publishing setup.
+### Export a Profile to a File
 
-An exported profile preserves your customized configuration. It is different from a built-in preset and can be loaded on another computer with **Load From...**.
+1. Select the profile.
+2. Open **Export**, then select **Export to File...**.
+3. Choose where to save the `.pdmpublisherprofile` file.
 
-PIN sharing is available in version `2026.08.10` and later. PINs remain available for 30 days. See [Share Profiles Using a PIN](pdmpublishersolidworks_profile_sharing.md) for the complete workflow and security guidance.
+The exported file preserves the complete profile, including its Options, Annotations, and Conditions. Keep an exported copy before changing computers or making major changes to an established publishing setup.
+
+### Load a Profile from a File
+
+1. Open **Load From...**, then select **Load from File...**.
+2. Select a `.pdmpublisherprofile` file.
+3. Confirm the profile name if PDMPublisher finds a local profile with the same name.
+
+The loaded profile is saved locally, applied immediately, and becomes the active profile. When the name already exists, you can replace the local profile, import the profile under another name, or cancel.
+
+> [!NOTE]
+> A profile file is a saved configuration, not a built-in preset. Loading it does not change the preset from which the profile may have been created.
+
+## Share Profiles Using a PIN
+
+Version `2026.08.10` and later can share selected Options, Annotations, and Conditions using a six-digit PIN that remains available for 30 days. See [Share Profiles Using a PIN](pdmpublishersolidworks_profile_sharing.md) for the sharing and loading workflow, section selection, name-conflict behavior, and security guidance.
 
 ## Delete a Profile
 

@@ -185,10 +185,8 @@
     href: ../../src/pdmpublisher-product-differences.md
   - name: Profiles and Presets
     href: ../../src/pdmpublishersolidworks_profiles.md
-    expanded: true
-    items:
-    - name: Share Profiles Using a PIN
-      href: ../../src/pdmpublishersolidworks_profile_sharing.md
+  - name: Share Profiles Using a PIN
+    href: ../../src/pdmpublishersolidworks_profile_sharing.md
   - name: Options Tab
     href: ../../src/pdmpublishersolidworks_options.md
     expanded: true
