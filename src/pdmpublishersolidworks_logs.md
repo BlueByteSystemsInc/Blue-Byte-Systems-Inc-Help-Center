@@ -1,25 +1,20 @@
 ---
 title: Logs | PDMPublisher for SOLIDWORKS
-description: Review and save PDMPublisher job logs for troubleshooting and support.
-ms.date: 08/18/2026
+description: Find the focused documentation for searching, reading, saving, and clearing PDMPublisher job logs.
+ms.date: 08/23/2026
 ms.topic: how-to
 ---
 
-# Logs
+# Logs Tab
 
-Each time **PUBLISH** is selected, PDMPublisher creates a job log with a unique ID. The log records the files processed, property and condition evaluation, BOM quantities, sheet metal detection, exports, warnings, and failures.
-
-Log colors identify the type of entry:
-
-- Yellow entries show regular processing steps.
-- Green entries show successful steps.
-- Red entries show errors.
-
-Use the Logs tab to clear old entries or save a job as a `.log` file.
+The Logs tab records processing steps, successful exports, warnings, and failures from PDMPublisher jobs in the current SOLIDWORKS session.
 
 ![Detailed PDMPublisher logs](/images/detailedlogs.png)
 
-> [!TIP]
-> Save the log and include its job ID when contacting Blue Byte Systems support. This gives support the detailed sequence that produced the issue.
+| Page | Purpose |
+| --- | --- |
+| [Search and Read Logs](pdmpublishersolidworks-log-search.md) | Filter entries and interpret the entry colors. |
+| [Save and Clear Logs](pdmpublishersolidworks-log-files.md) | Save the complete session log or clear the in-memory entries. |
 
-Support email: `support@bluebytesystemsinc.zohodesk.com`
+> [!TIP]
+> Save the log immediately after a failed job and include it when contacting `support@bluebytesystemsinc.zohodesk.com`.

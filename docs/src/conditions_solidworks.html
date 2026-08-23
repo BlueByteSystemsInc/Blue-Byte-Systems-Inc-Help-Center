@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Conditions | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Filter the active document and assembly references with property conditions and nested AND/OR groups.">
+      <meta name="description" content="Find the focused documentation for building, evaluating, reviewing, importing, and exporting condition rules.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -107,100 +107,37 @@
         </div>
 
         <article data-uid="">
-<h1 id="conditions">Conditions</h1>
+<h1 id="conditions-tab">Conditions Tab</h1>
 
-<p>Conditions decide which files are included in a publish job. They are most useful when the active document is an assembly and <strong>Export references to file formats individually</strong> is enabled.</p>
+<p>Conditions decide which assembly files are included in a publish job. The selected <a href="pdmpublishersolidworks_profiles.html">profile</a> stores the condition tree.</p>
 <p><img src="/images/pdmpublisher/solidworks/conditions.png" alt="PDMPublisher for SOLIDWORKS Conditions page"></p>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>Conditions affect assembly references and the assembly. Enable <strong>Export references to file formats individually</strong> on the PDMPublisher tab when conditions must filter referenced files.</p>
+<p>Enable <a href="pdmpublisher-options/export-references-individually.html">Export References Individually</a> when conditions must filter the active assembly and its referenced files.</p>
 </div>
-<h2 id="condition-settings">Condition Settings</h2>
-<p>The detail pages below are shared with the PDM task because the condition editor and comparison rules are the same. Each page identifies how the available values differ in the add-in.</p>
+<p>Use the focused pages beneath <strong>Conditions Tab</strong> in the TOC:</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Summary</th>
-<th>Details</th>
+<th>Category</th>
+<th>Pages</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Add Conditions and Groups</td>
-<td>Build nested AND/OR rules.</td>
-<td><a href="pdmpublisher-conditions/add-conditions-and-groups.html">Open</a></td>
+<td>Build rules</td>
+<td><a href="pdmpublisher-conditions/add-conditions-and-groups.html">Add Conditions and Groups</a> and <a href="pdmpublisher-conditions/condition-fields.html">Condition Fields</a></td>
 </tr>
 <tr>
-<td>Condition Fields</td>
-<td>Choose the property, comparison, expected value, and configuration.</td>
-<td><a href="pdmpublisher-conditions/condition-fields.html">Open</a></td>
+<td>Values and comparisons</td>
+<td><a href="pdmpublisher-conditions/special-variables.html">Special Variables</a> and <a href="pdmpublisher-conditions/condition-types.html">Condition Types</a></td>
 </tr>
 <tr>
-<td>Special Variables</td>
-<td>Use filename, folder, configuration, and other available built-in values.</td>
-<td><a href="pdmpublisher-conditions/special-variables.html">Open</a></td>
-</tr>
-<tr>
-<td>Condition Types</td>
-<td>Select text, number, date, or Yes/No comparisons.</td>
-<td><a href="pdmpublisher-conditions/condition-types.html">Open</a></td>
-</tr>
-<tr>
-<td>Evaluation Rules</td>
-<td>Understand groups, configurations, and property fallback.</td>
-<td><a href="pdmpublisher-conditions/evaluation-rules.html">Open</a></td>
+<td>Processing</td>
+<td><a href="pdmpublisher-conditions/evaluation-rules.html">Evaluation Rules</a>, <a href="pdmpublishersolidworks-condition-output.html">Review Condition Results Before Export</a>, and <a href="pdmpublishersolidworks-condition-files.html">Import and Export Conditions</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="build-a-condition-tree">Build a Condition Tree</h2>
-<ul>
-<li><strong>+ (Condition)</strong> adds a comparison to the selected group.</li>
-<li><strong>+ (AND/OR)</strong> adds a nested condition group.</li>
-<li>The <strong>And/Or</strong> selector determines whether all enabled children or any enabled child must pass.</li>
-<li>The checkbox beside a condition or group enables or disables it.</li>
-<li>The red delete control removes the condition or group.</li>
-</ul>
-<p>Groups can be nested and reordered by dragging them.</p>
-<h2 id="condition-fields">Condition Fields</h2>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Variable</strong></td>
-<td>File property or built-in value to evaluate.</td>
-</tr>
-<tr>
-<td><strong>Comparison</strong></td>
-<td>Text, number, date, or Yes/No comparison.</td>
-</tr>
-<tr>
-<td><strong>Value</strong></td>
-<td>Expected value or pattern. Text comparisons are not case-sensitive.</td>
-</tr>
-<tr>
-<td><strong>Configuration</strong></td>
-<td>Configuration from which to read the property. Leave it empty to use the referenced configuration where supported.</td>
-</tr>
-</tbody>
-</table>
-<p>Built-in variables include Filename, FolderName, Revision, Version, Workflow, State, and ConfigurationName. The variable list also includes properties available from the active SOLIDWORKS document.</p>
-<h2 id="evaluation-behavior">Evaluation Behavior</h2>
-<p>PDMPublisher first tries to read a property from the referenced configuration. If the property is not present, it falls back to the document's Custom tab.</p>
-<p>For an assembly reference with an empty Configuration field, the add-in evaluates the referenced configuration used by the assembly.</p>
-<h2 id="conditions-output-dialog">Conditions Output Dialog</h2>
-<p>Enable <strong>Show conditions output dialog</strong> to review the files that passed before export and to adjust the final selection. Disable it when the condition tree should run without that confirmation step.</p>
-<h2 id="import-export-and-help">Import, Export, and Help</h2>
-<ul>
-<li><strong>Export...</strong> saves the condition setup for backup or transfer.</li>
-<li><strong>Import...</strong> loads a previously exported condition setup.</li>
-<li><strong>Help...</strong> opens the condition documentation.</li>
-</ul>
 <p>Select <strong>Popout in separate window</strong> when more room is needed to edit a large condition tree.</p>
 
 </article>

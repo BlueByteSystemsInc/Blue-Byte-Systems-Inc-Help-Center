@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Options | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Configure output paths, filenames, formats, drawing sheets, references, configurations, flat patterns, and PDF output.">
+      <meta name="description" content="Find the focused documentation for every PDMPublisher for SOLIDWORKS output and processing option.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -107,88 +107,50 @@
         </div>
 
         <article data-uid="">
-<h1 id="pdmpublisher-options">PDMPublisher Options</h1>
+<h1 id="options-tab">Options Tab</h1>
 
-<p>The PDMPublisher tab contains the output and processing settings for the selected <a href="pdmpublishersolidworks_profiles.html">profile</a>.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>This is the SOLIDWORKS add-in Options page. The TOC below it mirrors the PDM task categories, but task-only options are intentionally omitted. See <a href="pdmpublisher-product-differences.html">PDM Task vs SOLIDWORKS Add-in</a>.</p>
-</div>
+<p>The PDMPublisher tab contains the output and processing settings stored in the selected <a href="pdmpublishersolidworks_profiles.html">profile</a>.</p>
 <p><img src="/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher for SOLIDWORKS Options page"></p>
-<h2 id="output">Output</h2>
-<h3 id="export-location">Export Location</h3>
-<p>Enter the folder where generated files will be written, or select <strong>Browse...</strong> to choose a fixed folder. Use the <code>&gt;...</code> menu to build a dynamic path from file properties and built-in values.</p>
-<p>Select <strong>Customize Location...</strong> when individual formats need different folders. An enabled format-specific location overrides the main Export Location for that format.</p>
-<p>See <a href="pdmpublisher-options/export-location.html">Export Location</a> and the <a href="pdmpublisherspecialvariable.html">Placeholder Reference</a> for path examples and add-in-specific behavior.</p>
-<h3 id="filename">Filename</h3>
-<p>The Filename field controls the output name without its final file extension. Combine text with values from the <code>&gt;...</code> menu. Include a configuration-specific value when one source file can create several outputs.</p>
-<p>See <a href="pdmpublisher-options/filename.html">Filename</a>.</p>
-<h3 id="file-formats">File Formats</h3>
-<p>Open the format selector and check every output format required by the profile. Multiple formats can be generated in one publish job.</p>
-<p><img src="/images/pdmpublisher/solidworks/file-formats.png" alt="Selecting multiple output file formats"></p>
-<p>The selector uses descriptive names and file-type icons. Format availability depends on the source document, SOLIDWORKS version, and installed eDrawings capabilities. See <a href="pdmpublisher-options/file-formats.html">File Formats</a> for the complete list and source-file behavior.</p>
-<h3 id="open-export-location-on-completion">Open Export Location on Completion</h3>
-<p>Enable this option to open the output folder after a successful publish job. See <a href="pdmpublishersolidworks-open-export-location.html">Open Export Location on Completion</a>.</p>
-<h2 id="drawing-sheets">Drawing Sheets</h2>
-<p>Use <strong>Sheets to export</strong> to choose all drawing sheets or only sheets whose names match a pattern.</p>
-<p><img src="/images/pdmpublisher/solidworks/drawing-sheets.png" alt="Drawing sheet selection and configuration-name pattern"></p>
-<ul>
-<li><strong>All sheets</strong> exports every sheet in the drawing.</li>
-<li><strong>Sheets matching name</strong> evaluates <strong>Sheet name pattern</strong> and exports matching sheets.</li>
-</ul>
-<p>The pattern supports <code>*</code>, <code>?</code>, and placeholders such as <code>(ConfigurationName)</code>. See <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a> for examples.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>A drawing with one sheet exports its only sheet without evaluating the pattern. For a multi-sheet drawing, PDMPublisher exports the matching sheets; if no sheet names match, it falls back to exporting all sheets and records the fallback in the Logs tab.</p>
-</div>
-<h2 id="export-processing">Export Processing</h2>
+<p>Use the focused pages beneath <strong>Options Tab</strong> in the TOC:</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Behavior</th>
+<th>Category</th>
+<th>Pages</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Export references to file formats individually</strong></td>
-<td>Processes the active assembly and its referenced files as individual outputs.</td>
+<td>Output paths and names</td>
+<td><a href="pdmpublisher-options/export-location.html">Export Location</a>, <a href="pdmpublisher-options/filename.html">Filename</a>, <a href="pdmpublisher-options/file-formats.html">File Formats</a>, <a href="pdmpublishersolidworks-open-export-location.html">Open Export Location</a>, and <a href="pdmpublisher-options/archive-all-exported-documents.html">Archive Exported Documents</a></td>
 </tr>
 <tr>
-<td><strong>Ignore sub-assemblies children when condition checks fail</strong></td>
-<td>Skips the children of a subassembly when that subassembly fails its condition checks.</td>
+<td>Assembly and references</td>
+<td><a href="pdmpublisher-options/export-references-individually.html">Export References Individually</a> and <a href="pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.html">Ignore Sub-Assembly Children</a></td>
 </tr>
 <tr>
-<td><strong>Convert multiple configurations</strong></td>
-<td>Exports multiple configurations. Include <code>(ConfigurationName)</code> or another configuration-specific value in Filename.</td>
+<td>Configurations</td>
+<td><a href="pdmpublisher-options/convert-multiple-configurations.html">Convert Multiple Configurations</a></td>
 </tr>
 <tr>
-<td><strong>Archive all exported documents (.zip)</strong></td>
-<td>Creates a ZIP package containing the exported documents.</td>
+<td>Drawing sheets and PDFs</td>
+<td><a href="pdmpublisher-options/sheets-to-export.html">Sheets to Export</a>, <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a>, <a href="pdmpublisher-options/merge-exported-pdfs.html">Merge Exported PDFs</a>, <a href="pdmpublisher-options/add-table-of-content-to-merged-pdf.html">Table of Content</a>, <a href="pdmpublisher-options/table-columns.html">Table Columns</a>, and <a href="pdmpublisher-options/pdf-bookmarks.html">PDF Bookmarks</a></td>
 </tr>
 <tr>
-<td><strong>Export sheet metal parts to 1:1 flat pattern DXF</strong></td>
-<td>Creates manufacturing flat-pattern DXFs for sheet metal parts. Use <strong>Flat Pattern Settings</strong> to configure the result.</td>
+<td>Manufacturing outputs</td>
+<td><a href="pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.html">Sheet Metal Flat Pattern DXF</a> and <a href="pdmpublisher-options/split-bodies.html">Split Bodies</a></td>
 </tr>
 <tr>
-<td><strong>Split Bodies</strong></td>
-<td>Exports bodies from a multibody part as separate files. This does not apply to sheet metal flat patterns.</td>
+<td>Execution</td>
+<td><a href="pdmpublishersolidworks-publish.html">Run a Publish Job</a></td>
 </tr>
 </tbody>
 </table>
-<p>Use <strong>Configuration Filter</strong> to include or exclude configurations by pattern when multiple-configuration export is enabled.</p>
-<p>The add-in obtains references directly from the active SOLIDWORKS assembly. It does not require the PDM task BOM Template setting.</p>
-<div class="IMPORTANT">
-<h5>Important</h5>
-<p>Reference processing, conditions, BOM quantities, PDF merging, and assembly-level outputs depend on the active assembly and the references SOLIDWORKS can resolve.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Task-only settings are intentionally excluded from this SOLIDWORKS add-in section. See <a href="pdmpublisher-product-differences.html">PDM Task vs SOLIDWORKS Add-in</a> when a setting shown in the PDM Administration tool is not present here.</p>
 </div>
-<h2 id="pdf-options">PDF Options</h2>
-<p>The PDF section contains merged-PDF, bookmarks, table-of-contents, and related PDF behavior. Options that depend on PDF references become relevant when PDF is selected and assembly references are processed.</p>
-<p>Use the categorized pages in the TOC for the same detailed option references used by the PDM task documentation. Each page identifies where the add-in workflow differs.</p>
-<h2 id="publish">Publish</h2>
-<p>Select <strong>PUBLISH</strong> at the bottom of the task pane to process the active SOLIDWORKS document with the current profile.</p>
-<p>If SOLIDWORKS PDM vaults are installed and configured, the arrow beside <strong>PUBLISH</strong> can associate publishing with a vault. Use the correct vault when generated files must be added, checked out, or checked in through PDM.</p>
-<p>The Logs tab records progress, successful steps, warnings, and failures. See <a href="pdmpublishersolidworks_logs.html">Logs</a>.</p>
+<p>Use the <a href="pdmpublisherspecialvariable.html">Placeholder Reference</a> when constructing output paths, filenames, sheet patterns, annotations, or conditions.</p>
 
 </article>
 

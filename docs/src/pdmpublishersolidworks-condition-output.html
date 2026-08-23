@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Annotations | PDMPublisher for SOLIDWORKS | Help Center </title>
+      <title>Review Condition Results Before Export | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Annotations | PDMPublisher for SOLIDWORKS | Help Center ">
+      <meta name="title" content="Review Condition Results Before Export | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Find the focused documentation for annotation content, appearance, placement, and settings transfer.">
+      <meta name="description" content="Use the conditions output dialog to review and adjust the assembly files selected for export.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_annotations.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks-condition-output.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -107,47 +107,30 @@
         </div>
 
         <article data-uid="">
-<h1 id="annotations-tab">Annotations Tab</h1>
+<h1 id="review-condition-results-before-export">Review Condition Results Before Export</h1>
 
-<p>Annotations place text, SOLIDWORKS property values, watermarks, or QR codes on exported drawing sheets and PDFs. The selected <a href="pdmpublishersolidworks_profiles.html">profile</a> stores the annotation collection.</p>
-<p><img src="/images/pdmpublisher/solidworks/annotations.png" alt="PDMPublisher for SOLIDWORKS Annotations page"></p>
-<p>Use the focused pages beneath <strong>Annotations Tab</strong> in the TOC:</p>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Pages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content</td>
-<td><a href="pdmpublisher-annotations/add-annotation.html">Add Annotation</a>, <a href="pdmpublisher-annotations/annotation-text.html">Annotation Text</a>, and <a href="pdmpublisher-annotations/sql-query-placeholders.html">SQL Query Placeholders</a></td>
-</tr>
-<tr>
-<td>Appearance</td>
-<td><a href="pdmpublisher-annotations/text-formatting.html">Text Formatting</a>, <a href="pdmpublisher-annotations/watermark.html">Watermark</a>, and <a href="pdmpublisher-annotations/active.html">Active</a></td>
-</tr>
-<tr>
-<td>Placement</td>
-<td><a href="pdmpublisher-annotations/position.html">Position</a> and <a href="pdmpublisher-annotations/sheets.html">Sheets</a></td>
-</tr>
-<tr>
-<td>Settings transfer</td>
-<td><a href="pdmpublishersolidworks-annotation-files.html">Import and Export Annotations</a></td>
-</tr>
-</tbody>
-</table>
-<p>Select <strong>Popout in separate window</strong> when the task-pane width is too narrow for detailed annotation editing.</p>
+<p>Enable <strong>Show conditions output dialog</strong> when you want to review assembly references after the condition tree is evaluated and before export begins.</p>
+<p>This option is enabled by default. It applies when the active document is an assembly, references are available, and <strong>Export references to file formats individually</strong> is enabled.</p>
+<h2 id="what-the-dialog-shows">What the Dialog Shows</h2>
+<p>The dialog lists the files that passed condition processing, including available information such as:</p>
+<ul>
+<li>Filename and folder</li>
+<li>Referenced configuration</li>
+<li>Calculated quantity</li>
+<li>Whether a same-name drawing was found</li>
+</ul>
+<p>Files are selected by default. Clear a file when it should not be processed in this job, then confirm the dialog to continue.</p>
+<p>Cancelling the dialog cancels the publish job before file processing begins.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Annotation controls are shared with the PDM task, but the SOLIDWORKS add-in obtains properties from the active document and saves annotations in the selected profile.</p>
+<p>This dialog is a final job review. It does not rewrite the condition tree or permanently change the selected profile.</p>
 </div>
+<p>See <a href="pdmpublisher-conditions/evaluation-rules.html">Evaluation Rules</a> for how references pass or fail the configured conditions.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_annotations.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks-condition-output.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

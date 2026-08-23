@@ -3577,10 +3577,100 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-annotation-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-annotation-files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-condition-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-condition-files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-condition-output.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-condition-output.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-funny-mode.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-funny-mode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-log-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-log-files.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-log-search.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-log-search.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublishersolidworks-open-export-location.md",
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks-open-export-location.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-publish.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-publish.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-theme.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-theme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks-updates.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks-updates.html"
         }
       },
       "version": ""

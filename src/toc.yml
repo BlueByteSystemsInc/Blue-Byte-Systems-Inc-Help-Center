@@ -64,6 +64,8 @@
             href: pdmpublisher-options/file-formats.md
           - name: Archive Exported Documents
             href: pdmpublisher-options/archive-all-exported-documents.md
+          - name: Placeholder Reference
+            href: pdmpublisherspecialvariable.md
         - name: Assembly and BOM
           expanded: true
           items:
@@ -261,46 +263,88 @@
             href: pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
           - name: Split Bodies
             href: pdmpublisher-options/split-bodies.md
+        - name: Run a Publish Job
+          href: pdmpublishersolidworks-publish.md
       - name: Annotations Tab
         href: pdmpublishersolidworks_annotations.md
         expanded: true
         items:
-        - name: Add Annotation
-          href: pdmpublisher-annotations/add-annotation.md
-        - name: Annotation Text
-          href: pdmpublisher-annotations/annotation-text.md
-        - name: SQL Query Placeholders
-          href: pdmpublisher-annotations/sql-query-placeholders.md
-        - name: Text Formatting
-          href: pdmpublisher-annotations/text-formatting.md
-        - name: Watermark
-          href: pdmpublisher-annotations/watermark.md
-        - name: Active
-          href: pdmpublisher-annotations/active.md
-        - name: Position
-          href: pdmpublisher-annotations/position.md
-        - name: Sheets
-          href: pdmpublisher-annotations/sheets.md
+        - name: Content
+          expanded: true
+          items:
+          - name: Add Annotation
+            href: pdmpublisher-annotations/add-annotation.md
+          - name: Annotation Text
+            href: pdmpublisher-annotations/annotation-text.md
+          - name: SQL Query Placeholders
+            href: pdmpublisher-annotations/sql-query-placeholders.md
+        - name: Appearance
+          expanded: true
+          items:
+          - name: Text Formatting
+            href: pdmpublisher-annotations/text-formatting.md
+          - name: Watermark
+            href: pdmpublisher-annotations/watermark.md
+          - name: Active
+            href: pdmpublisher-annotations/active.md
+        - name: Placement
+          expanded: true
+          items:
+          - name: Position
+            href: pdmpublisher-annotations/position.md
+          - name: Sheets
+            href: pdmpublisher-annotations/sheets.md
+        - name: Import and Export Annotations
+          href: pdmpublishersolidworks-annotation-files.md
       - name: Conditions Tab
         href: conditions_solidworks.md
         expanded: true
         items:
-        - name: Add Conditions and Groups
-          href: pdmpublisher-conditions/add-conditions-and-groups.md
-        - name: Condition Fields
-          href: pdmpublisher-conditions/condition-fields.md
-        - name: Special Variables
-          href: pdmpublisher-conditions/special-variables.md
-        - name: Condition Types
-          href: pdmpublisher-conditions/condition-types.md
-        - name: Evaluation Rules
-          href: pdmpublisher-conditions/evaluation-rules.md
+        - name: Build Rules
+          expanded: true
+          items:
+          - name: Add Conditions and Groups
+            href: pdmpublisher-conditions/add-conditions-and-groups.md
+          - name: Condition Fields
+            href: pdmpublisher-conditions/condition-fields.md
+        - name: Values and Comparisons
+          expanded: true
+          items:
+          - name: Special Variables
+            href: pdmpublisher-conditions/special-variables.md
+          - name: Condition Types
+            href: pdmpublisher-conditions/condition-types.md
+        - name: Processing
+          expanded: true
+          items:
+          - name: Evaluation Rules
+            href: pdmpublisher-conditions/evaluation-rules.md
+          - name: Review Condition Results
+            href: pdmpublishersolidworks-condition-output.md
+          - name: Import and Export Conditions
+            href: pdmpublishersolidworks-condition-files.md
       - name: Logs Tab
         href: pdmpublishersolidworks_logs.md
+        expanded: true
+        items:
+        - name: Search and Read Logs
+          href: pdmpublishersolidworks-log-search.md
+        - name: Save and Clear Logs
+          href: pdmpublishersolidworks-log-files.md
       - name: About Tab
         href: pdmpublishersolidworks_About.md
-      - name: Placeholder Reference
-        href: pdmpublisherspecialvariable.md
+        expanded: true
+        items:
+        - name: Version and Updates
+          href: pdmpublishersolidworks-updates.md
+        - name: Windows Light and Dark Theme
+          href: pdmpublishersolidworks-theme.md
+        - name: License Management
+          href: licensespdmpublisher.md
+        - name: Funny Mode
+          href: pdmpublishersolidworks-funny-mode.md
+        - name: End User License Agreement
+          href: eula.md
 
 
 - name: PDM2Excel

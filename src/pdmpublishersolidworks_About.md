@@ -1,48 +1,24 @@
 ---
-title: About, Updates, Theme, and Licensing | PDMPublisher for SOLIDWORKS
-description: Check the PDMPublisher version, control Windows theme syncing, download updates, and manage licensing.
+title: About | PDMPublisher for SOLIDWORKS
+description: Find the focused documentation for version updates, appearance, licensing, links, and Funny Mode.
 ms.date: 08/23/2026
 ms.topic: how-to
 ---
 
-# About, Updates, Theme, and Licensing
+# About Tab
 
-The About tab shows the installed version, available update, appearance settings, licensing commands, product links, EULA, and support address.
+The About tab displays the installed version, update status, appearance settings, licensing commands, product links, legal information, and support address.
 
 ![PDMPublisher for SOLIDWORKS About page](/images/pdmpublisher/solidworks/about.png)
 
-## Version and Updates
-
-- **Current Version** identifies the installed add-in build.
-- **A new version is available** appears when an update can be downloaded.
-- **Download the latest version...** opens the latest installer download.
-
-The current release is `2026.08.10`.
-
-## Windows Light and Dark Theme
-
-Enable **Use Windows light/dark theme (applies on restart)** to make PDMPublisher follow the Windows app theme.
-
-![Windows light and dark theme option](/images/pdmpublisher/solidworks/theme-toggle.png)
-
-Restart SOLIDWORKS after changing this option. When disabled, PDMPublisher uses its original light appearance.
-
-> [!NOTE]
-> Theme syncing changes colors only. It does not change the settings, profile data, or publishing behavior.
-
-## Licensing and Links
-
-| Command | Purpose |
+| Page | Purpose |
 | --- | --- |
-| **Activate or Deactivate Product** | Opens product license management. |
-| **PDMPublisher.com** | Opens the product website. |
-| **Purchase A License (bluebyte.biz)** | Opens the license purchase page. |
-| **End User License Agreement (EULA)** | Opens the product license terms. |
+| [Version and Updates](pdmpublishersolidworks-updates.md) | Check the installed version and download an available update. |
+| [Windows Light and Dark Theme](pdmpublishersolidworks-theme.md) | Follow the Windows app theme after SOLIDWORKS restarts. |
+| [License Management](licensespdmpublisher.md) | Activate or deactivate PDMPublisher. |
+| [Funny Mode](pdmpublishersolidworks-funny-mode.md) | Control alternate progress-message wording. |
+| [End User License Agreement](eula.md) | Review the product license terms. |
 
-See [License Management](licensespdmpublisher.md) for activation and deactivation instructions.
+The current documented release is `2026.08.10`.
 
-## Funny Mode
-
-**Enable funny mode** changes progress-bar messages for entertainment. It does not change processing behavior or performance.
-
-For support, use `support@bluebytesystemsinc.zohodesk.com`.
+For support, contact `support@bluebytesystemsinc.zohodesk.com`.
