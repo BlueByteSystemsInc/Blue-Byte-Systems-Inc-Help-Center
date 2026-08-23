@@ -183,10 +183,13 @@
     href: ../../src/pdmpublishersolidworks.md
   - name: PDM Task vs SOLIDWORKS Add-in
     href: ../../src/pdmpublisher-product-differences.md
-  - name: Profiles and Presets
-    href: ../../src/pdmpublishersolidworks_profiles.md
-  - name: Share Profiles Using a PIN
-    href: ../../src/pdmpublishersolidworks_profile_sharing.md
+  - name: Profiles
+    expanded: true
+    items:
+    - name: Profiles and Presets
+      href: ../../src/pdmpublishersolidworks_profiles.md
+    - name: Share Profiles Using a PIN
+      href: ../../src/pdmpublishersolidworks_profile_sharing.md
   - name: Options Tab
     href: ../../src/pdmpublishersolidworks_options.md
     expanded: true
