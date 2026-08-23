@@ -1,7 +1,7 @@
 ---
 title: Profiles and Presets | PDMPublisher for SOLIDWORKS
 description: Create, select, rename, export, import, and delete reusable PDMPublisher for SOLIDWORKS profiles or start from a built-in preset.
-ms.date: 08/18/2026
+ms.date: 08/23/2026
 ms.topic: how-to
 ---
 
@@ -66,12 +66,16 @@ While the profile name is being edited, other profile commands are unavailable u
 
 ## Move Profiles Between Computers
 
-- **Export...** writes the selected profile to a file that can be backed up or shared.
-- **Load From...** creates or loads a profile from a previously exported profile file.
+- **Export > Export to File...** writes the selected profile to a file that can be backed up or shared.
+- **Load From... > Load from File...** creates or loads a profile from a previously exported profile file.
+- **Export > Share using PIN...** uploads selected profile sections and returns a six-digit PIN.
+- **Load From... > Load using PIN...** downloads, saves, and applies profile sections shared by PIN.
 
 Use profile export before changing computers or before making major changes to an established publishing setup.
 
 An exported profile preserves your customized configuration. It is different from a built-in preset and can be loaded on another computer with **Load From...**.
+
+PIN sharing is available in version `2026.08.10` and later. PINs remain available for 30 days. See [Share Profiles Using a PIN](pdmpublishersolidworks_profile_sharing.md) for the complete workflow and security guidance.
 
 ## Delete a Profile
 

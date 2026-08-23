@@ -1,7 +1,7 @@
 ---
 title: PDM Task vs SOLIDWORKS Add-in | PDMPublisher
 description: Compare PDMPublisher for SOLIDWORKS PDM Professional with PDMPublisher for SOLIDWORKS and choose the correct documentation.
-ms.date: 08/18/2026
+ms.date: 08/23/2026
 ms.topic: overview
 ---
 
@@ -41,7 +41,7 @@ Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-laun
 
 ## SOLIDWORKS Add-in Only
 
-Use the [SOLIDWORKS add-in documentation](pdmpublishersolidworks.md) for profiles and starter templates, the collapsible task-pane navigation, opening the export folder after publishing, the job Logs tab, and add-in About/theme settings.
+Use the [SOLIDWORKS add-in documentation](pdmpublishersolidworks.md) for profiles, starter templates, [profile sharing by PIN](pdmpublishersolidworks_profile_sharing.md), the collapsible task-pane navigation, opening the export folder after publishing, the job Logs tab, and add-in About/theme settings.
 
 > [!TIP]
 > If you are configuring a task in the PDM Administration tool, follow the **PDM Professional** section of the TOC. If you are publishing from a task pane inside SOLIDWORKS, follow the **SOLIDWORKS add-in** section.

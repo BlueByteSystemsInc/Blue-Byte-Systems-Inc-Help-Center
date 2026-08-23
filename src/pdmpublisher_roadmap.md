@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Product Roadmap | Upcoming Features & Planned Enhancements
 description: View the PDMPublisher product roadmap with planned features, upcoming enhancements, and future development priorities by quarter.
-ms.date: 08/19/2026
+ms.date: 08/23/2026
 ms.topic: conceptual
 ---
 
@@ -79,22 +79,21 @@ The released feature includes:
 
 See [Profiles and Presets](/src/pdmpublishersolidworks_profiles.html) for setup instructions.
 ---
-#### Shareable Settings / Profile Sharing by PIN Code 
+#### Profile Sharing by PIN Code
+✅ Implemented in 2026.08.10
+
 **Applies to: SOLIDWORKS add-in**
 
-Planned support for sharing PDMPublisher settings or profiles using a PIN code.
+Added short-lived profile sharing through `pdmpublisher.com`.
 
-This feature is intended to make it easier for teams to distribute approved configurations without manually copying files or recreating settings.
+The released feature includes:
 
-Planned areas of focus include:
+- Sharing selected Options, Annotations, and Conditions sections
+- Generating a six-digit PIN that remains available for 30 days
+- Loading a shared profile by PIN and selecting which included sections to apply
+- Saving the downloaded profile locally and handling duplicate profile names
 
-- Generating a shareable PIN code for a profile
-- Importing shared settings using the PIN code
-- Allowing administrators to distribute standard configurations
-- Helping users quickly reproduce approved export settings
-- Reducing configuration mistakes between users or machines
-
-Target: End of Q3 2026
+See [Share Profiles Using a PIN](/src/pdmpublishersolidworks_profile_sharing.html) for instructions and security guidance.
 ---
 ### 2026 Q4
 **Applies to: PDM Task**

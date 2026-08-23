@@ -2197,6 +2197,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-load-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-load-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-load-pin.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-load-pin.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/solidworks/profile-new-from.png",
       "output": {
         "resource": {
@@ -2211,6 +2231,26 @@
       "output": {
         "resource": {
           "relative_path": "images/pdmpublisher/solidworks/profile-save.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-share-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-share-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/profile-shared-pin.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/profile-shared-pin.png"
         }
       },
       "version": ""
@@ -3591,6 +3631,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks_options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_profile_sharing.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_profile_sharing.html"
         }
       },
       "version": ""

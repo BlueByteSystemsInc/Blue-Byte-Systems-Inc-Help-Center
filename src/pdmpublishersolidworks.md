@@ -1,7 +1,7 @@
 ---
 title: PDMPublisher for SOLIDWORKS
 description: Use PDMPublisher inside SOLIDWORKS to export documents and references with reusable profiles, annotations, conditions, and detailed logs.
-ms.date: 08/18/2026
+ms.date: 08/23/2026
 ms.topic: overview
 ---
 
@@ -54,7 +54,7 @@ When minimized, the tab names are displayed vertically. Select the arrow at the 
 
 ## Profiles and Presets
 
-Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. Built-in presets provide starting configurations for DXF, PDF and STEP, and STEP publishing. See [Profiles and Presets](pdmpublishersolidworks_profiles.md).
+Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. Built-in presets provide starting configurations for DXF, combined PDF and STEP, and STEP publishing. Version `2026.08.10` and later can [share selected profile sections using a six-digit PIN](pdmpublishersolidworks_profile_sharing.md). See [Profiles and Presets](pdmpublishersolidworks_profiles.md) for profile setup and file-based transfer.
 
 ## Download and Licensing
 

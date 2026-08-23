@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/19/2026
+ms.date: 08/23/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,13 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.10
+*Applies to **SOLIDWORKS Add-in***
+
+- Added profile sharing through `pdmpublisher.com`. A user can share selected Options, Annotations, and Conditions sections and receive a six-digit PIN that remains available for 30 days.
+- Added **Load using PIN...** to download a shared profile, select which included sections to apply, save the result locally, and make it the active profile. Existing settings in sections that are not selected remain unchanged.
+- Added profile-name conflict handling so a downloaded profile can replace the local profile, be saved under another name, or be cancelled. See [Share Profiles Using a PIN](/src/pdmpublishersolidworks_profile_sharing.html).
 
 ## 2026.08.09
 *Applies to **PDM Task** and **SOLIDWORKS Add-in***

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>About, Updates, Theme, and Licensing | PDMPublisher for SOLIDWORKS | Help Center </title>
+      <title>Share Profiles Using a PIN | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="About, Updates, Theme, and Licensing | PDMPublisher for SOLIDWORKS | Help Center ">
+      <meta name="title" content="Share Profiles Using a PIN | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Check the PDMPublisher version, control Windows theme syncing, download updates, and manage licensing.">
+      <meta name="description" content="Share selected PDMPublisher for SOLIDWORKS profile settings with another user by using an expiring six-digit PIN.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_About.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_profile_sharing.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -107,61 +107,67 @@
         </div>
 
         <article data-uid="">
-<h1 id="about-updates-theme-and-licensing">About, Updates, Theme, and Licensing</h1>
+<h1 id="share-profiles-using-a-pin">Share Profiles Using a PIN</h1>
 
-<p>The About tab shows the installed version, available update, appearance settings, licensing commands, product links, EULA, and support address.</p>
-<p><img src="/images/pdmpublisher/solidworks/about.png" alt="PDMPublisher for SOLIDWORKS About page"></p>
-<h2 id="version-and-updates">Version and Updates</h2>
-<ul>
-<li><strong>Current Version</strong> identifies the installed add-in build.</li>
-<li><strong>A new version is available</strong> appears when an update can be downloaded.</li>
-<li><strong>Download the latest version...</strong> opens the latest installer download.</li>
-</ul>
-<p>The current release is <code>2026.08.10</code>.</p>
-<h2 id="windows-light-and-dark-theme">Windows Light and Dark Theme</h2>
-<p>Enable <strong>Use Windows light/dark theme (applies on restart)</strong> to make PDMPublisher follow the Windows app theme.</p>
-<p><img src="/images/pdmpublisher/solidworks/theme-toggle.png" alt="Windows light and dark theme option"></p>
-<p>Restart SOLIDWORKS after changing this option. When disabled, PDMPublisher uses its original light appearance.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Theme syncing changes colors only. It does not change the settings, profile data, or publishing behavior.</p>
+<p>PDMPublisher for SOLIDWORKS <code>2026.08.10</code> and later can share a profile through <code>pdmpublisher.com</code>. The sender receives a six-digit PIN, and another PDMPublisher for SOLIDWORKS user can enter that PIN to download, save, and apply the shared settings.</p>
+<p>This feature belongs to <strong>PDMPublisher for SOLIDWORKS</strong>. The PDM Professional task stores settings in its task definition and does not use profile PINs.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Both users need an internet connection and a version of PDMPublisher for SOLIDWORKS that supports profile PIN sharing. A PIN remains available for 30 days.</p>
 </div>
-<h2 id="licensing-and-links">Licensing and Links</h2>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Activate or Deactivate Product</strong></td>
-<td>Opens product license management.</td>
-</tr>
-<tr>
-<td><strong>PDMPublisher.com</strong></td>
-<td>Opens the product website.</td>
-</tr>
-<tr>
-<td><strong>Purchase A License (bluebyte.biz)</strong></td>
-<td>Opens the license purchase page.</td>
-</tr>
-<tr>
-<td><strong>End User License Agreement (EULA)</strong></td>
-<td>Opens the product license terms.</td>
-</tr>
-</tbody>
-</table>
-<p>See <a href="licensespdmpublisher.html">License Management</a> for activation and deactivation instructions.</p>
-<h2 id="funny-mode">Funny Mode</h2>
-<p><strong>Enable funny mode</strong> changes progress-bar messages for entertainment. It does not change processing behavior or performance.</p>
-<p>For support, use <code>support@bluebytesystemsinc.zohodesk.com</code>.</p>
+<h2 id="what-a-shared-profile-can-include">What a Shared Profile Can Include</h2>
+<p>Before uploading or applying a profile, PDMPublisher lets you select these sections:</p>
+<ul>
+<li><strong>Options</strong></li>
+<li><strong>Annotations</strong></li>
+<li><strong>Conditions</strong></li>
+</ul>
+<p>All available sections are selected by default. Select at least one section to continue.</p>
+<p>The recipient can apply only the included sections they need. Settings in sections that are not selected remain unchanged in the recipient's current profile.</p>
+<h2 id="share-a-profile">Share a Profile</h2>
+<ol>
+<li><p>Select the profile you want to share.</p>
+</li>
+<li><p>Open <strong>Export</strong>, then select <strong>Share using PIN...</strong>.</p>
+<p><img src="/images/pdmpublisher/solidworks/profile-share-menu.png" alt="Share using PIN command in the Export menu"></p>
+</li>
+<li><p>Select the Options, Annotations, and Conditions sections to include.</p>
+</li>
+<li><p>Select <strong>Share</strong> and wait for the upload to finish.</p>
+</li>
+<li><p>In the <strong>Profile Shared</strong> dialog, select <strong>Copy PIN</strong> and send the PIN to the recipient.</p>
+</li>
+</ol>
+<p><img src="/images/pdmpublisher/solidworks/profile-shared-pin.png" alt="Profile Shared dialog with an expiring six-digit PIN"></p>
+<p>The dialog shows the PIN expiration in the sender's local time.</p>
+<h2 id="load-a-shared-profile">Load a Shared Profile</h2>
+<ol>
+<li><p>Open <strong>Load From...</strong>, then select <strong>Load using PIN...</strong>.</p>
+<p><img src="/images/pdmpublisher/solidworks/profile-load-menu.png" alt="Load using PIN command in the Load From menu"></p>
+</li>
+<li><p>Enter the six-digit PIN supplied by the sender.</p>
+<p><img src="/images/pdmpublisher/solidworks/profile-load-pin.png" alt="Load Profile using PIN dialog"></p>
+</li>
+<li><p>Select <strong>Load Profile</strong>.</p>
+</li>
+<li><p>Select which available sections to apply, then select <strong>Load Selected</strong>.</p>
+</li>
+</ol>
+<p>PDMPublisher downloads the profile, saves it locally, applies the selected sections, and makes it the active profile. Other current sections remain unchanged.</p>
+<p>If a local profile already has the shared profile's name, PDMPublisher asks whether to replace it, import it under another name, or cancel the import.</p>
+<h2 id="security-and-expiration">Security and Expiration</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Anyone who has an active PIN can download the shared profile. Use PIN sharing for convenient, short-lived configuration exchange, not for confidential information.</p>
+</div>
+<p>Review the selected sections before sharing. Profiles can contain export paths, filenames, annotations, conditions, PDM property names, and SQL annotation settings. Do not share passwords, private connection strings, or other secrets.</p>
+<p>An expired or invalid PIN cannot be loaded. Ask the sender to share the profile again to receive a new PIN.</p>
+<p>For file-based transfer that does not use <code>pdmpublisher.com</code>, see <a href="pdmpublishersolidworks_profiles.html#move-profiles-between-computers">Move Profiles Between Computers</a>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_About.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_profile_sharing.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

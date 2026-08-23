@@ -1,7 +1,7 @@
 ---
 title: About, Updates, Theme, and Licensing | PDMPublisher for SOLIDWORKS
 description: Check the PDMPublisher version, control Windows theme syncing, download updates, and manage licensing.
-ms.date: 08/19/2026
+ms.date: 08/23/2026
 ms.topic: how-to
 ---
 
@@ -17,7 +17,7 @@ The About tab shows the installed version, available update, appearance settings
 - **A new version is available** appears when an update can be downloaded.
 - **Download the latest version...** opens the latest installer download.
 
-The current release is `2026.08.09`.
+The current release is `2026.08.10`.
 
 ## Windows Light and Dark Theme
 
