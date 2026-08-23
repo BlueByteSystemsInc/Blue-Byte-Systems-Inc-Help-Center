@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Share Profiles Using a PIN
 
-PDMPublisher for SOLIDWORKS `2026.08.10` and later can share a profile through `pdmpublisher.com`. The sender receives a six-digit PIN, and another PDMPublisher for SOLIDWORKS user can enter that PIN to download, save, and apply the shared settings.
+PDMPublisher for SOLIDWORKS `2026.08.10` and later can share a profile by using a six-digit PIN. Another PDMPublisher for SOLIDWORKS user can enter that PIN to download, save, and apply the shared settings.
 
 This feature belongs to **PDMPublisher for SOLIDWORKS**. The PDM Professional task stores settings in its task definition and does not use profile PINs.
 
@@ -67,4 +67,4 @@ Review the selected sections before sharing. Profiles can contain export paths, 
 
 An expired or invalid PIN cannot be loaded. Ask the sender to share the profile again to receive a new PIN.
 
-For file-based transfer that does not use `pdmpublisher.com`, see [Move Profiles Between Computers](pdmpublishersolidworks_profiles.md#move-profiles-between-computers).
+For file-based transfer instead of PIN sharing, see [Move Profiles Between Computers](pdmpublishersolidworks_profiles.md#move-profiles-between-computers).

@@ -16,7 +16,7 @@ Versions are identified by their compile date, which represents the build date o
 ## 2026.08.10
 *Applies to **SOLIDWORKS Add-in***
 
-- Added profile sharing through `pdmpublisher.com`. A user can share selected Options, Annotations, and Conditions sections and receive a six-digit PIN that remains available for 30 days.
+- Added profile sharing by six-digit PIN. A user can share selected Options, Annotations, and Conditions sections, and the PIN remains available for 30 days.
 - Added **Load using PIN...** to download a shared profile, select which included sections to apply, save the result locally, and make it the active profile. Existing settings in sections that are not selected remain unchanged.
 - Added profile-name conflict handling so a downloaded profile can replace the local profile, be saved under another name, or be cancelled. See [Share Profiles Using a PIN](/src/pdmpublishersolidworks_profile_sharing.html).
 

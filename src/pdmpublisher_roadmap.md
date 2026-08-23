@@ -84,7 +84,7 @@ See [Profiles and Presets](/src/pdmpublishersolidworks_profiles.html) for setup 
 
 **Applies to: SOLIDWORKS add-in**
 
-Added short-lived profile sharing through `pdmpublisher.com`.
+Added short-lived profile sharing by six-digit PIN.
 
 The released feature includes:
 
