@@ -3727,6 +3727,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_presets.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_presets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublishersolidworks_profile_sharing.md",
       "output": {
         ".html": {

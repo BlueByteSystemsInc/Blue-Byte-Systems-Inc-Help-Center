@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Options | PDMPublisher for SOLIDWORKS | Help Center </title>
+      <title>Presets | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Options | PDMPublisher for SOLIDWORKS | Help Center ">
+      <meta name="title" content="Presets | PDMPublisher for SOLIDWORKS | Help Center ">
       
-      <meta name="description" content="Find the focused documentation for every PDMPublisher for SOLIDWORKS output and processing option.">
+      <meta name="description" content="Create a PDMPublisher for SOLIDWORKS profile from a built-in DXF, PDF and STEP, or STEP preset.">
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_options.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_presets.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -103,63 +103,67 @@
             <i class="bi bi-list"></i>
           </button>
 
-          <nav id="breadcrumb"></nav>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="pdmpublishersolidworks.html">PDMPublisher for SOLIDWORKS</a></li>
+            </ol>
+          </nav>
+
         </div>
 
         <article data-uid="">
-<h1 id="options-tab">Options Tab</h1>
+<h1 id="presets">Presets</h1>
 
-<p>The PDMPublisher tab contains the output and processing settings stored in the selected <a href="pdmpublishersolidworks_profiles.html">profile</a>.</p>
-<p><img src="/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher for SOLIDWORKS Options page"></p>
-<p>Use the focused pages beneath <strong>Options Tab</strong> in the TOC:</p>
+<p>Presets are built-in starting configurations for common publishing workflows. They are available only in <strong>PDMPublisher for SOLIDWORKS</strong>.</p>
+<p><img src="/images/pdmpublisher/solidworks/profile-new-from.png" alt="New profile and starter presets"></p>
+<h2 id="create-a-profile-from-a-preset">Create a Profile from a Preset</h2>
+<ol>
+<li>Open <strong>New</strong>.</li>
+<li>Select <strong>New From</strong>.</li>
+<li>Choose a supplied preset.</li>
+<li>Review the new profile, adjust its settings, and select <strong>Save</strong>.</li>
+</ol>
+<p>The supplied presets are:</p>
 <table>
 <thead>
 <tr>
-<th>Category</th>
-<th>Pages</th>
+<th>Preset</th>
+<th>Starting purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Profiles and presets</td>
-<td><a href="pdmpublishersolidworks_profiles.html">Profiles</a>, <a href="pdmpublishersolidworks_presets.html">Presets</a>, and <a href="pdmpublishersolidworks_profile_sharing.html">Share Profiles Using a PIN</a></td>
+<td><code>DXF</code></td>
+<td>Drawing or manufacturing DXF output.</td>
 </tr>
 <tr>
-<td>Output paths and names</td>
-<td><a href="pdmpublisher-options/export-location.html">Export Location</a>, <a href="pdmpublisher-options/filename.html">Filename</a>, <a href="pdmpublisher-options/file-formats.html">File Formats</a>, <a href="pdmpublishersolidworks-open-export-location.html">Open Export Location</a>, and <a href="pdmpublisher-options/archive-all-exported-documents.html">Archive Exported Documents</a></td>
+<td><code>PDF And Step</code></td>
+<td>PDF documentation and STEP model output.</td>
 </tr>
 <tr>
-<td>Assembly and references</td>
-<td><a href="pdmpublisher-options/export-references-individually.html">Export References Individually</a> and <a href="pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.html">Ignore Sub-Assembly Children</a></td>
-</tr>
-<tr>
-<td>Configurations</td>
-<td><a href="pdmpublisher-options/convert-multiple-configurations.html">Convert Multiple Configurations</a></td>
-</tr>
-<tr>
-<td>Drawing sheets and PDFs</td>
-<td><a href="pdmpublisher-options/sheets-to-export.html">Sheets to Export</a>, <a href="pdmpublisher-options/sheet-name-pattern.html">Sheet Name Pattern</a>, <a href="pdmpublisher-options/merge-exported-pdfs.html">Merge Exported PDFs</a>, <a href="pdmpublisher-options/add-table-of-content-to-merged-pdf.html">Table of Content</a>, <a href="pdmpublisher-options/table-columns.html">Table Columns</a>, and <a href="pdmpublisher-options/pdf-bookmarks.html">PDF Bookmarks</a></td>
-</tr>
-<tr>
-<td>Manufacturing outputs</td>
-<td><a href="pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.html">Sheet Metal Flat Pattern DXF</a> and <a href="pdmpublisher-options/split-bodies.html">Split Bodies</a></td>
-</tr>
-<tr>
-<td>Execution</td>
-<td><a href="pdmpublishersolidworks-publish.html">Run a Publish Job</a></td>
+<td><code>STEP</code></td>
+<td>STEP model output.</td>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Task-only settings are intentionally excluded from this SOLIDWORKS add-in section. See <a href="pdmpublisher-product-differences.html">PDM Task vs SOLIDWORKS Add-in</a> when a setting shown in the PDM Administration tool is not present here.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>A preset does not publish by itself. <strong>New From</strong> creates a profile from the preset; the new profile is the configuration used when you select <strong>PUBLISH</strong>.</p>
 </div>
-<p>Use the <a href="pdmpublisherspecialvariable.html">Placeholder Reference</a> when constructing output paths, filenames, sheet patterns, annotations, or conditions.</p>
+<h2 id="customize-the-new-profile">Customize the New Profile</h2>
+<p>Presets are starting points, not locked configurations. Review these areas before publishing:</p>
+<ul>
+<li><a href="pdmpublishersolidworks_options.html">Options</a>, including the export location, filename, formats, and reference processing</li>
+<li><a href="pdmpublishersolidworks_annotations.html">Annotations</a></li>
+<li><a href="conditions_solidworks.html">Conditions</a></li>
+</ul>
+<p>Changing a profile created from a preset does not change the original preset. You can create several profiles from the same preset and customize each one for a different customer, project, or output package.</p>
+<p>For profile selection, renaming, file transfer, deletion, and other profile commands, see <a href="pdmpublishersolidworks_profiles.html">Profiles</a>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_options.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_presets.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

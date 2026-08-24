@@ -77,7 +77,7 @@ The released feature includes:
 - Creating profiles from the built-in `DXF`, `PDF And Step`, and `STEP` presets
 - Reusing consistent publishing settings across users and workstations
 
-See [Profiles and Presets](/src/pdmpublishersolidworks_profiles.html) for setup instructions.
+See [Profiles](/src/pdmpublishersolidworks_profiles.html) and [Presets](/src/pdmpublishersolidworks_presets.html) for setup instructions.
 ---
 #### Profile Sharing by PIN Code
 ✅ Implemented in 2026.08.10

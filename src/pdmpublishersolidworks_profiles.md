@@ -1,13 +1,13 @@
 ---
-title: Profiles and Presets | PDMPublisher for SOLIDWORKS
-description: Create, select, rename, export, import, and delete reusable PDMPublisher for SOLIDWORKS profiles or start from a built-in preset.
+title: Profiles | PDMPublisher for SOLIDWORKS
+description: Create, select, rename, export, import, share, and delete reusable PDMPublisher for SOLIDWORKS profiles.
 ms.date: 08/23/2026
 ms.topic: how-to
 bbsProductName: PDMPublisher for SOLIDWORKS
 bbsProductHref: pdmpublishersolidworks.html
 ---
 
-# Profiles and Presets
+# Profiles
 
 A profile is a reusable set of PDMPublisher settings. Use profiles to switch between workflows without rebuilding the Options, Annotations, and Conditions configuration each time.
 
@@ -15,14 +15,7 @@ This feature belongs to **PDMPublisher for SOLIDWORKS**. The PDM task stores its
 
 ![PDMPublisher profile toolbar](/images/pdmpublisher/solidworks/profile-toolbar.png)
 
-## Profiles and Presets
-
-| Term | Meaning |
-| --- | --- |
-| **Profile** | A named, saved publishing configuration containing Options, Annotations, and Conditions. Select a profile before publishing. |
-| **Preset** | A built-in starting configuration available under **New > New From**. Selecting a preset creates a new profile that you can edit and save. |
-
-Changing a profile created from a preset does not change the original preset. You can create several profiles from the same preset and customize each one for a different customer, project, or output location.
+A profile is a named publishing configuration containing Options, Annotations, and Conditions. Select a profile before publishing.
 
 ## Select a Profile
 
@@ -34,24 +27,7 @@ Give profiles names that describe their output, such as `Released PDF`, `Laser D
 
 Select **New > New...** to create a profile that you can configure from the beginning. Set its Export Location, Filename, File Formats, reference behavior, Annotations, and Conditions before publishing.
 
-## Create a Profile from a Preset
-
-Select **New > New From**, then choose a supplied preset.
-
-![New profile and starter templates](/images/pdmpublisher/solidworks/profile-new-from.png)
-
-The supplied presets are:
-
-| Preset | Starting purpose |
-| --- | --- |
-| `DXF` | Drawing or manufacturing DXF output. |
-| `PDF And Step` | PDF documentation and STEP model output. |
-| `STEP` | STEP model output. |
-
-Presets are starting points, not locked configurations. Review the export location, filename, formats, reference behavior, annotations, and conditions before publishing.
-
-> [!IMPORTANT]
-> A preset does not publish by itself. **New From** creates a profile from the preset; the profile is the configuration selected when you choose **PUBLISH**.
+To begin with a supplied configuration instead of a blank profile, see [Presets](pdmpublishersolidworks_presets.md).
 
 ## Rename a Profile
 
