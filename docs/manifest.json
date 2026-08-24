@@ -2037,6 +2037,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/task-setup-addin.png",
       "output": {
         "resource": {

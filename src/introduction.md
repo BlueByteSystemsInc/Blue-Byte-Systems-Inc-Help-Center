@@ -1,7 +1,7 @@
 ﻿---
 title: Getting Started | Blue Byte Systems Help Center | SOLIDWORKS PDM
 description: Welcome to Blue Byte Systems, a provider of solutions for SOLIDWORKS PDM automation, publishing, migration, data quality, and task optimization.
-ms.date: 08/13/2026
+ms.date: 08/24/2026
 ms.topic: conceptual
 ---
 
@@ -43,6 +43,10 @@ PDMPublisher is one product with one code base, available in two versions.
 ### [PDMPublisher for SOLIDWORKS](https://pdmpublisher.com/solidworks-desktop/)
 
 ![pdmpublishersolidworksaddin](/images/pdmpublishersolidworksaddin.png)
+
+Starting with version `2026.08.11`, PDMPublisher for SOLIDWORKS is registered as a SOLIDWORKS Partner Solution add-in and appears under **Partner Solution Add-Ins** in the SOLIDWORKS **Add-Ins** dialog.
+
+![PDMPublisher for SOLIDWORKS listed under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 
 - Runs as a SOLIDWORKS add-in
 - Use it for exporting directly from the SOLIDWORKS desktop application

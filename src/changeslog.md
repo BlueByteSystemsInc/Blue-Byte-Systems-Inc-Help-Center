@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/23/2026
+ms.date: 08/24/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,11 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.11
+*Applies to **SOLIDWORKS Add-in***
+
+- Registered PDMPublisher for SOLIDWORKS as a SOLIDWORKS Partner Solution add-in. It now appears under **Partner Solution Add-Ins** in the SOLIDWORKS **Add-Ins** dialog. No other product functionality changed in this version.
 
 ## 2026.08.10
 *Applies to **SOLIDWORKS Add-in***
