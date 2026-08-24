@@ -3,6 +3,8 @@ title: Share Profiles Using a PIN | PDMPublisher for SOLIDWORKS
 description: Share selected PDMPublisher for SOLIDWORKS profile settings with another user by using an expiring six-digit PIN.
 ms.date: 08/23/2026
 ms.topic: how-to
+bbsProductName: PDMPublisher for SOLIDWORKS
+bbsProductHref: pdmpublishersolidworks.html
 ---
 
 # Share Profiles Using a PIN

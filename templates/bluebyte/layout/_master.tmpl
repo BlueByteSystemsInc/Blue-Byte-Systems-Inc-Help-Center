@@ -135,7 +135,14 @@
           {{/_disableToc}}
 
           {{^_disableBreadcrumb}}
-          <nav id="breadcrumb"></nav>
+{{#bbsProductName}}
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{{bbsProductHref}}">{{bbsProductName}}</a></li>
+            </ol>
+          </nav>
+{{/bbsProductName}}
+{{^bbsProductName}}          <nav id="breadcrumb"></nav>{{/bbsProductName}}
           {{/_disableBreadcrumb}}
         </div>
 

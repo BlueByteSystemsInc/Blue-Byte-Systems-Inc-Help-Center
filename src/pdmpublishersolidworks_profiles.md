@@ -3,6 +3,8 @@ title: Profiles and Presets | PDMPublisher for SOLIDWORKS
 description: Create, select, rename, export, import, and delete reusable PDMPublisher for SOLIDWORKS profiles or start from a built-in preset.
 ms.date: 08/23/2026
 ms.topic: how-to
+bbsProductName: PDMPublisher for SOLIDWORKS
+bbsProductHref: pdmpublishersolidworks.html
 ---
 
 # Profiles and Presets
