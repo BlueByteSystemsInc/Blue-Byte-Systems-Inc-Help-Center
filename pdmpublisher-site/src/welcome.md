@@ -35,7 +35,7 @@ The PDM task add-in runs inside SOLIDWORKS PDM Professional. Administrators conf
 
 The SOLIDWORKS add-in provides an interactive publishing workflow directly inside the SOLIDWORKS desktop application. It can also be used without SOLIDWORKS PDM Professional.
 
-Starting with version `2026.08.11`, PDMPublisher for SOLIDWORKS is registered as a SOLIDWORKS Partner Solution add-in and appears under **Partner Solution Add-Ins** in the SOLIDWORKS **Add-Ins** dialog.
+PDMPublisher for SOLIDWORKS is registered as a SOLIDWORKS Partner Solution add-in and appears under **Partner Solution Add-Ins** in the SOLIDWORKS **Add-Ins** dialog.
 
 ![PDMPublisher for SOLIDWORKS listed under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 

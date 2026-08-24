@@ -18,7 +18,7 @@ Selects the output formats created during publishing. Both products can generate
 
 ## Format Names and Icons
 
-Starting with version `2026.08.05`, the selector shows a descriptive format name, its output extension, and a file-type icon. The icon is supplied by Windows and may vary with the applications and file associations installed on the computer. It is only a visual identifier and does not change the export.
+The selector shows a descriptive format name, its output extension, and a file-type icon. The icon is supplied by Windows and may vary with the applications and file associations installed on the computer. It is only a visual identifier and does not change the export.
 
 ## Supported Outputs
 
