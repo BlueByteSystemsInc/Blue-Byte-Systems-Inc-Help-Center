@@ -10,6 +10,10 @@ ms.topic: conceptual
 PDMPublisher automates publishing and export workflows for SOLIDWORKS and SOLIDWORKS PDM Professional. It can generate PDFs, DXFs, STEP files, release packages, and other deliverables using repeatable rules.
 
 <p align="center">
+<a class="bbs-download-button" href="/src/pdmpublisherdemo.html">▶ Watch PDMPublisher Demos</a>
+</p>
+
+<p align="center">
 <a href="https://www.solidworks.com/partner-product/pdmpublisher" target="_blank" rel="noopener noreferrer"><img src="/images/solution_partner_logo.png" alt="SOLIDWORKS Solution Partner" width="260"/></a>
 </p>
 
@@ -51,6 +55,7 @@ PDMPublisher supports PDF, 3D PDF, DWG, DXF, STEP, IGES, Parasolid, STL, eDrawin
 
 ## Getting started
 
+- [Watch the PDMPublisher video demos](/src/pdmpublisherdemo.html).
 - [Request a 7-day trial](/src/pdmpublishertrial.html).
 - [Install or update PDMPublisher with PDMDeploy](/src/updateaddinswithcdpdm.html).
 - [Set up your first PDM task](/src/propertiespagepdmpublisher.html).
