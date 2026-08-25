@@ -199,6 +199,8 @@
       href: pdmpublishersolidworks.md 
       expanded: true
       items:
+      - name: Install and Enable the Add-in
+        href: pdmpublishersolidworks_installation.md
       - name: PDM Task vs SOLIDWORKS Add-in
         href: pdmpublisher-product-differences.md
       - name: Options Tab

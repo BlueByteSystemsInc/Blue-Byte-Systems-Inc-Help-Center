@@ -1,7 +1,7 @@
 ---
 title: PDMPublisher for SOLIDWORKS
 description: Use PDMPublisher inside SOLIDWORKS to export documents and references with reusable profiles, annotations, conditions, and detailed logs.
-ms.date: 08/23/2026
+ms.date: 08/24/2026
 ms.topic: overview
 ---
 
@@ -15,6 +15,21 @@ PDMPublisher for SOLIDWORKS is the SOLIDWORKS add-in version of PDMPublisher. It
 See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md) for a side-by-side comparison and links to the settings shared by both products.
 
 ![PDMPublisher for SOLIDWORKS 2026.08.08 open in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/overview-20260808.png)
+
+## Install and Enable the Add-In
+
+Before using PDMPublisher, [download and install PDMPublisher for SOLIDWORKS](pdmpublishersolidworks_installation.md). Close SOLIDWORKS before running the MSI installer.
+
+After installation:
+
+1. Start SOLIDWORKS.
+2. Select **Tools > Add-Ins**.
+3. Locate **PDMPublisher (SOLIDWORKS)** under **Partner Solution Add-Ins**.
+4. Select **Active Add-ins** to load it now.
+5. Select **Start Up** to load it automatically with SOLIDWORKS.
+6. Select **OK**.
+
+![PDMPublisher for SOLIDWORKS enabled under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 
 ## Start a Publish Job
 
@@ -58,6 +73,7 @@ Profiles let you keep separate publishing configurations for different outputs, 
 
 ## Download and Licensing
 
+- [Installation guide](pdmpublishersolidworks_installation.md)
 - [Download PDMPublisher for SOLIDWORKS](https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher)
 - [Purchase a PDMPublisher for SOLIDWORKS license](https://bluebyte.biz/product/pdmpublisher-solidworks)
 - [License management](licensespdmpublisher.md)

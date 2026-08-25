@@ -3717,6 +3717,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublishersolidworks_logs.md",
       "output": {
         ".html": {

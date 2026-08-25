@@ -5,9 +5,11 @@
     href: welcome.md
   - name: Get a 7-day Trial
     href: ../../src/pdmpublishertrial.md
+  - name: Install PDMPublisher for SOLIDWORKS
+    href: ../../src/pdmpublishersolidworks_installation.md
   - name: Quick Demo
     href: ../../src/pdmpublisherdemo.md
-  - name: Installation
+  - name: Install the PDM Task Add-in
     href: ../../src/installingpdmaddins.md
   - name: License Management
     href: ../../src/licensespdmpublisher.md
@@ -181,6 +183,8 @@
   items:
   - name: Overview
     href: ../../src/pdmpublishersolidworks.md
+  - name: Install and Enable the Add-in
+    href: ../../src/pdmpublishersolidworks_installation.md
   - name: PDM Task vs SOLIDWORKS Add-in
     href: ../../src/pdmpublisher-product-differences.md
   - name: Options Tab
