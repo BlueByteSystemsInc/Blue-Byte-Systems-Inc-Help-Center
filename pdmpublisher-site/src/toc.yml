@@ -1,8 +1,8 @@
 ﻿- name: Start Here
   expanded: true
   items:
-  - name: Welcome
-    href: welcome.md
+  - name: Introduction
+    href: ../../src/introduction.md
   - name: Get a 7-day Trial
     href: ../../src/pdmpublishertrial.md
   - name: Quick Demo
