@@ -15,6 +15,22 @@ Write-Host "Custom main.css copied into $OutputPath/public."
 
 $outputFullPath = [IO.Path]::GetFullPath($OutputPath).TrimEnd([IO.Path]::DirectorySeparatorChar)
 $utf8WithoutBom = New-Object Text.UTF8Encoding($false)
+$tocDirectory = Join-Path $OutputPath "src"
+$tocHtmlPath = Join-Path $tocDirectory "toc.html"
+$tocJsonPath = Join-Path $tocDirectory "toc.json"
+
+if (-not (Test-Path -LiteralPath $tocHtmlPath) -or -not (Test-Path -LiteralPath $tocJsonPath)) {
+    throw "Generated PDMPublisher TOC files were not found in $tocDirectory."
+}
+
+# Docfx loads the sidebar from toc.json after reading the docfx:tocrel metadata.
+# Use matching content-versioned HTML and JSON filenames so browser/CDN caches
+# cannot keep serving an older navigation tree after a documentation deployment.
+$tocCacheKey = (Get-FileHash -LiteralPath $tocJsonPath -Algorithm SHA256).Hash.Substring(0, 12).ToLowerInvariant()
+$versionedTocBaseName = "toc.$tocCacheKey"
+Copy-Item -LiteralPath $tocHtmlPath -Destination (Join-Path $tocDirectory "$versionedTocBaseName.html") -Force
+Copy-Item -LiteralPath $tocJsonPath -Destination (Join-Path $tocDirectory "$versionedTocBaseName.json") -Force
+
 $htmlFiles = Get-ChildItem -LiteralPath $OutputPath -Filter "*.html" -Recurse -File
 
 foreach ($htmlFile in $htmlFiles) {
@@ -28,6 +44,13 @@ foreach ($htmlFile in $htmlFiles) {
     }
 
     $htmlContent = Get-Content -LiteralPath $htmlFile.FullName -Raw
+
+    $htmlContent = [regex]::Replace(
+        $htmlContent,
+        '(<meta\s+name=["'']docfx:tocrel["'']\s+content=["''])([^"'']*?)toc(?:\.[a-f0-9]{12})?\.html(["''])',
+        "`$1`$2$versionedTocBaseName.html`$3",
+        [Text.RegularExpressions.RegexOptions]::IgnoreCase
+    )
 
     # Root-relative links escape the /help/ deployment folder, so scope them to this site.
     $htmlContent = [regex]::Replace(
