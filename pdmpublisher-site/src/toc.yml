@@ -5,8 +5,6 @@
     href: welcome.md
   - name: Get a 7-day Trial
     href: ../../src/pdmpublishertrial.md
-  - name: Install PDMPublisher for SOLIDWORKS
-    href: ../../src/pdmpublishersolidworks_installation.md
   - name: Quick Demo
     href: ../../src/pdmpublisherdemo.md
   - name: Install the PDM Task Add-in
