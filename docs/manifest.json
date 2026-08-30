@@ -3507,10 +3507,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-product-body.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-product-body.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublisher-product-differences.md",
       "output": {
         ".html": {
           "relative_path": "src/pdmpublisher-product-differences.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-solidworks-product-body.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-solidworks-product-body.html"
         }
       },
       "version": ""

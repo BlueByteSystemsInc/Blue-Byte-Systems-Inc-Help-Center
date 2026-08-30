@@ -15,6 +15,7 @@
       <meta name="title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}">
       {{#_description}}<meta name="description" content="{{_description}}">{{/_description}}
       {{#description}}<meta name="description" content="{{description}}">{{/description}}
+      {{#_noindex}}<meta name="robots" content="noindex, nofollow">{{/_noindex}}
       <link rel="icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
       <link rel="stylesheet" href="{{_rel}}public/docfx.min.css">
       <link rel="stylesheet" href="{{_rel}}public/main.css?v=20260809-content-trials-7">
@@ -59,6 +60,7 @@
 
   {{^redirect_url}}
   <body class="tex2jax_ignore" data-layout="{{_layout}}{{layout}}" data-yaml-mime="{{yamlmime}}">
+    {{^_embedArticleOnly}}
     <header class="bg-body border-bottom">
       {{^_disableNavbar}}
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
@@ -84,6 +86,7 @@
       </nav>
       {{/_disableNavbar}}
     </header>
+    {{/_embedArticleOnly}}
 
     <main class="container-xxl">
       {{^_disableToc}}
@@ -101,6 +104,7 @@
       {{/_disableToc}}
 
       <div class="content">
+        {{^_embedArticleOnly}}
         <div class="bbs-content-trials d-print-none" aria-label="Trial requests">
           <div class="bbs-content-trials-copy">
             <span class="bbs-content-trials-icon" aria-hidden="true">
@@ -124,6 +128,7 @@
             </a>
           </div>
         </div>
+        {{/_embedArticleOnly}}
 
         <div class="actionbar">
           {{^_disableToc}}
@@ -178,6 +183,7 @@
     <div class="container-xxl search-results" id="search-results"></div>
     {{/_enableSearch}}
 
+    {{^_embedArticleOnly}}
     <footer class="border-top text-secondary">
       <div class="container-xxl">
         <div class="flex-fill">
@@ -185,6 +191,7 @@
         </div>
       </div>
     </footer>
+    {{/_embedArticleOnly}}
   </body>
   {{/redirect_url}}
 </html>
