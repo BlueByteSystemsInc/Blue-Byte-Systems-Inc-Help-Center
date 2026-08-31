@@ -17,9 +17,7 @@ PDMPublisher PDM Task can create these eDrawings files:
 
 ![eDrawings formats in the File Formats selector](/images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png)
 
-## Corrected in Version 2026.08.12
-
-Version `2026.08.12` fixes how the PDM task prepares SOLIDWORKS for eDrawings export. Before saving an eDrawings file, the task now explicitly applies these preferences:
+Before saving an eDrawings file, PDMPublisher PDM Task applies these settings:
 
 - Allow measurement in the exported eDrawings file.
 - Save file properties in the exported file.
