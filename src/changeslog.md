@@ -10,6 +10,15 @@ This page tracks all changes, fixes, improvements, and new features introduced i
 
 Versions are identified by their compile date, which represents the build date of the released version. Each entry may include updates such as new functionality, bug fixes, performance improvements, compatibility updates, configuration changes, and known behavior changes.
 
+## Current Versions
+
+| Product | Current version |
+| --- | --- |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.08.11` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.08.12` |
+
+The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
+
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
