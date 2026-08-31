@@ -1,7 +1,7 @@
 ---
 title: File Formats | PDMPublisher Options
 description: Select the file formats exported by the PDMPublisher PDM task or SOLIDWORKS add-in.
-ms.date: 08/10/2026
+ms.date: 08/31/2026
 ms.topic: reference
 ---
 
@@ -30,7 +30,7 @@ The complete selector is organized as follows:
 | --- | --- |
 | PDF and MBD | Adobe PDF (`pdf`), 3D PDF - MBD (`_3dpdf`) |
 | Drawings | DWG (`dwg`), DXF (`dxf`) |
-| eDrawings | eDrawings Part (`eprt`), eDrawings Assembly (`easm`), eDrawings Drawing (`edrw`) |
+| [eDrawings](edrawings-export-settings.md) | eDrawings Part (`eprt`), eDrawings Assembly (`easm`), eDrawings Drawing (`edrw`) |
 | CAD and interchange | STEP (`step`), IGES (`igs`), STL (`stl`), Parasolid Text (`x_t`), Parasolid Binary (`x_b`), ACIS (`sat`), 3D XML (`3dxml`), 3MF (`3mf`), IFC (`ifc`), Universal 3D (`u3d`), VRML (`wrl`), VDAFS (`vda`), CATIA Graphics (`cgr`), HCG (`hcg`), HOOPS HSF (`hsf`) |
 | Web and images | HTML (`html`), Microsoft XAML (`xaml`), JPEG (`jpg`), TIF (`tif`), Bitmap (`bmp`), Adobe Illustrator (`ai`), Adobe Photoshop (`psd`) |
 
@@ -53,6 +53,12 @@ Version `2026.08.05` adds these output choices:
 
 > [!NOTE]
 > PDMPublisher removes formats that are not valid for the source document type. Some formats also depend on the SOLIDWORKS version and export capabilities installed on the computer. The task uses its configured SOLIDWORKS version; the add-in uses the currently running version.
+
+## eDrawings Output
+
+PDMPublisher PDM Task `2026.08.12` fixes the SOLIDWORKS preferences applied when creating `.eprt`, `.easm`, and `.edrw` files. See [eDrawings Export Settings](edrawings-export-settings.md) for the affected preferences and task-host requirements.
+
+This correction applies only to the PDM task. It does not change PDMPublisher for SOLIDWORKS.
 
 If SOLIDWORKS supports an export format that is not currently listed here, contact Blue Byte Systems and request support for that format:
 

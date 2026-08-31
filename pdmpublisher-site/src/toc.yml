@@ -44,6 +44,10 @@
         href: ../../src/pdmpublisher-options/filename.md
       - name: File Formats
         href: ../../src/pdmpublisher-options/file-formats.md
+        expanded: true
+        items:
+        - name: eDrawings Export Settings
+          href: ../../src/pdmpublisher-options/edrawings-export-settings.md
       - name: Archive Exported Documents
         href: ../../src/pdmpublisher-options/archive-all-exported-documents.md
     - name: Assembly and BOM

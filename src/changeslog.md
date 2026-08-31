@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/24/2026
+ms.date: 08/31/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -12,6 +12,13 @@ Versions are identified by their compile date, which represents the build date o
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.08.12
+*Applies to **PDM Task***
+
+- Fixed the SOLIDWORKS export preferences used when the task creates eDrawings Part (`.eprt`), eDrawings Assembly (`.easm`), and eDrawings Drawing (`.edrw`) files.
+- The task now explicitly allows measurement and saves file properties and per-component file properties in supported eDrawings outputs instead of depending on the preferences previously stored on the task host.
+- No PDMPublisher for SOLIDWORKS add-in behavior changed in this release. See [eDrawings Export Settings](/src/pdmpublisher-options/edrawings-export-settings.html).
 
 ## 2026.08.11
 *Applies to **SOLIDWORKS Add-in***

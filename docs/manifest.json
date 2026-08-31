@@ -3247,6 +3247,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/edrawings-export-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/edrawings-export-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublisher-options/export-active-document.md",
       "output": {
         ".html": {
