@@ -1,9 +1,9 @@
 param(
     [string]$CredentialPath = (Join-Path $env:USERPROFILE "OneDrive - Blue Byte Systems, Inc\PDMPublisher\PDMPublisherSFTP.txt"),
-    [string]$HostName = "126821.us6.ssh.myftpupload.com",
-    [int]$Port = 22,
-    [string]$RemotePath = "/html/help",
-    [string]$SshHostKeyFingerprint = "ssh-ed25519 255 oxYa4nr7BL5hXCIG5j/OOk54R6yNokpACBoa3tn+Kp4",
+    [string]$HostName = "132.148.181.223",
+    [int]$Port = 21,
+    [string]$RemotePath = "/help",
+    [string]$TlsHostCertificateFingerprint = "5f:c8:4c:4a:62:4a:f8:48:a7:54:0b:26:44:4d:7e:83:3b:78:6f:ee:2d:05:ed:ea:32:a8:e3:4f:20:ea:e6:e5",
     [switch]$SkipBuild,
     [switch]$Preview,
     [switch]$KeepRemoteFiles
@@ -20,12 +20,12 @@ if (-not $localPath.StartsWith($expectedLocalPrefix, [StringComparison]::Ordinal
     throw "Refusing to deploy a local path outside the workspace: $localPath"
 }
 
-if ($normalizedRemotePath -ne "/html/help") {
-    throw "Refusing to deploy outside the expected remote folder /html/help: $normalizedRemotePath"
+if ($normalizedRemotePath -ne "/help") {
+    throw "Refusing to deploy outside the expected remote folder /help: $normalizedRemotePath"
 }
 
 if (-not (Test-Path -LiteralPath $CredentialPath -PathType Leaf)) {
-    throw "SFTP credential file was not found: $CredentialPath"
+    throw "FTP credential file was not found: $CredentialPath"
 }
 
 function Get-ValueAfterLabel {
@@ -40,7 +40,7 @@ function Get-ValueAfterLabel {
         }
     }
 
-    throw "The SFTP credential file is missing the '$Label' label or its value."
+    throw "The FTP credential file is missing the '$Label' label or its value."
 }
 
 $credentialLines = @(Get-Content -LiteralPath $CredentialPath)
@@ -48,7 +48,7 @@ $username = Get-ValueAfterLabel -Lines $credentialLines -Label "Username"
 $password = Get-ValueAfterLabel -Lines $credentialLines -Label "Password"
 
 if ([string]::IsNullOrWhiteSpace($username) -or [string]::IsNullOrWhiteSpace($password)) {
-    throw "The SFTP credential file contains an empty username or password."
+    throw "The FTP credential file contains an empty username or password."
 }
 
 if (-not $SkipBuild) {
@@ -81,23 +81,20 @@ Add-Type -Path $winScpAssembly
 
 $securePassword = ConvertTo-SecureString $password -AsPlainText -Force
 $sessionOptions = New-Object WinSCP.SessionOptions -Property @{
-    Protocol = [WinSCP.Protocol]::Sftp
+    Protocol = [WinSCP.Protocol]::Ftp
     HostName = $HostName
     PortNumber = $Port
     UserName = $username
     SecurePassword = $securePassword
-    SshHostKeyFingerprint = $SshHostKeyFingerprint
+    FtpSecure = [WinSCP.FtpSecure]::Explicit
+    TlsHostCertificateFingerprint = $TlsHostCertificateFingerprint
     Timeout = (New-TimeSpan -Minutes 2)
 }
 
 $session = New-Object WinSCP.Session
 try {
-    Write-Host "Connecting to the verified PDMPublisher SFTP host..."
+    Write-Host "Connecting to the verified PDMPublisher FTPS host..."
     $session.Open($sessionOptions)
-
-    if (-not $session.FileExists("/html")) {
-        throw "The expected remote /html folder was not found. No files were changed."
-    }
 
     $remoteExists = $session.FileExists($normalizedRemotePath)
     if ($Preview) {
@@ -112,7 +109,7 @@ try {
             $remoteEntryNames = @($remoteEntries | Select-Object -ExpandProperty Name | Sort-Object)
         }
 
-        Write-Host "SFTP connection verified."
+        Write-Host "FTPS connection verified."
         Write-Host "Local source: $localPath"
         Write-Host "Remote target: $normalizedRemotePath"
         Write-Host "Remote target exists: $remoteExists"
