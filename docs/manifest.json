@@ -1967,6 +1967,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/screenshots/options-property-get-latest-revision-only.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/screenshots/options-property-get-latest-revision-only.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/screenshots/page-annotations.png",
       "output": {
         "resource": {
@@ -3311,6 +3321,16 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublisher-options/filename.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublisher-options/get-latest-revision-only.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublisher-options/get-latest-revision-only.html"
         }
       },
       "version": ""

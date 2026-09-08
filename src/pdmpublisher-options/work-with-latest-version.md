@@ -1,7 +1,7 @@
 ---
 title: Work with Latest Version | PDMPublisher Options
 description: Force PDM to use the latest file versions while publishing.
-ms.date: 08/09/2026
+ms.date: 09/08/2026
 ms.topic: reference
 ---
 
@@ -10,6 +10,8 @@ ms.topic: reference
 ![Work with latest version setting](/images/pdmpublisher/screenshots/options-036-property-work-with-latest-version.png)
 
 Forces PDM to retrieve the latest version of files before publishing.
+
+If [Get latest revision only](get-latest-revision-only.md) is enabled, PDMPublisher uses the version associated with the newest recorded revision instead. **Get latest revision only** takes precedence over this setting.
 
 > [!WARNING]
 > Use this carefully in release workflows. If the workflow expects the checked-in reference set, latest-version publishing can change what is exported.

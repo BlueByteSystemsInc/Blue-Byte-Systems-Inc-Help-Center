@@ -101,6 +101,8 @@
             href: pdmpublisher-options/convert-multiple-configurations.md
           - name: Work with Latest Version
             href: pdmpublisher-options/work-with-latest-version.md
+          - name: Get Latest Revision Only
+            href: pdmpublisher-options/get-latest-revision-only.md
           - name: SOLIDWORKS Version
             href: pdmpublisher-options/use-this-version-of-solidworks.md
         - name: Drawings and PDFs

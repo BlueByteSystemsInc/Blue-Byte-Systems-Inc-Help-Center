@@ -1,23 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Work with Latest Version | PDMPublisher Options | Help Center </title>
+      <title>Get Latest Revision Only | PDMPublisher PDM Task | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Work with Latest Version | PDMPublisher Options | Help Center ">
-      
-      <meta name="description" content="Force PDM to use the latest file versions while publishing.">
-      
+      <meta name="title" content="Get Latest Revision Only | PDMPublisher PDM Task | Help Center ">
+
+      <meta name="description" content="Publish the newest recorded PDM revision and the references saved with that revision instead of unrevised work-in-progress versions.">
+
       <link rel="icon" href="../../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../../public/docfx.min.css">
       <link rel="stylesheet" href="../../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../../toc.html">
       <meta name="docfx:tocrel" content="../toc.html">
-      
+
       <meta name="docfx:rel" content="../../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/work-with-latest-version.md/#L1">
+
+
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/get-latest-revision-only.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -108,20 +108,47 @@
         </div>
 
         <article data-uid="">
-<h1 id="work-with-latest-version">Work with Latest Version</h1>
+<h1 id="get-latest-revision-only">Get Latest Revision Only</h1>
 
-<p><img src="/images/pdmpublisher/screenshots/options-036-property-work-with-latest-version.png" alt="Work with latest version setting"></p>
-<p>Forces PDM to retrieve the latest version of files before publishing.</p>
-<p>If <a href="get-latest-revision-only.html">Get latest revision only</a> is enabled, PDMPublisher uses the version associated with the newest recorded revision instead. <strong>Get latest revision only</strong> takes precedence over this setting.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>Use this carefully in release workflows. If the workflow expects the checked-in reference set, latest-version publishing can change what is exported.</p>
+<p><img src="/images/pdmpublisher/screenshots/options-property-get-latest-revision-only.png" alt="Get latest revision only setting"></p>
+<p>Use <strong>Get latest revision only</strong> when a task must publish the newest recorded PDM revision instead of the newest checked-in version.</p>
+<p>When enabled, PDMPublisher:</p>
+<ul>
+<li>Finds the most recently created revision in the file's PDM history.</li>
+<li>Retrieves the exact file version associated with that revision.</li>
+<li>Retrieves the references as they were saved with that version.</li>
+<li>Writes the selected revision name and PDM version number to the task log.</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>Suppose an assembly has revision <code>B</code> at PDM version <code>12</code>, but versions <code>13</code> through <code>15</code> contain unrevised work in progress.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Version used by the task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Get latest revision only</strong> enabled</td>
+<td>Version <code>12</code>, including the references saved with revision <code>B</code></td>
+</tr>
+<tr>
+<td><a href="work-with-latest-version.html">Work with latest version</a> enabled</td>
+<td>Version <code>15</code></td>
+</tr>
+</tbody>
+</table>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>Get latest revision only</strong> overrides <strong>Work with latest version</strong>. A file without a recorded PDM revision cannot be exported while this option is enabled, and the task reports a failure instead of publishing an unrevised version.</p>
 </div>
+<p>This option applies only to <strong>PDMPublisher PDM Task</strong>.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/work-with-latest-version.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-options/get-latest-revision-only.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

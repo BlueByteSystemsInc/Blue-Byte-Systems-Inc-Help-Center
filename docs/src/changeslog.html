@@ -127,7 +127,7 @@
 </tr>
 <tr>
 <td><a href="pdmpublisher.html">PDMPublisher PDM Task</a></td>
-<td><code>2026.08.12</code></td>
+<td><code>2026.09.08</code></td>
 </tr>
 </tbody>
 </table>
@@ -136,6 +136,13 @@
 <h5>Tip</h5>
 <p>If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see <a href="/src/cdpdm.html">here</a>.</p>
 </div>
+<h2 id="20260908">2026.09.08</h2>
+<p><em>Applies to <strong>PDM Task</strong></em></p>
+<ul>
+<li>Added <a href="/src/pdmpublisher-options/get-latest-revision-only.html">Get latest revision only</a>. The task can publish the newest recorded PDM revision and the references saved with that revision instead of newer unrevised versions.</li>
+<li>Changed output-copy error handling. If one or more generated files cannot be copied to their destination, the task is now marked as failed instead of completed successfully.</li>
+<li>Added clearer copy-failure log messages with the temporary source path, destination path, and available error details.</li>
+</ul>
 <h2 id="20260812">2026.08.12</h2>
 <p><em>Applies to <strong>PDM Task</strong></em></p>
 <ul>

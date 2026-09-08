@@ -15,12 +15,19 @@ Versions are identified by their compile date, which represents the build date o
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.08.11` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.08.12` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.08
+*Applies to **PDM Task***
+
+- Added [Get latest revision only](/src/pdmpublisher-options/get-latest-revision-only.html). The task can publish the newest recorded PDM revision and the references saved with that revision instead of newer unrevised versions.
+- Changed output-copy error handling. If one or more generated files cannot be copied to their destination, the task is now marked as failed instead of completed successfully.
+- Added clearer copy-failure log messages with the temporary source path, destination path, and available error details.
 
 ## 2026.08.12
 *Applies to **PDM Task***
