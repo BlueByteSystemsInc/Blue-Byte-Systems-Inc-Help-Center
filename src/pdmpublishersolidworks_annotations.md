@@ -11,6 +11,32 @@ Annotations place text, SOLIDWORKS property values, watermarks, or QR codes on e
 
 Select **PDMPublisher > Annotations** to edit the active Publish profile, or use the command arrow to open a named profile. Use the focused pages beneath **Publishing Annotations** in the TOC:
 
+![Choose the Publish profile whose annotations you want to edit](/images/pdmpublisher/solidworks/annotations-profile-menu-20260908.png)
+
+![Annotation editor and its controls](/images/pdmpublisher/solidworks/annotations-editor-controls-20260908.png)
+
+## Annotation Editor Controls
+
+| Control | What it does |
+| --- | --- |
+| **Add annotation** | Adds a new annotation row to the selected profile. |
+| Annotation text | Sets literal text and placeholders evaluated during publishing. |
+| Font and size | Selects the typeface and point size. |
+| **Bold** / **Italic** | Applies emphasis to the annotation text. |
+| **Watermark** | Renders the annotation as a watermark. |
+| **Show annotation** | Includes the annotation during export. Clear it to keep the definition without publishing it. |
+| **QR code** | Renders the evaluated annotation value as a QR code. |
+| **Width (mm)** | Sets the QR code or annotation width in millimetres. |
+| **Drawing background** | Controls the drawing background used by the positioning preview. |
+| **Show placeholders** | Shows placeholder names in the preview instead of evaluated values. |
+| **Copy X,Y** | Copies the position of the selected SOLIDWORKS drawing note into the annotation's X and Y fields. |
+| **Position X / Y (%)** | Positions the annotation as a percentage of the sheet width and height. |
+| **Sheets** | Chooses which drawing sheets receive the annotation. |
+| Names separated by comma | Limits a named-sheet selection to the comma-separated sheet names. |
+| **OK** / **Cancel** | Saves the profile changes or closes the editor without saving them. |
+
+The drawing area is a positioning preview. Adding or moving an item there does not add a SOLIDWORKS note to the source drawing.
+
 | Category | Pages |
 | --- | --- |
 | Content | [Add Annotation](pdmpublisher-annotations/add-annotation.md), [Annotation Text](pdmpublisher-annotations/annotation-text.md), and [SQL Query Placeholders](pdmpublisher-annotations/sql-query-placeholders.md) |

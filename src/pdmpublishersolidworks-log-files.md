@@ -11,7 +11,7 @@ Use the commands in the **PDMPublisher > Logs** window to preserve a job record 
 
 ## Save Logs
 
-1. Select **SAVE LOGS**.
+1. Select **Save...**.
 2. Choose a destination and filename.
 3. Save as a `.log` or `.txt` file.
 
@@ -21,9 +21,9 @@ Save the log immediately after the job you need to investigate so unrelated entr
 
 ## Clear Logs
 
-Select **CLEAR** to remove the current in-memory entries and clear the search field.
+Select **Clear** to remove the current in-memory entries. Use **Copy selected** or **Copy all** when you only need to paste entries into a message instead of saving a file.
 
-Clearing the tab does not delete log files that were already saved to disk. Save anything you need before selecting **CLEAR** because the in-memory entries cannot be restored from the tab.
+Clearing the window does not delete log files that were already saved to disk. Save anything you need before selecting **Clear** because the in-memory entries cannot be restored from the window.
 
 > [!TIP]
 > Include the saved log and the source filename when contacting `support@bluebytesystemsinc.zohodesk.com`.

@@ -9,6 +9,8 @@ ms.topic: how-to
 
 Use the **Updates** and **Settings** CommandManager groups for installed-version information, update checks, appearance, licensing, product links, legal information, and support.
 
+![Support and Updates page in PDMPublisher Settings](/images/pdmpublisher/solidworks/support-updates-20260908.png)
+
 | Page | Purpose |
 | --- | --- |
 | [Version and Updates](pdmpublishersolidworks-updates.md) | Check the installed version and download an available update. |

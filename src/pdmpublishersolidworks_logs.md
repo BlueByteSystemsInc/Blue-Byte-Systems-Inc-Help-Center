@@ -9,7 +9,18 @@ ms.topic: how-to
 
 Select **PDMPublisher > Logs** to review processing steps, successful exports, warnings, and failures from jobs in the current SOLIDWORKS session.
 
-![Detailed PDMPublisher logs](/images/detailedlogs.png)
+![PDMPublisher Logs window filtered to errors](/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
+
+| Control | What it does |
+| --- | --- |
+| **Find** | Filters visible entries by text. |
+| Type filter | Shows **All entries**, **Errors**, **Warnings**, **Completed**, **Processing**, or **Skipped** entries. |
+| Shown / total / selected counts | Reports the current filtered result count and selection count. |
+| **Follow newest** | Keeps the newest log entry in view while a job is running. |
+| **Copy selected** / **Copy all** | Copies selected entries or the full session log to the clipboard. |
+| **Save...** | Writes the complete current session log to a file. |
+| **Clear** | Removes the in-memory entries after confirmation. |
+| **Close** | Closes the Logs window without clearing its entries. |
 
 | Page | Purpose |
 | --- | --- |
