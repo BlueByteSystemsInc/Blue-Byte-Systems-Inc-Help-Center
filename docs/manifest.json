@@ -2147,6 +2147,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/commands/overview-commandmanager-help.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/commands/overview-commandmanager-help.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/solidworks/commands/property-doctor.png",
       "output": {
         "resource": {

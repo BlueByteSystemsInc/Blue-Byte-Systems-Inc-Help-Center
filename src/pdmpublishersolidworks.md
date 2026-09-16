@@ -1,7 +1,7 @@
 ---
 title: PDMPublisher for SOLIDWORKS
 description: Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Smart Pack and Go, profiles, and shared settings.
-ms.date: 09/15/2026
+ms.date: 09/16/2026
 ms.topic: overview
 ---
 
@@ -40,6 +40,8 @@ Open the **PDMPublisher** tab in the SOLIDWORKS CommandManager, or select **Tool
 - [Settings](pdmpublishersolidworks_settings.md), license management, and updates
 
 See [PDMPublisher Commands](pdmpublishersolidworks_commands.md) for command availability and profile drop-down behavior.
+
+![PDMPublisher CommandManager commands and embedded Help pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commands/overview-commandmanager-help.png)
 
 ## Main Workflows
 
