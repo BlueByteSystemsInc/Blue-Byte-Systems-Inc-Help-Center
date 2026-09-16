@@ -9,12 +9,12 @@ bbsProductHref: pdmpublishersolidworks.html
 
 # Share Profiles Using a PIN
 
-PDMPublisher for SOLIDWORKS `2026.08.10` and later can share a profile by using a six-digit PIN. Another PDMPublisher for SOLIDWORKS user can enter that PIN to download, save, and apply the shared settings.
+PDMPublisher for SOLIDWORKS can share a profile by using a six-digit PIN. Another PDMPublisher for SOLIDWORKS user can enter that PIN to download, save, and apply the shared settings.
 
 This feature belongs to **PDMPublisher for SOLIDWORKS**. The PDM Professional task stores settings in its task definition and does not use profile PINs.
 
 > [!IMPORTANT]
-> Both users need an internet connection and a version of PDMPublisher for SOLIDWORKS that supports profile PIN sharing. A PIN remains available for 30 days.
+> Both users need an internet connection. A PIN remains available for 30 days.
 
 ## What a Shared Profile Can Include
 

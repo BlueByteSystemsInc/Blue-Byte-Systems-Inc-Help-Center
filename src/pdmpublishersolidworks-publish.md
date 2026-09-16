@@ -32,3 +32,5 @@ When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md)
 ## Review the Result
 
 Select **PDMPublisher > Logs** to review processing steps, exported files, warnings, and failures. Use [Save and Clear Logs](pdmpublishersolidworks-log-files.md) to attach the complete job record to a support request.
+
+See [Publishing Workflow and Results](pdmpublishersolidworks_workflow.md) for the complete sequence, including review, skipped files, cancellation, and troubleshooting outcomes.

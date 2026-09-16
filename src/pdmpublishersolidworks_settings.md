@@ -21,11 +21,11 @@ The left navigation divides the dialog into **Publishing**, **Utilities**, **Sha
 | Utilities | [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md) | Pack profiles, PDM serial-number source, latest-revision behavior, companion files, ZIP output, and optional Property Doctor processing. |
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Default columns, thumbnail loading, and property-action profiles. |
 | Utilities | Translate | Placeholder for a future feature. |
-| Shared Resources | PDM | The vault used by PDM-aware utility settings. |
-| Shared Resources | Languages | The PDMPublisher interface language. |
-| Shared Resources | File Locations | Additional drawing folders, optional subfolders, and SOLIDWORKS Referenced Documents folders. |
-| Shared Resources | External Sources | Reusable SQL Server sources used by supported property and formula menus. |
-| Shared Resources | Advanced Formulas | Named formulas shared by filenames, folders, and properties. |
+| Shared Resources | [PDM](pdmpublishersolidworks_pdm-settings.md) | The vault used by PDM-aware utility settings. |
+| Shared Resources | [Languages](pdmpublishersolidworks_languages.md) | The PDMPublisher interface language. |
+| Shared Resources | [File Locations](pdmpublishersolidworks_file-locations.md) | Additional drawing folders, optional subfolders, and SOLIDWORKS Referenced Documents folders. |
+| Shared Resources | [External Sources](pdmpublishersolidworks_external-sources.md) | Reusable SQL Server sources used by supported property and formula menus. |
+| Shared Resources | [Advanced Formulas](pdmpublishersolidworks_advanced-formulas.md) | Named formulas shared by filenames, folders, and properties. |
 | Publishing | [Publish](pdmpublishersolidworks_options.md) | Publish profiles, output, formats, references, drawing sheets, PDFs, and manufacturing output. |
 | Support | [About](pdmpublishersolidworks_About.md) | Support, documentation, product, and legal links. |
 | Support | License | License activation and deactivation. |
@@ -68,8 +68,6 @@ External sources are reusable SQL Server connections and queries. **Add** create
 
 ### Advanced Formulas
 
-![Advanced formula settings](/images/pdmpublisher/solidworks/settings-advanced-formulas-20260908.png)
-
 Advanced formulas are named expressions shared by supported filename, folder, and property menus. **Add** creates a formula, **Edit** changes the selected formula, and **Delete** removes it. Formula names should describe their result so they remain understandable when inserted from another workflow.
 
 ## Dialog Commands
@@ -99,3 +97,5 @@ A complete bundle contains utility settings, Save As New profiles, Property Doct
 Before replacing settings, PDMPublisher validates every section and creates a timestamped local backup. If writing a section fails, it attempts to restore the previous settings.
 
 For transferring only one Publish profile, use [Profiles](pdmpublishersolidworks_profiles.md) instead of a complete settings bundle.
+
+For the complete procedure and conflict behavior, see [Import, Export, and Reset Settings](pdmpublishersolidworks_settings-transfer.md).

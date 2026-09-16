@@ -15,7 +15,7 @@ The **PDMPublisher > Logs** window collects messages from the current session. E
 
 Enter text in **Find** to filter the displayed entries as you type. Matching is not case-sensitive. Use the adjacent type filter to show **All entries**, **Errors**, **Warnings**, **Completed**, **Processing**, or **Skipped** messages.
 
-Search changes only what is displayed. It does not remove log entries, and [SAVE LOGS](pdmpublishersolidworks-log-files.md) still writes the complete collection.
+Search changes only what is displayed. It does not remove log entries, and [Save...](pdmpublishersolidworks-log-files.md) still writes the complete collection.
 
 Useful searches include a filename, output extension, configuration, `warning`, `failed`, or `saved`.
 

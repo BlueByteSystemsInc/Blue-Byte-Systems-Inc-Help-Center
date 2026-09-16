@@ -44,7 +44,7 @@ Use the focused pages beneath **Publishing** in the TOC:
 | Configurations | [Convert Multiple Configurations](pdmpublisher-options/convert-multiple-configurations.md) |
 | Drawing sheets and PDFs | [Sheets to Export](pdmpublisher-options/sheets-to-export.md), [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md), [Merge Exported PDFs](pdmpublisher-options/merge-exported-pdfs.md), [Table of Content](pdmpublisher-options/add-table-of-content-to-merged-pdf.md), [Table Columns](pdmpublisher-options/table-columns.md), and [PDF Bookmarks](pdmpublisher-options/pdf-bookmarks.md) |
 | Manufacturing outputs | [Sheet Metal Flat Pattern DXF](pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md) and [Split Bodies](pdmpublisher-options/split-bodies.md) |
-| Execution | [Run a Publish Job](pdmpublishersolidworks-publish.md) |
+| Execution | [Run a Publish Job](pdmpublishersolidworks-publish.md) and [Publishing Workflow and Results](pdmpublishersolidworks_workflow.md) |
 
 > [!NOTE]
 > Task-only settings are intentionally excluded from this SOLIDWORKS add-in section. See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md) when a setting shown in the PDM Administration tool is not present here.

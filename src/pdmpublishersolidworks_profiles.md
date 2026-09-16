@@ -71,7 +71,7 @@ The loaded profile is saved locally, applied immediately, and becomes the active
 
 ## Share Profiles Using a PIN
 
-Version `2026.08.10` and later can share selected Options, Annotations, and Conditions using a six-digit PIN that remains available for 30 days. See [Share Profiles Using a PIN](pdmpublishersolidworks_profile_sharing.md) for the sharing and loading workflow, section selection, name-conflict behavior, and security guidance.
+Share selected Options, Annotations, and Conditions using a six-digit PIN that remains available for 30 days. See [Share Profiles Using a PIN](pdmpublishersolidworks_profile_sharing.md) for the sharing and loading workflow, section selection, name-conflict behavior, and security guidance.
 
 ## Delete a Profile
 
