@@ -1,16 +1,16 @@
 ---
 title: Request a Trial License | PDMPublisher
-description: Learn how to request a free trial license for PDMPublisher for SOLIDWORKS PDM Professional.
+description: Learn how to request a free trial license for the PDMPublisher Task add-in for SOLIDWORKS PDM Professional.
 ms.date: 08/02/2026
 ms.topic: how-to
 ---
 
 # Request a PDMPublisher trial license
 
-You can request a free trial of **PDMPublisher for SOLIDWORKS PDM Professional** from the Blue Byte Systems online store.
+You can request a free trial of the **PDMPublisher Task add-in for SOLIDWORKS PDM Professional** from the Blue Byte Systems online store. This trial is for the PDM Professional Task version; it is not a trial of PDMPublisher for SOLIDWORKS.
 
 > [!NOTE]
-> PDMPublisher requires SOLIDWORKS 2018 or later and SOLIDWORKS PDM Professional 2018 or later.
+> The PDMPublisher Task add-in requires SOLIDWORKS 2018 or later and SOLIDWORKS PDM Professional 2018 or later.
 
 ## Request your trial
 
