@@ -28,6 +28,8 @@ Review the export location, filename, formats, sheet mode, references, configura
 
 For an assembly with individual-reference export and condition review enabled, PDMPublisher lists the references that passed evaluation. Clear a file to omit it from this run. Confirm to continue, or cancel to stop before export processing.
 
+![Review files to publish after condition evaluation](/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
+
 The review selection affects only the current run. It does not rewrite the profile or condition tree.
 
 ## 4. Process Outputs
