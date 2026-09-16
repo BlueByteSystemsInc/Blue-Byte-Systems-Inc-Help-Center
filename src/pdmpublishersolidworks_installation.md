@@ -55,7 +55,7 @@ Windows may block files downloaded from the internet. Unblock the MSI before run
 
 ![PDMPublisher for SOLIDWORKS enabled under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 
-After the add-in loads, open the **PDMPublisher (SOLIDWORKS)** task pane and configure a profile before publishing.
+After the add-in loads, open the **PDMPublisher** CommandManager tab. Use **Settings** to configure profiles and shared resources; the task pane now displays the product documentation.
 
 ## Update PDMPublisher
 

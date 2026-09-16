@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Import and Export Conditions
 
-Use **Export...** and **Import...** on the Conditions tab to move condition rules separately from the complete profile.
+Use **Export...** and **Import...** in the **PDMPublisher > Conditions** window to move condition rules separately from the complete Publish profile.
 
 ## Export Conditions
 

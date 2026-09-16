@@ -11,7 +11,7 @@ PDMPublisher is available in two workflows. They share the same publishing engin
 
 | | PDMPublisher for PDM Professional | PDMPublisher for SOLIDWORKS |
 | --- | --- | --- |
-| Runs from | A task configured in the SOLIDWORKS PDM Administration tool | The PDMPublisher task pane inside SOLIDWORKS |
+| Runs from | A task configured in the SOLIDWORKS PDM Administration tool | The PDMPublisher CommandManager tab and Tools menu inside SOLIDWORKS |
 | Starts from | Selected vault files, a workflow action, or a PDM schedule | The document currently open in SOLIDWORKS |
 | Saves settings as | A PDM task definition | Reusable profiles |
 | SOLIDWORKS version | Selected in the task settings | The currently running SOLIDWORKS version |
@@ -41,7 +41,7 @@ Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-laun
 
 ## SOLIDWORKS Add-in Only
 
-Use the [SOLIDWORKS add-in documentation](pdmpublishersolidworks.md) for profiles, starter templates, [profile sharing by PIN](pdmpublishersolidworks_profile_sharing.md), the collapsible task-pane navigation, opening the export folder after publishing, the job Logs tab, and add-in About/theme settings.
+Use the [SOLIDWORKS add-in documentation](pdmpublishersolidworks.md) for Publish profiles, [complete settings](pdmpublishersolidworks_settings.md), [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md), [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md), interactive publishing, logs, updates, and licensing.
 
 > [!TIP]
-> If you are configuring a task in the PDM Administration tool, follow the **PDM Professional** section of the TOC. If you are publishing from a task pane inside SOLIDWORKS, follow the **SOLIDWORKS add-in** section.
+> If you are configuring a task in the PDM Administration tool, follow the **PDM Professional** section of the TOC. If you are using the PDMPublisher CommandManager commands inside SOLIDWORKS, follow the **SOLIDWORKS add-in** section.

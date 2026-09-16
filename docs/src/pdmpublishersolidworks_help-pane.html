@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDM Task vs SOLIDWORKS Add-in | PDMPublisher | Help Center </title>
+      <title>Help Task Pane | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDM Task vs SOLIDWORKS Add-in | PDMPublisher | Help Center ">
-
-      <meta name="description" content="Compare PDMPublisher for SOLIDWORKS PDM Professional with PDMPublisher for SOLIDWORKS and choose the correct documentation.">
-
+      <meta name="title" content="Help Task Pane | PDMPublisher for SOLIDWORKS | Help Center ">
+      
+      <meta name="description" content="Use the embedded PDMPublisher documentation in the SOLIDWORKS task pane and troubleshoot WebView2 loading.">
+      
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-
+      
       <meta name="docfx:rel" content="../">
-
-
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-product-differences.md/#L1">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_help-pane.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -108,82 +108,29 @@
         </div>
 
         <article data-uid="">
-<h1 id="pdm-task-vs-solidworks-add-in">PDM Task vs SOLIDWORKS Add-in</h1>
+<h1 id="help-task-pane">Help Task Pane</h1>
 
-<p>PDMPublisher is available in two workflows. They share the same publishing engine and many export settings, but they start jobs and obtain file information differently.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>PDMPublisher for PDM Professional</th>
-<th>PDMPublisher for SOLIDWORKS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Runs from</td>
-<td>A task configured in the SOLIDWORKS PDM Administration tool</td>
-<td>The PDMPublisher CommandManager tab and Tools menu inside SOLIDWORKS</td>
-</tr>
-<tr>
-<td>Starts from</td>
-<td>Selected vault files, a workflow action, or a PDM schedule</td>
-<td>The document currently open in SOLIDWORKS</td>
-</tr>
-<tr>
-<td>Saves settings as</td>
-<td>A PDM task definition</td>
-<td>Reusable profiles</td>
-</tr>
-<tr>
-<td>SOLIDWORKS version</td>
-<td>Selected in the task settings</td>
-<td>The currently running SOLIDWORKS version</td>
-</tr>
-<tr>
-<td>File information</td>
-<td>PDM variables, cards, BOM templates, and SOLIDWORKS properties</td>
-<td>SOLIDWORKS custom properties and the active document or assembly references</td>
-</tr>
-<tr>
-<td>User interaction</td>
-<td>Can show task-launch file and configuration prompts</td>
-<td>Uses the active document and selected profile directly</td>
-</tr>
-<tr>
-<td>Logs</td>
-<td>Optional vault and server-synced task logs</td>
-<td>A dedicated <strong>Logs</strong> tab for each publish job</td>
-</tr>
-</tbody>
-</table>
-<h2 id="shared-documentation">Shared Documentation</h2>
-<p>Both products use the same documentation pages for settings whose behavior is shared:</p>
-<ul>
-<li>Export location, filename, and file formats</li>
-<li>Assembly reference export and condition filtering</li>
-<li>Multiple configurations and configuration filters</li>
-<li>Drawing sheet selection and sheet-name patterns</li>
-<li>PDF merge, table of contents, table columns, and bookmarks</li>
-<li>Flat-pattern DXF and split-body output</li>
-<li>Annotation formatting and placement</li>
-<li>Condition groups, fields, comparisons, and evaluation rules</li>
-<li>Placeholder reference</li>
-</ul>
-<p>Each shared page identifies any difference between the PDM task and the SOLIDWORKS add-in.</p>
-<h2 id="pdm-task-only">PDM Task Only</h2>
-<p>Use the <a href="pdmpublisher.html">PDM task documentation</a> for scheduled items, task-launch prompts, BOM templates, drawing-derived BOMs, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, and File Explorer task visibility.</p>
-<h2 id="solidworks-add-in-only">SOLIDWORKS Add-in Only</h2>
-<p>Use the <a href="pdmpublishersolidworks.html">SOLIDWORKS add-in documentation</a> for Publish profiles, <a href="pdmpublishersolidworks_settings.html">complete settings</a>, <a href="pdmpublishersolidworks_save-as-new.html">Save As New</a>, <a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a>, <a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a>, interactive publishing, logs, updates, and licensing.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>If you are configuring a task in the PDM Administration tool, follow the <strong>PDM Professional</strong> section of the TOC. If you are using the PDMPublisher CommandManager commands inside SOLIDWORKS, follow the <strong>SOLIDWORKS add-in</strong> section.</p>
+<p>The PDMPublisher task pane is a documentation browser. Commands and settings have moved to the SOLIDWORKS <strong>PDMPublisher</strong> CommandManager tab and <strong>Tools &gt; PDMPublisher</strong> menu.</p>
+<p>The pane opens the compact <a href="https://pdmpublisher.com/help/addinwelcome.html">PDMPublisher for SOLIDWORKS welcome page</a>. Select a documentation link to navigate within the pane. Links that request a new window open in the default web browser.</p>
+<h2 id="requirements">Requirements</h2>
+<p>The embedded page uses Microsoft Edge WebView2 Runtime. Current supported Windows installations normally already have the Evergreen Runtime.</p>
+<p>If the pane reports that help could not be loaded:</p>
+<ol>
+<li>Confirm that the computer can open <code>https://pdmpublisher.com/help/addinwelcome.html</code> in a browser.</li>
+<li>Select the message in the pane to retry.</li>
+<li>Install or repair <a href="https://developer.microsoft.com/microsoft-edge/webview2/">Microsoft Edge WebView2 Runtime</a> if the message says the runtime is unavailable.</li>
+<li>Restart SOLIDWORKS.</li>
+</ol>
+<p>Publishing and utility commands remain available if the help page or WebView2 cannot load.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The embedded welcome page is intentionally excluded from search-engine indexing. The linked documentation pages remain searchable.</p>
 </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-product-differences.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_help-pane.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

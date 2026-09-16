@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PDMPublisher for SOLIDWORKS Help</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --surface: #f5f7f9;
+      --border: #d5dde5;
+      --text: #17212b;
+      --muted: #526170;
+      --link: #0869b5;
+      --accent: #0879c9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #202224;
+        --surface: #292c2f;
+        --border: #4a535c;
+        --text: #f2f5f7;
+        --muted: #c1c8ce;
+        --link: #77bdf0;
+        --accent: #36a2e8;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 14px/1.48 "Segoe UI", Arial, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 22px 18px 30px; }
+    header { display: grid; grid-template-columns: 58px 1fr; gap: 13px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    header img { width: 58px; height: 58px; object-fit: contain; }
+    h1 { margin: 0 0 3px; font-size: 22px; line-height: 1.22; letter-spacing: 0; }
+    header p { margin: 0; color: var(--muted); }
+    .intro { margin: 17px 0 14px; }
+    .commands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+    .command {
+      display: block;
+      min-width: 0;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+    }
+    .command strong { display: block; color: var(--link); font-size: 15px; }
+    .command span { display: block; margin-top: 3px; color: var(--muted); }
+    .links { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .links a { color: var(--link); }
+    .links a + a::before { content: " | "; color: var(--muted); text-decoration: none; }
+    @media (max-width: 480px) {
+      main { padding: 16px 12px 24px; }
+      header { grid-template-columns: 46px 1fr; }
+      header img { width: 46px; height: 46px; }
+      h1 { font-size: 19px; }
+      .commands { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="images/pdmpublisher_logo.png" alt="PDMPublisher">
+      <div>
+        <h1>PDMPublisher for SOLIDWORKS</h1>
+        <p>Commands are in the PDMPublisher CommandManager tab. This pane provides the documentation.</p>
+      </div>
+    </header>
+    <p class="intro">Choose a workflow to open its guide.</p>
+    <nav class="commands" aria-label="PDMPublisher documentation">
+      <a class="command" href="src/pdmpublishersolidworks_commands.html"><strong>Commands</strong><span>Find every CommandManager command and profile menu.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_settings.html"><strong>Settings</strong><span>Configure utilities, publishing, and shared resources.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_save-as-new.html"><strong>Save As New</strong><span>Create a native copy with repeatable naming and PDM rules.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_property-doctor.html"><strong>Property Doctor</strong><span>Review and edit properties across documents and references.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_smart-pack.html"><strong>Smart Pack and Go</strong><span>Copy a document set with names, folders, revisions, and ZIP output.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks-publish.html"><strong>Publish</strong><span>Export the active document using a Publish profile.</span></a>
+    </nav>
+    <div class="links">
+      <a href="src/pdmpublishersolidworks.html">Full overview</a>
+      <a href="src/pdmpublishersolidworks_installation.html">Installation</a>
+      <a href="src/licensespdmpublisher.html">Licensing</a>
+      <a href="https://bluebyte.biz/contact/" target="_blank" rel="noopener noreferrer">Support</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,17 +1,17 @@
 ---
-title: Profiles | PDMPublisher for SOLIDWORKS
-description: Create, select, rename, export, import, share, and delete reusable PDMPublisher for SOLIDWORKS profiles.
-ms.date: 08/23/2026
+title: Publish Profiles | PDMPublisher for SOLIDWORKS
+description: Create, select, rename, export, import, share, and delete reusable Publish profiles in PDMPublisher for SOLIDWORKS.
+ms.date: 09/15/2026
 ms.topic: how-to
 bbsProductName: PDMPublisher for SOLIDWORKS
 bbsProductHref: pdmpublishersolidworks.html
 ---
 
-# Profiles
+# Publish Profiles
 
-A profile is a reusable set of PDMPublisher settings. Use profiles to switch between workflows without rebuilding the Options, Annotations, and Conditions configuration each time.
+A Publish profile is a reusable combination of Publish settings, Annotations, and Conditions. Use profiles to switch between export workflows without rebuilding those sections each time.
 
-This feature belongs to **PDMPublisher for SOLIDWORKS**. The PDM task stores its settings in a task definition and does not use add-in profiles.
+This profile family belongs to **PDMPublisher for SOLIDWORKS**. The PDM task stores its settings in a task definition and does not use add-in profiles. Save As New, Property Doctor, and Smart Pack and Go have separate profile families documented with those commands.
 
 ![PDMPublisher profile toolbar](/images/pdmpublisher/solidworks/profile-toolbar.png)
 
@@ -19,7 +19,7 @@ A profile is a named publishing configuration containing Options, Annotations, a
 
 ## Select a Profile
 
-Use the profile list at the top of the task pane to select the active profile. The settings shown on the PDMPublisher, Annotations, and Conditions tabs belong to that profile.
+Use the profile list in the Publish settings page or the arrow beside **Publish** in the CommandManager. The profile stores Publish settings, Annotations, and Conditions.
 
 Give profiles names that describe their output, such as `Released PDF`, `Laser DXF`, or `PDF And Step`.
 
@@ -31,7 +31,7 @@ To begin with a supplied configuration instead of a blank profile, see [Presets]
 
 ## Rename a Profile
 
-1. Select the profile.
+1. Open **PDMPublisher > Settings > Publish** and select the profile.
 2. Select **Edit**.
 3. Change the name in the profile field.
 4. Select **Save**.
@@ -75,3 +75,5 @@ Select the profile and choose **Delete**. Deleting a profile removes that saved 
 
 > [!IMPORTANT]
 > Confirm that another copy is not needed before deleting a profile. Export the profile first when it may be needed later.
+
+To move every PDMPublisher profile family and shared resource together, use [Transfer All Settings](pdmpublishersolidworks_settings.md#transfer-all-settings).

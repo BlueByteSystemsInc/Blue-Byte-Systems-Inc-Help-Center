@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDM Task vs SOLIDWORKS Add-in | PDMPublisher | Help Center </title>
+      <title>Smart Pack and Go | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDM Task vs SOLIDWORKS Add-in | PDMPublisher | Help Center ">
-
-      <meta name="description" content="Compare PDMPublisher for SOLIDWORKS PDM Professional with PDMPublisher for SOLIDWORKS and choose the correct documentation.">
-
+      <meta name="title" content="Smart Pack and Go | PDMPublisher for SOLIDWORKS | Help Center ">
+      
+      <meta name="description" content="Copy SOLIDWORKS documents and references with per-file names, destinations, PDM revision handling, companion files, profiles, and ZIP output.">
+      
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-
+      
       <meta name="docfx:rel" content="../">
-
-
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-product-differences.md/#L1">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_smart-pack.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -108,82 +108,66 @@
         </div>
 
         <article data-uid="">
-<h1 id="pdm-task-vs-solidworks-add-in">PDM Task vs SOLIDWORKS Add-in</h1>
+<h1 id="smart-pack-and-go">Smart Pack and Go</h1>
 
-<p>PDMPublisher is available in two workflows. They share the same publishing engine and many export settings, but they start jobs and obtain file information differently.</p>
+<p>Smart Pack and Go builds a copy plan for the active document and its references. Each included file can have its own name and destination while SOLIDWORKS references are updated to the copied files.</p>
+<p><img src="/images/pdmpublisher/solidworks/commands/smart-pack-and-go.png" alt="Smart Pack and Go file tree with per-file names and destination folders"></p>
+<h2 id="create-a-package">Create a Package</h2>
+<ol>
+<li>Save the active SOLIDWORKS document.</li>
+<li>Select <strong>PDMPublisher &gt; Smart Pack and Go</strong>.</li>
+<li>Check the files to copy and uncheck files to exclude.</li>
+<li>Set the <strong>New name</strong> and <strong>Destination folder</strong> values. Use each cell's menu for document values, properties, folder values, PDM values, serial numbers, or formulas.</li>
+<li>Optionally include companion STEP, PDF, or DXF files and configure ZIP output.</li>
+<li>Select <strong>Copy</strong>.</li>
+</ol>
+<p>Excluded files keep their original references. Search and type filters change only the visible rows; all checked files remain in the copy plan.</p>
+<h2 id="copy-options">Copy Options</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>PDMPublisher for PDM Professional</th>
-<th>PDMPublisher for SOLIDWORKS</th>
+<th>Option</th>
+<th>Behavior</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Runs from</td>
-<td>A task configured in the SOLIDWORKS PDM Administration tool</td>
-<td>The PDMPublisher CommandManager tab and Tools menu inside SOLIDWORKS</td>
+<td>Ignore Toolbox components</td>
+<td>Leaves Toolbox components out of the copied document set.</td>
 </tr>
 <tr>
-<td>Starts from</td>
-<td>Selected vault files, a workflow action, or a PDM schedule</td>
-<td>The document currently open in SOLIDWORKS</td>
+<td>Copy latest PDM revision to destination</td>
+<td>Copies the latest assigned revision directly to each destination. It does not update the local vault cache or reload SOLIDWORKS. Vault files without an assigned revision cannot use this option.</td>
 </tr>
 <tr>
-<td>Saves settings as</td>
-<td>A PDM task definition</td>
-<td>Reusable profiles</td>
+<td>Version</td>
+<td>In SOLIDWORKS 2024 and newer, saves in the current release or either of the two previous releases.</td>
 </tr>
 <tr>
-<td>SOLIDWORKS version</td>
-<td>Selected in the task settings</td>
-<td>The currently running SOLIDWORKS version</td>
+<td>Companion files</td>
+<td>Includes existing same-named STEP/STP, PDF, or DXF files found for a document.</td>
 </tr>
 <tr>
-<td>File information</td>
-<td>PDM variables, cards, BOM templates, and SOLIDWORKS properties</td>
-<td>SOLIDWORKS custom properties and the active document or assembly references</td>
+<td>ZIP archive</td>
+<td>Creates a ZIP after the file copies complete, using its own filename and destination.</td>
 </tr>
 <tr>
-<td>User interaction</td>
-<td>Can show task-launch file and configuration prompts</td>
-<td>Uses the active document and selected profile directly</td>
-</tr>
-<tr>
-<td>Logs</td>
-<td>Optional vault and server-synced task logs</td>
-<td>A dedicated <strong>Logs</strong> tab for each publish job</td>
+<td>PDM serial number</td>
+<td>Assigns one reserved number per included row and reuses it when both the filename and folder need that number.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="shared-documentation">Shared Documentation</h2>
-<p>Both products use the same documentation pages for settings whose behavior is shared:</p>
-<ul>
-<li>Export location, filename, and file formats</li>
-<li>Assembly reference export and condition filtering</li>
-<li>Multiple configurations and configuration filters</li>
-<li>Drawing sheet selection and sheet-name patterns</li>
-<li>PDF merge, table of contents, table columns, and bookmarks</li>
-<li>Flat-pattern DXF and split-body output</li>
-<li>Annotation formatting and placement</li>
-<li>Condition groups, fields, comparisons, and evaluation rules</li>
-<li>Placeholder reference</li>
-</ul>
-<p>Each shared page identifies any difference between the PDM task and the SOLIDWORKS add-in.</p>
-<h2 id="pdm-task-only">PDM Task Only</h2>
-<p>Use the <a href="pdmpublisher.html">PDM task documentation</a> for scheduled items, task-launch prompts, BOM templates, drawing-derived BOMs, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, and File Explorer task visibility.</p>
-<h2 id="solidworks-add-in-only">SOLIDWORKS Add-in Only</h2>
-<p>Use the <a href="pdmpublishersolidworks.html">SOLIDWORKS add-in documentation</a> for Publish profiles, <a href="pdmpublishersolidworks_settings.html">complete settings</a>, <a href="pdmpublishersolidworks_save-as-new.html">Save As New</a>, <a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a>, <a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a>, interactive publishing, logs, updates, and licensing.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>If you are configuring a task in the PDM Administration tool, follow the <strong>PDM Professional</strong> section of the TOC. If you are using the PDMPublisher CommandManager commands inside SOLIDWORKS, follow the <strong>SOLIDWORKS add-in</strong> section.</p>
-</div>
+<h2 id="profiles-and-rules">Profiles and Rules</h2>
+<p>Smart Pack and Go profiles preserve destinations, Toolbox preference, companion formats, latest-revision behavior, ZIP settings, per-file overrides, and ordered rules. Rules can set a filename or export location when their conditions match; later rules can replace earlier values.</p>
+<p>Manage profiles in <strong>Settings &gt; Smart Pack and Go</strong>, or select the gear in the Smart Pack and Go window. The arrow beside the CommandManager command opens a saved profile directly.</p>
+<p>A profile can run a Property Doctor profile after copying. That processing applies to copied files and requires files compatible with the current SOLIDWORKS version.</p>
+<h2 id="validation">Validation</h2>
+<p>Before copying, PDMPublisher rejects duplicate targets, source overwrites, changed SOLIDWORKS extensions, existing targets, unresolved destination expressions, and unavailable PDM revision data. Review the grid again if references change while the window is open.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-product-differences.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_smart-pack.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

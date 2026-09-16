@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Version and Updates
 
-The About tab displays the installed version and checks whether a newer release is available.
+Use the **Updates** CommandManager group or open **PDMPublisher > Settings > About** to display the installed version and check whether a newer release is available.
 
 - **Current Version** is the version installed in the current SOLIDWORKS session.
 - **You are using the latest version** means the installed version matches the available release.

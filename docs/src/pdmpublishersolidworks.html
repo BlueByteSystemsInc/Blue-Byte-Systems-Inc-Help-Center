@@ -1,22 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
       <title>PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="PDMPublisher for SOLIDWORKS | Help Center ">
-      
-      <meta name="description" content="Use PDMPublisher inside SOLIDWORKS to export documents and references with reusable profiles, annotations, conditions, and detailed logs.">
-      
+
+      <meta name="description" content="Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Smart Pack and Go, profiles, and shared settings.">
+
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-      
+
       <meta name="docfx:rel" content="../">
-      
-      
+
+
       <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
@@ -110,13 +110,12 @@
         <article data-uid="">
 <h1 id="pdmpublisher-for-solidworks">PDMPublisher for SOLIDWORKS</h1>
 
-<p>PDMPublisher for SOLIDWORKS is the SOLIDWORKS add-in version of PDMPublisher. It publishes the document open in SOLIDWORKS and can process its referenced files without requiring a SOLIDWORKS PDM task.</p>
+<p>PDMPublisher for SOLIDWORKS is the interactive SOLIDWORKS add-in. It combines document publishing with Save As New, Property Doctor, Smart Pack and Go, reusable profiles, and shared PDM-aware resources.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>This documentation describes the SOLIDWORKS add-in, not the PDMPublisher task configured in the SOLIDWORKS PDM Administration tool.</p>
 </div>
 <p>See <a href="pdmpublisher-product-differences.html">PDM Task vs SOLIDWORKS Add-in</a> for a side-by-side comparison and links to the settings shared by both products.</p>
-<p><img src="/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher for SOLIDWORKS 2026.08.08 open in SOLIDWORKS 2026"></p>
 <h2 id="install-and-enable-the-add-in">Install and Enable the Add-In</h2>
 <p>Before using PDMPublisher, <a href="pdmpublishersolidworks_installation.html">download and install PDMPublisher for SOLIDWORKS</a>. Close SOLIDWORKS before running the MSI installer.</p>
 <p>After installation:</p>
@@ -129,56 +128,52 @@
 <li>Select <strong>OK</strong>.</li>
 </ol>
 <p><img src="/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png" alt="PDMPublisher for SOLIDWORKS enabled under Partner Solution Add-Ins"></p>
-<h2 id="start-a-publish-job">Start a Publish Job</h2>
-<ol>
-<li>Open the part, assembly, or drawing to publish in SOLIDWORKS.</li>
-<li>Open the <strong>PDMPublisher (SOLIDWORKS)</strong> task pane.</li>
-<li>Select an existing <a href="pdmpublishersolidworks_profiles.html">profile</a>, or create one.</li>
-<li>Review the Options, Annotations, and Conditions tabs.</li>
-<li>Select <strong>PUBLISH</strong>.</li>
-</ol>
-<p>The current profile controls the export location, filename, formats, reference processing, annotations, conditions, and other publishing behavior.</p>
-<h2 id="main-tabs">Main Tabs</h2>
+<h2 id="find-pdmpublisher-in-solidworks">Find PDMPublisher in SOLIDWORKS</h2>
+<p>Open the <strong>PDMPublisher</strong> tab in the SOLIDWORKS CommandManager, or select <strong>Tools &gt; PDMPublisher</strong>. The command groups provide:</p>
+<ul>
+<li><a href="pdmpublishersolidworks_save-as-new.html">Save As New</a></li>
+<li><a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a></li>
+<li><a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a></li>
+<li><a href="pdmpublishersolidworks-publish.html">Publish</a>, Annotations, Conditions, and Logs</li>
+<li><a href="pdmpublishersolidworks_settings.html">Settings</a>, license management, and updates</li>
+</ul>
+<p>See <a href="pdmpublishersolidworks_commands.html">PDMPublisher Commands</a> for command availability and profile drop-down behavior.</p>
+<h2 id="main-workflows">Main Workflows</h2>
 <table>
 <thead>
 <tr>
-<th>Tab</th>
+<th>Workflow</th>
 <th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="pdmpublishersolidworks_options.html">PDMPublisher</a></td>
-<td>Configure output files, drawing sheets, reference processing, configurations, flat patterns, and PDF behavior.</td>
+<td><a href="pdmpublishersolidworks_options.html">Publishing</a></td>
+<td>Export the active document and references to PDF, DXF, STEP, eDrawings, and other formats. Profiles combine Publish settings, Annotations, and Conditions.</td>
 </tr>
 <tr>
-<td><a href="pdmpublishersolidworks_annotations.html">Annotations</a></td>
-<td>Add text, properties, watermarks, or QR codes to exported drawings and PDFs.</td>
+<td><a href="pdmpublishersolidworks_save-as-new.html">Save As New</a></td>
+<td>Save a separate native copy using naming, destination, PDM, drawing, bounding-box, and macro options.</td>
 </tr>
 <tr>
-<td><a href="conditions_solidworks.html">Conditions</a></td>
-<td>Filter the active document and references using property-based rules and AND/OR groups.</td>
+<td><a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a></td>
+<td>Inspect and edit properties across the active document, configurations, cut lists, drawings, and references.</td>
 </tr>
 <tr>
-<td><a href="pdmpublishersolidworks_logs.html">Logs</a></td>
-<td>Review the steps, results, warnings, and errors from each publish job.</td>
+<td><a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a></td>
+<td>Copy a document set with per-file names and folders, companion files, revisions, profiles, and optional ZIP output.</td>
 </tr>
 <tr>
-<td><a href="pdmpublishersolidworks_About.html">About</a></td>
-<td>View the installed version, update and licensing links, and appearance settings.</td>
+<td><a href="pdmpublishersolidworks_settings.html">Settings</a></td>
+<td>Search and configure all utility, publishing, shared-resource, support, and license settings.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="documentation-structure">Documentation Structure</h2>
-<p>The SOLIDWORKS add-in documentation follows the same category order as the PDM task documentation. Shared settings link to one common reference page so their explanations remain consistent. Add-in-only pages cover profiles, interactive publishing, logs, and About settings.</p>
-<p>Settings that require the PDM task framework are intentionally excluded from the add-in TOC. This includes scheduling, task-launch prompts, BOM templates, task-host SOLIDWORKS selection, and vault activity logs.</p>
-<h2 id="navigation-width">Navigation Width</h2>
-<p>Select <strong>Minimize</strong> at the bottom of the navigation to leave more room for settings.</p>
-<p><img src="/images/pdmpublisher/solidworks/navigation-minimize.png" alt="Minimize navigation command"></p>
-<p>When minimized, the tab names are displayed vertically. Select the arrow at the bottom to restore the full navigation.</p>
-<p><img src="/images/pdmpublisher/solidworks/navigation-collapsed.png" alt="Collapsed PDMPublisher navigation"></p>
-<h2 id="profiles-and-presets">Profiles and Presets</h2>
-<p>Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. Built-in presets provide starting configurations for DXF, combined PDF and STEP, and STEP publishing. Version <code>2026.08.10</code> and later can <a href="pdmpublishersolidworks_profile_sharing.html">share selected profile sections using a six-digit PIN</a>. See <a href="pdmpublishersolidworks_profiles.html">Profiles and Presets</a> for profile setup and file-based transfer.</p>
+<h2 id="help-task-pane">Help Task Pane</h2>
+<p>The PDMPublisher task pane now displays documentation instead of application controls. Use the <a href="pdmpublishersolidworks_help-pane.html">Help Task Pane</a> for WebView2 requirements and troubleshooting. All product commands remain in the CommandManager if the help page is offline.</p>
+<h2 id="profiles-and-settings-transfer">Profiles and Settings Transfer</h2>
+<p>Publish, Save As New, Property Doctor, and Smart Pack and Go each have their own profiles. The unified Settings dialog can export or share a complete configuration containing every profile family and the shared resources. See <a href="pdmpublishersolidworks_settings.html">Settings</a> and <a href="pdmpublishersolidworks_profiles.html">Publish Profiles</a>.</p>
+<p>Settings that require the PDM task framework are intentionally excluded from the add-in. This includes scheduling, task-launch prompts, PDM task execution methods, and task-host selection.</p>
 <h2 id="download-and-licensing">Download and Licensing</h2>
 <ul>
 <li><a href="pdmpublishersolidworks_installation.html">Installation guide</a></li>

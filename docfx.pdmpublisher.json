@@ -51,6 +51,12 @@
     "resource": [
       {
         "files": [
+          "addinwelcome.html"
+        ],
+        "src": "pdmpublisher-site"
+      },
+      {
+        "files": [
           "images/**",
           "pdmdeploy/**"
         ],

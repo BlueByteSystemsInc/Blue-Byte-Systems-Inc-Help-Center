@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Save and Clear Logs
 
-Use the commands at the bottom of the Logs tab to preserve a job record or start with an empty log list.
+Use the commands in the **PDMPublisher > Logs** window to preserve a job record or start with an empty log list.
 
 ## Save Logs
 

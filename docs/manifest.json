@@ -2147,6 +2147,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/commands/property-doctor.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/commands/property-doctor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/commands/settings-save-as-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/commands/settings-save-as-new.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/pdmpublisher/solidworks/commands/smart-pack-and-go.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/pdmpublisher/solidworks/commands/smart-pack-and-go.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/pdmpublisher/solidworks/conditions.png",
       "output": {
         "resource": {
@@ -3767,6 +3797,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_help-pane.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_help-pane.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/pdmpublishersolidworks_installation.md",
       "output": {
         ".html": {
@@ -3821,6 +3871,46 @@
       "output": {
         ".html": {
           "relative_path": "src/pdmpublishersolidworks_profiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_property-doctor.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_property-doctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_save-as-new.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_save-as-new.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/pdmpublishersolidworks_smart-pack.md",
+      "output": {
+        ".html": {
+          "relative_path": "src/pdmpublishersolidworks_smart-pack.html"
         }
       },
       "version": ""

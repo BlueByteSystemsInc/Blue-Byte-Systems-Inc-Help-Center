@@ -178,7 +178,7 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 
 <div class="pdp-doc">
 <h2>PDMPublisher for SOLIDWORKS</h2>
-<p>Configure the desktop add-in options, annotations, conditions, logs, and licensing.</p>
+<p>Publish from SOLIDWORKS, create native copies, manage properties, build release packages, and share reusable settings.</p>
 <a href="../src/pdmpublishersolidworks.md">Open documentation &rarr;</a>
 </div>
 

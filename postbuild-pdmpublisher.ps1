@@ -73,9 +73,11 @@ foreach ($htmlFile in $htmlFiles) {
         [Text.RegularExpressions.RegexOptions]::IgnoreCase
     )
 
+    $robotsContent = if ($relativeUrl -eq "addinwelcome.html") { "noindex, nofollow" } else { "index, follow" }
+
     $tagsToInsert = @"
     <link rel="canonical" href="$canonicalUrl" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="$robotsContent" />
 "@
 
     if ($relativeUrl -eq "index.html") {

@@ -7,11 +7,11 @@ ms.topic: how-to
 
 # Import and Export Annotations
 
-The Annotations tab can save its annotation collection separately from the complete profile. This is useful when the same annotation layout must be reused in another profile.
+The Annotations window can save its annotation collection separately from the complete Publish profile. This is useful when the same annotation layout must be reused in another profile.
 
 ## Export Annotations
 
-1. Select **Export...** on the Annotations tab.
+1. Open **PDMPublisher > Annotations** and select **Export...**.
 2. Choose a location and filename.
 3. Save the settings as an `.edmtdf` file.
 
@@ -20,7 +20,7 @@ The file contains the current annotation collection, including annotation text, 
 ## Import Annotations
 
 1. Select the profile that should receive the annotations.
-2. Select **Import...** on the Annotations tab.
+2. Select **Import...** in the Annotations window.
 3. Choose the `.edmtdf` file.
 4. Review the imported annotations before publishing.
 

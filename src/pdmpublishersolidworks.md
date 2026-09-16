@@ -1,20 +1,18 @@
 ---
 title: PDMPublisher for SOLIDWORKS
-description: Use PDMPublisher inside SOLIDWORKS to export documents and references with reusable profiles, annotations, conditions, and detailed logs.
-ms.date: 08/24/2026
+description: Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Smart Pack and Go, profiles, and shared settings.
+ms.date: 09/15/2026
 ms.topic: overview
 ---
 
 # PDMPublisher for SOLIDWORKS
 
-PDMPublisher for SOLIDWORKS is the SOLIDWORKS add-in version of PDMPublisher. It publishes the document open in SOLIDWORKS and can process its referenced files without requiring a SOLIDWORKS PDM task.
+PDMPublisher for SOLIDWORKS is the interactive SOLIDWORKS add-in. It combines document publishing with Save As New, Property Doctor, Smart Pack and Go, reusable profiles, and shared PDM-aware resources.
 
 > [!IMPORTANT]
 > This documentation describes the SOLIDWORKS add-in, not the PDMPublisher task configured in the SOLIDWORKS PDM Administration tool.
 
 See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md) for a side-by-side comparison and links to the settings shared by both products.
-
-![PDMPublisher for SOLIDWORKS 2026.08.08 open in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/overview-20260808.png)
 
 ## Install and Enable the Add-In
 
@@ -31,45 +29,37 @@ After installation:
 
 ![PDMPublisher for SOLIDWORKS enabled under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 
-## Start a Publish Job
+## Find PDMPublisher in SOLIDWORKS
 
-1. Open the part, assembly, or drawing to publish in SOLIDWORKS.
-2. Open the **PDMPublisher (SOLIDWORKS)** task pane.
-3. Select an existing [profile](pdmpublishersolidworks_profiles.md), or create one.
-4. Review the Options, Annotations, and Conditions tabs.
-5. Select **PUBLISH**.
+Open the **PDMPublisher** tab in the SOLIDWORKS CommandManager, or select **Tools > PDMPublisher**. The command groups provide:
 
-The current profile controls the export location, filename, formats, reference processing, annotations, conditions, and other publishing behavior.
+- [Save As New](pdmpublishersolidworks_save-as-new.md)
+- [Property Doctor](pdmpublishersolidworks_property-doctor.md)
+- [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md)
+- [Publish](pdmpublishersolidworks-publish.md), Annotations, Conditions, and Logs
+- [Settings](pdmpublishersolidworks_settings.md), license management, and updates
 
-## Main Tabs
+See [PDMPublisher Commands](pdmpublishersolidworks_commands.md) for command availability and profile drop-down behavior.
 
-| Tab | Purpose |
+## Main Workflows
+
+| Workflow | Purpose |
 | --- | --- |
-| [PDMPublisher](pdmpublishersolidworks_options.md) | Configure output files, drawing sheets, reference processing, configurations, flat patterns, and PDF behavior. |
-| [Annotations](pdmpublishersolidworks_annotations.md) | Add text, properties, watermarks, or QR codes to exported drawings and PDFs. |
-| [Conditions](conditions_solidworks.md) | Filter the active document and references using property-based rules and AND/OR groups. |
-| [Logs](pdmpublishersolidworks_logs.md) | Review the steps, results, warnings, and errors from each publish job. |
-| [About](pdmpublishersolidworks_About.md) | View the installed version, update and licensing links, and appearance settings. |
+| [Publishing](pdmpublishersolidworks_options.md) | Export the active document and references to PDF, DXF, STEP, eDrawings, and other formats. Profiles combine Publish settings, Annotations, and Conditions. |
+| [Save As New](pdmpublishersolidworks_save-as-new.md) | Save a separate native copy using naming, destination, PDM, drawing, bounding-box, and macro options. |
+| [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Inspect and edit properties across the active document, configurations, cut lists, drawings, and references. |
+| [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and folders, companion files, revisions, profiles, and optional ZIP output. |
+| [Settings](pdmpublishersolidworks_settings.md) | Search and configure all utility, publishing, shared-resource, support, and license settings. |
 
-## Documentation Structure
+## Help Task Pane
 
-The SOLIDWORKS add-in documentation follows the same category order as the PDM task documentation. Shared settings link to one common reference page so their explanations remain consistent. Add-in-only pages cover profiles, interactive publishing, logs, and About settings.
+The PDMPublisher task pane now displays documentation instead of application controls. Use the [Help Task Pane](pdmpublishersolidworks_help-pane.md) for WebView2 requirements and troubleshooting. All product commands remain in the CommandManager if the help page is offline.
 
-Settings that require the PDM task framework are intentionally excluded from the add-in TOC. This includes scheduling, task-launch prompts, BOM templates, task-host SOLIDWORKS selection, and vault activity logs.
+## Profiles and Settings Transfer
 
-## Navigation Width
+Publish, Save As New, Property Doctor, and Smart Pack and Go each have their own profiles. The unified Settings dialog can export or share a complete configuration containing every profile family and the shared resources. See [Settings](pdmpublishersolidworks_settings.md) and [Publish Profiles](pdmpublishersolidworks_profiles.md).
 
-Select **Minimize** at the bottom of the navigation to leave more room for settings.
-
-![Minimize navigation command](/images/pdmpublisher/solidworks/navigation-minimize.png)
-
-When minimized, the tab names are displayed vertically. Select the arrow at the bottom to restore the full navigation.
-
-![Collapsed PDMPublisher navigation](/images/pdmpublisher/solidworks/navigation-collapsed.png)
-
-## Profiles and Presets
-
-Profiles let you keep separate publishing configurations for different outputs, customers, departments, or workflows. Built-in presets provide starting configurations for DXF, combined PDF and STEP, and STEP publishing. Version `2026.08.10` and later can [share selected profile sections using a six-digit PIN](pdmpublishersolidworks_profile_sharing.md). See [Profiles and Presets](pdmpublishersolidworks_profiles.md) for profile setup and file-based transfer.
+Settings that require the PDM task framework are intentionally excluded from the add-in. This includes scheduling, task-launch prompts, PDM task execution methods, and task-host selection.
 
 ## Download and Licensing
 

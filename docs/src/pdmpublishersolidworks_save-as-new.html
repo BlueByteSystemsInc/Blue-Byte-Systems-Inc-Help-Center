@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-      <title>PDM Task vs SOLIDWORKS Add-in | PDMPublisher | Help Center </title>
+      <title>Save As New | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="PDM Task vs SOLIDWORKS Add-in | PDMPublisher | Help Center ">
-
-      <meta name="description" content="Compare PDMPublisher for SOLIDWORKS PDM Professional with PDMPublisher for SOLIDWORKS and choose the correct documentation.">
-
+      <meta name="title" content="Save As New | PDMPublisher for SOLIDWORKS | Help Center ">
+      
+      <meta name="description" content="Save a native SOLIDWORKS copy with reusable names, destinations, PDM serial numbers, associated drawings, and post-save actions.">
+      
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-
+      
       <meta name="docfx:rel" content="../">
-
-
-      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-product-differences.md/#L1">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_save-as-new.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -108,82 +108,71 @@
         </div>
 
         <article data-uid="">
-<h1 id="pdm-task-vs-solidworks-add-in">PDM Task vs SOLIDWORKS Add-in</h1>
+<h1 id="save-as-new">Save As New</h1>
 
-<p>PDMPublisher is available in two workflows. They share the same publishing engine and many export settings, but they start jobs and obtain file information differently.</p>
+<p><strong>Save As New</strong> creates a separate native SOLIDWORKS document without renaming the source document or its referenced models. Open <strong>PDMPublisher &gt; Settings &gt; Save As New</strong> to configure the command.</p>
+<p><img src="/images/pdmpublisher/solidworks/commands/settings-save-as-new.png" alt="Save As New filename, destination, PDM, property, and macro settings"></p>
+<h2 id="configure-the-new-file">Configure the New File</h2>
+<ol>
+<li>Enter a <strong>Filename</strong> template. The source extension is added automatically.</li>
+<li>Optionally enable <strong>Save the new to this destination</strong> and enter an existing folder or folder template.</li>
+<li>Enable <strong>Show Save As dialog</strong> when the user should confirm or change the target each time.</li>
+<li>Select any post-save options, then select <strong>OK</strong>.</li>
+<li>Open a document and select <strong>Save As New</strong>, or use the arrow beside the command to choose a saved profile.</li>
+</ol>
+<p>Type <code>{</code> in a filename or destination editor to insert a document value, property, folder value, PDM value, or <strong>Prompt user</strong> token. A prompted value affects the output path only; it does not change document properties.</p>
+<h2 id="options">Options</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>PDMPublisher for PDM Professional</th>
-<th>PDMPublisher for SOLIDWORKS</th>
+<th>Option</th>
+<th>Behavior</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Runs from</td>
-<td>A task configured in the SOLIDWORKS PDM Administration tool</td>
-<td>The PDMPublisher CommandManager tab and Tools menu inside SOLIDWORKS</td>
+<td>Use this serial number</td>
+<td>Reserves a value from the selected PDM serial-number generator and makes it available to the name or destination template.</td>
 </tr>
 <tr>
-<td>Starts from</td>
-<td>Selected vault files, a workflow action, or a PDM schedule</td>
-<td>The document currently open in SOLIDWORKS</td>
+<td>Automatically check in to PDM</td>
+<td>Adds and checks in the saved model and associated drawing. The destination must be inside the selected vault.</td>
 </tr>
 <tr>
-<td>Saves settings as</td>
-<td>A PDM task definition</td>
-<td>Reusable profiles</td>
+<td>Rebuild before saving</td>
+<td>Rebuilds the active configuration, including assembly subassemblies, and stops if the rebuild fails.</td>
 </tr>
 <tr>
-<td>SOLIDWORKS version</td>
-<td>Selected in the task settings</td>
-<td>The currently running SOLIDWORKS version</td>
+<td>Open the new copy after saving</td>
+<td>Opens the saved copy and makes it the active document.</td>
 </tr>
 <tr>
-<td>File information</td>
-<td>PDM variables, cards, BOM templates, and SOLIDWORKS properties</td>
-<td>SOLIDWORKS custom properties and the active document or assembly references</td>
+<td>Add calculated bounding-box dimensions</td>
+<td>Writes <code>Bounding Box Length</code>, <code>Bounding Box Width</code>, and <code>Bounding Box Height</code> in millimetres for the active configuration of a part or assembly.</td>
 </tr>
 <tr>
-<td>User interaction</td>
-<td>Can show task-launch file and configuration prompts</td>
-<td>Uses the active document and selected profile directly</td>
+<td>Bring associated drawing</td>
+<td>Copies an open or same-named drawing beside the new part or assembly and updates its model reference.</td>
 </tr>
 <tr>
-<td>Logs</td>
-<td>Optional vault and server-synced task logs</td>
-<td>A dedicated <strong>Logs</strong> tab for each publish job</td>
+<td>Run macro after saving</td>
+<td>Runs the selected macro method on the new copy before automatic PDM check-in. The macro must save its own changes.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="shared-documentation">Shared Documentation</h2>
-<p>Both products use the same documentation pages for settings whose behavior is shared:</p>
-<ul>
-<li>Export location, filename, and file formats</li>
-<li>Assembly reference export and condition filtering</li>
-<li>Multiple configurations and configuration filters</li>
-<li>Drawing sheet selection and sheet-name patterns</li>
-<li>PDF merge, table of contents, table columns, and bookmarks</li>
-<li>Flat-pattern DXF and split-body output</li>
-<li>Annotation formatting and placement</li>
-<li>Condition groups, fields, comparisons, and evaluation rules</li>
-<li>Placeholder reference</li>
-</ul>
-<p>Each shared page identifies any difference between the PDM task and the SOLIDWORKS add-in.</p>
-<h2 id="pdm-task-only">PDM Task Only</h2>
-<p>Use the <a href="pdmpublisher.html">PDM task documentation</a> for scheduled items, task-launch prompts, BOM templates, drawing-derived BOMs, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, and File Explorer task visibility.</p>
-<h2 id="solidworks-add-in-only">SOLIDWORKS Add-in Only</h2>
-<p>Use the <a href="pdmpublishersolidworks.html">SOLIDWORKS add-in documentation</a> for Publish profiles, <a href="pdmpublishersolidworks_settings.html">complete settings</a>, <a href="pdmpublishersolidworks_save-as-new.html">Save As New</a>, <a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a>, <a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a>, interactive publishing, logs, updates, and licensing.</p>
-<div class="TIP">
-<h5>Tip</h5>
-<p>If you are configuring a task in the PDM Administration tool, follow the <strong>PDM Professional</strong> section of the TOC. If you are using the PDMPublisher CommandManager commands inside SOLIDWORKS, follow the <strong>SOLIDWORKS add-in</strong> section.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Property Doctor cleanup is visible in the current settings model but is not enabled for Save As New yet. Use Property Doctor separately until that automation is released.</p>
 </div>
+<h2 id="profiles">Profiles</h2>
+<p>The <strong>Save As New profiles</strong> area stores reusable command configurations. Add or edit a profile in Settings, then use the arrow beside <strong>Save As New</strong> in the CommandManager to run it. The first profile is treated as the default.</p>
+<h2 id="validation-and-file-safety">Validation and File Safety</h2>
+<p>Save As New rejects an unchanged filename, an existing target file, a different SOLIDWORKS extension, an unavailable destination, and a filename already present in the selected vault. If the model is saved but a later macro or PDM check-in fails, the error explains that the new files already exist and must be inspected.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublisher-product-differences.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_save-as-new.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

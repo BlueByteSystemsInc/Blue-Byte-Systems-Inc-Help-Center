@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Search and Read Logs
 
-The Logs tab collects messages from the current PDMPublisher session. Entries can include file processing, condition evaluation, quantities, drawing sheets, exports, warnings, and failures.
+The **PDMPublisher > Logs** window collects messages from the current session. Entries can include file processing, condition evaluation, quantities, drawing sheets, exports, warnings, and failures.
 
 ![Detailed PDMPublisher logs](/images/detailedlogs.png)
 

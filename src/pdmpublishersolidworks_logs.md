@@ -1,13 +1,13 @@
 ---
 title: Logs | PDMPublisher for SOLIDWORKS
 description: Find the focused documentation for searching, reading, saving, and clearing PDMPublisher job logs.
-ms.date: 08/23/2026
+ms.date: 09/15/2026
 ms.topic: how-to
 ---
 
-# Logs Tab
+# Publishing Logs
 
-The Logs tab records processing steps, successful exports, warnings, and failures from PDMPublisher jobs in the current SOLIDWORKS session.
+Select **PDMPublisher > Logs** to review processing steps, successful exports, warnings, and failures from jobs in the current SOLIDWORKS session.
 
 ![Detailed PDMPublisher logs](/images/detailedlogs.png)
 

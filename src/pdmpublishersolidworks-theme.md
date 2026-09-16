@@ -1,19 +1,17 @@
 ---
-title: Windows Light and Dark Theme | PDMPublisher for SOLIDWORKS
-description: Make PDMPublisher for SOLIDWORKS follow the Windows light or dark app theme after SOLIDWORKS restarts.
-ms.date: 08/23/2026
+title: Light and Dark Theme | PDMPublisher for SOLIDWORKS
+description: Understand how PDMPublisher windows follow the current SOLIDWORKS interface brightness.
+ms.date: 09/15/2026
 ms.topic: how-to
 ---
 
-# Windows Light and Dark Theme
+# Light and Dark Theme
 
-Enable **Use Windows light/dark theme (applies on restart)** on the About tab to make PDMPublisher use the Windows app theme detected when SOLIDWORKS starts.
+PDMPublisher windows automatically follow the current SOLIDWORKS interface brightness. There is no separate theme-sync setting.
 
-![Windows light and dark theme option](/images/pdmpublisher/solidworks/theme-toggle.png)
+When SOLIDWORKS switches between light and dark appearance, open PDMPublisher windows update after the appearance change is detected. Newly opened windows use the current SOLIDWORKS appearance immediately.
 
-Restart SOLIDWORKS after changing the option. The current task pane does not switch themes immediately.
-
-When the option is disabled, PDMPublisher uses its original light appearance.
+The documentation task pane uses the browser color scheme and may not switch at exactly the same time as native PDMPublisher dialogs.
 
 > [!NOTE]
 > Theme synchronization changes colors only. It does not change profiles, settings, exported files, or publishing behavior.
