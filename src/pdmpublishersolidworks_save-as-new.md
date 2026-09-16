@@ -9,7 +9,7 @@ ms.topic: how-to
 
 **Save As New** creates a separate native SOLIDWORKS document without renaming the source document or its referenced models. Open **PDMPublisher > Settings > Save As New** to configure the command.
 
-![Save As New filename, destination, PDM, property, and macro settings](/images/pdmpublisher/solidworks/commands/settings-save-as-new.png)
+![Save As New filename, destination, PDM, property, and macro settings](/images/pdmpublisher/solidworks/settings-save-as-new-20260908.png)
 
 ## Configure the New File
 
@@ -43,4 +43,3 @@ The **Save As New profiles** area stores reusable command configurations. Add or
 ## Validation and File Safety
 
 Save As New rejects an unchanged filename, an existing target file, a different SOLIDWORKS extension, an unavailable destination, and a filename already present in the selected vault. If the model is saved but a later macro or PDM check-in fails, the error explains that the new files already exist and must be inspected.
-

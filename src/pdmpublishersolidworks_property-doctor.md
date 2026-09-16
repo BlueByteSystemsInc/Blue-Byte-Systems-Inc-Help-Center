@@ -11,6 +11,10 @@ Property Doctor presents the active document, configurations, cut lists, drawing
 
 ![Property Doctor showing document properties across an assembly and its references](/images/pdmpublisher/solidworks/commands/property-doctor.png)
 
+Open **PDMPublisher > Settings > Property Doctor** to configure the default columns, thumbnail loading, and reusable action profiles.
+
+![Property Doctor settings and profile controls](/images/pdmpublisher/solidworks/settings-property-doctor-20260908.png)
+
 ## Edit Properties
 
 1. Open a saved part, assembly, or drawing.
@@ -46,4 +50,3 @@ Actions run from top to bottom. Later matching actions can replace values produc
 ## Shared Resources
 
 Property Doctor can use named [Advanced Formulas](pdmpublishersolidworks_settings.md#settings-pages), SQL Server external sources, and drawing search folders configured under **Shared Resources** in Settings. Complete settings transfer includes these definitions but never includes SQL credentials.
-

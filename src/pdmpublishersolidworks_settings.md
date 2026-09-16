@@ -1,7 +1,7 @@
 ---
 title: Settings | PDMPublisher for SOLIDWORKS
 description: Configure PDMPublisher utilities, shared resources, publishing, and complete settings transfer from one searchable dialog.
-ms.date: 09/15/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 ---
 
@@ -9,7 +9,9 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings** to configure the SOLIDWORKS add-in. Search Options finds settings by page name, label, and related keyword.
 
-![Save As New settings in the unified PDMPublisher Settings dialog](/images/pdmpublisher/solidworks/commands/settings-save-as-new.png)
+![Save As New settings in the unified PDMPublisher Settings dialog](/images/pdmpublisher/solidworks/settings-save-as-new-20260908.png)
+
+The left navigation divides the dialog into **Publishing**, **Utilities**, **Shared Resources**, and support/licensing pages. **Search Options** finds a control by its label or a related keyword without requiring the user to know which page contains it.
 
 ## Settings Pages
 
@@ -30,6 +32,56 @@ Open **PDMPublisher > Settings** to configure the SOLIDWORKS add-in. Search Opti
 
 Select **OK** to save changes. **Cancel** closes the dialog without saving the current edits. **Reset** restores defaults for the selected page; select **OK** to keep the reset values.
 
+## Utility Settings
+
+### Save As New
+
+![Save As New settings](/images/pdmpublisher/solidworks/settings-save-as-new-20260908.png)
+
+The page controls filename placeholders, an optional destination, PDM serial numbers, whether to show the SOLIDWORKS Save As dialog, automatic check-in, rebuild behavior, opening the new copy, calculated bounding-box properties, associated drawings, Property Doctor cleanup, post-save macros, and reusable profiles. Options that depend on another checkbox remain disabled until their parent option is enabled.
+
+### Smart Pack and Go
+
+![Smart Pack and Go settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
+
+**Use this serial number** selects the PDM serial-number definition used by rows that request a new number. The profile selector chooses the settings edited by the command. The buttons beside it create, rename/edit, and delete profiles. Serial numbers are generated when **Copy** is selected in the workflow, and retries reuse the same number while the dialog remains open.
+
+### Property Doctor
+
+![Property Doctor settings](/images/pdmpublisher/solidworks/settings-property-doctor-20260908.png)
+
+**Hide thumbnail column** improves loading performance. The column-template selector determines which properties appear when Property Doctor opens. **Edit columns** changes that template and **Save default** stores it as the default. The profile selector and adjacent buttons select, create, edit, or delete Property Doctor action profiles.
+
+## Shared Resources
+
+### File Locations
+
+![Drawing file-location settings](/images/pdmpublisher/solidworks/settings-file-locations-20260908.png)
+
+Use **Add** and **Remove** to maintain additional drawing search folders. **Include subfolders** searches below every listed folder. **Include SOLIDWORKS File Locations > Referenced Documents folders** also searches the folders configured in SOLIDWORKS. The active model's folder is always searched first, followed by the listed folders in order.
+
+### External Sources
+
+![External SQL Server source settings](/images/pdmpublisher/solidworks/settings-external-sources-20260908.png)
+
+External sources are reusable SQL Server connections and queries. **Add** creates a source, **Edit / Test** changes it and validates the query using a configuration name, filename, or property value, and **Delete** removes the selected definition. Credentials remain local and are not included in exported settings.
+
+### Advanced Formulas
+
+![Advanced formula settings](/images/pdmpublisher/solidworks/settings-advanced-formulas-20260908.png)
+
+Advanced formulas are named expressions shared by supported filename, folder, and property menus. **Add** creates a formula, **Edit** changes the selected formula, and **Delete** removes it. Formula names should describe their result so they remain understandable when inserted from another workflow.
+
+## Dialog Commands
+
+| Command | Behavior |
+| --- | --- |
+| **Reset** | Restores defaults for the selected settings page. The reset is saved only after selecting **OK**. |
+| **Import** | Imports all settings from a file or a six-digit sharing PIN. |
+| **Export** | Exports all settings to a file or uploads them and returns a sharing PIN. |
+| **OK** | Validates and saves the current changes. |
+| **Cancel** | Closes the dialog without saving edits made since it opened. |
+
 ## Transfer All Settings
 
 The **Import** and **Export** menus at the bottom transfer a complete PDMPublisher configuration.
@@ -47,4 +99,3 @@ A complete bundle contains utility settings, Save As New profiles, Property Doct
 Before replacing settings, PDMPublisher validates every section and creates a timestamped local backup. If writing a section fails, it attempts to restore the previous settings.
 
 For transferring only one Publish profile, use [Profiles](pdmpublishersolidworks_profiles.md) instead of a complete settings bundle.
-

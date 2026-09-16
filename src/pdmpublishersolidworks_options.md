@@ -1,13 +1,38 @@
 ---
 title: Publish Settings | PDMPublisher for SOLIDWORKS
 description: Find the focused documentation for every PDMPublisher for SOLIDWORKS output and processing option.
-ms.date: 09/15/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 ---
 
 # Publish Settings
 
 Open **PDMPublisher > Settings > Publish** to edit the output and processing settings stored in a [Publish profile](pdmpublishersolidworks_profiles.md). Select **PDMPublisher > Publish** to configure and run the active profile.
+
+![Publish settings in PDMPublisher 2026.09.08](/images/pdmpublisher/solidworks/settings-publish-20260908.png)
+
+## Controls on the Publish Page
+
+| Section | Control | Purpose |
+| --- | --- | --- |
+| Output | **Export location** | Builds the destination folder from literal text and placeholders. **Browse** selects a folder. |
+| Output | **Locations by file format** | Overrides the main destination for selected output formats. |
+| Output | **Filename** | Builds the output filename. The extension is supplied by the selected format. |
+| Output | **File formats** | Selects one or more output formats and exposes format-specific settings where supported. |
+| Output | **Show dialog before processing** | Displays the Publish dialog so the user can review the active profile before the job starts. |
+| Output | **Open export location on completion** | Opens the destination folder after a successful job. |
+| Drawing sheets | **Sheets to export** | Chooses all sheets or another supported sheet-selection mode. |
+| Drawing sheets | **Sheet name** | Filters drawing sheets by an evaluated name pattern. |
+| Export | **Export references to file formats individually** | Publishes supported assembly references as separate output files. |
+| Export | **Ignore sub-assembly children when condition checks fail** | Stops traversal below a subassembly that does not satisfy its conditions. |
+| Export | **Convert multiple configurations** | Publishes selected configurations separately. **Configuration filter** controls inclusion. |
+| Export | **Archive all exported documents (.zip)** | Adds the produced files to a ZIP archive. |
+| Export | **Export sheet metal parts to 1:1 flat pattern DXF** | Produces manufacturing-ready flat-pattern DXFs. **Sheet metal settings** controls layers and DXF behavior. |
+| Export | **Split bodies** | Exports supported solid bodies separately. |
+| PDF | **Merge exported PDFs into one master PDF** | Combines exported PDFs in processing order. |
+| PDF | **Add table of content to merged PDF** | Adds a generated contents page to the merged PDF and enables its related controls. |
+
+Scroll the right pane to reach the remaining PDF, annotation, condition, and profile controls. Disabled controls depend on another option; for example, table-of-contents settings remain unavailable until both PDF merging and table-of-contents generation are enabled.
 
 Use the focused pages beneath **Publishing** in the TOC:
 

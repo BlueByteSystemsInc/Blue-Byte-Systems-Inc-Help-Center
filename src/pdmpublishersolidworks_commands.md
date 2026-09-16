@@ -1,13 +1,17 @@
 ---
 title: Commands | PDMPublisher for SOLIDWORKS
 description: Find every PDMPublisher command in the SOLIDWORKS CommandManager and understand which document types support it.
-ms.date: 09/15/2026
+ms.date: 09/16/2026
 ms.topic: overview
 ---
 
 # PDMPublisher Commands
 
 PDMPublisher commands are available from the **PDMPublisher** tab in the SOLIDWORKS CommandManager and from the **Tools > PDMPublisher** menu. The task pane is now a documentation browser; publishing and utility commands no longer run inside the pane.
+
+![PDMPublisher CommandManager and Help task pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
+
+The screenshot shows PDMPublisher 2026.09.08 in SOLIDWORKS 2026 SP3.2. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
 
 | Group | Command | Purpose |
 | --- | --- | --- |
@@ -24,6 +28,23 @@ PDMPublisher commands are available from the **PDMPublisher** tab in the SOLIDWO
 | Updates | Check for updates | Check whether a newer PDMPublisher build is available. |
 | Updates | Version information | Open product, support, legal, and version information. |
 
+## CommandManager Controls
+
+| Control | What happens when selected | Arrow menu |
+| --- | --- | --- |
+| **Save As New** | Opens the Save As New workflow for the active part, assembly, or drawing. | Selects a saved Save As New profile before opening the workflow. |
+| **Property Doctor** | Opens a property grid for the active document and supported references. | Selects a saved Property Doctor profile. |
+| **Translate** | Currently disabled because the translation workflow is not yet available. | None. |
+| **Smart Pack and Go** | Opens the copy/package workflow for the active document set. | Selects a saved Smart Pack and Go profile. |
+| **Publish** | Opens or runs the publishing workflow with the active Publish profile. | Selects a saved Publish profile. |
+| **Annotations** | Edits annotations in the active Publish profile. | None. |
+| **Conditions** | Edits conditions in the active Publish profile. | None. |
+| **Logs** | Opens the PDMPublisher log viewer. | None. |
+| **Settings** | Opens the searchable settings dialog. | None. |
+| **License Key** | Opens license activation and deactivation. | None. |
+
+The update area to the right reports whether the installed build is current. When an update is available, use the displayed update command and close SOLIDWORKS before installing the MSI.
+
 ## Profile Drop-Downs
 
 The arrow beside **Save As New**, **Property Doctor**, **Smart Pack and Go**, and **Publish** lists the saved profiles for that command. Select **Profile: Default** to use the current default settings, or select a named profile to start with that configuration.
@@ -36,4 +57,3 @@ Document commands require an active part, assembly, or drawing. Save the active 
 
 > [!NOTE]
 > The **PDMPublisher** CommandManager tab is recreated for parts, assemblies, and drawings. If the tab is hidden, enable the add-in and right-click the CommandManager tab area to show **PDMPublisher**.
-

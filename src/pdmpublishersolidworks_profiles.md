@@ -1,7 +1,7 @@
 ---
 title: Publish Profiles | PDMPublisher for SOLIDWORKS
 description: Create, select, rename, export, import, share, and delete reusable Publish profiles in PDMPublisher for SOLIDWORKS.
-ms.date: 09/15/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 bbsProductName: PDMPublisher for SOLIDWORKS
 bbsProductHref: pdmpublishersolidworks.html
@@ -20,6 +20,10 @@ A profile is a named publishing configuration containing Options, Annotations, a
 ## Select a Profile
 
 Use the profile list in the Publish settings page or the arrow beside **Publish** in the CommandManager. The profile stores Publish settings, Annotations, and Conditions.
+
+![Named Publish profiles in the CommandManager menu](/images/pdmpublisher/solidworks/publish-profile-menu-20260908.png)
+
+The CommandManager menu lists each saved profile as **Profile: _name_**. Selecting an entry starts the Publish workflow with that profile. If **Show dialog before processing** is enabled, review the resolved output and processing options before confirming the job.
 
 Give profiles names that describe their output, such as `Released PDF`, `Laser DXF`, or `PDF And Step`.
 

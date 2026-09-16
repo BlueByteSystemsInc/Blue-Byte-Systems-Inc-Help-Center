@@ -1,7 +1,7 @@
 ---
 title: Run a Publish Job | PDMPublisher for SOLIDWORKS
 description: Publish the active SOLIDWORKS document with the selected PDMPublisher profile and review the resulting job log.
-ms.date: 09/15/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 ---
 
@@ -22,6 +22,8 @@ The **Publish** command processes the document currently open in SOLIDWORKS by u
 ## Start the Job
 
 Select **PDMPublisher > Publish** in the CommandManager. Use the command arrow to publish immediately with a named profile, or open the command to review settings first.
+
+![Publish profile selection menu](/images/pdmpublisher/solidworks/publish-profile-menu-20260908.png)
 
 If local SOLIDWORKS PDM vault views are available, the arrow beside **PUBLISH** can associate the job with a vault. Select the correct vault when the profile uses PDM values or when generated files must be handled through PDM.
 

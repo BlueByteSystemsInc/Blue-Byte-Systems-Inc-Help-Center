@@ -11,6 +11,10 @@ Smart Pack and Go builds a copy plan for the active document and its references.
 
 ![Smart Pack and Go file tree with per-file names and destination folders](/images/pdmpublisher/solidworks/commands/smart-pack-and-go.png)
 
+Open **PDMPublisher > Settings > Smart Pack and Go** to select the shared PDM serial number and maintain command profiles.
+
+![Smart Pack and Go serial-number and profile settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
+
 ## Create a Package
 
 1. Save the active SOLIDWORKS document.
@@ -44,4 +48,3 @@ A profile can run a Property Doctor profile after copying. That processing appli
 ## Validation
 
 Before copying, PDMPublisher rejects duplicate targets, source overwrites, changed SOLIDWORKS extensions, existing targets, unresolved destination expressions, and unavailable PDM revision data. Review the grid again if references change while the window is open.
-
