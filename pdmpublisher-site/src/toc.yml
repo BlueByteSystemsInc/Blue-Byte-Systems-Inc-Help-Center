@@ -205,6 +205,21 @@
       href: ../../src/pdmpublishersolidworks_presets.md
     - name: Share a Publish Profile Using a PIN
       href: ../../src/pdmpublishersolidworks_profile_sharing.md
+    - name: Shared Resources
+      href: ../../src/pdmpublishersolidworks_shared-resources.md
+      items:
+      - name: PDM
+        href: ../../src/pdmpublishersolidworks_pdm-settings.md
+      - name: Languages
+        href: ../../src/pdmpublishersolidworks_languages.md
+      - name: File Locations
+        href: ../../src/pdmpublishersolidworks_file-locations.md
+      - name: External Sources
+        href: ../../src/pdmpublishersolidworks_external-sources.md
+      - name: Advanced Formulas
+        href: ../../src/pdmpublishersolidworks_advanced-formulas.md
+    - name: Import, Export, and Reset Settings
+      href: ../../src/pdmpublishersolidworks_settings-transfer.md
   - name: Save As New
     href: ../../src/pdmpublishersolidworks_save-as-new.md
   - name: Property Doctor
@@ -217,6 +232,8 @@
     items:
     - name: Run a Publish Job
       href: ../../src/pdmpublishersolidworks-publish.md
+    - name: Publishing Workflow and Results
+      href: ../../src/pdmpublishersolidworks_workflow.md
     - name: Output Paths and Names
       expanded: true
       items:
