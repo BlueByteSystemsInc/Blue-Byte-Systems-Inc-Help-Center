@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Use the commands at the bottom of **PDMPublisher > Settings** to transfer or restore the complete add-in configuration.
 
-![Reset, Import, and Export commands at the bottom of Settings](/images/pdmpublisher/solidworks/settings-file-locations-20260908.png)
+![Reset, Import, and Export commands at the bottom of Settings](/images/pdmpublisher/solidworks/settings-file-locations-20260916.png)
 
 | Command | Scope |
 | --- | --- |

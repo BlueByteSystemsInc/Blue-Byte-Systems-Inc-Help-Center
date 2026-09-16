@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > External Sources** to maintain reusable SQL Server source definitions.
 
-![External Sources settings](/images/pdmpublisher/solidworks/settings-external-sources-20260908.png)
+![External SQL Server source settings](/images/pdmpublisher/solidworks/settings-external-sources-20260916.png)
 
 | Command | Behavior |
 | --- | --- |
@@ -18,6 +18,8 @@ Open **PDMPublisher > Settings > External Sources** to maintain reusable SQL Ser
 | **Delete** | Removes the selected definition after confirmation. |
 
 Use a descriptive name that explains the returned value. Test the source with representative data before inserting it into a property, formula, filename, or annotation workflow. A successful connection does not guarantee that every document returns a row, so define the expected empty-result behavior in the consuming workflow.
+
+Defaults, external sources, and formulas are saved separately from the other utility settings.
 
 > [!IMPORTANT]
 > Database credentials remain local and are not included in exported settings or PIN shares. Re-enter credentials on the destination computer after importing a configuration.

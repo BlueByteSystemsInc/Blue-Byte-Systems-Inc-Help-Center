@@ -9,7 +9,7 @@ ms.topic: overview
 
 Open **PDMPublisher > Settings** and use the **Shared Resources** group for settings reused by publishing and utility workflows.
 
-![Shared Resources navigation in PDMPublisher Settings](/images/pdmpublisher/solidworks/settings-file-locations-20260908.png)
+![Shared Resources navigation in PDMPublisher Settings](/images/pdmpublisher/solidworks/settings-file-locations-20260916.png)
 
 | Page | Used for |
 | --- | --- |

@@ -9,9 +9,13 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > Languages** to select the language used by PDMPublisher commands, dialogs, labels, and messages.
 
+![Language and regional-format selection](/images/pdmpublisher/solidworks/settings-languages-20260916.png)
+
 1. Select the preferred language.
 2. Select **OK**.
-3. Close and reopen a PDMPublisher window if an already-open window does not refresh immediately.
+3. Reopen existing PDMPublisher windows after changing the selection.
+
+The selection also controls the supported regional formatting associated with that language, such as **English (Canada)**.
 
 The language setting changes the interface. It does not translate SOLIDWORKS document properties, filenames, profile names, annotation text, log entries produced by SOLIDWORKS, or values returned by external sources.
 

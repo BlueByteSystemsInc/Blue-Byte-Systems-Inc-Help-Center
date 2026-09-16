@@ -54,19 +54,33 @@ The page controls filename placeholders, an optional destination, PDM serial num
 
 ## Shared Resources
 
+### PDM
+
+![PDM vault connection settings](/images/pdmpublisher/solidworks/settings-pdm-20260916.png)
+
+Enable **Use vault** and select the local SOLIDWORKS PDM Professional vault shared by serial numbers, automatic check-in, Vault root folder placeholders, and other PDM-aware tools.
+
+### Languages
+
+![Language and regional-format selection](/images/pdmpublisher/solidworks/settings-languages-20260916.png)
+
+Select the display language and regional formatting used by PDMPublisher on this computer. Reopen existing PDMPublisher windows after changing it.
+
 ### File Locations
 
-![Drawing file-location settings](/images/pdmpublisher/solidworks/settings-file-locations-20260908.png)
+![Drawing file-location settings](/images/pdmpublisher/solidworks/settings-file-locations-20260916.png)
 
 Use **Add** and **Remove** to maintain additional drawing search folders. **Include subfolders** searches below every listed folder. **Include SOLIDWORKS File Locations > Referenced Documents folders** also searches the folders configured in SOLIDWORKS. The active model's folder is always searched first, followed by the listed folders in order.
 
 ### External Sources
 
-![External SQL Server source settings](/images/pdmpublisher/solidworks/settings-external-sources-20260908.png)
+![External SQL Server source settings](/images/pdmpublisher/solidworks/settings-external-sources-20260916.png)
 
 External sources are reusable SQL Server connections and queries. **Add** creates a source, **Edit / Test** changes it and validates the query using a configuration name, filename, or property value, and **Delete** removes the selected definition. Credentials remain local and are not included in exported settings.
 
 ### Advanced Formulas
+
+![Advanced formula settings](/images/pdmpublisher/solidworks/settings-advanced-formulas-20260916.png)
 
 Advanced formulas are named expressions shared by supported filename, folder, and property menus. **Add** creates a formula, **Edit** changes the selected formula, and **Delete** removes it. Formula names should describe their result so they remain understandable when inserted from another workflow.
 
