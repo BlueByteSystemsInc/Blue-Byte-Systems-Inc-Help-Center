@@ -8,6 +8,13 @@
   object-fit: contain;
 }
 
+/* The PDMPublisher build uses the complete product logo and wordmark. */
+#logo[src$="pdmpublisher_logo.png"] {
+  width: auto;
+  height: 46px;
+  max-width: 50px;
+}
+
 .navbar-brand,
 .navbar-header .navbar-brand {
   display: flex;
@@ -23,6 +30,12 @@
     width: 30px;
     height: 30px;
     max-width: 30px;
+  }
+
+  #logo[src$="pdmpublisher_logo.png"] {
+    width: auto;
+    height: 40px;
+    max-width: 44px;
   }
 }
 
