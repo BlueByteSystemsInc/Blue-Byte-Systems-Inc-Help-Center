@@ -25,7 +25,7 @@ Select **PDMPublisher > Publish** in the CommandManager. Use the command arrow t
 
 ![Publish profile selection menu](/images/pdmpublisher/solidworks/publish-profile-menu-20260908.png)
 
-If local SOLIDWORKS PDM vault views are available, the arrow beside **PUBLISH** can associate the job with a vault. Select the correct vault when the profile uses PDM values or when generated files must be handled through PDM.
+The arrow beside **Publish** selects the Publish profile used for the job. It does not select or associate a PDM vault. When a workflow uses PDM values, serial numbers, automatic check-in, or Vault root folder placeholders, configure the shared vault under **PDMPublisher > Settings > PDM**. See [PDM Settings](pdmpublishersolidworks_pdm-settings.md).
 
 When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md) is enabled for an assembly, PDMPublisher displays the references that passed before export begins. Confirm the files to continue or cancel the job.
 
