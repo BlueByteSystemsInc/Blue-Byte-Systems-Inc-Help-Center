@@ -1,13 +1,15 @@
 ---
 title: Save and Clear Logs | PDMPublisher for SOLIDWORKS
 description: Save the complete PDMPublisher session log to a file or clear the in-memory log list.
-ms.date: 08/23/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 ---
 
 # Save and Clear Logs
 
 Use the commands in the **PDMPublisher > Logs** window to preserve a job record or start with an empty log list.
+
+![Copy, save, clear, and close controls in the Publishing Logs window](/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
 
 ## Save Logs
 

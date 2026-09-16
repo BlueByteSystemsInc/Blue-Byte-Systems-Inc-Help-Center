@@ -1,13 +1,15 @@
 ---
 title: Import and Export Conditions | PDMPublisher for SOLIDWORKS
 description: Save a condition tree to an EDM task definition file or load conditions into the selected profile or group.
-ms.date: 08/23/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 ---
 
 # Import and Export Conditions
 
 Use **Export...** and **Import...** in the **PDMPublisher > Conditions** window to move condition rules separately from the complete Publish profile.
+
+![Conditions editor](/images/pdmpublisher/solidworks/conditions-editor-controls-20260908.png)
 
 ## Export Conditions
 

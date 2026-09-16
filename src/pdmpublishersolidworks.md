@@ -143,6 +143,7 @@ See [Install and Enable the Add-in](pdmpublishersolidworks_installation.md) for 
 
 - [Installation guide](pdmpublishersolidworks_installation.md)
 - [Download PDMPublisher for SOLIDWORKS](https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher)
+- [Request a 7-day trial](https://bluebyte.biz/product/pdmpublisher-trial/)
 - [Purchase a PDMPublisher for SOLIDWORKS license](https://bluebyte.biz/product/pdmpublisher-solidworks)
 - [License management](licensespdmpublisher.md)
 

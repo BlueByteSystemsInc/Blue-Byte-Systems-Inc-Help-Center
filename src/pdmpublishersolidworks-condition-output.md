@@ -1,7 +1,7 @@
 ---
 title: Review Condition Results Before Export | PDMPublisher for SOLIDWORKS
 description: Use the conditions output dialog to review and adjust the assembly files selected for export.
-ms.date: 08/23/2026
+ms.date: 09/16/2026
 ms.topic: how-to
 ---
 
@@ -23,6 +23,8 @@ The dialog lists the files that passed condition processing, including available
 Files are selected by default. Clear a file when it should not be processed in this job, then confirm the dialog to continue.
 
 Cancelling the dialog cancels the publish job before file processing begins.
+
+If a job is cancelled after processing has already started, files completed before cancellation can remain in the output folder. See [Publishing Workflow and Results](pdmpublishersolidworks_workflow.md#5-interpret-the-result).
 
 > [!NOTE]
 > This dialog is a final job review. It does not rewrite the condition tree or permanently change the selected profile.

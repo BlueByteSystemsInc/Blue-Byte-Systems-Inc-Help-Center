@@ -1,13 +1,15 @@
 ---
 title: PDM Task vs SOLIDWORKS Add-in | PDMPublisher
 description: Compare PDMPublisher for SOLIDWORKS PDM Professional with PDMPublisher for SOLIDWORKS and choose the correct documentation.
-ms.date: 08/23/2026
+ms.date: 09/16/2026
 ms.topic: overview
 ---
 
 # PDM Task vs SOLIDWORKS Add-in
 
 PDMPublisher is available in two workflows. They share the same publishing engine and many export settings, but they start jobs and obtain file information differently.
+
+![PDMPublisher for SOLIDWORKS commands in the SOLIDWORKS CommandManager](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
 
 | | PDMPublisher for PDM Professional | PDMPublisher for SOLIDWORKS |
 | --- | --- | --- |

@@ -1,13 +1,15 @@
 ---
 title: Open Export Location on Completion | PDMPublisher for SOLIDWORKS
 description: Open the output folder after a PDMPublisher for SOLIDWORKS publish job completes.
-ms.date: 08/18/2026
+ms.date: 09/16/2026
 ms.topic: reference
 ---
 
 # Open Export Location on Completion
 
 Enable **Open Export Location On Completion** to open the main output folder after a successful publish job.
+
+![Open export location on completion in Publish settings](/images/pdmpublisher/solidworks/settings-publish-20260908.png)
 
 This setting is available in **PDMPublisher for SOLIDWORKS**. It is useful for an interactive publish workflow because the generated files are immediately available for review.
 
