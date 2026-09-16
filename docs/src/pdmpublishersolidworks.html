@@ -110,71 +110,126 @@
         <article data-uid="">
 <h1 id="pdmpublisher-for-solidworks">PDMPublisher for SOLIDWORKS</h1>
 
-<p>PDMPublisher for SOLIDWORKS is the interactive SOLIDWORKS add-in. It combines document publishing with Save As New, Property Doctor, Smart Pack and Go, reusable profiles, and shared PDM-aware resources.</p>
+<p>PDMPublisher for SOLIDWORKS is an interactive SOLIDWORKS add-in for publishing deliverables, creating controlled document copies, editing properties, and packaging complete document sets. It runs inside SOLIDWORKS and can use SOLIDWORKS PDM Professional information when a vault view is available.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>This documentation describes the SOLIDWORKS add-in, not the PDMPublisher task configured in the SOLIDWORKS PDM Administration tool.</p>
 </div>
 <p>See <a href="pdmpublisher-product-differences.html">PDM Task vs SOLIDWORKS Add-in</a> for a side-by-side comparison and links to the settings shared by both products.</p>
-<h2 id="install-and-enable-the-add-in">Install and Enable the Add-In</h2>
-<p>Before using PDMPublisher, <a href="pdmpublishersolidworks_installation.html">download and install PDMPublisher for SOLIDWORKS</a>. Close SOLIDWORKS before running the MSI installer.</p>
-<p>After installation:</p>
-<ol>
-<li>Start SOLIDWORKS.</li>
-<li>Select <strong>Tools &gt; Add-Ins</strong>.</li>
-<li>Locate <strong>PDMPublisher (SOLIDWORKS)</strong> under <strong>Partner Solution Add-Ins</strong>.</li>
-<li>Select <strong>Active Add-ins</strong> to load it now.</li>
-<li>Select <strong>Start Up</strong> to load it automatically with SOLIDWORKS.</li>
-<li>Select <strong>OK</strong>.</li>
-</ol>
-<p><img src="/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png" alt="PDMPublisher for SOLIDWORKS enabled under Partner Solution Add-Ins"></p>
-<h2 id="find-pdmpublisher-in-solidworks">Find PDMPublisher in SOLIDWORKS</h2>
-<p>Open the <strong>PDMPublisher</strong> tab in the SOLIDWORKS CommandManager, or select <strong>Tools &gt; PDMPublisher</strong>. The command groups provide:</p>
-<ul>
-<li><a href="pdmpublishersolidworks_save-as-new.html">Save As New</a></li>
-<li><a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a></li>
-<li><a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a></li>
-<li><a href="pdmpublishersolidworks-publish.html">Publish</a>, Annotations, Conditions, and Logs</li>
-<li><a href="pdmpublishersolidworks_settings.html">Settings</a>, license management, and updates</li>
-</ul>
-<p>See <a href="pdmpublishersolidworks_commands.html">PDMPublisher Commands</a> for command availability and profile drop-down behavior.</p>
+<h2 id="current-interface">Current Interface</h2>
+<p>PDMPublisher commands are located on the <strong>PDMPublisher</strong> tab in the SOLIDWORKS CommandManager and under <strong>Tools &gt; PDMPublisher</strong>. The task pane is now a documentation browser and no longer contains the publishing controls.</p>
 <p><img src="/images/pdmpublisher/solidworks/commands/overview-commandmanager-help.png" alt="PDMPublisher CommandManager commands and embedded Help pane in SOLIDWORKS 2026"></p>
-<h2 id="main-workflows">Main Workflows</h2>
+<p>The CommandManager is organized into three groups:</p>
 <table>
 <thead>
 <tr>
-<th>Workflow</th>
+<th>Group</th>
+<th>Commands</th>
 <th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="pdmpublishersolidworks_options.html">Publishing</a></td>
-<td>Export the active document and references to PDF, DXF, STEP, eDrawings, and other formats. Profiles combine Publish settings, Annotations, and Conditions.</td>
+<td>Document tools</td>
+<td>Save As New, Property Doctor, Translate, Smart Pack and Go</td>
+<td>Create copies, manage properties, and package document sets. Translate is reserved for a future release.</td>
 </tr>
 <tr>
-<td><a href="pdmpublishersolidworks_save-as-new.html">Save As New</a></td>
-<td>Save a separate native copy using naming, destination, PDM, drawing, bounding-box, and macro options.</td>
+<td>Publishing</td>
+<td>Publish, Annotations, Conditions, Logs</td>
+<td>Configure and run exports, control annotations and processing rules, and review results.</td>
 </tr>
 <tr>
-<td><a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a></td>
-<td>Inspect and edit properties across the active document, configurations, cut lists, drawings, and references.</td>
-</tr>
-<tr>
-<td><a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a></td>
-<td>Copy a document set with per-file names and folders, companion files, revisions, profiles, and optional ZIP output.</td>
-</tr>
-<tr>
-<td><a href="pdmpublishersolidworks_settings.html">Settings</a></td>
-<td>Search and configure all utility, publishing, shared-resource, support, and license settings.</td>
+<td>Settings and updates</td>
+<td>Settings, License Key, update status, version information</td>
+<td>Configure the add-in, transfer settings, manage licensing, and check the installed version.</td>
 </tr>
 </tbody>
 </table>
+<p>See <a href="pdmpublishersolidworks_commands.html">PDMPublisher Commands</a> for command availability, profile drop-downs, and assembly context-menu commands.</p>
+<h2 id="start-a-workflow">Start a Workflow</h2>
+<ol>
+<li>Open or activate a saved part, assembly, or drawing in SOLIDWORKS.</li>
+<li>Open the <strong>PDMPublisher</strong> CommandManager tab.</li>
+<li>Select a command to use its default settings, or select the arrow below a supported command to choose a saved profile.</li>
+<li>Review the command window or preview before writing files or document properties.</li>
+<li>Complete the operation and review any reported warnings or errors.</li>
+</ol>
+<p><strong>Save As New</strong>, <strong>Property Doctor</strong>, <strong>Smart Pack and Go</strong>, and <strong>Publish</strong> support reusable profiles. A component selected in an assembly also has PDMPublisher commands on its right-click menu.</p>
+<h2 id="save-as-new">Save As New</h2>
+<p><a href="pdmpublishersolidworks_save-as-new.html">Save As New</a> creates a separate native SOLIDWORKS document without renaming the source document or changing the source assembly references.</p>
+<p>Use it to:</p>
+<ul>
+<li>Build filenames and destination folders from document values, properties, folder values, PDM variables, formulas, serial numbers, and prompted text.</li>
+<li>Display the normal Save As dialog when the destination needs user confirmation.</li>
+<li>Rebuild the model before saving and open the new copy afterward.</li>
+<li>Copy and relink an associated drawing.</li>
+<li>Write calculated bounding-box dimensions to the new part or assembly.</li>
+<li>Run a SOLIDWORKS macro after the copy is created.</li>
+<li>Add and check the new files into the selected PDM vault automatically.</li>
+</ul>
+<p>Save As New validates the extension, destination, duplicate filenames, existing files, and vault conflicts before writing the copy.</p>
+<h2 id="property-doctor">Property Doctor</h2>
+<p><a href="pdmpublishersolidworks_property-doctor.html">Property Doctor</a> displays the active document, configurations, cut lists, drawings, and referenced documents in one editable property grid.</p>
+<p>Use it to:</p>
+<ul>
+<li>Add, edit, clear, reset, or delete custom and configuration-specific properties.</li>
+<li>Search, filter, find and replace, and fill values across visible rows.</li>
+<li>Use document values, linked values, formulas, PDM information, and configured external sources.</li>
+<li>Add and organize property columns or load a reusable column template.</li>
+<li>Import property values from CSV and export the current grid to CSV.</li>
+<li>Preview a Property Doctor profile before applying its ordered property actions.</li>
+<li>Check PDM files in or out, get latest, resolve references, and open unloaded documents when permitted.</li>
+</ul>
+<p>Pending changes remain in the grid until <strong>Apply changes</strong> is selected. <strong>Discard changes</strong> restores the values that were loaded when the window opened.</p>
+<h2 id="smart-pack-and-go">Smart Pack and Go</h2>
+<p><a href="pdmpublishersolidworks_smart-pack.html">Smart Pack and Go</a> creates a copy plan for an active document and its references. Every included file can have its own output name and destination while SOLIDWORKS references are updated to the copied files.</p>
+<p>Use it to:</p>
+<ul>
+<li>Include or exclude individual models and drawings from the package.</li>
+<li>Build per-file names and destinations from properties, folders, PDM variables, serial numbers, and formulas.</li>
+<li>Ignore Toolbox components when they should continue to reference their original locations.</li>
+<li>Include same-named STEP, PDF, or DXF companion files.</li>
+<li>Copy the latest assigned PDM revision directly to the destination without changing the local vault cache.</li>
+<li>Save supported documents in the current SOLIDWORKS release or a supported earlier release.</li>
+<li>Create a ZIP archive after the document set is copied.</li>
+<li>Apply ordered profile rules and optionally run a Property Doctor profile on copied files.</li>
+</ul>
+<p>The copy is blocked when targets are duplicated, overwrite a source or existing file, change a SOLIDWORKS extension, or depend on unresolved destination or revision information.</p>
+<h2 id="publishing">Publishing</h2>
+<p>The <a href="pdmpublishersolidworks-publish.html">Publish</a> command opens publishing for the active document. A Publish profile combines the output settings, annotations, and conditions needed for a repeatable export.</p>
+<p>Publishing can:</p>
+<ul>
+<li>Export parts, assemblies, drawings, and references to supported PDF, DXF, DWG, STEP, eDrawings, and other formats.</li>
+<li>Build output paths and filenames from placeholders and document or PDM values.</li>
+<li>Process references individually, convert configurations, and filter configurations.</li>
+<li>Select drawing sheets, match sheet names, merge PDFs, add a table of contents, and create bookmarks.</li>
+<li>Export sheet-metal flat patterns and split bodies.</li>
+<li>Add text, property values, watermarks, and QR codes through <a href="pdmpublishersolidworks_annotations.html">Annotations</a>.</li>
+<li>Include or exclude documents and references through <a href="conditions_solidworks.html">Conditions</a>.</li>
+<li>Record processing details, warnings, and errors in <a href="pdmpublishersolidworks_logs.html">Logs</a>.</li>
+</ul>
+<p>See <a href="pdmpublishersolidworks_options.html">Publish Settings</a> for the complete publishing option reference.</p>
+<h2 id="settings-and-profiles">Settings and Profiles</h2>
+<p>The <a href="pdmpublishersolidworks_settings.html">Settings</a> command opens one searchable dialog for all add-in configuration.</p>
+<p>The dialog contains:</p>
+<ul>
+<li>Utility settings and profiles for Save As New, Property Doctor, and Smart Pack and Go.</li>
+<li>Complete Publish profiles, including publishing options, annotations, and conditions.</li>
+<li>Shared PDM selection, languages, drawing search folders, external sources, and advanced formulas.</li>
+<li>Support, update, version, legal, and license information.</li>
+</ul>
+<p>Profiles belong to the command that uses them. For example, a Property Doctor profile stores property actions, while a Publish profile stores export behavior. Selecting the arrow below a CommandManager command lists the profiles available to that command.</p>
+<p>The Settings <strong>Import</strong> and <strong>Export</strong> menus can transfer the complete configuration through a file or six-digit PIN. Complete transfer includes every profile family and the shared resources. SQL Server credentials are intentionally excluded and must be entered on the destination computer.</p>
 <h2 id="help-task-pane">Help Task Pane</h2>
-<p>The PDMPublisher task pane now displays documentation instead of application controls. Use the <a href="pdmpublishersolidworks_help-pane.html">Help Task Pane</a> for WebView2 requirements and troubleshooting. All product commands remain in the CommandManager if the help page is offline.</p>
-<h2 id="profiles-and-settings-transfer">Profiles and Settings Transfer</h2>
-<p>Publish, Save As New, Property Doctor, and Smart Pack and Go each have their own profiles. The unified Settings dialog can export or share a complete configuration containing every profile family and the shared resources. See <a href="pdmpublishersolidworks_settings.html">Settings</a> and <a href="pdmpublishersolidworks_profiles.html">Publish Profiles</a>.</p>
-<p>Settings that require the PDM task framework are intentionally excluded from the add-in. This includes scheduling, task-launch prompts, PDM task execution methods, and task-host selection.</p>
+<p>The PDMPublisher task pane displays the compact documentation welcome page at <code>https://pdmpublisher.com/help/addinwelcome.html</code>. It does not host or control the native PDMPublisher commands.</p>
+<p>The embedded page requires Microsoft Edge WebView2 Runtime. If the page cannot load, all CommandManager commands remain available. See <a href="pdmpublishersolidworks_help-pane.html">Help Task Pane</a> for requirements and troubleshooting.</p>
+<h2 id="solidworks-pdm-professional-integration">SOLIDWORKS PDM Professional Integration</h2>
+<p>When the computer has a local PDM vault view, PDMPublisher can use the active PDM session to resolve vault folders and variables, reserve serial numbers, check files in or out, get revisions, and validate vault destinations. The available actions still follow the signed-in user's vault permissions and workflow state.</p>
+<p>The SOLIDWORKS add-in does not include PDM task scheduling, task-launch prompts, execution-method configuration, or task-host SOLIDWORKS selection. Those belong to <a href="pdmpublisher.html">PDMPublisher for PDM Professional</a>.</p>
+<h2 id="install-and-enable-the-add-in">Install and Enable the Add-In</h2>
+<p>Close SOLIDWORKS before running the MSI installer. After installation, open <strong>Tools &gt; Add-Ins</strong>, locate <strong>PDMPublisher (SOLIDWORKS)</strong> under <strong>Partner Solution Add-Ins</strong>, and select both the current-session and startup checkboxes.</p>
+<p>See <a href="pdmpublishersolidworks_installation.html">Install and Enable the Add-in</a> for the full procedure and troubleshooting.</p>
 <h2 id="download-and-licensing">Download and Licensing</h2>
 <ul>
 <li><a href="pdmpublishersolidworks_installation.html">Installation guide</a></li>
