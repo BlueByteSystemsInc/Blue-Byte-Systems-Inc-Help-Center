@@ -11,7 +11,7 @@ bbsProductHref: pdmpublishersolidworks.html
 
 A Publish profile is a reusable combination of Publish settings, Annotations, and Conditions. Use profiles to switch between export workflows without rebuilding those sections each time.
 
-This profile family belongs to **PDMPublisher for SOLIDWORKS**. The PDM task stores its settings in a task definition and does not use add-in profiles. Save As New, Property Doctor, and Smart Pack and Go have separate profile families documented with those commands.
+This profile family belongs to **PDMPublisher for SOLIDWORKS**. The PDM task stores its settings in a task definition and does not use add-in profiles. Save As New, Property Doctor, and Clone Tree have separate profile families documented with those commands.
 
 ![PDMPublisher profile toolbar](/images/pdmpublisher/solidworks/profile-toolbar.png)
 

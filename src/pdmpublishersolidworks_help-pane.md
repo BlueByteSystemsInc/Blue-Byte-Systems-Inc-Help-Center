@@ -21,7 +21,7 @@ The pane opens the compact [PDMPublisher for SOLIDWORKS welcome page](https://pd
 | **Settings** | Unified settings dialog and settings-transfer reference. |
 | **Save As New** | Native-copy workflow and all Save As New controls. |
 | **Property Doctor** | Property review, column, action, preview, and apply workflow. |
-| **Smart Pack and Go** | Document-set copy, rename, destination, revision, and ZIP workflow. |
+| **Clone Tree** | Document-set copy, rename, destination, revision, and ZIP workflow. |
 | **Publish** | Publish profiles, export settings, and job execution. |
 | **Full overview** | Complete PDMPublisher for SOLIDWORKS overview. |
 | **Installation** | MSI installation and add-in activation. |

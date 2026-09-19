@@ -43,7 +43,7 @@ Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-laun
 
 ## SOLIDWORKS Add-in Only
 
-Use the [SOLIDWORKS add-in documentation](pdmpublishersolidworks.md) for Publish profiles, [complete settings](pdmpublishersolidworks_settings.md), [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md), [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md), interactive publishing, logs, updates, and licensing.
+Use the [SOLIDWORKS add-in documentation](pdmpublishersolidworks.md) for Publish profiles, [complete settings](pdmpublishersolidworks_settings.md), [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md), [Clone Tree](pdmpublishersolidworks_smart-pack.md), interactive publishing, logs, updates, and licensing.
 
 > [!TIP]
 > If you are configuring a task in the PDM Administration tool, follow the **PDM Professional** section of the TOC. If you are using the PDMPublisher CommandManager commands inside SOLIDWORKS, follow the **SOLIDWORKS add-in** section.

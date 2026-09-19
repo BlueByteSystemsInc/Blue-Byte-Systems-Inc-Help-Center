@@ -18,7 +18,7 @@ The left navigation divides the dialog into **Publishing**, **Utilities**, **Sha
 | Category | Page | What it controls |
 | --- | --- | --- |
 | Utilities | [Save As New](pdmpublishersolidworks_save-as-new.md) | Filename and destination templates, PDM serial numbers, associated drawings, bounding-box properties, macros, and command profiles. |
-| Utilities | [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md) | Pack profiles, PDM serial-number source, latest-revision behavior, companion files, ZIP output, and optional Property Doctor processing. |
+| Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Clone profiles, PDM serial-number source, latest-revision behavior, companion files, ZIP output, and optional Property Doctor processing. |
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Default columns, thumbnail loading, and property-action profiles. |
 | Utilities | Translate | Placeholder for a future feature. |
 | Shared Resources | [PDM](pdmpublishersolidworks_pdm-settings.md) | The vault used by PDM-aware utility settings. |
@@ -40,9 +40,9 @@ Select **OK** to save changes. **Cancel** closes the dialog without saving the c
 
 The page controls filename placeholders, an optional destination, PDM serial numbers, whether to show the SOLIDWORKS Save As dialog, automatic check-in, rebuild behavior, opening the new copy, calculated bounding-box properties, associated drawings, Property Doctor cleanup, post-save macros, and reusable profiles. Options that depend on another checkbox remain disabled until their parent option is enabled.
 
-### Smart Pack and Go
+### Clone Tree
 
-![Smart Pack and Go settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
+![Clone Tree settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
 
 **Use this serial number** selects the PDM serial-number definition used by rows that request a new number. The profile selector chooses the settings edited by the command. The buttons beside it create, rename/edit, and delete profiles. Serial numbers are generated when **Copy** is selected in the workflow, and retries reuse the same number while the dialog remains open.
 
@@ -103,7 +103,7 @@ The **Import** and **Export** menus at the bottom transfer a complete PDMPublish
 - **Import all settings from File...** validates and applies a bundle from disk.
 - **Import complete settings using PIN...** downloads, validates, and applies a shared bundle.
 
-A complete bundle contains utility settings, Save As New profiles, Property Doctor profiles, Smart Pack and Go profiles, shared formulas and sources, and complete Publish profiles.
+A complete bundle contains utility settings, Save As New profiles, Property Doctor profiles, Clone Tree profiles, shared formulas and sources, and complete Publish profiles.
 
 > [!IMPORTANT]
 > SQL Server connection secrets are not exported or uploaded. After an import, re-enter credentials for external sources that do not already have matching local credentials.

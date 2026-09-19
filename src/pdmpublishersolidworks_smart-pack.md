@@ -1,24 +1,24 @@
 ---
-title: Smart Pack and Go | PDMPublisher for SOLIDWORKS
+title: Clone Tree | PDMPublisher for SOLIDWORKS
 description: Copy SOLIDWORKS documents and references with per-file names, destinations, PDM revision handling, companion files, profiles, and ZIP output.
 ms.date: 09/15/2026
 ms.topic: how-to
 ---
 
-# Smart Pack and Go
+# Clone Tree
 
-Smart Pack and Go builds a copy plan for the active document and its references. Each included file can have its own name and destination while SOLIDWORKS references are updated to the copied files.
+Clone Tree builds a copy plan for the active document and its references. Each included file can have its own name and destination while SOLIDWORKS references are updated to the copied files.
 
-![Smart Pack and Go file tree with per-file names and destination folders](/images/pdmpublisher/solidworks/commands/smart-pack-and-go.png)
+![Clone Tree file tree with per-file names and destination folders](/images/pdmpublisher/solidworks/commands/smart-pack-and-go.png)
 
-Open **PDMPublisher > Settings > Smart Pack and Go** to select the shared PDM serial number and maintain command profiles.
+Open **PDMPublisher > Settings > Clone Tree** to select the shared PDM serial number and maintain command profiles.
 
-![Smart Pack and Go serial-number and profile settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
+![Clone Tree serial-number and profile settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
 
 ## Create a Package
 
 1. Save the active SOLIDWORKS document.
-2. Select **PDMPublisher > Smart Pack and Go**.
+2. Select **PDMPublisher > Clone Tree**.
 3. Check the files to copy and uncheck files to exclude.
 4. Set the **New name** and **Destination folder** values. Use each cell's menu for document values, properties, folder values, PDM values, serial numbers, or formulas.
 5. Optionally include companion STEP, PDF, or DXF files and configure ZIP output.
@@ -39,9 +39,9 @@ Excluded files keep their original references. Search and type filters change on
 
 ## Profiles and Rules
 
-Smart Pack and Go profiles preserve destinations, Toolbox preference, companion formats, latest-revision behavior, ZIP settings, per-file overrides, and ordered rules. Rules can set a filename or export location when their conditions match; later rules can replace earlier values.
+Clone Tree profiles preserve destinations, Toolbox preference, companion formats, latest-revision behavior, ZIP settings, per-file overrides, and ordered rules. Rules can set a filename or export location when their conditions match; later rules can replace earlier values.
 
-Manage profiles in **Settings > Smart Pack and Go**, or select the gear in the Smart Pack and Go window. The arrow beside the CommandManager command opens a saved profile directly.
+Manage profiles in **Settings > Clone Tree**, or select the gear in the Clone Tree window. The arrow beside the CommandManager command opens a saved profile directly.
 
 A profile can run a Property Doctor profile after copying. That processing applies to copied files and requires files compatible with the current SOLIDWORKS version.
 

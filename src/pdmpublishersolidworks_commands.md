@@ -18,7 +18,7 @@ The screenshot shows PDMPublisher 2026.09.08 in SOLIDWORKS 2026 SP3.2. Commands 
 | Utilities | [Save As New](pdmpublishersolidworks_save-as-new.md) | Save the active document as a separate native SOLIDWORKS file using a reusable naming and destination profile. |
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Review and edit custom, configuration-specific, and cut-list properties across a document and its references. |
 | Utilities | Translate | Reserved for a future translation workflow. It is not available yet. |
-| Utilities | [Smart Pack and Go](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
+| Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
 | Publishing | [Publish](pdmpublishersolidworks-publish.md) | Configure and run a publishing job for the active document. |
 | Publishing | [Annotations](pdmpublishersolidworks_annotations.md) | Edit the annotations stored in a Publish profile. |
 | Publishing | [Conditions](conditions_solidworks.md) | Edit the conditions stored in a Publish profile. |
@@ -35,7 +35,7 @@ The screenshot shows PDMPublisher 2026.09.08 in SOLIDWORKS 2026 SP3.2. Commands 
 | **Save As New** | Opens the Save As New workflow for the active part, assembly, or drawing. | Selects a saved Save As New profile before opening the workflow. |
 | **Property Doctor** | Opens a property grid for the active document and supported references. | Selects a saved Property Doctor profile. |
 | **Translate** | Currently disabled because the translation workflow is not yet available. | None. |
-| **Smart Pack and Go** | Opens the copy/package workflow for the active document set. | Selects a saved Smart Pack and Go profile. |
+| **Clone Tree** | Opens the copy/package workflow for the active document set. | Selects a saved Clone Tree profile. |
 | **Publish** | Opens or runs the publishing workflow with the active Publish profile. | Selects a saved Publish profile. |
 | **Annotations** | Edits annotations in the active Publish profile. | None. |
 | **Conditions** | Edits conditions in the active Publish profile. | None. |
@@ -47,13 +47,13 @@ The update area to the right reports whether the installed build is current. Whe
 
 ## Profile Drop-Downs
 
-The arrow beside **Save As New**, **Property Doctor**, **Smart Pack and Go**, and **Publish** lists the saved profiles for that command. Select **Profile: Default** to use the current default settings, or select a named profile to start with that configuration.
+The arrow beside **Save As New**, **Property Doctor**, **Clone Tree**, and **Publish** lists the saved profiles for that command. Select **Profile: Default** to use the current default settings, or select a named profile to start with that configuration.
 
 For a component selected in an assembly, the right-click menu also exposes **Property Doctor** and the available **Save As New** profiles.
 
 ## When a Command Is Available
 
-Document commands require an active part, assembly, or drawing. Save the active document before using workflows that must resolve file paths or references. Property Doctor and Smart Pack and Go can wait while SOLIDWORKS finishes loading references; changing the active document during that preparation cancels the operation.
+Document commands require an active part, assembly, or drawing. Save the active document before using workflows that must resolve file paths or references. Property Doctor and Clone Tree can wait while SOLIDWORKS finishes loading references; changing the active document during that preparation cancels the operation.
 
 > [!NOTE]
 > The **PDMPublisher** CommandManager tab is recreated for parts, assemblies, and drawings. If the tab is hidden, enable the add-in and right-click the CommandManager tab area to show **PDMPublisher**.

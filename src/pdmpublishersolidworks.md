@@ -1,6 +1,6 @@
 ---
 title: PDMPublisher for SOLIDWORKS
-description: Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Smart Pack and Go, profiles, and shared settings.
+description: Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Clone Tree, profiles, and shared settings.
 ms.date: 09/16/2026
 ms.topic: overview
 ---
@@ -24,7 +24,7 @@ The CommandManager is organized into three groups:
 
 | Group | Commands | Purpose |
 | --- | --- | --- |
-| Document tools | Save As New, Property Doctor, Translate, Smart Pack and Go | Create copies, manage properties, and package document sets. Translate is reserved for a future release. |
+| Document tools | Save As New, Property Doctor, Translate, Clone Tree | Create copies, manage properties, and package document sets. Translate is reserved for a future release. |
 | Publishing | Publish, Annotations, Conditions, Logs | Configure and run exports, control annotations and processing rules, and review results. |
 | Settings and updates | Settings, License Key, update status, version information | Configure the add-in, transfer settings, manage licensing, and check the installed version. |
 
@@ -38,7 +38,7 @@ See [PDMPublisher Commands](pdmpublishersolidworks_commands.md) for command avai
 4. Review the command window or preview before writing files or document properties.
 5. Complete the operation and review any reported warnings or errors.
 
-**Save As New**, **Property Doctor**, **Smart Pack and Go**, and **Publish** support reusable profiles. A component selected in an assembly also has PDMPublisher commands on its right-click menu.
+**Save As New**, **Property Doctor**, **Clone Tree**, and **Publish** support reusable profiles. A component selected in an assembly also has PDMPublisher commands on its right-click menu.
 
 ## Save As New
 
@@ -72,9 +72,9 @@ Use it to:
 
 Pending changes remain in the grid until **Apply changes** is selected. **Discard changes** restores the values that were loaded when the window opened.
 
-## Smart Pack and Go
+## Clone Tree
 
-[Smart Pack and Go](pdmpublishersolidworks_smart-pack.md) creates a copy plan for an active document and its references. Every included file can have its own output name and destination while SOLIDWORKS references are updated to the copied files.
+[Clone Tree](pdmpublishersolidworks_smart-pack.md) creates a copy plan for an active document and its references. Every included file can have its own output name and destination while SOLIDWORKS references are updated to the copied files.
 
 Use it to:
 
@@ -112,7 +112,7 @@ The [Settings](pdmpublishersolidworks_settings.md) command opens one searchable 
 
 The dialog contains:
 
-- Utility settings and profiles for Save As New, Property Doctor, and Smart Pack and Go.
+- Utility settings and profiles for Save As New, Property Doctor, and Clone Tree.
 - Complete Publish profiles, including publishing options, annotations, and conditions.
 - Shared PDM selection, languages, drawing search folders, external sources, and advanced formulas.
 - Support, update, version, legal, and license information.

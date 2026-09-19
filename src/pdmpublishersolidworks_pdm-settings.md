@@ -16,7 +16,7 @@ Open **PDMPublisher > Settings > PDM** to select the local SOLIDWORKS PDM vault 
 | **Use vault** | Enables PDM-aware behavior for commands and profiles that support it. |
 | Vault list | Selects the local SOLIDWORKS PDM Professional vault shared by PDMPublisher. |
 
-Use this page when a Save As New or Smart Pack and Go profile uses PDM serial numbers, revisions, check-in, or another vault-dependent operation. The selected vault must have a local vault view on the computer and the current Windows user must be able to log in to it.
+Use this page when a Save As New or Clone Tree profile uses PDM serial numbers, revisions, check-in, or another vault-dependent operation. The selected vault must have a local vault view on the computer and the current Windows user must be able to log in to it.
 
 ## Before Selecting a Vault
 
