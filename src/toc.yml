@@ -185,8 +185,6 @@
         items:
         - name: Version and Updates
           href: pdmpublishersolidworks-updates.md
-        - name: Light and Dark Theme
-          href: pdmpublishersolidworks-theme.md
       - name: License Management
         href: pdmpublishersolidworks_license.md
         items:

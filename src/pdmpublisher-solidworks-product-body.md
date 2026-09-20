@@ -721,12 +721,6 @@ _enableSearch: false
       <p>Review successful exports, warnings, errors, skipped files, and processing details from the built-in Logs window.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
-    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks-theme.html" target="_blank" rel="noopener noreferrer" aria-label="Open appearance options feature guide in a new tab">
-      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-palette"></i></span>
-      <h3>Light and dark appearance</h3>
-      <p>Use the add-in comfortably in modern SOLIDWORKS environments with product appearance and theme options.</p>
-      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
-    </a>
   </div>
   <h2>Common publishing workflows</h2>
   <ul>

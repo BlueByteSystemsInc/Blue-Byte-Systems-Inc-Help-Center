@@ -229,12 +229,12 @@ PDMPublisher for SOLIDWORKS can run as the Community Edition without a paid or t
 
 ![PDMPublisher for SOLIDWORKS License Key page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_License_Key_Default_Light_100.png)
 
-## Updates, About, and Appearance
+## Updates and About
 
-[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information. PDMPublisher follows the selected light or dark appearance.
+[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information.
 
 ![Support and Updates settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Support_Updates_Default_Light_100.png)
 
-![About settings in the dark theme](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_About_Default_Dark_100.png)
+![About settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_About_Default_Light_100.png)
 
 For support, contact `support@bluebytesystemsinc.zohodesk.com`.
