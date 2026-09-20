@@ -44,6 +44,10 @@
           "pdmpublisher-annotations/**/*.md",
           "pdmpublisher-conditions/**/*.md"
         ],
+        "exclude": [
+          "pdmpublisher-product-body.md",
+          "pdmpublisher-solidworks-product-body.md"
+        ],
         "src": "src",
         "dest": "src"
       }

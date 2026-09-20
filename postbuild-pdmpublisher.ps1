@@ -1,8 +1,10 @@
 param(
-    [string]$OutputPath = "pdmpublisher.com\help"
+    [string]$OutputPath = "pdmpublisher.com\help",
+    [string]$SiteBaseUrl = "https://pdmpublisher.com/help",
+    [string]$Language = "en-CA"
 )
 
-$siteBaseUrl = "https://pdmpublisher.com/help"
+$siteBaseUrl = $SiteBaseUrl.TrimEnd('/')
 $cssSource = "templates\bluebyte\public\main.css"
 $cssDestination = Join-Path $OutputPath "public\main.css"
 
@@ -45,6 +47,29 @@ foreach ($htmlFile in $htmlFiles) {
 
     $htmlContent = Get-Content -LiteralPath $htmlFile.FullName -Raw
 
+    if ($Language -eq "fr-CA") {
+        $localizedText = [ordered]@{
+            "In this article" = "Dans cet article"
+            "Filter by title" = "Filtrer par titre"
+            "Next" = "Suivant"
+            "Previous" = "Précédent"
+            "Search" = "Rechercher"
+            "Table of Contents" = "Table des matières"
+            "Copy" = "Copier"
+            "Back to top" = "Retour en haut"
+            "Change theme" = "Changer le thème"
+            "Edit this page" = "Modifier cette page"
+            "Trial requests" = "Demandes de licences"
+            "Get a trial" = "Obtenir un essai"
+            "For PDMPublisher for SOLIDWORKS PDM Professional (Task version). No commitment or credit card required. Professional email required." = "Pour PDMPublisher pour SOLIDWORKS PDM Professional (version Tâche). Aucun engagement ni carte de crédit requis. Une adresse courriel professionnelle est requise."
+            "Request PDM Task trial" = "Demander un essai de la tâche PDM"
+            "Request SOLIDWORKS add-in license" = "Demander une licence du complément SOLIDWORKS"
+        }
+        foreach ($entry in $localizedText.GetEnumerator()) {
+            $htmlContent = $htmlContent.Replace($entry.Key, $entry.Value)
+        }
+    }
+
     $htmlContent = [regex]::Replace(
         $htmlContent,
         '(<meta\s+name=["'']docfx:tocrel["'']\s+content=["''])([^"'']*?)toc(?:\.[a-f0-9]{12})?\.html(["''])',
@@ -59,6 +84,21 @@ foreach ($htmlFile in $htmlFiles) {
         '$1/help/',
         [Text.RegularExpressions.RegexOptions]::IgnoreCase
     )
+
+    if ($Language -eq "fr-CA") {
+        $htmlContent = [regex]::Replace(
+            $htmlContent,
+            '(\b(?:href|src)=["''])(?:\.\./)+/?https://',
+            '$1https://',
+            [Text.RegularExpressions.RegexOptions]::IgnoreCase
+        )
+        $htmlContent = [regex]::Replace(
+            $htmlContent,
+            '(\b(?:href|src)=["''])(?:\.\./)*images/',
+            '$1https://pdmpublisher.com/help/images/',
+            [Text.RegularExpressions.RegexOptions]::IgnoreCase
+        )
+    }
 
     $htmlContent = [regex]::Replace(
         $htmlContent,
@@ -75,12 +115,31 @@ foreach ($htmlFile in $htmlFiles) {
 
     $robotsContent = if ($relativeUrl -eq "addinwelcome.html") { "noindex, nofollow" } else { "index, follow" }
 
+    $counterpartUrl = if ($Language -eq "fr-CA") {
+        if ($relativeUrl -eq "index.html") { "https://pdmpublisher.com/help/" } else { "https://pdmpublisher.com/help/$relativeUrl" }
+    }
+    else {
+        if ($relativeUrl -eq "index.html") { "https://pdmpublisher.com/help/fr-ca/" } else { "https://pdmpublisher.com/help/fr-ca/$relativeUrl" }
+    }
+    $englishUrl = if ($Language -eq "fr-CA") { $counterpartUrl } else { $canonicalUrl }
+    $frenchUrl = if ($Language -eq "fr-CA") { $canonicalUrl } else { $counterpartUrl }
+
     $tagsToInsert = @"
     <link rel="canonical" href="$canonicalUrl" />
+    <link rel="alternate" hreflang="en-CA" href="$englishUrl" />
+    <link rel="alternate" hreflang="fr-CA" href="$frenchUrl" />
+    <link rel="alternate" hreflang="x-default" href="$englishUrl" />
     <meta name="robots" content="$robotsContent" />
 "@
 
-    if ($relativeUrl -eq "index.html") {
+    if ($relativeUrl -eq "addinwelcome.html") {
+        $tagsToInsert = @"
+    <link rel="canonical" href="$canonicalUrl" />
+    <meta name="robots" content="$robotsContent" />
+"@
+    }
+
+    if ($relativeUrl -eq "index.html" -and $Language -ne "fr-CA") {
         $tagsToInsert += @"
 
     <meta name="keywords" content="PDMPublisher, SOLIDWORKS PDM, SOLIDWORKS add-in, PDMDeploy, PDF export, DXF export, PDM task automation" />
@@ -113,6 +172,14 @@ foreach ($htmlFile in $htmlFiles) {
     if ($htmlContent -notmatch "</head>") {
         [IO.File]::WriteAllText($htmlFile.FullName, $htmlContent, $utf8WithoutBom)
         continue
+    }
+
+    $htmlContent = [regex]::Replace($htmlContent, '<html(?:\s+lang=["''][^"'']*["''])?', "<html lang=`"$Language`"", [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+
+    $languageLabel = if ($Language -eq "fr-CA") { "English" } else { "Français (Canada)" }
+    if ($relativeUrl -ne "addinwelcome.html") {
+        $languageLink = "<a class=`"bbs-language-switcher`" href=`"$counterpartUrl`" hreflang=`"$(if ($Language -eq 'fr-CA') { 'en-CA' } else { 'fr-CA' })`">$languageLabel</a>"
+        $htmlContent = $htmlContent -replace '<body([^>]*)>', "<body`$1>$languageLink"
     }
 
     $updatedContent = $htmlContent -replace "</head>", "$tagsToInsert`r`n</head>"

@@ -27,6 +27,16 @@ try {
     if ($LASTEXITCODE -ne 0) {
         exit $LASTEXITCODE
     }
+
+    & ".\bin\docfx.exe" ".\docfx.pdmpublisher.fr-ca.json"
+    if ($LASTEXITCODE -ne 0) {
+        exit $LASTEXITCODE
+    }
+
+    & ".\postbuild-pdmpublisher.ps1" -OutputPath "pdmpublisher.com\help\fr-ca" -SiteBaseUrl "https://pdmpublisher.com/help/fr-ca" -Language "fr-CA"
+    if ($LASTEXITCODE -ne 0) {
+        exit $LASTEXITCODE
+    }
 }
 finally {
     Pop-Location
