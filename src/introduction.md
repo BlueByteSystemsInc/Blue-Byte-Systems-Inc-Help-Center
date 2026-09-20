@@ -42,7 +42,7 @@ PDMPublisher is one product with one code base, available in two versions.
 
 ### [PDMPublisher for SOLIDWORKS](https://pdmpublisher.com/solidworks-desktop/)
 
-![pdmpublishersolidworksaddin](/images/pdmpublishersolidworksaddin.png)
+![PDMPublisher for SOLIDWORKS enabled under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 
 PDMPublisher for SOLIDWORKS is registered as a SOLIDWORKS Partner Solution add-in and appears under **Partner Solution Add-Ins** in the SOLIDWORKS **Add-Ins** dialog.
 
