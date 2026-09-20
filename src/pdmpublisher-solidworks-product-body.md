@@ -465,21 +465,21 @@ _enableSearch: false
     <div>
       <p class="bb-product-body__eyebrow">SOLIDWORKS task-pane add-in</p>
       <h1>Publish deliverables directly from SOLIDWORKS</h1>
-      <p class="bb-product-body__intro">PDMPublisher for SOLIDWORKS gives designers and engineers a publishing workspace inside SOLIDWORKS. Open a drawing, part, or assembly, choose a reusable profile, and publish the deliverables your team needs without rebuilding the export steps by hand.</p>
+      <p class="bb-product-body__intro">PDMPublisher for SOLIDWORKS gives designers and engineers publishing and document utilities directly inside SOLIDWORKS. Open a drawing, part, or assembly, choose a reusable profile, and publish the deliverables your team needs without rebuilding the export steps by hand.</p>
       <p>This version is built for interactive publishing from the active SOLIDWORKS session. Profiles store output locations, filename rules, formats, reference handling, drawing sheet behavior, annotations, conditions, and other publishing options.</p>
       <div class="bb-product-body__cta-row">
         <a class="bb-product-body__button bb-product-body__button--secondary" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks.html" target="_blank" rel="noopener noreferrer">Read the help docs</a>
       </div>
     </div>
     <figure class="bb-product-body__media">
-      <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher for SOLIDWORKS task pane in SOLIDWORKS">
-      <figcaption class="bb-product-body__caption">PDMPublisher for SOLIDWORKS runs from a task pane beside the document currently open in SOLIDWORKS.</figcaption>
+      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png" alt="PDMPublisher for SOLIDWORKS CommandManager and Help pane">
+      <figcaption class="bb-product-body__caption">Run commands from the PDMPublisher CommandManager tab or Tools menu. The task pane provides contextual help.</figcaption>
     </figure>
   </div>
   <div class="bb-product-body__grid">
     <section class="bb-product-body__panel">
       <h3>Best fit</h3>
-      <p>Use PDMPublisher for SOLIDWORKS when publishing should start from the document currently open in SOLIDWORKS and be controlled from the SOLIDWORKS task pane.</p>
+      <p>Use PDMPublisher for SOLIDWORKS when publishing should start from the document currently open in SOLIDWORKS and be controlled from the SOLIDWORKS CommandManager or Tools menu.</p>
     </section>
     <section class="bb-product-body__panel">
       <h3>Different from the PDM task product</h3>
@@ -503,32 +503,32 @@ _enableSearch: false
     <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_logs.html" target="_blank" rel="noopener noreferrer" aria-label="Open logs feature guide in a new tab">
       <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-notebook"></i></span>
       <h3>Built-in logs</h3>
-      <p>Use the Logs tab to review publishing steps, generated files, warnings, and errors without leaving the SOLIDWORKS add-in.</p>
+      <p>Use the Logs window to review publishing steps, generated files, warnings, and errors without leaving the SOLIDWORKS add-in.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
   </div>
   <div class="bb-product-body__image-row">
     <a class="bb-product-body__image-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_profiles.html" target="_blank" rel="noopener noreferrer" aria-label="Open profiles and presets feature guide in a new tab">
-      <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/profile-toolbar.png" alt="PDMPublisher for SOLIDWORKS profile toolbar">
+      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png" alt="PDMPublisher for SOLIDWORKS Publish profile settings">
       <h3>Profiles and presets</h3>
       <p>Save, load, edit, and share profile sections so common publishing jobs stay consistent across users.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
     <a class="bb-product-body__image-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_annotations.html" target="_blank" rel="noopener noreferrer" aria-label="Open annotations and output control feature guide in a new tab">
-      <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/annotations.png" alt="PDMPublisher for SOLIDWORKS annotations tab">
+      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png" alt="PDMPublisher for SOLIDWORKS annotation editor">
       <h3>Annotations and output control</h3>
       <p>Add watermarks, QR codes, custom properties, formatted text, and controlled drawing sheet output to published deliverables.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
   </div>
-  <h2>Main task-pane tabs</h2>
+  <h2>Main add-in workflows</h2>
   <div class="bb-product-body__tab-grid">
     <a class="bb-product-body__tab-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_options.html" target="_blank" rel="noopener noreferrer" aria-label="Open PDMPublisher tab guide in a new tab">
       <div class="bb-product-body__tab-media">
-        <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/overview-20260808.png" alt="PDMPublisher tab in the SOLIDWORKS add-in">
+        <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png" alt="Publish settings in the SOLIDWORKS add-in">
       </div>
       <div class="bb-product-body__tab-content">
-        <span class="bb-product-body__tab-label"><i class="ti ti-settings-automation" aria-hidden="true"></i>PDMPublisher tab</span>
+        <span class="bb-product-body__tab-label"><i class="ti ti-settings-automation" aria-hidden="true"></i>Publish settings</span>
         <h3>Configure the publish job</h3>
         <p>Set formats, export locations, filename rules, reference processing, drawing sheet behavior, configurations, flat patterns, merged PDFs, bookmarks, and package options.</p>
         <span class="bb-product-body__external">Open tab guide <span aria-hidden="true">&#8599;</span></span>
@@ -536,10 +536,10 @@ _enableSearch: false
     </a>
     <a class="bb-product-body__tab-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_annotations.html" target="_blank" rel="noopener noreferrer" aria-label="Open Annotations tab guide in a new tab">
       <div class="bb-product-body__tab-media">
-        <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/annotations.png" alt="Annotations tab in the SOLIDWORKS add-in">
+        <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png" alt="Annotations editor in the SOLIDWORKS add-in">
       </div>
       <div class="bb-product-body__tab-content">
-        <span class="bb-product-body__tab-label"><i class="ti ti-writing" aria-hidden="true"></i>Annotations tab</span>
+        <span class="bb-product-body__tab-label"><i class="ti ti-writing" aria-hidden="true"></i>Annotations</span>
         <h3>Add production-ready marks</h3>
         <p>Apply formatted text, custom properties, watermarks, QR codes, and repeatable annotation layouts to exported drawings and PDFs.</p>
         <span class="bb-product-body__external">Open tab guide <span aria-hidden="true">&#8599;</span></span>
@@ -547,10 +547,10 @@ _enableSearch: false
     </a>
     <a class="bb-product-body__tab-card" href="https://pdmpublisher.com/help/src/conditions_solidworks.html" target="_blank" rel="noopener noreferrer" aria-label="Open Conditions tab guide in a new tab">
       <div class="bb-product-body__tab-media">
-        <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/conditions.png" alt="Conditions tab in the SOLIDWORKS add-in">
+        <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Conditions_Default_Light_100.png" alt="Conditions editor in the SOLIDWORKS add-in">
       </div>
       <div class="bb-product-body__tab-content">
-        <span class="bb-product-body__tab-label"><i class="ti ti-filter" aria-hidden="true"></i>Conditions tab</span>
+        <span class="bb-product-body__tab-label"><i class="ti ti-filter" aria-hidden="true"></i>Conditions</span>
         <h3>Control what gets included</h3>
         <p>Build property-based rules with groups and logic so the active document and references are included, skipped, or reviewed before export.</p>
         <span class="bb-product-body__external">Open tab guide <span aria-hidden="true">&#8599;</span></span>
@@ -561,7 +561,7 @@ _enableSearch: false
         <img src="https://docs.bluebyte.biz/images/detailedlogs.png" alt="Detailed publishing logs">
       </div>
       <div class="bb-product-body__tab-content">
-        <span class="bb-product-body__tab-label"><i class="ti ti-notebook" aria-hidden="true"></i>Logs tab</span>
+        <span class="bb-product-body__tab-label"><i class="ti ti-notebook" aria-hidden="true"></i>Logs</span>
         <h3>Review every publish result</h3>
         <p>Check generated files, skipped items, warnings, errors, condition decisions, and processing details from the current SOLIDWORKS session.</p>
         <span class="bb-product-body__external">Open tab guide <span aria-hidden="true">&#8599;</span></span>
@@ -569,10 +569,10 @@ _enableSearch: false
     </a>
     <a class="bb-product-body__tab-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_About.html" target="_blank" rel="noopener noreferrer" aria-label="Open About tab guide in a new tab">
       <div class="bb-product-body__tab-media">
-        <img src="https://docs.bluebyte.biz/images/pdmpublisher/solidworks/about.png" alt="About tab in the SOLIDWORKS add-in">
+        <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_About_Default_Light_100.png" alt="About page in PDMPublisher for SOLIDWORKS settings">
       </div>
       <div class="bb-product-body__tab-content">
-        <span class="bb-product-body__tab-label"><i class="ti ti-info-circle" aria-hidden="true"></i>About tab</span>
+        <span class="bb-product-body__tab-label"><i class="ti ti-info-circle" aria-hidden="true"></i>About</span>
         <h3>Manage version and appearance</h3>
         <p>See the installed version, licensing and update links, and appearance options for working comfortably inside SOLIDWORKS.</p>
         <span class="bb-product-body__external">Open tab guide <span aria-hidden="true">&#8599;</span></span>
@@ -680,7 +680,7 @@ _enableSearch: false
     <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_logs.html" target="_blank" rel="noopener noreferrer" aria-label="Open detailed job logs feature guide in a new tab">
       <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-notebook"></i></span>
       <h3>Detailed job logs</h3>
-      <p>Review successful exports, warnings, errors, skipped files, and processing details from the built-in Logs tab.</p>
+      <p>Review successful exports, warnings, errors, skipped files, and processing details from the built-in Logs window.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
     <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks-theme.html" target="_blank" rel="noopener noreferrer" aria-label="Open appearance options feature guide in a new tab">
