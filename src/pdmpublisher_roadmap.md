@@ -96,5 +96,5 @@ Planned areas of focus:
 The current SOLIDWORKS add-in reserves interface locations for the following features. Their commands or settings pages are placeholders and are not available for production workflows.
 
 - [Translate](pdmpublishersolidworks_translate.md) is intended to translate properties, feature names, and other SOLIDWORKS document text.
-- [ERP Sync](pdmpublishersolidworks_erp-sync.md) is intended to synchronize selected SOLIDWORKS and PDM information with ERP systems.
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) is now available in the SOLIDWORKS add-in for connector-based item, property, part-number, and BOM synchronization.
 - [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) is intended to schedule PDMPublisher publishing jobs. It is separate from the macro hook available in Save As New.

@@ -96,5 +96,5 @@ Axes de travail planifiés :
 Le complément SOLIDWORKS actuel réserve des emplacements d'interface aux fonctionnalités suivantes. Leurs commandes ou pages de paramètres sont des espaces réservés et ne sont pas disponibles pour les flux de production.
 
 - [Translate](pdmpublishersolidworks_translate.md) vise à traduire les propriétés, les noms de fonctions et d'autres textes des documents SOLIDWORKS.
-- [ERP Sync](pdmpublishersolidworks_erp-sync.md) vise à synchroniser certaines données SOLIDWORKS et PDM avec les systèmes ERP.
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) est maintenant disponible dans le complément SOLIDWORKS pour synchroniser, au moyen de connecteurs, les articles, les propriétés, les numéros de pièce et les nomenclatures.
 - [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) vise à planifier les tâches de publication PDMPublisher. Cette fonctionnalité est distincte de l'exécution d'une macro offerte dans Save As New.

@@ -337,6 +337,15 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 
 - Ajout d'un nouveau **Flat Pattern export setting** qui supprime le **outside diameter of countersink holes** lors de l'exportation de **DXF flat patterns**: Cela aide à produire des DXF plus propres pour la fabrication en aval en excluant la géométrie extérieure du contrepuce tout en préservant les profils de coupe requis.
 
+<a id="2025-09-26"></a>
+## 2025.09.26
+*S’applique au **complément SOLIDWORKS***
+
+- Activation d’[ERP Sync](pdmpublishersolidworks_erp-sync.md) pour synchroniser les articles SOLIDWORKS sélectionnés, les propriétés mappées, les numéros de pièce produits par l’ERP et les relations de nomenclature cochées au moyen d’un connecteur ERP installé.
+- Ajout de la fenêtre de révision ERP Sync avec sélection des lignes, types d’affichage de nomenclature, modèles de colonnes, regroupement, filtrage, règles d’exclusion de composants, inclusion des listes de pièces soudées et choix des opérations Push.
+- Ajout du catalogue officiel de connecteurs et du chargement de connecteurs personnalisés dans **ERP connector settings**.
+- Ajout du contrat `PDMPublisher.ERPExtension.dll` et de l’API typée `ErpConnector<TSettings>` pour créer des connecteurs ERP personnalisés en C# sur .NET Framework 4.7.2.
+- Ajout de la configuration du connecteur ERPNext, du test de connexion et de la synchronisation des articles, des propriétés et des nomenclatures. Pull demeure visible, mais désactivé dans cette version.
 
 
 

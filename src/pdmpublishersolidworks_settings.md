@@ -21,7 +21,7 @@ The left navigation divides the dialog into **Publishing**, **Utilities**, **Int
 | Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Clone profiles, PDM serial-number source, latest-revision behavior, companion files, ZIP output, and optional Property Doctor processing. |
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Default columns, thumbnail loading, and property-action profiles. |
 | Utilities | [Translate](pdmpublishersolidworks_translate.md) | Planned translation workflow; not available yet. |
-| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Planned ERP synchronization integration; not available yet. |
+| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Active connector, default column template and BOM type, grouping, ignored components, and filters. |
 | Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Planned publishing scheduler; not available yet. |
 | Bill Of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Default BOM columns, display type, grouping expression, and component exclusions. |
 | Shared Resources | [PDM](pdmpublishersolidworks_pdm-settings.md) | The vault used by PDM-aware utility settings. |
@@ -108,7 +108,7 @@ The **Import** and **Export** menus at the bottom transfer a complete PDMPublish
 
 A complete bundle contains utility settings, Save As New profiles, Property Doctor profiles, Clone Tree profiles, shared formulas and sources, and complete Publish profiles.
 
-Planned pages that contain no configurable controls, such as ERP Sync, Publisher Macros, and Translate, do not add active behavior to an exported bundle.
+ERP Sync settings are included in the complete settings bundle. Connector credentials and other saved connector values remain protected for the current Windows user and are not made portable through settings export. Planned pages with no configurable controls, such as Publisher Macros and Translate, do not add active behavior to an exported bundle.
 
 > [!IMPORTANT]
 > SQL Server connection secrets are not exported or uploaded. After an import, re-enter credentials for external sources that do not already have matching local credentials.

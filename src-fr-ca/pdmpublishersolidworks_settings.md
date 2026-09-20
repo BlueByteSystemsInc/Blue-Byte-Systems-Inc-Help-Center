@@ -21,7 +21,7 @@ La navigation de gauche divise la boîte de dialogue en **Publishing**, **Utilit
 | Services publics | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Profils clonés, source de numéro de série PDM, comportement de dernière révision, fichiers complémentaires, sortie ZIP, et traitement optionnel Property Doctor. |
 | Services publics | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Les colonnes par défaut, le chargement des vignettes et les profils d'action de propriété. |
 | Services publics | [Traduit par le journal] | Travaux de traduction prévus; pas encore disponible. |
-| Intégration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Intégration ERP synchronisation prévue; pas encore disponible. |
+| Intégration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Connecteur actif, modèle de colonnes et type de nomenclature par défaut, regroupement, composants ignorés et filtres. |
 | Intégration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Calendrier de publication prévu; pas encore disponible. |
 | Nomenclature | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Colonnes BOM par défaut, type d'affichage, expression de regroupement et exclusions de composants. |
 | Ressources partagées | [PDM](pdmpublishersolidworks_pdm-settings.md) | La voûte utilisée par les paramètres d'utilité PDM-aware. |
@@ -112,7 +112,7 @@ Les menus **Import** et **Export** en bas transfèrent une configuration PDMPubl
 
 Un paquet complet contient des paramètres d'utilité, des profils Save As New, des profils Property Doctor, des profils Clone Tree, des formules et des sources partagées et des profils Publier complets.
 
-Les pages prévues qui ne contiennent aucun contrôle configurable, comme ERP Sync, Publisher Macros et Translate, n'ajoutent pas de comportement actif à un paquet exporté.
+Les paramètres ERP Sync sont inclus dans l’ensemble complet de paramètres. Les identifiants du connecteur et les autres valeurs enregistrées demeurent protégés pour l’utilisateur Windows actuel et ne deviennent pas transférables par l’exportation des paramètres. Les pages planifiées sans contrôles configurables, comme Publisher Macros et Translate, n’ajoutent aucun comportement actif à un ensemble exporté.
 
 > [!IMPORTANT]
 > Les secrets de connexion SQL Server ne sont pas exportés ou téléchargés. Après une importation, entrez de nouveau les identifiants pour des sources externes qui n'ont pas encore de correspondance avec les identifiants locaux.

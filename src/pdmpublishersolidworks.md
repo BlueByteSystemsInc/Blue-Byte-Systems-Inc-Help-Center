@@ -26,7 +26,7 @@ The CommandManager is organized into three groups:
 | --- | --- | --- |
 | Document tools | Save As New, Property Doctor, Translate, Clone Tree | Create copies, manage properties, and package document sets. Translate is reserved for a future release. |
 | Bill of materials | BOM Manager | Configure BOM columns, structure, grouping, and component exclusions. |
-| Planned integrations | ERP Sync, Publisher Macros | Show the planned locations of ERP synchronization and scheduled publishing. These integrations are not available yet. |
+| Integrations | ERP Sync, Publisher Macros | Synchronize selected items, properties, and BOM relationships with ERP systems. Publisher Macros remains planned. |
 | Publishing | Publish, Annotations, Conditions, Logs | Configure and run exports, control annotations and processing rules, and review results. |
 | Settings and updates | Settings, License Key, update status, version information | Configure the add-in, transfer settings, manage licensing, and check the installed version. |
 
@@ -160,7 +160,7 @@ The dialog contains:
 
 - Utility settings and profiles for Save As New, Property Doctor, and Clone Tree.
 - BOM Manager defaults for columns, display type, grouping, and ignored components.
-- Clearly marked placeholders for the planned Translate, ERP Sync, and Publisher Macros features.
+- ERP Sync defaults for the active connector, BOM view, grouping, component exclusions, and filters. Translate and Publisher Macros remain planned.
 - Complete Publish profiles, including publishing options, annotations, and conditions.
 - Shared PDM selection, languages, drawing search folders, external sources, and advanced formulas.
 - Support, update, version, legal, and license information.
@@ -186,13 +186,13 @@ Shared resources provide reusable configuration to supported utilities and publi
 
 ![Advanced Formulas settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
 
-## Planned Features
+## ERP Integration and Planned Features
 
-The current interface reserves pages for [Translate](pdmpublishersolidworks_translate.md), [ERP Sync](pdmpublishersolidworks_erp-sync.md), and [Publisher Macros](pdmpublishersolidworks_publisher-macros.md). These pages show the planned product areas, but the features are not available for production use yet.
+[ERP Sync](pdmpublishersolidworks_erp-sync.md) is available for production use with an installed connector. It can synchronize checked items, mapped properties, ERP-created part numbers, and selected BOM relationships. [Translate](pdmpublishersolidworks_translate.md) and [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) remain planned and are not available for production use.
 
 ![Planned Translate settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
 
-![Planned ERP Sync settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_ERP_Sync_Default_Light_100.png)
+![Enabled ERP Sync settings page](/images/pdmpublisher/solidworks/erp-sync-settings-20260920.png)
 
 ![Planned Publisher Macros settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publisher_Macros_Default_Light_100.png)
 
