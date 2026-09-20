@@ -48,51 +48,23 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
   line-height: 1.6;
 }
 
-.pdp-actions {
+.pdp-quick-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 22px;
+  gap: 18px;
+  margin-top: 18px;
   flex-wrap: wrap;
 }
 
-.pdp-product-action-row {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-
-.pdp-action-solidworks {
-  min-width: min(100%, 420px);
-  border-color: #c81e2a;
-  background: #d92735;
-  color: #fff !important;
-  font-weight: 650;
-  box-shadow: 0 4px 12px rgba(217, 39, 53, .2);
-}
-
-.pdp-action-solidworks:hover,
-.pdp-action-solidworks:focus {
-  border-color: #a81520;
-  background: #bd1f2c;
-  color: #fff !important;
-}
-
-.pdp-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: 8px 16px;
-  border: 1px solid #4b91c8;
-  border-radius: 6px;
+.pdp-quick-links a {
+  color: var(--bs-link-color, #0869b5);
   text-decoration: none !important;
   font-weight: 500;
 }
 
-.pdp-action-primary {
-  background: #1f7ed0;
-  color: #fff !important;
+.pdp-quick-links a:hover,
+.pdp-quick-links a:focus {
+  text-decoration: underline !important;
 }
 
 .pdp-section-title {
@@ -182,13 +154,9 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
 <img class="pdp-hero-logo" src="https://pdmpublisher.com/help/images/large_logo.png" alt="Blue Byte Systems Inc."/>
 <h1>PDMPublisher Centre d'aide</h1>
 <p>Documentation pour les fonctions supplémentaires SOLIDWORKS, PDM et PDMDeploy.</p>
-<div class="pdp-product-action-row">
-<a class="pdp-action pdp-action-solidworks" href="../src-fr-ca/pdmpublishersolidworks.md">PDMPublisher pour Complément SOLIDWORKS &rarr;</a>
-</div>
-<div class="pdp-actions">
-<a class="pdp-action" href="src/welcome.md">Bienvenue à PDMPublisher</a>
-<a class="pdp-action pdp-action-primary" href="../src-fr-ca/propertiespagepdmpublisher.md">Déterminez votre première tâche</a>
-<a class="pdp-action" href="../src-fr-ca/pdmpublishertrial.md">Obtenez un essai PDM de 7 jours
+<div class="pdp-quick-links">
+<a href="../src-fr-ca/propertiespagepdmpublisher.md">Configurer votre première tâche PDM</a>
+<a href="../src-fr-ca/pdmpublishertrial.md">Obtenir un essai de 7 jours</a>
 </div>
 </section>
 
