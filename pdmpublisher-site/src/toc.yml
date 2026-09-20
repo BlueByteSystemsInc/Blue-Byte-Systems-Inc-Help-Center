@@ -1,8 +1,177 @@
-﻿- name: Start Here
+- name: Start Here
   expanded: true
   items:
   - name: Introduction
     href: ../../src/introduction.md
+
+- name: SOLIDWORKS Add-in
+  expanded: true
+  items:
+  - name: Overview
+    href: ../../src/pdmpublishersolidworks.md
+  - name: Install and Enable the Add-in
+    href: ../../src/pdmpublishersolidworks_installation.md
+  - name: Commands
+    href: ../../src/pdmpublishersolidworks_commands.md
+  - name: Help Task Pane
+    href: ../../src/pdmpublishersolidworks_help-pane.md
+  - name: PDM Task vs SOLIDWORKS Add-in
+    href: ../../src/pdmpublisher-product-differences.md
+  - name: Settings
+    href: ../../src/pdmpublishersolidworks_settings.md
+    expanded: true
+    items:
+    - name: Publish Profiles
+      href: ../../src/pdmpublishersolidworks_profiles.md
+    - name: Publish Presets
+      href: ../../src/pdmpublishersolidworks_presets.md
+    - name: Share a Publish Profile Using a PIN
+      href: ../../src/pdmpublishersolidworks_profile_sharing.md
+    - name: Shared Resources
+      href: ../../src/pdmpublishersolidworks_shared-resources.md
+      items:
+      - name: PDM
+        href: ../../src/pdmpublishersolidworks_pdm-settings.md
+      - name: Languages
+        href: ../../src/pdmpublishersolidworks_languages.md
+      - name: File Locations
+        href: ../../src/pdmpublishersolidworks_file-locations.md
+      - name: External Sources
+        href: ../../src/pdmpublishersolidworks_external-sources.md
+    - name: Advanced Formulas
+      href: ../../src/pdmpublishersolidworks_advanced-formulas.md
+    - name: Integrations
+      items:
+      - name: ERP Sync
+        href: ../../src/pdmpublishersolidworks_erp-sync.md
+      - name: Publisher Macros
+        href: ../../src/pdmpublishersolidworks_publisher-macros.md
+    - name: BOM Manager
+      href: ../../src/pdmpublishersolidworks_bom-manager.md
+    - name: Translate
+      href: ../../src/pdmpublishersolidworks_translate.md
+    - name: Import, Export, and Reset Settings
+      href: ../../src/pdmpublishersolidworks_settings-transfer.md
+  - name: Save As New
+    href: ../../src/pdmpublishersolidworks_save-as-new.md
+  - name: Property Doctor
+    href: ../../src/pdmpublishersolidworks_property-doctor.md
+  - name: Clone Tree
+    href: ../../src/pdmpublishersolidworks_smart-pack.md
+  - name: Publishing
+    href: ../../src/pdmpublishersolidworks_options.md
+    expanded: true
+    items:
+    - name: Run a Publish Job
+      href: ../../src/pdmpublishersolidworks-publish.md
+    - name: Publishing Workflow and Results
+      href: ../../src/pdmpublishersolidworks_workflow.md
+    - name: Output Paths and Names
+      expanded: true
+      items:
+      - name: Export Location
+        href: ../../src/pdmpublisher-options/export-location.md
+      - name: Filename
+        href: ../../src/pdmpublisher-options/filename.md
+      - name: File Formats
+        href: ../../src/pdmpublisher-options/file-formats.md
+      - name: Open Export Location
+        href: ../../src/pdmpublishersolidworks-open-export-location.md
+      - name: Archive Exported Documents
+        href: ../../src/pdmpublisher-options/archive-all-exported-documents.md
+    - name: Assembly and References
+      expanded: true
+      items:
+      - name: Export References Individually
+        href: ../../src/pdmpublisher-options/export-references-individually.md
+      - name: Ignore Sub-Assembly Children
+        href: ../../src/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
+    - name: Configurations
+      expanded: true
+      items:
+      - name: Convert Multiple Configurations
+        href: ../../src/pdmpublisher-options/convert-multiple-configurations.md
+    - name: Drawings and PDFs
+      expanded: true
+      items:
+      - name: Merge Exported PDFs
+        href: ../../src/pdmpublisher-options/merge-exported-pdfs.md
+      - name: Table of Content
+        href: ../../src/pdmpublisher-options/add-table-of-content-to-merged-pdf.md
+        expanded: true
+        items:
+        - name: Table Columns
+          href: ../../src/pdmpublisher-options/table-columns.md
+      - name: PDF Bookmarks
+        href: ../../src/pdmpublisher-options/pdf-bookmarks.md
+      - name: Sheets to Export
+        href: ../../src/pdmpublisher-options/sheets-to-export.md
+        expanded: true
+        items:
+        - name: Sheet Name Pattern
+          href: ../../src/pdmpublisher-options/sheet-name-pattern.md
+    - name: Manufacturing Outputs
+      expanded: true
+      items:
+      - name: Sheet Metal Flat Pattern DXF
+        href: ../../src/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
+      - name: Split Bodies
+        href: ../../src/pdmpublisher-options/split-bodies.md
+    - name: Annotations
+      href: ../../src/pdmpublishersolidworks_annotations.md
+      items:
+      - name: Add Annotation
+        href: ../../src/pdmpublisher-annotations/add-annotation.md
+      - name: Annotation Text
+        href: ../../src/pdmpublisher-annotations/annotation-text.md
+      - name: SQL Query Placeholders
+        href: ../../src/pdmpublisher-annotations/sql-query-placeholders.md
+      - name: Text Formatting
+        href: ../../src/pdmpublisher-annotations/text-formatting.md
+      - name: Watermark
+        href: ../../src/pdmpublisher-annotations/watermark.md
+      - name: Position
+        href: ../../src/pdmpublisher-annotations/position.md
+      - name: Sheets
+        href: ../../src/pdmpublisher-annotations/sheets.md
+      - name: Import and Export Annotations
+        href: ../../src/pdmpublishersolidworks-annotation-files.md
+    - name: Conditions
+      href: ../../src/conditions_solidworks.md
+      items:
+      - name: Add Conditions and Groups
+        href: ../../src/pdmpublisher-conditions/add-conditions-and-groups.md
+      - name: Condition Fields
+        href: ../../src/pdmpublisher-conditions/condition-fields.md
+      - name: Special Variables
+        href: ../../src/pdmpublisher-conditions/special-variables.md
+      - name: Condition Types
+        href: ../../src/pdmpublisher-conditions/condition-types.md
+      - name: Evaluation Rules
+        href: ../../src/pdmpublisher-conditions/evaluation-rules.md
+      - name: Review Condition Results
+        href: ../../src/pdmpublishersolidworks-condition-output.md
+      - name: Import and Export Conditions
+        href: ../../src/pdmpublishersolidworks-condition-files.md
+    - name: Logs
+      href: ../../src/pdmpublishersolidworks_logs.md
+      items:
+      - name: Search and Read Logs
+        href: ../../src/pdmpublishersolidworks-log-search.md
+      - name: Save and Clear Logs
+        href: ../../src/pdmpublishersolidworks-log-files.md
+  - name: Updates, About, and License
+    href: ../../src/pdmpublishersolidworks_About.md
+    items:
+    - name: Version and Updates
+      href: ../../src/pdmpublishersolidworks-updates.md
+    - name: Light and Dark Theme
+      href: ../../src/pdmpublishersolidworks-theme.md
+  - name: License Management
+    href: ../../src/pdmpublishersolidworks_license.md
+    items:
+    - name: End User License Agreement
+      href: ../../src/eula.md
 
 - name: PDM Task
   expanded: true
@@ -181,175 +350,6 @@
     href: ../../src/pdmpublisherspecialvariable.md
   - name: Task Details
     href: ../../src/pdmpublisher_task_details.md
-
-- name: SOLIDWORKS Add-in
-  expanded: true
-  items:
-  - name: Overview
-    href: ../../src/pdmpublishersolidworks.md
-  - name: Install and Enable the Add-in
-    href: ../../src/pdmpublishersolidworks_installation.md
-  - name: Commands
-    href: ../../src/pdmpublishersolidworks_commands.md
-  - name: Help Task Pane
-    href: ../../src/pdmpublishersolidworks_help-pane.md
-  - name: PDM Task vs SOLIDWORKS Add-in
-    href: ../../src/pdmpublisher-product-differences.md
-  - name: Settings
-    href: ../../src/pdmpublishersolidworks_settings.md
-    expanded: true
-    items:
-    - name: Publish Profiles
-      href: ../../src/pdmpublishersolidworks_profiles.md
-    - name: Publish Presets
-      href: ../../src/pdmpublishersolidworks_presets.md
-    - name: Share a Publish Profile Using a PIN
-      href: ../../src/pdmpublishersolidworks_profile_sharing.md
-    - name: Shared Resources
-      href: ../../src/pdmpublishersolidworks_shared-resources.md
-      items:
-      - name: PDM
-        href: ../../src/pdmpublishersolidworks_pdm-settings.md
-      - name: Languages
-        href: ../../src/pdmpublishersolidworks_languages.md
-      - name: File Locations
-        href: ../../src/pdmpublishersolidworks_file-locations.md
-      - name: External Sources
-        href: ../../src/pdmpublishersolidworks_external-sources.md
-    - name: Advanced Formulas
-      href: ../../src/pdmpublishersolidworks_advanced-formulas.md
-    - name: Integrations
-      items:
-      - name: ERP Sync
-        href: ../../src/pdmpublishersolidworks_erp-sync.md
-      - name: Publisher Macros
-        href: ../../src/pdmpublishersolidworks_publisher-macros.md
-    - name: BOM Manager
-      href: ../../src/pdmpublishersolidworks_bom-manager.md
-    - name: Translate
-      href: ../../src/pdmpublishersolidworks_translate.md
-    - name: Import, Export, and Reset Settings
-      href: ../../src/pdmpublishersolidworks_settings-transfer.md
-  - name: Save As New
-    href: ../../src/pdmpublishersolidworks_save-as-new.md
-  - name: Property Doctor
-    href: ../../src/pdmpublishersolidworks_property-doctor.md
-  - name: Clone Tree
-    href: ../../src/pdmpublishersolidworks_smart-pack.md
-  - name: Publishing
-    href: ../../src/pdmpublishersolidworks_options.md
-    expanded: true
-    items:
-    - name: Run a Publish Job
-      href: ../../src/pdmpublishersolidworks-publish.md
-    - name: Publishing Workflow and Results
-      href: ../../src/pdmpublishersolidworks_workflow.md
-    - name: Output Paths and Names
-      expanded: true
-      items:
-      - name: Export Location
-        href: ../../src/pdmpublisher-options/export-location.md
-      - name: Filename
-        href: ../../src/pdmpublisher-options/filename.md
-      - name: File Formats
-        href: ../../src/pdmpublisher-options/file-formats.md
-      - name: Open Export Location
-        href: ../../src/pdmpublishersolidworks-open-export-location.md
-      - name: Archive Exported Documents
-        href: ../../src/pdmpublisher-options/archive-all-exported-documents.md
-    - name: Assembly and References
-      expanded: true
-      items:
-      - name: Export References Individually
-        href: ../../src/pdmpublisher-options/export-references-individually.md
-      - name: Ignore Sub-Assembly Children
-        href: ../../src/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
-    - name: Configurations
-      expanded: true
-      items:
-      - name: Convert Multiple Configurations
-        href: ../../src/pdmpublisher-options/convert-multiple-configurations.md
-    - name: Drawings and PDFs
-      expanded: true
-      items:
-      - name: Merge Exported PDFs
-        href: ../../src/pdmpublisher-options/merge-exported-pdfs.md
-      - name: Table of Content
-        href: ../../src/pdmpublisher-options/add-table-of-content-to-merged-pdf.md
-        expanded: true
-        items:
-        - name: Table Columns
-          href: ../../src/pdmpublisher-options/table-columns.md
-      - name: PDF Bookmarks
-        href: ../../src/pdmpublisher-options/pdf-bookmarks.md
-      - name: Sheets to Export
-        href: ../../src/pdmpublisher-options/sheets-to-export.md
-        expanded: true
-        items:
-        - name: Sheet Name Pattern
-          href: ../../src/pdmpublisher-options/sheet-name-pattern.md
-    - name: Manufacturing Outputs
-      expanded: true
-      items:
-      - name: Sheet Metal Flat Pattern DXF
-        href: ../../src/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
-      - name: Split Bodies
-        href: ../../src/pdmpublisher-options/split-bodies.md
-    - name: Annotations
-      href: ../../src/pdmpublishersolidworks_annotations.md
-      items:
-      - name: Add Annotation
-        href: ../../src/pdmpublisher-annotations/add-annotation.md
-      - name: Annotation Text
-        href: ../../src/pdmpublisher-annotations/annotation-text.md
-      - name: SQL Query Placeholders
-        href: ../../src/pdmpublisher-annotations/sql-query-placeholders.md
-      - name: Text Formatting
-        href: ../../src/pdmpublisher-annotations/text-formatting.md
-      - name: Watermark
-        href: ../../src/pdmpublisher-annotations/watermark.md
-      - name: Position
-        href: ../../src/pdmpublisher-annotations/position.md
-      - name: Sheets
-        href: ../../src/pdmpublisher-annotations/sheets.md
-      - name: Import and Export Annotations
-        href: ../../src/pdmpublishersolidworks-annotation-files.md
-    - name: Conditions
-      href: ../../src/conditions_solidworks.md
-      items:
-      - name: Add Conditions and Groups
-        href: ../../src/pdmpublisher-conditions/add-conditions-and-groups.md
-      - name: Condition Fields
-        href: ../../src/pdmpublisher-conditions/condition-fields.md
-      - name: Special Variables
-        href: ../../src/pdmpublisher-conditions/special-variables.md
-      - name: Condition Types
-        href: ../../src/pdmpublisher-conditions/condition-types.md
-      - name: Evaluation Rules
-        href: ../../src/pdmpublisher-conditions/evaluation-rules.md
-      - name: Review Condition Results
-        href: ../../src/pdmpublishersolidworks-condition-output.md
-      - name: Import and Export Conditions
-        href: ../../src/pdmpublishersolidworks-condition-files.md
-    - name: Logs
-      href: ../../src/pdmpublishersolidworks_logs.md
-      items:
-      - name: Search and Read Logs
-        href: ../../src/pdmpublishersolidworks-log-search.md
-      - name: Save and Clear Logs
-        href: ../../src/pdmpublishersolidworks-log-files.md
-  - name: Updates, About, and License
-    href: ../../src/pdmpublishersolidworks_About.md
-    items:
-    - name: Version and Updates
-      href: ../../src/pdmpublishersolidworks-updates.md
-    - name: Light and Dark Theme
-      href: ../../src/pdmpublishersolidworks-theme.md
-  - name: License Management
-    href: ../../src/pdmpublishersolidworks_license.md
-    items:
-    - name: End User License Agreement
-      href: ../../src/eula.md
 
 - name: PDMDeploy
   expanded: true
