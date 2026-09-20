@@ -506,6 +506,30 @@ _enableSearch: false
       <p>Use the Logs window to review publishing steps, generated files, warnings, and errors without leaving the SOLIDWORKS add-in.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
+    <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_save-as-new.html" target="_blank" rel="noopener noreferrer" aria-label="Open Save As New feature guide in a new tab">
+      <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-file-plus"></i></span>
+      <h3>Save As New</h3>
+      <p>Create a controlled copy of the active SOLIDWORKS document with reusable filename, destination, property, drawing, PDM, and post-save macro settings.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_smart-pack.html" target="_blank" rel="noopener noreferrer" aria-label="Open Clone Tree feature guide in a new tab">
+      <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-git-branch"></i></span>
+      <h3>Clone Tree</h3>
+      <p>Copy an assembly tree with per-file names and destinations, optional companion formats, PDM revision handling, Property Doctor processing, and ZIP output.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_property-doctor.html" target="_blank" rel="noopener noreferrer" aria-label="Open Property Doctor feature guide in a new tab">
+      <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-stethoscope"></i></span>
+      <h3>Property Doctor</h3>
+      <p>Review and update document, configuration, and cut-list properties across the active document and its resolved references.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_bom-manager.html" target="_blank" rel="noopener noreferrer" aria-label="Open BOM Manager feature guide in a new tab">
+      <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-table"></i></span>
+      <h3>BOM Manager</h3>
+      <p>Configure default BOM columns, display type, grouping expressions, and condition-based component exclusions.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
   </div>
   <div class="bb-product-body__image-row">
     <a class="bb-product-body__image-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_profiles.html" target="_blank" rel="noopener noreferrer" aria-label="Open profiles and presets feature guide in a new tab">
@@ -518,6 +542,20 @@ _enableSearch: false
       <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png" alt="PDMPublisher for SOLIDWORKS annotation editor">
       <h3>Annotations and output control</h3>
       <p>Add watermarks, QR codes, custom properties, formatted text, and controlled drawing sheet output to published deliverables.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+  </div>
+  <div class="bb-product-body__image-row">
+    <a class="bb-product-body__image-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_smart-pack.html" target="_blank" rel="noopener noreferrer" aria-label="Open Clone Tree feature guide in a new tab">
+      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/CloneTree/CloneTree_Main_window_Default_Light_100.png" alt="Clone Tree document copy plan">
+      <h3>Clone complete document trees</h3>
+      <p>Plan names and destinations for every included file before copying, while keeping SOLIDWORKS references connected to the new documents.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__image-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_bom-manager.html" target="_blank" rel="noopener noreferrer" aria-label="Open BOM Manager feature guide in a new tab">
+      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_BOM_Manager_Default_Light_100.png" alt="BOM Manager settings">
+      <h3>Standardize BOM output</h3>
+      <p>Select the default column template and BOM structure, group matching rows, and exclude components using reusable conditions.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
   </div>
@@ -697,7 +735,14 @@ _enableSearch: false
     <li>Publish drawing PDFs with watermarks, QR codes, custom properties, selected sheets, bookmarks, and a table of contents.</li>
     <li>Generate separate deliverables for multiple configurations while filtering out configurations that should not be released.</li>
     <li>Maintain separate profiles for prototype, released, customer, fabrication, and purchasing output packages.</li>
+    <li>Create a renamed copy of a part, assembly, or drawing with Save As New while carrying its associated drawing and applying property cleanup.</li>
+    <li>Clone a complete assembly tree into a new project structure and optionally package companion PDF, DXF, or STEP files in a ZIP archive.</li>
+    <li>Review and normalize custom properties across an assembly with Property Doctor before publishing or copying it.</li>
+    <li>Standardize BOM columns, hierarchy, grouping, and component exclusions with BOM Manager.</li>
   </ul>
+  <h2>Shared resources and upcoming integrations</h2>
+  <p>The searchable Settings dialog also manages the PDM vault connection, display language, drawing search folders, reusable SQL Server sources, and named advanced formulas. These shared resources are available to supported publishing and document utilities.</p>
+  <p><strong>Translate</strong>, <strong>ERP Sync</strong>, and <strong>Publisher Macros</strong> appear in the current interface as planned features. Their configuration and behavior are still being defined, and they are not available for production workflows yet.</p>
   <h2>Why teams use it</h2>
   <p>Engineering teams often need the same outputs again and again: a PDF for review, a DXF for sheet metal, a STEP file for a supplier, or a drawing package for manufacturing. PDMPublisher for SOLIDWORKS turns those repeated export routines into profile-based actions that are easier to run and easier to standardize.</p>
   <p>The result is less manual saving, fewer missed configurations or sheets, and a cleaner handoff from design work to the teams that depend on accurate published files.</p>
