@@ -46,6 +46,8 @@ See [PDMPublisher Commands](pdmpublishersolidworks_commands.md) for command avai
 
 [Save As New](pdmpublishersolidworks_save-as-new.md) creates a separate native SOLIDWORKS document without renaming the source document or changing the source assembly references.
 
+![Save As New settings and profile controls](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Save_As_New_Default_Light_100.png)
+
 Use it to:
 
 - Build filenames and destination folders from document values, properties, folder values, PDM variables, formulas, serial numbers, and prompted text.
@@ -61,6 +63,8 @@ Save As New validates the extension, destination, duplicate filenames, existing 
 ## Property Doctor
 
 [Property Doctor](pdmpublishersolidworks_property-doctor.md) displays the active document, configurations, cut lists, drawings, and referenced documents in one editable property grid.
+
+![Property Doctor document and property grid](/images/pdmpublisher/solidworks/ui-preview/PropertyDoctor/PropertyDoctor_Main_window_Default_Light_100.png)
 
 Use it to:
 
@@ -78,6 +82,8 @@ Pending changes remain in the grid until **Apply changes** is selected. **Discar
 
 [Clone Tree](pdmpublishersolidworks_smart-pack.md) creates a copy plan for an active document and its references. Every included file can have its own output name and destination while SOLIDWORKS references are updated to the copied files.
 
+![Clone Tree document copy plan](/images/pdmpublisher/solidworks/ui-preview/CloneTree/CloneTree_Main_window_Default_Light_100.png)
+
 Use it to:
 
 - Include or exclude individual models and drawings from the package.
@@ -91,9 +97,21 @@ Use it to:
 
 The copy is blocked when targets are duplicated, overwrite a source or existing file, change a SOLIDWORKS extension, or depend on unresolved destination or revision information.
 
+## BOM Manager
+
+[BOM Manager](pdmpublishersolidworks_bom-manager.md) defines the default column template, SOLIDWORKS BOM display type, row-grouping expression, and condition-based component exclusions used by BOM workflows.
+
+![BOM Manager defaults](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_BOM_Manager_Default_Light_100.png)
+
+Select **Ignore Components** to build conditions that remove matching components from the BOM without suppressing or deleting them in the SOLIDWORKS assembly.
+
+![BOM Manager Ignore Components conditions](/images/pdmpublisher/solidworks/ui-preview/BOM/BOM_Ignore_components_Default_Light_100.png)
+
 ## Publishing
 
 The [Publish](pdmpublishersolidworks-publish.md) command opens publishing for the active document. A Publish profile combines the output settings, annotations, and conditions needed for a repeatable export.
+
+![Publish output, drawing sheet, reference, and manufacturing settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
 
 Publishing can:
 
@@ -108,9 +126,31 @@ Publishing can:
 
 See [Publish Settings](pdmpublishersolidworks_options.md) for the complete publishing option reference.
 
+### Annotations
+
+[Annotations](pdmpublishersolidworks_annotations.md) place formatted text, SOLIDWORKS properties, watermarks, and other marks on published PDF pages. Each annotation can have its own position and sheet selection.
+
+![Annotations editor](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
+
+### Conditions
+
+[Conditions](conditions_solidworks.md) use nested rules to include or exclude documents and references before export. The publishing review shows the result before files are written.
+
+![Conditions editor](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Conditions_Default_Light_100.png)
+
+### Logs and publish review
+
+[Logs](pdmpublishersolidworks_logs.md) record output files, warnings, skipped items, and errors. When **Show dialog before processing** is enabled, the review window lists the files and configurations that will be processed.
+
+![Review files before publishing](/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
+
+![Publishing logs filtered to errors](/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
+
 ## Settings and Profiles
 
 The [Settings](pdmpublishersolidworks_settings.md) command opens one searchable dialog for all add-in configuration.
+
+![Searchable PDMPublisher for SOLIDWORKS Settings dialog](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)
 
 The dialog contains:
 
@@ -125,6 +165,33 @@ Profiles belong to the command that uses them. For example, a Property Doctor pr
 
 The Settings **Import** and **Export** menus can transfer the complete configuration through a file or six-digit PIN. Complete transfer includes every profile family and the shared resources. SQL Server credentials are intentionally excluded and must be entered on the destination computer.
 
+### Shared resources
+
+Shared resources provide reusable configuration to supported utilities and publishing profiles.
+
+- [Languages](pdmpublishersolidworks_languages.md) selects the add-in display language and regional formatting.
+- [File Locations](pdmpublishersolidworks_file-locations.md) defines additional folders used to locate associated drawings.
+- [External Sources](pdmpublishersolidworks_external-sources.md) defines reusable SQL Server connections and queries.
+- [Advanced Formulas](pdmpublishersolidworks_advanced-formulas.md) defines named expressions for filenames, folders, and properties.
+
+![Language and regional-format settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Languages_Default_Light_100.png)
+
+![Drawing file-location settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_File_Locations_Default_Light_100.png)
+
+![External SQL Server sources](/images/pdmpublisher/solidworks/ui-preview/ExternalSources/ExternalSources_Sources_Default_Light_100.png)
+
+![Advanced Formulas settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
+
+## Planned Features
+
+The current interface reserves pages for [Translate](pdmpublishersolidworks_translate.md), [ERP Sync](pdmpublishersolidworks_erp-sync.md), and [Publisher Macros](pdmpublishersolidworks_publisher-macros.md). These pages show the planned product areas, but the features are not available for production use yet.
+
+![Planned Translate settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
+
+![Planned ERP Sync settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_ERP_Sync_Default_Light_100.png)
+
+![Planned Publisher Macros settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publisher_Macros_Default_Light_100.png)
+
 ## Help Task Pane
 
 The PDMPublisher task pane displays the compact documentation welcome page at `https://pdmpublisher.com/help/addinwelcome.html`. It does not host or control the native PDMPublisher commands.
@@ -135,11 +202,15 @@ The embedded page requires Microsoft Edge WebView2 Runtime. If the page cannot l
 
 When the computer has a local PDM vault view, PDMPublisher can use the active PDM session to resolve vault folders and variables, reserve serial numbers, check files in or out, get revisions, and validate vault destinations. The available actions still follow the signed-in user's vault permissions and workflow state.
 
+![PDM vault connection used by add-in utilities](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_PDM_Default_Light_100.png)
+
 The SOLIDWORKS add-in does not include PDM task scheduling, task-launch prompts, execution-method configuration, or task-host SOLIDWORKS selection. Those belong to [PDMPublisher for PDM Professional](pdmpublisher.md).
 
 ## Install and Enable the Add-In
 
 Close SOLIDWORKS before running the MSI installer. After installation, open **Tools > Add-Ins**, locate **PDMPublisher (SOLIDWORKS)** under **Partner Solution Add-Ins**, and select both the current-session and startup checkboxes.
+
+![PDMPublisher for SOLIDWORKS enabled as a Partner Solution Add-In](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
 
 See [Install and Enable the Add-in](pdmpublishersolidworks_installation.md) for the full procedure and troubleshooting.
 
@@ -147,8 +218,19 @@ See [Install and Enable the Add-in](pdmpublishersolidworks_installation.md) for 
 
 - [Installation guide](pdmpublishersolidworks_installation.md)
 - [Download PDMPublisher for SOLIDWORKS](https://bluebyte.biz/wp-json/slm_custom/downloadpdmpublisher)
-- [Request a 7-day trial](https://bluebyte.biz/product/pdmpublisher-trial/)
 - [Purchase a PDMPublisher for SOLIDWORKS license](https://bluebyte.biz/product/pdmpublisher-solidworks)
-- [License management](licensespdmpublisher.md)
+- [License management](pdmpublishersolidworks_license.md)
+
+PDMPublisher for SOLIDWORKS can run as the Community Edition without a paid or trial key. The separate 7-day trial offered elsewhere on this help site is for the **PDM Professional Task version**.
+
+![PDMPublisher for SOLIDWORKS License Key page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_License_Key_Default_Light_100.png)
+
+## Updates, About, and Appearance
+
+[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information. PDMPublisher follows the selected light or dark appearance.
+
+![Support and Updates settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Support_Updates_Default_Light_100.png)
+
+![About settings in the dark theme](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_About_Default_Dark_100.png)
 
 For support, contact `support@bluebytesystemsinc.zohodesk.com`.
