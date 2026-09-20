@@ -553,9 +553,9 @@ _enableSearch: false
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
     <a class="bb-product-body__image-card" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_bom-manager.html" target="_blank" rel="noopener noreferrer" aria-label="Open BOM Manager feature guide in a new tab">
-      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_BOM_Manager_Default_Light_100.png" alt="BOM Manager settings">
-      <h3>Standardize BOM output</h3>
-      <p>Select the default column template and BOM structure, group matching rows, and exclude components using reusable conditions.</p>
+      <img src="https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/BOM/BOM_Main_window_Default_Light_100.png" alt="BOM Manager main window">
+      <h3>Review and standardize BOM data</h3>
+      <p>Review the assembly hierarchy and quantities, choose property columns, find and group rows, ignore components, and exchange BOM data with Excel.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
   </div>

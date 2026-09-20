@@ -7,6 +7,12 @@ ms.topic: how-to
 
 # BOM Manager
 
+Open **PDMPublisher > BOM Manager** to review and work with the bill of materials for the active assembly.
+
+![BOM Manager main window showing an indented assembly BOM](/images/pdmpublisher/solidworks/ui-preview/BOM/BOM_Main_window_Default_Light_100.png)
+
+The main window provides the BOM type and column-template selectors, property columns, find and filtering controls, grouping, component exclusions, Excel import and export, and **Apply**. Select the gear button to open the persistent BOM Manager settings described below.
+
 Open **PDMPublisher > Settings > BOM Manager** under **Bill Of Materials**.
 
 ![BOM Manager settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_BOM_Manager_Default_Light_100.png)

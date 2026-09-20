@@ -101,6 +101,10 @@ The copy is blocked when targets are duplicated, overwrite a source or existing 
 
 [BOM Manager](pdmpublishersolidworks_bom-manager.md) defines the default column template, SOLIDWORKS BOM display type, row-grouping expression, and condition-based component exclusions used by BOM workflows.
 
+![BOM Manager main window](/images/pdmpublisher/solidworks/ui-preview/BOM/BOM_Main_window_Default_Light_100.png)
+
+The BOM Manager window displays the assembly hierarchy, configuration, quantity, and selected property columns. It can find and filter rows, change the BOM type or column template, group entries, ignore components, import or export Excel data, and apply supported changes.
+
 ![BOM Manager defaults](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_BOM_Manager_Default_Light_100.png)
 
 Select **Ignore Components** to build conditions that remove matching components from the BOM without suppressing or deleting them in the SOLIDWORKS assembly.
