@@ -1,7 +1,7 @@
 ---
 title: "Langues: PDMPublisher pour SOLIDWORKS"
 description: "Sélectionnez le langage d'interface utilisé par PDMPublisher pour SOLIDWORKS."
-ms.date: 09/16/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 ---
 
@@ -15,6 +15,8 @@ Ouvrez **PDMPublisher > Settings > Languages** pour sélectionner la langue util
 3. Réouvrir les fenêtres PDMPublisher existantes après avoir modifié la sélection.
 
 La sélection contrôle également le formatage régional supporté associé à cette langue, comme **English (Canada)**.
+
+Les langues d'interface disponibles dans la version `2026.09.25` sont l'anglais (Canada), le français (Canada), l'allemand (Allemagne), le néerlandais (Pays-Bas) et le portugais (Portugal). Les langues marquées **Coming soon** dans le sélecteur ne peuvent pas encore être choisies.
 
 Le réglage du langage modifie l'interface. Il ne traduit pas les propriétés du document SOLIDWORKS, les noms de fichiers, les noms de profil, le texte d'annotation, les entrées de journal produites par SOLIDWORKS, ou les valeurs retournées par des sources externes.
 

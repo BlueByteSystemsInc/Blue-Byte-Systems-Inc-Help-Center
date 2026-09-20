@@ -1,7 +1,7 @@
 ---
 title: Languages | PDMPublisher for SOLIDWORKS
 description: Select the interface language used by PDMPublisher for SOLIDWORKS.
-ms.date: 09/16/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 ---
 
@@ -16,6 +16,8 @@ Open **PDMPublisher > Settings > Languages** to select the language used by PDMP
 3. Reopen existing PDMPublisher windows after changing the selection.
 
 The selection also controls the supported regional formatting associated with that language, such as **English (Canada)**.
+
+The available interface languages in version `2026.09.25` are English (Canada), French (Canada), German (Germany), Dutch (Netherlands), and Portuguese (Portugal). Languages marked **Coming soon** in the selector cannot be selected yet.
 
 The language setting changes the interface. It does not translate SOLIDWORKS document properties, filenames, profile names, annotation text, log entries produced by SOLIDWORKS, or values returned by external sources.
 

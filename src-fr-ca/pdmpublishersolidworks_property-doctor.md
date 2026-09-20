@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor.PDMPublisher pour SOLIDWORKS"
 description: "Examiner, modifier, valider, importer, exporter et automatiser les propriétés personnalisées SOLIDWORKS sur un document et ses références."
-ms.date: 09/15/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 ---
 
@@ -43,11 +43,23 @@ Le menu document peut charger un document dans SOLIDWORKS, rouvrir les référen
 <a id="profiles-and-column-templates"></a>
 ## Profils et modèles de colonnes
 
-Un profil Property Doctor est un ensemble ordonné d'actions de propriété. Une action peut définir une valeur, supprimer des propriétés ou réinitialiser des valeurs de propriété pour des champs et conditions sélectionnés. Prévisualiser un profil pour inspecter ses changements dans la grille avant de sélectionner **Apply**.
+Un profil Property Doctor est un ensemble ordonné d'actions de propriété. Une action peut définir une valeur, supprimer des propriétés, réinitialiser des valeurs de propriété ou définir le matériau d'une pièce à partir d'une propriété pour les étendues et conditions sélectionnées. Prévisualisez un profil pour inspecter ses changements dans la grille avant de sélectionner **Apply**.
 
 Les modèles de colonnes contrôlent quelles propriétés apparaissent. Dans **Settings > Property Doctor**, choisissez le modèle par défaut, modifiez ses colonnes, gérez les profils ou masquez les vignettes pour un chargement plus rapide.
 
 Les actions vont de haut en bas. Les actions de jumelage ultérieures peuvent remplacer les valeurs produites par des actions antérieures. Enregistrer un profil stocke l'automatisation; il ne change aucun document avant que le profil soit prévisualisé et appliqué.
+
+<a id="set-material-from-a-property"></a>
+## Définir le matériau à partir d'une propriété
+
+Utilisez l'action **Set material from property** pour attribuer un matériau SOLIDWORKS aux configurations de pièce à partir de la valeur d'une propriété.
+
+1. Sélectionnez la propriété source et les étendues de configuration de pièce que l'action doit traiter.
+2. Sélectionnez une ou plusieurs bibliothèques de matériaux SOLIDWORKS (`.sldmat`) à parcourir.
+3. Ajoutez des correspondances lorsque la valeur de propriété est un code de matériau ou ne correspond pas exactement à un nom de matériau. Un motif peut contenir `*` comme caractère générique.
+4. Prévisualisez le profil et vérifiez chaque modification de matériau proposée avant de sélectionner **Apply**.
+
+Les correspondances de matériaux peuvent être importées ou exportées dans un fichier CSV à deux colonnes intitulées `Pattern` et `Material`. Property Doctor ignore les valeurs vides, liées, non résolues ou ambiguës et indique la raison dans l'aperçu. Cette action prend en charge les configurations de pièce; elle n'attribue pas de matériaux aux corps de liste de pièces soudées.
 
 <a id="shared-resources"></a>
 ## Ressources partagées

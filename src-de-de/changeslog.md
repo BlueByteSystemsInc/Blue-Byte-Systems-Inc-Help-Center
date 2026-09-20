@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 08/31/2026
+ms.date: 09/25/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,25 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.08.11` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.25` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20260925"></a>
+## 2026.09.25
+*Gilt für das **SOLIDWORKS Add-in***
+
+- PDMPublisher wurde auf den SOLIDWORKS CommandManager und das Menü **Tools > PDMPublisher** ausgerichtet. Der Aufgabenbereich zeigt jetzt die Onlinehilfe an, anstatt die Veröffentlichungssteuerelemente zu enthalten. Siehe [PDMPublisher-Befehle](pdmpublishersolidworks_commands.md) und [Hilfe-Aufgabenbereich](pdmpublishersolidworks_help-pane.md).
+- Die aktuellen Dienstprogramm-Workflows wurden hinzugefügt: [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md), [Clone Tree](pdmpublishersolidworks_smart-pack.md) und [BOM Manager](pdmpublishersolidworks_bom-manager.md).
+- Ein einheitlicher, durchsuchbarer Dialog [Settings](pdmpublishersolidworks_settings.md) mit befehlsspezifischen Profilen, gemeinsamen Ressourcen und vollständiger Konfigurationsübertragung per Datei oder sechsstelliger PIN wurde hinzugefügt. Siehe [Einstellungen importieren, exportieren und zurücksetzen](pdmpublishersolidworks_settings-transfer.md).
+- Veröffentlichungsvorlagen und die Eigenschaftsauswertung wurden um PDM-Werte, Datums- und Zeitwerte, Seriennummern, gespeicherte Formeln und externe SQL-Quellen erweitert.
+- Kontextbezogene Hilfe für Bedingungen, Eigenschaftsnamen mit Platzhaltern und die Materialzuweisung aus einer Eigenschaft in Property Doctor wurden hinzugefügt.
+- Die Benutzeroberfläche und Installationsprogramme wurden lokalisiert. Siehe [Sprachen](pdmpublishersolidworks_languages.md).
+- Optionale Installations- und Lizenzstatistiken mit sofortiger Abwahl pro Benutzer wurden hinzugefügt. Siehe [Über, Updates und Lizenzen](pdmpublishersolidworks_About.md).
 
 <a id="20260908"></a>
 ## 2026.09.08

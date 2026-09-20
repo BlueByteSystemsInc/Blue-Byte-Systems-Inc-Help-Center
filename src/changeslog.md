@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 08/31/2026
+ms.date: 09/25/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,24 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.08.11` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.25` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.25
+*Applies to **SOLIDWORKS Add-in***
+
+- Reorganized PDMPublisher around the SOLIDWORKS CommandManager and **Tools > PDMPublisher** menu. The task pane now displays the online help instead of hosting publishing controls. See [PDMPublisher Commands](pdmpublishersolidworks_commands.md) and [Help Task Pane](pdmpublishersolidworks_help-pane.md).
+- Added the current utility workflows: [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md), [Clone Tree](pdmpublishersolidworks_smart-pack.md), and [BOM Manager](pdmpublishersolidworks_bom-manager.md).
+- Added a unified, searchable [Settings](pdmpublishersolidworks_settings.md) dialog with command-specific profiles, shared resources, and complete configuration transfer by file or six-digit PIN. See [Import, Export, and Reset Settings](pdmpublishersolidworks_settings-transfer.md).
+- Expanded publishing templates and property evaluation with PDM values, date and time values, serial numbers, saved formulas, and external SQL sources.
+- Added contextual condition help, wildcard property-name selection, and material assignment from a property in Property Doctor.
+- Added interface localization and localized installers. See [Languages](pdmpublishersolidworks_languages.md).
+- Added optional installation and license statistics with an immediate per-user opt-out. See [About, Updates, and License](pdmpublishersolidworks_About.md).
 
 ## 2026.09.08
 *Applies to **PDM Task***

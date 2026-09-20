@@ -1,7 +1,7 @@
 ---
 title: "Befehle | PDMPublisher für SOLIDWORKS"
 description: "Finden Sie jeden PDMPublisher-Befehl im SOLIDWORKS CommandManager und verstehen Sie, welche Dokumenttypen ihn unterstützen."
-ms.date: 09/19/2026
+ms.date: 09/25/2026
 ms.topic: overview
 ---
 
@@ -10,7 +10,7 @@ ms.topic: overview
 PDMPublisher-Befehle sind über die Registerkarte **PDMPublisher** im SOLIDWORKS CommandManager und im **Tools > PDMPublisher**-Menü verfügbar. Der Aufgabenbereich ist jetzt ein Dokumentationsbrowser; Veröffentlichungs- und Dienstprogrammbefehle laufen nicht mehr innerhalb des Bereichs.
 
 ![PDMPublisher CommandManager und Hilfsaufgabenbereich in SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
-The screenshot shows PDMPublisher 2026.09.08 in SOLIDWORKS 2026 SP3.2. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
+Der Screenshot zeigt das aktuelle CommandManager-Layout in SOLIDWORKS 2026 SP3.2. Befehle werden für das aktive SOLIDWORKS-Dokument ausgeführt. Der Hilfe-Aufgabenbereich auf der rechten Seite enthält Dokumentationslinks und führt keine Befehle aus.
 
 | Gruppe | Kommando | Zweck |
 | --- | --- | --- |

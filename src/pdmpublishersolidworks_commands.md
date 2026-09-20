@@ -1,7 +1,7 @@
 ---
 title: Commands | PDMPublisher for SOLIDWORKS
 description: Find every PDMPublisher command in the SOLIDWORKS CommandManager and understand which document types support it.
-ms.date: 09/19/2026
+ms.date: 09/25/2026
 ms.topic: overview
 ---
 
@@ -11,7 +11,7 @@ PDMPublisher commands are available from the **PDMPublisher** tab in the SOLIDWO
 
 ![PDMPublisher CommandManager and Help task pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
 
-The screenshot shows PDMPublisher 2026.09.08 in SOLIDWORKS 2026 SP3.2. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
+The screenshot shows the current CommandManager layout in SOLIDWORKS 2026 SP3.2. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
 
 | Group | Command | Purpose |
 | --- | --- | --- |

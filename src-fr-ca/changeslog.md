@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 08/31/2026
+ms.date: 09/25/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,25 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.08.11` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.25` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20260925"></a>
+## 2026.09.25
+*S'applique au **complément SOLIDWORKS***
+
+- Réorganisation de PDMPublisher autour du CommandManager de SOLIDWORKS et du menu **Tools > PDMPublisher**. Le volet des tâches affiche maintenant l'aide en ligne au lieu d'héberger les commandes de publication. Voir [Commandes PDMPublisher](pdmpublishersolidworks_commands.md) et [Volet des tâches d'aide](pdmpublishersolidworks_help-pane.md).
+- Ajout des flux de travail actuels : [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md), [Clone Tree](pdmpublishersolidworks_smart-pack.md) et [BOM Manager](pdmpublishersolidworks_bom-manager.md).
+- Ajout d'une boîte de dialogue [Settings](pdmpublishersolidworks_settings.md) unifiée et consultable, avec des profils propres à chaque commande, des ressources partagées et le transfert complet de la configuration par fichier ou NIP à six chiffres. Voir [Importer, exporter et réinitialiser les paramètres](pdmpublishersolidworks_settings-transfer.md).
+- Extension des modèles de publication et de l'évaluation des propriétés avec les valeurs PDM, les valeurs de date et d'heure, les numéros de série, les formules enregistrées et les sources SQL externes.
+- Ajout d'une aide contextuelle pour les conditions, de la sélection des noms de propriétés avec caractères génériques et de l'attribution d'un matériau à partir d'une propriété dans Property Doctor.
+- Ajout de la localisation de l'interface et de programmes d'installation localisés. Voir [Langues](pdmpublishersolidworks_languages.md).
+- Ajout de statistiques facultatives sur l'installation et la licence, avec désactivation immédiate par utilisateur. Voir [À propos, mises à jour et licence](pdmpublishersolidworks_About.md).
 
 <a id="20260908"></a>
 ## 2026.09.08
@@ -324,7 +336,6 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 *S'applique à la fois à **Tâche PDM** et **SOLIDWORKS Add-in***
 
 - Ajout d'un nouveau **Flat Pattern export setting** qui supprime le **outside diameter of countersink holes** lors de l'exportation de **DXF flat patterns**: Cela aide à produire des DXF plus propres pour la fabrication en aval en excluant la géométrie extérieure du contrepuce tout en préservant les profils de coupe requis.
-
 
 
 

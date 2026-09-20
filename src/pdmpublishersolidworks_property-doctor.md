@@ -1,7 +1,7 @@
 ---
 title: Property Doctor | PDMPublisher for SOLIDWORKS
 description: Review, edit, validate, import, export, and automate SOLIDWORKS custom properties across a document and its references.
-ms.date: 09/15/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 ---
 
@@ -41,11 +41,22 @@ The document menu can load a document in SOLIDWORKS, reopen references for editi
 
 ## Profiles and Column Templates
 
-A Property Doctor profile is an ordered set of property actions. An action can set a value, delete properties, or reset property values for selected scopes and conditions. Preview a profile to inspect its changes in the grid before selecting **Apply**.
+A Property Doctor profile is an ordered set of property actions. An action can set a value, delete properties, reset property values, or set a part material from a property for selected scopes and conditions. Preview a profile to inspect its changes in the grid before selecting **Apply**.
 
 Column templates control which properties appear. In **Settings > Property Doctor**, choose the default template, edit its columns, manage profiles, or hide thumbnails for faster loading.
 
 Actions run from top to bottom. Later matching actions can replace values produced by earlier actions. Saving a profile stores the automation; it does not change any document until the profile is previewed and applied.
+
+## Set Material from a Property
+
+Use the **Set material from property** action to assign a SOLIDWORKS material to part configurations from a property value.
+
+1. Select the source property and the part-configuration scopes that the action should process.
+2. Select one or more SOLIDWORKS material libraries (`.sldmat`) to search.
+3. Add mappings when the property value is a material code or does not exactly match a material name. A mapping pattern can contain `*` as a wildcard.
+4. Preview the profile and review each proposed material change before selecting **Apply**.
+
+Material mappings can be imported from or exported to a two-column CSV with `Pattern` and `Material` headings. Property Doctor skips empty, linked, unresolved, or ambiguous values and shows the reason in the preview. This action supports part configurations; it does not assign materials to cut-list bodies.
 
 ## Shared Resources
 

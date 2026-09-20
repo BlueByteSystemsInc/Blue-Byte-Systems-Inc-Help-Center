@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher for SOLIDWORKS"
 description: "Reveja, edite, valide, importe, exporte e automatize as propriedades personalizadas do SOLIDWORKS em um documento e suas referências."
-ms.date: 09/15/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 ---
 
@@ -44,11 +44,23 @@ O menu do documento pode carregar um documento no SOLIDWORKS, reabrir referênci
 <a id="profiles-and-column-templates"></a>
 ## Perfil e Modelos de Colunas
 
-Um perfil Property Doctor é um conjunto ordenado de ações de propriedade. Uma ação pode definir um valor, excluir propriedades ou repor valores de propriedade para escopos e condições selecionados. Visualize um perfil para inspecionar suas alterações na grade antes de selecionar **Apply**.
+Um perfil Property Doctor é um conjunto ordenado de ações de propriedade. Uma ação pode definir um valor, excluir propriedades, redefinir valores de propriedade ou definir o material de uma peça a partir de uma propriedade para escopos e condições selecionados. Visualize um perfil para inspecionar suas alterações na grade antes de selecionar **Apply**.
 
 Os modelos de colunas controlam as propriedades que aparecem. No **Settings > Property Doctor**, escolha o modelo padrão, edite suas colunas, gerencie perfis ou esconda miniaturas para carregamento mais rápido.
 
 As acções vão de cima para baixo. Ações posteriores de correspondência podem substituir valores produzidos por ações anteriores. Salvando um perfil armazena a automação; ele não muda nenhum documento até que o perfil seja visualizado e aplicado.
+
+<a id="set-material-from-a-property"></a>
+## Definir material a partir de uma propriedade
+
+Use a ação **Set material from property** para atribuir um material SOLIDWORKS às configurações de peça a partir do valor de uma propriedade.
+
+1. Selecione a propriedade de origem e os escopos de configuração de peça que a ação deve processar.
+2. Selecione uma ou mais bibliotecas de materiais SOLIDWORKS (`.sldmat`) para pesquisar.
+3. Adicione mapeamentos quando o valor da propriedade for um código de material ou não corresponder exatamente ao nome de um material. Um padrão de mapeamento pode conter `*` como curinga.
+4. Visualize o perfil e revise cada alteração de material proposta antes de selecionar **Apply**.
+
+Os mapeamentos de materiais podem ser importados ou exportados em um CSV de duas colunas com os cabeçalhos `Pattern` e `Material`. O Property Doctor ignora valores vazios, vinculados, não resolvidos ou ambíguos e mostra o motivo na visualização. Esta ação suporta configurações de peça; ela não atribui materiais a corpos de lista de corte.
 
 <a id="shared-resources"></a>
 ## Recursos Compartilhados

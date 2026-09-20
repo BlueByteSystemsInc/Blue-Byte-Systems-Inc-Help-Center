@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher für SOLIDWORKS"
 description: "Überprüfen, Bearbeiten, Validieren, Importieren, Exportieren und Automatisieren von SOLIDWORKS benutzerdefinierten Eigenschaften in einem Dokument und seinen Referenzen."
-ms.date: 09/15/2026
+ms.date: 09/25/2026
 ms.topic: how-to
 ---
 
@@ -43,11 +43,23 @@ Das Dokumentmenü kann ein Dokument in SOLIDWORKS laden, Referenzen zum Bearbeit
 <a id="profiles-and-column-templates"></a>
 ## Profile und Spaltenvorlagen
 
-Ein Property Doctor-Profil ist ein geordneter Satz von Eigenschaftsaktionen. Eine Aktion kann einen Wert festlegen, Eigenschaften löschen oder Eigenschaftswerte für ausgewählte Bereiche und Bedingungen zurücksetzen. Vorschau eines Profils, um seine Änderungen im Raster zu überprüfen, bevor Sie **Apply** auswählen.
+Ein Property Doctor-Profil ist ein geordneter Satz von Eigenschaftsaktionen. Eine Aktion kann einen Wert festlegen, Eigenschaften löschen, Eigenschaftswerte zurücksetzen oder ein Teilmaterial aus einer Eigenschaft für ausgewählte Bereiche und Bedingungen festlegen. Zeigen Sie eine Vorschau des Profils an, um die Änderungen im Raster zu prüfen, bevor Sie **Apply** auswählen.
 
 Spaltenvorlagen steuern, welche Eigenschaften erscheinen. Wählen Sie in **Settings > Property Doctor** die Standardvorlage aus, bearbeiten Sie die Spalten, verwalten Sie Profile oder verstecken Sie Miniaturansichten für ein schnelleres Laden.
 
 Aktionen laufen von oben nach unten. Spätere Matching-Aktionen können Werte ersetzen, die durch frühere Aktionen erzeugt wurden. Das Speichern eines Profils speichert die Automatisierung; es ändert kein Dokument, bis das Profil in der Vorschau angezeigt und angewendet wird.
+
+<a id="set-material-from-a-property"></a>
+## Material aus einer Eigenschaft festlegen
+
+Verwenden Sie die Aktion **Set material from property**, um SOLIDWORKS-Material anhand eines Eigenschaftswerts Teilkonfigurationen zuzuweisen.
+
+1. Wählen Sie die Quelleigenschaft und die zu verarbeitenden Teilkonfigurationsbereiche aus.
+2. Wählen Sie eine oder mehrere zu durchsuchende SOLIDWORKS-Materialbibliotheken (`.sldmat`) aus.
+3. Fügen Sie Zuordnungen hinzu, wenn der Eigenschaftswert ein Materialcode ist oder nicht genau mit einem Materialnamen übereinstimmt. Ein Zuordnungsmuster kann `*` als Platzhalter enthalten.
+4. Zeigen Sie eine Vorschau des Profils an und prüfen Sie jede vorgeschlagene Materialänderung, bevor Sie **Apply** auswählen.
+
+Materialzuordnungen können aus einer zweispaltigen CSV-Datei mit den Überschriften `Pattern` und `Material` importiert oder in eine solche Datei exportiert werden. Property Doctor überspringt leere, verknüpfte, nicht aufgelöste oder mehrdeutige Werte und zeigt den Grund in der Vorschau an. Diese Aktion unterstützt Teilkonfigurationen; sie weist Schnittlistenkörpern keine Materialien zu.
 
 <a id="shared-resources"></a>
 ## Gemeinsame Ressourcen
