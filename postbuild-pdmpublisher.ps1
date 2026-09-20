@@ -132,13 +132,6 @@ foreach ($htmlFile in $htmlFiles) {
     <meta name="robots" content="$robotsContent" />
 "@
 
-    if ($relativeUrl -eq "addinwelcome.html") {
-        $tagsToInsert = @"
-    <link rel="canonical" href="$canonicalUrl" />
-    <meta name="robots" content="$robotsContent" />
-"@
-    }
-
     if ($relativeUrl -eq "index.html" -and $Language -ne "fr-CA") {
         $tagsToInsert += @"
 
@@ -176,10 +169,16 @@ foreach ($htmlFile in $htmlFiles) {
 
     $htmlContent = [regex]::Replace($htmlContent, '<html(?:\s+lang=["''][^"'']*["''])?', "<html lang=`"$Language`"", [Text.RegularExpressions.RegexOptions]::IgnoreCase)
 
-    $languageLabel = if ($Language -eq "fr-CA") { "English" } else { "Français (Canada)" }
+    $languageLabel = if ($Language -eq "fr-CA") { "English (Canada)" } else { "Français (Canada)" }
     if ($relativeUrl -ne "addinwelcome.html") {
-        $languageLink = "<a class=`"bbs-language-switcher`" href=`"$counterpartUrl`" hreflang=`"$(if ($Language -eq 'fr-CA') { 'en-CA' } else { 'fr-CA' })`">$languageLabel</a>"
-        $htmlContent = $htmlContent -replace '<body([^>]*)>', "<body`$1>$languageLink"
+        $targetLanguage = if ($Language -eq 'fr-CA') { 'en-CA' } else { 'fr-CA' }
+        $languageLink = "<a class=`"bbs-language-switcher`" href=`"$counterpartUrl`" hreflang=`"$targetLanguage`" lang=`"$targetLanguage`" aria-label=`"Switch language to $languageLabel`">$languageLabel</a>"
+        if ($htmlContent -match '<form class="search"') {
+            $htmlContent = $htmlContent -replace '<form class="search"', "$languageLink<form class=`"search`""
+        }
+        else {
+            $htmlContent = $htmlContent -replace '<body([^>]*)>', "<body`$1>$languageLink"
+        }
     }
 
     $updatedContent = $htmlContent -replace "</head>", "$tagsToInsert`r`n</head>"

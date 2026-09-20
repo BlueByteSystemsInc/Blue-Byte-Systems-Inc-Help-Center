@@ -42,7 +42,12 @@
         "dest": "src"
       }
     ],
-    "resource": [],
+    "resource": [
+      {
+        "files": ["addinwelcome.html"],
+        "src": "pdmpublisher-site-fr-ca"
+      }
+    ],
     "sitemap": {
       "baseUrl": "https://pdmpublisher.com/help/fr-ca",
       "priority": 1,
