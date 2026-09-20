@@ -344,9 +344,8 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 - Activation d’[ERP Sync](pdmpublishersolidworks_erp-sync.md) pour synchroniser les articles SOLIDWORKS sélectionnés, les propriétés mappées, les numéros de pièce produits par l’ERP et les relations de nomenclature cochées au moyen d’un connecteur ERP installé.
 - Ajout de la fenêtre de révision ERP Sync avec sélection des lignes, types d’affichage de nomenclature, modèles de colonnes, regroupement, filtrage, règles d’exclusion de composants, inclusion des listes de pièces soudées et choix des opérations Push.
 - Ajout du catalogue officiel de connecteurs et du chargement de connecteurs personnalisés dans **ERP connector settings**.
-- Ajout du contrat `PDMPublisher.ERPExtension.dll` et de l’API typée `ErpConnector<TSettings>` pour créer des connecteurs ERP personnalisés en C# sur .NET Framework 4.7.2.
+- Ajout du contrat `PDMPublisher.ERPExtension.dll` et de l’API typée `ErpConnector<TSettings>` pour [créer des connecteurs ERP personnalisés en C#](pdmpublishersolidworks_erp-connector.md) sur .NET Framework 4.7.2.
 - Ajout de la configuration du connecteur ERPNext, du test de connexion et de la synchronisation des articles, des propriétés et des nomenclatures. Pull demeure visible, mais désactivé dans cette version.
-
 
 
 

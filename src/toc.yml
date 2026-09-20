@@ -66,6 +66,8 @@
         items:
         - name: ERP Sync
           href: pdmpublishersolidworks_erp-sync.md
+        - name: Create a Custom ERP Connector
+          href: pdmpublishersolidworks_erp-connector.md
         - name: Publisher Macros
           href: pdmpublishersolidworks_publisher-macros.md
       - name: BOM Manager
