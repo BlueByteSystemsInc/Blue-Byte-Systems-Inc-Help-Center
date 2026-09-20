@@ -26,7 +26,7 @@ O CommandManager está organizado em três grupos:
 | --- | --- | --- |
 | Ferramentas para documentos | Save As New, Property Doctor, Traduzir, Clone Tree | Crie cópias, gerencie propriedades e conjuntos de documentos de pacotes. Traduzir é reservado para uma versão futura. |
 | Conta de materiais | BOM Manager | Configurar colunas BOM, estrutura, agrupamento e exclusões de componentes. |
-| Integrações planeadas | ERP Sync, Publisher Macros | Mostrar os locais planejados de ERP synchronization e publicação agendada. Estas integrações ainda não estão disponíveis. |
+| Integrações | ERP Sync, Publisher Macros | Sincronize itens, propriedades e relações de lista de materiais selecionados com sistemas ERP. O Publisher Macros permanece planejado. |
 | Publicação | Publicar, Anotações, Condições, Registos | Configure e execute exportações, controle anotações e regras de processamento e reveja resultados. |
 | Configurações e atualizações | Configurações, chave de licença, status de atualização, informações de versão | Configure o suplemento, as configurações de transferência, gerencie o licenciamento e verifique a versão instalada. |
 
@@ -170,7 +170,7 @@ A janela contém:
 
 - Configurações de utilitário e perfis para Save As New, Property Doctor e Clone Tree.
 - BOM Manager padrão para colunas, tipo de exibição, agrupamento e componentes ignorados.
-- Lugares claramente marcados para as características planejadas Traduzir, ERP Sync e Publisher Macros.
+- Padrões do ERP Sync para o conector ativo, exibição da lista de materiais, agrupamento, exclusões de componentes e filtros. Translate e Publisher Macros permanecem planejados.
 - Complete os perfis de publicação, incluindo opções de publicação, anotações e condições.
 - Seleção compartilhada de PDM, idiomas, pastas de pesquisa de desenho, fontes externas e fórmulas avançadas.
 - Suporte, atualização, versão, informações legais e de licença.
@@ -197,13 +197,13 @@ Recursos compartilhados fornecem configuração reutilizável para utilitários 
 
 ![Advanced Formulas settings](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
 
-<a id="planned-features"></a>
-## Características Planejadas
+<a id="erp-integration-and-planned-features"></a>
+## Integração ERP e recursos planejados
 
-A interface atual reserva páginas para [Traduzir](pdmpublishersolidworks_translate.md), [ERP Sync](pdmpublishersolidworks_erp-sync.md) e [Publisher Macros](pdmpublishersolidworks_publisher-macros.md). Essas páginas mostram as áreas de produto planejadas, mas as características ainda não estão disponíveis para uso de produção.
+O [ERP Sync](pdmpublishersolidworks_erp-sync.md) está disponível para uso em produção quando um conector está instalado. Ele pode sincronizar itens marcados, propriedades mapeadas, números de peça criados pelo ERP e relações selecionadas da lista de materiais. [Translate](pdmpublishersolidworks_translate.md) e [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) permanecem planejados e não estão disponíveis para uso em produção.
 
 ![Planned Translate settings page](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
-![Planned ERP Sync settings page](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_ERP_Sync_Default_Light_100.png)
+![Página de configurações do ERP Sync habilitada](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-settings-20260920.png)
 
 ![Planned Publisher Macros settings page](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publisher_Macros_Default_Light_100.png)
 

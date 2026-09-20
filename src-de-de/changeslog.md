@@ -336,3 +336,13 @@ Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegebe
 * Gilt für **PDM Task** und **SOLIDWORKS Add-in***
 
 - Hinzufügen eines neuen **Flat Pattern export setting**, das den **outside diameter of countersink holes** beim Exportieren von **DXF flat patterns** entfernt: Dies hilft, sauberere DXFs für die nachgelagerte Fertigung herzustellen, indem die Außengeometrie ausgeschlossen wird, während die erforderlichen Schnittprofile erhalten bleiben.
+
+<a id="2025-09-26"></a>
+## 2025.09.26
+*Gilt für das **SOLIDWORKS Add-in***
+
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) wurde aktiviert, um ausgewählte SOLIDWORKS-Artikel, zugeordnete Eigenschaften, vom ERP erzeugte Teilenummern und aktivierte Stücklistenbeziehungen über einen installierten ERP-Konnektor zu synchronisieren.
+- Das ERP Sync-Prüffenster mit Zeilenauswahl, Stücklistenanzeigetypen, Spaltenvorlagen, Gruppierung, Filterung, Regeln zum Ignorieren von Komponenten, Schnittlisteneinträgen und auswählbaren Push-Vorgängen wurde hinzugefügt.
+- Der offizielle Konnektorkatalog und das Laden benutzerdefinierter Konnektoren über **ERP connector settings** wurden hinzugefügt.
+- Der Vertrag `PDMPublisher.ERPExtension.dll` und die typisierte API `ErpConnector<TSettings>` zum Erstellen benutzerdefinierter C#-ERP-Konnektoren für .NET Framework 4.7.2 wurden hinzugefügt.
+- Die ERPNext-Konnektorkonfiguration, Verbindungstests sowie die Artikel-, Eigenschafts- und Stücklistensynchronisierung wurden hinzugefügt. Pull bleibt in dieser Version sichtbar, aber deaktiviert.

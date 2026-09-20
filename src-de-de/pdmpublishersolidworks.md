@@ -26,7 +26,7 @@ Die CommandManager ist in drei Gruppen unterteilt:
 | --- | --- | --- |
 | Dokumentierungswerkzeuge | Save As New, Property Doctor, Übersetzen, Clone Tree | Erstellen Sie Kopien, verwalten Sie Eigenschaften und Paketdokumentsätze. Translate ist einem zukünftigen Release vorbehalten. |
 | Stückliste der Materialien | BOM Manager | Konfigurieren Sie Stücklistenspalten, Struktur, Gruppierung und Komponentenausschlüsse. |
-| geplante Integrationen | ERP Sync, Publisher Macros | Zeigen Sie die geplanten Standorte von ERP synchronisierung und geplante Veröffentlichung. Diese Integrationen sind noch nicht verfügbar. |
+| Integrationen | ERP Sync, Publisher Macros | Synchronisiert ausgewählte Artikel, Eigenschaften und Stücklistenbeziehungen mit ERP-Systemen. Publisher Macros bleibt geplant. |
 | Veröffentlichen | Veröffentlichen, Anmerkungen, Bedingungen, Protokolle | Konfigurieren und Ausführen von Exporten, Kontrollanmerkungen und Verarbeitungsregeln sowie Überprüfung der Ergebnisse. |
 | Einstellungen und Updates | Einstellungen, Lizenzschlüssel, Updatestatus, Versionsinformationen | Konfigurieren Sie das Add-in, übertragen Sie Einstellungen, verwalten Sie die Lizenzierung und überprüfen Sie die installierte Version. |
 
@@ -158,7 +158,7 @@ Der Dialog enthält:
 
 - Dienstprogrammeinstellungen und Profile für Save As New, Property Doctor und Clone Tree.
 - BOM Manager-Standards für Spalten, Anzeigetyp, Gruppierung und ignorierte Komponenten.
-- Deutlich markierte Platzhalter für die geplanten Funktionen Translate, ERP Sync und Publisher Macros.
+- ERP Sync-Standardwerte für den aktiven Konnektor, die Stücklistenansicht, Gruppierung, Komponentenausschlüsse und Filter. Translate und Publisher Macros bleiben geplant.
 - Veröffentlichen Sie Profile, einschließlich Veröffentlichungsoptionen, Anmerkungen und Bedingungen.
 - Gemeinsame PDM-Auswahl, Sprachen, Zeichensuchordner, externe Quellen und erweiterte Formeln.
 - Support-, Update-, Versions-, Rechts- und Lizenzinformationen.
@@ -181,13 +181,13 @@ Gemeinsame Ressourcen bieten wiederverwendbare Konfigurationen für unterstützt
 ![Dateistandorteinstellungen zeichnen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_File_Locations_Default_Light_100.png)
 ![Externe SQL Server Quellen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/ExternalSources/ExternalSources_Sources_Default_Light_100.png)
 ![Erweiterte Formeleinstellungen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
-<a id="planned-features"></a>
-## Geplante Merkmale
+<a id="erp-integration-and-planned-features"></a>
+## ERP-Integration und geplante Funktionen
 
-Die aktuelle Schnittstelle reserviert Seiten für [Übersetzen](pdmpublishersolidworks_translate.md), [ERP Sync](pdmpublishersolidworks_erp-sync.md) und [Publisher Macros](pdmpublishersolidworks_publisher-macros.md). Diese Seiten zeigen die geplanten Produktbereiche, die Features stehen aber noch nicht für die Produktion zur Verfügung.
+[ERP Sync](pdmpublishersolidworks_erp-sync.md) ist mit einem installierten Konnektor für den Produktionseinsatz verfügbar. Es kann aktivierte Artikel, zugeordnete Eigenschaften, vom ERP erstellte Teilenummern und ausgewählte Stücklistenbeziehungen synchronisieren. [Translate](pdmpublishersolidworks_translate.md) und [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) bleiben geplant und sind nicht für den Produktionseinsatz verfügbar.
 
 ![Planned Translate settings page](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
-![Planned ERP Sync settings page](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_ERP_Sync_Default_Light_100.png)
+![Aktivierte ERP Sync-Einstellungsseite](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-settings-20260920.png)
 ![Planned Publisher Macros settings page](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publisher_Macros_Default_Light_100.png)
 <a id="help-task-pane"></a>
 ## Help Aufgabenbereich

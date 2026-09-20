@@ -96,5 +96,5 @@ Geplante Schwerpunkte:
 Das aktuelle SOLIDWORKS Add-in reserviert Bereiche der Benutzeroberfläche für die folgenden Funktionen. Die zugehörigen Befehle oder Einstellungsseiten sind Platzhalter und stehen nicht für Produktionsabläufe zur Verfügung.
 
 - [Translate](pdmpublishersolidworks_translate.md) soll Eigenschaften, Feature-Namen und andere Texte in SOLIDWORKS-Dokumenten übersetzen.
-- [ERP Sync](pdmpublishersolidworks_erp-sync.md) soll ausgewählte SOLIDWORKS- und PDM-Informationen mit ERP-Systemen synchronisieren.
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) ist jetzt im SOLIDWORKS-Add-in für die konnektorbasierte Synchronisierung von Artikeln, Eigenschaften, Teilenummern und Stücklisten verfügbar.
 - [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) soll PDMPublisher-Veröffentlichungsaufgaben planen. Dies ist unabhängig von der in Save As New verfügbaren Makroausführung.

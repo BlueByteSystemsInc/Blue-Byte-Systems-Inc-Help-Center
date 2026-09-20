@@ -96,5 +96,5 @@ O Drawing Creator pretende automatizar a criação repetitiva de desenhos a part
 O suplemento atual do SOLIDWORKS reserva locais da interface para os recursos a seguir. Seus comandos ou páginas de configurações são apenas espaços reservados e não estão disponíveis para fluxos de trabalho de produção.
 
 - [Translate](pdmpublishersolidworks_translate.md) pretende traduzir propriedades, nomes de recursos e outros textos dos documentos do SOLIDWORKS.
-- [ERP Sync](pdmpublishersolidworks_erp-sync.md) pretende sincronizar informações selecionadas do SOLIDWORKS e do PDM com sistemas ERP.
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) agora está disponível no suplemento SOLIDWORKS para sincronização de itens, propriedades, números de peça e listas de materiais por meio de conectores.
 - [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) pretende agendar tarefas de publicação do PDMPublisher. Este recurso é diferente da execução de macro disponível no Save As New.

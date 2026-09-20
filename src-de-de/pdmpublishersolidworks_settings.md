@@ -21,7 +21,7 @@ Die linke Navigation unterteilt den Dialog in **Publishing**, **Utilities**, **I
 | Versorgungsunternehmen | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Klonprofile, PDM-Seriennummernquelle, Verhalten der neuesten Revision, Begleitdateien, ZIP-Ausgabe und optionale Property Doctor-Verarbeitung. |
 | Versorgungsunternehmen | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Standardspalten, Miniaturansichten und Eigenschaftsaktionsprofile. |
 | Versorgungsunternehmen | [Übersetzen](pdmpublishersolidworks_translate.md) | Geplanter Übersetzungsworkflow; noch nicht verfügbar. |
-| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Geplante ERP synchronisierungsintegration; noch nicht verfügbar. |
+| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Aktiver Konnektor, Standard-Spaltenvorlage und Stücklistentyp, Gruppierung, ignorierte Komponenten und Filter. |
 | Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Geplanter Publishing-Scheduler; noch nicht verfügbar. |
 | Stückliste der Materialien | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Standard-BOM-Spalten, Anzeigetyp, Gruppierungsausdruck und Komponentenausschlüsse. |
 | Gemeinsame Ressourcen | [PDM](pdmpublishersolidworks_pdm-settings.md) | Das Gewölbe, das von PDM-bewussten Utility-Einstellungen verwendet wird. |
@@ -112,7 +112,7 @@ Die Menüs **Import** und **Export** unten übertragen eine vollständige PDMPub
 
 Ein komplettes Bundle enthält Utility-Einstellungen, Save As New-Profile, Property Doctor-Profile, Clone Tree-Profile, freigegebene Formeln und Quellen sowie vollständige Publish-Profile.
 
-Geplante Seiten, die keine konfigurierbaren Steuerelemente enthalten, wie ERP Sync, Publisher Macros und Translate, fügen einem exportierten Bundle kein aktives Verhalten hinzu.
+ERP Sync-Einstellungen sind im vollständigen Einstellungspaket enthalten. Konnektoranmeldeinformationen und andere gespeicherte Konnektorwerte bleiben für den aktuellen Windows-Benutzer geschützt und werden durch den Einstellungsexport nicht übertragbar. Geplante Seiten ohne konfigurierbare Steuerelemente, wie Publisher Macros und Translate, fügen einem exportierten Paket kein aktives Verhalten hinzu.
 
 > [!IMPORTANT]
 > SQL Server Verbindungsgeheimnisse werden nicht exportiert oder hochgeladen. Geben Sie nach einem Import erneut Anmeldeinformationen für externe Quellen ein, die nicht bereits über übereinstimmende lokale Anmeldeinformationen verfügen.

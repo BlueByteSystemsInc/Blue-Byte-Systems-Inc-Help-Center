@@ -22,7 +22,7 @@ A navegação esquerda divide o diálogo em **Publishing**, **Utilities**, **Int
 | Utilitários | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Perfis de clone, fonte de número de série PDM, comportamento de última revisão, arquivos companheiros, saída ZIP e processamento opcional Property Doctor. |
 | Utilitários | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Colunas padrão, carregamento de miniaturas e perfis de propriedade- ação. |
 | Utilitários | [Traduzir](pdmpublishersolidworks_translate.md) | Fluxo de trabalho de tradução planejado; ainda não está disponível. |
-| Integração | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Integração de ERP synchronization planejada; ainda não está disponível. |
+| Integração | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Conector ativo, modelo de colunas e tipo de lista de materiais padrão, agrupamento, componentes ignorados e filtros. |
 | Integração | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Agendador de publicação planejado; ainda não disponível. |
 | Conta de Materiais | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Colunas BOM padrão, tipo de exibição, expressão de agrupamento e exclusões de componentes. |
 | Recursos Compartilhados | [PDM](pdmpublishersolidworks_pdm-settings.md) | O cofre usado pelas configurações de utilitário PDM-consciente. |
@@ -121,7 +121,7 @@ Os menus **Import** e **Export** na parte inferior transferem uma configuração
 
 Um pacote completo contém configurações de utilitário, perfis Save As New, perfis Property Doctor, perfis Clone Tree, fórmulas e fontes compartilhadas e perfis completos de publicação.
 
-Páginas planejadas que não contêm controles configuráveis, como ERP Sync, Publisher Macros e Translate, não adicionam comportamento ativo a um pacote exportado.
+As configurações do ERP Sync são incluídas no pacote completo de configurações. As credenciais do conector e outros valores salvos permanecem protegidos para o usuário atual do Windows e não se tornam portáteis pela exportação das configurações. Páginas planejadas sem controles configuráveis, como Publisher Macros e Translate, não adicionam comportamento ativo a um pacote exportado.
 
 > [!IMPORTANT]
 > Os segredos de conexão SQL Server não são exportados ou enviados. Após uma importação, reenter credenciais para fontes externas que já não têm credenciais locais correspondentes.
