@@ -56,6 +56,28 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
   flex-wrap: wrap;
 }
 
+.pdp-product-action-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.pdp-action-solidworks {
+  min-width: min(100%, 420px);
+  border-color: #c81e2a;
+  background: #d92735;
+  color: #fff !important;
+  font-weight: 650;
+  box-shadow: 0 4px 12px rgba(217, 39, 53, .2);
+}
+
+.pdp-action-solidworks:hover,
+.pdp-action-solidworks:focus {
+  border-color: #a81520;
+  background: #bd1f2c;
+  color: #fff !important;
+}
+
 .pdp-action {
   display: inline-flex;
   align-items: center;
@@ -159,7 +181,10 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 <section class="pdp-hero">
 <img class="pdp-hero-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc."/>
 <h1>PDMPublisher Help Center</h1>
-<p>Setup, licensing, task configuration, export options, and troubleshooting for PDMPublisher and PDMDeploy.</p>
+<p>Documentation for the SOLIDWORKS Add-in, PDM Task, and PDMDeploy.</p>
+<div class="pdp-product-action-row">
+<a class="pdp-action pdp-action-solidworks" href="../src/pdmpublishersolidworks.md">PDMPublisher for SOLIDWORKS Add-in &rarr;</a>
+</div>
 <div class="pdp-actions">
 <a class="pdp-action" href="src/welcome.md">Welcome to PDMPublisher</a>
 <a class="pdp-action pdp-action-primary" href="../src/propertiespagepdmpublisher.md">Set up your first task</a>
