@@ -1,0 +1,70 @@
+{
+  "build": {
+    "markdownEngineProperties": {
+      "alerts": {
+        "Você sabia?": "alert alert-success"
+      }
+    },
+    "content": [
+      {
+        "files": ["index.md", "toc.yml"],
+        "src": "pdmpublisher-site-pt-br"
+      },
+      {
+        "files": ["toc.yml", "welcome.md"],
+        "src": "pdmpublisher-site-pt-br/src",
+        "dest": "src"
+      },
+      {
+        "files": [
+          "introduction.md",
+          "pdmpublisher*.md",
+          "propertiespagepdmpublisher.md",
+          "licensespdmpublisher.md",
+          "options.md",
+          "annotations.md",
+          "conditions.md",
+          "conditions_solidworks.md",
+          "scheduleditems.md",
+          "changeslog.md",
+          "eula.md",
+          "installingpdmaddins.md",
+          "offlineactivator.md",
+          "cdpdm.md",
+          "cdpdmchangeslog.md",
+          "updateaddinswithcdpdm.md",
+          "pdmqa.md",
+          "pdmpublisher-options/**/*.md",
+          "pdmpublisher-annotations/**/*.md",
+          "pdmpublisher-conditions/**/*.md"
+        ],
+        "src": "src-pt-br",
+        "dest": "src"
+      }
+    ],
+    "resource": [
+      {
+        "files": ["addinwelcome.html"],
+        "src": "pdmpublisher-site-pt-br"
+      }
+    ],
+    "sitemap": {
+      "baseUrl": "https://pdmpublisher.com/help/pt-br",
+      "priority": 1,
+      "changefreq": "weekly"
+    },
+    "output": "pdmpublisher.com/help/pt-br",
+    "template": ["default", "modern", "templates/bluebyte"],
+    "globalMetadata": {
+      "_appName": "Ajuda do PDMPublisher",
+      "_appTitle": "Central de Ajuda do PDMPublisher",
+      "_appFooter": "<div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. Todos os direitos reservados.</div>",
+      "_appLogoPath": "https://pdmpublisher.com/help/images/pdmpublisher_logo.png",
+      "_appFaviconPath": "https://pdmpublisher.com/help/images/bluebyte-mark.png",
+      "_enableSearch": true,
+      "_pdmpublisherOnly": true,
+      "_lang": "pt-BR",
+      "pdf": false
+    }
+  }
+}

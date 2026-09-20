@@ -28,14 +28,25 @@ try {
         exit $LASTEXITCODE
     }
 
-    & ".\bin\docfx.exe" ".\docfx.pdmpublisher.fr-ca.json"
-    if ($LASTEXITCODE -ne 0) {
-        exit $LASTEXITCODE
-    }
+    $localizedBuilds = @(
+        @{ Config = ".\docfx.pdmpublisher.fr-ca.json"; Folder = "fr-ca"; Language = "fr-CA" },
+        @{ Config = ".\docfx.pdmpublisher.de-de.json"; Folder = "de-de"; Language = "de-DE" },
+        @{ Config = ".\docfx.pdmpublisher.pt-br.json"; Folder = "pt-br"; Language = "pt-BR" }
+    )
 
-    & ".\postbuild-pdmpublisher.ps1" -OutputPath "pdmpublisher.com\help\fr-ca" -SiteBaseUrl "https://pdmpublisher.com/help/fr-ca" -Language "fr-CA"
-    if ($LASTEXITCODE -ne 0) {
-        exit $LASTEXITCODE
+    foreach ($localizedBuild in $localizedBuilds) {
+        & ".\bin\docfx.exe" $localizedBuild.Config
+        if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+        }
+
+        & ".\postbuild-pdmpublisher.ps1" `
+            -OutputPath "pdmpublisher.com\help\$($localizedBuild.Folder)" `
+            -SiteBaseUrl "https://pdmpublisher.com/help/$($localizedBuild.Folder)" `
+            -Language $localizedBuild.Language
+        if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+        }
     }
 }
 finally {

@@ -36,15 +36,15 @@
     }
     main { max-width: 720px; margin: 0 auto; padding: 22px 18px 30px; }
     .language-switch { display: flex; justify-content: flex-end; margin: 0 0 8px; }
-    .language-switch a {
+    .language-switch select {
       padding: 4px 8px;
       border: 1px solid var(--border);
       border-radius: 4px;
       color: var(--link);
       background: var(--surface);
-      text-decoration: none;
+      font: inherit;
     }
-    .language-switch a:hover, .language-switch a:focus { border-color: var(--accent); text-decoration: underline; }
+    .language-switch select:hover, .language-switch select:focus { border-color: var(--accent); }
     header { display: grid; grid-template-columns: 58px 1fr; gap: 13px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
     header img { width: 58px; height: 58px; object-fit: contain; }
     h1 { margin: 0 0 3px; font-size: 22px; line-height: 1.22; letter-spacing: 0; }
@@ -79,7 +79,12 @@
 <body>
   <main>
     <nav class="language-switch" aria-label="Language">
-      <a href="fr-ca/addinwelcome.html" hreflang="fr-CA" lang="fr-CA">Fran&ccedil;ais (Canada)</a>
+      <select aria-label="Language" onchange="window.location.href=this.value">
+        <option value="addinwelcome.html" selected>English (Canada)</option>
+        <option value="fr-ca/addinwelcome.html">Fran&ccedil;ais (Canada)</option>
+        <option value="de-de/addinwelcome.html">Deutsch</option>
+        <option value="pt-br/addinwelcome.html">Portugu&ecirc;s (Brasil)</option>
+      </select>
     </nav>
     <header>
       <img src="images/pdmpublisher_logo.png" alt="PDMPublisher">

@@ -1,0 +1,372 @@
+- name: Iniciar Aqui
+  expanded: true
+  items:
+  - name: Introdução
+    href: ../../src-pt-br/introduction.md
+
+- name: Suplemento SOLIDWORKS
+  expanded: true
+  items:
+  - name: Visão geral
+    href: ../../src-pt-br/pdmpublishersolidworks.md
+  - name: Instalar e Activar o Suplemento
+    href: ../../src-pt-br/pdmpublishersolidworks_installation.md
+  - name: Comandos
+    href: ../../src-pt-br/pdmpublishersolidworks_commands.md
+  - name: Painel de Tarefas de Ajuda
+    href: ../../src-pt-br/pdmpublishersolidworks_help-pane.md
+  - name: Tarefa PDM vs Suplemento SOLIDWORKS
+    href: ../../src-pt-br/pdmpublisher-product-differences.md
+  - name: Configurações
+    href: ../../src-pt-br/pdmpublishersolidworks_settings.md
+    expanded: true
+    items:
+    - name: Publicar Perfis
+      href: ../../src-pt-br/pdmpublishersolidworks_profiles.md
+    - name: Publicar predefinições
+      href: ../../src-pt-br/pdmpublishersolidworks_presets.md
+    - name: Compartilhar um perfil de publicação usando um PIN
+      href: ../../src-pt-br/pdmpublishersolidworks_profile_sharing.md
+    - name: Recursos Compartilhados
+      href: ../../src-pt-br/pdmpublishersolidworks_shared-resources.md
+      items:
+      - name: PDM
+        href: ../../src-pt-br/pdmpublishersolidworks_pdm-settings.md
+      - name: Línguas
+        href: ../../src-pt-br/pdmpublishersolidworks_languages.md
+      - name: Locais dos Ficheiros
+        href: ../../src-pt-br/pdmpublishersolidworks_file-locations.md
+      - name: Fontes Externas
+        href: ../../src-pt-br/pdmpublishersolidworks_external-sources.md
+    - name: Fórmulas Avançadas
+      href: ../../src-pt-br/pdmpublishersolidworks_advanced-formulas.md
+    - name: Integração
+      items:
+      - name: ERP Sync
+        href: ../../src-pt-br/pdmpublishersolidworks_erp-sync.md
+      - name: Publisher Macros
+        href: ../../src-pt-br/pdmpublishersolidworks_publisher-macros.md
+    - name: BOM Manager
+      href: ../../src-pt-br/pdmpublishersolidworks_bom-manager.md
+    - name: Traduzir
+      href: ../../src-pt-br/pdmpublishersolidworks_translate.md
+    - name: Importar, Exportar e Reiniciar Configurações
+      href: ../../src-pt-br/pdmpublishersolidworks_settings-transfer.md
+  - name: Save As New
+    href: ../../src-pt-br/pdmpublishersolidworks_save-as-new.md
+  - name: Property Doctor
+    href: ../../src-pt-br/pdmpublishersolidworks_property-doctor.md
+  - name: Clone Tree
+    href: ../../src-pt-br/pdmpublishersolidworks_smart-pack.md
+  - name: Publicação
+    href: ../../src-pt-br/pdmpublishersolidworks_options.md
+    expanded: true
+    items:
+    - name: Executar uma tarefa de publicação
+      href: ../../src-pt-br/pdmpublishersolidworks-publish.md
+    - name: Publishing Workflow e resultados
+      href: ../../src-pt-br/pdmpublishersolidworks_workflow.md
+    - name: Caminhos de Saída e Nomes
+      expanded: true
+      items:
+      - name: Exportar Localização
+        href: ../../src-pt-br/pdmpublisher-options/export-location.md
+      - name: Nome do arquivo
+        href: ../../src-pt-br/pdmpublisher-options/filename.md
+      - name: Formatos de Ficheiros
+        href: ../../src-pt-br/pdmpublisher-options/file-formats.md
+      - name: Abrir a Localização de Exportação
+        href: ../../src-pt-br/pdmpublishersolidworks-open-export-location.md
+      - name: Arquivo Exportado Documentos
+        href: ../../src-pt-br/pdmpublisher-options/archive-all-exported-documents.md
+    - name: Assembleia e Referências
+      expanded: true
+      items:
+      - name: Exportar Referências Individualmente
+        href: ../../src-pt-br/pdmpublisher-options/export-references-individually.md
+      - name: Ignorar as Crianças Sub- Assembly
+        href: ../../src-pt-br/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
+    - name: Configurações
+      expanded: true
+      items:
+      - name: Converter várias configurações
+        href: ../../src-pt-br/pdmpublisher-options/convert-multiple-configurations.md
+    - name: Desenhos e PDFs
+      expanded: true
+      items:
+      - name: Mesclar PDF exportados
+        href: ../../src-pt-br/pdmpublisher-options/merge-exported-pdfs.md
+      - name: Tabela de Conteúdo
+        href: ../../src-pt-br/pdmpublisher-options/add-table-of-content-to-merged-pdf.md
+        expanded: true
+        items:
+        - name: Colunas da Tabela
+          href: ../../src-pt-br/pdmpublisher-options/table-columns.md
+      - name: Favoritos do PDF
+        href: ../../src-pt-br/pdmpublisher-options/pdf-bookmarks.md
+      - name: Folhas para exportar
+        href: ../../src-pt-br/pdmpublisher-options/sheets-to-export.md
+        expanded: true
+        items:
+        - name: Padrão de Nome da Folha
+          href: ../../src-pt-br/pdmpublisher-options/sheet-name-pattern.md
+    - name: Produção
+      expanded: true
+      items:
+      - name: Folha de metal padrão plano DXF
+        href: ../../src-pt-br/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
+      - name: Dividir os Corpos
+        href: ../../src-pt-br/pdmpublisher-options/split-bodies.md
+    - name: Anotações
+      href: ../../src-pt-br/pdmpublishersolidworks_annotations.md
+      items:
+      - name: Adicionar uma Nota
+        href: ../../src-pt-br/pdmpublisher-annotations/add-annotation.md
+      - name: Texto da Anotação
+        href: ../../src-pt-br/pdmpublisher-annotations/annotation-text.md
+      - name: Locais de Consulta SQL
+        href: ../../src-pt-br/pdmpublisher-annotations/sql-query-placeholders.md
+      - name: Formatação de Texto
+        href: ../../src-pt-br/pdmpublisher-annotations/text-formatting.md
+      - name: Marca d'água
+        href: ../../src-pt-br/pdmpublisher-annotations/watermark.md
+      - name: Posição
+        href: ../../src-pt-br/pdmpublisher-annotations/position.md
+      - name: Folhas
+        href: ../../src-pt-br/pdmpublisher-annotations/sheets.md
+      - name: Importar e exportar anotações
+        href: ../../src-pt-br/pdmpublishersolidworks-annotation-files.md
+    - name: Condições
+      href: ../../src-pt-br/conditions_solidworks.md
+      items:
+      - name: Adicionar Condições e Grupos
+        href: ../../src-pt-br/pdmpublisher-conditions/add-conditions-and-groups.md
+      - name: Campos de Condição
+        href: ../../src-pt-br/pdmpublisher-conditions/condition-fields.md
+      - name: Variáveis Especiais
+        href: ../../src-pt-br/pdmpublisher-conditions/special-variables.md
+      - name: Tipos de Condição
+        href: ../../src-pt-br/pdmpublisher-conditions/condition-types.md
+      - name: Regras de avaliação
+        href: ../../src-pt-br/pdmpublisher-conditions/evaluation-rules.md
+      - name: Resultados da Condição de Revisão
+        href: ../../src-pt-br/pdmpublishersolidworks-condition-output.md
+      - name: Condições de importação e exportação
+        href: ../../src-pt-br/pdmpublishersolidworks-condition-files.md
+    - name: Registos
+      href: ../../src-pt-br/pdmpublishersolidworks_logs.md
+      items:
+      - name: Procurar e Ler os Registos
+        href: ../../src-pt-br/pdmpublishersolidworks-log-search.md
+      - name: Salvar e Limpar Registros
+        href: ../../src-pt-br/pdmpublishersolidworks-log-files.md
+  - name: Atualizações, Sobre e Licença
+    href: ../../src-pt-br/pdmpublishersolidworks_About.md
+    items:
+    - name: Versão e Atualizações
+      href: ../../src-pt-br/pdmpublishersolidworks-updates.md
+  - name: Gestão de Licenças
+    href: ../../src-pt-br/pdmpublishersolidworks_license.md
+    items:
+    - name: Contrato de licença do usuário final
+      href: ../../src-pt-br/eula.md
+
+- name: Tarefa PDM
+  expanded: true
+  items:
+  - name: Visão geral
+    href: ../../src-pt-br/pdmpublisher.md
+  - name: Obter um julgamento de 7 dias
+    href: ../../src-pt-br/pdmpublishertrial.md
+  - name: Demonstração Rápida
+    href: ../../src-pt-br/pdmpublisherdemo.md
+  - name: Instalar o Suplemento de Tarefas PDM
+    href: ../../src-pt-br/installingpdmaddins.md
+  - name: Gestão de Licenças
+    href: ../../src-pt-br/licensespdmpublisher.md
+  - name: Configuração do Tema
+    href: ../../src-pt-br/pdmpublisher-theme-settings.md
+  - name: Contrato de licença do usuário final
+    href: ../../src-pt-br/eula.md
+  - name: Tarefa PDM vs Suplemento SOLIDWORKS
+    href: ../../src-pt-br/pdmpublisher-product-differences.md
+  - name: Configurar sua primeira tarefa
+    href: ../../src-pt-br/propertiespagepdmpublisher.md
+  - name: Por Que Falta o Menu Tarefas?
+    href: ../../src-pt-br/pdmpublisher-task-menu-missing.md
+  - name: Página de Tarefa Opções
+    href: ../../src-pt-br/options.md
+    expanded: true
+    items:
+    - name: Caminhos de Saída e Nomes
+      expanded: true
+      items:
+      - name: Exportar Localização
+        href: ../../src-pt-br/pdmpublisher-options/export-location.md
+        expanded: true
+        items:
+        - name: Usar @ Tab para Caminhos
+          href: ../../src-pt-br/pdmpublisher-options/use-at-tab-to-evaluate-paths.md
+      - name: Nome do arquivo
+        href: ../../src-pt-br/pdmpublisher-options/filename.md
+      - name: Formatos de Ficheiros
+        href: ../../src-pt-br/pdmpublisher-options/file-formats.md
+        expanded: true
+        items:
+        - name: Configurações de Exportação do eDrawings
+          href: ../../src-pt-br/pdmpublisher-options/edrawings-export-settings.md
+      - name: Arquivo Exportado Documentos
+        href: ../../src-pt-br/pdmpublisher-options/archive-all-exported-documents.md
+    - name: Assembleia e BOM
+      expanded: true
+      items:
+      - name: Exportar Documento Afetado
+        href: ../../src-pt-br/pdmpublisher-options/export-active-document.md
+      - name: Exportar Referências Individualmente
+        href: ../../src-pt-br/pdmpublisher-options/export-references-individually.md
+      - name: Modelo
+        href: ../../src-pt-br/pdmpublisher-options/template.md
+        expanded: true
+        items:
+        - name: Método de cálculo
+          href: ../../src-pt-br/pdmpublisher-options/calculation-method.md
+      - name: Usar BOM Derivado de Desenho
+        href: ../../src-pt-br/pdmpublisher-options/use-drawing-derived-bom.md
+      - name: Ignorar as Crianças Sub- Assembly
+        href: ../../src-pt-br/pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md
+    - name: Pedidos de Lançamento de Tarefas
+      expanded: true
+      items:
+      - name: Pedir ao Utilizador para seleccionar a Configuração
+        href: ../../src-pt-br/pdmpublisher-options/ask-user-to-select-configuration-on-startup.md
+      - name: Pedir ao Usuário para Especificar Arquivos
+        href: ../../src-pt-br/pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md
+    - name: Configurações e versões
+      expanded: true
+      items:
+      - name: Converter várias configurações
+        href: ../../src-pt-br/pdmpublisher-options/convert-multiple-configurations.md
+      - name: Trabalhar com a versão mais recente
+        href: ../../src-pt-br/pdmpublisher-options/work-with-latest-version.md
+      - name: Obter apenas a revisão mais recente
+        href: ../../src-pt-br/pdmpublisher-options/get-latest-revision-only.md
+      - name: Versão do SOLIDWORKS
+        href: ../../src-pt-br/pdmpublisher-options/use-this-version-of-solidworks.md
+    - name: Desenhos e PDFs
+      expanded: true
+      items:
+      - name: Microsoft Print To PDF
+        href: ../../src-pt-br/pdmpublisher-options/use-microsoft-print-to-pdf.md
+      - name: Mesclar PDF exportados
+        href: ../../src-pt-br/pdmpublisher-options/merge-exported-pdfs.md
+      - name: Tabela de Conteúdo
+        href: ../../src-pt-br/pdmpublisher-options/add-table-of-content-to-merged-pdf.md
+        expanded: true
+        items:
+        - name: Colunas da Tabela
+          href: ../../src-pt-br/pdmpublisher-options/table-columns.md
+      - name: Favoritos do PDF
+        href: ../../src-pt-br/pdmpublisher-options/pdf-bookmarks.md
+      - name: Folhas para exportar
+        href: ../../src-pt-br/pdmpublisher-options/sheets-to-export.md
+        expanded: true
+        items:
+        - name: Padrão de Nome da Folha
+          href: ../../src-pt-br/pdmpublisher-options/sheet-name-pattern.md
+      - name: Modo de Visualização Rápida
+        href: ../../src-pt-br/pdmpublisher-options/quick-view-mode.md
+      - name: Usar a Pesquisa PDM
+        href: ../../src-pt-br/pdmpublisher-options/use-pdm-search-to-locate-drawings.md
+    - name: Produção
+      expanded: true
+      items:
+      - name: Folha de metal padrão plano DXF
+        href: ../../src-pt-br/pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md
+      - name: Dividir os Corpos
+        href: ../../src-pt-br/pdmpublisher-options/split-bodies.md
+    - name: Registos de Actividade
+      expanded: true
+      items:
+      - name: Registos de Actividade do Vault
+        href: ../../src-pt-br/pdmpublisher-options/turn-on-activity-tracking.md
+        expanded: true
+        items:
+        - name: Registos de Actividade com Sincronização do Servidor
+          href: ../../src-pt-br/pdmpublisher-options/server-synced-activity-logs.md
+        - name: Pasta de Registo
+          href: ../../src-pt-br/pdmpublisher-options/log-folder-vault-only.md
+    - name: Referências e Variáveis do Cofre
+      expanded: true
+      items:
+      - name: Criar Referência PDM
+        href: ../../src-pt-br/pdmpublisher-options/create-reference-from-destination-file-to-source-file.md
+      - name: Apagar os Duplicados
+        href: ../../src-pt-br/pdmpublisher-options/delete-duplicates-outside-destination-folder.md
+      - name: Variáveis do mapa
+        href: ../../src-pt-br/pdmpublisher-options/map-variables-between-source-and-destination-file.md
+      - name: Ocultar Tarefa no Explorador de Arquivos
+        href: ../../src-pt-br/pdmpublisher-options/hide-task-in-file-explorer.md
+  - name: Página de Tarefa de Anotações
+    href: ../../src-pt-br/annotations.md
+    expanded: true
+    items:
+    - name: Adicionar uma Nota
+      href: ../../src-pt-br/pdmpublisher-annotations/add-annotation.md
+    - name: Texto da Anotação
+      href: ../../src-pt-br/pdmpublisher-annotations/annotation-text.md
+    - name: Locais de Consulta SQL
+      href: ../../src-pt-br/pdmpublisher-annotations/sql-query-placeholders.md
+    - name: Formatação de Texto
+      href: ../../src-pt-br/pdmpublisher-annotations/text-formatting.md
+    - name: Marca d'água
+      href: ../../src-pt-br/pdmpublisher-annotations/watermark.md
+    - name: Activo
+      href: ../../src-pt-br/pdmpublisher-annotations/active.md
+    - name: Posição
+      href: ../../src-pt-br/pdmpublisher-annotations/position.md
+    - name: Folhas
+      href: ../../src-pt-br/pdmpublisher-annotations/sheets.md
+  - name: Página de Tarefa das Condições
+    href: ../../src-pt-br/conditions.md
+    expanded: true
+    items:
+    - name: Adicionar Condições e Grupos
+      href: ../../src-pt-br/pdmpublisher-conditions/add-conditions-and-groups.md
+    - name: Campos de Condição
+      href: ../../src-pt-br/pdmpublisher-conditions/condition-fields.md
+    - name: Variáveis Especiais
+      href: ../../src-pt-br/pdmpublisher-conditions/special-variables.md
+    - name: Tipos de Condição
+      href: ../../src-pt-br/pdmpublisher-conditions/condition-types.md
+    - name: Regras de avaliação
+      href: ../../src-pt-br/pdmpublisher-conditions/evaluation-rules.md
+  - name: Página de Tarefa de Itens Agendados
+    href: ../../src-pt-br/scheduleditems.md
+  - name: Perguntas Frequentes
+    href: ../../src-pt-br/pdmpublisherfaq.md
+  - name: Referência do placeholder
+    href: ../../src-pt-br/pdmpublisherspecialvariable.md
+  - name: Detalhes da Tarefa
+    href: ../../src-pt-br/pdmpublisher_task_details.md
+
+- name: PDMDeploy
+  expanded: true
+  items:
+  - name: Baixe e configure PDMDeploy
+    href: ../../src-pt-br/cdpdm.md
+  - name: Instalar ou atualizar o PDMPublisher
+    href: ../../src-pt-br/updateaddinswithcdpdm.md
+  - name: Transferências Solução de Problemas
+    href: ../../src-pt-br/pdmqa.md
+  - name: Registo de Alterações do PDMDeploy
+    href: ../../src-pt-br/cdpdmchangeslog.md
+
+- name: Informação da versão
+  expanded: true
+  items:
+  - name: Roteiro PDMPublisher
+    href: ../../src-pt-br/pdmpublisher_roadmap.md
+  - name: Registo de Alterações do PDMPublisher
+    href: ../../src-pt-br/changeslog.md
+  - name: Activador Desligado
+    href: ../../src-pt-br/offlineactivator.md

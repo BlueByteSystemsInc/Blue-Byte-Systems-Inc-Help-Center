@@ -1,0 +1,10 @@
+- name: Zuhause
+  href: index.md
+- name: PDM Professional
+  href: ../src-de-de/pdmpublisher.md
+- name: SOLIDWORKS Add-in
+  href: ../src-de-de/pdmpublishersolidworks.md
+- name: PDMDeploy
+  href: ../src-de-de/cdpdm.md
+- name: Kontaktunterstützung
+  href: mailto:support@bluebytesystemsinc.zohodesk.com

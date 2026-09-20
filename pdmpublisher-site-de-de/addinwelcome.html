@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de-DE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>PDMPublisher f&uuml;r SOLIDWORKS Hilfe</title>
+  <style>
+    :root { color-scheme: light dark; --background: #fff; --surface: #f5f7f9; --border: #d5dde5; --text: #17212b; --muted: #526170; --link: #0869b5; --accent: #0879c9; }
+    @media (prefers-color-scheme: dark) { :root { --background: #202224; --surface: #292c2f; --border: #4a535c; --text: #f2f5f7; --muted: #c1c8ce; --link: #77bdf0; --accent: #36a2e8; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); font: 14px/1.48 "Segoe UI", Arial, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 22px 18px 30px; }
+    .language-switch { display: flex; justify-content: flex-end; margin: 0 0 8px; }
+    .language-switch select { padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px; color: var(--link); background: var(--surface); font: inherit; }
+    .language-switch select:hover, .language-switch select:focus { border-color: var(--accent); }
+    header { display: grid; grid-template-columns: 58px 1fr; gap: 13px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    header img { width: 58px; height: 58px; object-fit: contain; }
+    h1 { margin: 0 0 3px; font-size: 22px; line-height: 1.22; letter-spacing: 0; }
+    header p { margin: 0; color: var(--muted); }
+    .intro { margin: 17px 0 14px; }
+    .commands { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+    .command { display: block; min-width: 0; padding: 12px 13px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 5px; background: var(--surface); color: var(--text); text-decoration: none; }
+    .command strong { display: block; color: var(--link); font-size: 15px; }
+    .command span { display: block; margin-top: 3px; color: var(--muted); }
+    .links { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .links a { color: var(--link); }
+    .links a + a::before { content: " | "; color: var(--muted); text-decoration: none; }
+    @media (max-width: 480px) { main { padding: 16px 12px 24px; } header { grid-template-columns: 46px 1fr; } header img { width: 46px; height: 46px; } h1 { font-size: 19px; } .commands { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="language-switch" aria-label="Sprache">
+      <select aria-label="Sprache" onchange="window.location.href=this.value">
+        <option value="../addinwelcome.html">English (Canada)</option>
+        <option value="../fr-ca/addinwelcome.html">Fran&ccedil;ais (Canada)</option>
+        <option value="addinwelcome.html" selected>Deutsch</option>
+        <option value="../pt-br/addinwelcome.html">Portugu&ecirc;s (Brasil)</option>
+      </select>
+    </nav>
+    <header>
+      <img src="../images/pdmpublisher_logo.png" alt="PDMPublisher">
+      <div>
+        <h1>PDMPublisher f&uuml;r SOLIDWORKS</h1>
+        <p>Die Befehle befinden sich auf der PDMPublisher-Registerkarte des CommandManagers. Dieser Bereich enth&auml;lt die Dokumentation.</p>
+      </div>
+    </header>
+    <p class="intro">W&auml;hlen Sie einen Arbeitsablauf aus, um die zugeh&ouml;rige Anleitung zu &ouml;ffnen.</p>
+    <nav class="commands" aria-label="PDMPublisher-Dokumentation">
+      <a class="command" href="src/pdmpublishersolidworks_commands.html"><strong>Befehle</strong><span>Alle CommandManager-Befehle und Profilmen&uuml;s finden.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_settings.html"><strong>Einstellungen</strong><span>Dienstprogramme, Ver&ouml;ffentlichung und gemeinsame Ressourcen konfigurieren.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_save-as-new.html"><strong>Save As New</strong><span>Eine native Kopie mit wiederholbaren Benennungs- und PDM-Regeln erstellen.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_property-doctor.html"><strong>Property Doctor</strong><span>Eigenschaften von Dokumenten und Referenzen pr&uuml;fen und bearbeiten.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks_smart-pack.html"><strong>Clone Tree</strong><span>Einen Dokumentensatz mit Namen, Ordnern, Revisionen und ZIP-Ausgabe kopieren.</span></a>
+      <a class="command" href="src/pdmpublishersolidworks-publish.html"><strong>Ver&ouml;ffentlichen</strong><span>Das aktive Dokument mit einem Ver&ouml;ffentlichungsprofil exportieren.</span></a>
+    </nav>
+    <div class="links">
+      <a href="src/pdmpublishersolidworks.html">Vollst&auml;ndige &Uuml;bersicht</a>
+      <a href="src/pdmpublishersolidworks_installation.html">Installation</a>
+      <a href="src/licensespdmpublisher.html">Lizenzierung</a>
+      <a href="https://bluebyte.biz/contact/" target="_blank" rel="noopener noreferrer">Support</a>
+    </div>
+  </main>
+</body>
+</html>

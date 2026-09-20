@@ -1,0 +1,70 @@
+{
+  "build": {
+    "markdownEngineProperties": {
+      "alerts": {
+        "Wussten Sie schon?": "alert alert-success"
+      }
+    },
+    "content": [
+      {
+        "files": ["index.md", "toc.yml"],
+        "src": "pdmpublisher-site-de-de"
+      },
+      {
+        "files": ["toc.yml", "welcome.md"],
+        "src": "pdmpublisher-site-de-de/src",
+        "dest": "src"
+      },
+      {
+        "files": [
+          "introduction.md",
+          "pdmpublisher*.md",
+          "propertiespagepdmpublisher.md",
+          "licensespdmpublisher.md",
+          "options.md",
+          "annotations.md",
+          "conditions.md",
+          "conditions_solidworks.md",
+          "scheduleditems.md",
+          "changeslog.md",
+          "eula.md",
+          "installingpdmaddins.md",
+          "offlineactivator.md",
+          "cdpdm.md",
+          "cdpdmchangeslog.md",
+          "updateaddinswithcdpdm.md",
+          "pdmqa.md",
+          "pdmpublisher-options/**/*.md",
+          "pdmpublisher-annotations/**/*.md",
+          "pdmpublisher-conditions/**/*.md"
+        ],
+        "src": "src-de-de",
+        "dest": "src"
+      }
+    ],
+    "resource": [
+      {
+        "files": ["addinwelcome.html"],
+        "src": "pdmpublisher-site-de-de"
+      }
+    ],
+    "sitemap": {
+      "baseUrl": "https://pdmpublisher.com/help/de-de",
+      "priority": 1,
+      "changefreq": "weekly"
+    },
+    "output": "pdmpublisher.com/help/de-de",
+    "template": ["default", "modern", "templates/bluebyte"],
+    "globalMetadata": {
+      "_appName": "PDMPublisher-Hilfe",
+      "_appTitle": "PDMPublisher-Hilfecenter",
+      "_appFooter": "<div class='bbs-site-footer' style='width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);text-align:center;'>&copy; 2026 Blue Byte Systems Inc. Alle Rechte vorbehalten.</div>",
+      "_appLogoPath": "https://pdmpublisher.com/help/images/pdmpublisher_logo.png",
+      "_appFaviconPath": "https://pdmpublisher.com/help/images/bluebyte-mark.png",
+      "_enableSearch": true,
+      "_pdmpublisherOnly": true,
+      "_lang": "de-DE",
+      "pdf": false
+    }
+  }
+}

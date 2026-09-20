@@ -119,15 +119,7 @@ def mask(text: str):
 
     def save(value: str) -> str:
         values.append(value)
-        number = len(values) - 1
-        letters = ""
-        while True:
-            number, remainder = divmod(number, 26)
-            letters = chr(65 + remainder) + letters
-            if number == 0:
-                break
-            number -= 1
-        return f"XQZ{letters}QZX"
+        return f"ZXQ{len(values) - 1:04d}QXZ"
 
     text = re.sub(
         r"(!?\[[^\]\n]*\]\()([^\)\n]+)(\))",
@@ -142,17 +134,7 @@ def mask(text: str):
 
 def unmask(text: str, values: list[str]) -> str:
     for index in range(len(values) - 1, -1, -1):
-        value = values[index]
-        number = index
-        letters = ""
-        while True:
-            number, remainder = divmod(number, 26)
-            letters = chr(65 + remainder) + letters
-            if number == 0:
-                break
-            number -= 1
-        token = f"XQZ{letters}QZX"
-        text = text.replace(token, value)
+        text = text.replace(f"ZXQ{index:04d}QXZ", values[index])
     return text
 
 
@@ -161,6 +143,8 @@ def translate_text(value: str, engine) -> str:
         return value
     protected, values = mask(value)
     result = engine.translate(protected)
+    if any(result.count(f"ZXQ{index:04d}QXZ") != 1 for index in range(len(values))):
+        return value
     for english, french in CANADIAN_TERMS.items():
         result = re.sub(rf"\b{re.escape(english)}\b", french, result, flags=re.I)
     result = unmask(result, values)
@@ -275,8 +259,13 @@ def finalize_file(source: Path, target: Path) -> None:
             target_line = f"{source_image.group(1)}![{source_image.group(2)}]({normalized_url})"
         output.append(target_line)
     final_text = "\n".join(output) + "\n"
+    final_text = re.sub(r"\]\s+\(", "](", final_text)
     final_text = final_text.replace("../images/", "https://pdmpublisher.com/help/images/")
-    final_text = final_text.replace("/images/", "https://pdmpublisher.com/help/images/")
+    final_text = re.sub(
+        r"(?<!https://pdmpublisher\.com/help)/images/",
+        "https://pdmpublisher.com/help/images/",
+        final_text,
+    )
     final_text = re.sub(
         r"(?m)^(\s*)!?\[([^\]]*)\]\s*\((?:\.\.)?(https://pdmpublisher\.com/help/images/[^)]+)\)\s*$",
         r"\1![\2](\3)",
@@ -289,6 +278,7 @@ def finalize_file(source: Path, target: Path) -> None:
             r"!\1",
             final_text,
         )
+    final_text = "\n".join(line.rstrip() for line in final_text.splitlines()).rstrip() + "\n"
     target.write_text(final_text, encoding="utf-8", newline="\n")
 
 
