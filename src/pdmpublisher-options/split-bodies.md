@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Split Bodies
 
-![Split Bodies setting](/images/pdmpublisher/screenshots/options-028-property-split-bodies.png)
+![Split Bodies setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox8_Split_bodies_Light_100.png)
 
 Exports bodies from a multi-body part into separate files. The body name is appended to the generated filename.
 

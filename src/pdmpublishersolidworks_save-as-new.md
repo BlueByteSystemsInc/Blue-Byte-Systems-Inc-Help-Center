@@ -9,7 +9,7 @@ ms.topic: how-to
 
 **Save As New** creates a separate native SOLIDWORKS document without renaming the source document or its referenced models. Open **PDMPublisher > Settings > Save As New** to configure the command.
 
-![Save As New filename, destination, PDM, property, and macro settings](/images/pdmpublisher/solidworks/settings-save-as-new-20260908.png)
+![Save As New filename, destination, PDM, property, and macro settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Save_As_New_Default_Light_100.png)
 
 ## Configure the New File
 

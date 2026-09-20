@@ -9,10 +9,7 @@ ms.topic: reference
 
 Enable Watermark when the annotation should appear as a watermark on the exported PDF.
 
-> [!NOTE]
-> Watermark behavior is shared by the **PDM task** and **SOLIDWORKS add-in**.
-
-![Watermark example](/images/WaterMark1.png)
+![Watermark control in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
 
 When Watermark is enabled, PDMPublisher rotates the annotation and makes it semi-transparent so it does not cover the drawing content as heavily as normal text.
 

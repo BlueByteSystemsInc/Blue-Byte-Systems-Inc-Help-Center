@@ -1,7 +1,7 @@
 ---
 title: PDMPublisher for SOLIDWORKS
 description: Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Clone Tree, profiles, and shared settings.
-ms.date: 09/16/2026
+ms.date: 09/19/2026
 ms.topic: overview
 ---
 
@@ -18,13 +18,15 @@ See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md) for a s
 
 PDMPublisher commands are located on the **PDMPublisher** tab in the SOLIDWORKS CommandManager and under **Tools > PDMPublisher**. The task pane is now a documentation browser and no longer contains the publishing controls.
 
-![PDMPublisher CommandManager commands and embedded Help pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commands/overview-commandmanager-help.png)
+![PDMPublisher CommandManager commands and embedded Help pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
 
 The CommandManager is organized into three groups:
 
 | Group | Commands | Purpose |
 | --- | --- | --- |
 | Document tools | Save As New, Property Doctor, Translate, Clone Tree | Create copies, manage properties, and package document sets. Translate is reserved for a future release. |
+| Bill of materials | BOM Manager | Configure BOM columns, structure, grouping, and component exclusions. |
+| Planned integrations | ERP Sync, Publisher Macros | Show the planned locations of ERP synchronization and scheduled publishing. These integrations are not available yet. |
 | Publishing | Publish, Annotations, Conditions, Logs | Configure and run exports, control annotations and processing rules, and review results. |
 | Settings and updates | Settings, License Key, update status, version information | Configure the add-in, transfer settings, manage licensing, and check the installed version. |
 
@@ -113,6 +115,8 @@ The [Settings](pdmpublishersolidworks_settings.md) command opens one searchable 
 The dialog contains:
 
 - Utility settings and profiles for Save As New, Property Doctor, and Clone Tree.
+- BOM Manager defaults for columns, display type, grouping, and ignored components.
+- Clearly marked placeholders for the planned Translate, ERP Sync, and Publisher Macros features.
 - Complete Publish profiles, including publishing options, annotations, and conditions.
 - Shared PDM selection, languages, drawing search folders, external sources, and advanced formulas.
 - Support, update, version, legal, and license information.

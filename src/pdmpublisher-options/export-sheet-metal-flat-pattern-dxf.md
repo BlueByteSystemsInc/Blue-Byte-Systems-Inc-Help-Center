@@ -7,14 +7,14 @@ ms.topic: reference
 
 # Export Sheet Metal Parts to 1:1 Flat Pattern DXF
 
-![Export sheet metal flat pattern setting](/images/pdmpublisher/screenshots/options-015-property-export-sheet-metal-parts-to-1-1-flat-pattern-dxf.png)
+![Export sheet metal flat pattern setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox7_Export_sheet_metal_parts_to_1_1_flat_pattern_DXF_Light_100.png)
 
 Exports sheet metal parts as 1:1 flat pattern DXF files.
 
 > [!NOTE]
 > This setting and its Flat Pattern Settings dialog are shared by the **PDM task** and **SOLIDWORKS add-in**.
 
-![Flat pattern settings dialog](/images/pdmpublisher/screenshots/options-dialog-flat-pattern-settings.png)
+![Current sheet metal flat pattern settings dialog](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Sheet_metal_Default_Light_100.png)
 
 ## Sheet Metal Flat Pattern Settings
 

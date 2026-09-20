@@ -7,14 +7,14 @@ ms.topic: reference
 
 # Sheets to Export
 
-![Sheets to export setting](/images/pdmpublisher/screenshots/options-027-property-sheets-to-export.png)
+![Sheets to export setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
 
 Controls whether drawing PDF exports include all sheets or only sheets whose names match a pattern.
 
 > [!NOTE]
 > This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
 
-![Sheets to export dropdown](/images/pdmpublisher/screenshots/options-dropdown-001-sheets-to-export.png)
+![Sheets to export dropdown in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Dropdown14_Light_100.png)
 
 Options:
 

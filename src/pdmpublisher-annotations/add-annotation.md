@@ -9,10 +9,9 @@ ms.topic: reference
 
 Use the add annotation button to create a new annotation box.
 
-> [!NOTE]
-> Annotation creation works the same in the **PDM task** and **SOLIDWORKS add-in**. The task stores annotations in its task definition; the add-in stores them in the selected profile.
+Annotations created here are stored in the selected **PDMPublisher for SOLIDWORKS Publish profile**.
 
-![Adding an annotation](/images/TaskAnnotations1.png)
+![PDMPublisher for SOLIDWORKS annotation editor](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
 
 New annotations are added to the page preview and can then be edited, positioned, enabled, or changed into a watermark.
 

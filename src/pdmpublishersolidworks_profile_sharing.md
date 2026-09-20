@@ -33,13 +33,11 @@ The recipient can apply only the included sections they need. Settings in sectio
 1. Select the profile you want to share.
 2. Open **Export**, then select **Share using PIN...**.
 
-   ![Share using PIN command in the Export menu](/images/pdmpublisher/solidworks/profile-share-menu.png)
+![Profile Shared dialog with an expiring six-digit PIN](/images/pdmpublisher/solidworks/profile-shared-pin.png)
 
 3. Select the Options, Annotations, and Conditions sections to include.
 4. Select **Share** and wait for the upload to finish.
 5. In the **Profile Shared** dialog, select **Copy PIN** and send the PIN to the recipient.
-
-![Profile Shared dialog with an expiring six-digit PIN](/images/pdmpublisher/solidworks/profile-shared-pin.png)
 
 The dialog shows the PIN expiration in the sender's local time.
 
@@ -47,11 +45,9 @@ The dialog shows the PIN expiration in the sender's local time.
 
 1. Open **Load From...**, then select **Load using PIN...**.
 
-   ![Load using PIN command in the Load From menu](/images/pdmpublisher/solidworks/profile-load-menu.png)
+![Load Profile using PIN dialog](/images/pdmpublisher/solidworks/profile-load-pin.png)
 
 2. Enter the six-digit PIN supplied by the sender.
-
-   ![Load Profile using PIN dialog](/images/pdmpublisher/solidworks/profile-load-pin.png)
 
 3. Select **Load Profile**.
 4. Select which available sections to apply, then select **Load Selected**.

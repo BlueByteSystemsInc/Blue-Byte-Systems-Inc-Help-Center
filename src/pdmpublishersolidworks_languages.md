@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > Languages** to select the language used by PDMPublisher commands, dialogs, labels, and messages.
 
-![Language and regional-format selection](/images/pdmpublisher/solidworks/settings-languages-20260916.png)
+![Language and regional-format selection](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Languages_Default_Light_100.png)
 
 1. Select the preferred language.
 2. Select **OK**.

@@ -7,14 +7,14 @@ ms.topic: reference
 
 # Table Columns
 
-![Table columns setting](/images/pdmpublisher/screenshots/options-029-property-table-columns.png)
+![Table columns setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)
 
 Controls which columns appear in the generated PDF table of contents.
 
 > [!NOTE]
 > This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
 
-![Table columns dropdown](/images/pdmpublisher/screenshots/options-dropdown-004-table-columns.png)
+![Table columns dropdown in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_TOC_columns_Dropdown1_Light_100.png)
 
 Options:
 
@@ -22,6 +22,6 @@ Options:
 - `Name & Quantity` includes the name and quantity.
 - `Custom Columns` uses the columns configured with **Customize Table**.
 
-![Customize table columns button](/images/pdmpublisher/screenshots/options-button-table-columns-customize-table-button.png)
+![Customize table columns dialog](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_TOC_columns_Default_Light_100.png)
 
 Use this with [Add Table of Content to Merged PDF](add-table-of-content-to-merged-pdf.md).

@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Archive All Exported Documents (.zip)
 
-![Archive all exported documents setting](/images/pdmpublisher/screenshots/options-005-property-archive-all-exported-documents-(.zip).png)
+![Archive all exported documents setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox6_Archive_all_exported_documents___zip__Light_100.png)
 
 Creates a ZIP archive containing the exported documents.
 

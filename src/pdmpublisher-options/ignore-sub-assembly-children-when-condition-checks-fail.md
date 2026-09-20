@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Ignore Sub-Assemblies Children When Condition Checks Fail
 
-![Ignore sub-assemblies children setting](/images/pdmpublisher/screenshots/options-019-property-ignore-sub-assemblies-children-when-condition-checks-fail.png)
+![Ignore sub-assembly children setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox4_Ignore_sub-assembly_children_when_condition_checks_fail_Light_100.png)
 
 When conditions reject a sub-assembly, this option prevents that sub-assembly's children from being processed.
 

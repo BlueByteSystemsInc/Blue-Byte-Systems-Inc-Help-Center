@@ -9,10 +9,9 @@ ms.topic: reference
 
 Special variables let conditions check common file information without requiring a PDM variable.
 
-> [!NOTE]
-> The **PDM task** includes vault values such as workflow, state, revision, and version. The **SOLIDWORKS add-in** includes the built-in values and custom properties available from the active document and its references. The dropdown only shows values available in the current product context.
+The SOLIDWORKS add-in includes built-in values and custom properties available from the active document and its references. The dropdown only shows values available in the current document context.
 
-![Condition variable dropdown](/images/pdmpublisher/screenshots/conditions-(2)-dropdown-000-condition-placeholder-values.png)
+![Condition variable selection in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Conditions_Dropdown2_Light_100.png)
 
 Common special variables include:
 
@@ -20,10 +19,6 @@ Common special variables include:
 - `FilePath`
 - `FolderName`
 - `FolderPath`
-- `Revision`
-- `Version`
-- `Workflow`
-- `State`
 - `ConfigurationName`
 
-Use these when the condition depends on common file information. Vault-only values require the PDM task or an available PDM context.
+Use these when the condition depends on common file or configuration information. PDM values are available only when the add-in has an applicable PDM context and the value appears in the menu.

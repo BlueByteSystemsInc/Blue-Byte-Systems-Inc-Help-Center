@@ -9,11 +9,11 @@ ms.topic: how-to
 
 Clone Tree builds a copy plan for the active document and its references. Each included file can have its own name and destination while SOLIDWORKS references are updated to the copied files.
 
-![Clone Tree file tree with per-file names and destination folders](/images/pdmpublisher/solidworks/commands/smart-pack-and-go.png)
+![Clone Tree file tree with per-file names and destination folders](/images/pdmpublisher/solidworks/ui-preview/CloneTree/CloneTree_Main_window_Default_Light_100.png)
 
 Open **PDMPublisher > Settings > Clone Tree** to select the shared PDM serial number and maintain command profiles.
 
-![Clone Tree serial-number and profile settings](/images/pdmpublisher/solidworks/settings-smart-pack-20260908.png)
+![Clone Tree profile settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Clone_Tree_Default_Light_100.png)
 
 ## Create a Package
 

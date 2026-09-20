@@ -9,7 +9,9 @@ ms.topic: reference
 
 The Active checkbox controls whether an annotation is included in the exported PDF.
 
-This setting works the same in the **PDM task** and **SOLIDWORKS add-in**.
+In PDMPublisher for SOLIDWORKS, the state is saved in the selected Publish profile.
+
+![Active annotation control in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
 
 New annotations are active by default.
 

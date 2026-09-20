@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > File Locations** to define where PDMPublisher searches for drawings associated with parts and assemblies.
 
-![Drawing file-location settings](/images/pdmpublisher/solidworks/settings-file-locations-20260916.png)
+![Drawing file-location settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_File_Locations_Default_Light_100.png)
 
 ## Search Order and Controls
 

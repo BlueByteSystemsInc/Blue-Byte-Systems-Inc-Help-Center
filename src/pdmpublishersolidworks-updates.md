@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Use the **Updates** CommandManager group or open **PDMPublisher > Settings > Support and Updates** to display the installed version and check whether a newer release is available.
 
-![Support and Updates page showing installed and available versions](/images/pdmpublisher/solidworks/support-updates-20260908.png)
+![Support and Updates page showing installed and available versions](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Support_Updates_Default_Light_100.png)
 
 - **Installed version** is the version loaded in the current SOLIDWORKS session.
 - **Latest version** is the release reported by the update service.

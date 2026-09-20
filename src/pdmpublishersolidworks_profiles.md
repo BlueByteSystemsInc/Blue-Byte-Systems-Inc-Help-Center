@@ -13,7 +13,7 @@ A Publish profile is a reusable combination of Publish settings, Annotations, an
 
 This profile family belongs to **PDMPublisher for SOLIDWORKS**. The PDM task stores its settings in a task definition and does not use add-in profiles. Save As New, Property Doctor, and Clone Tree have separate profile families documented with those commands.
 
-![PDMPublisher profile toolbar](/images/pdmpublisher/solidworks/profile-toolbar.png)
+![Publish profile selector and profile commands](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)
 
 A profile is a named publishing configuration containing Options, Annotations, and Conditions. Select a profile before publishing.
 
@@ -40,9 +40,7 @@ To begin with a supplied configuration instead of a blank profile, see [Presets]
 3. Change the name in the profile field.
 4. Select **Save**.
 
-![Editing a profile name](/images/pdmpublisher/solidworks/profile-edit.png)
-
-![Saving a profile name](/images/pdmpublisher/solidworks/profile-save.png)
+Use the page and pencil buttons beside the profile selector to create or rename a profile, then select **OK** to save the changes.
 
 While the profile name is being edited, other profile commands are unavailable until the name is saved.
 

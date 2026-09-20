@@ -9,7 +9,11 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > Publish** to edit the output and processing settings stored in a [Publish profile](pdmpublishersolidworks_profiles.md). Select **PDMPublisher > Publish** to configure and run the active profile.
 
-![Publish settings in PDMPublisher 2026.09.08](/images/pdmpublisher/solidworks/settings-publish-20260908.png)
+![Current Publish settings in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+
+Scroll down to configure PDF merging, table-of-content columns, bookmarks, annotations, conditions, and Publish profiles.
+
+![Lower portion of the Publish settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)
 
 ## Controls on the Publish Page
 

@@ -9,10 +9,7 @@ ms.topic: reference
 
 Annotations can be positioned manually or by X/Y values.
 
-> [!NOTE]
-> Position controls work the same in the **PDM task** and **SOLIDWORKS add-in**.
-
-![Annotation position](/images/AddingAnnotations4.png)
+![Annotation position controls in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
 
 You can drag the annotation to place it visually on the page.
 

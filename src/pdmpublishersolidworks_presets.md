@@ -11,7 +11,7 @@ bbsProductHref: pdmpublishersolidworks.html
 
 Presets are built-in starting configurations for common publishing workflows. They are available only in **PDMPublisher for SOLIDWORKS**.
 
-![New profile and starter presets](/images/pdmpublisher/solidworks/profile-new-from.png)
+![Publish profile selector and profile commands](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)
 
 ## Create a Profile from a Preset
 

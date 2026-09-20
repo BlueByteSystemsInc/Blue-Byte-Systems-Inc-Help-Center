@@ -1,6 +1,6 @@
 ---
 title: Import and Export Annotations | PDMPublisher for SOLIDWORKS
-description: Save annotation settings to an EDM task definition file or load them into the selected PDMPublisher profile.
+description: Export annotations from a PDMPublisher for SOLIDWORKS profile or import compatible annotation settings.
 ms.date: 09/16/2026
 ms.topic: how-to
 ---
@@ -8,6 +8,8 @@ ms.topic: how-to
 # Import and Export Annotations
 
 The Annotations window can save its annotation collection separately from the complete Publish profile. This is useful when the same annotation layout must be reused in another profile.
+
+The `.edmtdf` format is retained for compatibility with existing exports. Treat importing a PDM Task definition as a migration path; exchange new SOLIDWORKS add-in configurations as Publish profiles or complete settings bundles.
 
 ![Annotations editor](/images/pdmpublisher/solidworks/annotations-editor-controls-20260908.png)
 

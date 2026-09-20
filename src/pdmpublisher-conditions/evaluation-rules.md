@@ -9,10 +9,9 @@ ms.topic: reference
 
 PDMPublisher checks conditions before exporting a file.
 
-> [!NOTE]
-> These group rules are shared by the **PDM task** and **SOLIDWORKS add-in**. The PDM task can evaluate PDM card variables; the add-in evaluates properties from the active SOLIDWORKS document and resolved references.
+The SOLIDWORKS add-in evaluates properties from the active document and resolved references.
 
-![Condition group](/images/pdmpublisher/screenshots/conditions-(2)-002-condition-root-.png)
+![Condition group in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Conditions_Default_Light_100.png)
 
 General rules:
 
@@ -20,6 +19,5 @@ General rules:
 - Disabled conditions and disabled groups are skipped.
 - A file is processed only when the condition setup allows it.
 - If a condition uses a specific configuration, PDMPublisher reads the value from that configuration.
-- In the PDM task, use `@` when the value is stored on the file's `@` tab.
 
 For assembly publishing, conditions are evaluated against the files being considered for export.

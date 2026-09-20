@@ -9,10 +9,9 @@ ms.topic: reference
 
 Use conditions to include or exclude files before PDMPublisher exports them.
 
-> [!NOTE]
-> Condition groups work the same in the **PDM task** and **SOLIDWORKS add-in**. The task stores them in its task definition; the add-in stores them in the selected profile.
+Condition groups created here are stored in the selected **PDMPublisher for SOLIDWORKS Publish profile**.
 
-![Conditions page controls](/images/pdmpublisher/screenshots/conditions-(2)-001-condition-conditionsviewmodel.png)
+![Conditions page controls in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Conditions_Default_Light_100.png)
 
 Condition groups can use AND or OR logic. Nested groups let you build more detailed rules.
 

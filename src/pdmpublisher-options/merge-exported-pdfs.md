@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Merge Exported PDFs into One Master PDF
 
-![Merge exported PDFs setting](/images/pdmpublisher/screenshots/options-022-property-merge-exported-pdfs-into-one-master-pdf.png)
+![Merge exported PDFs setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox9_Merge_exported_PDFs_into_one_master_PDF_Light_100.png)
 
 Combines exported PDFs into a single master PDF.
 

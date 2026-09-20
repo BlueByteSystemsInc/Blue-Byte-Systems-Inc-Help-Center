@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > PDM** to select the local SOLIDWORKS PDM vault used by PDM-aware utility settings.
 
-![PDM vault connection settings](/images/pdmpublisher/solidworks/settings-pdm-20260916.png)
+![PDM vault connection settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_PDM_Default_Light_100.png)
 
 | Control | What it does |
 | --- | --- |

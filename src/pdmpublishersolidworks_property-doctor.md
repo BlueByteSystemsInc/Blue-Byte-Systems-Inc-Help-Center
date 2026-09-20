@@ -9,11 +9,11 @@ ms.topic: how-to
 
 Property Doctor presents the active document, configurations, cut lists, drawings, and references in one editable property grid.
 
-![Property Doctor showing document properties across an assembly and its references](/images/pdmpublisher/solidworks/commands/property-doctor.png)
+![Property Doctor showing document properties across an assembly and its references](/images/pdmpublisher/solidworks/ui-preview/PropertyDoctor/PropertyDoctor_Main_window_Default_Light_100.png)
 
 Open **PDMPublisher > Settings > Property Doctor** to configure the default columns, thumbnail loading, and reusable action profiles.
 
-![Property Doctor settings and profile controls](/images/pdmpublisher/solidworks/settings-property-doctor-20260908.png)
+![Property Doctor settings and profile controls](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Property_Doctor_Default_Light_100.png)
 
 ## Edit Properties
 

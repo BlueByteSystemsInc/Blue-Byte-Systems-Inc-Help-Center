@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Convert Multiple Configurations
 
-![Convert multiple configurations setting](/images/pdmpublisher/screenshots/options-009-property-convert-multiple-configurations.png)
+![Convert multiple configurations setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox5_Convert_multiple_configurations_Light_100.png)
 
 Processes all part and assembly configurations instead of only the active or selected configuration.
 
@@ -21,7 +21,7 @@ Processes all part and assembly configurations instead of only the active or sel
 
 The **Configuration Filter** button opens the filter dialog for this option. Use it when you do not want every configuration to be processed.
 
-![Configuration filter dialog](/images/pdmpublisher/screenshots/options-dialog-configuration-filter.png)
+![Configuration filter dialog](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Configuration_filter_Default_Light_100.png)
 
 The filter lets you include or exclude configurations by name. Use wildcard patterns when several configurations share a naming convention.
 

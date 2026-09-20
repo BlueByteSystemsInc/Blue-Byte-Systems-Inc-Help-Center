@@ -7,14 +7,14 @@ ms.topic: reference
 
 # File Formats
 
-![File Formats setting](/images/pdmpublisher/screenshots/options-016-property-file-formats.png)
+![File Formats setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
 
 Selects the output formats created during publishing. Both products can generate multiple formats in one job.
 
 > [!NOTE]
 > This setting is shared by the **PDM task** and **SOLIDWORKS add-in**. The task can process selected PDM files, including supported Office documents. The add-in exports the SOLIDWORKS document currently open and its resolved references.
 
-![File Formats dropdown](/images/pdmpublisher/screenshots/options-dropdown-000-file-formats.png)
+![File Formats dropdown in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Dropdown13_Light_100.png)
 
 ## Format Names and Icons
 

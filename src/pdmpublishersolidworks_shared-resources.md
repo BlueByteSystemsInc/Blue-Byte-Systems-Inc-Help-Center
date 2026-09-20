@@ -21,23 +21,23 @@ Open **PDMPublisher > Settings** and use the **Shared Resources** group for sett
 
 ### PDM
 
-![PDM vault connection settings](/images/pdmpublisher/solidworks/settings-pdm-20260916.png)
+![PDM vault connection settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_PDM_Default_Light_100.png)
 
 ### Languages
 
-![Language and regional-format selection](/images/pdmpublisher/solidworks/settings-languages-20260916.png)
+![Language and regional-format selection](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Languages_Default_Light_100.png)
 
 ### File Locations
 
-![Drawing file-location settings](/images/pdmpublisher/solidworks/settings-file-locations-20260916.png)
+![Drawing file-location settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_File_Locations_Default_Light_100.png)
 
 ### External Sources
 
-![External SQL Server source settings](/images/pdmpublisher/solidworks/settings-external-sources-20260916.png)
+![External SQL Server source settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_External_Sources_Default_Light_100.png)
 
 ### Advanced Formulas
 
-![Advanced Formulas settings](/images/pdmpublisher/solidworks/settings-advanced-formulas-20260916.png)
+![Advanced Formulas settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
 
 Changes are not committed until you select **OK**. **Cancel** discards edits made since the Settings window opened. Use [Import, Export, and Reset Settings](pdmpublishersolidworks_settings-transfer.md) to back up or move these resources.
 

@@ -216,8 +216,18 @@
         href: ../../src/pdmpublishersolidworks_file-locations.md
       - name: External Sources
         href: ../../src/pdmpublishersolidworks_external-sources.md
-      - name: Advanced Formulas
-        href: ../../src/pdmpublishersolidworks_advanced-formulas.md
+    - name: Advanced Formulas
+      href: ../../src/pdmpublishersolidworks_advanced-formulas.md
+    - name: Integrations
+      items:
+      - name: ERP Sync
+        href: ../../src/pdmpublishersolidworks_erp-sync.md
+      - name: Publisher Macros
+        href: ../../src/pdmpublishersolidworks_publisher-macros.md
+    - name: BOM Manager
+      href: ../../src/pdmpublishersolidworks_bom-manager.md
+    - name: Translate
+      href: ../../src/pdmpublishersolidworks_translate.md
     - name: Import, Export, and Reset Settings
       href: ../../src/pdmpublishersolidworks_settings-transfer.md
   - name: Save As New
@@ -335,8 +345,9 @@
       href: ../../src/pdmpublishersolidworks-updates.md
     - name: Light and Dark Theme
       href: ../../src/pdmpublishersolidworks-theme.md
-    - name: License Management
-      href: ../../src/licensespdmpublisher.md
+  - name: License Management
+    href: ../../src/pdmpublishersolidworks_license.md
+    items:
     - name: End User License Agreement
       href: ../../src/eula.md
 

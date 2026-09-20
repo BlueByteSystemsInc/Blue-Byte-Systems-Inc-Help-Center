@@ -1,7 +1,7 @@
 ---
 title: Commands | PDMPublisher for SOLIDWORKS
 description: Find every PDMPublisher command in the SOLIDWORKS CommandManager and understand which document types support it.
-ms.date: 09/16/2026
+ms.date: 09/19/2026
 ms.topic: overview
 ---
 
@@ -17,14 +17,14 @@ The screenshot shows PDMPublisher 2026.09.08 in SOLIDWORKS 2026 SP3.2. Commands 
 | --- | --- | --- |
 | Utilities | [Save As New](pdmpublishersolidworks_save-as-new.md) | Save the active document as a separate native SOLIDWORKS file using a reusable naming and destination profile. |
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Review and edit custom, configuration-specific, and cut-list properties across a document and its references. |
-| Utilities | Translate | Reserved for a future translation workflow. It is not available yet. |
+| Utilities | [Translate](pdmpublishersolidworks_translate.md) | Reserved for a future translation workflow. It is not available yet. |
 | Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
 | Publishing | [Publish](pdmpublishersolidworks-publish.md) | Configure and run a publishing job for the active document. |
 | Publishing | [Annotations](pdmpublishersolidworks_annotations.md) | Edit the annotations stored in a Publish profile. |
 | Publishing | [Conditions](conditions_solidworks.md) | Edit the conditions stored in a Publish profile. |
 | Publishing | [Logs](pdmpublishersolidworks_logs.md) | Review publishing messages and errors. |
 | Settings | [Settings](pdmpublishersolidworks_settings.md) | Configure every utility, publishing, and shared-resource setting from one searchable dialog. |
-| Settings | License Key | Open license activation and deactivation. |
+| Settings | [License Key](pdmpublishersolidworks_license.md) | Open SOLIDWORKS add-in license activation and deactivation. |
 | Updates | Check for updates | Check whether a newer PDMPublisher build is available. |
 | Updates | Version information | Open product, support, legal, and version information. |
 

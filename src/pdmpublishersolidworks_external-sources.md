@@ -9,7 +9,11 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > External Sources** to maintain reusable SQL Server source definitions.
 
-![External SQL Server source settings](/images/pdmpublisher/solidworks/settings-external-sources-20260916.png)
+![External SQL Server sources](/images/pdmpublisher/solidworks/ui-preview/ExternalSources/ExternalSources_Sources_Default_Light_100.png)
+
+Select **Add** or **Edit / Test** to open the source editor.
+
+![External SQL Server source editor](/images/pdmpublisher/solidworks/ui-preview/ExternalSources/ExternalSources_Source_editor_Default_Light_100.png)
 
 | Command | Behavior |
 | --- | --- |

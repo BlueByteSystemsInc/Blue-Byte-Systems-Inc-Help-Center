@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Export References to File Formats Individually
 
-![Export references individually setting](/images/pdmpublisher/screenshots/options-014-property-export-references-to-file-formats-individually.png)
+![Export references individually setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox3_Export_references_to_file_formats_individually_Light_100.png)
 
 Exports referenced components as their own files in the selected formats.
 

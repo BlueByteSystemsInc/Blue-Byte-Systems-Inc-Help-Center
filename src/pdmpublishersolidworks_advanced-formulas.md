@@ -9,7 +9,11 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings > Advanced Formulas** to maintain named expressions shared by supported filename, folder, and property menus.
 
-![Advanced Formulas settings](/images/pdmpublisher/solidworks/settings-advanced-formulas-20260916.png)
+![Advanced Formulas settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
+
+Select **Add** or **Edit** to open the formula editor and build the named expression.
+
+![Advanced Formula editor](/images/pdmpublisher/solidworks/ui-preview/Formulas/Formulas_Formula_editor_Default_Light_100.png)
 
 | Command | Behavior |
 | --- | --- |

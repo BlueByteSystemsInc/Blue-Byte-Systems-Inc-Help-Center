@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Export Location
 
-![Export Location setting](/images/pdmpublisher/screenshots/options-013-property-export-location.png)
+![Export Location setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
 
 Sets the folder where PDMPublisher writes generated files. The export location can point to a folder inside the vault, a relative path, a UNC/server path, or a folder outside the vault.
 
@@ -81,7 +81,7 @@ For the PDM task, if the path uses variables stored on the file's `@` tab, see [
 
 Use **Customize Location** when different file formats need different output folders.
 
-![Extension-specific export location dialog](/images/pdmpublisher/screenshots/options-dialog-extension-specific-location.png)
+![Locations by file format dialog](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Locations_by_file_format_Default_Light_100.png)
 
 The dialog uses the same format names and file-type icons described on the [File Formats](file-formats.md) page. Each row lets you enable a custom location for that output format.
 
