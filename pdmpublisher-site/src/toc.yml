@@ -4,7 +4,7 @@
   - name: Introduction
     href: ../../src/introduction.md
 
-- name: PDMPublisher for PDM Professional
+- name: PDM Task
   expanded: true
   items:
   - name: Overview
@@ -182,7 +182,7 @@
   - name: Task Details
     href: ../../src/pdmpublisher_task_details.md
 
-- name: PDMPublisher for SOLIDWORKS
+- name: SOLIDWORKS Add-in
   expanded: true
   items:
   - name: Overview

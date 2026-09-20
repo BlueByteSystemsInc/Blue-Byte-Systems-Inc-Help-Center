@@ -27,7 +27,7 @@
 - name: PDMPublisher
   expanded: true
   items:
-    - name: PDMPublisher for SOLIDWORKS PDM Professional 
+    - name: PDM Task
       href: pdmpublisher.md
       expanded: true
       items:
@@ -201,7 +201,7 @@
         href: pdmpublisherspecialvariable.md  
       - name: Task Details
         href: pdmpublisher_task_details.md 
-    - name: PDMPublisher for SOLIDWORKS
+    - name: SOLIDWORKS Add-in
       href: pdmpublishersolidworks.md
       expanded: true
       items:
