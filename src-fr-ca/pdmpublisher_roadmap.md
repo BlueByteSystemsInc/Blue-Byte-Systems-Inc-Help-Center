@@ -1,142 +1,100 @@
 ---
-title: "Feuille de route des produits PDMPublisher"
-description: "Consultez la feuille de route des produits PDMPublisher avec les caractéristiques prévues, les améliorations à venir et les priorités de développement futures par trimestre."
-ms.date: 08/23/2026
+title: Feuille de route du produit PDMPublisher | Orientation actuelle et fonctionnalités planifiées
+description: Consultez l'état actuel de PDMPublisher, les jalons déjà livrés et les travaux planifiés pour la tâche PDM et le complément SOLIDWORKS.
+ms.date: 09/19/2026
 ms.topic: conceptual
 ---
 
-# Carte routière des produits PDMPublisher
+# Feuille de route du produit PDMPublisher
 
-Cette page présente les fonctionnalités et améliorations prévues pour PDMPublisher, le complément de tâches SOLIDWORKS PDM Professional et PDMPublisher pour SOLIDWORKS, le complément de tâches SOLIDWORKS.
+PDMPublisher est offert sous forme de deux produits avec des versions indépendantes : **PDMPublisher for SOLIDWORKS**, le complément interactif de SOLIDWORKS, et **PDMPublisher PDM Task**, la tâche d'automatisation configurée dans SOLIDWORKS PDM Professional.
 
-La feuille de route est organisée par trimestre et offre une visibilité sur les éléments actuellement prévus pour les futures versions. Les délais sont des estimations et peuvent changer en fonction des priorités de développement, des commentaires des clients, des résultats des tests et des exigences de compatibilité PDM SOLIDWORKS ou SOLIDWORKS.
+Cette page distingue les fonctionnalités disponibles maintenant des travaux encore planifiés. Les dates et les priorités peuvent changer selon le développement, les essais, les commentaires des clients et les exigences de compatibilité de SOLIDWORKS.
 
 > [!NOTE]
-> La présente feuille de route vise à communiquer l'orientation du produit. Les fonctionnalités énumérées ici sont planifiées mais ne sont pas garanties tant qu'elles ne sont pas officiellement publiées et incluses dans le journal des modifications PDMPublisher.
+> Une fonctionnalité planifiée n'est pas garantie avant sa publication. Le [journal des modifications de PDMPublisher](changeslog.md) constitue la référence officielle pour les versions et les changements livrés.
 
-> [!TIP]
-> Pour voir la liste des modifications mises en œuvre, cliquez sur [ici](/src/changeslog.html).
+## État actuel du produit
 
-<a id="2026"></a>
-## 2026 
----
-<a id="2026-q2"></a>
-### 2026 Q2
-<a id="task-launch-file-selection-dialog"></a>
-#### Boîte de dialogue de sélection des fichiers de lancement des tâches
-Mise en œuvre
+### PDMPublisher for SOLIDWORKS
 
-**Applies to: Tâche PDM**
+Le complément actuel utilise l'onglet **PDMPublisher** du CommandManager et le menu **Tools > PDMPublisher**. Son volet des tâches SOLIDWORKS affiche maintenant la documentation et n'héberge plus les commandes de publication.
 
-- Ajout d'un dialogue de lancement interactif pour les tâches qui demandent aux utilisateurs de spécifier des fichiers à l'exécution.
-- Ajout de l'importation de CSV, calcul automatique de référence, affichage des lignes de dessin, sélection du format de fichier spécifique au lancement et visibilité de l'emplacement d'exportation.
+Les flux de travail disponibles comprennent :
 
-<a id="scheduled-items-task-page"></a>
-#### Page de tâche des éléments prévus
-Mise en œuvre
+- [Save As New](pdmpublishersolidworks_save-as-new.md), [Property Doctor](pdmpublishersolidworks_property-doctor.md) et [Clone Tree](pdmpublishersolidworks_smart-pack.md).
+- [BOM Manager](pdmpublishersolidworks_bom-manager.md) pour les colonnes, la structure, le regroupement et l'exclusion de composants de la nomenclature.
+- [Publish](pdmpublishersolidworks-publish.md) avec les annotations, les conditions, les feuilles de mise en plan, le traitement des configurations et les journaux.
+- Des profils propres à chaque commande ainsi que le transfert complet des paramètres par fichier ou par NIP à six chiffres.
+- Des ressources partagées pour PDM, les langues, la recherche de mises en plan, les sources SQL externes et les formules avancées.
+- Une boîte de dialogue unifiée et consultable pour les [paramètres](pdmpublishersolidworks_settings.md), ainsi qu'un [volet d'aide](pdmpublishersolidworks_help-pane.md) intégré.
 
-**Applies to: Tâche PDM**
+Consultez [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) pour connaître l'ensemble des fonctionnalités actuelles.
 
-- Ajout d'une page de configuration des éléments programmés pour les tâches programmées qui doivent traiter les fichiers configurés quand aucun fichier n'est passé par le déclencheur des tâches PDM. Voir détails [ici](/src/scheduleditems.html).
+### PDMPublisher PDM Task
 
-<a id="parasolid-binary-export"></a>
-#### Exportation binaire Parasolid
-Mise en œuvre
+La tâche PDM actuelle prend en charge :
 
-**Applies to: SOLIDWORKS add-in / Tâche PDM**
+- La publication automatisée par les actions de tâche de SOLIDWORKS PDM Professional et les exécutions planifiées.
+- La sélection interactive des fichiers au lancement et les [éléments planifiés](scheduleditems.md) configurés.
+- Les sorties multiformats, les annotations, les conditions, le filtrage des configurations, la sélection des feuilles, la fusion de PDF et les sorties de fabrication.
+- Le traitement d'une nomenclature dérivée d'une mise en plan, avec repli vers la nomenclature calculée configurée.
+- La publication de la dernière révision PDM enregistrée et de ses références sauvegardées.
+- Des paramètres explicites d'exportation eDrawings pour la mesure et les propriétés des documents ou des composants.
+- Les journaux d'activité, les détails de tâche, le mappage des variables PDM, les références de sortie et la gestion des doublons.
 
-- Ajout de la prise en charge pour exporter des fichiers binaires Parasolid avec l'extension `x_b`.
+Consultez [PDMPublisher pour PDM Professional](pdmpublisher.md) pour connaître l'ensemble des fonctionnalités actuelles.
 
-<a id="details-page"></a>
-#### Détails Page
-Mise en œuvre
+## Jalons de la feuille de route déjà livrés
 
-**Applies to: Tâche PDM**
+Les éléments suivants étaient auparavant planifiés et sont maintenant disponibles. Ils sont conservés ici comme historique, et non comme engagements futurs.
 
-- Ajout d'un onglet à la page des détails de la tâche décrivant les fichiers réussis. Voir détails [ici](/src/pdmpublisher_task_details.html).
+### 2026 T2
 
-<a id="multi-body-support"></a>
-#### Soutien multi-corps
-Mise en œuvre
+- `2026.06.21` - [Sélection des fichiers au lancement](scheduleditems.md) pour la tâche PDM.
+- `2026.06.20` - [Page Éléments planifiés](scheduleditems.md) pour la tâche PDM.
+- `2026.06.20` - Exportation binaire Parasolid (`x_b`) pour la tâche PDM et le complément SOLIDWORKS.
+- `2026.05.30` - [Détails de tâche et journal des sorties](pdmpublisher_task_details.md) pour la tâche PDM.
+- `2026.05.30` - Traitement des pièces multicorps pour la tâche PDM et le complément SOLIDWORKS.
 
-**Applies to: SOLIDWORKS add-in / Tâche PDM**
+### 2026 T3
 
-- Soutien prévu pour l'exportation et la transformation de pièces multicorps, à l'exclusion des profilés plats en tôle.
+- `2026.09.08` - [Utiliser uniquement la dernière révision](pdmpublisher-options/get-latest-revision-only.md) pour la tâche PDM.
+- `2026.08.10` - [Partage de profils par NIP](pdmpublishersolidworks_profile_sharing.md) pour le complément SOLIDWORKS.
+- `2026.08.09` - [Nomenclature dérivée d'une mise en plan](pdmpublisher-options/use-drawing-derived-bom.md) pour la tâche PDM.
+- `2026.08.08` - [Profils Publish réutilisables](pdmpublishersolidworks_profiles.md) et [préréglages](pdmpublishersolidworks_presets.md) pour le complément SOLIDWORKS.
 
-Objectif : Fin du deuxième trimestre 2026
----
-<a id="2026-q3"></a>
-### 2026 Q3
----
-<a id="presets-profiles"></a>
-#### Préréglages / Profils
-Mise en œuvre en 2026.08.08
+## Travaux planifiés
 
-**Applies to: SOLIDWORKS add-in**
+### 2026 T4 : sources supplémentaires pour les tâches planifiées
 
-Ajout de profils réutilisables et de préréglages de démarrage intégrés à PDMPublisher pour SOLIDWORKS.
+**S'applique à : Tâche PDM**
 
-Profils enregistrer les options, annotations et conditions pour un workflow de publication. Les utilisateurs peuvent créer, renommer, enregistrer, exporter, charger et supprimer des profils, ou créer un profil à partir d'un préréglage intégré.
+Sources planifiées :
 
-La fonctionnalité publiée comprend:
+- Un répertoire sélectionné.
+- Une recherche favorite enregistrée.
 
-- Enregistrer les paramètres d'exportation comme profils réutilisables
-- Profils d'exportation et de chargement pour les flux communs d'exportation
-- Création de profils pour différents départements, clients, projets ou packages de sortie
-- Création de profils à partir des préréglages `DXF`, `PDF And Step` et `STEP` intégrés
-- Réutiliser des paramètres de publication cohérents entre les utilisateurs et les postes de travail
+### 2027 T1 : Drawing Creator
 
-Voir [Profiles](/src/pdmpublishersolidworks_profiles.html) et [Presets](/src/pdmpublishersolidworks_presets.html) pour les instructions de configuration.
----
-<a id="profile-sharing-by-pin-code"></a>
-#### Partage de profils par code PIN
-Mise en œuvre en 2026.08.10
+**S'applique à : Complément SOLIDWORKS**
 
-**Applies to: SOLIDWORKS add-in**
+Drawing Creator vise à automatiser la création répétitive de mises en plan à partir de pièces et d'assemblages SOLIDWORKS. La cible actuelle est la fin du premier trimestre de 2027.
 
-Ajout du partage de profil à courte durée par un NIP à six chiffres.
+Axes de travail planifiés :
 
-La fonctionnalité publiée comprend:
+- Créer des mises en plan à partir de modèles sélectionnés.
+- Appliquer des modèles de mise en plan prédéfinis.
+- Insérer des vues de modèle standard.
+- Définir l'échelle et les marges de la feuille.
+- Ajouter ou mettre à jour les notes d'une table d'annotations.
+- Appliquer des règles réutilisables de mise en forme et de positionnement des notes.
+- Préparer les mises en plan générées pour les flux de travail PDMPublisher en aval.
 
-- Partage des sections Options, Annotations et Conditions sélectionnées
-- Générer un NIP à six chiffres qui reste disponible pendant 30 jours
-- Chargement d'un profil partagé par PIN et sélection des sections à appliquer
-- Enregistrement local du profil téléchargé et traitement des noms de profils dupliqués
+## Fonctionnalités planifiées sans échéancier engagé
 
-Voir [Share Profiles Using a PIN](/src/pdmpublishersolidworks_profile_sharing.html) pour les instructions et les conseils de sécurité.
----
-<a id="2026-q4"></a>
-### 2026 Q4
-**Applies to: Tâche PDM**
-- Ajout d'un support pour la planification du processus :
-  - Répertoire sélectionné
-  - Recherche préférée
----
-<a id="2027"></a>
-## 2027
----
-<a id="2027-q1"></a>
-### 2027 Q1
----
-<a id="drawing-creator"></a>
-#### Dessinateur
-**Applies to: SOLIDWORKS Add-in**
+Le complément SOLIDWORKS actuel réserve des emplacements d'interface aux fonctionnalités suivantes. Leurs commandes ou pages de paramètres sont des espaces réservés et ne sont pas disponibles pour les flux de production.
 
-Soutien prévu pour un dessin Créateur.
-
-Cette fonctionnalité est destinée à aider à automatiser les flux de travail de création de dessin à partir des modèles SOLIDWORKS, réduisant ainsi le travail manuel répétitif lors de la production de dessins pour des pièces ou des assemblages.
-
-Les domaines d'intervention prévus sont les suivants :
-
-- Création de dessins à partir de modèles sélectionnés
-- Application de modèles de dessin prédéfinis
-- Insérer des vues standard du modèle
-- Fixation du barème des feuilles de dessin
-- Fixation des marges des feuilles de dessin
-- Ajouter des notes au tableau d'annotation
-- Mise à jour des notes de tableau d'annotation existantes
-- Application des règles de formatage et de placement des notes standard
-- Prise en charge des règles de configuration du dessin réutilisable
-- Préparation de dessins pour l'exportation en aval par PDMPublisher
-
-Objectif : Fin du premier trimestre 2027
+- [Translate](pdmpublishersolidworks_translate.md) vise à traduire les propriétés, les noms de fonctions et d'autres textes des documents SOLIDWORKS.
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) vise à synchroniser certaines données SOLIDWORKS et PDM avec les systèmes ERP.
+- [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) vise à planifier les tâches de publication PDMPublisher. Cette fonctionnalité est distincte de l'exécution d'une macro offerte dans Save As New.
