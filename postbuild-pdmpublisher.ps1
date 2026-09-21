@@ -129,7 +129,14 @@ foreach ($htmlFile in $htmlFiles) {
     if ($Language -ne "en-CA") {
         $localizedText = $languageSites[$Language].Text
         foreach ($entry in $localizedText.GetEnumerator()) {
-            $htmlContent = $htmlContent.Replace($entry.Key, $entry.Value)
+            $escapedSource = [regex]::Escape($entry.Key)
+            $standaloneTextPattern = "(?<![\p{L}\p{N}_])$escapedSource(?![\p{L}\p{N}_])"
+            $replacementText = $entry.Value
+            $htmlContent = [regex]::Replace(
+                $htmlContent,
+                $standaloneTextPattern,
+                { param($match) $replacementText }
+            )
         }
     }
 
