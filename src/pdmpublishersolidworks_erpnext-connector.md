@@ -94,13 +94,13 @@ When synchronization finishes, the **ERP Sync report** displays the run summary 
 
 ![Completed ERPNext synchronization report](../images/pdmpublisher/solidworks/erp-sync-report-20260927.png)
 
-Version `2026.09.27` standardizes row results as:
+Each row reports one of these outcomes:
 
 - **Success**: the Item completed successfully.
 - **No sync needed**: ERPNext already contained the requested values and no change was required.
 - **Failure**: the Item failed, was incomplete, or was not processed after the run stopped.
 
-Successful runs that do not return individual Item outcomes now mark the affected rows as **Success** and explain that the connector did not provide per-Item changes. Use the summary to review created, updated, unchanged, uploaded, skipped, and BOM counts. The search field filters the displayed rows; **Copy report** copies the complete text report and **Save report...** writes it to a file.
+Successful runs that do not return individual Item outcomes mark the affected rows as **Success** and explain that the connector did not provide per-Item changes. Use the summary to review created, updated, unchanged, uploaded, skipped, and BOM counts. The search field filters the displayed rows; **Copy report** copies the complete text report and **Save report...** writes it to a file.
 
 ## Request missing part numbers
 

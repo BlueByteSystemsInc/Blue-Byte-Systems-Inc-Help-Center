@@ -94,13 +94,13 @@ Quando a sincronização termina, o **ERP Sync report** mostra o resumo da execu
 
 ![Relatório concluído da sincronização do ERPNext](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-report-20260927.png)
 
-A versão `2026.09.27` padroniza os resultados das linhas:
+Cada linha apresenta um dos seguintes resultados:
 
 - **Success**: o Item foi processado com êxito.
 - **No sync needed**: o ERPNext já continha os valores solicitados e nenhuma alteração era necessária.
 - **Failure**: o Item falhou, ficou incompleto ou não foi processado depois que a execução parou.
 
-Execuções bem-sucedidas que não retornam resultados individuais agora marcam as linhas afetadas como **Success** e explicam que o conector não forneceu alterações por Item. Use o resumo para revisar as contagens de itens criados, atualizados, inalterados, carregados e ignorados, além das BOMs. O campo de pesquisa filtra as linhas; **Copy report** copia o relatório completo e **Save report...** o salva em um arquivo.
+Execuções bem-sucedidas que não retornam resultados individuais marcam as linhas afetadas como **Success** e explicam que o conector não forneceu alterações por Item. Use o resumo para revisar as contagens de itens criados, atualizados, inalterados, carregados e ignorados, além das BOMs. O campo de pesquisa filtra as linhas; **Copy report** copia o relatório completo e **Save report...** o salva em um arquivo.
 
 ## Solicitar números de peça ausentes
 
