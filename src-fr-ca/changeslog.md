@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 09/25/2026
+ms.date: 09/26/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,23 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.25` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.26` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20260926"></a>
+## 2026.09.26
+*S’applique au **complément SOLIDWORKS***
+
+- Activation d’[ERP Sync](pdmpublishersolidworks_erp-sync.md) pour synchroniser les articles SOLIDWORKS sélectionnés, les propriétés mappées, les numéros de pièce produits par l’ERP et les relations de nomenclature cochées au moyen d’un connecteur ERP installé.
+- Ajout de la fenêtre de révision ERP Sync avec sélection des lignes, types d’affichage de nomenclature, modèles de colonnes, regroupement, filtrage, règles d’exclusion de composants, inclusion des listes de pièces soudées et choix des opérations Push.
+- Ajout du catalogue officiel de connecteurs et du chargement de connecteurs personnalisés dans **ERP connector settings**.
+- Ajout du contrat `PDMPublisher.ERPExtension.dll` et de l’API typée `ErpConnector<TSettings>` pour [créer des connecteurs ERP personnalisés en C#](pdmpublishersolidworks_erp-connector.md) sur .NET Framework 4.7.2.
+- Ajout de la configuration du [connecteur ERPNext](pdmpublishersolidworks_erpnext-connector.md), du test de connexion et de la synchronisation des articles, des propriétés et des nomenclatures. Pull demeure visible, mais désactivé dans cette version.
 
 <a id="20260925"></a>
 ## 2026.09.25
@@ -336,15 +346,3 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 *S'applique à la fois à **Tâche PDM** et **SOLIDWORKS Add-in***
 
 - Ajout d'un nouveau **Flat Pattern export setting** qui supprime le **outside diameter of countersink holes** lors de l'exportation de **DXF flat patterns**: Cela aide à produire des DXF plus propres pour la fabrication en aval en excluant la géométrie extérieure du contrepuce tout en préservant les profils de coupe requis.
-
-<a id="2025-09-26"></a>
-## 2025.09.26
-*S’applique au **complément SOLIDWORKS***
-
-- Activation d’[ERP Sync](pdmpublishersolidworks_erp-sync.md) pour synchroniser les articles SOLIDWORKS sélectionnés, les propriétés mappées, les numéros de pièce produits par l’ERP et les relations de nomenclature cochées au moyen d’un connecteur ERP installé.
-- Ajout de la fenêtre de révision ERP Sync avec sélection des lignes, types d’affichage de nomenclature, modèles de colonnes, regroupement, filtrage, règles d’exclusion de composants, inclusion des listes de pièces soudées et choix des opérations Push.
-- Ajout du catalogue officiel de connecteurs et du chargement de connecteurs personnalisés dans **ERP connector settings**.
-- Ajout du contrat `PDMPublisher.ERPExtension.dll` et de l’API typée `ErpConnector<TSettings>` pour [créer des connecteurs ERP personnalisés en C#](pdmpublishersolidworks_erp-connector.md) sur .NET Framework 4.7.2.
-- Ajout de la configuration du [connecteur ERPNext](pdmpublishersolidworks_erpnext-connector.md), du test de connexion et de la synchronisation des articles, des propriétés et des nomenclatures. Pull demeure visible, mais désactivé dans cette version.
-
-

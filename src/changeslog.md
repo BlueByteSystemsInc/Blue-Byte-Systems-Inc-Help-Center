@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 09/25/2026
+ms.date: 09/26/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,22 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.25` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.26` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.26
+*Applies to **SOLIDWORKS Add-in***
+
+- Enabled [ERP Sync](pdmpublishersolidworks_erp-sync.md) for synchronizing selected SOLIDWORKS items, mapped properties, ERP-generated part numbers, and checked BOM relationships through an installed ERP connector.
+- Added the ERP Sync review window with row selection, BOM display types, column templates, grouping, filtering, ignored-component rules, cut-list inclusion, and selectable Push operations.
+- Added the official connector catalog and custom connector loading through **ERP connector settings**.
+- Added the `PDMPublisher.ERPExtension.dll` contract and typed `ErpConnector<TSettings>` API for [building custom C# ERP connectors](pdmpublishersolidworks_erp-connector.md) on .NET Framework 4.7.2.
+- Added [ERPNext connector](pdmpublishersolidworks_erpnext-connector.md) configuration, connection testing, item and property synchronization, and BOM synchronization. Pull remains visible but disabled in this release.
 
 ## 2026.09.25
 *Applies to **SOLIDWORKS Add-in***
@@ -286,18 +295,5 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 *Applies to both **PDM Task** and **SOLIDWORKS Add-in***
 
 - Added a new **Flat Pattern export setting** that removes the **outside diameter of countersink holes** when exporting **DXF flat patterns**: This helps produce cleaner DXFs for downstream manufacturing by excluding countersink outer geometry while preserving required cut profiles.
-
-## 2025.09.26
-*Applies to **SOLIDWORKS Add-in***
-
-- Enabled [ERP Sync](pdmpublishersolidworks_erp-sync.md) for synchronizing selected SOLIDWORKS items, mapped properties, ERP-generated part numbers, and checked BOM relationships through an installed ERP connector.
-- Added the ERP Sync review window with row selection, BOM display types, column templates, grouping, filtering, ignored-component rules, cut-list inclusion, and selectable Push operations.
-- Added the official connector catalog and custom connector loading through **ERP connector settings**.
-- Added the `PDMPublisher.ERPExtension.dll` contract and typed `ErpConnector<TSettings>` API for [building custom C# ERP connectors](pdmpublishersolidworks_erp-connector.md) on .NET Framework 4.7.2.
-- Added [ERPNext connector](pdmpublishersolidworks_erpnext-connector.md) configuration, connection testing, item/property synchronization, and BOM synchronization. Pull remains visible but disabled in this release.
-
-
-
-
 
 
