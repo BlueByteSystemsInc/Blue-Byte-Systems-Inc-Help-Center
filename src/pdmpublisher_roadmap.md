@@ -18,6 +18,7 @@ PDMPublisher is released as two independently versioned products. This page show
 
 | Target | Product | Planned work |
 | --- | --- | --- |
+| 2026–2027 | SOLIDWORKS add-in | Additional ERP Sync connectors for Microsoft Dynamics 365, SAP, Epicor, Salesforce, and other platforms. |
 | No committed date | SOLIDWORKS add-in | [Translate](pdmpublishersolidworks_translate.md) for document properties, feature names, and other SOLIDWORKS text. |
 | No committed date | SOLIDWORKS add-in | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) for scheduled publishing jobs. |
 
