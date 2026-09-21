@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 09/27/2026
+ms.date: 09/28/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,20 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.28` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.28
+*Applies to **SOLIDWORKS Add-in***
+
+- Added an ERP Sync source selector for the active [SOLIDWORKS feature tree, SOLIDWORKS BOM tables, and UTF-8 CSV files](pdmpublishersolidworks_erp-sync.md#choose-the-synchronization-source).
+- SOLIDWORKS BOM table sources use visible rows, columns, displayed quantities, and the table's selected configuration. Valid indented tables can also supply BOM hierarchy.
+- CSV sources expose every column to the connector and can supply BOM hierarchy through recognized item-code and parent columns.
 
 ## 2026.09.27
 *Applies to **SOLIDWORKS Add-in***

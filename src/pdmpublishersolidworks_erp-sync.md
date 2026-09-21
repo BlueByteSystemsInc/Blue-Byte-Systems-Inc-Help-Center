@@ -1,7 +1,7 @@
 ---
 title: ERP Sync | PDMPublisher for SOLIDWORKS
 description: Configure ERP Sync and push SOLIDWORKS items, properties, and BOMs through an installed ERP connector.
-ms.date: 09/20/2026
+ms.date: 09/28/2026
 ms.topic: conceptual
 ---
 
@@ -47,13 +47,61 @@ Connector settings are saved separately for each connector and encrypted for the
 
 For the connector supplied by Blue Byte Systems, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md).
 
-## Push document data
+## Choose the synchronization source
 
-![ERP Sync window with selected assembly rows](/images/pdmpublisher/solidworks/erp-sync-window-20260920.png)
+Use the source selector at the upper left of ERP Sync to choose where the rows, columns, quantities, and BOM hierarchy come from.
+
+![ERP Sync source selector with Feature tree, SOLIDWORKS BOM table, and CSV file choices](/images/pdmpublisher/solidworks/erp-sync-source-selector-20260928.png)
+
+| Source | What ERP Sync uses | Important behavior |
+| --- | --- | --- |
+| Feature tree | The active SOLIDWORKS document and its resolved component tree. | This is the default source. BOM type, column templates, grouping, component filters, cut-list items, and phantom rows remain available. A BOM Push requires the **Indented** view with no grouping. |
+| SOLIDWORKS BOM table | A BOM table found in an assembly or drawing, including the table's selected configuration. | Visible table rows, visible columns, and displayed quantities are used. Item and property Push remain available for every valid table. BOM Push additionally requires an indented table with detailed numeric item numbers such as `1`, `1.1`, and `1.2`, visible parent rows, and an unambiguous hierarchy. |
+| CSV file | A UTF-8 CSV file selected from disk. | Every CSV column becomes a connector source property. Item and property Push are available after the file passes validation. BOM Push is enabled when item and parent columns define a valid hierarchy. |
+
+The selected source is remembered for the saved SOLIDWORKS document.
+
+### Feature tree
+
+Choose **Feature tree** to build rows from the active part, assembly, or drawing. Use **BOM type**, **Column template**, **Group by**, **Ignore Components**, and the item filters to shape the view. Feature-tree rows can include resolved components, cut-list items, and phantom rows according to the selected settings.
+
+### SOLIDWORKS BOM table
+
+Open the document submenu in the source selector and choose a specific BOM table and configuration. ERP Sync reads the table as it is displayed:
+
+- Hidden rows and hidden columns are omitted.
+- Column titles and custom-property columns become source properties that a connector can map.
+- The displayed quantity must be numeric.
+- Item and property synchronization can use a flat table. BOM synchronization requires an indented hierarchy with detailed numeric item numbering and visible parent rows.
+
+If a table cannot produce an unambiguous hierarchy, ERP Sync keeps item and property operations available and disables the BOM operation.
+
+### CSV file
+
+Choose **CSV file...** to use data that is independent of the active SOLIDWORKS component tree. The file must meet these requirements:
+
+- UTF-8 text, with or without a byte-order mark (BOM).
+- No larger than 20 MB and no more than 50,000 nonblank data rows.
+- Nonempty, unique headers, with the same number of fields in every data row.
+- Positive whole-number quantities. If there is no quantity column, ERP Sync uses `1`.
+
+ERP Sync recognizes these conventional headers:
+
+| Purpose | Recognized headers |
+| --- | --- |
+| Item code | `Item code`, `item_code`, `PartNumber`, `Part Number`, or `Item` |
+| Quantity | `Quantity` or `Qty` |
+| Parent item | `Parent`, `Parent item`, or `parent_item` |
+| Description | `Description` |
+| Material | `Material` |
+
+To enable BOM Push from CSV, provide recognized item-code and parent columns. Each item code must occur once, every referenced parent must exist, and the relationships must not contain a cycle. A valid hierarchy must contain at least one parent with children.
+
+## Push document data
 
 1. Open or activate a saved SOLIDWORKS part, assembly, or drawing.
 2. Select **PDMPublisher > ERP Sync**.
-3. Select a BOM type and column template. Use **Columns**, **Group by**, **Find**, **Ignore Components**, and **Refresh** to prepare the view.
+3. Select **Feature tree**, a SOLIDWORKS BOM table, or **CSV file...** as the source. Use the controls available for that source to prepare the view.
 4. Select the checkbox beside every row to include. Only checked, currently displayed rows are sent. Expand collapsed branches before pushing an indented BOM.
 5. Select the active connector at the bottom of the window.
 6. Open the arrow beside **Push** and select the required operations.

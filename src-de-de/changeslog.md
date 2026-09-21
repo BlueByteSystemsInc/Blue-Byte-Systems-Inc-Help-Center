@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 09/27/2026
+ms.date: 09/28/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,21 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.28` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20260928"></a>
+## 2026.09.28
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Eine ERP Sync-Quellenauswahl für den aktiven [SOLIDWORKS-Feature tree, SOLIDWORKS-Stücklistentabellen und UTF-8-CSV-Dateien](pdmpublishersolidworks_erp-sync.md#choose-the-synchronization-source) wurde hinzugefügt.
+- Quellen aus SOLIDWORKS-Stücklistentabellen verwenden sichtbare Zeilen und Spalten, angezeigte Mengen und die ausgewählte Tabellenkonfiguration. Gültige eingerückte Tabellen können auch die Stücklistenhierarchie liefern.
+- CSV-Quellen stellen dem Konnektor jede Spalte bereit und können die Stücklistenhierarchie über erkannte Spalten für Itemcode und übergeordnetes Item liefern.
 
 <a id="20260927"></a>
 ## 2026.09.27

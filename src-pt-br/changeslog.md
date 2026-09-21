@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 09/27/2026
+ms.date: 09/28/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,21 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.28` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="20260928"></a>
+## 2026.09.28
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- Foi adicionado um seletor de fonte do ERP Sync para a [árvore de recursos do SOLIDWORKS, tabelas de BOM do SOLIDWORKS e arquivos CSV UTF-8](pdmpublishersolidworks_erp-sync.md#choose-the-synchronization-source).
+- As fontes de tabela de BOM do SOLIDWORKS usam linhas e colunas visíveis, quantidades exibidas e a configuração selecionada da tabela. Tabelas recuadas válidas também podem fornecer a hierarquia da lista de materiais.
+- As fontes CSV expõem todas as colunas ao conector e podem fornecer a hierarquia da lista de materiais por meio de colunas reconhecidas de código do item e item pai.
 
 <a id="20260927"></a>
 ## 2026.09.27

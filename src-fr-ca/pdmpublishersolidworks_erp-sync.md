@@ -1,7 +1,7 @@
 ---
 title: "ERP Sync | PDMPublisher pour SOLIDWORKS"
 description: "Configurez ERP Sync et envoyez les articles, propriétés et nomenclatures SOLIDWORKS au moyen d'un connecteur ERP installé."
-ms.date: 09/20/2026
+ms.date: 09/28/2026
 ms.topic: conceptual
 ---
 
@@ -47,13 +47,63 @@ Les paramètres du connecteur sont enregistrés séparément pour chaque connect
 
 Pour le connecteur fourni par Blue Byte Systems, consultez [Connecteur ERPNext](pdmpublishersolidworks_erpnext-connector.md).
 
+<a id="choose-the-synchronization-source"></a>
+## Choisir la source de synchronisation
+
+Utilisez le sélecteur de source en haut à gauche d'ERP Sync pour choisir la provenance des lignes, des colonnes, des quantités et de la hiérarchie de nomenclature.
+
+![Sélecteur de source ERP Sync avec l'arbre des fonctions, une table de nomenclature SOLIDWORKS et un fichier CSV](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-source-selector-20260928.png)
+
+| Source | Données utilisées par ERP Sync | Comportement important |
+| --- | --- | --- |
+| Feature tree | Le document SOLIDWORKS actif et son arborescence de composants résolus. | Il s'agit de la source par défaut. Le type de nomenclature, les modèles de colonnes, le regroupement, les filtres de composants, les éléments de liste de pièces soudées et les lignes fantômes restent disponibles. L'envoi d'une nomenclature exige la vue **Indented** sans regroupement. |
+| Table de nomenclature SOLIDWORKS | Une table de nomenclature trouvée dans un assemblage ou un dessin, y compris la configuration sélectionnée pour la table. | Les lignes et colonnes visibles ainsi que les quantités affichées sont utilisées. L'envoi des articles et des propriétés reste disponible pour toute table valide. L'envoi de la nomenclature exige aussi une table hiérarchique avec une numérotation détaillée telle que `1`, `1.1` et `1.2`, des lignes parentes visibles et une hiérarchie non ambiguë. |
+| Fichier CSV | Un fichier CSV UTF-8 sélectionné sur le disque. | Chaque colonne CSV devient une propriété source accessible au connecteur. L'envoi des articles et des propriétés est disponible après validation du fichier. L'envoi de la nomenclature est activé lorsque les colonnes d'article et de parent définissent une hiérarchie valide. |
+
+La source sélectionnée est mémorisée pour le document SOLIDWORKS enregistré.
+
+### Feature tree
+
+Choisissez **Feature tree** pour créer les lignes à partir de la pièce, de l'assemblage ou du dessin actif. Utilisez **BOM type**, **Column template**, **Group by**, **Ignore Components** et les filtres d'articles pour préparer la vue. Les lignes peuvent inclure les composants résolus, les éléments de liste de pièces soudées et les lignes fantômes selon les réglages sélectionnés.
+
+### Table de nomenclature SOLIDWORKS
+
+Ouvrez le sous-menu du document dans le sélecteur de source, puis choisissez une table de nomenclature et une configuration. ERP Sync lit la table telle qu'elle est affichée :
+
+- Les lignes et colonnes masquées sont omises.
+- Les titres de colonnes et les colonnes de propriétés personnalisées deviennent des propriétés source que le connecteur peut mapper.
+- La quantité affichée doit être numérique.
+- Une table à plat peut servir à synchroniser les articles et les propriétés. La synchronisation de nomenclature exige une hiérarchie en retrait avec une numérotation numérique détaillée et des lignes parentes visibles.
+
+Si la table ne permet pas de créer une hiérarchie non ambiguë, ERP Sync laisse les opérations d'article et de propriété disponibles et désactive l'opération de nomenclature.
+
+### Fichier CSV
+
+Choisissez **CSV file...** pour utiliser des données indépendantes de l'arborescence des composants SOLIDWORKS. Le fichier doit respecter les exigences suivantes :
+
+- Texte UTF-8, avec ou sans marque d'ordre des octets (BOM).
+- Taille maximale de 20 Mo et au plus 50 000 lignes de données non vides.
+- En-têtes non vides et uniques, avec le même nombre de champs dans chaque ligne de données.
+- Quantités entières positives. En l'absence d'une colonne de quantité, ERP Sync utilise `1`.
+
+ERP Sync reconnaît les en-têtes conventionnels suivants :
+
+| Rôle | En-têtes reconnus |
+| --- | --- |
+| Code d'article | `Item code`, `item_code`, `PartNumber`, `Part Number` ou `Item` |
+| Quantité | `Quantity` ou `Qty` |
+| Article parent | `Parent`, `Parent item` ou `parent_item` |
+| Description | `Description` |
+| Matériau | `Material` |
+
+Pour activer l'envoi d'une nomenclature depuis un CSV, fournissez des colonnes reconnues pour le code d'article et le parent. Chaque code d'article doit apparaître une seule fois, chaque parent référencé doit exister et les relations ne doivent contenir aucun cycle. Une hiérarchie valide doit contenir au moins un parent avec des enfants.
+
 <a id="push-document-data"></a>
 ## Envoyer les données du document
 
-![Fenêtre ERP Sync avec lignes d'assemblage sélectionnées](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-window-20260920.png)
 1. Ouvrez ou activez une pièce, un assemblage ou un dessin SOLIDWORKS enregistré.
 2. Sélectionnez **PDMPublisher > ERP Sync**.
-3. Sélectionnez un type de nomenclature et un modèle de colonnes. Utilisez **Columns**, **Group by**, **Find**, **Ignore Components** et **Refresh** pour préparer la vue.
+3. Sélectionnez **Feature tree**, une table de nomenclature SOLIDWORKS ou **CSV file...** comme source. Utilisez les commandes offertes pour cette source afin de préparer la vue.
 4. Cochez chaque ligne à inclure. Seules les lignes cochées et actuellement affichées sont envoyées. Développez les branches réduites avant d'envoyer une nomenclature hiérarchique.
 5. Sélectionnez le connecteur actif au bas de la fenêtre.
 6. Ouvrez la flèche à côté de **Push** et sélectionnez les opérations requises.

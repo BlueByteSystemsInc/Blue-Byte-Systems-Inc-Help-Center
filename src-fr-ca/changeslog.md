@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 09/27/2026
+ms.date: 09/28/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,21 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.28` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20260928"></a>
+## 2026.09.28
+*S'applique au **complément SOLIDWORKS***
+
+- Ajout d'un sélecteur de source ERP Sync pour l'[arborescence des fonctions SOLIDWORKS, les tables de nomenclature SOLIDWORKS et les fichiers CSV UTF-8](pdmpublishersolidworks_erp-sync.md#choose-the-synchronization-source).
+- Les sources de table de nomenclature SOLIDWORKS utilisent les lignes et colonnes visibles, les quantités affichées et la configuration sélectionnée de la table. Les tables hiérarchiques valides peuvent aussi fournir la structure de nomenclature.
+- Les sources CSV exposent chaque colonne au connecteur et peuvent fournir une hiérarchie de nomenclature au moyen de colonnes reconnues de code d'article et de parent.
 
 <a id="20260927"></a>
 ## 2026.09.27
