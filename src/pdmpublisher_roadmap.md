@@ -18,8 +18,6 @@ PDMPublisher is released as two independently versioned products. This page show
 
 | Target | Product | Planned work |
 | --- | --- | --- |
-| 2026 Q4 | PDM Task | Run scheduled jobs from a selected directory or saved Favorite Search. |
-| 2027 Q1 | SOLIDWORKS add-in | **Drawing Creator** for creating drawings from models with templates, standard views, sheet settings, and reusable notes. |
 | No committed date | SOLIDWORKS add-in | [Translate](pdmpublishersolidworks_translate.md) for document properties, feature names, and other SOLIDWORKS text. |
 | No committed date | SOLIDWORKS add-in | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) for scheduled publishing jobs. |
 

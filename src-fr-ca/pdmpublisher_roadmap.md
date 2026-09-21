@@ -18,8 +18,6 @@ PDMPublisher est offert sous forme de deux produits dont les versions sont indé
 
 | Cible | Produit | Travaux prévus |
 | --- | --- | --- |
-| T4 2026 | Tâche PDM | Exécuter des tâches planifiées depuis un répertoire sélectionné ou une recherche favorite enregistrée. |
-| T1 2027 | Complément SOLIDWORKS | **Drawing Creator** pour créer des dessins depuis des modèles avec des gabarits, des vues standard, des réglages de feuille et des notes réutilisables. |
 | Aucune date fixée | Complément SOLIDWORKS | [Translate](pdmpublishersolidworks_translate.md) pour les propriétés, les noms de fonctions et les autres textes SOLIDWORKS. |
 | Aucune date fixée | Complément SOLIDWORKS | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) pour les tâches de publication planifiées. |
 

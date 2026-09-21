@@ -18,8 +18,6 @@ PDMPublisher wird als zwei unabhängig versionierte Produkte veröffentlicht. Di
 
 | Ziel | Produkt | Geplante Arbeit |
 | --- | --- | --- |
-| Q4 2026 | PDM Task | Geplante Aufträge aus einem ausgewählten Verzeichnis oder einer gespeicherten Favoritensuche ausführen. |
-| Q1 2027 | SOLIDWORKS Add-in | **Drawing Creator** zum Erstellen von Zeichnungen aus Modellen mit Vorlagen, Standardansichten, Blatteinstellungen und wiederverwendbaren Notizen. |
 | Kein verbindlicher Termin | SOLIDWORKS Add-in | [Translate](pdmpublishersolidworks_translate.md) für Dokumenteigenschaften, Feature-Namen und weiteren SOLIDWORKS-Text. |
 | Kein verbindlicher Termin | SOLIDWORKS Add-in | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) für geplante Veröffentlichungsaufträge. |
 

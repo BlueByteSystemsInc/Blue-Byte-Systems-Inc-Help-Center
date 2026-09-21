@@ -18,8 +18,6 @@ O PDMPublisher é lançado como dois produtos com versões independentes. Esta p
 
 | Meta | Produto | Trabalho planejado |
 | --- | --- | --- |
-| 4º trimestre de 2026 | PDM Task | Executar tarefas programadas a partir de um diretório selecionado ou de uma pesquisa favorita salva. |
-| 1º trimestre de 2027 | Suplemento SOLIDWORKS | **Drawing Creator** para criar desenhos a partir de modelos com templates, vistas padrão, configurações de folha e notas reutilizáveis. |
 | Sem data definida | Suplemento SOLIDWORKS | [Translate](pdmpublishersolidworks_translate.md) para propriedades, nomes de recursos e outros textos do SOLIDWORKS. |
 | Sem data definida | Suplemento SOLIDWORKS | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) para tarefas de publicação programadas. |
 
