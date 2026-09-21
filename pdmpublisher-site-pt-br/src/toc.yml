@@ -42,13 +42,6 @@
       href: ../../src-pt-br/pdmpublishersolidworks_advanced-formulas.md
     - name: Integração
       items:
-      - name: ERP Sync
-        href: ../../src-pt-br/pdmpublishersolidworks_erp-sync.md
-        items:
-        - name: Conector ERPNext
-          href: ../../src-pt-br/pdmpublishersolidworks_erpnext-connector.md
-        - name: Criar um conector ERP personalizado
-          href: ../../src-pt-br/pdmpublishersolidworks_erp-connector.md
       - name: Publisher Macros
         href: ../../src-pt-br/pdmpublishersolidworks_publisher-macros.md
     - name: BOM Manager
@@ -63,6 +56,13 @@
     href: ../../src-pt-br/pdmpublishersolidworks_property-doctor.md
   - name: Clone Tree
     href: ../../src-pt-br/pdmpublishersolidworks_smart-pack.md
+  - name: Integração ERP
+    href: ../../src-pt-br/pdmpublishersolidworks_erp-sync.md
+    items:
+    - name: Conector ERPNext
+      href: ../../src-pt-br/pdmpublishersolidworks_erpnext-connector.md
+    - name: Criar um conector ERP personalizado
+      href: ../../src-pt-br/pdmpublishersolidworks_erp-connector.md
   - name: Publicação
     href: ../../src-pt-br/pdmpublishersolidworks_options.md
     expanded: true
