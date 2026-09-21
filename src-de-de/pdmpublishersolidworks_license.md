@@ -1,7 +1,7 @@
 ---
 title: "Lizenzmanagement | PDMPublisher für SOLIDWORKS"
 description: "Aktivieren, deaktivieren, kaufen oder eine Testversion für PDMPublisher für SOLIDWORKS anfordern."
-ms.date: 09/19/2026
+ms.date: 09/28/2026
 ms.topic: how-to
 ---
 
@@ -30,4 +30,4 @@ Diese Seite gilt nur für **PDMPublisher for SOLIDWORKS**. PDM Task Lizenzverwal
 
 Deaktivieren Sie die Lizenz, bevor Sie den Computer ersetzen oder eine Systemänderung vornehmen, die die Maschinenidentität ändern kann.
 
-Ohne kostenpflichtige Lizenz läuft PDMPublisher für SOLIDWORKS als Community Edition. Die Anwendung zeigt die aktuellen Limits der Community Edition im Veröffentlichungsfenster an. Die 7-Tage-Testversion, die an anderer Stelle auf dieser Hilfeseite angekündigt wird, gilt für das separate **PDM Professional Task version**, nicht für das SOLIDWORKS-Add-in.
+Ohne kostenpflichtige Lizenz läuft PDMPublisher für SOLIDWORKS als Community Edition. Unter [Community oder Premium](pdmpublishersolidworks_comparison.md) finden Sie den vollständigen Funktions- und Limitvergleich. Die an anderer Stelle auf dieser Hilfeseite angebotene 7-Tage-Testversion gilt für den separaten **PDM Professional Task**, nicht für das SOLIDWORKS Add-in.

@@ -9,6 +9,8 @@
   items:
   - name: Overview
     href: ../../src/pdmpublishersolidworks.md
+  - name: Community vs Premium
+    href: ../../src/pdmpublishersolidworks_comparison.md
   - name: Install and Enable the Add-in
     href: ../../src/pdmpublishersolidworks_installation.md
   - name: Commands

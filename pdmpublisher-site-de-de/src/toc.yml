@@ -9,6 +9,8 @@
   items:
   - name: Übersicht
     href: ../../src-de-de/pdmpublishersolidworks.md
+  - name: Community oder Premium
+    href: ../../src-de-de/pdmpublishersolidworks_comparison.md
   - name: Installieren und Aktivieren des Add-Ins
     href: ../../src-de-de/pdmpublishersolidworks_installation.md
   - name: Befehle

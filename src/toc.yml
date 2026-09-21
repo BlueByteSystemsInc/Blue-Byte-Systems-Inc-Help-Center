@@ -31,6 +31,8 @@
       href: pdmpublishersolidworks.md
       expanded: true
       items:
+      - name: Community vs Premium
+        href: pdmpublishersolidworks_comparison.md
       - name: Install and Enable the Add-in
         href: pdmpublishersolidworks_installation.md
       - name: Commands

@@ -1,7 +1,7 @@
 ---
 title: License Management | PDMPublisher for SOLIDWORKS
 description: Activate, deactivate, purchase, or request a trial for PDMPublisher for SOLIDWORKS.
-ms.date: 09/19/2026
+ms.date: 09/28/2026
 ms.topic: how-to
 ---
 
@@ -30,4 +30,4 @@ Open **PDMPublisher > License Key**, or open **PDMPublisher > Settings > License
 
 Deactivate the license before replacing the computer or making a system change that can change its machine identity.
 
-Without a paid license, PDMPublisher for SOLIDWORKS runs as the Community Edition. The application displays the current Community Edition limits in the publish review window. The 7-day trial advertised elsewhere in this help site is for the separate **PDM Professional Task version**, not the SOLIDWORKS add-in.
+Without a paid license, PDMPublisher for SOLIDWORKS runs as the Community Edition. See [Community vs Premium](pdmpublishersolidworks_comparison.md) for the complete feature and limit comparison. The 7-day trial advertised elsewhere in this help site is for the separate **PDM Professional Task version**, not the SOLIDWORKS add-in.

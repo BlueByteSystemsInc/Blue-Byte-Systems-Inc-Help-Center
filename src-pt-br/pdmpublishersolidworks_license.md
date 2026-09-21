@@ -1,7 +1,7 @@
 ---
 title: "Gestão de Licenças PDMPublisher para SOLIDWORKS"
 description: "Ativar, desativar, comprar ou solicitar um teste para PDMPublisher para SOLIDWORKS."
-ms.date: 09/19/2026
+ms.date: 09/28/2026
 ms.topic: how-to
 ---
 
@@ -31,4 +31,4 @@ Abra **PDMPublisher > License Key**, ou abra **PDMPublisher > Settings > License
 
 Desativar a licença antes de substituir o computador ou fazer uma mudança de sistema que pode mudar sua identidade de máquina.
 
-Sem uma licença paga, PDMPublisher para SOLIDWORKS é executado como a edição comunitária. A aplicação exibe os limites atuais da Community Edition na janela de revisão da publicação. O julgamento de 7 dias anunciado em outro lugar neste site de ajuda é para o **PDM Professional Task version** separado, não o SOLIDWORKS suplemento.
+Sem uma licença paga, o PDMPublisher para SOLIDWORKS funciona como Community Edition. Consulte [Community ou Premium](pdmpublishersolidworks_comparison.md) para ver a comparação completa de recursos e limites. A avaliação de 7 dias anunciada em outra parte deste site de ajuda é destinada ao **PDM Professional Task** separado, não ao suplemento SOLIDWORKS.

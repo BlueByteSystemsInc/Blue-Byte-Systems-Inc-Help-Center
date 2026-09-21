@@ -9,6 +9,8 @@
   items:
   - name: Aperçu général
     href: ../../src-fr-ca/pdmpublishersolidworks.md
+  - name: Community ou Premium
+    href: ../../src-fr-ca/pdmpublishersolidworks_comparison.md
   - name: Installer et activer le complément
     href: ../../src-fr-ca/pdmpublishersolidworks_installation.md
   - name: Commandes
