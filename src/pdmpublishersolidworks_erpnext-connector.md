@@ -1,7 +1,7 @@
 ---
 title: ERPNext Connector | PDMPublisher for SOLIDWORKS
 description: Install and configure the official ERPNext connector to synchronize SOLIDWORKS items, properties, files, generated part numbers, and draft BOMs.
-ms.date: 09/20/2026
+ms.date: 09/27/2026
 ms.topic: how-to
 ---
 
@@ -84,6 +84,24 @@ Use ERPNext field names rather than labels. Boolean mappings accept `True/False`
 
 **Properties** requires every checked Item to exist. **Create items + properties** creates missing Items and updates mapped fields. Existing Items retain their identity, Item Group, stock UOM, and unrelated ERP fields. Repeated rows with the same Item code and values are sent once; conflicting values stop the batch before writing.
 
+## Monitor synchronization and review the report
+
+After you select **Push**, PDMPublisher locks the review window and displays progress while the checked Items are synchronized. Keep SOLIDWORKS open until the operation finishes.
+
+![ERPNext synchronization in progress](../images/pdmpublisher/solidworks/erp-sync-progress-20260927.png)
+
+When synchronization finishes, the **ERP Sync report** displays the run summary and one row for every checked Item.
+
+![Completed ERPNext synchronization report](../images/pdmpublisher/solidworks/erp-sync-report-20260927.png)
+
+Version `2026.09.27` standardizes row results as:
+
+- **Success**: the Item completed successfully.
+- **No sync needed**: ERPNext already contained the requested values and no change was required.
+- **Failure**: the Item failed, was incomplete, or was not processed after the run stopped.
+
+Successful runs that do not return individual Item outcomes now mark the affected rows as **Success** and explain that the connector did not provide per-Item changes. Use the summary to review created, updated, unchanged, uploaded, skipped, and BOM counts. The search field filters the displayed rows; **Copy report** copies the complete text report and **Save report...** writes it to a file.
+
 ## Request missing part numbers
 
 Enable **Request missing part numbers**, choose a writable custom property as **Item code column**, and enter the ERPNext naming series. Empty values cause ERPNext to assign an Item code; confirmed numbers are written back to the matching model or cut-list rows.
@@ -112,4 +130,3 @@ When generated numbers were confirmed before a later failure, PDMPublisher retur
 
 - [ERP Sync](pdmpublishersolidworks_erp-sync.md)
 - [Create a Custom ERP Connector](pdmpublishersolidworks_erp-connector.md)
-

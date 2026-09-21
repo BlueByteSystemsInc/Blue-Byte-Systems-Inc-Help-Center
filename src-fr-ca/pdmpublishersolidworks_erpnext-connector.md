@@ -1,7 +1,7 @@
 ---
 title: "Connecteur ERPNext | PDMPublisher pour SOLIDWORKS"
 description: "Installez et configurez le connecteur ERPNext officiel pour synchroniser les articles, propriétés, fichiers, numéros de pièce et nomenclatures provisoires de SOLIDWORKS."
-ms.date: 09/20/2026
+ms.date: 09/27/2026
 ms.topic: how-to
 ---
 
@@ -84,6 +84,24 @@ Utilisez les noms de champs ERPNext plutôt que leurs étiquettes. Les mappages 
 
 **Properties** exige que tous les articles cochés existent. **Create items + properties** crée les articles manquants et met à jour les champs mappés. Les articles existants conservent leur identité, groupe, unité de stock et champs ERP non liés. Les lignes répétées ayant le même code et les mêmes valeurs sont envoyées une seule fois; des valeurs conflictuelles arrêtent le lot avant toute écriture.
 
+## Surveiller la synchronisation et examiner le rapport
+
+Après avoir sélectionné **Push**, PDMPublisher verrouille la fenêtre de révision et affiche la progression pendant la synchronisation des articles cochés. Gardez SOLIDWORKS ouvert jusqu'à la fin de l'opération.
+
+![Synchronisation ERPNext en cours](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-progress-20260927.png)
+
+Une fois la synchronisation terminée, le **rapport ERP Sync** affiche le résumé de l'exécution et une ligne pour chaque article coché.
+
+![Rapport de synchronisation ERPNext terminé](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-report-20260927.png)
+
+La version `2026.09.27` normalise les résultats des lignes :
+
+- **Success** : l'article a été traité avec succès.
+- **No sync needed** : ERPNext contenait déjà les valeurs demandées et aucune modification n'était nécessaire.
+- **Failure** : l'article a échoué, était incomplet ou n'a pas été traité après l'arrêt de l'exécution.
+
+Lorsqu'une exécution réussie ne retourne aucun résultat individuel, les lignes concernées sont maintenant marquées **Success** et précisent que le connecteur n'a pas fourni les changements par article. Utilisez le résumé pour examiner les nombres créés, mis à jour, inchangés, téléversés, ignorés et les nomenclatures. Le champ de recherche filtre les lignes; **Copy report** copie le rapport complet et **Save report...** l'enregistre dans un fichier.
+
 ## Demander les numéros de pièce manquants
 
 Activez **Request missing part numbers**, choisissez une propriété personnalisée modifiable comme **Item code column** et saisissez la série ERPNext. Les valeurs vides amènent ERPNext à attribuer un code; les numéros confirmés sont réécrits dans les lignes de modèle ou de liste de pièces soudées correspondantes.
@@ -112,4 +130,3 @@ Lorsque des numéros générés ont été confirmés avant un échec ultérieur,
 
 - [ERP Sync](pdmpublishersolidworks_erp-sync.md)
 - [Créer un connecteur ERP personnalisé](pdmpublishersolidworks_erp-connector.md)
-

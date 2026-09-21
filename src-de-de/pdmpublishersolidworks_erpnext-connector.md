@@ -1,7 +1,7 @@
 ---
 title: "ERPNext-Konnektor | PDMPublisher für SOLIDWORKS"
 description: "Installieren und konfigurieren Sie den offiziellen ERPNext-Konnektor zur Synchronisierung von SOLIDWORKS-Artikeln, Eigenschaften, Dateien, generierten Teilenummern und Entwurfsstücklisten."
-ms.date: 09/20/2026
+ms.date: 09/27/2026
 ms.topic: how-to
 ---
 
@@ -84,6 +84,24 @@ Verwenden Sie ERPNext-Feldnamen statt Beschriftungen. Boolesche Zuordnungen akze
 
 **Properties** setzt voraus, dass alle aktivierten Items vorhanden sind. **Create items + properties** erstellt fehlende Items und aktualisiert zugeordnete Felder. Vorhandene Items behalten Identität, Item Group, Lagereinheit und nicht zugehörige ERP-Felder. Wiederholte Zeilen mit demselben Item-Code und denselben Werten werden einmal gesendet; widersprüchliche Werte stoppen den Stapel vor dem Schreiben.
 
+## Synchronisierung überwachen und Bericht prüfen
+
+Nach Auswahl von **Push** sperrt PDMPublisher das Prüffenster und zeigt den Fortschritt an, während die aktivierten Items synchronisiert werden. Lassen Sie SOLIDWORKS geöffnet, bis der Vorgang abgeschlossen ist.
+
+![Laufende ERPNext-Synchronisierung](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-progress-20260927.png)
+
+Nach Abschluss der Synchronisierung zeigt der **ERP Sync report** die Zusammenfassung und eine Zeile für jedes aktivierte Item an.
+
+![Abgeschlossener ERPNext-Synchronisierungsbericht](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-report-20260927.png)
+
+Version `2026.09.27` vereinheitlicht die Zeilenergebnisse:
+
+- **Success**: Das Item wurde erfolgreich verarbeitet.
+- **No sync needed**: ERPNext enthielt bereits die angeforderten Werte; keine Änderung war erforderlich.
+- **Failure**: Das Item ist fehlgeschlagen, war unvollständig oder wurde nach Abbruch des Laufs nicht verarbeitet.
+
+Erfolgreiche Läufe ohne einzelne Item-Ergebnisse markieren die betroffenen Zeilen jetzt als **Success** und erklären, dass der Konnektor keine Änderungen pro Item geliefert hat. Die Zusammenfassung zeigt erstellte, aktualisierte, unveränderte, hochgeladene und übersprungene Einträge sowie Stücklistenzahlen. Das Suchfeld filtert die Zeilen; **Copy report** kopiert den vollständigen Bericht und **Save report...** speichert ihn als Datei.
+
 ## Fehlende Teilenummern anfordern
 
 Aktivieren Sie **Request missing part numbers**, wählen Sie eine schreibbare benutzerdefinierte Eigenschaft als **Item code column** und geben Sie die ERPNext-Namensserie ein. Bei leeren Werten weist ERPNext einen Item-Code zu; bestätigte Nummern werden in die entsprechenden Modell- oder Schnittlistenzeilen zurückgeschrieben.
@@ -112,4 +130,3 @@ Wenn generierte Nummern vor einem späteren Fehler bestätigt wurden, gibt PDMPu
 
 - [ERP Sync](pdmpublishersolidworks_erp-sync.md)
 - [Benutzerdefinierten ERP-Konnektor erstellen](pdmpublishersolidworks_erp-connector.md)
-

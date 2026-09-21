@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 09/26/2026
+ms.date: 09/27/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,21 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.26` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20260927"></a>
+## 2026.09.27
+*S’applique au **complément SOLIDWORKS***
+
+- Correction du [rapport ERP Sync](pdmpublishersolidworks_erpnext-connector.md#surveiller-la-synchronisation-et-examiner-le-rapport) afin que chaque article coché reçoive un résultat clair : **Success**, **No sync needed** ou **Failure**.
+- Les connecteurs réussis qui ne retournent aucun résultat individuel marquent maintenant les lignes concernées **Success** avec un message explicatif au lieu de **Not reported**.
+- Ajout de couleurs selon l'état, de détails d'échec plus clairs, de la recherche par état et d'une grille de rapport simplifiée.
 
 <a id="20260926"></a>
 ## 2026.09.26

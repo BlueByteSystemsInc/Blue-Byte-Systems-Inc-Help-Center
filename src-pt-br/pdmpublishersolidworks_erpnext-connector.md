@@ -1,7 +1,7 @@
 ---
 title: "Conector ERPNext | PDMPublisher para SOLIDWORKS"
 description: "Instale e configure o conector ERPNext oficial para sincronizar itens, propriedades, arquivos, números de peça gerados e listas de materiais provisórias do SOLIDWORKS."
-ms.date: 09/20/2026
+ms.date: 09/27/2026
 ms.topic: how-to
 ---
 
@@ -84,6 +84,24 @@ Use nomes de campos do ERPNext em vez de rótulos. Os mapeamentos booleanos acei
 
 **Properties** exige que todos os Items marcados existam. **Create items + properties** cria Items ausentes e atualiza campos mapeados. Os Items existentes mantêm identidade, grupo, unidade de estoque e campos ERP não relacionados. Linhas repetidas com o mesmo código e valores são enviadas uma vez; valores conflitantes interrompem o lote antes da gravação.
 
+## Monitorar a sincronização e revisar o relatório
+
+Depois de selecionar **Push**, o PDMPublisher bloqueia a janela de revisão e mostra o progresso enquanto os Items marcados são sincronizados. Mantenha o SOLIDWORKS aberto até a conclusão da operação.
+
+![Sincronização do ERPNext em andamento](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-progress-20260927.png)
+
+Quando a sincronização termina, o **ERP Sync report** mostra o resumo da execução e uma linha para cada Item marcado.
+
+![Relatório concluído da sincronização do ERPNext](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-report-20260927.png)
+
+A versão `2026.09.27` padroniza os resultados das linhas:
+
+- **Success**: o Item foi processado com êxito.
+- **No sync needed**: o ERPNext já continha os valores solicitados e nenhuma alteração era necessária.
+- **Failure**: o Item falhou, ficou incompleto ou não foi processado depois que a execução parou.
+
+Execuções bem-sucedidas que não retornam resultados individuais agora marcam as linhas afetadas como **Success** e explicam que o conector não forneceu alterações por Item. Use o resumo para revisar as contagens de itens criados, atualizados, inalterados, carregados e ignorados, além das BOMs. O campo de pesquisa filtra as linhas; **Copy report** copia o relatório completo e **Save report...** o salva em um arquivo.
+
 ## Solicitar números de peça ausentes
 
 Ative **Request missing part numbers**, escolha uma propriedade personalizada gravável como **Item code column** e insira a série de nomes do ERPNext. Valores vazios fazem o ERPNext atribuir um código; os números confirmados são gravados nas linhas de modelo ou lista de corte correspondentes.
@@ -112,4 +130,3 @@ Quando números gerados são confirmados antes de uma falha posterior, o PDMPubl
 
 - [ERP Sync](pdmpublishersolidworks_erp-sync.md)
 - [Criar um conector ERP personalizado](pdmpublishersolidworks_erp-connector.md)
-

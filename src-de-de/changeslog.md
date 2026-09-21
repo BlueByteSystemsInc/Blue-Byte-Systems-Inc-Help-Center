@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 09/26/2026
+ms.date: 09/27/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,21 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.26` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20260927"></a>
+## 2026.09.27
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Die [ERP Sync-Berichterstellung](pdmpublishersolidworks_erpnext-connector.md#synchronisierung-überwachen-und-bericht-prüfen) wurde korrigiert, sodass jedes aktivierte Item ein eindeutiges Ergebnis **Success**, **No sync needed** oder **Failure** erhält.
+- Erfolgreiche Konnektoren ohne einzelne Item-Ergebnisse melden die betroffenen Zeilen jetzt als **Success** mit einer erklärenden Ersatzmeldung statt **Not reported**.
+- Statusbasierte Zeilenfarben, klarere Fehlerdetails, Statussuche und ein übersichtlicheres Berichtsraster wurden hinzugefügt.
 
 <a id="20260926"></a>
 ## 2026.09.26

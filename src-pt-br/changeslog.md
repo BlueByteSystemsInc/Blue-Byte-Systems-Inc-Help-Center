@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 09/26/2026
+ms.date: 09/27/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,21 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.26` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.27` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="20260927"></a>
+## 2026.09.27
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- O [relatório do ERP Sync](pdmpublishersolidworks_erpnext-connector.md#monitorar-a-sincronização-e-revisar-o-relatório) foi corrigido para que cada Item marcado receba um resultado claro: **Success**, **No sync needed** ou **Failure**.
+- Conectores bem-sucedidos que não retornam resultados individuais agora marcam as linhas afetadas como **Success** com uma mensagem explicativa, em vez de **Not reported**.
+- Foram adicionadas cores por estado, detalhes de falha mais claros, pesquisa por estado e uma grade de relatório mais limpa.
 
 <a id="20260926"></a>
 ## 2026.09.26
