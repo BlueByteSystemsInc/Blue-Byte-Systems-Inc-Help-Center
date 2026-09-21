@@ -45,6 +45,8 @@ Sélectionnez **OK** pour enregistrer les valeurs par défaut. Ces paramètres s
 
 Les paramètres du connecteur sont enregistrés séparément pour chaque connecteur et chiffrés pour l'utilisateur Windows actuel. Redémarrer SOLIDWORKS avant de remplacer une DLL de connecteur déjà chargée.
 
+Pour le connecteur fourni par Blue Byte Systems, consultez [Connecteur ERPNext](pdmpublishersolidworks_erpnext-connector.md).
+
 <a id="push-document-data"></a>
 ## Envoyer les données du document
 

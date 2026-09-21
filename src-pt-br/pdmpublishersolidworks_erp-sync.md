@@ -47,6 +47,8 @@ Selecione **OK** para salvar os padrões. Essas configurações são independent
 
 As configurações são salvas separadamente para cada conector e criptografadas para o usuário atual do Windows. Reinicie o SOLIDWORKS antes de substituir uma DLL de conector que já tenha sido carregada.
 
+Para o conector fornecido pela Blue Byte Systems, consulte [Conector ERPNext](pdmpublishersolidworks_erpnext-connector.md).
+
 <a id="push-document-data"></a>
 ## Enviar dados do documento
 

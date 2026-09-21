@@ -9,6 +9,9 @@ ms.topic: how-to
 
 Use the contract in `PDMPublisher.ERPExtension.dll` to create a connector in C#. Reference the DLL from the same PDMPublisher release that will load the connector. Do not copy the contract types into your project, and do not distribute another copy of `PDMPublisher.ERPExtension.dll` with the connector—the host supplies it.
 
+> [!TIP]
+> To install the connector supplied by Blue Byte Systems instead of building one, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md).
+
 ## Project requirements
 
 - Create a C# **Class Library (.NET Framework)** project targeting **.NET Framework 4.7.2**.

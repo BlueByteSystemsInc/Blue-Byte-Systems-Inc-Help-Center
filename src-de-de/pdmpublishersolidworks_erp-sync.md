@@ -47,6 +47,8 @@ Wählen Sie **OK**, um die Standardwerte zu speichern. Diese Einstellungen sind 
 
 Konnektoreinstellungen werden für jeden Konnektor getrennt gespeichert und für den aktuellen Windows-Benutzer verschlüsselt. Starten Sie SOLIDWORKS neu, bevor Sie eine bereits geladene Konnektor-DLL ersetzen.
 
+Informationen zum von Blue Byte Systems bereitgestellten Konnektor finden Sie unter [ERPNext-Konnektor](pdmpublishersolidworks_erpnext-connector.md).
+
 <a id="push-document-data"></a>
 ## Dokumentdaten übertragen
 

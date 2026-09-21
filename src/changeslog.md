@@ -294,7 +294,7 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 - Added the ERP Sync review window with row selection, BOM display types, column templates, grouping, filtering, ignored-component rules, cut-list inclusion, and selectable Push operations.
 - Added the official connector catalog and custom connector loading through **ERP connector settings**.
 - Added the `PDMPublisher.ERPExtension.dll` contract and typed `ErpConnector<TSettings>` API for [building custom C# ERP connectors](pdmpublishersolidworks_erp-connector.md) on .NET Framework 4.7.2.
-- Added ERPNext connector configuration, connection testing, item/property synchronization, and BOM synchronization. Pull remains visible but disabled in this release.
+- Added [ERPNext connector](pdmpublishersolidworks_erpnext-connector.md) configuration, connection testing, item/property synchronization, and BOM synchronization. Pull remains visible but disabled in this release.
 
 
 

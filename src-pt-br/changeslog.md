@@ -346,4 +346,4 @@ A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, entã
 - Foi adicionada a janela de revisão do ERP Sync com seleção de linhas, tipos de exibição da lista de materiais, modelos de colunas, agrupamento, filtragem, regras para ignorar componentes, inclusão de itens de lista de corte e operações Push selecionáveis.
 - Foram adicionados o catálogo oficial de conectores e o carregamento de conectores personalizados por meio de **ERP connector settings**.
 - Foram adicionados o contrato `PDMPublisher.ERPExtension.dll` e a API tipada `ErpConnector<TSettings>` para [criar conectores ERP personalizados em C#](pdmpublishersolidworks_erp-connector.md) no .NET Framework 4.7.2.
-- Foram adicionados a configuração do conector ERPNext, o teste de conexão e a sincronização de itens, propriedades e listas de materiais. A opção Pull permanece visível, mas desabilitada nesta versão.
+- Foram adicionados a configuração do [conector ERPNext](pdmpublishersolidworks_erpnext-connector.md), o teste de conexão e a sincronização de itens, propriedades e listas de materiais. A opção Pull permanece visível, mas desabilitada nesta versão.

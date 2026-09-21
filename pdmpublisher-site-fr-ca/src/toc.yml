@@ -45,6 +45,8 @@
       - name: ERP Sync
         href: ../../src-fr-ca/pdmpublishersolidworks_erp-sync.md
         items:
+        - name: Connecteur ERPNext
+          href: ../../src-fr-ca/pdmpublishersolidworks_erpnext-connector.md
         - name: Créer un connecteur ERP personnalisé
           href: ../../src-fr-ca/pdmpublishersolidworks_erp-connector.md
       - name: Publisher Macros

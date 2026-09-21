@@ -9,6 +9,9 @@ ms.topic: how-to
 
 Verwenden Sie den Vertrag in `PDMPublisher.ERPExtension.dll`, um einen Konnektor in C# zu erstellen. Referenzieren Sie die DLL aus derselben PDMPublisher-Version, die den Konnektor laden wird. Kopieren Sie die Vertragstypen nicht in Ihr Projekt und verteilen Sie keine weitere Kopie von `PDMPublisher.ERPExtension.dll` mit dem Konnektor. Der Host stellt sie bereit.
 
+> [!TIP]
+> Informationen zur Installation des von Blue Byte Systems bereitgestellten Konnektors finden Sie unter [ERPNext-Konnektor](pdmpublishersolidworks_erpnext-connector.md).
+
 <a id="project-requirements"></a>
 ## Projektanforderungen
 
