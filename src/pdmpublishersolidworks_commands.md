@@ -1,7 +1,7 @@
 ---
 title: Commands | PDMPublisher for SOLIDWORKS
 description: Find every PDMPublisher command in the SOLIDWORKS CommandManager and understand which document types support it.
-ms.date: 09/25/2026
+ms.date: 09/28/2026
 ms.topic: overview
 ---
 
@@ -11,7 +11,7 @@ PDMPublisher commands are available from the **PDMPublisher** tab in the SOLIDWO
 
 ![PDMPublisher CommandManager and Help task pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
 
-The screenshot shows the current CommandManager layout in SOLIDWORKS 2026 SP3.2. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
+The screenshot shows the CommandManager and Help task pane introduced in version 2026.09.08. The command tables below describe the current version, including ERP Sync and BOM Manager. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
 
 | Group | Command | Purpose |
 | --- | --- | --- |
@@ -19,6 +19,9 @@ The screenshot shows the current CommandManager layout in SOLIDWORKS 2026 SP3.2.
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Review and edit custom, configuration-specific, and cut-list properties across a document and its references. |
 | Utilities | [Translate](pdmpublishersolidworks_translate.md) | Reserved for a future translation workflow. It is not available yet. |
 | Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
+| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Review and push selected part, assembly, drawing, SOLIDWORKS BOM table, or CSV data through the active ERP connector. |
+| Integration | Publisher Macros | Reserved for a future integration workflow. It is not available yet. |
+| Bill of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Review, group, edit, and export assembly BOM rows using reusable column templates. |
 | Publishing | [Publish](pdmpublishersolidworks-publish.md) | Configure and run a publishing job for the active document. |
 | Publishing | [Annotations](pdmpublishersolidworks_annotations.md) | Edit the annotations stored in a Publish profile. |
 | Publishing | [Conditions](conditions_solidworks.md) | Edit the conditions stored in a Publish profile. |
@@ -36,6 +39,9 @@ The screenshot shows the current CommandManager layout in SOLIDWORKS 2026 SP3.2.
 | **Property Doctor** | Opens a property grid for the active document and supported references. | Selects a saved Property Doctor profile. |
 | **Translate** | Currently disabled because the translation workflow is not yet available. | None. |
 | **Clone Tree** | Opens the copy/package workflow for the active document set. | Selects a saved Clone Tree profile. |
+| **ERP Sync** | Opens the ERP Sync review window for the active saved part, assembly, or drawing. | None. Select the feature tree, a SOLIDWORKS BOM table, or a CSV file inside the ERP Sync window. |
+| **Publisher Macros** | Currently disabled because the workflow is not yet available. | None. |
+| **BOM Manager** | Opens the BOM review and editing workflow for the active assembly. | None. |
 | **Publish** | Opens or runs the publishing workflow with the active Publish profile. | Selects a saved Publish profile. |
 | **Annotations** | Edits annotations in the active Publish profile. | None. |
 | **Conditions** | Edits conditions in the active Publish profile. | None. |
@@ -53,7 +59,7 @@ For a component selected in an assembly, the right-click menu also exposes **Pro
 
 ## When a Command Is Available
 
-Document commands require an active part, assembly, or drawing. Save the active document before using workflows that must resolve file paths or references. Property Doctor and Clone Tree can wait while SOLIDWORKS finishes loading references; changing the active document during that preparation cancels the operation.
+Document commands require an active part, assembly, or drawing. Save the active document before using workflows that must resolve file paths or references. ERP Sync requires a saved document and an active connector; BOM Manager requires an active assembly. Property Doctor and Clone Tree can wait while SOLIDWORKS finishes loading references; changing the active document during that preparation cancels the operation.
 
 > [!NOTE]
 > The **PDMPublisher** CommandManager tab is recreated for parts, assemblies, and drawings. If the tab is hidden, enable the add-in and right-click the CommandManager tab area to show **PDMPublisher**.

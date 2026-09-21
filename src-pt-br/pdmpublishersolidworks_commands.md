@@ -1,7 +1,7 @@
 ---
 title: "Comandos PDMPublisher para SOLIDWORKS"
 description: "Encontre todos os comandos PDMPublisher no SOLIDWORKS CommandManager e entenda quais tipos de documentos suportam."
-ms.date: 09/25/2026
+ms.date: 09/28/2026
 ms.topic: overview
 ---
 
@@ -10,7 +10,7 @@ ms.topic: overview
 Os comandos PDMPublisher estão disponíveis na guia **PDMPublisher** no menu SOLIDWORKS CommandManager e no menu **Tools > PDMPublisher**. O painel de tarefas agora é um navegador de documentação; os comandos de publicação e utilitário não são mais executados dentro do painel.
 
 ![PDMPublisher CommandManager e painel de tarefas de ajuda em SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
-A imagem mostra o layout atual do CommandManager no SOLIDWORKS 2026 SP3.2. Os comandos são executados no documento SOLIDWORKS ativo. O painel de tarefas de Ajuda à direita fornece links para a documentação e não executa os comandos.
+A imagem mostra o CommandManager e o painel de Ajuda introduzidos na versão 2026.09.08. As tabelas abaixo descrevem a versão atual, incluindo ERP Sync e BOM Manager. Os comandos são executados no documento SOLIDWORKS ativo. O painel de tarefas de Ajuda à direita fornece links para a documentação e não executa os comandos.
 
 | Grupo | Comando | Objecto |
 | --- | --- | --- |
@@ -18,6 +18,9 @@ A imagem mostra o layout atual do CommandManager no SOLIDWORKS 2026 SP3.2. Os co
 | Utilitários | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Revise e edite propriedades personalizadas, específicas para configuração e lista de recortes em um documento e suas referências. |
 | Utilitários | [Traduzir](pdmpublishersolidworks_translate.md) | Reservado para um futuro fluxo de trabalho de tradução. Ainda não está disponível. |
 | Utilitários | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copie um documento definido com nomes de arquivos e destinos, arquivos companheiros opcionais, manipulação de revisão PDM e saída ZIP. |
+| Integração | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Revise e envie dados selecionados de peças, montagens, desenhos, tabelas de BOM do SOLIDWORKS ou arquivos CSV por meio do conector ERP ativo. |
+| Integração | Publisher Macros | Reservado para um futuro fluxo de integração. Ainda não está disponível. |
+| Lista de materiais | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Revise, agrupe, edite e exporte linhas da lista de materiais da montagem usando modelos de colunas reutilizáveis. |
 | Publicação | [Publicar](pdmpublishersolidworks-publish.md) | Configurar e executar uma tarefa de publicação para o documento ativo. |
 | Publicação | [Anotações](pdmpublishersolidworks_annotations.md) | Edite as anotações armazenadas em um perfil de publicação. |
 | Publicação | [Condições](conditions_solidworks.md) | Edite as condições armazenadas em um perfil de publicação. |
@@ -36,6 +39,9 @@ A imagem mostra o layout atual do CommandManager no SOLIDWORKS 2026 SP3.2. Os co
 | **Property Doctor** | Abre uma grade de propriedades para o documento ativo e referências suportadas. | Seleciona um perfil Property Doctor salvo. |
 | **Translate** | Atualmente desativado porque o fluxo de trabalho de tradução ainda não está disponível. | Nenhuma. |
 | **Clone Tree** | Abre o fluxo de trabalho de cópia/pacote para o conjunto de documentos ativos. | Seleciona um perfil Clone Tree salvo. |
+| **ERP Sync** | Abre a janela de revisão do ERP Sync para a peça, montagem ou desenho ativo salvo. | Nenhuma. Selecione a árvore de recursos, uma tabela de BOM do SOLIDWORKS ou um arquivo CSV dentro da janela ERP Sync. |
+| **Publisher Macros** | Atualmente desativado porque o fluxo ainda não está disponível. | Nenhuma. |
+| **BOM Manager** | Abre o fluxo de revisão e edição da lista de materiais para a montagem ativa. | Nenhuma. |
 | **Publish** | Abre ou executa o fluxo de trabalho de publicação com o perfil Publish ativo. | Selecciona um perfil de publicação gravado. |
 | **Annotations** | Edita anotações no perfil de publicação ativo. | Nenhuma. |
 | **Conditions** | Edita as condições no perfil de publicação ativo. | Nenhuma. |
@@ -55,7 +61,7 @@ Para um componente selecionado em um conjunto, o menu do botão direito também 
 <a id="when-a-command-is-available"></a>
 ## Quando um comando está disponível
 
-Os comandos do documento requerem uma parte ativa, montagem ou desenho. Salve o documento ativo antes de usar fluxos de trabalho que devem resolver caminhos ou referências de arquivos. Property Doctor e Clone Tree podem esperar enquanto SOLIDWORKS termina de carregar referências; alterar o documento ativo durante essa preparação cancela a operação.
+Os comandos do documento exigem uma peça, montagem ou desenho ativo. Salve o documento ativo antes de usar fluxos de trabalho que precisam resolver caminhos ou referências de arquivos. O ERP Sync exige um documento salvo e um conector ativo; o BOM Manager exige uma montagem ativa. Property Doctor e Clone Tree podem esperar enquanto o SOLIDWORKS termina de carregar referências; alterar o documento ativo durante essa preparação cancela a operação.
 
 > [!NOTE]
 > A guia **PDMPublisher** CommandManager é recriada para peças, conjuntos e desenhos. Se a aba estiver escondida, habilite o suplemento e clique com o botão direito do mouse na área da aba CommandManager para mostrar **PDMPublisher**.
