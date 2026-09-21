@@ -46,8 +46,6 @@ PDMPublisher is one product with one code base, available in two versions.
 
 PDMPublisher for SOLIDWORKS is registered as a SOLIDWORKS Partner Solution add-in and appears under **Partner Solution Add-Ins** in the SOLIDWORKS **Add-Ins** dialog.
 
-![PDMPublisher for SOLIDWORKS listed under Partner Solution Add-Ins](/images/pdmpublisher/screenshots/solidworks-partner-solution-add-in.png)
-
 - Runs as a SOLIDWORKS add-in
 - Use it for exporting directly from the SOLIDWORKS desktop application
 - Best when users need an interactive publishing workflow or when using SOLIDWORKS without PDM Professional
