@@ -1,7 +1,7 @@
 ---
 title: "Conector ERPNext | PDMPublisher para SOLIDWORKS"
 description: "Instale e configure o conector ERPNext oficial para sincronizar itens, propriedades, arquivos, números de peça gerados e listas de materiais provisórias do SOLIDWORKS."
-ms.date: 09/27/2026
+ms.date: 09/28/2026
 ms.topic: how-to
 ---
 
@@ -88,7 +88,7 @@ Use nomes de campos do ERPNext em vez de rótulos. Os mapeamentos booleanos acei
 
 Depois de selecionar **Push**, o PDMPublisher bloqueia a janela de revisão e mostra o progresso enquanto os Items marcados são sincronizados. Mantenha o SOLIDWORKS aberto até a conclusão da operação.
 
-![Sincronização do ERPNext em andamento](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-progress-20260927.png)
+![Sincronização do ERPNext em andamento](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-progress-20260928.png)
 
 Quando a sincronização termina, o **ERP Sync report** mostra o resumo da execução e uma linha para cada Item marcado.
 
