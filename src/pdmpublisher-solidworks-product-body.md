@@ -736,7 +736,7 @@ _enableSearch: false
   </ul>
   <h2>Shared resources and upcoming integrations</h2>
   <p>The searchable Settings dialog also manages the PDM vault connection, display language, drawing search folders, reusable SQL Server sources, and named advanced formulas. These shared resources are available to supported publishing and document utilities.</p>
-  <p><strong>ERP Sync</strong> synchronizes checked SOLIDWORKS items, properties, and BOM relationships through an installed ERP connector. <strong>Publisher Macros</strong> provides editable VBA examples for automating PDMPublisher commands. <strong>Translate</strong> remains planned.</p>
+  <p><strong>ERP Sync</strong> pushes checked SOLIDWORKS items, properties, and BOM relationships through an installed connector and pulls mapped ERP properties through a required review diff. <strong>Publisher Macros</strong> provides editable VBA examples for automating PDMPublisher commands. <strong>Translate</strong> remains planned.</p>
   <h2>Why teams use it</h2>
   <p>Engineering teams often need the same outputs again and again: a PDF for review, a DXF for sheet metal, a STEP file for a supplier, or a drawing package for manufacturing. PDMPublisher for SOLIDWORKS turns those repeated export routines into profile-based actions that are easier to run and easier to standardize.</p>
   <p>The result is less manual saving, fewer missed configurations or sheets, and a cleaner handoff from design work to the teams that depend on accurate published files.</p>

@@ -107,9 +107,26 @@ The recommended base class also supports these optional capabilities:
 | ERP-generated numbers | Advertise `ErpCapabilities.PartNumberGeneration`, override `GetGeneratedPartNumberProperty`, and return confirmed `GeneratedPartNumber` entries in `PushResult`. |
 | Selective synchronization | Advertise `ErpCapabilities.SelectiveSync` and respect `ErpSyncOptions.SyncProperties` and `CreateItems`. |
 | BOM synchronization | Advertise `ErpCapabilities.BomSync` and process only the explicit relationships in `ModelDocData.Boms` when `SyncBom` is selected. |
+| Pull with preview | Implement `IErpPullPreview` and advertise `ErpCapabilities.PullPreview`. Return a read-only plan, then revalidate that exact plan before the host writes locally. |
 | Source-column picker | Mark a settings property with `[ErpSourceColumn]`. |
 | Property-mapping editor | Use `List<PropertyMapping>` and mark it with `[ErpPropertyMappings]`. |
 | Cleanup | Override `Dispose()` to release HTTP clients or other connector-owned resources. |
+
+## Add Pull-with-preview support
+
+Pull connectors implement the optional interface below. `PreviewPullAsync` reads ERP values but must not write to ERP, reserve numbers, or change SOLIDWORKS. `ValidatePullAsync` must re-read or otherwise verify the exact issued plan immediately before local changes are applied.
+
+```csharp
+public interface IErpPullPreview
+{
+    Task<ErpPullPlan> PreviewPullAsync(ModelDocData data);
+    Task<bool> ValidatePullAsync(ErpPullPlan plan);
+}
+```
+
+Return one `ErpPullProperty` for each mapped field and input row. Preserve the one-based `ItemNumber` and `SourceIdentity` supplied by the host. Set `IdentityProperty` to the SOLIDWORKS property or supported built-in column used to match the ERP item. Each result identifies the destination `Property`, source `ErpField`, invariant-text `Value`, and optional `SkipReason`.
+
+A missing or null ERP value should be skipped. An explicit empty string can clear a custom property unless the connector's settings say to skip empty values. The host independently rejects built-in or calculated destinations and changes to the item-matching property. Validation must reject stale, foreign, or previously consumed plans and must never write to ERP. The host owns the diff, final local rechecks, SOLIDWORKS property writes, and document save flags.
 
 ## Data supplied to the connector
 

@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 09/30/2026
+ms.date: 09/31/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,22 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.30` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.31` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.31
+*Applies to **SOLIDWORKS Add-in***
+
+- Added ERP Pull with a required [review diff](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) before mapped ERP properties are applied to SOLIDWORKS.
+- Added Pull snapshot revalidation, explicit skip reasons, unchanged-value display, and guarded handling for read-only, built-in, calculated, identity, missing, and null values.
+- Added `IErpPullPreview` and `ErpCapabilities.PullPreview` for custom connector implementations.
+- Added **Mark property for deletion (visible rows)** to the [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) column right-click menu.
+- Included small reliability and usability fixes.
 
 ## 2026.09.30
 *Applies to **SOLIDWORKS Add-in***

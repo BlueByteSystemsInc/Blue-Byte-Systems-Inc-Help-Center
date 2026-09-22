@@ -1,18 +1,15 @@
 ---
 title: "ERP Sync | PDMPublisher pour SOLIDWORKS"
-description: "Configurez ERP Sync et envoyez les articles, propriétés et nomenclatures SOLIDWORKS au moyen d'un connecteur ERP installé."
-ms.date: 09/28/2026
+description: "Configurer ERP Sync pour envoyer des données à l'ERP et importer les propriétés ERP mappées dans SOLIDWORKS après l'examen des différences."
+ms.date: 09/31/2026
 ms.topic: conceptual
 ---
 
 # ERP Sync
 
-ERP Sync est activé dans PDMPublisher pour SOLIDWORKS. Il envoie les données sélectionnées des documents, composants, propriétés et nomenclatures SOLIDWORKS à un système ERP au moyen d'un connecteur installé.
+ERP Sync échange les données SOLIDWORKS sélectionnées avec un système ERP au moyen d'un connecteur installé. Push envoie les articles, propriétés, fichiers et relations de nomenclature prises en charge à l'ERP. Pull affiche un aperçu des propriétés ERP mappées avant d'appliquer les changements approuvés dans SOLIDWORKS.
 
-Ouvrez **PDMPublisher > ERP Sync** pour examiner et envoyer les données du document actif. Ouvrez **PDMPublisher > Settings > ERP Sync** pour choisir le connecteur et configurer la vue de nomenclature par défaut.
-
-> [!NOTE]
-> ERP Sync prend actuellement en charge **Push**. **Pull** est visible dans la fenêtre, mais demeure désactivé jusqu'à ce que cette fonction soit prise en charge.
+Ouvrez **PDMPublisher > ERP Sync** pour préparer une opération Push ou Pull. Ouvrez **PDMPublisher > Settings > ERP Sync** pour choisir le connecteur et configurer la vue de nomenclature par défaut. Pull est disponible uniquement lorsque le connecteur sélectionné prend en charge Pull avec aperçu.
 
 <a id="configure-erp-sync"></a>
 ## Configurer ERP Sync
@@ -119,6 +116,25 @@ Pour activer l'envoi d'une nomenclature depuis un CSV, fournissez des colonnes r
 
 L'instantané contient des données brutes capturées à partir de SOLIDWORKS; un connecteur ne reçoit pas d'objets COM SOLIDWORKS. Les propriétés personnalisées racine sont fusionnées avec les propriétés de configuration active, et les valeurs de configuration ont priorité. La masse est fournie en kilogrammes.
 
+<a id="pull-erp-properties-into-solidworks"></a>
+## Importer les propriétés ERP dans SOLIDWORKS
+
+Pull utilise les mappages de propriétés du connecteur en sens inverse : le champ ERP devient la source et la propriété personnalisée SOLIDWORKS mappée devient la destination.
+
+1. Sélectionnez une source provenant de l'arborescence des fonctions ou d'une table de nomenclature SOLIDWORKS. Pull ne peut pas écrire dans une source CSV.
+2. Cochez les lignes dont vous voulez comparer les propriétés mappées.
+3. Sélectionnez un connecteur qui prend en charge Pull avec aperçu, puis sélectionnez **Pull**.
+4. Examinez chaque valeur proposée ou ignorée dans **Review ERP pull**.
+5. Activez **Show unchanged** si vous voulez aussi afficher les valeurs déjà identiques.
+6. Sélectionnez **Apply to SOLIDWORKS** pour valider de nouveau et écrire les valeurs proposées, ou **Cancel** pour ne rien écrire.
+7. Enregistrez les documents SOLIDWORKS modifiés.
+
+![Examen des différences ERP Pull avant d'appliquer les propriétés dans SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-pull-review-20260931.png)
+
+La grille utilise le vert pour **Added**, le jaune pour **Changed** et le rouge pour **Deleted**. Chaque cellule affiche la valeur proposée ou une raison explicite pour laquelle elle est ignorée. Les colonnes intégrées et calculées, la propriété servant à associer l'article ERP, les documents en lecture seule, les champs ERP absents ou nuls et les destinations non prises en charge ne sont pas écrasés.
+
+Aucune donnée n'est écrite pendant l'examen des différences. Après l'approbation, PDMPublisher demande au connecteur de valider de nouveau le même instantané ERP et vérifie encore l'identité et les valeurs du document local. Si les données ERP ou la cible SOLIDWORKS ont changé, l'application est interrompue et vous devez produire un nouvel aperçu. Pull modifie uniquement les propriétés; il ne change pas la structure de l'assemblage ou de la nomenclature, ne télécharge pas de pièces jointes, ne crée pas d'articles ERP et n'enregistre pas automatiquement les documents SOLIDWORKS.
+
 ## Développement de connecteurs
 
-Pour créer et charger votre propre intégration C#, consultez [Créer un connecteur ERP personnalisé](pdmpublishersolidworks_erp-connector.md).
+Pour créer et charger votre propre intégration C#, y compris la prise en charge de Pull avec aperçu, consultez [Créer un connecteur ERP personnalisé](pdmpublishersolidworks_erp-connector.md).

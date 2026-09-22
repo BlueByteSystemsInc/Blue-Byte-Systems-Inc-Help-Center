@@ -19,7 +19,7 @@ The screenshot shows the current CommandManager, including Publisher Macros, ERP
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Review and edit custom, configuration-specific, and cut-list properties across a document and its references. |
 | Utilities | [Translate](pdmpublishersolidworks_translate.md) | Reserved for a future translation workflow. It is not available yet. |
 | Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
-| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Review and push selected part, assembly, drawing, SOLIDWORKS BOM table, or CSV data through the active ERP connector. |
+| Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Push selected SOLIDWORKS or CSV data to ERP and review mapped ERP properties before pulling them into SOLIDWORKS. |
 | Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Edit and run VBA examples that call Save As New, Property Doctor, Clone Tree, and ERP Sync through the loaded add-in. |
 | Bill of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Review, group, edit, and export assembly BOM rows using reusable column templates. |
 | Publishing | [Publish](pdmpublishersolidworks-publish.md) | Configure and run a publishing job for the active document. |

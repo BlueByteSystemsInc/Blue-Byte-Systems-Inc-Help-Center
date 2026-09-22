@@ -18,7 +18,7 @@ La capture d'écran montre le CommandManager actuel, y compris Publisher Macros,
 | Services publics | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Examiner et modifier les propriétés personnalisées, spécifiques à la configuration et les propriétés de la liste de découpe sur un document et ses références. |
 | Services publics | [Traduit par le journal] | Réservé pour un futur workflow de traduction. Il n'est pas encore disponible. |
 | Services publics | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copier un ensemble de documents avec des noms et des destinations par fichier, des fichiers complémentaires optionnels, la gestion de la révision PDM et la sortie ZIP. |
-| Intégration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Examiner et envoyer les données sélectionnées d'une pièce, d'un assemblage, d'un dessin, d'une table de nomenclature SOLIDWORKS ou d'un fichier CSV au moyen du connecteur ERP actif. |
+| Intégration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Envoyer les données SOLIDWORKS ou CSV sélectionnées à l'ERP et examiner les propriétés ERP mappées avant de les importer dans SOLIDWORKS. |
 | Intégration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Modifier et exécuter des exemples VBA qui appellent Save As New, Property Doctor, Clone Tree et ERP Sync au moyen du complément chargé. |
 | Nomenclature | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Examiner, regrouper, modifier et exporter les lignes d'une nomenclature d'assemblage au moyen de modèles de colonnes réutilisables. |
 | Édition | [Publier](pdmpublishersolidworks-publish.md) | Configurer et exécuter un travail de publication pour le document actif. |

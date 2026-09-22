@@ -105,13 +105,15 @@ Call publisher.ERPSync( _
 | Paramètre | Valeur prise en charge |
 | --- | --- |
 | `connectorName` | Nom unique d'un connecteur installé dont les paramètres de connexion sont enregistrés. |
-| `direction` | `Push`. `Pull` est réservé et retourne actuellement une erreur d'opération non prise en charge. |
+| `direction` | `Push` ou `Pull`. Pull exige un connecteur avec prise en charge de l'aperçu et doit s'exécuter en mode interactif (`silent = False`). |
 | `sourceType` | `FeatureTree`, `AssemblyBOM`, `DrawingBOM` ou `CSV`. Les valeurs ne sont pas sensibles à la casse. |
 | `sourcePath` | Chemin d'un document natif, ou valeur vide pour utiliser le document actif. CSV exige toujours un chemin et ne nécessite pas de document SOLIDWORKS ouvert. |
 | `bomTableName` | Nom de fonction de nomenclature, libellé complet de table/configuration ou ID stable de table. Il peut être vide uniquement lorsqu'une seule table/configuration est disponible. |
 | `itemTypes` | `All`, ou une liste séparée par des virgules parmi `Drawings`, `Parts`, `Assemblies`, `WeldmentCutListItems`, `SheetMetalCutListItems` et `PhantomItems`. CSV exige `All`. |
 | `operations` | Liste séparée par des virgules parmi `Properties`, `CreateItems` et `BOM`. `CreateItems` synchronise aussi les propriétés; `BOM` exige une source ayant une hiérarchie valide. |
 | `silent` | `False` ouvre ERP Sync pour révision. `True` synchronise directement les lignes correspondantes, sous réserve des limites de licence et des règles d'exclusion enregistrées. |
+
+Pull ne peut pas s'exécuter silencieusement, car PDMPublisher exige que l'utilisateur examine les différences avant toute modification d'une propriété SOLIDWORKS.
 
 Pour les documents natifs, les fichiers ouverts par l'automatisation demeurent accessibles dans SOLIDWORKS. Les numéros de pièce produits par l'ERP peuvent laisser des documents modifiés qui doivent être enregistrés. L'exécution silencieuse utilise le connecteur nommé sans modifier la sélection globale du connecteur.
 

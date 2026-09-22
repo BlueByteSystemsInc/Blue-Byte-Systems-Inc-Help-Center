@@ -184,7 +184,7 @@ Les ressources partagées fournissent une configuration réutilisable aux servic
 <a id="planned-features"></a>
 ## Intégrations et fonctionnalités planifiées
 
-[ERP Sync](pdmpublishersolidworks_erp-sync.md) est disponible pour une utilisation en production lorsqu'un connecteur est installé. Il peut synchroniser les articles cochés, les propriétés mappées, les numéros de pièce créés par l'ERP et les relations de nomenclature sélectionnées. [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) permet maintenant de modifier et d'exécuter des exemples d'automatisation VBA. [Translate](pdmpublishersolidworks_translate.md) demeure planifié.
+[ERP Sync](pdmpublishersolidworks_erp-sync.md) est disponible pour une utilisation en production lorsqu'un connecteur est installé. Il peut envoyer les articles cochés, les propriétés mappées, les numéros de pièce créés par l'ERP et les relations de nomenclature sélectionnées, puis importer les propriétés ERP mappées après l'examen obligatoire des différences. [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) permet maintenant de modifier et d'exécuter des exemples d'automatisation VBA. [Translate](pdmpublishersolidworks_translate.md) demeure planifié.
 
 ![Page de paramètres de traduction planifiée](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
 ![Page de paramètres ERP Sync activée](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-settings-20260920.png)

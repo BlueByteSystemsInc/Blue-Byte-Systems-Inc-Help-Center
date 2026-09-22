@@ -1,7 +1,7 @@
 ---
 title: "Connecteur ERPNext | PDMPublisher pour SOLIDWORKS"
-description: "Installez et configurez le connecteur ERPNext officiel pour synchroniser les articles, propriétés, fichiers, numéros de pièce et nomenclatures provisoires de SOLIDWORKS."
-ms.date: 09/28/2026
+description: "Configurer le connecteur ERPNext officiel pour envoyer les données SOLIDWORKS et importer les propriétés ERP mappées après l'examen des différences."
+ms.date: 09/31/2026
 ms.topic: how-to
 ---
 
@@ -12,7 +12,7 @@ Le connecteur ERPNext est un connecteur officiel de Blue Byte Systems offert dan
 ![Connecteur ERPNext officiel et ses paramètres](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-connector-settings-20260920.png)
 
 > [!NOTE]
-> Le connecteur fonctionne dans un seul sens. **Pull** n'est pas disponible. Il ne crée pas de mouvements de stock, de bons de commande, de définitions de champs personnalisés, de nomenclatures soumises ou de nomenclatures actives par défaut.
+> Push et Pull ne créent pas de mouvements de stock, de bons de commande, de définitions de champs personnalisés, de nomenclatures soumises ou de nomenclatures actives par défaut. Pull modifie uniquement les propriétés SOLIDWORKS mappées.
 
 ## Préparer ERPNext
 
@@ -73,6 +73,15 @@ Utilisez un site de test ERPNext ou une société hors production pour valider l
 La découverte lit les métadonnées Item sans lire les valeurs d'articles ni écrire d'enregistrements. Les cibles prises en charge sont `item_name`, `description`, `is_stock_item`, `is_sales_item`, `is_purchase_item` et les champs scalaires modifiables `custom_*`. Les tables et les champs masqués, en lecture seule ou non pris en charge sont exclus.
 
 Utilisez les noms de champs ERPNext plutôt que leurs étiquettes. Les mappages booléens acceptent `True/False`, `Yes/No` ou `1/0`. Les champs numériques exigent un texte numérique invariant comme `12.5`. Les noms de propriétés sont comparés sans tenir compte de la casse, mais les codes d'article sont comparés exactement.
+
+<a id="pull-mapped-properties"></a>
+## Importer les propriétés mappées
+
+Sélectionnez les lignes ERP Sync voulues et choisissez **Pull**. Le connecteur lit les articles ERPNext correspondants et utilise chaque mappage de propriété en sens inverse. Le champ ERP devient la source et sa propriété personnalisée SOLIDWORKS mappée devient la destination.
+
+Examinez les valeurs ajoutées, modifiées, inchangées et ignorées dans la grille des différences avant de sélectionner **Apply to SOLIDWORKS**. Pull n'écrase jamais la propriété servant à associer le code d'article ni les colonnes intégrées ou calculées. Les valeurs ERP absentes ou nulles conservent la valeur locale; lorsque **Skip empty values** est activé, le texte ERP vide est aussi ignoré. Les documents sont marqués comme modifiés et doivent être enregistrés manuellement.
+
+Consultez [Importer les propriétés ERP dans SOLIDWORKS](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) pour connaître le flux complet de révision et de validation.
 
 ## Envoyer les articles et propriétés
 

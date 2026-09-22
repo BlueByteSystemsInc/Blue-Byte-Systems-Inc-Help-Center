@@ -1,18 +1,15 @@
 ---
 title: ERP Sync | PDMPublisher for SOLIDWORKS
-description: Configure ERP Sync and push SOLIDWORKS items, properties, and BOMs through an installed ERP connector.
-ms.date: 09/28/2026
+description: Configure ERP Sync to push data to ERP and pull mapped ERP properties into SOLIDWORKS with a reviewable diff.
+ms.date: 09/31/2026
 ms.topic: conceptual
 ---
 
 # ERP Sync
 
-ERP Sync is enabled in PDMPublisher for SOLIDWORKS. It sends selected SOLIDWORKS document, component, property, and BOM data to an ERP system through an installed ERP connector.
+ERP Sync exchanges selected SOLIDWORKS data with an ERP system through an installed connector. Push sends items, properties, files, and supported BOM relationships to ERP. Pull previews mapped ERP property values before applying approved changes to SOLIDWORKS.
 
-Open **PDMPublisher > ERP Sync** to review and push the active document. Open **PDMPublisher > Settings > ERP Sync** to choose the connector and configure the default BOM view.
-
-> [!NOTE]
-> ERP Sync currently supports **Push**. **Pull** is visible in the window but remains disabled until a pull contract is implemented.
+Open **PDMPublisher > ERP Sync** to prepare a Push or Pull operation. Open **PDMPublisher > Settings > ERP Sync** to choose the connector and configure the default BOM view. Pull is available only when the selected connector supports Pull with preview.
 
 ## Configure ERP Sync
 
@@ -118,6 +115,24 @@ To enable BOM Push from CSV, provide recognized item-code and parent columns. Ea
 
 The snapshot contains plain data captured from SOLIDWORKS; a connector does not receive SOLIDWORKS COM objects. Root custom properties are merged with active-configuration properties, and configuration values take precedence. Mass is supplied in kilograms.
 
+## Pull ERP properties into SOLIDWORKS
+
+Pull uses the connector's property mappings in reverse: the ERP field is the source and the mapped SOLIDWORKS custom property is the destination.
+
+1. Select a SOLIDWORKS feature-tree or BOM-table source. Pull cannot write to a CSV source.
+2. Check the rows whose mapped properties you want to compare.
+3. Select a connector that supports Pull with preview, then select **Pull**.
+4. Review every proposed or skipped value in **Review ERP pull**.
+5. Optionally enable **Show unchanged** to include values that already match.
+6. Select **Apply to SOLIDWORKS** to revalidate and write the proposed values, or **Cancel** to write nothing.
+7. Save the modified SOLIDWORKS documents.
+
+![Review ERP pull diff before applying property changes to SOLIDWORKS](/images/pdmpublisher/solidworks/erp-pull-review-20260931.png)
+
+The diff uses green for **Added**, yellow for **Changed**, and red for **Deleted**. Each cell shows the proposed value or an explicit skip reason. Built-in and calculated columns, the property used to match the ERP item, read-only documents, missing or null ERP fields, and unsupported targets are not overwritten.
+
+Nothing is written while the diff is being reviewed. After approval, PDMPublisher asks the connector to validate the same ERP snapshot again and rechecks local document identity and values. If ERP data or the SOLIDWORKS target changed, the apply is stopped and you must preview again. Pull changes properties only; it does not change assembly or BOM structure, download attachments, create ERP items, or save SOLIDWORKS documents automatically.
+
 ## Connector development
 
-To build and load your own C# integration, see [Create a Custom ERP Connector](pdmpublishersolidworks_erp-connector.md).
+To build and load your own C# integration, including Pull-with-preview support, see [Create a Custom ERP Connector](pdmpublishersolidworks_erp-connector.md).

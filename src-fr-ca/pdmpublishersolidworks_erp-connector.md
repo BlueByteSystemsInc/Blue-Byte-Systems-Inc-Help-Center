@@ -110,9 +110,27 @@ La classe de base recommandée prend également en charge ces capacités optionn
 | Numéros générés par l'ERP | Annoncez `ErpCapabilities.PartNumberGeneration`, remplacez `GetGeneratedPartNumberProperty` et retournez les entrées `GeneratedPartNumber` confirmées dans `PushResult`. |
 | Synchronisation sélective | Annoncez `ErpCapabilities.SelectiveSync` et respectez `ErpSyncOptions.SyncProperties` et `CreateItems`. |
 | Synchronisation BOM | Annoncez `ErpCapabilities.BomSync` et ne traitez que les relations explicites dans `ModelDocData.Boms` lorsque `SyncBom` est sélectionné. |
+| Pull avec aperçu | Implémentez `IErpPullPreview` et annoncez `ErpCapabilities.PullPreview`. Retournez un plan en lecture seule, puis validez de nouveau ce plan exact avant que l'hôte écrive localement. |
 | Sélecteur de colonne source | Marquez une propriété de paramètres avec `[ErpSourceColumn]`. |
 | Éditeur de mappage des propriétés | Utilisez `List<PropertyMapping>` et marquez-la avec `[ErpPropertyMappings]`. |
 | Nettoyage | Remplacez `Dispose()` pour libérer les clients HTTP ou les autres ressources appartenant au connecteur. |
+
+<a id="add-pull-preview-support"></a>
+## Ajouter la prise en charge de Pull avec aperçu
+
+Les connecteurs Pull implémentent l'interface facultative ci-dessous. `PreviewPullAsync` lit les valeurs ERP, mais ne doit pas écrire dans l'ERP, réserver des numéros ni modifier SOLIDWORKS. `ValidatePullAsync` doit relire ou valider le plan exact qui a été produit, immédiatement avant l'application des changements locaux.
+
+```csharp
+public interface IErpPullPreview
+{
+    Task<ErpPullPlan> PreviewPullAsync(ModelDocData data);
+    Task<bool> ValidatePullAsync(ErpPullPlan plan);
+}
+```
+
+Retournez un `ErpPullProperty` pour chaque champ mappé et chaque ligne d'entrée. Conservez les valeurs `ItemNumber` sur base un et `SourceIdentity` fournies par l'hôte. Définissez `IdentityProperty` comme la propriété SOLIDWORKS ou la colonne intégrée prise en charge qui sert à associer l'article ERP. Chaque résultat indique la `Property` de destination, le champ source `ErpField`, la `Value` sous forme de texte invariant et une raison facultative `SkipReason`.
+
+Une valeur ERP absente ou nulle doit être ignorée. Une chaîne vide explicite peut vider une propriété personnalisée, sauf si les paramètres du connecteur demandent d'ignorer les valeurs vides. L'hôte refuse indépendamment les destinations intégrées ou calculées et toute modification de la propriété servant à associer l'article. La validation doit refuser les plans périmés, étrangers ou déjà consommés et ne doit jamais écrire dans l'ERP. L'hôte gère la grille des différences, les dernières vérifications locales, l'écriture des propriétés SOLIDWORKS et les indicateurs d'enregistrement des documents.
 
 <a id="data-supplied-to-the-connector"></a>
 ## Données fournies au connecteur

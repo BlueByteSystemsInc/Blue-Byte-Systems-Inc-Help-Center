@@ -100,13 +100,15 @@ Call publisher.ERPSync( _
 | Parameter | Supported value |
 | --- | --- |
 | `connectorName` | A unique installed connector name with saved connection settings. |
-| `direction` | `Push`. `Pull` is reserved and currently returns an unsupported-operation error. |
+| `direction` | `Push` or `Pull`. Pull requires a connector with preview support and must run interactively (`silent = False`). |
 | `sourceType` | `FeatureTree`, `AssemblyBOM`, `DrawingBOM`, or `CSV`. Values are case-insensitive. |
 | `sourcePath` | A native document path, or blank to use the active document. CSV always requires a file path and does not require an open SOLIDWORKS document. |
 | `bomTableName` | A BOM feature name, full displayed table/configuration label, or stable table ID. It can be blank only when exactly one table/configuration is available. |
 | `itemTypes` | `All`, or a comma-separated list of `Drawings`, `Parts`, `Assemblies`, `WeldmentCutListItems`, `SheetMetalCutListItems`, and `PhantomItems`. CSV requires `All`. |
 | `operations` | A comma-separated list of `Properties`, `CreateItems`, and `BOM`. `CreateItems` also synchronizes properties; `BOM` requires a source with valid hierarchy. |
 | `silent` | `False` opens ERP Sync for review. `True` directly synchronizes matching rows, subject to license limits and saved ignore rules. |
+
+Pull cannot run silently because PDMPublisher requires the user to review the diff before any SOLIDWORKS property is changed.
 
 For native documents, files opened by automation remain available in SOLIDWORKS. ERP-generated part numbers can leave documents modified and requiring a save. Silent execution uses the named connector without changing the global connector selection.
 

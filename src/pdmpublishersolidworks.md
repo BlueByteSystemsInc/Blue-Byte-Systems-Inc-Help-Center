@@ -188,7 +188,7 @@ Shared resources provide reusable configuration to supported utilities and publi
 
 ## Integrations and Planned Features
 
-[ERP Sync](pdmpublishersolidworks_erp-sync.md) is available for production use with an installed connector. It can synchronize checked items, mapped properties, ERP-created part numbers, and selected BOM relationships. [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) is also available for editing and running VBA automation examples. [Translate](pdmpublishersolidworks_translate.md) remains planned.
+[ERP Sync](pdmpublishersolidworks_erp-sync.md) is available for production use with an installed connector. It can push checked items, mapped properties, ERP-created part numbers, and selected BOM relationships, and pull mapped ERP properties through a required review diff. [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) is also available for editing and running VBA automation examples. [Translate](pdmpublishersolidworks_translate.md) remains planned.
 
 ![Planned Translate settings page](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
 

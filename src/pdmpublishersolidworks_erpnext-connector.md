@@ -1,18 +1,18 @@
 ---
 title: ERPNext Connector | PDMPublisher for SOLIDWORKS
-description: Install and configure the official ERPNext connector to synchronize SOLIDWORKS items, properties, files, generated part numbers, and draft BOMs.
-ms.date: 09/28/2026
+description: Configure the official ERPNext connector to push SOLIDWORKS data and pull mapped ERP properties through a reviewed diff.
+ms.date: 09/31/2026
 ms.topic: how-to
 ---
 
 # ERPNext Connector
 
-The ERPNext connector is an official Blue Byte Systems connector available from the PDMPublisher connector catalog. It pushes checked SOLIDWORKS rows to ERPNext as Items, updates mapped Item fields, can request ERPNext-generated part numbers, uploads optional files and previews, and synchronizes selected relationships to managed draft BOMs.
+The ERPNext connector is an official Blue Byte Systems connector available from the PDMPublisher connector catalog. It pushes checked SOLIDWORKS rows to ERPNext and can pull mapped Item fields back into writable SOLIDWORKS custom properties after review.
 
 ![Official ERPNext connector and its settings](../images/pdmpublisher/solidworks/erp-connector-settings-20260920.png)
 
 > [!NOTE]
-> The connector is one-way. **Pull** is not available. It does not create stock movements, purchase orders, custom-field definitions, submitted BOMs, or active default BOMs.
+> Push and Pull do not create stock movements, purchase orders, custom-field definitions, submitted BOMs, or active default BOMs. Pull changes mapped SOLIDWORKS properties only.
 
 ## Prepare ERPNext
 
@@ -73,6 +73,14 @@ Use an ERPNext test site or non-production company while validating permissions,
 Field discovery reads Item metadata but does not read Item values or write records. Supported targets are `item_name`, `description`, `is_stock_item`, `is_sales_item`, `is_purchase_item`, and writable scalar `custom_*` fields. Table, hidden, read-only, and unsupported fields are excluded.
 
 Use ERPNext field names rather than labels. Boolean mappings accept `True/False`, `Yes/No`, or `1/0`. Numeric fields require invariant numeric text such as `12.5`. Property names are matched without case sensitivity, but Item codes are compared exactly.
+
+## Pull mapped properties
+
+Select the desired ERP Sync rows and choose **Pull**. The connector reads the corresponding ERPNext Items and uses each property mapping in reverse. The ERP field becomes the source and its mapped SOLIDWORKS custom property becomes the destination.
+
+Review added, changed, unchanged, and skipped values in the diff before selecting **Apply to SOLIDWORKS**. Pull never overwrites the Item-code matching property or built-in/calculated columns. Missing or null ERP values retain the local value; when **Skip empty values** is enabled, empty ERP text is also skipped. Documents are marked modified and must be saved manually.
+
+See [Pull ERP properties into SOLIDWORKS](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) for the complete review and validation workflow.
 
 ## Push Items and properties
 
