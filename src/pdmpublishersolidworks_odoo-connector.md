@@ -111,6 +111,10 @@ An exported file must have the same base filename as its source model. Existing 
 
 The connector can create products and update mapped product fields. New products use Odoo defaults for unit of measure, category, and product type unless a supported mapping supplies a value. A new product receives the mapped name or the source row name. This version does not generate missing Internal References or create custom Odoo fields.
 
+After a successful Push, the created or updated products are available in Odoo Inventory. Product names, internal references, mapped properties, and uploaded previews reflect the committed ERP Sync changes.
+
+![Products created in Odoo Inventory after a successful Push](/images/pdmpublisher/solidworks/odoo-push-output-20261002.png)
+
 Every recorded Odoo read is checked again before the first write. A preview plan is single-use. If Odoo data changed after preview, Commit stops without starting the reviewed writes and you must preview again.
 
 ## Pull mapped properties

@@ -117,6 +117,10 @@ Le nom de base du fichier exporté doit correspondre à celui du modèle source.
 
 Le connecteur peut créer des produits et mettre à jour les champs mappés. Les nouveaux produits utilisent les valeurs Odoo par défaut pour l'unité, la catégorie et le type de produit, sauf si un mappage pris en charge fournit une valeur. Le nom mappé ou le nom de la ligne source devient le nom du nouveau produit. Cette version ne produit pas les Internal References absentes et ne crée pas de champs Odoo personnalisés.
 
+Après un Push réussi, les produits créés ou mis à jour sont disponibles dans l'inventaire Odoo. Les noms des produits, les références internes, les propriétés mappées et les aperçus téléversés correspondent aux changements ERP Sync validés.
+
+![Produits créés dans l'inventaire Odoo après un Push réussi](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/odoo-push-output-20261002.png)
+
 Chaque lecture Odoo enregistrée est vérifiée de nouveau avant la première écriture. Un plan d'aperçu ne peut être utilisé qu'une seule fois. Si les données Odoo changent après l'aperçu, Commit s'arrête et vous devez produire un nouvel aperçu.
 
 <a id="pull-mapped-properties"></a>
