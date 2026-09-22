@@ -42,7 +42,7 @@ Select **OK** to save the defaults. These settings are independent from BOM Mana
 
 Connector settings are saved separately for each connector and encrypted for the current Windows user. Restart SOLIDWORKS before replacing a connector DLL that has already been loaded.
 
-For the connector supplied by Blue Byte Systems, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md).
+For connectors supplied by Blue Byte Systems, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md) and [Odoo Connector](pdmpublishersolidworks_odoo-connector.md).
 
 ## Choose the synchronization source
 

@@ -27,6 +27,7 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 ## 2026.09.31
 *S'applique au **complément SOLIDWORKS***
 
+- Ajout du [connecteur Odoo](pdmpublishersolidworks_odoo-connector.md) officiel pour synchroniser les produits, propriétés, pièces jointes, nomenclatures de fabrication et opérations Pull révisées au moyen de l'API JSON-2 d'Odoo 19+.
 - Ajout d'ERP Pull avec une [grille obligatoire d'examen des différences](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) avant l'application des propriétés ERP mappées dans SOLIDWORKS.
 - Ajout de la revalidation de l'instantané Pull, de raisons explicites pour les valeurs ignorées, de l'affichage des valeurs inchangées et d'une gestion protégée des valeurs en lecture seule, intégrées, calculées, d'identité, absentes et nulles.
 - Ajout de `IErpPullPreview` et de `ErpCapabilities.PullPreview` pour les connecteurs personnalisés.

@@ -63,6 +63,8 @@
     items:
     - name: ERPNext Connector
       href: ../../src/pdmpublishersolidworks_erpnext-connector.md
+    - name: Odoo Connector
+      href: ../../src/pdmpublishersolidworks_odoo-connector.md
     - name: Create a Custom ERP Connector
       href: ../../src/pdmpublishersolidworks_erp-connector.md
       items:

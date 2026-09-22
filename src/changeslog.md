@@ -25,6 +25,7 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 ## 2026.09.31
 *Applies to **SOLIDWORKS Add-in***
 
+- Added the official [Odoo connector](pdmpublishersolidworks_odoo-connector.md) for Odoo 19+ JSON-2 product, property, attachment, manufacturing BOM, and reviewed Pull synchronization.
 - Added ERP Pull with a required [review diff](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) before mapped ERP properties are applied to SOLIDWORKS.
 - Added Pull snapshot revalidation, explicit skip reasons, unchanged-value display, and guarded handling for read-only, built-in, calculated, identity, missing, and null values.
 - Added `IErpPullPreview` and `ErpCapabilities.PullPreview` for custom connector implementations.
