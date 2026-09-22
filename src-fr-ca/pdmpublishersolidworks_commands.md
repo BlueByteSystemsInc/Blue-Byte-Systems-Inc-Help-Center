@@ -1,7 +1,7 @@
 ---
 title: "Commandes PDMPublisher pour SOLIDWORKS"
 description: "Trouvez chaque commande PDMPublisher dans la SOLIDWORKS CommandManager et comprenez quels types de documents la supportent."
-ms.date: 09/28/2026
+ms.date: 09/30/2026
 ms.topic: overview
 ---
 
@@ -9,8 +9,8 @@ ms.topic: overview
 
 Les commandes PDMPublisher sont disponibles depuis l'onglet **PDMPublisher** dans le SOLIDWORKS CommandManager et dans le menu **Tools > PDMPublisher**. Le volet des tâches est maintenant un navigateur de documentation; les commandes de publication et d'utilité ne s'exécutent plus à l'intérieur du volet.
 
-![PDMPublisher CommandManager et le volet d'aide dans SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
-La capture d'écran montre le CommandManager et le volet d'aide introduits dans la version 2026.09.08. Les tableaux ci-dessous décrivent la version actuelle, y compris ERP Sync et BOM Manager. Les commandes s'exécutent sur le document SOLIDWORKS actif. Le volet d'aide de droite fournit des liens vers la documentation et n'exécute pas les commandes.
+![CommandManager PDMPublisher avec Publisher Macros dans SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-publisher-macros-20260930.png)
+La capture d'écran montre le CommandManager actuel, y compris Publisher Macros, ERP Sync et BOM Manager. Les commandes s'exécutent sur le document SOLIDWORKS actif. Le volet d'aide distinct fournit des liens vers la documentation et n'exécute pas les commandes.
 
 | Groupe | Commande | Objet |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ La capture d'écran montre le CommandManager et le volet d'aide introduits dans 
 | Services publics | [Traduit par le journal] | Réservé pour un futur workflow de traduction. Il n'est pas encore disponible. |
 | Services publics | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copier un ensemble de documents avec des noms et des destinations par fichier, des fichiers complémentaires optionnels, la gestion de la révision PDM et la sortie ZIP. |
 | Intégration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Examiner et envoyer les données sélectionnées d'une pièce, d'un assemblage, d'un dessin, d'une table de nomenclature SOLIDWORKS ou d'un fichier CSV au moyen du connecteur ERP actif. |
-| Intégration | Publisher Macros | Réservé pour un futur flux d'intégration. Il n'est pas encore disponible. |
+| Intégration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Modifier et exécuter des exemples VBA qui appellent Save As New, Property Doctor, Clone Tree et ERP Sync au moyen du complément chargé. |
 | Nomenclature | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Examiner, regrouper, modifier et exporter les lignes d'une nomenclature d'assemblage au moyen de modèles de colonnes réutilisables. |
 | Édition | [Publier](pdmpublishersolidworks-publish.md) | Configurer et exécuter un travail de publication pour le document actif. |
 | Édition | [Annotations](pdmpublishersolidworks_annotations.md) | Modifier les annotations stockées dans un profil Publier. |
@@ -40,7 +40,7 @@ La capture d'écran montre le CommandManager et le volet d'aide introduits dans 
 | **Translate** | Actuellement désactivé parce que le workflow de traduction n'est pas encore disponible. | Aucune. |
 | **Clone Tree** | Ouvre le workflow copie/paquetage pour le jeu de documents actif. | Sélectionne un profil Clone Tree enregistré. |
 | **ERP Sync** | Ouvre la fenêtre d'examen ERP Sync pour la pièce, l'assemblage ou le dessin actif enregistré. | Aucun. Sélectionnez l'arborescence des fonctions, une table de nomenclature SOLIDWORKS ou un fichier CSV dans la fenêtre ERP Sync. |
-| **Publisher Macros** | Actuellement désactivé parce que le flux n'est pas encore disponible. | Aucun. |
+| **Publisher Macros** | Ouvre l'exemple VBA modifiable et l'outil d'exécution de macros. | Aucun. |
 | **BOM Manager** | Ouvre le flux d'examen et de modification de nomenclature pour l'assemblage actif. | Aucun. |
 | **Publish** | Ouvre ou exécute le workflow de publication avec le profil Publier actif. | Sélectionne un profil de Publier enregistré. |
 | **Annotations** | Edit les annotations dans le profil actif Publier. | Aucune. |

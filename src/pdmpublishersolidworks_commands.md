@@ -1,7 +1,7 @@
 ---
 title: Commands | PDMPublisher for SOLIDWORKS
 description: Find every PDMPublisher command in the SOLIDWORKS CommandManager and understand which document types support it.
-ms.date: 09/28/2026
+ms.date: 09/30/2026
 ms.topic: overview
 ---
 
@@ -9,9 +9,9 @@ ms.topic: overview
 
 PDMPublisher commands are available from the **PDMPublisher** tab in the SOLIDWORKS CommandManager and from the **Tools > PDMPublisher** menu. The task pane is now a documentation browser; publishing and utility commands no longer run inside the pane.
 
-![PDMPublisher CommandManager and Help task pane in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
+![PDMPublisher CommandManager with Publisher Macros in SOLIDWORKS 2026](/images/pdmpublisher/solidworks/commandmanager-publisher-macros-20260930.png)
 
-The screenshot shows the CommandManager and Help task pane introduced in version 2026.09.08. The command tables below describe the current version, including ERP Sync and BOM Manager. Commands run against the active SOLIDWORKS document. The Help task pane on the right provides documentation links and does not run the commands.
+The screenshot shows the current CommandManager, including Publisher Macros, ERP Sync, and BOM Manager. Commands run against the active SOLIDWORKS document. The separate Help task pane provides documentation links and does not run the commands.
 
 | Group | Command | Purpose |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ The screenshot shows the CommandManager and Help task pane introduced in version
 | Utilities | [Translate](pdmpublishersolidworks_translate.md) | Reserved for a future translation workflow. It is not available yet. |
 | Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
 | Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Review and push selected part, assembly, drawing, SOLIDWORKS BOM table, or CSV data through the active ERP connector. |
-| Integration | Publisher Macros | Reserved for a future integration workflow. It is not available yet. |
+| Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Edit and run VBA examples that call Save As New, Property Doctor, Clone Tree, and ERP Sync through the loaded add-in. |
 | Bill of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Review, group, edit, and export assembly BOM rows using reusable column templates. |
 | Publishing | [Publish](pdmpublishersolidworks-publish.md) | Configure and run a publishing job for the active document. |
 | Publishing | [Annotations](pdmpublishersolidworks_annotations.md) | Edit the annotations stored in a Publish profile. |
@@ -40,7 +40,7 @@ The screenshot shows the CommandManager and Help task pane introduced in version
 | **Translate** | Currently disabled because the translation workflow is not yet available. | None. |
 | **Clone Tree** | Opens the copy/package workflow for the active document set. | Selects a saved Clone Tree profile. |
 | **ERP Sync** | Opens the ERP Sync review window for the active saved part, assembly, or drawing. | None. Select the feature tree, a SOLIDWORKS BOM table, or a CSV file inside the ERP Sync window. |
-| **Publisher Macros** | Currently disabled because the workflow is not yet available. | None. |
+| **Publisher Macros** | Opens the editable VBA example and macro runner. | None. |
 | **BOM Manager** | Opens the BOM review and editing workflow for the active assembly. | None. |
 | **Publish** | Opens or runs the publishing workflow with the active Publish profile. | Selects a saved Publish profile. |
 | **Annotations** | Edits annotations in the active Publish profile. | None. |

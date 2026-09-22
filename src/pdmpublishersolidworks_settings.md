@@ -1,7 +1,7 @@
 ---
 title: Settings | PDMPublisher for SOLIDWORKS
 description: Configure publishing, utilities, integrations, BOM Manager, shared resources, licensing, and complete settings transfer in PDMPublisher for SOLIDWORKS.
-ms.date: 09/19/2026
+ms.date: 09/30/2026
 ms.topic: how-to
 ---
 
@@ -22,7 +22,7 @@ The left navigation divides the dialog into **Publishing**, **Utilities**, **Int
 | Utilities | [Property Doctor](pdmpublishersolidworks_property-doctor.md) | Default columns, thumbnail loading, and property-action profiles. |
 | Utilities | [Translate](pdmpublishersolidworks_translate.md) | Planned translation workflow; not available yet. |
 | Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Active connector, default column template and BOM type, grouping, ignored components, and filters. |
-| Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Planned publishing scheduler; not available yet. |
+| Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Opens the editable VBA example used to automate PDMPublisher commands. |
 | Bill Of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Default BOM columns, display type, grouping expression, and component exclusions. |
 | Shared Resources | [PDM](pdmpublishersolidworks_pdm-settings.md) | The vault used by PDM-aware utility settings. |
 | Shared Resources | [Languages](pdmpublishersolidworks_languages.md) | The PDMPublisher interface language. |
@@ -108,7 +108,7 @@ The **Import** and **Export** menus at the bottom transfer a complete PDMPublish
 
 A complete bundle contains utility settings, Save As New profiles, Property Doctor profiles, Clone Tree profiles, shared formulas and sources, and complete Publish profiles.
 
-ERP Sync settings are included in the complete settings bundle. Connector credentials and other saved connector values remain protected for the current Windows user and are not made portable through settings export. Planned pages with no configurable controls, such as Publisher Macros and Translate, do not add active behavior to an exported bundle.
+ERP Sync settings are included in the complete settings bundle. Connector credentials and other saved connector values remain protected for the current Windows user and are not made portable through settings export. Publisher Macros stores retained VBA code locally for the current Windows user; it is not included in the settings bundle. Translate has no configurable controls.
 
 > [!IMPORTANT]
 > SQL Server connection secrets are not exported or uploaded. After an import, re-enter credentials for external sources that do not already have matching local credentials.

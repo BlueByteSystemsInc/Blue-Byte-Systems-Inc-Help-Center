@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 09/28/2026
+ms.date: 09/30/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,21 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.28` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.30` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20260930"></a>
+## 2026.09.30
+*S'applique au **complément SOLIDWORKS***
+
+- Ajout de [Publisher Macros](pdmpublishersolidworks_publisher-macros.md), avec un exemple VBA modifiable, la coloration syntaxique et l'exécution directe au moyen de SOLIDWORKS.
+- Ajout d'appels d'automatisation VBA pour les profils enregistrés de Save As New, Property Doctor et Clone Tree, ainsi que pour les sources et les opérations Push d'ERP Sync.
+- Ajout de l'exécution interactive et silencieuse, de la conservation du code de macro, du signalement des erreurs VBA et de petites corrections d'utilisation.
 
 <a id="20260928"></a>
 ## 2026.09.28

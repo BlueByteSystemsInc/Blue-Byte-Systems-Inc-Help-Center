@@ -9,7 +9,7 @@ ms.topic: overview
 
 PDMPublisher is available in two workflows. They share the same publishing engine and many export settings, but they start jobs and obtain file information differently.
 
-![PDMPublisher for SOLIDWORKS commands in the SOLIDWORKS CommandManager](/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
+![PDMPublisher for SOLIDWORKS commands in the SOLIDWORKS CommandManager](/images/pdmpublisher/solidworks/commandmanager-publisher-macros-20260930.png)
 
 | | PDMPublisher for PDM Professional | PDMPublisher for SOLIDWORKS |
 | --- | --- | --- |

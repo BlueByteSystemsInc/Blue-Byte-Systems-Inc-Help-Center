@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher pour SOLIDWORKS"
 description: "Utilisez PDMPublisher à l'intérieur de SOLIDWORKS pour publier, Save As New, Property Doctor, Clone Tree, des profils et des paramètres partagés."
-ms.date: 09/19/2026
+ms.date: 09/30/2026
 ms.topic: overview
 ---
 
@@ -19,14 +19,14 @@ Voir [Tâche PDM vs Complément SOLIDWORKS](pdmpublisher-product-differences.md)
 
 Les commandes PDMPublisher sont situées sur l'onglet **PDMPublisher** dans le SOLIDWORKS CommandManager et sous **Tools > PDMPublisher**. Le volet des tâches est maintenant un navigateur de documentation et ne contient plus les contrôles de publication.
 
-![commandes PDMPublisher CommandManager et volet Aide intégré dans SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
+![Commandes actuelles du CommandManager PDMPublisher dans SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-publisher-macros-20260930.png)
 Le CommandManager est organisé en trois groupes :
 
 | Groupe | Commandes | Objet |
 | --- | --- | --- |
 | Outils documentaires | Save As New, Property Doctor, Traduction, Clone Tree | Créer des copies, gérer les propriétés et les ensembles de documents de paquets. Traduire est réservé pour une sortie future. |
 | Nomenclature | BOM Manager | Configurer les colonnes, la structure, le regroupement et les exclusions de composants. |
-| Intégrations | ERP Sync, Publisher Macros | Synchroniser les articles, les propriétés et les relations de nomenclature sélectionnés avec les systèmes ERP. Publisher Macros demeure planifié. |
+| Intégrations | ERP Sync, Publisher Macros | Synchroniser les données ERP et exécuter des exemples d'automatisation VBA modifiables pour les commandes PDMPublisher. |
 | Édition | Publier, annotations, conditions, journaux | Configurer et gérer les exportations, contrôler les annotations et les règles de traitement, et examiner les résultats. |
 | Paramètres et mises à jour | Paramètres, Clé de licence, état de mise à jour, informations de version | Configurer le complément, transférer les paramètres, gérer les licences et vérifier la version installée. |
 
@@ -158,7 +158,7 @@ La boîte de dialogue contient :
 
 - Paramètres et profils d'utilité pour Save As New, Property Doctor et Clone Tree.
 - BOM Manager par défaut pour les colonnes, le type d'affichage, le regroupement et les composants ignorés.
-- Paramètres par défaut d’ERP Sync pour le connecteur actif, la vue de nomenclature, le regroupement, les exclusions de composants et les filtres. Translate et Publisher Macros demeurent planifiés.
+- Paramètres par défaut d'ERP Sync pour le connecteur actif, la vue de nomenclature, le regroupement, les exclusions de composants et les filtres, ainsi que l'accès à l'éditeur VBA de Publisher Macros. Translate demeure planifié.
 - Publier les profils complets, y compris les options de publication, les annotations et les conditions.
 - Sélection PDM partagée, langues, dossiers de recherche de dessin, sources externes et formules avancées.
 - Support, mise à jour, version, juridique et informations de licence.
@@ -182,13 +182,13 @@ Les ressources partagées fournissent une configuration réutilisable aux servic
 ![Sources externes SQL Server](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/ExternalSources/ExternalSources_Sources_Default_Light_100.png)
 ![Paramètres avancés des formules](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Advanced_Formulas_Default_Light_100.png)
 <a id="planned-features"></a>
-## Intégration ERP et fonctionnalités planifiées
+## Intégrations et fonctionnalités planifiées
 
-[ERP Sync](pdmpublishersolidworks_erp-sync.md) est disponible pour une utilisation en production lorsqu’un connecteur est installé. Il peut synchroniser les articles cochés, les propriétés mappées, les numéros de pièce créés par l’ERP et les relations de nomenclature sélectionnées. [Translate](pdmpublishersolidworks_translate.md) et [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) demeurent planifiés et ne sont pas disponibles pour la production.
+[ERP Sync](pdmpublishersolidworks_erp-sync.md) est disponible pour une utilisation en production lorsqu'un connecteur est installé. Il peut synchroniser les articles cochés, les propriétés mappées, les numéros de pièce créés par l'ERP et les relations de nomenclature sélectionnées. [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) permet maintenant de modifier et d'exécuter des exemples d'automatisation VBA. [Translate](pdmpublishersolidworks_translate.md) demeure planifié.
 
 ![Page de paramètres de traduction planifiée](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Translate_Default_Light_100.png)
 ![Page de paramètres ERP Sync activée](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/erp-sync-settings-20260920.png)
-![Page de paramètres Publisher Macros programmée](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publisher_Macros_Default_Light_100.png)
+![Page de paramètres Publisher Macros activée](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/publisher-macros-settings-20260930.png)
 <a id="help-task-pane"></a>
 ## Panneau d'aide
 

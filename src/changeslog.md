@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 09/28/2026
+ms.date: 09/30/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,20 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.28` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.30` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.30
+*Applies to **SOLIDWORKS Add-in***
+
+- Added [Publisher Macros](pdmpublishersolidworks_publisher-macros.md), including an editable VBA example with syntax highlighting and direct execution through SOLIDWORKS.
+- Added VBA automation calls for saved Save As New, Property Doctor, and Clone Tree profiles, plus ERP Sync sources and Push operations.
+- Added interactive and silent execution, retained macro code, VBA error reporting, and supporting usability fixes.
 
 ## 2026.09.28
 *Applies to **SOLIDWORKS Add-in***
