@@ -62,6 +62,13 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
   font-weight: 500;
 }
 
+.pdp-quick-links .pdp-primary-link {
+  padding: 9px 16px;
+  border-radius: 6px;
+  background: #1f7ed0;
+  color: #fff;
+}
+
 .pdp-quick-links a:hover,
 .pdp-quick-links a:focus {
   text-decoration: underline !important;
@@ -107,6 +114,34 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
   font-weight: 500;
 }
 
+.pdp-connectors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.pdp-connector {
+  padding: 18px;
+  border: 1px solid var(--pdp-border);
+  border-radius: 8px;
+  background: var(--pdp-soft);
+}
+
+.pdp-connector h2 {
+  margin: 0 0 7px;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 16px;
+}
+
+.pdp-connector p {
+  margin: 0 0 12px;
+  color: var(--pdp-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .pdp-support {
   padding: 18px 20px;
   border: 1px solid var(--pdp-border);
@@ -138,7 +173,8 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
     font-size: 28px;
   }
 
-  .pdp-docs {
+  .pdp-docs,
+  .pdp-connectors {
     grid-template-columns: 1fr;
   }
 
@@ -153,10 +189,10 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
 <section class="pdp-hero">
 <img class="pdp-hero-logo" src="https://pdmpublisher.com/help/images/large_logo.png" alt="Blue Byte Systems Inc."/>
 <h1>PDMPublisher Centre d'aide</h1>
-<p>Documentation pour les fonctions supplémentaires SOLIDWORKS, PDM et PDMDeploy.</p>
+<p>Commencez avec PDMPublisher pour SOLIDWORKS, puis découvrez l'automatisation des tâches PDM, les connecteurs ERP et le déploiement.</p>
 <div class="pdp-quick-links">
-<a href="../src-fr-ca/propertiespagepdmpublisher.md">Configurer votre première tâche PDM</a>
-<a href="../src-fr-ca/pdmpublishertrial.md">Obtenir un essai de 7 jours</a>
+<a class="pdp-primary-link" href="../src-fr-ca/pdmpublishersolidworks.md">Commencer avec le complément SOLIDWORKS</a>
+<a href="../src-fr-ca/pdmpublishertrial.md">Obtenir un essai de 7 jours de la tâche PDM</a>
 </div>
 </section>
 
@@ -179,6 +215,22 @@ description: "Documentation officielle PDMPublisher pour SOLIDWORKS PDM Professi
 <h2>PDMDeploy</h2>
 <p>Installer et mettre à jour PDMPublisher dans SOLIDWORKS PDM en utilisant le code d'activation public ou privé.</p>
 <a href="../src-fr-ca/cdpdm.md">Guide de déploiement ouvert &rarr;</a>
+</div>
+</section>
+
+<h2 class="pdp-section-title">Connecteurs</h2>
+
+<section class="pdp-connectors">
+<div class="pdp-connector">
+<h2>PDMPublisher pour SOLIDWORKS &rarr; ERPNext</h2>
+<p>Configurez la synchronisation révisée des produits, propriétés, pièces jointes et nomenclatures avec ERPNext.</p>
+<a href="../src-fr-ca/pdmpublishersolidworks_erpnext-connector.md">Configurer ERPNext &rarr;</a>
+</div>
+
+<div class="pdp-connector">
+<h2>PDMPublisher pour SOLIDWORKS &rarr; Odoo</h2>
+<p>Connectez Odoo, mappez les propriétés SOLIDWORKS et révisez les changements de produits et de nomenclatures avant la synchronisation.</p>
+<a href="../src-fr-ca/pdmpublishersolidworks_odoo-connector.md">Configurer Odoo &rarr;</a>
 </div>
 </section>
 

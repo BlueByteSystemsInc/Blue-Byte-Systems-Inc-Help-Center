@@ -62,6 +62,13 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
   font-weight: 500;
 }
 
+.pdp-quick-links .pdp-primary-link {
+  padding: 9px 16px;
+  border-radius: 6px;
+  background: #1f7ed0;
+  color: #fff;
+}
+
 .pdp-quick-links a:hover,
 .pdp-quick-links a:focus {
   text-decoration: underline !important;
@@ -107,6 +114,34 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
   font-weight: 500;
 }
 
+.pdp-connectors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.pdp-connector {
+  padding: 18px;
+  border: 1px solid var(--pdp-border);
+  border-radius: 8px;
+  background: var(--pdp-soft);
+}
+
+.pdp-connector h2 {
+  margin: 0 0 7px;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 16px;
+}
+
+.pdp-connector p {
+  margin: 0 0 12px;
+  color: var(--pdp-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .pdp-support {
   padding: 18px 20px;
   border: 1px solid var(--pdp-border);
@@ -138,7 +173,8 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
     font-size: 28px;
   }
 
-  .pdp-docs {
+  .pdp-docs,
+  .pdp-connectors {
     grid-template-columns: 1fr;
   }
 
@@ -153,10 +189,10 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 <section class="pdp-hero">
 <img class="pdp-hero-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc."/>
 <h1>PDMPublisher Help Center</h1>
-<p>Documentation for the SOLIDWORKS Add-in, PDM Task, and PDMDeploy.</p>
+<p>Get started with PDMPublisher for SOLIDWORKS, then explore PDM Task automation, ERP connectors, and deployment.</p>
 <div class="pdp-quick-links">
-<a href="../src/propertiespagepdmpublisher.md">Set up your first PDM task</a>
-<a href="../src/pdmpublishertrial.md">Get a 7-day trial</a>
+<a class="pdp-primary-link" href="../src/pdmpublishersolidworks.md">Get started with the SOLIDWORKS Add-in</a>
+<a href="../src/pdmpublishertrial.md">Get a 7-day PDM Task trial</a>
 </div>
 </section>
 
@@ -179,6 +215,22 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 <h2>PDMDeploy</h2>
 <p>Install and update PDMPublisher in SOLIDWORKS PDM using the public or private activation code.</p>
 <a href="../src/cdpdm.md">Open deployment guide &rarr;</a>
+</div>
+</section>
+
+<h2 class="pdp-section-title">Connectors</h2>
+
+<section class="pdp-connectors">
+<div class="pdp-connector">
+<h2>PDMPublisher for SOLIDWORKS &rarr; ERPNext</h2>
+<p>Configure reviewed product, property, attachment, and BOM synchronization with ERPNext.</p>
+<a href="../src/pdmpublishersolidworks_erpnext-connector.md">Set up ERPNext &rarr;</a>
+</div>
+
+<div class="pdp-connector">
+<h2>PDMPublisher for SOLIDWORKS &rarr; Odoo</h2>
+<p>Connect Odoo, map SOLIDWORKS properties, and review product and manufacturing BOM changes before synchronization.</p>
+<a href="../src/pdmpublishersolidworks_odoo-connector.md">Set up Odoo &rarr;</a>
 </div>
 </section>
 
