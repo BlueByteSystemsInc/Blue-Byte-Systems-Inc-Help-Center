@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/01/2026
+ms.date: 10/02/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,19 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.01` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.02` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20261002"></a>
+## 2026.10.02
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Das Löschen von Spalten in [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) wurde korrigiert, sodass mehrere ausgewählte Eigenschaftsspalten gemeinsam zum Löschen markiert oder wiederhergestellt werden können. Wird der Befehl auf einer nicht ausgewählten Spalte verwendet, ist weiterhin nur diese Spalte betroffen.
 
 <a id="20261001"></a>
 ## 2026.10.01

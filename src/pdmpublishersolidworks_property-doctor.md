@@ -1,7 +1,7 @@
 ---
 title: Property Doctor | PDMPublisher for SOLIDWORKS
 description: Review, edit, validate, import, export, and automate SOLIDWORKS custom properties across a document and its references.
-ms.date: 09/31/2026
+ms.date: 10/02/2026
 ms.topic: how-to
 ---
 
@@ -26,7 +26,7 @@ Open **PDMPublisher > Settings > Property Doctor** to configure the default colu
 
 Gray cells are missing properties. **Clear** keeps the property name and writes an empty value; **Delete Property** removes the property. Formula and linked-value cells are evaluated for the document row where they are applied.
 
-To delete one property across multiple documents, right-click its column header or open the column-options menu and select **Mark property for deletion (visible rows)**. Property Doctor marks the property in every editable visible row; filtered-out and read-only rows are not changed. Select the checked command again or use the delete icon in the header to undo the pending deletions. Select **Apply changes** to remove the properties from the documents.
+To delete one property across multiple documents, right-click its column header or open the column-options menu and select **Mark property for deletion (visible rows)**. To delete several properties together, select their visible column checkboxes and use **Mark selected properties for deletion (visible rows)** from any selected column. Using the command from an unselected column affects only that column. Property Doctor marks the properties in every editable visible row; filtered-out and read-only rows are not changed. Select the checked command again to undo the affected columns, or use a header's delete icon to undo only that column. Select **Apply changes** to remove the properties from the documents.
 
 ## Find, Filter, and Fill
 

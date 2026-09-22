@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher für SOLIDWORKS"
 description: "Überprüfen, Bearbeiten, Validieren, Importieren, Exportieren und Automatisieren von SOLIDWORKS benutzerdefinierten Eigenschaften in einem Dokument und seinen Referenzen."
-ms.date: 09/25/2026
+ms.date: 10/02/2026
 ms.topic: how-to
 ---
 
@@ -24,6 +24,8 @@ Property Doctor präsentiert das aktive Dokument, Konfigurationen, Schnittlisten
 6. Wählen Sie **Apply changes**, um die ausstehenden Änderungen zu schreiben, oder **Discard changes**, um die ursprünglichen Werte wiederherzustellen.
 
 Graue Zellen sind fehlende Eigenschaften. **Clear** behält den Eigenschaftsnamen und schreibt einen leeren Wert; **Delete Property** entfernt die Eigenschaft. Formel- und verknüpfte Wertzellen werden für die Dokumentzeile ausgewertet, in der sie angewendet werden.
+
+Um eine Eigenschaft in mehreren Dokumenten zu löschen, klicken Sie mit der rechten Maustaste auf ihre Spaltenüberschrift oder öffnen Sie das Spaltenmenü und wählen Sie **Mark property for deletion (visible rows)**. Um mehrere Eigenschaften gemeinsam zu löschen, aktivieren Sie die Kontrollkästchen ihrer sichtbaren Spalten und verwenden Sie **Mark selected properties for deletion (visible rows)** in einer ausgewählten Spalte. Bei einer nicht ausgewählten Spalte betrifft der Befehl nur diese Spalte. Property Doctor markiert die Eigenschaften in allen bearbeitbaren sichtbaren Zeilen; gefilterte und schreibgeschützte Zeilen bleiben unverändert. Wählen Sie den aktivierten Befehl erneut, um die betroffenen Spalten wiederherzustellen, oder verwenden Sie das Löschsymbol einer Überschrift nur für diese Spalte. Wählen Sie **Apply changes**, um die Eigenschaften aus den Dokumenten zu entfernen.
 
 <a id="find-filter-and-fill"></a>
 ## Suchen, Filtern und Füllen

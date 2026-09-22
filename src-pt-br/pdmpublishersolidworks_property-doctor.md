@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher for SOLIDWORKS"
 description: "Reveja, edite, valide, importe, exporte e automatize as propriedades personalizadas do SOLIDWORKS em um documento e suas referências."
-ms.date: 09/25/2026
+ms.date: 10/02/2026
 ms.topic: how-to
 ---
 
@@ -25,6 +25,8 @@ Abra o **PDMPublisher > Settings > Property Doctor** para configurar as colunas 
 6. Selecione **Apply changes** para escrever as alterações pendentes, ou **Discard changes** para restaurar os valores originais.
 
 Células cinzentas faltam propriedades. **Clear** mantém o nome da propriedade e escreve um valor vazio; **Delete Property** remove a propriedade. As células de fórmula e de valor ligado são avaliadas para a linha do documento onde são aplicadas.
+
+Para excluir uma propriedade em vários documentos, clique com o botão direito no cabeçalho da coluna ou abra o menu de opções da coluna e selecione **Mark property for deletion (visible rows)**. Para excluir várias propriedades em conjunto, marque as caixas de seleção das colunas visíveis e use **Mark selected properties for deletion (visible rows)** em qualquer coluna selecionada. Quando usado em uma coluna não selecionada, o comando afeta somente essa coluna. O Property Doctor marca as propriedades em todas as linhas visíveis e editáveis; linhas filtradas e somente leitura não são alteradas. Selecione novamente o comando marcado para restaurar as colunas afetadas ou use o ícone de exclusão do cabeçalho para restaurar somente essa coluna. Selecione **Apply changes** para remover as propriedades dos documentos.
 
 <a id="find-filter-and-fill"></a>
 ## Procurar, Filtrar e Preencher

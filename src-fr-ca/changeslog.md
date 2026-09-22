@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 10/01/2026
+ms.date: 10/02/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,19 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.01` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.02` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261002"></a>
+## 2026.10.02
+*S'applique au **complément SOLIDWORKS***
+
+- Correction de la suppression des colonnes dans [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) afin de marquer ou de restaurer ensemble plusieurs colonnes de propriétés sélectionnées. L'utilisation de la commande sur une colonne non sélectionnée continue de ne modifier que cette colonne.
 
 <a id="20261001"></a>
 ## 2026.10.01
