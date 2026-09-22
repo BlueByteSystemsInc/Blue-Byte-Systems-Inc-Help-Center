@@ -30,6 +30,7 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 - Ajout d'ERP Pull avec une [grille obligatoire d'examen des différences](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) avant l'application des propriétés ERP mappées dans SOLIDWORKS.
 - Ajout de la revalidation de l'instantané Pull, de raisons explicites pour les valeurs ignorées, de l'affichage des valeurs inchangées et d'une gestion protégée des valeurs en lecture seule, intégrées, calculées, d'identité, absentes et nulles.
 - Ajout de `IErpPullPreview` et de `ErpCapabilities.PullPreview` pour les connecteurs personnalisés.
+- Transformation du guide des connecteurs personnalisés en tutoriel progressif couvrant le projet, les paramètres typés, les capacités, les contrats Push/Pull, l'emballage, les essais, les vérifications de production et le dépannage.
 - Ajout de **Mark property for deletion (visible rows)** au menu contextuel des colonnes de [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties).
 - Ajout de petites corrections de fiabilité et d'utilisation.
 

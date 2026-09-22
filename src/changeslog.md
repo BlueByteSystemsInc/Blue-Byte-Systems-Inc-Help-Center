@@ -28,6 +28,7 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 - Added ERP Pull with a required [review diff](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) before mapped ERP properties are applied to SOLIDWORKS.
 - Added Pull snapshot revalidation, explicit skip reasons, unchanged-value display, and guarded handling for read-only, built-in, calculated, identity, missing, and null values.
 - Added `IErpPullPreview` and `ErpCapabilities.PullPreview` for custom connector implementations.
+- Expanded the custom connector guide into a step-by-step tutorial with project setup, typed settings, capability selection, a complete Push/Pull learning connector, packaging, testing, production checks, and troubleshooting.
 - Added **Mark property for deletion (visible rows)** to the [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) column right-click menu.
 - Included small reliability and usability fixes.
 

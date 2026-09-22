@@ -106,9 +106,9 @@ Call publisher.ERPSync( _
 | `bomTableName` | A BOM feature name, full displayed table/configuration label, or stable table ID. It can be blank only when exactly one table/configuration is available. |
 | `itemTypes` | `All`, or a comma-separated list of `Drawings`, `Parts`, `Assemblies`, `WeldmentCutListItems`, `SheetMetalCutListItems`, and `PhantomItems`. CSV requires `All`. |
 | `operations` | A comma-separated list of `Properties`, `CreateItems`, and `BOM`. `CreateItems` also synchronizes properties; `BOM` requires a source with valid hierarchy. |
-| `silent` | `False` opens ERP Sync for review. `True` directly synchronizes matching rows, subject to license limits and saved ignore rules. |
+| `silent` | Use `False`. Current ERP Push and Pull require review; `True` stops before connecting and returns an error. |
 
-Pull cannot run silently because PDMPublisher requires the user to review the diff before any SOLIDWORKS property is changed.
+ERP Push and Pull cannot run silently because PDMPublisher requires the user to review the diff before any remote or SOLIDWORKS change.
 
 For native documents, files opened by automation remain available in SOLIDWORKS. ERP-generated part numbers can leave documents modified and requiring a save. Silent execution uses the named connector without changing the global connector selection.
 

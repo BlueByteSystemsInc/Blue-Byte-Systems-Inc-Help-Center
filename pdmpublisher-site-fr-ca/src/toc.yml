@@ -65,6 +65,13 @@
       href: ../../src-fr-ca/pdmpublishersolidworks_erpnext-connector.md
     - name: Créer un connecteur ERP personnalisé
       href: ../../src-fr-ca/pdmpublishersolidworks_erp-connector.md
+      items:
+      - name: Créer le projet
+        href: ../../src-fr-ca/pdmpublishersolidworks_erp-connector.md#step-1-create-the-project
+      - name: Contrat Push et Pull
+        href: ../../src-fr-ca/pdmpublishersolidworks_erp-connector.md#contract-interface
+      - name: Compiler, installer et tester
+        href: ../../src-fr-ca/pdmpublishersolidworks_erp-connector.md#build-and-load-the-dll
   - name: Publication
     href: ../../src-fr-ca/pdmpublishersolidworks_options.md
     expanded: true

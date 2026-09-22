@@ -65,6 +65,13 @@
       href: ../../src/pdmpublishersolidworks_erpnext-connector.md
     - name: Create a Custom ERP Connector
       href: ../../src/pdmpublishersolidworks_erp-connector.md
+      items:
+      - name: Create the Project
+        href: ../../src/pdmpublishersolidworks_erp-connector.md#step-1-create-the-project
+      - name: Complete Connector Example
+        href: ../../src/pdmpublishersolidworks_erp-connector.md#step-4-study-a-complete-connector
+      - name: Build, Install, and Test
+        href: ../../src/pdmpublishersolidworks_erp-connector.md#step-6-build-and-load-the-dll
   - name: Publishing
     href: ../../src/pdmpublishersolidworks_options.md
     expanded: true
