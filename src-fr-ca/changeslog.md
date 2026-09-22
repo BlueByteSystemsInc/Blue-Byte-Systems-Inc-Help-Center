@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 09/31/2026
+ms.date: 10/01/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,19 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.09.31` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.01` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261001"></a>
+## 2026.10.01
+*S'applique au **complément SOLIDWORKS***
+
+- Correction d'un problème où la suppression d'une propriété personnalisée dans [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) ne marquait pas le document SOLIDWORKS comme modifié. La suppression est maintenant conservée lors de l'enregistrement du document.
 
 <a id="20260931"></a>
 ## 2026.09.31
