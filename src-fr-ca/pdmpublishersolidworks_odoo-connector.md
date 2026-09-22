@@ -17,7 +17,7 @@ La clé API identifie l'utilisateur Odoo. Le connecteur n'envoie aucun nom d'uti
 ## Exigences
 
 - Utilisez Odoo 19+ ou Odoo Online avec l'API externe JSON-2.
-- Créez une clé API pour un utilisateur Odoo réservé à l'intégration.
+- [Créez une clé API](#create-an-odoo-api-key) pour un utilisateur Odoo réservé à l'intégration.
 - Accordez-lui l'accès en lecture aux champs de produit utilisés par les mappages et les droits d'écriture ou de création nécessaires.
 - Accordez les droits sur les nomenclatures de fabrication pour synchroniser les nomenclatures.
 - Accordez les droits sur les pièces jointes pour téléverser des vignettes ou des fichiers exportés.
@@ -39,6 +39,23 @@ Le connecteur utilise l'API JSON-2 d'Odoo, et non les anciens points de terminai
 8. Sélectionnez **Save** pour activer Odoo.
 
 Redémarrez SOLIDWORKS avant de remplacer un connecteur déjà chargé.
+
+<a id="create-an-odoo-api-key"></a>
+## Créer une clé API Odoo
+
+Utilisez un utilisateur Odoo réservé à l'intégration et accordez-lui uniquement les droits nécessaires sur les produits, les champs, les pièces jointes, les sociétés et les nomenclatures de fabrication que PDMPublisher doit synchroniser.
+
+1. Connectez-vous à Odoo avec l'utilisateur d'intégration.
+2. Ouvrez le menu de l'utilisateur et sélectionnez **My Preferences**.
+3. Ouvrez l'onglet **Security**.
+4. Sous **API Keys**, sélectionnez **Add API Key**.
+5. Entrez un nom reconnaissable, par exemple `PDMPublisher`, puis créez la clé avec la portée `rpc`.
+6. Copiez immédiatement la clé générée et conservez-la en lieu sûr. Collez-la dans le champ **API key** de PDMPublisher; n'entrez pas le mot de passe de l'utilisateur.
+7. Dans PDMPublisher, sélectionnez **Test connection**, puis **Save** lorsque le test réussit.
+
+![Préférences de sécurité Odoo montrant la clé API de PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/odoo-create-api-key-20260931.png)
+
+Traitez la clé API comme un mot de passe. Ne l'incluez pas dans des captures d'écran, des journaux, le contrôle de code source ou des fichiers de configuration partagés. Pour remplacer une clé, créez-en une nouvelle, mettez à jour et testez PDMPublisher, enregistrez les paramètres du connecteur, puis supprimez l'ancienne clé dans Odoo.
 
 <a id="connection-settings"></a>
 ## Paramètres de connexion

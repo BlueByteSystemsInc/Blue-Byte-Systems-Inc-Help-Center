@@ -18,7 +18,7 @@ The API key identifies the Odoo user. The connector does not send a login userna
 Before configuring the connector:
 
 - Use Odoo 19+ or Odoo Online with JSON-2 external API access.
-- Create an API key for a dedicated Odoo integration user.
+- [Create an API key](#create-an-odoo-api-key) for a dedicated Odoo integration user.
 - Grant that user read access to product fields used by mappings and write/create access for the operations you will enable.
 - Grant manufacturing BOM access when synchronizing BOMs.
 - Grant attachment access when uploading thumbnails or exported files.
@@ -39,6 +39,22 @@ The connector uses Odoo's JSON-2 API, not the deprecated XML-RPC or JSON-RPC end
 8. Select **Save** to make Odoo the active connector.
 
 Restart SOLIDWORKS before replacing a connector that was already loaded.
+
+## Create an Odoo API key
+
+Use a dedicated Odoo user with only the permissions required for the products, fields, attachments, companies, and manufacturing BOMs that PDMPublisher must synchronize.
+
+1. Sign in to Odoo as the integration user.
+2. Open the user menu and select **My Preferences**.
+3. Open the **Security** tab.
+4. Under **API Keys**, select **Add API Key**.
+5. Enter a recognizable name such as `PDMPublisher` and create the key with the `rpc` scope.
+6. Copy the generated key immediately and store it securely. Paste the key into the PDMPublisher **API key** field; do not enter the user's password.
+7. In PDMPublisher, select **Test connection**, then **Save** after the test succeeds.
+
+![Odoo Security preferences showing the PDMPublisher API key](/images/pdmpublisher/solidworks/odoo-create-api-key-20260931.png)
+
+Treat the API key like a password. Do not include it in screenshots, logs, source control, or shared configuration files. To rotate a key, create a replacement, update and test PDMPublisher, save the connector settings, and then delete the old key in Odoo.
 
 ## Connection settings
 
