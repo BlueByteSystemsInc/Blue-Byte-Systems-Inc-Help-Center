@@ -1,7 +1,7 @@
 ---
 title: "Installer PDMPublisher pour SOLIDWORKS"
 description: "Téléchargez, débloquez, installez et activez l'extension PDMPublisher pour SOLIDWORKS."
-ms.date: 08/24/2026
+ms.date: 09/22/2026
 ms.topic: how-to
 ---
 
@@ -32,6 +32,8 @@ Windows peut bloquer les fichiers téléchargés depuis Internet. Débloquez le 
 2. Faites un clic droit sur le MSI et sélectionnez **Properties**.
 3. Dans l'onglet **General**, sélectionnez **Unblock** sous **Security**.
 4. Sélectionnez **Apply**, puis sélectionnez **OK**.
+
+![Boîte de dialogue Propriétés de Windows montrant la case Unblock du MSI PDMPublisher téléchargé](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/installer-unblock-20260922.png)
 
 > [!NOTE]
 > Si l'option **Unblock** n'est pas affichée, Windows n'a pas marqué le fichier comme bloqué et vous pouvez continuer avec l'installation.

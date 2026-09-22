@@ -1,7 +1,7 @@
 ---
 title: "Instalar o PDMPublisher para o SOLIDWORKS"
 description: "Baixe, desbloqueie, instale e habilite o PDMPublisher para o suplemento SOLIDWORKS."
-ms.date: 08/24/2026
+ms.date: 09/22/2026
 ms.topic: how-to
 ---
 
@@ -32,6 +32,8 @@ O Windows pode bloquear arquivos baixados da internet. Desbloquear o MSI antes d
 2. Botão direito do mouse no MSI e selecione **Properties**.
 3. Na aba **General**, selecione **Unblock** em **Security**.
 4. Selecione **Apply** e, em seguida, selecione **OK**.
+
+![Propriedades do Windows mostrando a caixa Unblock para o MSI do PDMPublisher baixado](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/installer-unblock-20260922.png)
 
 > [!NOTE]
 > Se a opção **Unblock** não for mostrada, o Windows não marcou o arquivo como bloqueado e você pode continuar com a instalação.
