@@ -72,8 +72,8 @@
         href: pdmpublishersolidworks_bom-manager.md
       - name: Translate
         href: pdmpublishersolidworks_translate.md
-        - name: Import, Export, and Reset Settings
-          href: pdmpublishersolidworks_settings-transfer.md
+      - name: Import, Export, and Reset Settings
+        href: pdmpublishersolidworks_settings-transfer.md
       - name: Save As New
         href: pdmpublishersolidworks_save-as-new.md
       - name: Property Doctor
@@ -85,6 +85,8 @@
         items:
         - name: ERPNext Connector
           href: pdmpublishersolidworks_erpnext-connector.md
+        - name: Odoo Connector
+          href: pdmpublishersolidworks_odoo-connector.md
         - name: Create a Custom ERP Connector
           href: pdmpublishersolidworks_erp-connector.md
       - name: Publishing

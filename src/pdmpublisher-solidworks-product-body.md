@@ -468,6 +468,7 @@ _enableSearch: false
       <p class="bb-product-body__intro">PDMPublisher for SOLIDWORKS gives designers and engineers publishing and document utilities directly inside SOLIDWORKS. Open a drawing, part, or assembly, choose a reusable profile, and publish the deliverables your team needs without rebuilding the export steps by hand.</p>
       <p>This version is built for interactive publishing from the active SOLIDWORKS session. Profiles store output locations, filename rules, formats, reference handling, drawing sheet behavior, annotations, conditions, and other publishing options.</p>
       <div class="bb-product-body__cta-row">
+        <a class="bb-product-body__button" href="https://bluebyte.biz/contact/" target="_blank" rel="noopener noreferrer">Request a SOLIDWORKS Add-in license</a>
         <a class="bb-product-body__button bb-product-body__button--secondary" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks.html" target="_blank" rel="noopener noreferrer">Read the help docs</a>
       </div>
     </div>
@@ -528,6 +529,18 @@ _enableSearch: false
       <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-table"></i></span>
       <h3>BOM Manager</h3>
       <p>Configure default BOM columns, display type, grouping expressions, and condition-based component exclusions.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_erp-sync.html" target="_blank" rel="noopener noreferrer" aria-label="Open ERP Sync feature guide in a new tab">
+      <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-arrows-exchange"></i></span>
+      <h3>ERP Sync</h3>
+      <p>Review and synchronize products, mapped properties, attachments, and manufacturing BOMs with ERPNext, Odoo, or a custom connector.</p>
+      <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__feature" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_publisher-macros.html" target="_blank" rel="noopener noreferrer" aria-label="Open Publisher Macros feature guide in a new tab">
+      <span class="bb-product-body__feature-icon" aria-hidden="true"><i class="ti ti-code"></i></span>
+      <h3>Publisher Macros</h3>
+      <p>Run supported PDMPublisher commands from SOLIDWORKS VBA macros using editable examples and saved utility profiles.</p>
       <span class="bb-product-body__external">Feature guide <span aria-hidden="true">&#8599;</span></span>
     </a>
   </div>
@@ -733,10 +746,88 @@ _enableSearch: false
     <li>Clone a complete assembly tree into a new project structure and optionally package companion PDF, DXF, or STEP files in a ZIP archive.</li>
     <li>Review and normalize custom properties across an assembly with Property Doctor before publishing or copying it.</li>
     <li>Standardize BOM columns, hierarchy, grouping, and component exclusions with BOM Manager.</li>
+    <li>Push reviewed products, mapped properties, attachments, and manufacturing BOMs to ERPNext or Odoo, and review proposed property changes before Pull writes to SOLIDWORKS.</li>
+    <li>Automate supported Save As New, Property Doctor, Clone Tree, and ERP Sync workflows through Publisher Macros.</li>
   </ul>
-  <h2>Shared resources and upcoming integrations</h2>
-  <p>The searchable Settings dialog also manages the PDM vault connection, display language, drawing search folders, reusable SQL Server sources, and named advanced formulas. These shared resources are available to supported publishing and document utilities.</p>
-  <p><strong>ERP Sync</strong> pushes checked SOLIDWORKS items, properties, and BOM relationships through an installed connector and pulls mapped ERP properties through a required review diff. <strong>Publisher Macros</strong> provides editable VBA examples for automating PDMPublisher commands. <strong>Translate</strong> remains planned.</p>
+  <h2>Integrations, automation, and shared resources</h2>
+  <p>PDMPublisher extends beyond file export with reviewed ERP synchronization, macro automation, reusable formulas, shared data sources, drawing discovery, PDM-aware operations, and portable settings.</p>
+  <div class="bb-product-body__capability-grid">
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_erpnext-connector.html" target="_blank" rel="noopener noreferrer" aria-label="Open ERPNext connector guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-building-factory-2"></i></span>
+      <h3>ERPNext connector</h3>
+      <p>Configure an official connector for reviewed item, property, file, and manufacturing BOM synchronization with ERPNext.</p>
+      <span class="bb-product-body__external">Connector guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_odoo-connector.html" target="_blank" rel="noopener noreferrer" aria-label="Open Odoo connector guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-building-store"></i></span>
+      <h3>Odoo connector</h3>
+      <p>Connect through an Odoo API key, map SOLIDWORKS properties, upload files, and synchronize reviewed products and manufacturing BOMs.</p>
+      <span class="bb-product-body__external">Connector guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_erp-connector.html" target="_blank" rel="noopener noreferrer" aria-label="Open custom ERP connector developer guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-plug-connected"></i></span>
+      <h3>Custom ERP connectors</h3>
+      <p>Build a .NET connector with PDMPublisher.ERPExtension.dll, implement the connector interfaces, package it, and test it in ERP Sync.</p>
+      <span class="bb-product-body__external">Developer guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_publisher-macros.html" target="_blank" rel="noopener noreferrer" aria-label="Open Publisher Macros guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-code-dots"></i></span>
+      <h3>Publisher Macros</h3>
+      <p>Edit and run VBA examples that obtain the add-in through GetAddInObject and call supported commands with saved profiles.</p>
+      <span class="bb-product-body__external">Automation guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_pdm-settings.html" target="_blank" rel="noopener noreferrer" aria-label="Open PDM settings guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-database"></i></span>
+      <h3>PDM-aware operations</h3>
+      <p>Select a local PDM vault view for serial numbers, vault-root placeholders, automatic check-in, and supported PDM-aware tools.</p>
+      <span class="bb-product-body__external">Settings guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_file-locations.html" target="_blank" rel="noopener noreferrer" aria-label="Open drawing file locations guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-folders"></i></span>
+      <h3>Drawing discovery</h3>
+      <p>Search configured drawing folders, subfolders, and SOLIDWORKS referenced-document locations for matching drawings used by document utilities.</p>
+      <span class="bb-product-body__external">Settings guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_external-sources.html" target="_blank" rel="noopener noreferrer" aria-label="Open external sources guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-database-search"></i></span>
+      <h3>External SQL sources</h3>
+      <p>Define reusable SQL Server connections and queries for supported dropdowns, tests, formulas, and property-driven workflows.</p>
+      <span class="bb-product-body__external">Settings guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_advanced-formulas.html" target="_blank" rel="noopener noreferrer" aria-label="Open advanced formulas guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-function"></i></span>
+      <h3>Advanced formulas</h3>
+      <p>Create named formulas once and reuse them for filenames, folders, properties, and other supported PDMPublisher values.</p>
+      <span class="bb-product-body__external">Formula guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_settings-transfer.html" target="_blank" rel="noopener noreferrer" aria-label="Open settings transfer guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-arrows-transfer-up-down"></i></span>
+      <h3>Import, export, and reset</h3>
+      <p>Move supported settings between computers, preserve reusable configurations, or reset a section when rebuilding a setup.</p>
+      <span class="bb-product-body__external">Settings guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_languages.html" target="_blank" rel="noopener noreferrer" aria-label="Open language settings guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-language"></i></span>
+      <h3>Language and regional formatting</h3>
+      <p>Select the shared display language and Canadian regional formatting used by PDMPublisher on the current computer.</p>
+      <span class="bb-product-body__external">Settings guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_comparison.html" target="_blank" rel="noopener noreferrer" aria-label="Open Community and Premium comparison in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-license"></i></span>
+      <h3>Community and Premium editions</h3>
+      <p>Review the included Community capabilities and the limits or additional workflows unlocked by a Premium license.</p>
+      <span class="bb-product-body__external">Compare editions <span aria-hidden="true">&#8599;</span></span>
+    </a>
+    <a class="bb-product-body__capability" href="https://pdmpublisher.com/help/src/pdmpublishersolidworks_license.html" target="_blank" rel="noopener noreferrer" aria-label="Open license management guide in a new tab">
+      <span class="bb-product-body__capability-icon" aria-hidden="true"><i class="ti ti-key"></i></span>
+      <h3>License management</h3>
+      <p>Activate, review, and manage the license used by the SOLIDWORKS Add-in, with direct access to support and update resources.</p>
+      <span class="bb-product-body__external">License guide <span aria-hidden="true">&#8599;</span></span>
+    </a>
+  </div>
+  <div class="bb-product-body__note">
+    <p><strong>Translate</strong> appears in the interface as a planned feature and is not presented here as an available production capability.</p>
+  </div>
   <h2>Why teams use it</h2>
   <p>Engineering teams often need the same outputs again and again: a PDF for review, a DXF for sheet metal, a STEP file for a supplier, or a drawing package for manufacturing. PDMPublisher for SOLIDWORKS turns those repeated export routines into profile-based actions that are easier to run and easier to standardize.</p>
   <p>The result is less manual saving, fewer missed configurations or sheets, and a cleaner handoff from design work to the teams that depend on accurate published files.</p>
