@@ -1,7 +1,7 @@
 ---
 title: Connecteur Odoo | PDMPublisher pour SOLIDWORKS
 description: Installer et configurer le connecteur Odoo officiel pour synchroniser les produits, propriétés, pièces jointes et nomenclatures de fabrication après révision.
-ms.date: 09/31/2026
+ms.date: 10/02/2026
 ms.topic: how-to
 ---
 
@@ -112,6 +112,8 @@ Le nom de base du fichier exporté doit correspondre à celui du modèle source.
 4. Choisissez les opérations Push nécessaires.
 5. Sélectionnez **Push** et examinez toutes les différences. Aucune donnée n'est encore écrite.
 6. Sélectionnez **Commit changes** pour valider de nouveau Odoo et appliquer le plan, ou **Cancel** pour ne rien écrire.
+
+![Révision Odoo Push montrant les changements de produits et de propriétés proposés avant la validation](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/odoo-push-review-20261002.png)
 
 Le connecteur peut créer des produits et mettre à jour les champs mappés. Les nouveaux produits utilisent les valeurs Odoo par défaut pour l'unité, la catégorie et le type de produit, sauf si un mappage pris en charge fournit une valeur. Le nom mappé ou le nom de la ligne source devient le nom du nouveau produit. Cette version ne produit pas les Internal References absentes et ne crée pas de champs Odoo personnalisés.
 

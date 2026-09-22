@@ -1,7 +1,7 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Install and configure the official Odoo connector for reviewed product, property, attachment, and manufacturing BOM synchronization.
-ms.date: 09/31/2026
+ms.date: 10/02/2026
 ms.topic: how-to
 ---
 
@@ -106,6 +106,8 @@ An exported file must have the same base filename as its source model. Existing 
 4. Choose the required Push operations.
 5. Select **Push** and review the complete diff. Nothing has been written yet.
 6. Select **Commit changes** to revalidate Odoo and apply the reviewed plan, or **Cancel** to write nothing.
+
+![Odoo Push review showing proposed product and property changes before commit](/images/pdmpublisher/solidworks/odoo-push-review-20261002.png)
 
 The connector can create products and update mapped product fields. New products use Odoo defaults for unit of measure, category, and product type unless a supported mapping supplies a value. A new product receives the mapped name or the source row name. This version does not generate missing Internal References or create custom Odoo fields.
 
