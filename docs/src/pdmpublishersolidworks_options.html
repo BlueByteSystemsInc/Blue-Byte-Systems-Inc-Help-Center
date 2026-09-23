@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
       <title>Publish Settings | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Publish Settings | PDMPublisher for SOLIDWORKS | Help Center ">
-
+      
       <meta name="description" content="Find the focused documentation for every PDMPublisher for SOLIDWORKS output and processing option.">
-
+      
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
+      <link rel="stylesheet" href="../public/main.css?v=20260919-language-switch-2">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-
+      
       <meta name="docfx:rel" content="../">
-
-
+      
+      
       <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_options.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
@@ -94,7 +94,7 @@
               <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
             </a>
             <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
-              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              <span>Request PDM Task trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -111,6 +111,102 @@
 <h1 id="publish-settings">Publish Settings</h1>
 
 <p>Open <strong>PDMPublisher &gt; Settings &gt; Publish</strong> to edit the output and processing settings stored in a <a href="pdmpublishersolidworks_profiles.html">Publish profile</a>. Select <strong>PDMPublisher &gt; Publish</strong> to configure and run the active profile.</p>
+<p><img src="/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png" alt="Current Publish settings in PDMPublisher for SOLIDWORKS"></p>
+<p>Scroll down to configure PDF merging, table-of-content columns, bookmarks, annotations, conditions, and Publish profiles.</p>
+<p><img src="/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png" alt="Lower portion of the Publish settings page"></p>
+<h2 id="controls-on-the-publish-page">Controls on the Publish Page</h2>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Control</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td><strong>Export location</strong></td>
+<td>Builds the destination folder from literal text and placeholders. <strong>Browse</strong> selects a folder.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td><strong>Locations by file format</strong></td>
+<td>Overrides the main destination for selected output formats.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td><strong>Filename</strong></td>
+<td>Builds the output filename. The extension is supplied by the selected format.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td><strong>File formats</strong></td>
+<td>Selects one or more output formats and exposes format-specific settings where supported.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td><strong>Show dialog before processing</strong></td>
+<td>Displays the Publish dialog so the user can review the active profile before the job starts.</td>
+</tr>
+<tr>
+<td>Output</td>
+<td><strong>Open export location on completion</strong></td>
+<td>Opens the destination folder after a successful job.</td>
+</tr>
+<tr>
+<td>Drawing sheets</td>
+<td><strong>Sheets to export</strong></td>
+<td>Chooses all sheets or another supported sheet-selection mode.</td>
+</tr>
+<tr>
+<td>Drawing sheets</td>
+<td><strong>Sheet name</strong></td>
+<td>Filters drawing sheets by an evaluated name pattern.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td><strong>Export references to file formats individually</strong></td>
+<td>Publishes supported assembly references as separate output files.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td><strong>Ignore sub-assembly children when condition checks fail</strong></td>
+<td>Stops traversal below a subassembly that does not satisfy its conditions.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td><strong>Convert multiple configurations</strong></td>
+<td>Publishes selected configurations separately. <strong>Configuration filter</strong> controls inclusion.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td><strong>Archive all exported documents (.zip)</strong></td>
+<td>Adds the produced files to a ZIP archive.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td><strong>Export sheet metal parts to 1:1 flat pattern DXF</strong></td>
+<td>Produces manufacturing-ready flat-pattern DXFs. <strong>Sheet metal settings</strong> controls layers and DXF behavior.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td><strong>Split bodies</strong></td>
+<td>Exports supported solid bodies separately.</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td><strong>Merge exported PDFs into one master PDF</strong></td>
+<td>Combines exported PDFs in processing order.</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td><strong>Add table of content to merged PDF</strong></td>
+<td>Adds a generated contents page to the merged PDF and enables its related controls.</td>
+</tr>
+</tbody>
+</table>
+<p>Scroll the right pane to reach the remaining PDF, annotation, condition, and profile controls. Disabled controls depend on another option; for example, table-of-contents settings remain unavailable until both PDF merging and table-of-contents generation are enabled.</p>
 <p>Use the focused pages beneath <strong>Publishing</strong> in the TOC:</p>
 <table>
 <thead>
@@ -121,8 +217,8 @@
 </thead>
 <tbody>
 <tr>
-<td>Profiles and presets</td>
-<td><a href="pdmpublishersolidworks_profiles.html">Publish Profiles</a>, <a href="pdmpublishersolidworks_presets.html">Presets</a>, and <a href="pdmpublishersolidworks_profile_sharing.html">Share a Publish Profile Using a PIN</a></td>
+<td>Profiles</td>
+<td><a href="pdmpublishersolidworks_profiles.html">Publish Profiles</a>, <a href="pdmpublishersolidworks_presets.html">Built-in Publish Profiles</a>, and <a href="pdmpublishersolidworks_profile_sharing.html">Share a Publish Profile Using a PIN</a></td>
 </tr>
 <tr>
 <td>Output paths and names</td>
@@ -146,7 +242,7 @@
 </tr>
 <tr>
 <td>Execution</td>
-<td><a href="pdmpublishersolidworks-publish.html">Run a Publish Job</a></td>
+<td><a href="pdmpublishersolidworks-publish.html">Run a Publish Job</a> and <a href="pdmpublishersolidworks_workflow.html">Publishing Workflow and Results</a></td>
 </tr>
 </tbody>
 </table>

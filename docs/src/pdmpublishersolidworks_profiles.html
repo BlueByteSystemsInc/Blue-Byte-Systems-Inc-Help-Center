@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
       <title>Publish Profiles | PDMPublisher for SOLIDWORKS | Help Center </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Publish Profiles | PDMPublisher for SOLIDWORKS | Help Center ">
-
+      
       <meta name="description" content="Create, select, rename, export, import, share, and delete reusable Publish profiles in PDMPublisher for SOLIDWORKS.">
-
+      
       <link rel="icon" href="../images/bluebyte-mark.png">
       <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css?v=20260809-content-trials-7">
+      <link rel="stylesheet" href="../public/main.css?v=20260919-language-switch-2">
       <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
-
+      
       <meta name="docfx:rel" content="../">
-
-
+      
+      
       <meta name="docfx:docurl" content="https://github.com/BlueByteSystemsInc/Blue-Byte-Systems-Inc-Help-Center/blob/main/src/pdmpublishersolidworks_profiles.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
@@ -94,7 +94,7 @@
               <span>PDMShell trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
             </a>
             <a class="bbs-content-trial-button btn btn-primary btn-sm" href="https://bluebyte.biz/product/pdmpublisher-trial/">
-              <span>PDMPublisher trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              <span>Request PDM Task trial</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -116,15 +116,17 @@
 <h1 id="publish-profiles">Publish Profiles</h1>
 
 <p>A Publish profile is a reusable combination of Publish settings, Annotations, and Conditions. Use profiles to switch between export workflows without rebuilding those sections each time.</p>
-<p>This profile family belongs to <strong>PDMPublisher for SOLIDWORKS</strong>. The PDM task stores its settings in a task definition and does not use add-in profiles. Save As New, Property Doctor, and Smart Pack and Go have separate profile families documented with those commands.</p>
-<p><img src="/images/pdmpublisher/solidworks/profile-toolbar.png" alt="PDMPublisher profile toolbar"></p>
+<p>This profile family belongs to <strong>PDMPublisher for SOLIDWORKS</strong>. The PDM task stores its settings in a task definition and does not use add-in profiles. Save As New, Property Doctor, and Clone Tree have separate profile families documented with those commands.</p>
+<p><img src="/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png" alt="Publish profile selector and profile commands"></p>
 <p>A profile is a named publishing configuration containing Options, Annotations, and Conditions. Select a profile before publishing.</p>
 <h2 id="select-a-profile">Select a Profile</h2>
 <p>Use the profile list in the Publish settings page or the arrow beside <strong>Publish</strong> in the CommandManager. The profile stores Publish settings, Annotations, and Conditions.</p>
+<p><img src="/images/pdmpublisher/solidworks/publish-profile-menu-20260908.png" alt="Named Publish profiles in the CommandManager menu"></p>
+<p>The CommandManager menu lists each saved profile as <strong>Profile: <em>name</em></strong>. Selecting an entry starts the Publish workflow with that profile. If <strong>Show dialog before processing</strong> is enabled, review the resolved output and processing options before confirming the job.</p>
 <p>Give profiles names that describe their output, such as <code>Released PDF</code>, <code>Laser DXF</code>, or <code>PDF And Step</code>.</p>
 <h2 id="create-a-blank-profile">Create a Blank Profile</h2>
 <p>Select <strong>New &gt; New...</strong> to create a profile that you can configure from the beginning. Set its Export Location, Filename, File Formats, reference behavior, Annotations, and Conditions before publishing.</p>
-<p>To begin with a supplied configuration instead of a blank profile, see <a href="pdmpublishersolidworks_presets.html">Presets</a>.</p>
+<p>To begin with a supplied configuration instead of a blank profile, see <a href="pdmpublishersolidworks_presets.html">Built-in Publish Profiles</a>.</p>
 <h2 id="rename-a-profile">Rename a Profile</h2>
 <ol>
 <li>Open <strong>PDMPublisher &gt; Settings &gt; Publish</strong> and select the profile.</li>
@@ -132,8 +134,7 @@
 <li>Change the name in the profile field.</li>
 <li>Select <strong>Save</strong>.</li>
 </ol>
-<p><img src="/images/pdmpublisher/solidworks/profile-edit.png" alt="Editing a profile name"></p>
-<p><img src="/images/pdmpublisher/solidworks/profile-save.png" alt="Saving a profile name"></p>
+<p>Use the page and pencil buttons beside the profile selector to create or rename a profile, then select <strong>OK</strong> to save the changes.</p>
 <p>While the profile name is being edited, other profile commands are unavailable until the name is saved.</p>
 <h2 id="move-profiles-between-computers">Move Profiles Between Computers</h2>
 <p>Use file transfer when you need a permanent backup or want to move the complete profile without using a PIN.</p>
@@ -153,10 +154,10 @@
 <p>The loaded profile is saved locally, applied immediately, and becomes the active profile. When the name already exists, you can replace the local profile, import the profile under another name, or cancel.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>A profile file is a saved configuration, not a built-in preset. Loading it does not change the preset from which the profile may have been created.</p>
+<p>A profile file is a saved configuration. Loading it does not change any built-in profile used as its starting point.</p>
 </div>
 <h2 id="share-profiles-using-a-pin">Share Profiles Using a PIN</h2>
-<p>Version <code>2026.08.10</code> and later can share selected Options, Annotations, and Conditions using a six-digit PIN that remains available for 30 days. See <a href="pdmpublishersolidworks_profile_sharing.html">Share Profiles Using a PIN</a> for the sharing and loading workflow, section selection, name-conflict behavior, and security guidance.</p>
+<p>Share selected Options, Annotations, and Conditions using a six-digit PIN that remains available for 30 days. See <a href="pdmpublishersolidworks_profile_sharing.html">Share Profiles Using a PIN</a> for the sharing and loading workflow, section selection, name-conflict behavior, and security guidance.</p>
 <h2 id="delete-a-profile">Delete a Profile</h2>
 <p>Select the profile and choose <strong>Delete</strong>. Deleting a profile removes that saved configuration; it does not delete exported documents.</p>
 <div class="IMPORTANT">
