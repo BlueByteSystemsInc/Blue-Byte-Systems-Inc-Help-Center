@@ -74,6 +74,7 @@
     .connector-item:hover, .connector-item:focus { border-color: var(--accent); }
     .connector-logo { display: grid; place-items: center; flex: 0 0 40px; width: 40px; height: 40px; padding: 5px; border: 1px solid #d8dde2; border-radius: 4px; background: #ffffff; }
     .connector-logo img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+    .connector-logo--text { color: #0078d4; font-size: 13px; font-weight: 800; letter-spacing: -.02em; }
     .connector-item strong { display: block; color: var(--link); font-size: 15px; }
     .connector-item small { display: block; margin-top: 1px; color: var(--muted); font-size: 12px; }
     .custom-connector { display: inline-flex; align-items: center; min-height: 38px; margin-top: 10px; padding: 8px 12px; border: 1px solid var(--accent); border-radius: 5px; background: var(--accent); color: var(--accent-text); font-weight: 600; text-decoration: none; }
@@ -124,6 +125,7 @@
       <div class="connector-grid">
         <a class="connector-item" href="src/pdmpublishersolidworks_erpnext-connector.html"><span class="connector-logo"><img src="../images/pdmpublisher/solidworks/connectors/erpnext.png" alt=""></span><span><strong>ERPNext</strong><small>Connecteur officiel</small></span></a>
         <a class="connector-item" href="src/pdmpublishersolidworks_odoo-connector.html"><span class="connector-logo"><img src="../images/pdmpublisher/solidworks/connectors/odoo.png" alt=""></span><span><strong>Odoo</strong><small>Connecteur officiel</small></span></a>
+        <a class="connector-item" href="src/pdmpublishersolidworks_business-central-connector.html"><span class="connector-logo connector-logo--text" aria-hidden="true">BC</span><span><strong>Dynamics 365 Business Central</strong><small>Connecteur officiel &middot; Articles et propri&eacute;t&eacute;s</small></span></a>
       </div>
       <a class="custom-connector" href="src/pdmpublishersolidworks_erp-connector.html">Cr&eacute;er votre connecteur personnalis&eacute;</a>
     </section>
