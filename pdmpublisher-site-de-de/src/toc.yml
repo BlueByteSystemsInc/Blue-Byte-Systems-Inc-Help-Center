@@ -25,7 +25,7 @@
     items:
     - name: Profile veröffentlichen
       href: ../../src-de-de/pdmpublishersolidworks_profiles.md
-    - name: Presets veröffentlichen
+    - name: Integrierte Veröffentlichungsprofile
       href: ../../src-de-de/pdmpublishersolidworks_presets.md
     - name: Teilen eines Veröffentlichungsprofils mit einer PIN
       href: ../../src-de-de/pdmpublishersolidworks_profile_sharing.md

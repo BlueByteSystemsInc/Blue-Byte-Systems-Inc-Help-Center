@@ -1,45 +1,44 @@
 ---
-title: "Voreinstellungen | PDMPublisher für SOLIDWORKS"
-description: "Erstellen Sie ein PDMPublisher für SOLIDWORKS-Profil aus einem integrierten DXF, PDF und STEP oder STEP Preset."
+title: "Integrierte Veröffentlichungsprofile | PDMPublisher für SOLIDWORKS"
+description: "Erstellen Sie ein PDMPublisher für SOLIDWORKS-Profil aus einem mitgelieferten DXF-, PDF-und-STEP- oder STEP-Startprofil."
 ms.date: 08/23/2026
 ms.topic: how-to
 bbsProductName: PDMPublisher für SOLIDWORKS
 bbsProduktHref: pdmpublishersolidworks.html
 ---
 
-# Presets
+# Integrierte Veröffentlichungsprofile
 
-Presets sind integrierte Startkonfigurationen für gängige Publishing-Workflows. Sie sind nur in **PDMPublisher for SOLIDWORKS** verfügbar.
+PDMPublisher enthält Startprofile für gängige Veröffentlichungsabläufe. Sie sind nur in **PDMPublisher für SOLIDWORKS** verfügbar.
 
 ![Profilauswahl und Profilbefehle veröffentlichen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)
-<a id="create-a-profile-from-a-preset"></a>
-## Erstellen eines Profils aus einem Preset
+## Profil aus einem integrierten Profil erstellen
 
 1. Öffnen Sie **New**.
 2. Wählen Sie **New From**.
-3. Wählen Sie ein mitgeliefertes Preset.
+3. Wählen Sie ein mitgeliefertes Profil.
 4. Überprüfen Sie das neue Profil, passen Sie seine Einstellungen an und wählen Sie **Save** aus.
 
-Die bereitgestellten Presets sind:
+Die mitgelieferten Profile sind:
 
-| Preset | Startzweck |
+| Profil | Startzweck |
 | --- | --- |
 | `DXF` | Zeichnen oder Herstellen DXF Ausgabe. |
 | `PDF And Step` | PDF Dokumentation und STEP Modellausgabe. |
 | `STEP` | STEP Modellausgabe. |
 
 > [!IMPORTANT]
-> Ein Preset veröffentlicht nicht von selbst. **New From** erstellt ein Profil aus der Voreinstellung; das neue Profil ist die Konfiguration, die verwendet wird, wenn Sie **PUBLISH** auswählen.
+> Ein integriertes Profil veröffentlicht nicht selbstständig. **New From** erstellt aus der mitgelieferten Startkonfiguration ein bearbeitbares Profil, das bei **PUBLISH** verwendet wird.
 
 <a id="customize-the-new-profile"></a>
 ## Anpassung des neuen Profils
 
-Presets sind Startpunkte, keine gesperrten Konfigurationen. Überprüfen Sie diese Bereiche vor der Veröffentlichung:
+Integrierte Profile sind Startpunkte und keine gesperrten Konfigurationen. Prüfen Sie diese Bereiche vor der Veröffentlichung:
 
 - [Optionen](pdmpublishersolidworks_options.md), einschließlich Exportort, Dateiname, Formate und Referenzverarbeitung
 - [Anmerkungen](pdmpublishersolidworks_annotations.md)
 - [Bedingungen](conditions_solidworks.md)
 
-Das Ändern eines aus einer Voreinstellung erstellten Profils ändert nicht die ursprüngliche Voreinstellung. Sie können mehrere Profile aus derselben Voreinstellung erstellen und jedes für ein anderes Kunden-, Projekt- oder Ausgabepaket anpassen.
+Das Ändern eines Profils, das aus einem integrierten Profil erstellt wurde, ändert die mitgelieferte Startkonfiguration nicht. Sie können mehrere Profile aus demselben integrierten Profil erstellen und jedes für ein anderes Kunden-, Projekt- oder Ausgabepaket anpassen.
 
 Profilauswahl, Umbenennung, Dateiübertragung, Löschung und andere Profilbefehle finden Sie unter [Profile](pdmpublishersolidworks_profiles.md).

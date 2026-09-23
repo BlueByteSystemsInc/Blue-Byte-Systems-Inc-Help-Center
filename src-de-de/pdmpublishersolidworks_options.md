@@ -41,7 +41,7 @@ Verwenden Sie die fokussierten Seiten unter **Publishing** im TOC:
 
 | Kategorie | Seiten |
 | --- | --- |
-| Profile und Presets | [Publish Profiles](pdmpublishersolidworks_profiles.md), [Presets](pdmpublishersolidworks_presets.md) und [Share a Publish Profile Using a PIN](pdmpublishersolidworks_profile_sharing.md) |
+| Profile | [Veröffentlichungsprofile](pdmpublishersolidworks_profiles.md), [Integrierte Veröffentlichungsprofile](pdmpublishersolidworks_presets.md) und [Veröffentlichungsprofil über eine PIN teilen](pdmpublishersolidworks_profile_sharing.md) |
 | Outputpfade und Namen | [Ausfuhrort](pdmpublisher-options/export-location.md), [Dateiname](pdmpublisher-options/filename.md), [File Formats](pdmpublisher-options/file-formats.md), [Open Export Location](pdmpublishersolidworks-open-export-location.md) und [Exportierte Dokumente archivieren](pdmpublisher-options/archive-all-exported-documents.md) |
 | Baugruppe und Referenzen | [Exportreferenzen einzeln](pdmpublisher-options/export-references-individually.md) und [Unterversammlungskinder ignorieren](pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md) |
 | Konfigurationen | [Mehrere Konfigurationen konvertieren](pdmpublisher-options/convert-multiple-configurations.md) |

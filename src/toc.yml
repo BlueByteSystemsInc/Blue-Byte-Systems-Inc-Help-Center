@@ -47,7 +47,7 @@
         items:
         - name: Publish Profiles
           href: pdmpublishersolidworks_profiles.md
-        - name: Publish Presets
+        - name: Built-in Publish Profiles
           href: pdmpublishersolidworks_presets.md
         - name: Share a Publish Profile Using a PIN
           href: pdmpublishersolidworks_profile_sharing.md

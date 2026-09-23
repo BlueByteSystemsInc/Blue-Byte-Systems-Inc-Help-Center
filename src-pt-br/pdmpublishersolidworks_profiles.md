@@ -31,7 +31,7 @@ Dê nomes de perfis que descrevem sua saída, como `Released PDF`, `Laser DXF` o
 
 Selecione **New > New...** para criar um perfil que você pode configurar desde o início. Defina sua Localização de Exportação, Nome de Arquivo, Formatos de Arquivo, comportamento de referência, Anotações e Condições antes de publicar.
 
-Para começar com uma configuração fornecida em vez de um perfil em branco, consulte [Predefinições](pdmpublishersolidworks_presets.md).
+Para começar com uma configuração fornecida em vez de um perfil em branco, consulte [Perfis de publicação integrados](pdmpublishersolidworks_presets.md).
 
 <a id="rename-a-profile"></a>
 ## Mudar o Nome de um Perfil
@@ -69,7 +69,7 @@ O arquivo exportado preserva o perfil completo, incluindo suas Opções, Anotaç
 O perfil carregado é salvo localmente, aplicado imediatamente, e torna-se o perfil ativo. Quando o nome já existe, você pode substituir o perfil local, importar o perfil sob outro nome ou cancelar.
 
 > [!NOTE]
-> Um arquivo de perfil é uma configuração salva, não uma predefinição incorporada. Carregar não altera a predefinição a partir da qual o perfil pode ter sido criado.
+> Um arquivo de perfil é uma configuração salva. Carregá-lo não modifica o perfil integrado usado como ponto de partida.
 
 <a id="share-profiles-using-a-pin"></a>
 ## Compartilhar perfis usando um PIN

@@ -43,7 +43,7 @@ Use as páginas focadas abaixo de **Publishing** no TOC:
 
 | Categoria | Páginas |
 | --- | --- |
-| Perfis e predefinições | [Publicar perfis](pdmpublishersolidworks_profiles.md), [Predefinições](pdmpublishersolidworks_presets.md), e [Compartilhar um perfil de publicação usando um PIN](pdmpublishersolidworks_profile_sharing.md) |
+| Perfis | [Perfis de publicação](pdmpublishersolidworks_profiles.md), [Perfis de publicação integrados](pdmpublishersolidworks_presets.md) e [Compartilhar um perfil de publicação usando um PIN](pdmpublishersolidworks_profile_sharing.md) |
 | Caminhos de saída e nomes | [Localização da exportação](pdmpublisher-options/export-location.md), [nome do arquivo](pdmpublisher-options/filename.md), [Formatos do arquivo](pdmpublisher-options/file-formats.md), [Localização da exportação aberta](pdmpublishersolidworks-open-export-location.md) e [Documentos Exportados do arquivo](pdmpublisher-options/archive-all-exported-documents.md) |
 | Montagem e referências | [Referências de exportação individualmente](pdmpublisher-options/export-references-individually.md) e [Ignore crianças sub-Assembly](pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md) |
 | Configurações | [Converter várias configurações](pdmpublisher-options/convert-multiple-configurations.md) |

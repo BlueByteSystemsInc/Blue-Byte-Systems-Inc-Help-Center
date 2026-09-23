@@ -25,7 +25,7 @@ PDMPublisher für SOLIDWORKS wird als **Community Edition** ausgeführt, wenn ke
 | BOM Manager | Zeigt und exportiert bis zu 10 Zeilen | Keine Community-Begrenzung für Zeilen |
 | ERP Sync | Prüft und synchronisiert bis zu 10 Zeilen | Keine Community-Begrenzung für Zeilen |
 | Exportziele nach Dateiformat | Nicht verfügbar | Verfügbar |
-| Profile, Voreinstellungen und Einstellungsübertragung | Verfügbar | Verfügbar |
+| Profile und Einstellungsübertragung | Verfügbar | Verfügbar |
 | Anmerkungen, Bedingungen und Protokolle | Verfügbar | Verfügbar |
 | PDM-gestützte Werte und Speicherorte | Verfügbar, wenn eine lokale Tresoransicht und die Berechtigungen den Zugriff erlauben | Verfügbar, wenn eine lokale Tresoransicht und die Berechtigungen den Zugriff erlauben |
 

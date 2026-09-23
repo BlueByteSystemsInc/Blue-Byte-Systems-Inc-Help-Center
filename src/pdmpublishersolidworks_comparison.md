@@ -25,7 +25,7 @@ PDMPublisher for SOLIDWORKS runs as the **Community Edition** when no paid Premi
 | BOM Manager | Displays and exports up to 10 rows | No Community Edition row limit |
 | ERP Sync | Reviews and synchronizes up to 10 rows | No Community Edition row limit |
 | Export locations by file format | Not available | Available |
-| Profiles, presets, and settings transfer | Available | Available |
+| Profiles and settings transfer | Available | Available |
 | Annotations, conditions, and logs | Available | Available |
 | PDM-backed values and locations | Available when a local vault view and permissions allow access | Available when a local vault view and permissions allow access |
 

@@ -25,7 +25,7 @@
     items:
     - name: Publicar Perfis
       href: ../../src-pt-br/pdmpublishersolidworks_profiles.md
-    - name: Publicar predefinições
+    - name: Perfis de publicação integrados
       href: ../../src-pt-br/pdmpublishersolidworks_presets.md
     - name: Compartilhar um perfil de publicação usando um PIN
       href: ../../src-pt-br/pdmpublishersolidworks_profile_sharing.md

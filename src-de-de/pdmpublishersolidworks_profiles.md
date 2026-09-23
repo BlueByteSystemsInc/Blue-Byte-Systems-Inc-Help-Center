@@ -31,7 +31,7 @@ Geben Sie Profilnamen an, die ihre Ausgabe beschreiben, z. B. `Released PDF`, `L
 
 Wählen Sie **New > New...**, um ein Profil zu erstellen, das Sie von Anfang an konfigurieren können. Legen Sie vor der Veröffentlichung den Exportort, den Dateinamen, die Dateiformate, das Referenzverhalten, die Anmerkungen und die Bedingungen fest.
 
-Um mit einer mitgelieferten Konfiguration anstelle eines leeren Profils zu beginnen, siehe [Presets](pdmpublishersolidworks_presets.md).
+Um mit einer mitgelieferten Konfiguration anstelle eines leeren Profils zu beginnen, siehe [Integrierte Veröffentlichungsprofile](pdmpublishersolidworks_presets.md).
 
 <a id="rename-a-profile"></a>
 ## Umbenennen eines Profils
@@ -69,7 +69,7 @@ Die exportierte Datei behält das vollständige Profil, einschließlich der Opti
 Das geladene Profil wird lokal gespeichert, sofort angewendet und wird zum aktiven Profil. Wenn der Name bereits vorhanden ist, können Sie das lokale Profil ersetzen, das Profil unter einem anderen Namen importieren oder abbrechen.
 
 > [!NOTE]
-> Eine Profildatei ist eine gespeicherte Konfiguration, keine eingebaute Voreinstellung. Das Laden ändert nicht die Voreinstellung, aus der das Profil erstellt wurde.
+> Eine Profildatei ist eine gespeicherte Konfiguration. Beim Laden wird das integrierte Profil, das als Ausgangspunkt diente, nicht geändert.
 
 <a id="share-profiles-using-a-pin"></a>
 ## Profile mit einer PIN teilen

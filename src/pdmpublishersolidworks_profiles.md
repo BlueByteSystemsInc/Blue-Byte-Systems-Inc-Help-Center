@@ -31,7 +31,7 @@ Give profiles names that describe their output, such as `Released PDF`, `Laser D
 
 Select **New > New...** to create a profile that you can configure from the beginning. Set its Export Location, Filename, File Formats, reference behavior, Annotations, and Conditions before publishing.
 
-To begin with a supplied configuration instead of a blank profile, see [Presets](pdmpublishersolidworks_presets.md).
+To begin with a supplied configuration instead of a blank profile, see [Built-in Publish Profiles](pdmpublishersolidworks_presets.md).
 
 ## Rename a Profile
 
@@ -65,7 +65,7 @@ The exported file preserves the complete profile, including its Options, Annotat
 The loaded profile is saved locally, applied immediately, and becomes the active profile. When the name already exists, you can replace the local profile, import the profile under another name, or cancel.
 
 > [!NOTE]
-> A profile file is a saved configuration, not a built-in preset. Loading it does not change the preset from which the profile may have been created.
+> A profile file is a saved configuration. Loading it does not change any built-in profile used as its starting point.
 
 ## Share Profiles Using a PIN
 

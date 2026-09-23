@@ -25,7 +25,7 @@
     items:
     - name: Publier des profils
       href: ../../src-fr-ca/pdmpublishersolidworks_profiles.md
-    - name: Publier les préréglages
+    - name: Profils de publication intégrés
       href: ../../src-fr-ca/pdmpublishersolidworks_presets.md
     - name: Partager un profil Publier en utilisant un NIP
       href: ../../src-fr-ca/pdmpublishersolidworks_profile_sharing.md

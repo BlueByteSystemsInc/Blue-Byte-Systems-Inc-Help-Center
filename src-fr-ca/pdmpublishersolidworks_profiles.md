@@ -31,7 +31,7 @@ Donnez les noms de profils qui décrivent leur sortie, comme `Released PDF`, `La
 
 Sélectionnez **New > New...** pour créer un profil que vous pouvez configurer dès le début. Définir son emplacement d'exportation, nom de fichier, formats de fichier, comportement de référence, annotations et conditions avant la publication.
 
-Pour commencer par une configuration fournie au lieu d'un profil vide, voir [Presets](pdmpublishersolidworks_presets.md).
+Pour commencer par une configuration fournie au lieu d'un profil vide, consultez [Profils de publication intégrés](pdmpublishersolidworks_presets.md).
 
 <a id="rename-a-profile"></a>
 ## Renommer un profil
@@ -69,7 +69,7 @@ Le fichier exporté conserve le profil complet, y compris ses options, annotatio
 Le profil chargé est enregistré localement, appliqué immédiatement et devient le profil actif. Lorsque le nom existe déjà, vous pouvez remplacer le profil local, importer le profil sous un autre nom, ou annuler.
 
 > [!NOTE]
-> Un fichier de profil est une configuration enregistrée, pas un préréglage intégré. Le chargement ne modifie pas le préréglage à partir duquel le profil peut avoir été créé.
+> Un fichier de profil est une configuration enregistrée. Son chargement ne modifie pas le profil intégré utilisé comme point de départ.
 
 <a id="share-profiles-using-a-pin"></a>
 ## Partager des profils utilisant un NIP

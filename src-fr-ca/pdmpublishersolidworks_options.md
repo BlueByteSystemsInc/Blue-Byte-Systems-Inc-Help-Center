@@ -41,7 +41,7 @@ Utilisez les pages ciblées sous **Publishing** dans le TOC:
 
 | Catégorie | Pages |
 | --- | --- |
-| Profils et préréglages | [Publier des profils](pdmpublishersolidworks_profiles.md), [Présets](pdmpublishersolidworks_presets.md) et [Partager un profil Publier en utilisant un NIP](pdmpublishersolidworks_profile_sharing.md) |
+| Profils | [Profils de publication](pdmpublishersolidworks_profiles.md), [Profils de publication intégrés](pdmpublishersolidworks_presets.md) et [Partager un profil de publication au moyen d'un NIP](pdmpublishersolidworks_profile_sharing.md) |
 | Chemins et noms de sortie | [Endroit d'exportation](pdmpublisher-options/export-location.md), [Nom du fichier](pdmpublisher-options/filename.md), [Formats de fichiers](pdmpublisher-options/file-formats.md), [Endroit d'exportation ouvert](pdmpublishersolidworks-open-export-location.md) et [Archive Documents exportés](pdmpublisher-options/archive-all-exported-documents.md) |
 | Assemblage et références | [Exporter les références individuellement](pdmpublisher-options/export-references-individually.md) et [Ignorer les enfants sous-assemblées](pdmpublisher-options/ignore-sub-assembly-children-when-condition-checks-fail.md) |
 | Configurations | [Convertir plusieurs configurations](pdmpublisher-options/convert-multiple-configurations.md) |

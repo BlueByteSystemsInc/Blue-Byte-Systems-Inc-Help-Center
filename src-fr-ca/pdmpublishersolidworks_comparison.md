@@ -25,7 +25,7 @@ PDMPublisher pour SOLIDWORKS fonctionne en **édition Community** lorsqu'aucune 
 | BOM Manager | Affiche et exporte jusqu'à 10 lignes | Aucune limite de lignes propre à Community |
 | ERP Sync | Examine et synchronise jusqu'à 10 lignes | Aucune limite de lignes propre à Community |
 | Emplacements d'exportation par format | Non disponible | Disponible |
-| Profils, préréglages et transfert des réglages | Disponible | Disponible |
+| Profils et transfert des réglages | Disponible | Disponible |
 | Annotations, conditions et journaux | Disponible | Disponible |
 | Valeurs et emplacements PDM | Disponibles lorsqu'une vue de coffre locale et les autorisations permettent l'accès | Disponibles lorsqu'une vue de coffre locale et les autorisations permettent l'accès |
 
