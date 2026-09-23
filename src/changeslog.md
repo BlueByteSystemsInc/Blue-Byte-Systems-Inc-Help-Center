@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/03/2026
+ms.date: 10/04/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,20 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.03` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.04.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.04.0
+*Applies to **SOLIDWORKS Add-in***
+
+- Installer version: `26.10.04`.
+- Refined the [BOM Manager](pdmpublishersolidworks_bom-manager.md) Excel export layout by placing **Browse...** beside the **Workbook template** field.
+- Renamed the Excel export thumbnail option to **Include thumbnail**.
 
 ## 2026.10.03
 *Applies to **SOLIDWORKS Add-in***

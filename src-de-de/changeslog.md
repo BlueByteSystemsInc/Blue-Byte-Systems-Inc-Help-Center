@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/03/2026
+ms.date: 10/04/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,21 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.03` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.04.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="202610040"></a>
+## 2026.10.04.0
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Installerversion: `26.10.04`.
+- Das Excel-Exportlayout im [BOM Manager](pdmpublishersolidworks_bom-manager.md) wurde verbessert. **Browse...** befindet sich jetzt direkt neben dem Feld **Workbook template**.
+- Die Miniaturansichtsoption für den Excel-Export wurde in **Include thumbnail** umbenannt.
 
 <a id="20261003"></a>
 ## 2026.10.03

@@ -1,7 +1,7 @@
 ---
 title: "BOM Manager-PDMPublisher pour SOLIDWORKS"
-description: "Configurez les colonnes BOM, le type d'affichage, le regroupement et les conditions d'exclusion des composants dans PDMPublisher pour SOLIDWORKS."
-ms.date: 09/19/2026
+description: "Configurez les colonnes BOM, le type d'affichage, le regroupement, les exclusions de composants et l'exportation Excel dans PDMPublisher pour SOLIDWORKS."
+ms.date: 10/04/2026
 ms.topic: how-to
 ---
 
@@ -14,7 +14,7 @@ La fenêtre principale fournit les sélecteurs de type BOM et de template de col
 
 Ouvrir **PDMPublisher > Settings > BOM Manager** sous **Bill Of Materials**.
 
-![Paramètres BOM Manager](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_BOM_Manager_Default_Light_100.png)
+![Paramètres BOM Manager avec le modèle de classeur Excel et l'option de vignette](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/bom-manager-settings-20261004.png)
 BOM Manager définit la structure par défaut utilisée lorsque PDMPublisher produit ou affiche des informations sur la facture de matériel.
 
 | Réglage | Ce qu'il contrôle |
@@ -23,6 +23,8 @@ BOM Manager définit la structure par défaut utilisée lorsque PDMPublisher pro
 | **Default BOM display type** | Sélectionne la structure de SOLIDWORKS BOM, telle qu'une hiérarchie dentelée. |
 | **Group by** | Groupe les lignes par texte, propriétés ou supports. Laisser vide pour un résultat plat non groupé. |
 | **Ignore Components** | Ouvre l'éditeur d'état utilisé pour omettre les composants correspondants du BOM. |
+| **Workbook template** | Sélectionne un modèle `.xlsx` ou `.xltx` facultatif pour les exportations Excel. Entrez le chemin ou sélectionnez **Browse...** à côté du champ. |
+| **Include thumbnail** | Inclut la vignette disponible du modèle dans le classeur exporté. |
 
 <a id="configure-the-defaults"></a>
 ## Configurer les valeurs par défaut
@@ -31,7 +33,9 @@ BOM Manager définit la structure par défaut utilisée lorsque PDMPublisher pro
 2. Sélectionnez le **Default BOM display type** approprié à la structure d'assemblage.
 3. Si les lignes doivent être groupées, entrez une expression **Group by** et utilisez son menu placeholder pour insérer des valeurs de document.
 4. Sélectionnez **Ignore Components** pour définir les exclusions. Choisissez si une condition ou toutes les conditions doivent correspondre, puis ajoutez les règles de propriété requises.
-5. Sélectionnez **OK** pour enregistrer les paramètres.
+5. Pour les exportations Excel, entrez un **Workbook template** facultatif ou sélectionnez **Browse...** pour en choisir un.
+6. Activez **Include thumbnail** lorsque les lignes BOM exportées doivent inclure les aperçus des modèles.
+7. Sélectionnez **OK** pour enregistrer les paramètres.
 
 ![Ignorer l'éditeur d'état des composants pour BOM Manager](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/BOM/BOM_Ignore_components_Default_Light_100.png)
 Les conditions d'exclusion affectent l'adhésion au BOM; elles ne suppriment ni ne suppriment les composants de l'ensemble SOLIDWORKS.
