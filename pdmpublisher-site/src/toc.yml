@@ -23,6 +23,8 @@
     href: ../../src/pdmpublishersolidworks_settings.md
     expanded: true
     items:
+    - name: Company Settings
+      href: ../../src/pdmpublishersolidworks_company-settings.md
     - name: Publish Profiles
       href: ../../src/pdmpublishersolidworks_profiles.md
     - name: Built-in Publish Profiles
