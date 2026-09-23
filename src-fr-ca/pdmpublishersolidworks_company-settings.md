@@ -1,6 +1,6 @@
 ---
 title: Paramètres d’entreprise | PDMPublisher pour SOLIDWORKS
-description: Publiez certains paramètres PDMPublisher pour une entreprise, contrôlez leur application et gérez les révisions de configuration en toute sécurité.
+description: Utilisez les paramètres PDMPublisher de l’entreprise ou publiez certains paramètres comme administrateur.
 ms.date: 10/03/2026
 ms.topic: how-to
 ---
@@ -13,19 +13,17 @@ Ouvrez **PDMPublisher > Settings > Company Settings**.
 
 ![Page Company Settings avec les commandes de téléchargement, d’utilisation et d’administration](/images/pdmpublisher/solidworks/company-settings-20261003.png)
 
-> [!IMPORTANT]
-> Une licence activée et non expirée qui contient un nom d’entreprise est requise. L’association est faite selon ce nom. Les identifiants des connecteurs, les clés de licence, les identifiants SQL, la configuration du coffre-fort et les autres secrets propres à l’ordinateur ne sont pas partagés.
+Une licence activée qui contient le nom de votre entreprise est requise.
 
 ## Utiliser les paramètres d’entreprise
 
-- Sélectionnez **Download company settings** pour récupérer immédiatement la dernière révision. Enregistrez votre travail et fermez les autres fenêtres PDMPublisher, car le téléchargement recharge la boîte de dialogue Settings et les commandes de publication.
+- Sélectionnez **Download company settings** pour obtenir les derniers paramètres publiés par votre administrateur. Enregistrez d’abord votre travail.
 - Avec **Let users choose**, cochez **Use company settings** pour appliquer les valeurs gérées; décochez-la pour revenir aux valeurs locales enregistrées.
 - Avec **Required**, la case est verrouillée et les pages gérées sont en lecture seule.
-- Si le service est indisponible, le cache local protégé demeure utilisable. PDMPublisher vérifie aussi une mise à jour une fois au démarrage; il n’effectue pas d’interrogation continue.
 
 ## Publier comme administrateur
 
-Le mot de passe administrateur est créé séparément pour le nom exact de l’entreprise inscrit dans la licence. Sélectionnez **Company administrator**, entrez ce mot de passe, puis sélectionnez **Unlock**.
+Sélectionnez **Company administrator**, entrez votre mot de passe administrateur, puis sélectionnez **Unlock**.
 
 ![Boîte de dialogue du mot de passe de l’administrateur d’entreprise](/images/pdmpublisher/solidworks/company-settings-admin-unlock-20261003.png)
 
@@ -38,18 +36,14 @@ Après la vérification :
 
 ![Page administrateur déverrouillée avec le mode et les groupes de paramètres](/images/pdmpublisher/solidworks/company-settings-admin-publish-20261003.png)
 
-Seuls les groupes cochés sont gérés. Les macros, connecteurs ERP, bibliothèques de matériaux, sources SQL externes et autres ressources référencées doivent quand même être installés ou configurés sur chaque ordinateur.
+Seuls les groupes cochés sont partagés. Les groupes non cochés continuent d’utiliser les paramètres locaux de chaque utilisateur.
 
 ## Modifier et republier
 
-Le déverrouillage commence avec les valeurs locales existantes; il ne les remplace pas par les valeurs d’entreprise. Le mot de passe est gardé uniquement en mémoire pendant la session. Enregistrez les modifications normalement, puis publiez-les dans Company Settings.
-
-La publication, le téléchargement, la fin de la session, un changement de licence ou d’entreprise, ou le redémarrage de SOLIDWORKS met fin à la session et oublie le mot de passe. Terminer sans publier conserve les modifications seulement sur cet ordinateur.
+Déverrouillez les paramètres avec **Company administrator**. Modifiez et enregistrez vos paramètres, revenez à Company Settings, puis sélectionnez **Publish company settings**. Si vous terminez sans publier, les modifications demeurent seulement sur votre ordinateur.
 
 ## Conflits de révision
 
-Chaque publication utilise la dernière révision téléchargée. Si une révision plus récente existe déjà, PDMPublisher arrête l’envoi. Téléchargez-la, révisez-la et publiez de nouveau.
+Si PDMPublisher indique que de nouveaux paramètres d’entreprise sont disponibles, téléchargez-les avant de publier de nouveau.
 
-Utilisez **Overwrite newer company settings** seulement pour remplacer intentionnellement cette révision. Le mot de passe est vérifié et une confirmation est requise. Seule la vérification de révision périmée est contournée; la validation, la mise à jour atomique, l’historique et la conservation des paramètres de versions plus récentes demeurent actifs.
-
-Les données sont transférées par HTTPS et le cache local est chiffré pour l’utilisateur Windows actuel.
+Utilisez **Overwrite newer company settings** seulement si vous voulez intentionnellement remplacer les paramètres plus récents. Lisez attentivement la confirmation avant de continuer.

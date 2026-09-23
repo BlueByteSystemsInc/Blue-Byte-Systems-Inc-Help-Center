@@ -11,11 +11,11 @@ ms.topic: how-to
 
 ![Página Company Settings](/images/pdmpublisher/solidworks/company-settings-20261003.png)
 
-É necessária uma licença ativada e não expirada com o nome da empresa. Selecione **Download company settings** para obter a revisão mais recente. Com **Let users choose**, o usuário pode ativar ou desativar **Use company settings**; com **Required**, as páginas gerenciadas ficam bloqueadas e somente leitura.
+É necessária uma licença ativada com o nome da empresa. Selecione **Download company settings** para obter as configurações mais recentes publicadas pelo administrador. Com **Let users choose**, o usuário pode ativar ou desativar **Use company settings**; com **Required**, as páginas gerenciadas ficam bloqueadas e somente leitura.
 
 ## Publicar configurações
 
-Selecione **Company administrator**, informe a senha de administrador criada para o nome exato da empresa e selecione **Unlock**.
+Selecione **Company administrator**, informe sua senha de administrador e selecione **Unlock**.
 
 ![Senha do administrador da empresa](/images/pdmpublisher/solidworks/company-settings-admin-unlock-20261003.png)
 
@@ -25,6 +25,6 @@ Selecione **Company administrator**, informe a senha de administrador criada par
 
 ![Página do administrador desbloqueada](/images/pdmpublisher/solidworks/company-settings-admin-publish-20261003.png)
 
-Somente os grupos marcados são gerenciados. Senhas, chaves de licença, configurações de conectores e outros segredos específicos do computador não são compartilhados. Conectores, macros e recursos externos necessários devem ser configurados separadamente em cada computador.
+Somente os grupos marcados são compartilhados. Os grupos não marcados continuam usando as configurações locais de cada usuário.
 
-Cada publicação usa a última revisão baixada. Se houver uma revisão mais recente, baixe-a primeiro. Use **Overwrite newer company settings** somente para uma substituição intencional; a senha e a confirmação continuam obrigatórias. O cache local é criptografado para o usuário atual do Windows e os dados são transferidos por HTTPS.
+Se o PDMPublisher informar que há configurações mais recentes, baixe-as antes de publicar novamente. Use **Overwrite newer company settings** somente quando quiser substituir intencionalmente as configurações mais recentes. Leia a confirmação com atenção antes de continuar.

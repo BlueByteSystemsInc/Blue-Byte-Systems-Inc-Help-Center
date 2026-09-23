@@ -11,11 +11,11 @@ Mit **Company Settings** kann ein Administrator ausgewählte Einstellungen für 
 
 ![Seite Company Settings](/images/pdmpublisher/solidworks/company-settings-20261003.png)
 
-Eine aktivierte, nicht abgelaufene Lizenz mit Firmenname ist erforderlich. Benutzer wählen **Download company settings**, um die neueste Revision abzurufen. Bei **Let users choose** kann **Use company settings** ein- oder ausgeschaltet werden; bei **Required** sind verwaltete Seiten gesperrt und schreibgeschützt.
+Eine aktivierte Lizenz mit Firmenname ist erforderlich. Wählen Sie **Download company settings**, um die neuesten Einstellungen Ihres Administrators abzurufen. Bei **Let users choose** kann **Use company settings** ein- oder ausgeschaltet werden; bei **Required** sind verwaltete Seiten gesperrt und schreibgeschützt.
 
 ## Einstellungen veröffentlichen
 
-Wählen Sie **Company administrator**, geben Sie das für den exakten Firmennamen erstellte Administratorkennwort ein und wählen Sie **Unlock**.
+Wählen Sie **Company administrator**, geben Sie Ihr Administratorkennwort ein und wählen Sie **Unlock**.
 
 ![Administratorkennwort eingeben](/images/pdmpublisher/solidworks/company-settings-admin-unlock-20261003.png)
 
@@ -25,6 +25,6 @@ Wählen Sie **Company administrator**, geben Sie das für den exakten Firmenname
 
 ![Entsperrte Administratorseite](/images/pdmpublisher/solidworks/company-settings-admin-publish-20261003.png)
 
-Nur ausgewählte Gruppen werden verwaltet. Kennwörter, Lizenzschlüssel, Connector-Konfigurationen und andere computerspezifische Geheimnisse werden nicht geteilt. Benötigte Connectoren, Makros und externe Ressourcen müssen auf jedem Computer separat eingerichtet werden.
+Nur ausgewählte Gruppen werden geteilt. Nicht ausgewählte Gruppen verwenden weiterhin die lokalen Einstellungen des jeweiligen Benutzers.
 
-Jede Veröffentlichung basiert auf der zuletzt geladenen Revision. Wenn eine neuere Revision vorhanden ist, laden Sie sie zuerst herunter. **Overwrite newer company settings** darf nur zum absichtlichen Ersetzen verwendet werden; Kennwort und Bestätigung bleiben erforderlich. Der lokale Cache ist für den aktuellen Windows-Benutzer verschlüsselt, und die Übertragung erfolgt über HTTPS.
+Wenn PDMPublisher neuere Unternehmenseinstellungen meldet, laden Sie diese vor dem erneuten Veröffentlichen herunter. Verwenden Sie **Overwrite newer company settings** nur, wenn Ihre Einstellungen die neueren Einstellungen absichtlich ersetzen sollen. Lesen Sie die Bestätigung vor dem Fortfahren sorgfältig.
