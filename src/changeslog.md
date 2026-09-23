@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/02/2026
+ms.date: 10/03/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,19 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.02` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.03` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.03
+*Applies to **SOLIDWORKS Add-in***
+
+- Added [Company Settings](pdmpublishersolidworks_company-settings.md), allowing an administrator to publish selected configuration groups to licensed users with the same company name.
+- Added **Off**, **Let users choose**, and **Required** policies, protected administrator editing, cached downloads, revision-conflict protection, and an explicit option to overwrite a newer company revision.
 
 ## 2026.10.02
 *Applies to **SOLIDWORKS Add-in***

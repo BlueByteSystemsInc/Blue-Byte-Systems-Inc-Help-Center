@@ -1,7 +1,7 @@
 ---
 title: "Paramètres PDMPublisher pour SOLIDWORKS"
 description: "Configurez l'édition, les utilitaires, les intégrations, BOM Manager, les ressources partagées, les licences et le transfert complet de paramètres dans PDMPublisher pour SOLIDWORKS."
-ms.date: 09/30/2026
+ms.date: 10/03/2026
 ms.topic: how-to
 ---
 
@@ -31,6 +31,7 @@ La navigation de gauche divise la boîte de dialogue en **Publishing**, **Utilit
 | Ressources partagées | [Formules avancées] (pdmpublishersolidworks_advanced-formulas.md) | Formules nommées partagées par noms de fichiers, dossiers et propriétés. |
 | Édition | [Publier](pdmpublishersolidworks_options.md) | Publier des profils, des sorties, des formats, des références, des feuilles de dessin, des PDF et des sorties de fabrication. |
 | Appui | [À propos](pdmpublishersolidworks_About.md) | Soutien, documentation, produits et liens juridiques. |
+| Informations sur le produit | [Paramètres d’entreprise](pdmpublishersolidworks_company-settings.md) | Téléchargement ou publication de certains paramètres d’entreprise et contrôle du choix offert aux utilisateurs. |
 | Informations sur le produit | [Clause de licence](pdmpublishersolidworks_license.md) | Complément SOLIDWORKS activation, désactivation, et le statut d'édition communautaire. |
 
 Sélectionnez **OK** pour enregistrer les modifications. **Cancel** ferme la boîte de dialogue sans enregistrer les modifications en cours. **Reset** restaure les valeurs par défaut pour la page sélectionnée; sélectionnez **OK** pour conserver les valeurs de réinitialisation.

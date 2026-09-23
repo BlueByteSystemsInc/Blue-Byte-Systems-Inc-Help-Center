@@ -23,6 +23,8 @@
     href: ../../src-de-de/pdmpublishersolidworks_settings.md
     expanded: true
     items:
+    - name: Unternehmenseinstellungen
+      href: ../../src-de-de/pdmpublishersolidworks_company-settings.md
     - name: Profile veröffentlichen
       href: ../../src-de-de/pdmpublishersolidworks_profiles.md
     - name: Integrierte Veröffentlichungsprofile

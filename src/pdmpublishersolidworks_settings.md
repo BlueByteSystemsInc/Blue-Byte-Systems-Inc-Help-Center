@@ -1,7 +1,7 @@
 ---
 title: Settings | PDMPublisher for SOLIDWORKS
 description: Configure publishing, utilities, integrations, BOM Manager, shared resources, licensing, and complete settings transfer in PDMPublisher for SOLIDWORKS.
-ms.date: 09/30/2026
+ms.date: 10/03/2026
 ms.topic: how-to
 ---
 
@@ -30,6 +30,7 @@ The left navigation divides the dialog into **Publishing**, **Utilities**, **Int
 | Shared Resources | [External Sources](pdmpublishersolidworks_external-sources.md) | Reusable SQL Server sources used by supported property and formula menus. |
 | Shared Resources | [Advanced Formulas](pdmpublishersolidworks_advanced-formulas.md) | Named formulas shared by filenames, folders, and properties. |
 | Publishing | [Publish](pdmpublishersolidworks_options.md) | Publish profiles, output, formats, references, drawing sheets, PDFs, and manufacturing output. |
+| Product information | [Company Settings](pdmpublishersolidworks_company-settings.md) | Downloads or publishes selected company-wide settings and controls whether users can opt in. |
 | Support | [About](pdmpublishersolidworks_About.md) | Support, documentation, product, and legal links. |
 | Product information | [License Key](pdmpublishersolidworks_license.md) | SOLIDWORKS add-in activation, deactivation, and Community Edition status. |
 

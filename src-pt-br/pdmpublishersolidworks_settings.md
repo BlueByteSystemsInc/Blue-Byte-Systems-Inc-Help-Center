@@ -1,7 +1,7 @@
 ---
 title: "Configurações □ PDMPublisher para SOLIDWORKS"
 description: "Configurar publicação, utilitários, integrações, BOM Manager, recursos compartilhados, licenciamento e transferência completa de configurações em PDMPublisher para SOLIDWORKS."
-ms.date: 09/19/2026
+ms.date: 10/03/2026
 ms.topic: how-to
 ---
 
@@ -31,6 +31,7 @@ A navegação esquerda divide o diálogo em **Publishing**, **Utilities**, **Int
 | Recursos Compartilhados | [Fontes externas](pdmpublishersolidworks_external-sources.md) | Fontes reutilizáveis de SQL Server usadas por menus de propriedades e fórmulas suportados. |
 | Recursos Compartilhados | [Formulas avançadas](pdmpublishersolidworks_advanced-formulas.md) | Fórmulas nomeadas compartilhadas por nomes de arquivos, pastas e propriedades. |
 | Publicação | [Publicar](pdmpublishersolidworks_options.md) | Publique perfis, saída, formatos, referências, folhas de desenho, PDFs e produção de saída. |
+| Informação do produto | [Configurações da empresa](pdmpublishersolidworks_company-settings.md) | Baixar ou publicar configurações selecionadas para toda a empresa e controlar sua aplicação. |
 | Suporte | [Sobre](pdmpublishersolidworks_About.md) | Suporte, documentação, produto e links legais. |
 | Informação do produto | [Chave licenca](pdmpublishersolidworks_license.md) | SOLIDWORKS suplemento ativação, desativação e status Community Edition. |
 

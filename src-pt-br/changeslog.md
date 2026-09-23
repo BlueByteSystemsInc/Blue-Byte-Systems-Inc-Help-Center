@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 10/02/2026
+ms.date: 10/03/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,20 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.02` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.03` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="20261003"></a>
+## 2026.10.03
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- Foi adicionado **Company Settings**, permitindo que um administrador publique grupos de configuração selecionados para usuários licenciados com o mesmo nome de empresa.
+- Foram adicionadas as políticas **Off**, **Let users choose** e **Required**, edição protegida pelo administrador, cache local, proteção contra conflitos de revisão e uma opção explícita para substituir uma revisão mais recente.
 
 <a id="20261002"></a>
 ## 2026.10.02
