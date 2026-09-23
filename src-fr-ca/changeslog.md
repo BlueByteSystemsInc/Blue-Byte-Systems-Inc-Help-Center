@@ -27,6 +27,7 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 ## 2026.10.02
 *S'applique au **complément SOLIDWORKS***
 
+- Ajout du [connecteur Microsoft Dynamics 365 Business Central](pdmpublishersolidworks_business-central-connector.md) officiel pour la création d'articles, la mise à jour de propriétés mappées et Pull avec révision. La synchronisation des nomenclatures n'est pas disponible, car l'API standard Business Central v2.0 n'expose aucune définition de nomenclature d'assemblage ou de production.
 - Correction de la suppression des colonnes dans [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) afin de marquer ou de restaurer ensemble plusieurs colonnes de propriétés sélectionnées. L'utilisation de la commande sur une colonne non sélectionnée continue de ne modifier que cette colonne.
 
 <a id="20261001"></a>

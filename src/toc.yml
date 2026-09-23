@@ -87,6 +87,8 @@
           href: pdmpublishersolidworks_erpnext-connector.md
         - name: Odoo Connector
           href: pdmpublishersolidworks_odoo-connector.md
+        - name: Microsoft Dynamics 365 Business Central Connector
+          href: pdmpublishersolidworks_business-central-connector.md
         - name: Create a Custom ERP Connector
           href: pdmpublishersolidworks_erp-connector.md
       - name: Publishing

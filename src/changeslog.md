@@ -25,6 +25,7 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 ## 2026.10.02
 *Applies to **SOLIDWORKS Add-in***
 
+- Added the official [Microsoft Dynamics 365 Business Central connector](pdmpublishersolidworks_business-central-connector.md) for reviewed item creation, mapped-property updates, and mapped-property Pull. BOM synchronization is not available because the standard Business Central API v2.0 does not expose assembly or production BOM definitions.
 - Fixed [Property Doctor](pdmpublishersolidworks_property-doctor.md#edit-properties) column deletion so multiple selected property columns can be marked for deletion or restored together. Using the command on an unselected column still affects only that column.
 
 ## 2026.10.01

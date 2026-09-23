@@ -42,7 +42,9 @@ Select **OK** to save the defaults. These settings are independent from BOM Mana
 
 Connector settings are saved separately for each connector and encrypted for the current Windows user. Restart SOLIDWORKS before replacing a connector DLL that has already been loaded.
 
-For connectors supplied by Blue Byte Systems, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md) and [Odoo Connector](pdmpublishersolidworks_odoo-connector.md).
+For connectors supplied by Blue Byte Systems, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md), [Odoo Connector](pdmpublishersolidworks_odoo-connector.md), and [Microsoft Dynamics 365 Business Central Connector](pdmpublishersolidworks_business-central-connector.md).
+
+Connector capabilities differ. ERPNext and Odoo support BOM synchronization. The current Business Central connector supports item and mapped-property Push and Pull only because Business Central's standard API v2.0 does not expose BOM-definition endpoints.
 
 ## Choose the synchronization source
 

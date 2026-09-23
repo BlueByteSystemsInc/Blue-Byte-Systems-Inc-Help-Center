@@ -42,7 +42,9 @@ Sélectionnez **OK** pour enregistrer les valeurs par défaut. Ces paramètres s
 
 Les paramètres du connecteur sont enregistrés séparément pour chaque connecteur et chiffrés pour l'utilisateur Windows actuel. Redémarrer SOLIDWORKS avant de remplacer une DLL de connecteur déjà chargée.
 
-Pour les connecteurs fournis par Blue Byte Systems, consultez [Connecteur ERPNext](pdmpublishersolidworks_erpnext-connector.md) et [Connecteur Odoo](pdmpublishersolidworks_odoo-connector.md).
+Pour les connecteurs fournis par Blue Byte Systems, consultez [Connecteur ERPNext](pdmpublishersolidworks_erpnext-connector.md), [Connecteur Odoo](pdmpublishersolidworks_odoo-connector.md) et [Connecteur Microsoft Dynamics 365 Business Central](pdmpublishersolidworks_business-central-connector.md).
+
+Les capacités varient selon le connecteur. ERPNext et Odoo prennent en charge la synchronisation des nomenclatures. Le connecteur Business Central actuel prend uniquement en charge Push et Pull pour les articles et les propriétés mappées, car l'API standard v2.0 de Business Central n'expose aucun point de terminaison pour définir les nomenclatures.
 
 <a id="choose-the-synchronization-source"></a>
 ## Choisir la source de synchronisation
