@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/05/2026
+ms.date: 10/06/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,26 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.05` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.06
+*Applies to **SOLIDWORKS Add-in***
+
+- Added a **Publish to (folder and filename)** column to the publishing review dialog, showing evaluated output paths for each selected format.
+- Output previews update when formats change and respect per-format export locations.
+- Enabled resizing of review-grid columns and reduced minimum widths.
+- Fixed dark-mode colors for the review grid, column headers, selection, and output-format selector.
+- Fixed the output-format dropdown closing unexpectedly while selecting formats.
+- Publish now reads evaluated custom-property values from live SOLIDWORKS documents, including unsaved changes, instead of Document Manager.
+- Fixed linked properties such as **Mass** appearing as raw `SW-Mass@...` expressions in output filenames.
+- Added fallback to file-level custom properties when a configuration does not define the requested property.
+- Property Doctor now opens with **Show evaluated values** enabled for all columns.
 
 ## 2026.10.05
 *Applies to **SOLIDWORKS Add-in***

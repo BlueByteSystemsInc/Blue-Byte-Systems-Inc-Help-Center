@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 10/05/2026
+ms.date: 10/06/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,27 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.05` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261006"></a>
+## 2026.10.06
+*S'applique au **complément SOLIDWORKS***
+
+- Ajout d’une colonne **Publish to (folder and filename)** dans la fenêtre de révision de la publication pour afficher les chemins de sortie évalués de chaque format sélectionné.
+- Les aperçus de sortie sont actualisés lorsque les formats changent et respectent l’emplacement d’exportation propre à chaque format.
+- Les colonnes de la grille de révision peuvent maintenant être redimensionnées et leur largeur minimale a été réduite.
+- Correction des couleurs du mode sombre pour la grille de révision, les en-têtes de colonnes, la sélection et le sélecteur de formats de sortie.
+- Correction de la fermeture inattendue de la liste des formats de sortie pendant la sélection.
+- La publication lit maintenant les valeurs évaluées des propriétés personnalisées dans les documents SOLIDWORKS ouverts, y compris les modifications non enregistrées, plutôt que dans Document Manager.
+- Correction des propriétés liées, comme **Mass**, qui apparaissaient sous forme d’expressions `SW-Mass@...` dans les noms de fichiers de sortie.
+- Ajout d’un recours aux propriétés personnalisées du fichier lorsqu’une configuration ne définit pas la propriété demandée.
+- Property Doctor s’ouvre maintenant avec **Show evaluated values** activé pour toutes les colonnes.
 
 <a id="20261005"></a>
 ## 2026.10.05

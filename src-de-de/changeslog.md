@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/05/2026
+ms.date: 10/06/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,27 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.05` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20261006"></a>
+## 2026.10.06
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Im Veröffentlichungsprüfdialog wurde die Spalte **Publish to (folder and filename)** hinzugefügt. Sie zeigt die ausgewerteten Ausgabepfade für jedes ausgewählte Format.
+- Ausgabevorschauen werden bei Formatänderungen aktualisiert und berücksichtigen formatspezifische Exportorte.
+- Spalten der Prüfungsansicht können jetzt in der Größe geändert werden; ihre Mindestbreiten wurden reduziert.
+- Die Farben der Prüfungsansicht, Spaltenköpfe, Auswahl und Formatauswahl im Dunkelmodus wurden korrigiert.
+- Ein unerwartetes Schließen der Ausgabeformatliste während der Formatauswahl wurde behoben.
+- Publish liest ausgewertete benutzerdefinierte Eigenschaften jetzt aus geöffneten SOLIDWORKS-Dokumenten, einschließlich nicht gespeicherter Änderungen, statt aus Document Manager.
+- Verknüpfte Eigenschaften wie **Mass**, die als rohe `SW-Mass@...`-Ausdrücke in Ausgabedateinamen erschienen, wurden korrigiert.
+- Wenn eine Konfiguration die angeforderte Eigenschaft nicht definiert, werden nun benutzerdefinierte Eigenschaften auf Dateiebene verwendet.
+- Property Doctor wird jetzt für alle Spalten mit aktiviertem **Show evaluated values** geöffnet.
 
 <a id="20261005"></a>
 ## 2026.10.05

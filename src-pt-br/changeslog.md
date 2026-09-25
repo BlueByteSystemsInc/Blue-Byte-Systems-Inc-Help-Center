@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 10/05/2026
+ms.date: 10/06/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,27 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.05` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="20261006"></a>
+## 2026.10.06
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- Foi adicionada a coluna **Publish to (folder and filename)** à janela de revisão da publicação, mostrando os caminhos de saída avaliados para cada formato selecionado.
+- As visualizações de saída são atualizadas quando os formatos mudam e respeitam os locais de exportação específicos de cada formato.
+- As colunas da grade de revisão agora podem ser redimensionadas e suas larguras mínimas foram reduzidas.
+- Foram corrigidas as cores do modo escuro para a grade de revisão, cabeçalhos de coluna, seleção e seletor de formatos de saída.
+- Foi corrigido o fechamento inesperado da lista de formatos de saída durante a seleção.
+- A publicação agora lê valores avaliados de propriedades personalizadas dos documentos SOLIDWORKS abertos, incluindo alterações não salvas, em vez do Document Manager.
+- Foram corrigidas propriedades vinculadas, como **Mass**, que apareciam como expressões `SW-Mass@...` nos nomes dos arquivos de saída.
+- Foi adicionada a consulta às propriedades personalizadas no nível do arquivo quando uma configuração não define a propriedade solicitada.
+- O Property Doctor agora abre com **Show evaluated values** ativado em todas as colunas.
 
 <a id="20261005"></a>
 ## 2026.10.05
