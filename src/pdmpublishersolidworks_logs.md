@@ -1,26 +1,27 @@
 ---
 title: Logs | PDMPublisher for SOLIDWORKS
 description: Find the focused documentation for searching, reading, saving, and clearing PDMPublisher job logs.
-ms.date: 09/15/2026
+ms.date: 10/07/2026
 ms.topic: how-to
 ---
 
 # Publishing Logs
 
-Select **PDMPublisher > Logs** to review processing steps, successful exports, warnings, and failures from jobs in the current SOLIDWORKS session.
+Select **PDMPublisher > Logs** to open **Publishing results** and review successful outputs, skipped items, warnings, failures, and detailed processing messages from jobs in the current SOLIDWORKS session.
 
-![PDMPublisher Logs window filtered to errors](/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
+![PDMPublisher Publishing results and Detailed log tabs](/images/pdmpublisher/solidworks/publishing-results-logs-20261007.png)
 
 | Control | What it does |
 | --- | --- |
-| **Find** | Filters visible entries by text. |
-| Type filter | Shows **All entries**, **Errors**, **Warnings**, **Completed**, **Processing**, or **Skipped** entries. |
-| Shown / total / selected counts | Reports the current filtered result count and selection count. |
-| **Follow newest** | Keeps the newest log entry in view while a job is running. |
-| **Copy selected** / **Copy all** | Copies selected entries or the full session log to the clipboard. |
-| **Save...** | Writes the complete current session log to a file. |
-| **Clear** | Removes the in-memory entries after confirmation. |
-| **Close** | Closes the Logs window without clearing its entries. |
+| Job selector | Chooses a publishing run from the current SOLIDWORKS session. |
+| **Results** | Groups source files, configurations, drawings, and generated outputs with their final destinations and outcomes. |
+| **Detailed log** | Shows the chronological processing log for the selected run. |
+| **Find** | Searches filenames, configurations, destinations, and result reasons. |
+| Result filter | Shows all results or narrows the grid to a specific outcome. |
+| **Open file** / **Open folder** | Opens the selected generated file or its destination folder. |
+| **Copy path** | Copies the selected output path. |
+| **Expand all** / **Collapse all** | Expands or collapses the hierarchical result tree. |
+| **Selected output details** | Displays the selected output's reason and technical message. |
 
 | Page | Purpose |
 | --- | --- |

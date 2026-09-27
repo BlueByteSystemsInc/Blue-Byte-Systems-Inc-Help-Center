@@ -1,25 +1,26 @@
 ---
 title: "Logs de PDMPublisher pour SOLIDWORKS"
 description: "Trouvez la documentation ciblée pour la recherche, la lecture, l'enregistrement et la compensation des journaux de travail PDMPublisher."
-ms.date: 09/15/2026
+ms.date: 10/07/2026
 ms.topic: how-to
 ---
 
 # Registres d'édition
 
-Sélectionnez **PDMPublisher > Logs** pour examiner le traitement des step, les exportations réussies, les avertissements et les échecs des emplois de la session SOLIDWORKS actuelle.
+Sélectionnez **PDMPublisher > Logs** pour ouvrir **Publishing results** et examiner les sorties réussies, les éléments ignorés, les avertissements, les échecs et les messages de traitement détaillés des travaux de la session SOLIDWORKS actuelle.
 
-![PDMPublisher Logs fenêtre filtrée aux erreurs](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
+![Onglets Publishing results et Detailed log de PDMPublisher](/images/pdmpublisher/solidworks/publishing-results-logs-20261007.png)
 | Contrôle | Ce qu'il fait |
 | --- | --- |
-| **Find** | Filtre les entrées visibles par texte. |
-| Filtre de type | Affiche les entrées **All entries**, **Errors**, **Warnings**, **Completed**, **Processing** ou **Skipped**. |
-| Affichage / total / nombres sélectionnés | Reporte le nombre de résultats filtrés et le nombre de sélection. |
-| **Follow newest** | Conserve la dernière entrée de journal en vue pendant qu'un travail est en cours d'exécution. |
-| **Copy selected** / **Copy all** | Copie les entrées sélectionnées ou la session complète dans le presse-papiers. |
-| **Save...** | Écrit le journal complet de la session actuelle dans un fichier. |
-| **Clear** | Supprime les entrées en mémoire après confirmation. |
-| **Close** | Ferme la fenêtre Logs sans effacer ses entrées. |
+| Sélecteur de travail | Choisit une exécution de publication de la session SOLIDWORKS actuelle. |
+| **Results** | Regroupe les fichiers sources, les configurations, les dessins et les sorties générées avec leur destination finale et leur résultat. |
+| **Detailed log** | Affiche le journal chronologique de l'exécution sélectionnée. |
+| **Find** | Recherche les noms de fichiers, les configurations, les destinations et les raisons des résultats. |
+| Filtre de résultats | Affiche tous les résultats ou limite la grille à un résultat précis. |
+| **Open file** / **Open folder** | Ouvre le fichier généré sélectionné ou son dossier de destination. |
+| **Copy path** | Copie le chemin de la sortie sélectionnée. |
+| **Expand all** / **Collapse all** | Développe ou réduit l'arborescence des résultats. |
+| **Selected output details** | Affiche la raison et le message technique de la sortie sélectionnée. |
 
 | Page | Objet |
 | --- | --- |
