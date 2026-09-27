@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 10/06/2026
+ms.date: 10/08/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,22 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="202610080"></a>
+## 2026.10.08.0
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- A ativação de configurações durante a exportação de padrões planos foi atualizada para não alternar quando a configuração solicitada já estiver ativa e para verificar a configuração ativa depois de uma alternância. Isso corrige a falha **Could not activate configuration Default**.
+- As linhas horizontais e verticais da grade **Publishing results** agora usam cinza-claro para uma aparência mais suave.
+- A orientação sobre DXF agora exibe: **“DXF is selected. This only converts drawings to DXF. To export flat patterns, enable the sheet metal flat pattern option below.”**
+- Foi lançada a versão `26.10.08` do instalador assinado digitalmente.
 
 <a id="20261006"></a>
 ## 2026.10.06

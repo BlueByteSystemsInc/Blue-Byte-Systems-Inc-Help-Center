@@ -1,7 +1,7 @@
 ---
 title: "Options PDMPublisher"
 description: "Exporter des pièces multi-corps dans des fichiers de corps séparés."
-ms.date: 08/09/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -14,4 +14,4 @@ Exporte des corps d'une partie multi-corps dans des fichiers séparés. Le nom d
 > Ce réglage est disponible dans les **tâche PDM** et **SOLIDWORKS add-in**.
 
 > [!IMPORTANT]
-> Cela ne s'applique pas aux exportations de tôles plats.
+> Ce réglage ne s'applique pas aux exportations de patrons plats de tôlerie. Dans le complément SOLIDWORKS, activez [Exporter les pièces en tôle au format DXF de patron plat 1:1](export-sheet-metal-flat-pattern-dxf.md), puis sélectionnez **Export each sheet-metal body to a separate DXF** sous **Flat Pattern Settings**. **Split Bodies** n'est pas requis pour ce flux de travail.

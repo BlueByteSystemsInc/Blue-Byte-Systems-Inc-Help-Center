@@ -1,7 +1,7 @@
 ---
 title: Split Bodies | PDMPublisher Options
 description: Export multi-body parts into separate body files.
-ms.date: 08/09/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -15,4 +15,4 @@ Exports bodies from a multi-body part into separate files. The body name is appe
 > This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
 
 > [!IMPORTANT]
-> This does not apply to sheet metal flat pattern exports.
+> This does not apply to sheet-metal flat-pattern exports. In the SOLIDWORKS add-in, enable [Export Sheet Metal Parts to 1:1 Flat Pattern DXF](export-sheet-metal-flat-pattern-dxf.md), then select **Export each sheet-metal body to a separate DXF** under **Flat Pattern Settings**. **Split Bodies** is not required for that workflow.

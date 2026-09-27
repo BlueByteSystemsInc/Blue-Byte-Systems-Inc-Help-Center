@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/07/2026
+ms.date: 10/08/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,21 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.07` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.08.0
+*Applies to **SOLIDWORKS Add-in***
+
+- Updated flat-pattern export configuration activation to avoid switching when the requested configuration is already active and to verify the active configuration after a switch. This addresses the **Could not activate configuration Default** failure.
+- Changed the horizontal and vertical gridlines in **Publishing results** to light gray for a softer appearance.
+- Updated the DXF guidance to: **“DXF is selected. This only converts drawings to DXF. To export flat patterns, enable the sheet metal flat pattern option below.”**
+- Released digitally signed installer version `26.10.08`.
 
 ## 2026.10.07
 *Applies to **SOLIDWORKS Add-in***

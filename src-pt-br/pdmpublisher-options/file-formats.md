@@ -1,7 +1,7 @@
 ---
 title: "Formatos de arquivo □ PDMPublisher Options"
 description: "Selecione os formatos de arquivo exportados pela tarefa PDMPublisher PDM ou adição SOLIDWORKS."
-ms.date: 08/31/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -93,7 +93,7 @@ Se o desenho correspondente for encontrado, PDMPublisher abre o desenho e imprim
 Quando `DXF` é selecionado para um desenho, PDMPublisher exporta o desenho como DXF.
 
 > [!WARNING]
-> Desenho DXF saída não é o mesmo que um padrão plano de chapa de metal DXF. Se você quiser um padrão plano 1:1 DXF de peças de chapa de metal, habilite [Exportar peças de chapa de metal para 1:1 padrão plano DXF](export-sheet-metal-flat-pattern-dxf.md) na seção Exportar em vez disso.
+> **“DXF is selected. This only converts drawings to DXF. To export flat patterns, enable the sheet metal flat pattern option below.”**
 
 <a id="flat-pattern-dxf"></a>
 ## Padrão plano DXF

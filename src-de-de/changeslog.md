@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/06/2026
+ms.date: 10/08/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,22 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="202610080"></a>
+## 2026.10.08.0
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Die Konfigurationsaktivierung beim Flachmusterexport wurde aktualisiert. Ein Wechsel wird übersprungen, wenn die angeforderte Konfiguration bereits aktiv ist, und die aktive Konfiguration wird nach einem Wechsel überprüft. Dies behebt den Fehler **Could not activate configuration Default**.
+- Die horizontalen und vertikalen Rasterlinien in **Publishing results** sind jetzt hellgrau und wirken dadurch dezenter.
+- Der DXF-Hinweis lautet jetzt: **“DXF is selected. This only converts drawings to DXF. To export flat patterns, enable the sheet metal flat pattern option below.”**
+- Die digital signierte Installerversion `26.10.08` wurde veröffentlicht.
 
 <a id="20261006"></a>
 ## 2026.10.06

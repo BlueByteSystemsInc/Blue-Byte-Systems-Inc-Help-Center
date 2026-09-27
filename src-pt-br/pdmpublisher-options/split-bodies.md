@@ -1,7 +1,7 @@
 ---
 title: "Dividir Corpos Opções do PDMPublisher"
 description: "Exportar partes de vários corpos para arquivos de corpos separados."
-ms.date: 08/09/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -15,4 +15,4 @@ Exporta corpos de uma parte multi-corpo para arquivos separados. O nome do corpo
 > Esta configuração está disponível tanto no **PDM task** quanto no **SOLIDWORKS add-in**.
 
 > [!IMPORTANT]
-> Isto não se aplica às exportações de chapas de metal plano.
+> Esta configuração não se aplica às exportações de padrões planos de chapa metálica. No suplemento SOLIDWORKS, ative [Exportar peças de chapa metálica para DXF de padrão plano 1:1](export-sheet-metal-flat-pattern-dxf.md) e selecione **Export each sheet-metal body to a separate DXF** em **Flat Pattern Settings**. **Split Bodies** não é necessário para esse fluxo de trabalho.

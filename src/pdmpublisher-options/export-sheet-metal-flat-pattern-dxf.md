@@ -1,7 +1,7 @@
 ---
 title: Export Sheet Metal Parts to 1:1 Flat Pattern DXF | PDMPublisher Options
 description: Export sheet metal flat patterns as 1:1 DXF files.
-ms.date: 10/07/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -33,6 +33,9 @@ Select **Flat Pattern Settings** beside the main option to control which entitie
 | **Only export the inner diameter of countersink holes (Hole feature)** | For countersinks created with the SOLIDWORKS Hole Wizard, exports the inner hole diameter and omits the larger countersink outline. This can provide cleaner cutting geometry when the countersink is created in a later operation. |
 | **Export each sheet-metal body to a separate DXF** | For a multi-body sheet-metal part, creates one flat-pattern DXF per sheet-metal body. Leave it cleared when the part should produce a single DXF. |
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Adds `-FlatPattern` before `.dxf`. Enable it when a drawing and its associated sheet-metal part can both export to DXF, preventing one output from overwriting the other. |
+
+> [!IMPORTANT]
+> In the SOLIDWORKS add-in, exporting each sheet-metal body to a separate DXF requires the main flat-pattern export option and **Export each sheet-metal body to a separate DXF** under **Flat Pattern Settings**. [Split Bodies](split-bodies.md) is not required and does not control sheet-metal flat-pattern DXF output.
 
 > [!TIP]
 > For a typical fabrication DXF, start with **Export flat-pattern geometry** and **Export bend lines**. Add sketches, forming tools, or the bounding box only when your manufacturing process consumes those entities.

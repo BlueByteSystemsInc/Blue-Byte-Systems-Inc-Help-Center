@@ -1,7 +1,7 @@
 ---
 title: "Exporter des pièces métalliques en tôle vers les options DXF=1"
 description: "Exporter les motifs plats en tôle en fichiers 1:1 DXF."
-ms.date: 10/07/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -32,6 +32,9 @@ Sélectionnez **Flat Pattern Settings** à côté de l'option principale pour co
 | **Only export the inner diameter of countersink holes (Hole feature)** | Pour les contre-puces créées avec l'assistant SOLIDWORKS Hole, exporte le diamètre du trou intérieur et omet le contour plus grand du contre-puce. Cela peut fournir une géométrie de coupe plus propre lorsque le contre-puce est créé dans une opération ultérieure. |
 | **Export each sheet-metal body to a separate DXF** | Pour une pièce en tôle multicorps, crée un fichier DXF de patron plat distinct pour chaque corps en tôle. Laissez cette option désactivée si la pièce doit produire un seul DXF. |
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Ajoute `-FlatPattern` avant `.dxf`. Activez-le lorsqu'un dessin et sa pièce en tôle associée peuvent exporter vers DXF, empêchant ainsi une sortie d'écraser l'autre. |
+
+> [!IMPORTANT]
+> Dans le complément SOLIDWORKS, l'exportation de chaque corps de tôlerie dans un fichier DXF distinct nécessite l'option principale d'exportation du patron plat et **Export each sheet-metal body to a separate DXF** sous **Flat Pattern Settings**. [Split Bodies](split-bodies.md) n'est pas requis et ne contrôle pas la sortie DXF des patrons plats de tôlerie.
 
 > [!TIP]
 > Pour une fabrication typique DXF, commencez par **Export flat-pattern geometry** et **Export bend lines**. Ajoutez des croquis, des outils de formation ou la boîte de délimitation seulement lorsque votre processus de fabrication consomme ces entités.

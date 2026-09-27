@@ -1,7 +1,7 @@
 ---
 title: "Split Bodies | PDMPublisher Optionen"
 description: "Exportieren Sie Mehrkörperteile in separate Körperdateien."
-ms.date: 08/09/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -14,4 +14,4 @@ Exportiert Körper aus einem Mehrkörperteil in separate Dateien. Der Bodyname w
 > Diese Einstellung ist sowohl im **PDM task** als auch im **SOLIDWORKS add-in** verfügbar.
 
 > [!IMPORTANT]
-> Dies gilt nicht für Ausfuhren von Flachblechen.
+> Diese Einstellung gilt nicht für Blech-Flachmusterexporte. Aktivieren Sie im SOLIDWORKS-Add-in [Blechteile als 1:1-Flachmuster-DXF exportieren](export-sheet-metal-flat-pattern-dxf.md) und wählen Sie anschließend **Export each sheet-metal body to a separate DXF** unter **Flat Pattern Settings**. **Split Bodies** ist für diesen Arbeitsablauf nicht erforderlich.

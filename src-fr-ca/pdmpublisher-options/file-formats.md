@@ -1,7 +1,7 @@
 ---
 title: "Formats de fichiers Options PDMPublisher"
 description: "Sélectionnez les formats de fichiers exportés par la tâche PDM PDMPublisher ou le complément SOLIDWORKS."
-ms.date: 08/31/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -91,7 +91,7 @@ Si le dessin correspondant est trouvé, PDMPublisher ouvre le dessin et imprime/
 Lorsque `DXF` est sélectionné pour un dessin, PDMPublisher exporte le dessin sous la forme de DXF.
 
 > [!WARNING]
-> Dessin La sortie DXF n'est pas la même qu'un motif plat en tôle DXF. Si vous voulez un motif plat 1:1 DXF à partir de pièces en tôle, activez [Exporter des pièces en tôle à 1:1 Profil plat DXF](export-sheet-metal-flat-pattern-dxf.md) à la place dans la section Exportation.
+> **“DXF is selected. This only converts drawings to DXF. To export flat patterns, enable the sheet metal flat pattern option below.”**
 
 <a id="flat-pattern-dxf"></a>
 ## Modèle plat DXF

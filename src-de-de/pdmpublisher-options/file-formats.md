@@ -1,7 +1,7 @@
 ---
 title: "Dateiformate | PDMPublisher Optionen"
 description: "Wählen Sie die Dateiformate, die von der PDMPublisher PDM-Task oder dem SOLIDWORKS-Add-in exportiert werden."
-ms.date: 08/31/2026
+ms.date: 10/08/2026
 ms.topic: reference
 ---
 
@@ -91,7 +91,7 @@ Wenn die passende Zeichnung gefunden wird, öffnet PDMPublisher die Zeichnung un
 Wenn `DXF` für eine Zeichnung ausgewählt ist, exportiert PDMPublisher die Zeichnung als DXF.
 
 > [!WARNING]
-> Das Zeichnen von DXF ist nicht dasselbe wie ein flaches Blechmuster DXF. Wenn Sie ein 1:1 flaches Muster DXF aus Blechteilen wünschen, aktivieren Sie stattdessen im Abschnitt Export [Export Sheet Metal Parts to 1:1 Flat Pattern DXF](export-sheet-metal-flat-pattern-dxf.md).
+> **“DXF is selected. This only converts drawings to DXF. To export flat patterns, enable the sheet metal flat pattern option below.”**
 
 <a id="flat-pattern-dxf"></a>
 ## Flaches Muster DXF
