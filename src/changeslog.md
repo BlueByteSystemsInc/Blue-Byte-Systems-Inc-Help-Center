@@ -28,6 +28,7 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 - Redesigned the publishing review dialog to show evaluated destinations, run-specific formats, the export location, included and excluded counts, and the final selection before publishing.
 - Added a new **Publishing results** dialog with a hierarchical file/configuration/output view, search and result filters, a detailed log, output details, and commands to open a file or folder and copy its path.
 - Implemented separate flat-pattern DXF export for multi-body sheet-metal parts. Enable **Export each sheet-metal body to a separate DXF** in **Sheet metal settings**.
+- Enhanced **Configuration filter** with searchable configuration pickers populated from all open SOLIDWORKS documents, document/configuration grouping, and bulk **Add all shown** and **Remove all shown** actions.
 - Updated the Publish settings and Sheet metal settings interfaces.
 
 ## 2026.10.06

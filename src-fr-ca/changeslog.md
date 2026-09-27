@@ -30,6 +30,7 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 - Refonte de la fenêtre de révision de la publication afin d'afficher les destinations évaluées, les formats propres à l'exécution, l'emplacement d'exportation et la sélection finale avant la publication.
 - Ajout d'une fenêtre **Publishing results** avec une vue hiérarchique par fichier, configuration et sortie, une recherche, des filtres de résultat, un journal détaillé et des commandes pour ouvrir un fichier ou un dossier et copier son chemin.
 - Prise en charge de l'exportation de chaque corps de tôle d'une pièce multicorps dans un fichier DXF de patron plat distinct. Activez **Export each sheet-metal body to a separate DXF** dans **Sheet metal settings**.
+- Amélioration de **Configuration filter** avec des sélecteurs de configurations consultables provenant de tous les documents SOLIDWORKS ouverts, un regroupement par document et configuration et les actions **Add all shown** et **Remove all shown**.
 - Mise à jour des interfaces **Publish settings** et **Sheet metal settings**.
 
 <a id="20261006"></a>

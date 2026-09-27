@@ -1,7 +1,7 @@
 ---
 title: "Convertir les options de configurations multiples de PDMPublisher"
 description: "Exportez toutes les configurations de pièces et d'assemblage."
-ms.date: 08/09/2026
+ms.date: 10/07/2026
 ms.topic: reference
 ---
 
@@ -21,8 +21,19 @@ Traite toutes les configurations de pièces et d'assemblage au lieu de seulement
 
 Le bouton **Configuration Filter** ouvre la boîte de dialogue filtre pour cette option. Utilisez-le lorsque vous ne voulez pas que chaque configuration soit traitée.
 
-![Fichier de configuration](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Configuration_filter_Default_Light_100.png)
-Le filtre vous permet d'inclure ou d'exclure les configurations par nom. Utilisez des modèles joker lorsque plusieurs configurations partagent une convention de nommage.
+![Filtre de configuration avec configurations consultables provenant des documents SOLIDWORKS ouverts](/images/pdmpublisher/solidworks/configuration-filter-20261007.png)
+
+Le filtre permet d'inclure ou d'exclure les configurations par nom. Saisissez un nom ou un motif générique, ou ouvrez la liste à côté d'un champ pour choisir des configurations dans tous les documents actuellement ouverts dans SOLIDWORKS.
+
+Dans la liste :
+
+- Utilisez **Search documents or configurations** pour réduire la liste.
+- Développez un document pour examiner ses configurations.
+- Cochez des configurations individuelles.
+- Utilisez **Add all shown** pour ajouter au champ toutes les configurations visibles.
+- Utilisez **Remove all shown** pour retirer du champ toutes les configurations visibles.
+
+La recherche modifie uniquement la liste affichée. Elle ne change pas la portée de publication et ne ferme aucun document.
 
 Entrez les modèles dans **Include Configurations** lorsque seules les configurations correspondantes doivent être exportées. Laissez-le vide lorsque toutes les configurations sont autorisées.
 

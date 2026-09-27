@@ -1,7 +1,7 @@
 ---
 title: Convert Multiple Configurations | PDMPublisher Options
 description: Export all part and assembly configurations.
-ms.date: 08/09/2026
+ms.date: 10/07/2026
 ms.topic: reference
 ---
 
@@ -21,9 +21,19 @@ Processes all part and assembly configurations instead of only the active or sel
 
 The **Configuration Filter** button opens the filter dialog for this option. Use it when you do not want every configuration to be processed.
 
-![Configuration filter dialog](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Configuration_filter_Default_Light_100.png)
+![Configuration filter with searchable configurations from open SOLIDWORKS documents](/images/pdmpublisher/solidworks/configuration-filter-20261007.png)
 
-The filter lets you include or exclude configurations by name. Use wildcard patterns when several configurations share a naming convention.
+The filter lets you include or exclude configurations by name. Type a name or wildcard pattern, or open the dropdown beside either field to choose configurations from every document currently open in SOLIDWORKS.
+
+In the dropdown:
+
+- Use **Search documents or configurations** to reduce the list.
+- Expand a document to review its configurations.
+- Select individual configuration checkboxes.
+- Use **Add all shown** to add every visible configuration to the field.
+- Use **Remove all shown** to remove every visible configuration from the field.
+
+The search affects only the visible picker list. It does not change the publishing scope or close documents.
 
 Enter patterns in **Include Configurations** when only matching configurations should be exported. Leave it empty when all configurations are allowed.
 
