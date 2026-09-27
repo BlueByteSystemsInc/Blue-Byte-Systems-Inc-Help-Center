@@ -1,7 +1,7 @@
 ---
 title: Run a Publish Job | PDMPublisher for SOLIDWORKS
 description: Publish the active SOLIDWORKS document with the selected PDMPublisher profile and review the resulting job log.
-ms.date: 09/16/2026
+ms.date: 10/07/2026
 ms.topic: how-to
 ---
 
@@ -29,8 +29,14 @@ The arrow beside **Publish** selects the Publish profile used for the job. It do
 
 When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md) is enabled for an assembly, PDMPublisher displays the references that passed before export begins. Confirm the files to continue or cancel the job.
 
+![Review files and evaluated output paths before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
+
 ## Review the Result
 
-Select **PDMPublisher > Logs** to review processing steps, exported files, warnings, and failures. Use [Save and Clear Logs](pdmpublishersolidworks-log-files.md) to attach the complete job record to a support request.
+After processing, use **Publishing results** to review generated files by source document and configuration, search results, filter outcomes, open destinations, or inspect technical details.
+
+![Publishing results grouped by file and configuration](/images/pdmpublisher/solidworks/publishing-results-20261007.png)
+
+Select **PDMPublisher > Logs** when you need the complete session history. Use [Save and Clear Logs](pdmpublishersolidworks-log-files.md) to attach the job record to a support request.
 
 See [Publishing Workflow and Results](pdmpublishersolidworks_workflow.md) for the complete sequence, including review, skipped files, cancellation, and troubleshooting outcomes.

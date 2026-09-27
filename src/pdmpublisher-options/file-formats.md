@@ -7,7 +7,7 @@ ms.topic: reference
 
 # File Formats
 
-![File Formats setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![File Formats setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 Selects the output formats created during publishing. Both products can generate multiple formats in one job.
 

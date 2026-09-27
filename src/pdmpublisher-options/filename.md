@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Filename
 
-![Filename setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Filename setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 Defines the output filename pattern. You can combine static text with SOLIDWORKS custom properties or PDM variables.
 

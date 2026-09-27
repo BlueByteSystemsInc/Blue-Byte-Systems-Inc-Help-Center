@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/06/2026
+ms.date: 10/07/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,21 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.06` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.07` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.07
+*Applies to **SOLIDWORKS Add-in***
+
+- Redesigned the publishing review dialog to show evaluated destinations, run-specific formats, the export location, included and excluded counts, and the final selection before publishing.
+- Added a new **Publishing results** dialog with a hierarchical file/configuration/output view, search and result filters, a detailed log, output details, and commands to open a file or folder and copy its path.
+- Implemented separate flat-pattern DXF export for multi-body sheet-metal parts. Enable **Export each sheet-metal body to a separate DXF** in **Sheet metal settings**.
+- Updated the Publish settings and Sheet metal settings interfaces.
 
 ## 2026.10.06
 *Applies to **SOLIDWORKS Add-in***

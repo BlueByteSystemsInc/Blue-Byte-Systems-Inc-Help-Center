@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Sheets to Export
 
-![Sheets to export setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Sheets to export setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 Controls whether drawing PDF exports include all sheets or only sheets whose names match a pattern.
 

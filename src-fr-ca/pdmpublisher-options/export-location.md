@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Lieu d'exportation
 
-![Détermination de l'emplacement de l'exportation dans PDMPublisher pour SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Détermination de l'emplacement de l'exportation dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Définit le dossier où PDMPublisher écrit des fichiers générés. L'emplacement d'exportation peut indiquer un dossier à l'intérieur du coffre-fort, un chemin relatif, un chemin UNC/serveur, ou un dossier à l'extérieur du coffre-fort.
 
 > [!NOTE]

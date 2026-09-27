@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Ouvrez **PDMPublisher > Settings > Publish** pour modifier les paramètres de sortie et de traitement stockés dans un [Profil de publication](pdmpublishersolidworks_profiles.md). Sélectionnez **PDMPublisher > Publish** pour configurer et exécuter le profil actif.
 
-![Publicité actuelle des paramètres dans PDMPublisher pour SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Paramètres de publication actuels dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Faites défiler vers le bas pour configurer la fusion de PDF, les colonnes de table de contenu, les signets, les annotations, les conditions et les profils Publier.
 
 ![Pièce inférieure de la page de paramètres Publier](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Scroll1_Light_100.png)

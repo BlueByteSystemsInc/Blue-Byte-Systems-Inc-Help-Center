@@ -115,7 +115,7 @@ Sélectionnez **Ignore Components** pour créer des conditions qui suppriment le
 
 La commande [Publier](pdmpublishersolidworks-publish.md) ouvre la publication pour le document actif. Un profil Publish combine les paramètres de sortie, les annotations et les conditions nécessaires pour une exportation répétable.
 
-![Publier la sortie, la feuille de dessin, la référence et les paramètres de fabrication](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Publier la sortie, la feuille de dessin, la référence et les paramètres de fabrication](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 La publication peut :
 
 - Exporter des pièces, des assemblages, des dessins et des références aux formats PDF, DXF, DWG, STEP, eDrawings et autres.
@@ -146,7 +146,7 @@ Voir [Publier les paramètres](pdmpublishersolidworks_options.md) pour la réfé
 
 [Logs](pdmpublishersolidworks_logs.md) enregistre les fichiers de sortie, les avertissements, les éléments ignorés et les erreurs. Lorsque **Show dialog before processing** est activé, la fenêtre d'examen liste les fichiers et les configurations qui seront traités.
 
-![Revoir les fichiers avant publication](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
+![Revoir les fichiers avant publication](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 ![Édition de journaux filtrés aux erreurs](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
 <a id="settings-and-profiles"></a>
 ## Paramètres et profils

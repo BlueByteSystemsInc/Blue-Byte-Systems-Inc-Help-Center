@@ -115,7 +115,7 @@ Select **Ignore Components** to build conditions that remove matching components
 
 The [Publish](pdmpublishersolidworks-publish.md) command opens publishing for the active document. A Publish profile combines the output settings, annotations, and conditions needed for a repeatable export.
 
-![Publish output, drawing sheet, reference, and manufacturing settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Publish output, drawing sheet, reference, and manufacturing settings](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 Publishing can:
 
@@ -146,7 +146,7 @@ See [Publish Settings](pdmpublishersolidworks_options.md) for the complete publi
 
 [Logs](pdmpublishersolidworks_logs.md) record output files, warnings, skipped items, and errors. When **Show dialog before processing** is enabled, the review window lists the files and configurations that will be processed.
 
-![Review files before publishing](/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
+![Review files before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 
 ![Publishing logs filtered to errors](/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
 

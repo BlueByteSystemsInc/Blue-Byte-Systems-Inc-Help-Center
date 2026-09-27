@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Formats de fichiers
 
-![Définition des formats de fichiers dans PDMPublisher pour SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Définition des formats de fichiers dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Sélectionne les formats de sortie créés lors de la publication. Les deux produits peuvent générer plusieurs formats en un seul travail.
 
 > [!NOTE]

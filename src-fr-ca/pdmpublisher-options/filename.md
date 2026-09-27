@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Nom du fichier
 
-![Définition du nom de fichier dans PDMPublisher pour SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Définition du nom de fichier dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Définit le modèle de nom de fichier de sortie. Vous pouvez combiner du texte statique avec des propriétés personnalisées SOLIDWORKS ou des variables PDM.
 
 > [!NOTE]

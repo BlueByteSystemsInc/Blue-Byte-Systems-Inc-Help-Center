@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Sheet Name Pattern
 
-![Sheet name pattern setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Sheet name pattern setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 Wildcard pattern used when **Sheets to export** is set to matching sheet names.
 

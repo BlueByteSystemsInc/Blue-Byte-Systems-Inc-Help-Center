@@ -1,19 +1,19 @@
 ---
 title: "Exporter des pièces métalliques en tôle vers les options DXF=1"
 description: "Exporter les motifs plats en tôle en fichiers 1:1 DXF."
-ms.date: 08/13/2026
+ms.date: 10/07/2026
 ms.topic: reference
 ---
 
 # Exporter des pièces en tôle à 1:1 motif plat DXF
 
-![Exporter la tôle à plat en PDMPublisher pour SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox7_Export_sheet_metal_parts_to_1_1_flat_pattern_DXF_Light_100.png)
+![Exporter la tôle à plat dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Exporte des pièces en tôle sous forme de fichiers DXF à motif plat 1:1.
 
 > [!NOTE]
 > Ce paramètre et sa boîte de dialogue de paramètres de patron plat sont partagés par les **tâche PDM** et **SOLIDWORKS add-in**.
 
-![Dialogue actuel de configuration des motifs plats en tôle](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Sheet_metal_Default_Light_100.png)
+![Boîte de dialogue actuelle des paramètres de patron plat](/images/pdmpublisher/solidworks/sheet-metal-settings-20261007.png)
 <a id="sheet-metal-flat-pattern-settings"></a>
 ## Réglages plats en tôle métallique
 
@@ -30,7 +30,7 @@ Sélectionnez **Flat Pattern Settings** à côté de l'option principale pour co
 | **Export forming tools** | Comprend la géométrie représentant les caractéristiques de l'outil de formage telles que les louvers, les lances, les embosses ou des caractéristiques similaires formées. Le résultat exact dépend également des paramètres du document en feuilles SOLIDWORKS de la pièce. |
 | **Export bounding box** | Ajoute la boîte rectangulaire autour du motif plat. Cela peut être utile pour estimer la taille du stock ou la nidification. |
 | **Only export the inner diameter of countersink holes (Hole feature)** | Pour les contre-puces créées avec l'assistant SOLIDWORKS Hole, exporte le diamètre du trou intérieur et omet le contour plus grand du contre-puce. Cela peut fournir une géométrie de coupe plus propre lorsque le contre-puce est créé dans une opération ultérieure. |
-| **Export flat pattern bodies separately (Multi-body sheet metal parts)** | Réservé pour l'exportation de chaque corps en tôle dans un fichier séparé. Cette fonctionnalité est marquée **not implemented yet** dans la boîte de dialogue actuelle et ne doit pas être utilisée. |
+| **Export each sheet-metal body to a separate DXF** | Pour une pièce en tôle multicorps, crée un fichier DXF de patron plat distinct pour chaque corps en tôle. Laissez cette option désactivée si la pièce doit produire un seul DXF. |
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Ajoute `-FlatPattern` avant `.dxf`. Activez-le lorsqu'un dessin et sa pièce en tôle associée peuvent exporter vers DXF, empêchant ainsi une sortie d'écraser l'autre. |
 
 > [!TIP]
@@ -78,6 +78,7 @@ Les noms d'affichage personnalisés doivent correspondre aux noms stockés dans 
 | Inclure les marques de fabrication | Ajouter **Include sketches** |
 | Afficher les fonctionnalités formées | Ajouter **Export forming tools** |
 | Indiquer la taille du stock requise | Ajouter **Export bounding box** |
+| Exporter une pièce en tôle multicorps | Activer **Export each sheet-metal body to a separate DXF** |
 | Évitez une collision de nom de fichier DXF | Activer **Append `-FlatPattern` to the flat pattern DXF file name** |
 | Exporter une vue de modèle projetée au lieu du modèle déplié | Sélectionnez l'entrée requise sous **Model views to export** |
 

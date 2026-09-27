@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Modèle de nom de feuille
 
-![Définition du nom de la feuille dans PDMPublisher pour SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Définition du nom de la feuille dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Modèle Wildcard utilisé lorsque **Sheets to export** est défini pour correspondre aux noms de feuille.
 
 > [!NOTE]

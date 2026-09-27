@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Open **PDMPublisher > Settings** to configure the SOLIDWORKS add-in. Search Options finds settings by page name, label, and related keyword.
 
-![Current Publish page in the unified PDMPublisher for SOLIDWORKS Settings dialog](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Current Publish page in the unified PDMPublisher for SOLIDWORKS Settings dialog](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 The left navigation divides the dialog into **Publishing**, **Utilities**, **Integration**, **Bill Of Materials**, **Shared Resources**, and product-information pages. **Search Options** finds a control by its label or a related keyword without requiring the user to know which page contains it.
 

@@ -1,20 +1,20 @@
 ---
 title: Export Sheet Metal Parts to 1:1 Flat Pattern DXF | PDMPublisher Options
 description: Export sheet metal flat patterns as 1:1 DXF files.
-ms.date: 08/13/2026
+ms.date: 10/07/2026
 ms.topic: reference
 ---
 
 # Export Sheet Metal Parts to 1:1 Flat Pattern DXF
 
-![Export sheet metal flat pattern setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Checkbox7_Export_sheet_metal_parts_to_1_1_flat_pattern_DXF_Light_100.png)
+![Export sheet metal flat pattern setting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 
 Exports sheet metal parts as 1:1 flat pattern DXF files.
 
 > [!NOTE]
 > This setting and its Flat Pattern Settings dialog are shared by the **PDM task** and **SOLIDWORKS add-in**.
 
-![Current sheet metal flat pattern settings dialog](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Sheet_metal_Default_Light_100.png)
+![Current sheet metal flat pattern settings dialog](/images/pdmpublisher/solidworks/sheet-metal-settings-20261007.png)
 
 ## Sheet Metal Flat Pattern Settings
 
@@ -31,7 +31,7 @@ Select **Flat Pattern Settings** beside the main option to control which entitie
 | **Export forming tools** | Includes geometry representing forming-tool features such as louvers, lances, embosses, or similar formed features. The exact result also depends on the part's SOLIDWORKS sheet-metal document settings. |
 | **Export bounding box** | Adds the rectangular bounding box around the flat pattern. This can be useful for estimating stock size or nesting. |
 | **Only export the inner diameter of countersink holes (Hole feature)** | For countersinks created with the SOLIDWORKS Hole Wizard, exports the inner hole diameter and omits the larger countersink outline. This can provide cleaner cutting geometry when the countersink is created in a later operation. |
-| **Export flat pattern bodies separately (Multi-body sheet metal parts)** | Reserved for exporting each sheet-metal body into a separate file. This feature is marked **not implemented yet** in the current dialog and should not be used. |
+| **Export each sheet-metal body to a separate DXF** | For a multi-body sheet-metal part, creates one flat-pattern DXF per sheet-metal body. Leave it cleared when the part should produce a single DXF. |
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Adds `-FlatPattern` before `.dxf`. Enable it when a drawing and its associated sheet-metal part can both export to DXF, preventing one output from overwriting the other. |
 
 > [!TIP]
@@ -76,6 +76,7 @@ Custom view names must match the names stored in the SOLIDWORKS model. The stand
 | Include manufacturing marks | Add **Include sketches** |
 | Show formed features | Add **Export forming tools** |
 | Record required stock size | Add **Export bounding box** |
+| Export a multi-body sheet-metal part | Enable **Export each sheet-metal body to a separate DXF** |
 | Avoid a drawing DXF filename collision | Enable **Append `-FlatPattern` to the flat pattern DXF file name** |
 | Export a projected model view instead of the unfolded pattern | Select the required entry under **Model views to export** |
 

@@ -7,7 +7,7 @@ ms.topic: reference
 
 # Feuilles à exporter
 
-![Sheets to export setting in PDMPublisher for SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Paramètre des feuilles à exporter dans PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 Contrôles que le dessin des exportations de PDF incluent toutes les feuilles ou seulement les feuilles dont le nom correspond à un motif.
 
 > [!NOTE]

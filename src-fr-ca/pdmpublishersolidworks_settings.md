@@ -9,7 +9,7 @@ ms.topic: how-to
 
 Ouvrez **PDMPublisher > Settings** pour configurer l'extension SOLIDWORKS. Options de recherche trouve les paramètres par nom de page, étiquette et mot-clé connexe.
 
-![Page actuelle Publier dans la boîte de dialogue unifiée PDMPublisher pour les paramètres SOLIDWORKS](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Publish_Default_Light_100.png)
+![Page Publier actuelle dans la boîte de dialogue unifiée de PDMPublisher pour SOLIDWORKS](/images/pdmpublisher/solidworks/settings-publish-20261007.png)
 La navigation de gauche divise la boîte de dialogue en **Publishing**, **Utilities**, **Integration**, **Bill Of Materials**, **Shared Resources** et pages d'information sur les produits. **Search Options** trouve un contrôle par son étiquette ou un mot-clé connexe sans exiger de l'utilisateur de savoir quelle page il contient.
 
 <a id="settings-pages"></a>

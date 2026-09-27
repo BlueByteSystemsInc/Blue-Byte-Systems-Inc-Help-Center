@@ -1,7 +1,7 @@
 ---
 title: Publishing Workflow and Results | PDMPublisher for SOLIDWORKS
 description: Follow a PDMPublisher job from document preparation through review, export, logging, and troubleshooting.
-ms.date: 09/16/2026
+ms.date: 10/07/2026
 ms.topic: how-to
 ---
 
@@ -28,7 +28,7 @@ Review the export location, filename, formats, sheet mode, references, configura
 
 For an assembly with individual-reference export and condition review enabled, PDMPublisher lists the references that passed evaluation. Clear a file to omit it from this run. Confirm to continue, or cancel to stop before export processing.
 
-![Review files to publish after condition evaluation](/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
+![Review files and evaluated destinations before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 
 The review selection affects only the current run. It does not rewrite the profile or condition tree.
 
@@ -39,6 +39,12 @@ During processing, PDMPublisher resolves placeholders for each source document a
 Do not close SOLIDWORKS, change the active document, or modify referenced files while the job is running.
 
 ## 5. Interpret the Result
+
+When processing finishes, the **Publishing results** dialog groups each source file, configuration, and generated output. Use **Find** and the result filter to locate a file, destination, warning, or failure. Select an output to see its reason and technical message, or use **Open file**, **Open folder**, and **Copy path** for the selected result.
+
+![Publishing results grouped by source file and configuration](/images/pdmpublisher/solidworks/publishing-results-20261007.png)
+
+The **Detailed log** tab retains the chronological processing record. The summary above the tabs reports the published, failed, skipped, and cancelled totals and the elapsed time.
 
 | Outcome | Meaning | Next action |
 | --- | --- | --- |

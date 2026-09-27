@@ -1,7 +1,7 @@
 ---
 title: "Flux de travail et résultats d'édition PDMPublisher pour SOLIDWORKS"
 description: "Suivez un travail PDMPublisher depuis la préparation du document jusqu'à l'examen, l'exportation, l'enregistrement et le dépannage."
-ms.date: 09/16/2026
+ms.date: 10/07/2026
 ms.topic: how-to
 ---
 
@@ -30,7 +30,7 @@ Consultez l'emplacement d'exportation, le nom du fichier, les formats, le mode f
 
 PDMPublisher énumère les références qui ont fait l'objet d'une évaluation. Effacer un fichier pour l'omettre de cette course. Confirmer de poursuivre, ou annuler d'arrêter le traitement avant l'exportation.
 
-![Revoir les fichiers à publier après évaluation des conditions](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
+![Réviser les fichiers et les destinations évaluées avant la publication](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 La sélection de l'examen n'affecte que la course actuelle. Il ne réécrit pas l'arbre de profil ou de condition.
 
 <a id="4-process-outputs"></a>
@@ -42,6 +42,12 @@ Ne fermez pas SOLIDWORKS, ne modifiez pas le document actif ou ne modifiez pas l
 
 <a id="5-interpret-the-result"></a>
 ## 5. Interpréter le résultat
+
+Une fois le traitement terminé, la fenêtre **Publishing results** regroupe chaque fichier source, sa configuration et ses sorties générées. Utilisez **Find** et le filtre de résultats pour trouver un fichier, une destination, un avertissement ou un échec. Sélectionnez une sortie pour consulter sa raison et son message technique, ou utilisez **Open file**, **Open folder** et **Copy path**.
+
+![Résultats de publication regroupés par fichier source et configuration](/images/pdmpublisher/solidworks/publishing-results-20261007.png)
+
+L'onglet **Detailed log** conserve l'ordre chronologique du traitement. Le sommaire indique le nombre de sorties publiées, échouées, ignorées et annulées ainsi que la durée.
 
 | Résultat | Signification | Action suivante |
 | --- | --- | --- |
