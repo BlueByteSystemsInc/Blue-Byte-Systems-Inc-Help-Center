@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/08/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,36 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20261011"></a>
+## 2026.10.11
+*Gilt für das **SOLIDWORKS Add-in** und gemeinsam verwendete Lizenzkomponenten*
+
+- Veröffentlichungsleistung und -stabilität wurden verbessert: Die ausgewerteten Eigenschaften jedes Dokuments werden pro Lauf einmal gelesen und wiederverwendet.
+- Zeichnungen, die nur zur Eigenschaftsauswertung geöffnet werden, werden im Hintergrund geladen und nach dem Veröffentlichungslauf sicher geschlossen.
+- **Use Selected** und **Discard Selected** wurden zur Veröffentlichungsprüfung hinzugefügt. **Use All** und **Discard All** wirken nun auf die vollständige Liste, auch bei aktivem Suchfilter.
+- Clone Tree kann den Wert oder die Formel einer Zelle in alle bearbeitbaren Zellen derselben Spalte oder nur nach oben bzw. unten kopieren.
+- Ablaufdaten von Lizenzen werden einheitlich in UTC gespeichert und verglichen, aber weiterhin in der lokalen Zeit des Benutzers angezeigt.
+- Die Farben des Zeichnungshintergrund-Menüs im Dunkelmodus wurden korrigiert.
+
+<a id="20261009"></a>
+## 2026.10.09
+*Gilt für das **SOLIDWORKS Add-in** und das **PDM-Task-Installationspaket***
+
+- Eine optionale [Integrationen-Aufgabenseite](task-integrations.md) kann nach einer erfolgreichen PDM-Task-Veröffentlichung einen ERP-Connector ausführen.
+- Die PDM-Task-Optionen wurden mit separatem Fenster, klarerer Formatauswahl, Einstellungszählern und direktem Zugriff auf Anmerkungen, Bedingungen und geplante Elemente neu gestaltet.
+- Der Anmerkungseditor der PDM-Task wurde mit direkter Platzierung, Größenänderung, Textbearbeitung, Formatierung, Blattauswahl sowie hellem und dunklem Design neu aufgebaut.
+- Die PDM-Task kann nun für jeden Blechkörper eine eigene Flachmuster-DXF-Datei exportieren.
+- Die Auswahl von Dateien und Ausgabeformaten beim Aufgabenstart wurde verbessert.
+- Lizenzdiagnosen der PDM-Task wurden verbessert; die Aktivierung ist jetzt dem Tresornamen zugeordnet.
+- Downloads des ERP-Connector-Katalogs über HTTPS und die zugehörigen Fehlermeldungen wurden korrigiert.
 
 <a id="202610080"></a>
 ## 2026.10.08.0

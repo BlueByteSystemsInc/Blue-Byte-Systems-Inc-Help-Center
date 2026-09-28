@@ -1,7 +1,7 @@
 ---
 title: "Flux de travail et résultats d'édition PDMPublisher pour SOLIDWORKS"
 description: "Suivez un travail PDMPublisher depuis la préparation du document jusqu'à l'examen, l'exportation, l'enregistrement et le dépannage."
-ms.date: 10/07/2026
+ms.date: 10/11/2026
 ms.topic: how-to
 ---
 
@@ -30,6 +30,8 @@ Consultez l'emplacement d'exportation, le nom du fichier, les formats, le mode f
 
 PDMPublisher énumère les références qui ont fait l'objet d'une évaluation. Effacer un fichier pour l'omettre de cette course. Confirmer de poursuivre, ou annuler d'arrêter le traitement avant l'exportation.
 
+Utilisez **Use All** ou **Discard All** pour modifier toute la liste, y compris les lignes masquées par la recherche. Sélectionnez plusieurs lignes et cliquez avec le bouton droit pour utiliser **Use Selected** ou **Discard Selected**.
+
 ![Réviser les fichiers et les destinations évaluées avant la publication](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 La sélection de l'examen n'affecte que la course actuelle. Il ne réécrit pas l'arbre de profil ou de condition.
 
@@ -37,6 +39,8 @@ La sélection de l'examen n'affecte que la course actuelle. Il ne réécrit pas 
 ## 4. Produits du processus
 
 Pendant le traitement, PDMPublisher résout les détenteurs de place pour chaque document source et configuration, crée les dossiers requis, invoque l'exportateur SOLIDWORKS correspondant, applique des annotations ou des opérations PDF, et crée en option une archive.
+
+Les propriétés évaluées sont lues une fois par document et réutilisées pendant l'exécution. Les mises en plan ouvertes uniquement pour cette évaluation restent en arrière-plan et sont fermées à la fin.
 
 Ne fermez pas SOLIDWORKS, ne modifiez pas le document actif ou ne modifiez pas les fichiers référencés pendant l'exécution de la tâche.
 

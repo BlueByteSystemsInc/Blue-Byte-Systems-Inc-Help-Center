@@ -1,7 +1,7 @@
 ---
 title: "Annotations Task Page | PDMPublisher | SOLIDWORKS PDM"
 description: "Adicione notas, marcas d'água e texto específico para documentos PDF exportados."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: how-to
 ---
 
@@ -12,11 +12,11 @@ Use a página de tarefas Anotações para adicionar notas de texto ou marcas de 
 > [!IMPORTANT]
 > Esta é a página de Anotações **PDM task**. Os controles de anotação também são usados pelo SOLIDWORKS suplemento, mas as variáveis PDM vêm do contexto da tarefa do cofre. Ver [SOLIDWORKS Notas de adição](pdmpublishersolidworks_annotations.md).
 
-![PDMPublisher Annotations page](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/page-annotations.png)
+![Editor de anotações atualizado da Tarefa PDM](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 
 Cada anotação pode ter seu próprio texto, formatação, posição, regra da folha e estado ativo.
 
-A tabela de anotações é a grande área de trabalho abaixo da barra de ferramentas. Ele mostra as anotações configuradas para a tarefa e permite selecionar qual anotação você está editando.
+A grande área de trabalho mostra as anotações configuradas para a tarefa. Arraste uma anotação para posicioná-la, arraste as alças para redimensioná-la ou clique duas vezes para editar o texto. **X** e **Y** definem a posição exata na saída.
 
 <a id="annotation-settings"></a>
 ## Configuração da Anotação

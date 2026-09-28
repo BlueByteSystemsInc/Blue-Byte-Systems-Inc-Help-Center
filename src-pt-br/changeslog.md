@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 10/08/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,36 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="20261011"></a>
+## 2026.10.11
+*Aplica-se ao **suplemento SOLIDWORKS** e aos componentes de licença compartilhados*
+
+- O desempenho e a estabilidade da publicação foram aprimorados: as propriedades avaliadas de cada documento são lidas uma vez por execução e reutilizadas.
+- Desenhos abertos apenas para avaliar propriedades agora são carregados em segundo plano e fechados com segurança ao término da publicação.
+- Foram adicionados **Use Selected** e **Discard Selected** à grade de revisão. **Use All** e **Discard All** agora afetam a lista completa mesmo com um filtro de pesquisa ativo.
+- O Clone Tree agora pode copiar o valor ou a fórmula de uma célula para todas as células editáveis da coluna, somente para cima ou somente para baixo.
+- As datas de expiração de licença agora são armazenadas e comparadas em UTC, mantendo a exibição no horário local do usuário.
+- Foram corrigidas as cores do menu de plano de fundo do desenho no modo escuro.
+
+<a id="20261009"></a>
+## 2026.10.09
+*Aplica-se ao **suplemento SOLIDWORKS** e ao **instalador da Tarefa PDM***
+
+- Foi adicionada uma [página de tarefa de Integrações](task-integrations.md) opcional para executar um conector ERP após uma publicação PDM bem-sucedida.
+- A interface Opções da Tarefa PDM foi refeita com janela separada, seleção de formatos mais clara, contadores de configurações e acesso direto a Anotações, Condições e Itens Agendados.
+- O editor de anotações da Tarefa PDM foi refeito com posicionamento, redimensionamento, edição direta, formatação, seleção de folhas e temas claro/escuro.
+- A Tarefa PDM agora pode exportar um DXF de padrão plano separado para cada corpo de chapa metálica.
+- A seleção de arquivos e formatos de saída no início da tarefa foi aprimorada.
+- Os diagnósticos de licença da Tarefa PDM foram aprimorados e a ativação passou a usar o nome do cofre.
+- Os downloads HTTPS do catálogo de conectores ERP e as mensagens de erro do catálogo foram corrigidos.
 
 <a id="202610080"></a>
 ## 2026.10.08.0

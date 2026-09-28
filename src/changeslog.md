@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/08/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,34 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.08` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.11
+*Applies to the **SOLIDWORKS Add-in** and shared licensing components*
+
+- Improved publishing performance and stability by reading each document's evaluated properties once per run and reusing them for its configurations and outputs.
+- Drawings opened only to evaluate publishing properties now load in the background and are closed safely when the publishing run finishes.
+- Added **Use Selected** and **Discard Selected** commands to the publishing review grid. **Use All** and **Discard All** now apply to the complete review list even when a search filter is active.
+- Added Clone Tree commands to copy a cell's value or formula to every editable cell in the same column, or only to the cells above or below it.
+- Standardized license expiry storage and comparison in UTC while continuing to display expiry dates in the user's local time.
+- Fixed the drawing-background menu colors in dark mode.
+
+## 2026.10.09
+*Applies to the **SOLIDWORKS Add-in** and the **PDM Task installer***
+
+- Added an optional [Integrations task page](task-integrations.md) that can run a configured ERP connector after a successful PDM Task publish job.
+- Rebuilt the PDM Task Options interface with a pop-out editor, clearer file-format selection, setting counts, and direct access to Annotations, Conditions, and Scheduled Items.
+- Rebuilt the PDM Task annotation editor with direct placement, resizing, inline text editing, formatting, sheet selection, and light/dark theme support.
+- Added separate flat-pattern DXF export for each sheet-metal body to the PDM Task.
+- Improved the task-launch file and output-format selection dialog.
+- Improved PDM Task license activation diagnostics and tied task licensing to the vault name.
+- Fixed ERP connector catalog downloads by accepting the trusted legacy `pdmpublisher.com` upload URL through HTTPS and reporting clearer catalog errors.
 
 ## 2026.10.08.0
 *Applies to **SOLIDWORKS Add-in***

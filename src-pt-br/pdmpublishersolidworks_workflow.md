@@ -1,7 +1,7 @@
 ---
 title: "Publishing Workflow and Results - PDMPublisher for SOLIDWORKS"
 description: "Siga um trabalho PDMPublisher da preparação do documento através de revisão, exportação, registro e solução de problemas."
-ms.date: 09/16/2026
+ms.date: 10/11/2026
 ms.topic: how-to
 ---
 
@@ -31,6 +31,8 @@ Revise o local de exportação, nome do arquivo, formatos, modo de folha, refer�
 
 Para uma montagem com análise de exportação e condição de referência individual habilitada, PDMPublisher lista as referências que passaram avaliação. Limpar um arquivo para omiti-lo desta execução. Confirme para continuar ou cancele para parar antes do processamento de exportação.
 
+Use **Use All** ou **Discard All** para alterar a lista completa, inclusive linhas ocultas pela pesquisa. Selecione várias linhas e clique com o botão direito para usar **Use Selected** ou **Discard Selected**.
+
 ![Review files to publish after condition evaluation](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
 
 A seleção de revisão afeta apenas a execução atual. Não reescreve a árvore de perfil ou condição.
@@ -39,6 +41,8 @@ A seleção de revisão afeta apenas a execução atual. Não reescreve a árvor
 ## 4. Saídas de Processo
 
 Durante o processamento, PDMPublisher resolve placeholders para cada documento fonte e configuração, cria as pastas necessárias, invoca o exportador SOLIDWORKS correspondente, aplica anotações ou operações PDF, e cria opcionalmente um arquivo.
+
+As propriedades avaliadas são lidas uma vez por documento e reutilizadas durante a execução. Desenhos abertos apenas para essa avaliação permanecem em segundo plano e são fechados ao final.
 
 Não feche o SOLIDWORKS, altere o documento ativo ou modifique arquivos referenciados enquanto a tarefa estiver sendo executada.
 

@@ -1,7 +1,7 @@
 ---
 title: Creating a New Task | PDMPublisher | SOLIDWORKS PDM
 description: Create your first PDMPublisher task in SOLIDWORKS PDM Administration.
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -90,16 +90,17 @@ Use these pages to configure what PDMPublisher exports and how it handles each f
 | [Annotations](annotations.md) | Add notes or watermarks that can include fixed text, PDM variables, and SOLIDWORKS properties. |
 | [Conditions](conditions.md) | Decide which referenced files should be included when processing assemblies. |
 | [Scheduled Items](scheduleditems.md) | Define files that should be processed when the task runs without selected files. |
+| [Integrations](task-integrations.md) | Optionally push published item data and mapped PDM variables to an ERP connector after a successful publish. |
 
 ### Options
 
-![PDMPublisher Options setup page](/images/pdmpublisher/screenshots/task-setup-options.png)
+![Updated PDMPublisher Options setup page](/images/pdmpublisher/screenshots/task-options-20261009.png)
 
 Review the recommended setup items in [Options Task Page](options.md), especially export location, filename, file formats, SOLIDWORKS version, template, and activity tracking.
 
 ### Annotations
 
-![PDMPublisher Annotations setup page](/images/pdmpublisher/screenshots/task-setup-annotations.png)
+![Updated PDMPublisher Annotations editor](/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 
 The annotation table is the workspace where you create and manage notes or watermarks that will be placed on exported PDFs. Each annotation can have its own text, formatting, position, sheet rule, and active state.
 
@@ -114,3 +115,9 @@ Use conditions to control which referenced files are processed when publishing a
 ![PDMPublisher Scheduled Items setup page](/images/pdmpublisher/screenshots/task-setup-scheduled-items.png)
 
 Use Scheduled Items when this task should always process a saved list of files. Scheduled Items override other selected files.
+
+### Integrations
+
+![PDMPublisher PDM Task Integrations setup page](/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+
+Use Integrations to run an installed ERP connector only after publishing succeeds. Connections are configured separately under the Windows account that executes the task. See [Integrations Task Page](task-integrations.md).

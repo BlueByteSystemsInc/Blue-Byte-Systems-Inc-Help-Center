@@ -1,7 +1,7 @@
 ---
 title: "Options | PDMPublisher | SOLIDWORKS PDM"
 description: "Breve referência para cada opção de configuração de tarefas PDMPublisher disponível em SOLIDWORKS PDM Professional."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -12,8 +12,10 @@ A página de tarefas **Options** controla onde PDMPublisher escreve arquivos exp
 > [!IMPORTANT]
 > Esta é a página de Opções **PDM task**. Configurações compartilhadas com o suplemento SOLIDWORKS usam as mesmas páginas de detalhes e identificam seu comportamento específico do produto. Ver [Tarefa PDM vs. Suplemento SOLIDWORKS](pdmpublisher-product-differences.md).
 
-![PDMPublisher Página de tarefas de opções](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/page-options.png)
+![Página atualizada de Opções da Tarefa PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-options-20261009.png)
 Use esta página como um mapa rápido. Cada configuração links para sua própria página de recursos com a imagem correspondente, explicação e notas.
+
+Selecione **Pop out...** para editar a página completa em uma janela separada e redimensionável. Os comandos de configurações adicionais mostram a quantidade de anotações, condições e itens agendados configurados.
 
 <a id="recommended-first-setup"></a>
 ## Primeira Configuração Recomendada

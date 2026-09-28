@@ -1,7 +1,7 @@
 ---
 title: "Anmerkungen Task Page | PDMPublisher | SOLIDWORKS PDM"
 description: "Fügen Sie Notizen, Wasserzeichen und blattspezifischen Text zu exportierten PDF-Dokumenten hinzu."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: how-to
 ---
 
@@ -12,10 +12,10 @@ Verwenden Sie die Aufgabenseite Anmerkungen, um Textnotizen oder Wasserzeichen z
 > [!IMPORTANT]
 > Dies ist die **PDM task** Annotations Seite. Die Annotationssteuerelemente werden auch vom SOLIDWORKS-Add-in verwendet, aber PDM-Variablen stammen aus dem Vault-Task-Kontext. Siehe [SOLIDWORKS Add-in Anmerkungen](pdmpublishersolidworks_annotations.md).
 
-![PDMPublisher Anmerkungen Seite](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/page-annotations.png)
+![Aktualisierter Anmerkungseditor der PDM-Task](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 Jede Anmerkung kann ihren eigenen Text, Formatierung, Position, Blattregel und aktiven Zustand haben.
 
-Die Annotationstabelle ist der große Arbeitsbereich unterhalb der Symbolleiste. Es zeigt die für die Aufgabe konfigurierten Anmerkungen an und lässt Sie auswählen, welche Anmerkung Sie bearbeiten.
+Der große Arbeitsbereich zeigt die für die Aufgabe konfigurierten Anmerkungen. Ziehen Sie eine Anmerkung zum Positionieren, ziehen Sie die Griffe zum Ändern der Größe oder doppelklicken Sie zum Bearbeiten des Textes. **X** und **Y** legen die genaue Ausgabeposition fest.
 
 <a id="annotation-settings"></a>
 ## Anmerkungseinstellungen

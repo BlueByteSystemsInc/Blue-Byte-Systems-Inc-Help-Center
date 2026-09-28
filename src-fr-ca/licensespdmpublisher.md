@@ -1,7 +1,7 @@
 ---
 title: "Licences PDMPublisher"
 description: "Activer, désactiver ou demander une licence PDMPublisher pour SOLIDWORKS ou PDM Professional."
-ms.date: 09/16/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 
@@ -32,6 +32,8 @@ Ouvrez **PDMPublisher > License Key**, ou ouvrez **PDMPublisher > Settings > Lic
 4. Confirmez que la zone d'état signale une licence active.
 
 Sélectionnez **Deactivate** avant de déplacer une licence vers un autre ordinateur, de remplacer l'ordinateur ou de faire un changement de système qui pourrait affecter l'identité de la machine.
+
+Les dates d'expiration sont enregistrées et comparées en UTC pour éviter qu'un format régional ou un fuseau horaire ne modifie la validité de la licence. L'interface affiche la date dans l'heure locale de l'utilisateur.
 
 <a id="community-edition"></a>
 ### Publication communautaire

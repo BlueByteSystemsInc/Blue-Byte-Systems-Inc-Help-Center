@@ -1,7 +1,7 @@
 ---
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: Short reference for every PDMPublisher task setup option available in SOLIDWORKS PDM Professional.
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -12,9 +12,11 @@ The **Options** task page controls where PDMPublisher writes exported files, whi
 > [!IMPORTANT]
 > This is the **PDM task** Options page. Settings shared with the SOLIDWORKS add-in use the same detail pages and identify their product-specific behavior. See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md).
 
-![PDMPublisher Options task page](/images/pdmpublisher/screenshots/page-options.png)
+![Updated PDMPublisher Options task page](/images/pdmpublisher/screenshots/task-options-20261009.png)
 
 Use this page as a quick map. Each setting links to its own feature page with the matching screenshot, explanation, and notes.
+
+Select **Pop out...** when you want to edit the complete page in a separate resizable window. The **Additional settings** commands show how many annotations, conditions, and scheduled items are currently configured. Summary counts also appear beside dialogs such as configuration filters, variable mappings, extension-specific locations, and flat-pattern settings.
 
 ## Recommended First Setup
 
@@ -96,3 +98,4 @@ Review these settings before saving a new task:
 - [Annotations Task Page](annotations.md)
 - [Conditions Task Page](conditions.md)
 - [Scheduled Items Task Page](scheduleditems.md)
+- [Integrations Task Page](task-integrations.md)

@@ -1,7 +1,7 @@
 ---
 title: "Veröffentlichung von Workflow und Ergebnissen | PDMPublisher für SOLIDWORKS"
 description: "Folgen Sie einem PDMPublisher-Job von der Dokumentenvorbereitung über die Überprüfung, den Export, die Protokollierung und die Fehlerbehebung."
-ms.date: 09/16/2026
+ms.date: 10/11/2026
 ms.topic: how-to
 ---
 
@@ -30,6 +30,8 @@ Wählen Sie das benannte Profil aus dem Pfeil neben **Publish**.
 
 Für eine Baugruppe mit aktiviertem Export und aktivierter Zustandsprüfung für einzelne Referenzen listet PDMPublisher die Referenzen auf, die die Bewertung bestanden haben. Löschen Sie eine Datei, um sie von diesem Lauf wegzulassen. Bestätigen Sie die Fortsetzung oder stornieren Sie die Beendigung vor der Ausfuhrverarbeitung.
 
+Mit **Use All** oder **Discard All** ändern Sie die gesamte Liste, einschließlich durch die Suche ausgeblendeter Zeilen. Markieren Sie mehrere Zeilen und verwenden Sie per Rechtsklick **Use Selected** oder **Discard Selected**.
+
 ![Dateien überprüfen, um nach der Zustandsbewertung zu veröffentlichen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
 Die Überprüfungsauswahl betrifft nur den aktuellen Lauf. Es schreibt den Profil- oder Zustandsbaum nicht um.
 
@@ -37,6 +39,8 @@ Die Überprüfungsauswahl betrifft nur den aktuellen Lauf. Es schreibt den Profi
 ## 4. Prozessoutputs
 
 Während der Verarbeitung löst PDMPublisher Platzhalter für jedes Quelldokument und jede Konfiguration auf, erstellt die erforderlichen Ordner, ruft den entsprechenden SOLIDWORKS-Exporteur auf, verwendet Anmerkungen oder PDF-Operationen und erstellt optional ein Archiv.
+
+Ausgewertete Eigenschaften werden pro Dokument einmal gelesen und während des Laufs wiederverwendet. Zeichnungen, die nur dafür geöffnet werden, bleiben im Hintergrund und werden am Ende geschlossen.
 
 Schließen Sie SOLIDWORKS nicht, ändern Sie das aktive Dokument oder ändern Sie referenzierte Dateien, während der Auftrag ausgeführt wird.
 

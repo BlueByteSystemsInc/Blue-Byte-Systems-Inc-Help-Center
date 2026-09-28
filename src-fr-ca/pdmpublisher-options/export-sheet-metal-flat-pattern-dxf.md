@@ -1,7 +1,7 @@
 ---
 title: "Exporter des pièces métalliques en tôle vers les options DXF=1"
 description: "Exporter les motifs plats en tôle en fichiers 1:1 DXF."
-ms.date: 10/08/2026
+ms.date: 10/09/2026
 ms.topic: reference
 ---
 
@@ -34,7 +34,7 @@ Sélectionnez **Flat Pattern Settings** à côté de l'option principale pour co
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Ajoute `-FlatPattern` avant `.dxf`. Activez-le lorsqu'un dessin et sa pièce en tôle associée peuvent exporter vers DXF, empêchant ainsi une sortie d'écraser l'autre. |
 
 > [!IMPORTANT]
-> Dans le complément SOLIDWORKS, l'exportation de chaque corps de tôlerie dans un fichier DXF distinct nécessite l'option principale d'exportation du patron plat et **Export each sheet-metal body to a separate DXF** sous **Flat Pattern Settings**. [Split Bodies](split-bodies.md) n'est pas requis et ne contrôle pas la sortie DXF des patrons plats de tôlerie.
+> Dans le complément SOLIDWORKS et la tâche PDM, l'exportation de chaque corps de tôlerie dans un fichier DXF distinct nécessite l'option principale d'exportation du patron plat et **Export each sheet-metal body to a separate DXF** sous **Flat Pattern Settings**. [Split Bodies](split-bodies.md) n'est pas requis et ne contrôle pas la sortie DXF des patrons plats de tôlerie.
 
 > [!TIP]
 > Pour une fabrication typique DXF, commencez par **Export flat-pattern geometry** et **Export bend lines**. Ajoutez des croquis, des outils de formation ou la boîte de délimitation seulement lorsque votre processus de fabrication consomme ces entités.

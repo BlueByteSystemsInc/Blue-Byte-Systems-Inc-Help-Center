@@ -1,7 +1,7 @@
 ---
 title: "Création d'une nouvelle tâche PDMPublisher"
 description: "Créez votre première tâche PDMPublisher dans SOLIDWORKS PDM Administration."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -92,17 +92,18 @@ Utilisez ces pages pour configurer ce que PDMPublisher exporte et comment il gè
 | [Annotations](annotations.md) | Ajoutez des notes ou des filigranes qui peuvent inclure des variables de texte fixe, PDM et des propriétés SOLIDWORKS. |
 | [Conditions](conditions.md) | Décider quels fichiers référencés doivent être inclus lors du traitement des assemblages. |
 | [Articles programmés](scheduleditems.md) | Définir les fichiers qui doivent être traités lorsque la tâche s'exécute sans les fichiers sélectionnés. |
+| [Intégrations](task-integrations.md) | Envoyer facultativement les articles publiés et les variables PDM mappées vers un connecteur ERP. |
 
 <a id="options"></a>
 ### Options
 
-![Page de configuration des options PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-options.png)
+![Page de configuration des options PDMPublisher mise à jour](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-options-20261009.png)
 Examinez les éléments de configuration recommandés dans [Options Task Page](options.md), en particulier l'emplacement d'exportation, le nom de fichier, les formats de fichier, la version SOLIDWORKS, le modèle et le suivi des activités.
 
 <a id="annotations"></a>
 ### Annotations
 
-![Page de configuration des annotations PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-annotations.png)
+![Éditeur d'annotations PDMPublisher mis à jour](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 La table d'annotation est l'espace de travail où vous créez et gérez des notes ou des filigranes qui seront placés sur les PDF exportés. Chaque annotation peut avoir son propre texte, formatage, position, règle de feuille, et état actif.
 
 <a id="conditions"></a>
@@ -116,3 +117,10 @@ Utilisez des conditions pour contrôler quels fichiers référencés sont trait�
 
 ![Page de configuration des éléments programmés PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-scheduled-items.png)
 Utilisez des éléments programmés lorsque cette tâche doit toujours traiter une liste de fichiers enregistrés. Les articles programmés remplacent les autres fichiers sélectionnés.
+
+<a id="integrations"></a>
+### Intégrations
+
+![Page Intégrations de la tâche PDM](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+
+Utilisez cette page pour exécuter un connecteur ERP uniquement après une publication réussie. Consultez [Page de tâche Intégrations](task-integrations.md).

@@ -337,6 +337,8 @@
             href: pdmpublisher-options/map-variables-between-source-and-destination-file.md
           - name: Hide Task in File Explorer
             href: pdmpublisher-options/hide-task-in-file-explorer.md
+      - name: Integrations Task Page
+        href: task-integrations.md
       - name: Annotations Task Page
         href: annotations.md
         expanded: true

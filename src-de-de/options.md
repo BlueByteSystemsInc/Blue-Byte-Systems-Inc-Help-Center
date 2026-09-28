@@ -1,7 +1,7 @@
 ---
 title: "Optionen | PDMPublisher | SOLIDWORKS PDM"
 description: "Kurzreferenz für jede PDMPublisher-Task-Setup-Option in SOLIDWORKS PDM Professional."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -12,9 +12,11 @@ Die Aufgabenseite **Options** steuert, wo PDMPublisher exportierte Dateien schre
 > [!IMPORTANT]
 > Dies ist die **PDM task** Optionsseite. Einstellungen, die mit dem SOLIDWORKS-Add-in geteilt werden, verwenden die gleichen Detailseiten und identifizieren ihr produktspezifisches Verhalten. Siehe [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md).
 
-![PDMPublisher Options task page](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/page-options.png)
+![Aktualisierte PDMPublisher-Optionen](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-options-20261009.png)
 
 Verwenden Sie diese Seite als schnelle Karte. Jede Einstellung verlinkt auf ihre eigene Feature-Seite mit dem passenden Screenshot, der Erklärung und den Notizen.
+
+Wählen Sie **Pop out...**, um die vollständige Seite in einem separaten, größenveränderbaren Fenster zu bearbeiten. Die Befehle für zusätzliche Einstellungen zeigen die Anzahl der Anmerkungen, Bedingungen und geplanten Elemente an.
 
 <a id="recommended-first-setup"></a>
 ## Empfohlenes erstes Setup

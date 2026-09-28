@@ -1,7 +1,7 @@
 ---
 title: "Export von Blechteilen nach 1:1 Flat Pattern DXF | PDMPublisher Optionen"
 description: "Exportieren Sie flache Blechmuster als 1:1 DXF-Dateien."
-ms.date: 10/08/2026
+ms.date: 10/09/2026
 ms.topic: reference
 ---
 
@@ -34,7 +34,7 @@ Wählen Sie **Flat Pattern Settings** neben der Hauptoption, um zu steuern, welc
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Fügt `-FlatPattern` vor `.dxf` hinzu. Aktivieren Sie es, wenn eine Zeichnung und das zugehörige Blechteil beide in DXF exportieren können, wodurch verhindert wird, dass eine Ausgabe die andere überschreibt. |
 
 > [!IMPORTANT]
-> Um im SOLIDWORKS-Add-in jeden Blechkörper als separate DXF-Datei zu exportieren, aktivieren Sie die Hauptoption für den Flachmusterexport und **Export each sheet-metal body to a separate DXF** unter **Flat Pattern Settings**. [Split Bodies](split-bodies.md) ist nicht erforderlich und steuert nicht die DXF-Ausgabe von Blech-Flachmustern.
+> Um im SOLIDWORKS-Add-in oder in der PDM-Task jeden Blechkörper als separate DXF-Datei zu exportieren, aktivieren Sie die Hauptoption für den Flachmusterexport und **Export each sheet-metal body to a separate DXF** unter **Flat Pattern Settings**. [Split Bodies](split-bodies.md) ist nicht erforderlich und steuert nicht die DXF-Ausgabe von Blech-Flachmustern.
 
 > [!TIP]
 > Für eine typische Herstellung DXF beginnen Sie mit **Export flat-pattern geometry** und **Export bend lines**. Fügen Sie Skizzen, Formwerkzeuge oder die Begrenzungsbox nur hinzu, wenn Ihr Herstellungsprozess diese Entitäten verbraucht.

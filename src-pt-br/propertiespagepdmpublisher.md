@@ -1,7 +1,7 @@
 ---
 title: "Creating a New Task | PDMPublisher | SOLIDWORKS PDM"
 description: "Crie sua primeira tarefa PDMPublisher na administração SOLIDWORKS PDM."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -92,17 +92,18 @@ Use estas páginas para configurar o que o PDMPublisher exporta e como ele lida 
 | [Anotações](annotations.md) | Adicione notas ou marcas de água que podem incluir texto fixo, variáveis PDM e propriedades SOLIDWORKS. |
 | [Condições](conditions.md) | Decida quais arquivos referenciados devem ser incluídos no processamento de conjuntos. |
 | [Itens agendados](scheduleditems.md) | Defina arquivos que devem ser processados quando a tarefa for executada sem arquivos selecionados. |
+| [Integrações](task-integrations.md) | Envie opcionalmente itens publicados e variáveis PDM mapeadas para um conector ERP. |
 
 <a id="options"></a>
 ### Opções
 
-![PDMPublisher Página de configuração de opções](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-options.png)
+![Página de configuração atualizada das Opções](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-options-20261009.png)
 Reveja os itens de configuração recomendados em [Options Task Page](options.md), especialmente local de exportação, nome do arquivo, formatos de arquivo, versão SOLIDWORKS, modelo e rastreamento de atividade.
 
 <a id="annotations"></a>
 ### Anotações
 
-![PDMPublisher Página de configuração de anotações](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-annotations.png)
+![Editor de anotações atualizado do PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 A tabela de anotações é o espaço de trabalho onde você cria e gerencia notas ou marcas de água que serão colocadas em PDFs exportados. Cada anotação pode ter seu próprio texto, formatação, posição, regra da folha e estado ativo.
 
 <a id="conditions"></a>
@@ -117,3 +118,10 @@ Use condições para controlar quais arquivos referenciados são processados ao 
 ![PDMPublisher Scheduled Items setup page](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-scheduled-items.png)
 
 Usar itens agendados quando esta tarefa deve processar sempre uma lista salva de arquivos. Itens agendados sobrepõem outros arquivos selecionados.
+
+<a id="integrations"></a>
+### Integrações
+
+![Página Integrações da Tarefa PDM](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+
+Use esta página para executar um conector ERP somente depois de uma publicação bem-sucedida. Consulte [Página de Tarefa de Integrações](task-integrations.md).

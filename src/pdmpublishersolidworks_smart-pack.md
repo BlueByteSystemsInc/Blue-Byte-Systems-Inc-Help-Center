@@ -1,7 +1,7 @@
 ---
 title: Clone Tree | PDMPublisher for SOLIDWORKS
 description: Copy SOLIDWORKS documents and references with per-file names, destinations, PDM revision handling, companion files, profiles, and ZIP output.
-ms.date: 09/15/2026
+ms.date: 10/11/2026
 ms.topic: how-to
 ---
 
@@ -25,6 +25,16 @@ Open **PDMPublisher > Settings > Clone Tree** to select the shared PDM serial nu
 6. Select **Copy**.
 
 Excluded files keep their original references. Search and type filters change only the visible rows; all checked files remain in the copy plan.
+
+## Copy a Value Through a Column
+
+Open an editable cell's menu and choose one of these commands:
+
+- **Copy to all cells in this column**
+- **Copy to all cells above**
+- **Copy to all cells below**
+
+Clone Tree copies the cell's value or formula to the eligible rows in the requested direction, using the grid's current displayed order. Excluded, virtual, and other non-editable rows are skipped. Document-based formulas, such as filename values, are evaluated again for each destination row. Review every resulting name and folder before selecting **Copy**.
 
 ## Copy Options
 

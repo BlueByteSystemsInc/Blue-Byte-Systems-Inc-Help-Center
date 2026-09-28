@@ -1,7 +1,7 @@
 ---
 title: "Export Sheet Metal Parts to 1:1 Flat Pattern DXF | PDMPublisher Options"
 description: "Exportar padrões planos de chapa de metal como 1:1 DXF arquivos."
-ms.date: 10/08/2026
+ms.date: 10/09/2026
 ms.topic: reference
 ---
 
@@ -35,7 +35,7 @@ Selecione **Flat Pattern Settings** ao lado da opção principal para controlar 
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Adiciona `-FlatPattern` antes de `.dxf`. Habilite-o quando um desenho e sua parte de folha-metal associada podem tanto exportar para DXF, impedindo uma saída de substituir a outra. |
 
 > [!IMPORTANT]
-> No suplemento SOLIDWORKS, exportar cada corpo de chapa metálica para um DXF separado requer a opção principal de exportação de padrão plano e **Export each sheet-metal body to a separate DXF** em **Flat Pattern Settings**. [Split Bodies](split-bodies.md) não é necessário e não controla a saída DXF de padrões planos de chapa metálica.
+> No suplemento SOLIDWORKS e na Tarefa PDM, exportar cada corpo de chapa metálica para um DXF separado requer a opção principal de exportação de padrão plano e **Export each sheet-metal body to a separate DXF** em **Flat Pattern Settings**. [Split Bodies](split-bodies.md) não é necessário e não controla a saída DXF de padrões planos de chapa metálica.
 
 > [!TIP]
 > Para uma fabricação típica DXF, comece com **Export flat-pattern geometry** e **Export bend lines**. Adicione esboços, ferramentas de formação ou a caixa limite apenas quando seu processo de fabricação consumir essas entidades.

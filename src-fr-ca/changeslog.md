@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 10/08/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,36 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.08.0` |
-| [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.08` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.26.0` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261011"></a>
+## 2026.10.11
+*S'applique au **complément SOLIDWORKS** et aux composants de licence partagés*
+
+- Amélioration des performances et de la stabilité de publication : les propriétés évaluées de chaque document sont lues une fois par exécution puis réutilisées.
+- Les mises en plan ouvertes uniquement pour évaluer les propriétés sont maintenant chargées en arrière-plan puis fermées en toute sécurité à la fin de l'exécution.
+- Ajout des commandes **Use Selected** et **Discard Selected** dans la grille de révision. **Use All** et **Discard All** s'appliquent maintenant à la liste complète, même lorsqu'un filtre de recherche est actif.
+- Ajout de commandes Clone Tree permettant de copier la valeur ou la formule d'une cellule vers toute la colonne, uniquement vers le haut ou uniquement vers le bas.
+- Normalisation de l'enregistrement et de la comparaison des dates d'expiration de licence en UTC, avec affichage dans l'heure locale de l'utilisateur.
+- Correction des couleurs du menu d'arrière-plan des mises en plan en mode sombre.
+
+<a id="20261009"></a>
+## 2026.10.09
+*S'applique au **complément SOLIDWORKS** et au **programme d'installation de la tâche PDM***
+
+- Ajout d'une [page de tâche Intégrations](task-integrations.md) facultative pour exécuter un connecteur ERP après une publication PDM réussie.
+- Refonte de l'interface Options de la tâche PDM avec une fenêtre détachable, une sélection de formats plus claire, des compteurs de paramètres et un accès direct aux annotations, conditions et éléments planifiés.
+- Refonte de l'éditeur d'annotations de la tâche PDM avec positionnement, redimensionnement, édition directe, formatage, sélection de feuilles et modes clair/sombre.
+- Ajout de l'exportation d'un DXF de patron plat distinct pour chaque corps de tôlerie dans la tâche PDM.
+- Amélioration de la sélection des fichiers et des formats au lancement de la tâche.
+- Amélioration des diagnostics de licence de la tâche PDM et association de la licence au nom du coffre-fort.
+- Correction des téléchargements du catalogue de connecteurs ERP par HTTPS et amélioration des messages d'erreur du catalogue.
 
 <a id="202610080"></a>
 ## 2026.10.08.0

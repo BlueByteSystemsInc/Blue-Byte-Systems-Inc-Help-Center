@@ -1,7 +1,7 @@
 ﻿---
 title: Licensing | PDMPublisher
 description: Activate, deactivate, or request a PDMPublisher license for SOLIDWORKS or PDM Professional.
-ms.date: 09/16/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 
@@ -31,6 +31,8 @@ Open **PDMPublisher > License Key**, or open **PDMPublisher > Settings > License
 4. Confirm that the status area reports an active license.
 
 Select **Deactivate** before moving a license to another computer, replacing the computer, or making a system change that could affect the machine identity.
+
+License expiry instants are stored and compared in UTC so regional date formats and time zones do not change license validity. The interface displays the expiry date in the current user's local time.
 
 ### Community Edition
 
@@ -82,3 +84,5 @@ To reactivate the license, please follow these instructions:
 4. *Enter* your license key. If you are reactivating the same license key after expiry, you don't need to re-enter the license key.
 5. Click **Activate**.
 6. Your new expiry date should appear.
+
+The PDM Task also compares the saved expiry instant in UTC and displays it in local time. Task activation is associated with the vault name.

@@ -1,7 +1,7 @@
 ---
 title: Publishing Workflow and Results | PDMPublisher for SOLIDWORKS
 description: Follow a PDMPublisher job from document preparation through review, export, logging, and troubleshooting.
-ms.date: 10/07/2026
+ms.date: 10/11/2026
 ms.topic: how-to
 ---
 
@@ -28,6 +28,8 @@ Review the export location, filename, formats, sheet mode, references, configura
 
 For an assembly with individual-reference export and condition review enabled, PDMPublisher lists the references that passed evaluation. Clear a file to omit it from this run. Confirm to continue, or cancel to stop before export processing.
 
+Use **Use All** or **Discard All** to change the complete review list, including rows hidden by the current search. Select multiple rows and right-click to use **Use Selected** or **Discard Selected** on only those rows.
+
 ![Review files and evaluated destinations before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 
 The review selection affects only the current run. It does not rewrite the profile or condition tree.
@@ -35,6 +37,8 @@ The review selection affects only the current run. It does not rewrite the profi
 ## 4. Process Outputs
 
 During processing, PDMPublisher resolves placeholders for each source document and configuration, creates the required folders, invokes the corresponding SOLIDWORKS exporter, applies annotations or PDF operations, and optionally creates an archive.
+
+Evaluated properties are read once per source document and reused throughout that publishing run. Drawings opened only for property evaluation stay in the background and are closed when the run ends; documents that were already open remain under the user's control.
 
 Do not close SOLIDWORKS, change the active document, or modify referenced files while the job is running.
 

@@ -1,7 +1,7 @@
 ---
 title: "Erstellen einer neuen Aufgabe | PDMPublisher | SOLIDWORKS PDM"
 description: "Erstellen Sie Ihre erste PDMPublisher Aufgabe in SOLIDWORKS PDM Administration."
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: conceptual
 ---
 
@@ -92,18 +92,19 @@ Verwenden Sie diese Seiten, um zu konfigurieren, was PDMPublisher exportiert und
 | [Anmerkungen](annotations.md) | Fügen Sie Notizen oder Wasserzeichen hinzu, die festen Text, PDM-Variablen und SOLIDWORKS-Eigenschaften enthalten können. |
 | [Bedingungen](conditions.md) | Entscheiden Sie, welche referenzierten Dateien bei der Bearbeitung von Assemblys enthalten sein sollen. |
 | [Scheduled Items](scheduleditems.md) | Definieren Sie Dateien, die verarbeitet werden sollen, wenn die Aufgabe ohne ausgewählte Dateien ausgeführt wird. |
+| [Integrationen](task-integrations.md) | Überträgt optional veröffentlichte Artikel und zugeordnete PDM-Variablen an einen ERP-Connector. |
 
 <a id="options"></a>
 ### Optionen
 
-![PDMPublisher Options setup page](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-options.png)
+![Aktualisierte PDMPublisher-Optionen](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-options-20261009.png)
 
 Überprüfen Sie die empfohlenen Setup-Elemente in [Options Task Page](options.md), insbesondere Exportstandort, Dateiname, Dateiformate, SOLIDWORKS-Version, Vorlage und Aktivitätsverfolgung.
 
 <a id="annotations"></a>
 ### Anmerkungen
 
-![PDMPublisher Annotations setup page](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-annotations.png)
+![Aktualisierter PDMPublisher-Anmerkungseditor](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 
 Die Annotationstabelle ist der Arbeitsbereich, in dem Sie Notizen oder Wasserzeichen erstellen und verwalten, die auf exportierten PDFs platziert werden. Jede Anmerkung kann ihren eigenen Text, Formatierung, Position, Blattregel und aktiven Zustand haben.
 
@@ -119,3 +120,10 @@ Verwenden Sie Bedingungen, um zu steuern, welche referenzierten Dateien beim Ver
 
 ![PDMPublisher Scheduled Items setup page](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-scheduled-items.png)
 Verwenden Sie geplante Elemente, wenn diese Aufgabe immer eine gespeicherte Liste von Dateien verarbeiten soll. Geplante Elemente überschreiben andere ausgewählte Dateien.
+
+<a id="integrations"></a>
+### Integrationen
+
+![Integrationen-Seite der PDM-Task](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+
+Führen Sie hier einen ERP-Connector nur nach einer erfolgreichen Veröffentlichung aus. Siehe [Integrationen-Aufgabenseite](task-integrations.md).

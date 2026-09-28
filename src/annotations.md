@@ -1,7 +1,7 @@
 ---
 title: Annotations Task Page | PDMPublisher | SOLIDWORKS PDM
 description: Add notes, watermarks, and sheet-specific text to exported PDF documents.
-ms.date: 08/09/2026
+ms.date: 10/09/2026
 ms.topic: how-to
 ---
 
@@ -12,11 +12,13 @@ Use the Annotations task page to add text notes or watermarks to exported PDF do
 > [!IMPORTANT]
 > This is the **PDM task** Annotations page. The annotation controls are also used by the SOLIDWORKS add-in, but PDM variables come from the vault task context. See [SOLIDWORKS Add-in Annotations](pdmpublishersolidworks_annotations.md).
 
-![PDMPublisher Annotations page](/images/pdmpublisher/screenshots/page-annotations.png)
+![Updated PDMPublisher PDM Task annotation editor](/images/pdmpublisher/screenshots/task-annotations-20261009.png)
 
 Each annotation can have its own text, formatting, position, sheet rule, and active state.
 
-The annotation table is the large workspace below the toolbar. It shows the annotations configured for the task and lets you select which annotation you are editing.
+The large workspace below the toolbar previews the annotations configured for the task. Drag an annotation to place it, drag its handles to resize it, or double-click it to edit its text. Use **X** and **Y** for an exact output position. The toolbar controls formatting, watermarks, QR codes, width, and sheet selection.
+
+Open the editor from **Options > Annotations...**. Changes are staged in the editor and saved when you confirm the dialog.
 
 ## Annotation Settings
 

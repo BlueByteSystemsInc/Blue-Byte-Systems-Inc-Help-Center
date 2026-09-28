@@ -1,7 +1,7 @@
 ---
 title: Export Sheet Metal Parts to 1:1 Flat Pattern DXF | PDMPublisher Options
 description: Export sheet metal flat patterns as 1:1 DXF files.
-ms.date: 10/08/2026
+ms.date: 10/09/2026
 ms.topic: reference
 ---
 
@@ -35,7 +35,7 @@ Select **Flat Pattern Settings** beside the main option to control which entitie
 | **Append `-FlatPattern` to the flat pattern DXF file name** | Adds `-FlatPattern` before `.dxf`. Enable it when a drawing and its associated sheet-metal part can both export to DXF, preventing one output from overwriting the other. |
 
 > [!IMPORTANT]
-> In the SOLIDWORKS add-in, exporting each sheet-metal body to a separate DXF requires the main flat-pattern export option and **Export each sheet-metal body to a separate DXF** under **Flat Pattern Settings**. [Split Bodies](split-bodies.md) is not required and does not control sheet-metal flat-pattern DXF output.
+> In both the SOLIDWORKS add-in and PDM Task, exporting each sheet-metal body to a separate DXF requires the main flat-pattern export option and **Export each sheet-metal body to a separate DXF** under **Flat Pattern Settings**. [Split Bodies](split-bodies.md) is not required and does not control sheet-metal flat-pattern DXF output.
 
 > [!TIP]
 > For a typical fabrication DXF, start with **Export flat-pattern geometry** and **Export bend lines**. Add sketches, forming tools, or the bounding box only when your manufacturing process consumes those entities.

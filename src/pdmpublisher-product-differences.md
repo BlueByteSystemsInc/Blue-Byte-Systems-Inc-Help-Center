@@ -1,7 +1,7 @@
 ---
 title: PDM Task vs SOLIDWORKS Add-in | PDMPublisher
 description: Compare PDMPublisher for SOLIDWORKS PDM Professional with PDMPublisher for SOLIDWORKS and choose the correct documentation.
-ms.date: 09/16/2026
+ms.date: 10/09/2026
 ms.topic: overview
 ---
 
@@ -39,7 +39,7 @@ Each shared page identifies any difference between the PDM task and the SOLIDWOR
 
 ## PDM Task Only
 
-Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-launch prompts, BOM templates, drawing-derived BOMs, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, and File Explorer task visibility.
+Use the [PDM task documentation](pdmpublisher.md) for scheduled items, task-launch prompts, BOM templates, drawing-derived BOMs, calculation methods, selecting a task-host SOLIDWORKS version, PDM search, vault activity logs, variable mapping, PDM references, File Explorer task visibility, and optional [post-publish ERP integration](task-integrations.md).
 
 ## SOLIDWORKS Add-in Only
 

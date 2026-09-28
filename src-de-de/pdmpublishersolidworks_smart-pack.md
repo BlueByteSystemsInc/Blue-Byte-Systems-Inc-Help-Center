@@ -1,7 +1,7 @@
 ---
 title: "Clone Tree | PDMPublisher für SOLIDWORKS"
 description: "Kopieren Sie SOLIDWORKS-Dokumente und -Referenzen mit den jeweiligen Dateinamen, Zielen, PDM-Revisionsbehandlung, Begleitdateien, Profilen und ZIP-Ausgaben."
-ms.date: 09/15/2026
+ms.date: 10/11/2026
 ms.topic: how-to
 ---
 
@@ -24,6 +24,11 @@ Clone Tree erstellt einen Kopierplan für das aktive Dokument und seine Referenz
 6. Wählen Sie **Copy**.
 
 Ausgeschlossene Dateien behalten ihre ursprünglichen Referenzen. Such- und Typfilter ändern nur die sichtbaren Zeilen; alle geprüften Dateien bleiben im Kopierplan.
+
+<a id="copy-a-value-through-a-column"></a>
+## Einen Wert in einer Spalte kopieren
+
+Öffnen Sie das Menü einer bearbeitbaren Zelle und wählen Sie **Copy to all cells in this column**, **Copy to all cells above** oder **Copy to all cells below**. Clone Tree kopiert den Wert oder die Formel in die zulässigen Zeilen der aktuellen Anzeigeordnung. Ausgeschlossene, virtuelle und nicht bearbeitbare Zeilen werden übersprungen. Prüfen Sie Namen und Ordner vor **Copy**.
 
 <a id="copy-options"></a>
 ## Kopieroptionen

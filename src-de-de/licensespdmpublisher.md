@@ -1,7 +1,7 @@
 ---
 title: "Lizenzierung | PDMPublisher"
 description: "Aktivieren, Deaktivieren oder Anfordern einer PDMPublisher-Lizenz für SOLIDWORKS oder PDM Professional."
-ms.date: 09/16/2026
+ms.date: 10/11/2026
 ms.topic: conceptual
 ---
 
@@ -32,6 +32,8 @@ ms.topic: conceptual
 4. Bestätigen Sie, dass der Statusbereich eine aktive Lizenz meldet.
 
 Wählen Sie **Deactivate** aus, bevor Sie eine Lizenz auf einen anderen Computer verschieben, den Computer ersetzen oder eine Systemänderung vornehmen, die sich auf die Maschinenidentität auswirken könnte.
+
+Lizenzablaufzeiten werden in UTC gespeichert und verglichen, damit regionale Datumsformate und Zeitzonen die Gültigkeit nicht verändern. Die Oberfläche zeigt das Datum in der lokalen Zeit des Benutzers an.
 
 <a id="community-edition"></a>
 ### Community Edition

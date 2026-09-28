@@ -315,6 +315,8 @@
         href: ../../src-pt-br/pdmpublisher-options/map-variables-between-source-and-destination-file.md
       - name: Ocultar Tarefa no Explorador de Arquivos
         href: ../../src-pt-br/pdmpublisher-options/hide-task-in-file-explorer.md
+  - name: Página de Tarefa de Integrações
+    href: ../../src-pt-br/task-integrations.md
   - name: Página de Tarefa de Anotações
     href: ../../src-pt-br/annotations.md
     expanded: true
