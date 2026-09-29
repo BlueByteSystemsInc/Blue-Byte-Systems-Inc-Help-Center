@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 10/11/2026
+ms.date: 10/12/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,25 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.12` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.26.0` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261012"></a>
+## 2026.10.12
+*S'applique au **complément SOLIDWORKS***
+
+- Ajout des actions de menu contextuel Clone Tree **Check All**, **Uncheck All**, **Check Selected** et **Uncheck Selected**. Les documents racines obligatoires restent cochés.
+- Ajout du remplacement sécuritaire des fichiers de destination et archives ZIP existants. Clone Tree sauvegarde temporairement les sorties existantes et les restaure si la copie échoue.
+- Maintien de la protection des documents sources contre l'écrasement. Les destinations en double, les documents de destination ouverts et les destinations en lecture seule produisent des erreurs.
+- Mise à jour de **Copy All**, **Copy Above**, **Copy Below** et du remplissage par glissement afin d'inclure la ligne de l'archive ZIP. Une valeur peut aussi être copiée à partir de cette ligne.
+- Les opérations de copie et de remplissage respectent maintenant l'ordre affiché et le filtre courant.
+- Chaque tentative de copie prépare maintenant un nouvel objet SOLIDWORKS Pack and Go, ce qui corrige les échecs lors d'une nouvelle copie sans rouvrir Clone Tree. Les paramètres de la grille sont conservés.
+- Mise à jour du texte d'aide de Clone Tree pour expliquer le remplacement des destinations.
 
 <a id="20261011"></a>
 ## 2026.10.11

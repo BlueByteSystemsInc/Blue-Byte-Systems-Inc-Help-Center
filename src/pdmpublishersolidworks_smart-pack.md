@@ -1,7 +1,7 @@
 ---
 title: Clone Tree | PDMPublisher for SOLIDWORKS
 description: Copy SOLIDWORKS documents and references with per-file names, destinations, PDM revision handling, companion files, profiles, and ZIP output.
-ms.date: 10/11/2026
+ms.date: 10/12/2026
 ms.topic: how-to
 ---
 
@@ -26,6 +26,17 @@ Open **PDMPublisher > Settings > Clone Tree** to select the shared PDM serial nu
 
 Excluded files keep their original references. Search and type filters change only the visible rows; all checked files remain in the copy plan.
 
+### Select files from the grid
+
+Right-click the file tree to change which rows are included:
+
+| Command | Behavior |
+| --- | --- |
+| **Check All** | Checks every optional document row. |
+| **Uncheck All** | Clears every optional document row. Required root documents remain checked. |
+| **Check Selected** | Checks the selected rows. |
+| **Uncheck Selected** | Clears the selected optional rows. A required root document cannot be cleared. |
+
 ## Copy a Value Through a Column
 
 Open an editable cell's menu and choose one of these commands:
@@ -34,7 +45,7 @@ Open an editable cell's menu and choose one of these commands:
 - **Copy to all cells above**
 - **Copy to all cells below**
 
-Clone Tree copies the cell's value or formula to the eligible rows in the requested direction, using the grid's current displayed order. Excluded, virtual, and other non-editable rows are skipped. Document-based formulas, such as filename values, are evaluated again for each destination row. Review every resulting name and folder before selecting **Copy**.
+Clone Tree copies the cell's value or formula in the grid's displayed order and respects the current filter. **Copy All**, **Copy Above**, **Copy Below**, and drag-to-fill include the ZIP archive row when it is displayed and editable. The ZIP row can also be the source of a copy or fill operation. Hidden, excluded, virtual, and other non-editable rows are skipped. Document-based formulas, such as filename values, are evaluated again for each destination row. Review every resulting name and folder before selecting **Copy**.
 
 ## Copy Options
 
@@ -57,4 +68,8 @@ A profile can run a Property Doctor profile after copying. That processing appli
 
 ## Validation
 
-Before copying, PDMPublisher rejects duplicate targets, source overwrites, changed SOLIDWORKS extensions, existing targets, unresolved destination expressions, and unavailable PDM revision data. Review the grid again if references change while the window is open.
+Clone Tree can overwrite existing destination documents and an existing ZIP archive. Before writing, it temporarily backs up each existing output. If copying fails, the previous files are restored.
+
+Source documents remain protected and cannot be selected as destinations. Clone Tree also reports errors for duplicate destination paths, destination documents that are open in SOLIDWORKS, read-only destination files, changed SOLIDWORKS extensions, unresolved destination expressions, and unavailable PDM revision data.
+
+Each time you select **Copy**, Clone Tree creates a fresh SOLIDWORKS Pack and Go object while retaining the current grid settings. This allows you to correct a problem and copy again without closing and reopening Clone Tree. Review the grid again if references change while the window is open.

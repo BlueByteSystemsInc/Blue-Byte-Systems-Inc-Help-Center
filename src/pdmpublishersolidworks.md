@@ -95,7 +95,7 @@ Use it to:
 - Create a ZIP archive after the document set is copied.
 - Apply ordered profile rules and optionally run a Property Doctor profile on copied files.
 
-The copy is blocked when targets are duplicated, overwrite a source or existing file, change a SOLIDWORKS extension, or depend on unresolved destination or revision information.
+Clone Tree can safely replace existing destination files and ZIP archives by backing them up during the copy and restoring them if the operation fails. It still blocks source overwrites, duplicate destinations, open or read-only destination files, changed SOLIDWORKS extensions, and unresolved destination or revision information.
 
 ## BOM Manager
 

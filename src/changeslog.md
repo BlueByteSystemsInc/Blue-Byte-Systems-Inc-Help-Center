@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/11/2026
+ms.date: 10/12/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,24 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.12` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.12
+*Applies to the **SOLIDWORKS Add-in***
+
+- Added Clone Tree right-click actions: **Check All**, **Uncheck All**, **Check Selected**, and **Uncheck Selected**. Required root documents remain checked.
+- Added safe overwriting for existing destination files and ZIP archives. Clone Tree temporarily backs up existing outputs and restores them if copying fails.
+- Continued to protect source documents from overwriting. Duplicate destinations, open destination documents, and read-only destinations produce errors.
+- Updated **Copy All**, **Copy Above**, **Copy Below**, and drag-to-fill to include the ZIP archive row. Values can also be copied from the ZIP row.
+- Updated copy and fill operations to follow the displayed row order and current filtering.
+- Each Copy attempt now prepares a fresh SOLIDWORKS Pack and Go object, addressing failures when copying again without reopening Clone Tree. Grid settings are retained.
+- Updated Clone Tree help text to explain destination overwriting.
 
 ## 2026.10.11
 *Applies to the **SOLIDWORKS Add-in***

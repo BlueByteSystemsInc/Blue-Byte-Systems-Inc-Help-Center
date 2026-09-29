@@ -96,7 +96,7 @@ Utilisez-le pour :
 - Créez une archive ZIP après la copie du jeu de documents.
 - Appliquer les règles du profil commandé et exécuter optionnellement un profil Property Doctor sur les fichiers copiés.
 
-La copie est bloquée lorsque les cibles sont dupliquées, écraser une source ou un fichier existant, modifier une extension SOLIDWORKS ou dépendre d'informations de destination ou de révision non résolues.
+Clone Tree peut remplacer de façon sécuritaire les fichiers de destination et archives ZIP existants en les sauvegardant pendant la copie et en les restaurant si l'opération échoue. Il bloque toujours l'écrasement d'une source, les destinations en double, les fichiers de destination ouverts ou en lecture seule, les extensions SOLIDWORKS modifiées et les informations de destination ou de révision non résolues.
 
 <a id="bom-manager"></a>
 ## BOM Manager

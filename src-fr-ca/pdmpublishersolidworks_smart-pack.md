@@ -1,7 +1,7 @@
 ---
 title: "Clone Tree.PDMPublisher pour SOLIDWORKS"
 description: "Copier les documents et les références de SOLIDWORKS avec les noms de fichiers, les destinations, la gestion de la révision PDM, les fichiers associés, les profils et la sortie ZIP."
-ms.date: 10/11/2026
+ms.date: 10/12/2026
 ms.topic: how-to
 ---
 
@@ -25,10 +25,21 @@ Ouvrez **PDMPublisher > Settings > Clone Tree** pour sélectionner le numéro de
 
 Les fichiers exclus conservent leurs références originales. Les filtres de recherche et de type ne changent que les lignes visibles; tous les fichiers vérifiés restent dans le plan de copie.
 
+### Sélectionner les fichiers dans la grille
+
+Cliquez avec le bouton droit dans l'arborescence pour modifier les lignes incluses :
+
+| Commande | Comportement |
+| --- | --- |
+| **Check All** | Coche toutes les lignes de document facultatives. |
+| **Uncheck All** | Décoche toutes les lignes facultatives. Les documents racines obligatoires restent cochés. |
+| **Check Selected** | Coche les lignes sélectionnées. |
+| **Uncheck Selected** | Décoche les lignes facultatives sélectionnées. Un document racine obligatoire ne peut pas être décoché. |
+
 <a id="copy-a-value-through-a-column"></a>
 ## Copier une valeur dans une colonne
 
-Dans le menu d'une cellule modifiable, utilisez **Copy to all cells in this column**, **Copy to all cells above** ou **Copy to all cells below**. Clone Tree copie la valeur ou la formule dans les lignes admissibles selon l'ordre affiché. Les lignes exclues, virtuelles ou non modifiables sont ignorées. Vérifiez chaque nom et dossier avant de sélectionner **Copy**.
+Dans le menu d'une cellule modifiable, utilisez **Copy to all cells in this column**, **Copy to all cells above** ou **Copy to all cells below**. Clone Tree copie la valeur ou la formule selon l'ordre affiché et respecte le filtre courant. **Copy All**, **Copy Above**, **Copy Below** et le remplissage par glissement incluent la ligne ZIP lorsqu'elle est affichée et modifiable. La ligne ZIP peut aussi servir de source. Les lignes masquées, exclues, virtuelles ou non modifiables sont ignorées. Vérifiez chaque nom et dossier avant de sélectionner **Copy**.
 
 <a id="copy-options"></a>
 ## Copier les options
@@ -54,4 +65,8 @@ Un profil peut exécuter un profil Property Doctor après la copie. Ce traitemen
 <a id="validation"></a>
 ## Validation
 
-Avant de copier, PDMPublisher rejette les cibles dupliquées, écrase les sources, modifie les extensions SOLIDWORKS, les cibles existantes, les expressions de destination non résolues et les données de révision PDM non disponibles. Revoir la grille si les références changent pendant que la fenêtre est ouverte.
+Clone Tree peut remplacer les documents de destination et une archive ZIP existants. Avant l'écriture, il sauvegarde temporairement chaque sortie existante. Si la copie échoue, les fichiers précédents sont restaurés.
+
+Les documents sources demeurent protégés et ne peuvent pas servir de destination. Clone Tree signale aussi les chemins de destination en double, les documents de destination ouverts dans SOLIDWORKS, les fichiers de destination en lecture seule, les extensions SOLIDWORKS modifiées, les expressions de destination non résolues et les données de révision PDM non disponibles.
+
+Chaque sélection de **Copy** crée un nouvel objet SOLIDWORKS Pack and Go tout en conservant les paramètres courants de la grille. Vous pouvez ainsi corriger un problème et recommencer sans fermer et rouvrir Clone Tree. Revérifiez la grille si les références changent pendant que la fenêtre est ouverte.
