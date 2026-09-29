@@ -25,6 +25,12 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 
 <a id="20261011"></a>
 ## 2026.10.11
+*S'applique au **complément SOLIDWORKS***
+
+- Correction du sélecteur **Arrière-plan de mise en plan** dans les paramètres d'annotation : son menu s'ouvre maintenant de manière fiable, conserve ses séparateurs et utilise les bonnes couleurs dans les thèmes clair et sombre.
+
+<a id="20261010"></a>
+## 2026.10.10
 *S'applique au **complément SOLIDWORKS** et aux composants de licence partagés*
 
 - Amélioration des performances et de la stabilité de publication : les propriétés évaluées de chaque document sont lues une fois par exécution puis réutilisées.
@@ -32,7 +38,6 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 - Ajout des commandes **Use Selected** et **Discard Selected** dans la grille de révision. **Use All** et **Discard All** s'appliquent maintenant à la liste complète, même lorsqu'un filtre de recherche est actif.
 - Ajout de commandes Clone Tree permettant de copier la valeur ou la formule d'une cellule vers toute la colonne, uniquement vers le haut ou uniquement vers le bas.
 - Normalisation de l'enregistrement et de la comparaison des dates d'expiration de licence en UTC, avec affichage dans l'heure locale de l'utilisateur.
-- Correction des couleurs du menu d'arrière-plan des mises en plan en mode sombre.
 
 <a id="20261009"></a>
 ## 2026.10.09

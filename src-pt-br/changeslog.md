@@ -25,6 +25,12 @@ A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, entã
 
 <a id="20261011"></a>
 ## 2026.10.11
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- O seletor **Plano de fundo do desenho** nas configurações de anotação foi corrigido. O menu agora abre de forma confiável, mantém os separadores e usa as cores corretas nos temas claro e escuro.
+
+<a id="20261010"></a>
+## 2026.10.10
 *Aplica-se ao **suplemento SOLIDWORKS** e aos componentes de licença compartilhados*
 
 - O desempenho e a estabilidade da publicação foram aprimorados: as propriedades avaliadas de cada documento são lidas uma vez por execução e reutilizadas.
@@ -32,7 +38,6 @@ A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, entã
 - Foram adicionados **Use Selected** e **Discard Selected** à grade de revisão. **Use All** e **Discard All** agora afetam a lista completa mesmo com um filtro de pesquisa ativo.
 - O Clone Tree agora pode copiar o valor ou a fórmula de uma célula para todas as células editáveis da coluna, somente para cima ou somente para baixo.
 - As datas de expiração de licença agora são armazenadas e comparadas em UTC, mantendo a exibição no horário local do usuário.
-- Foram corrigidas as cores do menu de plano de fundo do desenho no modo escuro.
 
 <a id="20261009"></a>
 ## 2026.10.09

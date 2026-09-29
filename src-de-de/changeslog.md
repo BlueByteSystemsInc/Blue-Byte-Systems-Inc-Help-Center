@@ -25,6 +25,12 @@ Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegebe
 
 <a id="20261011"></a>
 ## 2026.10.11
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Die Auswahl **Zeichnungshintergrund** in den Anmerkungseinstellungen wurde korrigiert. Das Menü öffnet sich nun zuverlässig, behält seine Trennlinien bei und verwendet im hellen und dunklen Design die richtigen Farben.
+
+<a id="20261010"></a>
+## 2026.10.10
 *Gilt für das **SOLIDWORKS Add-in** und gemeinsam verwendete Lizenzkomponenten*
 
 - Veröffentlichungsleistung und -stabilität wurden verbessert: Die ausgewerteten Eigenschaften jedes Dokuments werden pro Lauf einmal gelesen und wiederverwendet.
@@ -32,7 +38,6 @@ Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegebe
 - **Use Selected** und **Discard Selected** wurden zur Veröffentlichungsprüfung hinzugefügt. **Use All** und **Discard All** wirken nun auf die vollständige Liste, auch bei aktivem Suchfilter.
 - Clone Tree kann den Wert oder die Formel einer Zelle in alle bearbeitbaren Zellen derselben Spalte oder nur nach oben bzw. unten kopieren.
 - Ablaufdaten von Lizenzen werden einheitlich in UTC gespeichert und verglichen, aber weiterhin in der lokalen Zeit des Benutzers angezeigt.
-- Die Farben des Zeichnungshintergrund-Menüs im Dunkelmodus wurden korrigiert.
 
 <a id="20261009"></a>
 ## 2026.10.09

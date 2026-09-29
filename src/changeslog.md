@@ -23,6 +23,11 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
 
 ## 2026.10.11
+*Applies to the **SOLIDWORKS Add-in***
+
+- Fixed the **Drawing background** selector in the annotation settings so its menu opens reliably, preserves its separators, and uses the correct colors in light and dark themes.
+
+## 2026.10.10
 *Applies to the **SOLIDWORKS Add-in** and shared licensing components*
 
 - Improved publishing performance and stability by reading each document's evaluated properties once per run and reusing them for its configurations and outputs.
@@ -30,7 +35,6 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 - Added **Use Selected** and **Discard Selected** commands to the publishing review grid. **Use All** and **Discard All** now apply to the complete review list even when a search filter is active.
 - Added Clone Tree commands to copy a cell's value or formula to every editable cell in the same column, or only to the cells above or below it.
 - Standardized license expiry storage and comparison in UTC while continuing to display expiry dates in the user's local time.
-- Fixed the drawing-background menu colors in dark mode.
 
 ## 2026.10.09
 *Applies to the **SOLIDWORKS Add-in** and the **PDM Task installer***
