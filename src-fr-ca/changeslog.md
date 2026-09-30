@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 10/12/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,29 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.12` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.26.0` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261020"></a>
+## 2026.10.20
+*S'applique au **complément SOLIDWORKS***
+
+- Property Doctor demande maintenant s'il faut actualiser l'affichage après l'application réussie de modifications, de suppressions ou d'actions de profil. L'actualisation met à jour la grille sans rouvrir la fenêtre et conserve les modifications SOLIDWORKS non enregistrées.
+- Seuls les documents touchés sont actualisés, une fois par document. Les documents inchangés et les mises en plan sont ignorés.
+- La progression indique le document en cours et l'avancement global. L'actualisation peut être annulée entre deux documents sans annuler les modifications déjà appliquées.
+- Après une application réussie, une colonne disparaît si la propriété n'existe plus dans aucune ligne de document, de configuration ou de liste de pièces soudées. Une propriété existante dont la valeur est vide conserve sa colonne.
+- Aucune demande d'actualisation n'est affichée lorsque l'application ne contient aucune modification, échoue, qu'un profil s'exécute silencieusement ou que la fenêtre est fermée avec **OK**.
+
+<a id="20261013-20261019"></a>
+## 2026.10.13–2026.10.19
+*S'applique au **complément SOLIDWORKS***
+
+- Versions de maintenance comprenant des corrections de bogues et des améliorations de stabilité.
 
 <a id="20261012"></a>
 ## 2026.10.12

@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log – Atualizações de recursos, melhorias e correções"
 description: "Veja o registro de alterações PDMPublisher com atualizações detalhadas de recursos, melhorias, correções de bugs e melhorias em todas as versões."
-ms.date: 10/11/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 # Registo de Alterações do PDMPublisher
@@ -15,13 +15,41 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 | Produto | Versão actual |
 | --- | --- |
-| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher para SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
 > [!TIP]
 > Se você estiver usando PDMPublisher (tarefa), recomendamos que você use PDMDeploy para atualizar PDMPublisher. Por favor, veja [aqui](/src/cdpdm.html).
+
+<a id="20261020"></a>
+## 2026.10.20
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- O Property Doctor agora pergunta se a exibição deve ser atualizada após aplicar com sucesso edições, exclusões ou ações de perfil. A atualização recarrega a grade atual sem reabrir a janela e preserva as alterações não salvas do SOLIDWORKS.
+- Somente os documentos afetados são atualizados, uma vez por documento. Documentos inalterados e desenhos são ignorados.
+- O progresso mostra o documento atual e a conclusão geral. A atualização pode ser cancelada entre documentos sem desfazer as alterações já aplicadas.
+- Depois que a aplicação for concluída, uma coluna será removida se a propriedade não existir mais em nenhuma linha de documento, configuração ou lista de corte. Uma propriedade existente com valor vazio mantém sua coluna.
+- A pergunta de atualização não aparece quando não há alterações, a aplicação falha, um perfil é executado silenciosamente ou a janela é fechada com **OK**.
+
+<a id="20261013-20261019"></a>
+## 2026.10.13–2026.10.19
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- Versões de manutenção com correções de erros e melhorias de estabilidade.
+
+<a id="20261012"></a>
+## 2026.10.12
+*Aplica-se ao **suplemento SOLIDWORKS***
+
+- Foram adicionadas ao Clone Tree as ações de menu de contexto **Check All**, **Uncheck All**, **Check Selected** e **Uncheck Selected**. Os documentos raiz obrigatórios permanecem selecionados.
+- Arquivos de destino e arquivos ZIP existentes agora podem ser sobrescritos com segurança. O Clone Tree faz backup temporário das saídas existentes e as restaura se a cópia falhar.
+- Os documentos de origem continuam protegidos contra sobrescrita. Destinos duplicados, documentos de destino abertos e destinos somente leitura geram erros.
+- **Copy All**, **Copy Above**, **Copy Below** e o preenchimento por arraste agora incluem a linha do arquivo ZIP. Também é possível copiar valores a partir da linha ZIP.
+- As operações de cópia e preenchimento seguem a ordem de exibição das linhas e o filtro atual.
+- Cada tentativa de cópia prepara um novo objeto SOLIDWORKS Pack and Go, corrigindo falhas ao copiar novamente sem reabrir o Clone Tree. As configurações da grade são mantidas.
+- O texto de ajuda do Clone Tree foi atualizado para explicar a sobrescrita dos destinos.
 
 <a id="20261011"></a>
 ## 2026.10.11

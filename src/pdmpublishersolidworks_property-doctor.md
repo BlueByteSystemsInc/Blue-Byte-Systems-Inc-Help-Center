@@ -1,7 +1,7 @@
 ---
 title: Property Doctor | PDMPublisher for SOLIDWORKS
 description: Review, edit, validate, import, export, and automate SOLIDWORKS custom properties across a document and its references.
-ms.date: 10/02/2026
+ms.date: 10/20/2026
 ms.topic: how-to
 ---
 
@@ -27,6 +27,16 @@ Open **PDMPublisher > Settings > Property Doctor** to configure the default colu
 Gray cells are missing properties. **Clear** keeps the property name and writes an empty value; **Delete Property** removes the property. Formula and linked-value cells are evaluated for the document row where they are applied.
 
 To delete one property across multiple documents, right-click its column header or open the column-options menu and select **Mark property for deletion (visible rows)**. To delete several properties together, select their visible column checkboxes and use **Mark selected properties for deletion (visible rows)** from any selected column. Using the command from an unselected column affects only that column. Property Doctor marks the properties in every editable visible row; filtered-out and read-only rows are not changed. Select the checked command again to undo the affected columns, or use a header's delete icon to undo only that column. Select **Apply changes** to remove the properties from the documents.
+
+## Refresh After Apply
+
+After Property Doctor successfully applies property edits, deletions, or profile actions, it asks whether to refresh the displayed properties. Select **Yes** to update the current grid without closing and reopening Property Doctor. Unsaved changes in SOLIDWORKS remain open.
+
+Refresh processes only documents affected by the Apply operation, once per document. It skips unchanged documents and drawings. A progress window shows the current document and overall completion. You can cancel between documents; all changes already applied are retained.
+
+A fully deleted property column disappears immediately after Apply, even if you decline the refresh. The column remains when the property still exists in any document, configuration, or cut-list row. An existing property with an empty value also keeps its column.
+
+Property Doctor does not show the refresh prompt when Apply contains no changes, Apply fails, a profile runs silently, or you select **OK** to close the window.
 
 ## Find, Filter, and Fill
 

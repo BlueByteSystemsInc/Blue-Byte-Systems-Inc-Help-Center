@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/11/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,41 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.11.0` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20261020"></a>
+## 2026.10.20
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Property Doctor fragt nun nach dem erfolgreichen Anwenden von Eigenschaftsänderungen, Löschungen oder Profilaktionen, ob die Anzeige aktualisiert werden soll. Die Aktualisierung lädt das aktuelle Raster neu, ohne das Fenster erneut zu öffnen, und erhält nicht gespeicherte SOLIDWORKS-Änderungen.
+- Nur betroffene Dokumente werden aktualisiert, jeweils einmal pro Dokument. Unveränderte Dokumente und Zeichnungen werden übersprungen.
+- Die Fortschrittsanzeige zeigt das aktuelle Dokument und den Gesamtfortschritt. Die Aktualisierung kann zwischen Dokumenten abgebrochen werden; bereits angewendete Änderungen bleiben erhalten.
+- Nach erfolgreichem Anwenden wird eine Eigenschaftsspalte entfernt, wenn die Eigenschaft in keiner Dokument-, Konfigurations- oder Zuschnittslistenzeile mehr vorhanden ist. Eine vorhandene Eigenschaft mit leerem Wert behält ihre Spalte.
+- Die Aktualisierungsabfrage erscheint nicht, wenn keine Änderungen vorliegen, das Anwenden fehlschlägt, ein Profil im Hintergrund ausgeführt wird oder das Fenster mit **OK** geschlossen wird.
+
+<a id="20261013-20261019"></a>
+## 2026.10.13–2026.10.19
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Wartungsversionen mit Fehlerbehebungen und Stabilitätsverbesserungen.
+
+<a id="20261012"></a>
+## 2026.10.12
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Clone Tree erhielt die Kontextmenüaktionen **Check All**, **Uncheck All**, **Check Selected** und **Uncheck Selected**. Erforderliche Stammdokumente bleiben aktiviert.
+- Vorhandene Zieldateien und ZIP-Archive können sicher überschrieben werden. Clone Tree sichert vorhandene Ausgaben vorübergehend und stellt sie wieder her, wenn der Kopiervorgang fehlschlägt.
+- Quelldokumente bleiben vor dem Überschreiben geschützt. Doppelte Ziele, geöffnete Zieldokumente und schreibgeschützte Ziele erzeugen Fehler.
+- **Copy All**, **Copy Above**, **Copy Below** und das Ziehen zum Ausfüllen berücksichtigen nun auch die ZIP-Archivzeile. Werte können ebenfalls aus der ZIP-Zeile kopiert werden.
+- Kopier- und Ausfüllvorgänge folgen der angezeigten Zeilenreihenfolge und dem aktuellen Filter.
+- Jeder Kopierversuch erstellt ein neues SOLIDWORKS Pack and Go-Objekt. Dadurch werden Fehler beim erneuten Kopieren ohne erneutes Öffnen von Clone Tree behoben; die Rastereinstellungen bleiben erhalten.
+- Der Hilfetext von Clone Tree erläutert nun das Überschreiben von Zielen.
 
 <a id="20261011"></a>
 ## 2026.10.11

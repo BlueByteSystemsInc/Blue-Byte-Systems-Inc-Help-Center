@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher für SOLIDWORKS"
 description: "Verwenden Sie PDMPublisher in SOLIDWORKS für die Veröffentlichung, Save As New, Property Doctor, Clone Tree, Profile und freigegebene Einstellungen."
-ms.date: 09/19/2026
+ms.date: 10/20/2026
 ms.topic: overview
 ---
 
@@ -147,7 +147,7 @@ Siehe [Einstellungen veröffentlichen](pdmpublishersolidworks_options.md) für d
 [Logs](pdmpublishersolidworks_logs.md) zeichnen Ausgabedateien, Warnungen, übersprungene Elemente und Fehler auf. Wenn **Show dialog before processing** aktiviert ist, listet das Überprüfungsfenster die Dateien und Konfigurationen auf, die verarbeitet werden sollen.
 
 ![Dateien vor der Veröffentlichung überprüfen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/publish-condition-review-20260916.png)
-![Logs auf Fehler gefiltert veröffentlichen](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
+![Fenster Publishing Results mit den Registerkarten Results und Detailed log](/images/pdmpublisher/solidworks/publishing-results-logs-20261007.png)
 <a id="settings-and-profiles"></a>
 ## Einstellungen und Profile
 

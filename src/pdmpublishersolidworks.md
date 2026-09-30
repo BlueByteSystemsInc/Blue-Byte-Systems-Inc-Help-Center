@@ -1,7 +1,7 @@
 ---
 title: PDMPublisher for SOLIDWORKS
 description: Use PDMPublisher inside SOLIDWORKS for publishing, Save As New, Property Doctor, Clone Tree, profiles, and shared settings.
-ms.date: 09/30/2026
+ms.date: 10/20/2026
 ms.topic: overview
 ---
 
@@ -148,7 +148,7 @@ See [Publish Settings](pdmpublishersolidworks_options.md) for the complete publi
 
 ![Review files before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 
-![Publishing logs filtered to errors](/images/pdmpublisher/solidworks/logs-errors-filter-20260908.png)
+![Publishing Results window with Results and Detailed log tabs](/images/pdmpublisher/solidworks/publishing-results-logs-20261007.png)
 
 ## Settings and Profiles
 

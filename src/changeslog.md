@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/12/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,27 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.12` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.20
+*Applies to the **SOLIDWORKS Add-in***
+
+- Property Doctor now asks whether to refresh after successfully applying property edits, deletions, or profile actions. Refresh updates the current grid without reopening the window and preserves unsaved SOLIDWORKS changes.
+- Refresh reads only affected documents, once per document. Unchanged documents and drawings are skipped.
+- Refresh progress identifies the current document and overall completion. It can be cancelled between documents without undoing changes that were already applied.
+- After Apply succeeds, a property column is removed when that property no longer exists in any document, configuration, or cut-list row. A property with an empty value still counts as existing.
+- The refresh prompt is not shown when Apply has no changes, Apply fails, a profile runs silently, or the window is closed with **OK**.
+
+## 2026.10.13–2026.10.19
+*Applies to the **SOLIDWORKS Add-in***
+
+- Maintenance releases containing bug fixes and stability improvements.
 
 ## 2026.10.12
 *Applies to the **SOLIDWORKS Add-in***

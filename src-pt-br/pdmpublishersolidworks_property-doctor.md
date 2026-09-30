@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher for SOLIDWORKS"
 description: "Reveja, edite, valide, importe, exporte e automatize as propriedades personalizadas do SOLIDWORKS em um documento e suas referências."
-ms.date: 10/02/2026
+ms.date: 10/20/2026
 ms.topic: how-to
 ---
 
@@ -27,6 +27,17 @@ Abra o **PDMPublisher > Settings > Property Doctor** para configurar as colunas 
 Células cinzentas faltam propriedades. **Clear** mantém o nome da propriedade e escreve um valor vazio; **Delete Property** remove a propriedade. As células de fórmula e de valor ligado são avaliadas para a linha do documento onde são aplicadas.
 
 Para excluir uma propriedade em vários documentos, clique com o botão direito no cabeçalho da coluna ou abra o menu de opções da coluna e selecione **Mark property for deletion (visible rows)**. Para excluir várias propriedades em conjunto, marque as caixas de seleção das colunas visíveis e use **Mark selected properties for deletion (visible rows)** em qualquer coluna selecionada. Quando usado em uma coluna não selecionada, o comando afeta somente essa coluna. O Property Doctor marca as propriedades em todas as linhas visíveis e editáveis; linhas filtradas e somente leitura não são alteradas. Selecione novamente o comando marcado para restaurar as colunas afetadas ou use o ícone de exclusão do cabeçalho para restaurar somente essa coluna. Selecione **Apply changes** para remover as propriedades dos documentos.
+
+<a id="refresh-after-apply"></a>
+## Atualizar após aplicar
+
+Depois que o Property Doctor aplica com sucesso edições, exclusões ou ações de perfil, ele pergunta se as propriedades exibidas devem ser atualizadas. Selecione **Yes** para atualizar a grade atual sem fechar e reabrir o Property Doctor. As alterações não salvas do SOLIDWORKS permanecem abertas.
+
+A atualização processa somente os documentos afetados pela operação, uma vez por documento. Documentos inalterados e desenhos são ignorados. Uma janela de progresso mostra o documento atual e a conclusão geral. Você pode cancelar entre documentos; todas as alterações já aplicadas são mantidas.
+
+Uma coluna de propriedade totalmente excluída desaparece imediatamente após a aplicação, mesmo que você recuse a atualização. A coluna permanece se a propriedade ainda existir em qualquer linha de documento, configuração ou lista de corte. Uma propriedade existente com valor vazio também mantém sua coluna.
+
+O Property Doctor não mostra a pergunta de atualização quando não há alterações, a aplicação falha, um perfil é executado silenciosamente ou você seleciona **OK** para fechar a janela.
 
 <a id="find-filter-and-fill"></a>
 ## Procurar, Filtrar e Preencher

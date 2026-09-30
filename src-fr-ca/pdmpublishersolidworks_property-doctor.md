@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor.PDMPublisher pour SOLIDWORKS"
 description: "Examiner, modifier, valider, importer, exporter et automatiser les propriétés personnalisées SOLIDWORKS sur un document et ses références."
-ms.date: 10/02/2026
+ms.date: 10/20/2026
 ms.topic: how-to
 ---
 
@@ -26,6 +26,17 @@ Ouvrez **PDMPublisher > Settings > Property Doctor** pour configurer les colonne
 Les cellules grises sont des propriétés manquantes. **Clear** conserve le nom de propriété et écrit une valeur vide; **Delete Property** supprime la propriété. Les cellules de formule et de valeur liée sont évaluées pour la ligne de document où elles sont appliquées.
 
 Pour supprimer une propriété dans plusieurs documents, cliquez avec le bouton droit sur son en-tête de colonne ou ouvrez le menu des options de colonne, puis sélectionnez **Mark property for deletion (visible rows)**. Pour supprimer plusieurs propriétés ensemble, cochez leurs colonnes visibles, puis utilisez **Mark selected properties for deletion (visible rows)** dans l'une des colonnes sélectionnées. La commande utilisée dans une colonne non sélectionnée ne modifie que cette colonne. Property Doctor marque les propriétés dans chaque ligne visible et modifiable; les lignes filtrées ou en lecture seule ne sont pas modifiées. Sélectionnez de nouveau la commande cochée pour annuler les colonnes concernées, ou utilisez l'icône de suppression d'un en-tête pour annuler uniquement cette colonne. Sélectionnez **Apply changes** pour supprimer les propriétés des documents.
+
+<a id="refresh-after-apply"></a>
+## Actualiser après l'application
+
+Après l'application réussie de modifications, de suppressions ou d'actions de profil, Property Doctor demande s'il faut actualiser les propriétés affichées. Sélectionnez **Yes** pour mettre à jour la grille sans fermer ni rouvrir Property Doctor. Les modifications SOLIDWORKS non enregistrées restent ouvertes.
+
+L'actualisation traite uniquement les documents touchés par l'opération, une fois par document. Elle ignore les documents inchangés et les mises en plan. Une fenêtre de progression affiche le document en cours et l'avancement global. Vous pouvez annuler entre deux documents; toutes les modifications déjà appliquées sont conservées.
+
+Une colonne de propriété entièrement supprimée disparaît immédiatement après l'application, même si vous refusez l'actualisation. Elle reste visible si la propriété existe encore dans une ligne de document, de configuration ou de liste de pièces soudées. Une propriété existante avec une valeur vide conserve également sa colonne.
+
+Property Doctor n'affiche pas la demande d'actualisation lorsque l'application ne contient aucune modification, échoue, qu'un profil s'exécute silencieusement ou que vous sélectionnez **OK** pour fermer la fenêtre.
 
 <a id="find-filter-and-fill"></a>
 ## Trouver, filtrer et remplir

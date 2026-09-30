@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher für SOLIDWORKS"
 description: "Überprüfen, Bearbeiten, Validieren, Importieren, Exportieren und Automatisieren von SOLIDWORKS benutzerdefinierten Eigenschaften in einem Dokument und seinen Referenzen."
-ms.date: 10/02/2026
+ms.date: 10/20/2026
 ms.topic: how-to
 ---
 
@@ -26,6 +26,17 @@ Property Doctor präsentiert das aktive Dokument, Konfigurationen, Schnittlisten
 Graue Zellen sind fehlende Eigenschaften. **Clear** behält den Eigenschaftsnamen und schreibt einen leeren Wert; **Delete Property** entfernt die Eigenschaft. Formel- und verknüpfte Wertzellen werden für die Dokumentzeile ausgewertet, in der sie angewendet werden.
 
 Um eine Eigenschaft in mehreren Dokumenten zu löschen, klicken Sie mit der rechten Maustaste auf ihre Spaltenüberschrift oder öffnen Sie das Spaltenmenü und wählen Sie **Mark property for deletion (visible rows)**. Um mehrere Eigenschaften gemeinsam zu löschen, aktivieren Sie die Kontrollkästchen ihrer sichtbaren Spalten und verwenden Sie **Mark selected properties for deletion (visible rows)** in einer ausgewählten Spalte. Bei einer nicht ausgewählten Spalte betrifft der Befehl nur diese Spalte. Property Doctor markiert die Eigenschaften in allen bearbeitbaren sichtbaren Zeilen; gefilterte und schreibgeschützte Zeilen bleiben unverändert. Wählen Sie den aktivierten Befehl erneut, um die betroffenen Spalten wiederherzustellen, oder verwenden Sie das Löschsymbol einer Überschrift nur für diese Spalte. Wählen Sie **Apply changes**, um die Eigenschaften aus den Dokumenten zu entfernen.
+
+<a id="refresh-after-apply"></a>
+## Nach dem Anwenden aktualisieren
+
+Nachdem Property Doctor Eigenschaftsänderungen, Löschungen oder Profilaktionen erfolgreich angewendet hat, fragt es, ob die angezeigten Eigenschaften aktualisiert werden sollen. Wählen Sie **Yes**, um das aktuelle Raster zu aktualisieren, ohne Property Doctor zu schließen und erneut zu öffnen. Nicht gespeicherte SOLIDWORKS-Änderungen bleiben geöffnet.
+
+Die Aktualisierung verarbeitet nur die von der Operation betroffenen Dokumente, jeweils einmal pro Dokument. Unveränderte Dokumente und Zeichnungen werden übersprungen. Ein Fortschrittsfenster zeigt das aktuelle Dokument und den Gesamtfortschritt. Sie können zwischen Dokumenten abbrechen; alle bereits angewendeten Änderungen bleiben erhalten.
+
+Eine vollständig gelöschte Eigenschaftsspalte verschwindet sofort nach dem Anwenden, auch wenn Sie die Aktualisierung ablehnen. Die Spalte bleibt erhalten, wenn die Eigenschaft noch in einer Dokument-, Konfigurations- oder Zuschnittslistenzeile vorhanden ist. Auch eine vorhandene Eigenschaft mit leerem Wert behält ihre Spalte.
+
+Property Doctor zeigt die Aktualisierungsabfrage nicht an, wenn keine Änderungen vorliegen, das Anwenden fehlschlägt, ein Profil im Hintergrund ausgeführt wird oder Sie das Fenster mit **OK** schließen.
 
 <a id="find-filter-and-fill"></a>
 ## Suchen, Filtern und Füllen
