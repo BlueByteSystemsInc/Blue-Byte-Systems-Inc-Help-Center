@@ -1,7 +1,7 @@
 ---
 title: "Property Doctor | PDMPublisher für SOLIDWORKS"
 description: "Überprüfen, Bearbeiten, Validieren, Importieren, Exportieren und Automatisieren von SOLIDWORKS benutzerdefinierten Eigenschaften in einem Dokument und seinen Referenzen."
-ms.date: 10/20/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -61,6 +61,13 @@ Ein Property Doctor-Profil ist ein geordneter Satz von Eigenschaftsaktionen. Ein
 Spaltenvorlagen steuern, welche Eigenschaften erscheinen. Wählen Sie in **Settings > Property Doctor** die Standardvorlage aus, bearbeiten Sie die Spalten, verwalten Sie Profile oder verstecken Sie Miniaturansichten für ein schnelleres Laden.
 
 Aktionen laufen von oben nach unten. Spätere Matching-Aktionen können Werte ersetzen, die durch frühere Aktionen erzeugt wurden. Das Speichern eines Profils speichert die Automatisierung; es ändert kein Dokument, bis das Profil in der Vorschau angezeigt und angewendet wird.
+
+<a id="upgrade-legacy-custom-properties"></a>
+## Veraltete benutzerdefinierte Eigenschaften aktualisieren
+
+Aktivieren Sie **Upgrade legacy custom properties** unter **Settings > Property Doctor**, um die veraltete SOLIDWORKS-Speicherung benutzerdefinierter Eigenschaften beim Laden der Dokumente zu aktualisieren. Ein Property Doctor-Profil kann dieselbe Aktualisierung für die von ihm verarbeiteten Dokumente aktivieren.
+
+Jedes Dokument wird einmal einzeln aktualisiert. In Property Doctor angezeigte Referenzen werden über ihre eigenen Dokumentzeilen verarbeitet und nicht rekursiv von einer übergeordneten Baugruppe aus aktualisiert.
 
 <a id="set-material-from-a-property"></a>
 ## Material aus einer Eigenschaft festlegen

@@ -1,7 +1,7 @@
 ---
 title: "Version et mises à jour de PDMPublisher pour SOLIDWORKS"
 description: "Vérifiez la version PDMPublisher installée et téléchargez une mise à jour disponible."
-ms.date: 09/16/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -24,6 +24,8 @@ Sélectionnez **Check for updates** pour actualiser les informations de la versi
 Lorsqu'une mise à jour est disponible, utilisez l'action de téléchargement affichée pour ouvrir le téléchargement de l'installateur dans votre navigateur.
 
 Fermer SOLIDWORKS avant de lancer l'installation. Enregistrer les documents ouverts d'abord, et débloquer l'installateur téléchargé de ses propriétés de fichier Windows si nécessaire par votre environnement.
+
+Après l'installation de la version et le redémarrage de SOLIDWORKS, le bouton **Close** du programme de mise à jour affiche un compte à rebours de 20 secondes. Sélectionnez le bouton pour fermer immédiatement la fenêtre, ou laissez-la ouverte pour qu'elle se ferme automatiquement lorsque le compte à rebours atteint zéro.
 
 Pour les instructions d'installation, voir [Installer PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks_installation.md).
 

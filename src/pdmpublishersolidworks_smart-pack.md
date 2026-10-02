@@ -1,7 +1,7 @@
 ---
 title: Clone Tree | PDMPublisher for SOLIDWORKS
 description: Copy SOLIDWORKS documents and references with per-file names, destinations, PDM revision handling, companion files, profiles, and ZIP output.
-ms.date: 10/12/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -57,6 +57,7 @@ Clone Tree copies the cell's value or formula in the grid's displayed order and 
 | Companion files | Includes existing same-named STEP/STP, PDF, or DXF files found for a document. |
 | ZIP archive | Creates a ZIP after the file copies complete, using its own filename and destination. |
 | PDM serial number | Assigns one reserved number per included row and reuses it when both the filename and folder need that number. |
+| Upgrade legacy custom properties | Upgrades included SOLIDWORKS documents before copying. Each document is processed once on its own; its references are not upgraded recursively. |
 
 ## Profiles and Rules
 

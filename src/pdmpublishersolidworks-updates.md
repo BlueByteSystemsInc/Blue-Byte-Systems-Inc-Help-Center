@@ -1,7 +1,7 @@
 ---
 title: Version and Updates | PDMPublisher for SOLIDWORKS
 description: Check the installed PDMPublisher for SOLIDWORKS version and download an available update.
-ms.date: 09/16/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -24,6 +24,8 @@ Select **Check for updates** to refresh the version information. An installed pr
 When an update is available, use the displayed download action to open the installer download in your browser.
 
 Close SOLIDWORKS before running the installer. Save open documents first, and unblock the downloaded installer from its Windows file properties if required by your environment.
+
+After the updater installs the release and restarts SOLIDWORKS, its **Close** button displays a 20-second countdown. Select the button to close the updater immediately, or leave it open and the updater closes automatically when the countdown reaches zero.
 
 For installation guidance, see [Install PDMPublisher for SOLIDWORKS](pdmpublishersolidworks_installation.md).
 

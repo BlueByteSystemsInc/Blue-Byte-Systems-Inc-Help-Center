@@ -1,7 +1,7 @@
 ---
 title: "Save As New-PDMPublisher pour SOLIDWORKS"
 description: "Enregistrer une copie native SOLIDWORKS avec des noms réutilisables, des destinations, des numéros de série PDM, des dessins associés et des actions post-sauvetage."
-ms.date: 09/15/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -32,6 +32,7 @@ Tapez `{` dans un nom de fichier ou un éditeur de destination pour insérer une
 | Ouvrir la nouvelle copie après l'enregistrement | Ouvre la copie sauvegardée et en fait le document actif. |
 | Ajouter les dimensions calculées de la boîte de raccordement | Écrit `Bounding Box Length`, `Bounding Box Width` et `Bounding Box Height` en millimètres pour la configuration active d'une pièce ou d'un ensemble. |
 | Apporter le dessin associé | Copie un dessin ouvert ou du même nom à côté de la nouvelle pièce ou de l'assemblage et met à jour sa référence de modèle. |
+| Mettre à niveau les anciennes propriétés personnalisées | Exécute la mise à niveau SOLIDWORKS des anciennes propriétés personnalisées pour le document enregistré. Les documents référencés ne sont pas mis à niveau de manière récursive. |
 | Exécuter la macro après l'enregistrement | Exécute la méthode macro sélectionnée sur la nouvelle copie avant l'enregistrement automatique PDM. La macro doit enregistrer ses propres changements. |
 
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Change Log | Feature Updates, Verbesserungen & Fixes"
 description: "Zeigen Sie das PDMPublisher-Änderungsprotokoll mit detaillierten Feature-Updates, Verbesserungen, Fehlerbehebungen und Verbesserungen in allen Releases an."
-ms.date: 10/20/2026
+ms.date: 10/23/2026
 ms.topic: conceptual
 ---
 # PDMPublisher ändert Log
@@ -15,13 +15,20 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 | Produkt | Aktuelle Fassung |
 | --- | --- |
-| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
+| [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
 > [!TIP]
 > Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
+<a id="20261023"></a>
+## 2026.10.23
+*Gilt für das **SOLIDWORKS Add-in***
+
+- Nachdem ein Update installiert und SOLIDWORKS neu gestartet wurde, zeigt das Updateprogramm jetzt auf der Schaltfläche **Close** einen 20-Sekunden-Countdown an und schließt sich danach automatisch. Die Schaltfläche kann weiterhin ausgewählt werden, um das Fenster sofort zu schließen.
+- **Upgrade legacy custom properties** wurde in Property Doctor, Save As New und Clone Tree korrigiert. Jedes Dokument wird jetzt einmal einzeln aktualisiert; referenzierte Dokumente, die zur Operation gehören, werden separat statt rekursiv verarbeitet.
 
 <a id="20261020"></a>
 ## 2026.10.20

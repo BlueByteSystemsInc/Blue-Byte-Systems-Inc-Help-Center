@@ -1,7 +1,7 @@
 ---
 title: Save As New | PDMPublisher for SOLIDWORKS
 description: Save a native SOLIDWORKS copy with reusable names, destinations, PDM serial numbers, associated drawings, and post-save actions.
-ms.date: 09/15/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -31,6 +31,7 @@ Type `{` in a filename or destination editor to insert a document value, propert
 | Open the new copy after saving | Opens the saved copy and makes it the active document. |
 | Add calculated bounding-box dimensions | Writes `Bounding Box Length`, `Bounding Box Width`, and `Bounding Box Height` in millimetres for the active configuration of a part or assembly. |
 | Bring associated drawing | Copies an open or same-named drawing beside the new part or assembly and updates its model reference. |
+| Upgrade legacy custom properties | Runs the SOLIDWORKS legacy custom-property upgrade for the document being saved. Referenced documents are not upgraded recursively. |
 | Run macro after saving | Runs the selected macro method on the new copy before automatic PDM check-in. The macro must save its own changes. |
 
 > [!NOTE]

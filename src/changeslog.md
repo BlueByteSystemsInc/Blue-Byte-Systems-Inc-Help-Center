@@ -1,7 +1,7 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/20/2026
+ms.date: 10/23/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -14,13 +14,19 @@ Versions are identified by their compile date, which represents the build date o
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.10.23
+*Applies to the **SOLIDWORKS Add-in***
+
+- After an update is installed and SOLIDWORKS is restarted, the updater now shows a 20-second countdown on the **Close** button and closes automatically when the countdown finishes. The button can still be selected to close the updater immediately.
+- Fixed **Upgrade legacy custom properties** in Property Doctor, Save As New, and Clone Tree. Each document is now upgraded once on its own; referenced documents included in the operation are handled separately instead of being upgraded recursively.
 
 ## 2026.10.20
 *Applies to the **SOLIDWORKS Add-in***

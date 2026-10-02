@@ -1,7 +1,7 @@
 ---
 title: "Save As New | PDMPublisher for SOLIDWORKS"
 description: "Salve uma cópia SOLIDWORKS nativa com nomes reutilizáveis, destinos, números de série PDM, desenhos associados e ações pós-salvamento."
-ms.date: 09/15/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -32,6 +32,7 @@ Digite `{` em um nome de arquivo ou editor de destino para inserir um valor do d
 | Abre a nova cópia após gravar | Abre a cópia gravada e torna- a no documento activo. |
 | Adicionar as dimensões da caixa delimitadora calculadas | Escreve `Bounding Box Length`, `Bounding Box Width` e `Bounding Box Height` em milímetros para a configuração ativa de uma peça ou montagem. |
 | Trazer desenho associado | Copia um desenho aberto ou com o mesmo nome ao lado da nova peça ou montagem e atualiza sua referência de modelo. |
+| Atualizar propriedades personalizadas antigas | Executa a atualização do SOLIDWORKS para propriedades personalizadas antigas no documento que está sendo salvo. Os documentos referenciados não são atualizados recursivamente. |
 | Executar macro após salvar | Executa o método macro selecionado na nova cópia antes do check-in automático do PDM. A macro deve salvar suas próprias alterações. |
 
 > [!NOTE]

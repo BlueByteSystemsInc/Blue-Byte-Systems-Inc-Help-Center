@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher für SOLIDWORKS"
 description: "Verwenden Sie PDMPublisher in SOLIDWORKS für die Veröffentlichung, Save As New, Property Doctor, Clone Tree, Profile und freigegebene Einstellungen."
-ms.date: 10/20/2026
+ms.date: 10/23/2026
 ms.topic: overview
 ---
 

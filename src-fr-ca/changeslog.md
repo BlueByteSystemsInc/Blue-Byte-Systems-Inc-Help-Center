@@ -1,7 +1,7 @@
 ---
 title: "PDMPublisher Modifier le journal Mises à jour des fonctionnalités, améliorations et corrections"
 description: "Consultez le journal de changement PDMPublisher avec des mises à jour détaillées, des améliorations, des corrections de bugs et des améliorations pour toutes les versions."
-ms.date: 10/20/2026
+ms.date: 10/23/2026
 ms.topic: conceptual
 ---
 # Journal des modifications de PDMPublisher
@@ -15,13 +15,20 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 
 | Produit | Version actuelle |
 | --- | --- |
-| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.20.0` |
+| [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
 | [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.26.0` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+<a id="20261023"></a>
+## 2026.10.23
+*S'applique au **complément SOLIDWORKS***
+
+- Après l'installation d'une mise à jour et le redémarrage de SOLIDWORKS, le programme de mise à jour affiche maintenant un compte à rebours de 20 secondes sur le bouton **Close** et se ferme automatiquement à la fin. Le bouton peut toujours être sélectionné pour fermer immédiatement la fenêtre.
+- Correction de l'option **Upgrade legacy custom properties** dans Property Doctor, Save As New et Clone Tree. Chaque document est maintenant mis à niveau une seule fois; les documents référencés inclus dans l'opération sont traités séparément au lieu d'être mis à niveau de manière récursive.
 
 <a id="20261020"></a>
 ## 2026.10.20

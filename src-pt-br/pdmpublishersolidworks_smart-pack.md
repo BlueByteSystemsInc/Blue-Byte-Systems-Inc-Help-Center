@@ -1,7 +1,7 @@
 ---
 title: "Clone Tree | PDMPublisher for SOLIDWORKS"
 description: "Copie documentos SOLIDWORKS e referências com nomes de arquivos, destinos, manipulação de revisão PDM, arquivos companheiros, perfis e saída ZIP."
-ms.date: 10/11/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -42,6 +42,7 @@ Abra o menu de uma célula editável e selecione **Copy to all cells in this col
 | Arquivos de acompanhantes | Inclui arquivos STEP/STP, PDF ou DXF existentes para um documento. |
 | Arquivo ZIP | Cria um ZIP após as cópias completas do arquivo, usando seu próprio nome de arquivo e destino. |
 | Número de série PDM | Atribui um número reservado por linha incluída e reutiliza-o quando o nome do ficheiro e a pasta necessitam desse número. |
+| Atualizar propriedades personalizadas antigas | Atualiza os documentos SOLIDWORKS incluídos antes da cópia. Cada documento é processado uma única vez; suas referências não são atualizadas recursivamente. |
 
 <a id="profiles-and-rules"></a>
 ## Perfis e Regras

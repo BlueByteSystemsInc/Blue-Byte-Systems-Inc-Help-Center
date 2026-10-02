@@ -1,7 +1,7 @@
 ---
 title: "Clone Tree | PDMPublisher für SOLIDWORKS"
 description: "Kopieren Sie SOLIDWORKS-Dokumente und -Referenzen mit den jeweiligen Dateinamen, Zielen, PDM-Revisionsbehandlung, Begleitdateien, Profilen und ZIP-Ausgaben."
-ms.date: 10/11/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -41,6 +41,7 @@ Ausgeschlossene Dateien behalten ihre ursprünglichen Referenzen. Such- und Typf
 | Begleiter-Dateien | Enthält vorhandene, gleichnamige STEP/STP-, PDF- oder DXF-Dateien, die für ein Dokument gefunden wurden. |
 | Archiv ZIP | Erstellt ein ZIP nach Abschluss der Dateikopien unter Verwendung eines eigenen Dateinamens und Zielorts. |
 | Seriennummer des PDM | Weist eine reservierte Zahl pro enthaltener Zeile zu und verwendet sie wieder, wenn sowohl der Dateiname als auch der Ordner diese Nummer benötigen. |
+| Veraltete benutzerdefinierte Eigenschaften aktualisieren | Aktualisiert enthaltene SOLIDWORKS-Dokumente vor dem Kopieren. Jedes Dokument wird einmal einzeln verarbeitet; seine Referenzen werden nicht rekursiv aktualisiert. |
 
 <a id="profiles-and-rules"></a>
 ## Profile und Regeln

@@ -1,7 +1,7 @@
 ---
 title: "Save As New | PDMPublisher für SOLIDWORKS"
 description: "Speichern Sie eine native SOLIDWORKS-Kopie mit wiederverwendbaren Namen, Zielen, PDM-Seriennummern, zugehörigen Zeichnungen und Aktionen nach dem Speichern."
-ms.date: 09/15/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -32,6 +32,7 @@ Geben Sie `{` in einen Dateinamen oder Zieleditor ein, um einen Dokumentwert, ei
 | Öffnen Sie die neue Kopie nach dem Speichern | Öffnet die gespeicherte Kopie und macht sie zum aktiven Dokument. |
 | Add berechnete Boundingbox-Dimensionen | Schreibt `Bounding Box Length`, `Bounding Box Width` und `Bounding Box Height` in Millimeter für die aktive Konfiguration eines Teils oder einer Baugruppe. |
 | Bringen Sie zugehörige Zeichnung | Kopiert eine offene oder gleichnamige Zeichnung neben dem neuen Teil oder der neuen Baugruppe und aktualisiert die Modellreferenz. |
+| Veraltete benutzerdefinierte Eigenschaften aktualisieren | Führt die SOLIDWORKS-Aktualisierung veralteter benutzerdefinierter Eigenschaften für das zu speichernde Dokument aus. Referenzierte Dokumente werden nicht rekursiv aktualisiert. |
 | Makro nach dem Speichern ausführen | Führt die ausgewählte Makromethode auf der neuen Kopie vor dem automatischen PDM-Check-in aus. Das Makro muss seine eigenen Änderungen speichern. |
 
 > [!NOTE]

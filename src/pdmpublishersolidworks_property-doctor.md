@@ -1,7 +1,7 @@
 ---
 title: Property Doctor | PDMPublisher for SOLIDWORKS
 description: Review, edit, validate, import, export, and automate SOLIDWORKS custom properties across a document and its references.
-ms.date: 10/20/2026
+ms.date: 10/23/2026
 ms.topic: how-to
 ---
 
@@ -58,6 +58,12 @@ A Property Doctor profile is an ordered set of property actions. An action can s
 Column templates control which properties appear. In **Settings > Property Doctor**, choose the default template, edit its columns, manage profiles, or hide thumbnails for faster loading.
 
 Actions run from top to bottom. Later matching actions can replace values produced by earlier actions. Saving a profile stores the automation; it does not change any document until the profile is previewed and applied.
+
+## Upgrade Legacy Custom Properties
+
+Enable **Upgrade legacy custom properties** in **Settings > Property Doctor** to upgrade obsolete SOLIDWORKS custom-property storage when Property Doctor loads the documents. A Property Doctor profile can also enable the same upgrade for documents processed by that profile.
+
+Each document is upgraded once on its own. Referenced documents shown in Property Doctor are processed through their own document rows instead of being upgraded recursively from a parent assembly.
 
 ## Set Material from a Property
 
