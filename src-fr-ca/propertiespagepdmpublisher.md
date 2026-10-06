@@ -1,7 +1,7 @@
 ---
 title: "Création d'une nouvelle tâche PDMPublisher"
 description: "Créez votre première tâche PDMPublisher dans SOLIDWORKS PDM Administration."
-ms.date: 10/09/2026
+ms.date: 10/12/2026
 ms.topic: conceptual
 ---
 
@@ -36,7 +36,7 @@ ms.topic: conceptual
 4. Sur la page **Add-in**, choisissez **PDMPublisher** dans le menu déroulant **Add-in**.
 
 <p align="center">
-<img src="https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-addin.png" alt="PDMPublisher selected as the task add-in" width="800">
+<img src="https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-addin-20261012.png" alt="PDMPublisher sélectionné à la page Add-in" width="800">
 </p>
 
 5. Cliquez sur **Next**.
@@ -46,7 +46,7 @@ ms.topic: conceptual
 Cette page vient après la sélection complément. Seuls les ordinateurs vérifiés dans cette liste sont considérés comme des machines d'exécution des tâches.
 
 <p align="center">
-<img src="https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-execution-method.png" alt="PDMPublisher task execution method" width="800">
+<img src="https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-execution-method-20261012.png" alt="Méthode d'exécution de la tâche PDMPublisher" width="800">
 </p>
 
 Si la liste des ordinateurs est vide, faites un clic droit sur l'icône SOLIDWORKS PDM dans le plateau Windows et ouvrez **Task Host Configuration**.
@@ -64,14 +64,20 @@ Si la liste des ordinateurs est vide, faites un clic droit sur l'icône SOLIDWOR
 8. Configurez la page **Scheduling** si SOLIDWORKS PDM doit lancer cette tâche automatiquement. Voir [Items programmés](scheduleditems.md) lorsque la tâche programmée doit traiter une liste de fichiers sauvegardés.
 
 <p align="center">
-<img src="https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-scheduling.png" alt="SOLIDWORKS tâche PDM scheduling page" width="800">
+<img src="https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-scheduling-20261012.png" alt="Page de planification de la tâche SOLIDWORKS PDM" width="800">
 </p>
 
 Scheduling est le propre cadre de programmation de SOLIDWORKS PDM. Il contrôle quand la tâche commence.
 
-9. Consultez les pages de configuration PDMPublisher énumérées ci-dessous.
+9. À la page **Publish**, configurez la sortie et les règles de traitement des fichiers. Consultez ensuite les pages de configuration ci-dessous.
 
-10. Cliquez sur **OK** pour enregistrer la tâche.
+10. À la page **Integrations**, configurez facultativement un connecteur ERP exécuté après une publication réussie.
+
+11. À la page **Permissions**, sélectionnez les utilisateurs et les groupes qui peuvent démarrer la tâche.
+
+12. Configurez **Success Notification** et **Error Notification** seulement si la messagerie du coffre est configurée et que ces avis sont nécessaires.
+
+13. Cliquez sur **OK** pour enregistrer la tâche.
 
 La tâche apparaît dans l'Explorateur de fichiers sous **Tasks** dans le menu à clic droit.
 
@@ -95,9 +101,13 @@ Utilisez ces pages pour configurer ce que PDMPublisher exporte et comment il gè
 | [Intégrations](task-integrations.md) | Envoyer facultativement les articles publiés et les variables PDM mappées vers un connecteur ERP. |
 
 <a id="options"></a>
-### Options
+### Publication
 
-![Page de configuration des options PDMPublisher mise à jour](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-options-20261009.png)
+![Page Publish de PDMPublisher montrant les paramètres de sortie](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-publish-output-20261012.png)
+
+La première partie de **Publish** définit l'emplacement d'exportation, le nom de fichier, les formats de sortie ainsi que les documents et versions PDM à traiter.
+
+![Page Publish de PDMPublisher montrant les fichiers et les configurations](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-publish-files-configurations-20261012.png)
 Examinez les éléments de configuration recommandés dans [Options Task Page](options.md), en particulier l'emplacement d'exportation, le nom de fichier, les formats de fichier, la version SOLIDWORKS, le modèle et le suivi des activités.
 
 <a id="annotations"></a>
@@ -121,6 +131,17 @@ Utilisez des éléments programmés lorsque cette tâche doit toujours traiter u
 <a id="integrations"></a>
 ### Intégrations
 
-![Page Intégrations de la tâche PDM](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+![Page Intégrations de la tâche PDM](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-integrations-20261012.png)
 
 Utilisez cette page pour exécuter un connecteur ERP uniquement après une publication réussie. Consultez [Page de tâche Intégrations](task-integrations.md).
+
+### Permissions et notifications
+
+![Page des permissions de la tâche SOLIDWORKS PDM](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-permissions-20261012.png)
+
+Sélectionnez les personnes qui peuvent lancer la tâche. Utilisez ensuite les pages de notification seulement si votre processus exige des avis de réussite ou d'échec.
+
+| Page | Capture d'écran |
+| --- | --- |
+| Success Notification | ![Page de notification de réussite](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-success-notification-20261012.png) |
+| Error Notification | ![Page de notification d'erreur](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-error-notification-20261012.png) |

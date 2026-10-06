@@ -1,7 +1,7 @@
 ---
 title: Page de tâche Intégrations | PDMPublisher | SOLIDWORKS PDM
 description: Exécuter un connecteur ERP configuré après une publication réussie de la tâche PDM PDMPublisher.
-ms.date: 10/09/2026
+ms.date: 10/12/2026
 ms.topic: how-to
 ---
 
@@ -12,7 +12,7 @@ Utilisez **Intégrations** pour envoyer les articles publiés et certaines varia
 > [!IMPORTANT]
 > Cette page configure l'intégration sans surveillance de la **tâche PDM**. Pour les opérations Push et Pull interactives dans SOLIDWORKS, consultez [ERP Sync](pdmpublishersolidworks_erp-sync.md).
 
-![Page Intégrations de la tâche PDM PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+![Page Intégrations de la tâche PDM PDMPublisher](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-setup-integrations-20261012.png)
 
 ## Configurer une connexion
 

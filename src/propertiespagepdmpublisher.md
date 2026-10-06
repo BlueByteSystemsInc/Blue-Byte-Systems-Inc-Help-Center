@@ -1,7 +1,7 @@
 ---
 title: Creating a New Task | PDMPublisher | SOLIDWORKS PDM
 description: Create your first PDMPublisher task in SOLIDWORKS PDM Administration.
-ms.date: 10/09/2026
+ms.date: 10/12/2026
 ms.topic: conceptual
 ---
 
@@ -35,7 +35,7 @@ ms.topic: conceptual
 4. On the **Add-in** page, choose **PDMPublisher** from the **Add-in** dropdown.
 
    <p align="center">
-     <img src="../images/pdmpublisher/screenshots/task-setup-addin.png" alt="PDMPublisher selected as the task add-in" width="800">
+     <img src="../images/pdmpublisher/screenshots/task-setup-addin-20261012.png" alt="PDMPublisher selected on the Add-in page" width="800">
    </p>
 
 5. Click **Next**.
@@ -45,7 +45,7 @@ ms.topic: conceptual
    This page comes after the add-in selection. Only computers checked in this list are considered as task execution machines.
 
    <p align="center">
-     <img src="../images/pdmpublisher/screenshots/task-setup-execution-method.png" alt="PDMPublisher task execution method" width="800">
+     <img src="../images/pdmpublisher/screenshots/task-setup-execution-method-20261012.png" alt="PDMPublisher task execution method" width="800">
    </p>
 
    If the computer list is empty, right-click the SOLIDWORKS PDM icon in the Windows tray and open **Task Host Configuration**.
@@ -63,14 +63,20 @@ ms.topic: conceptual
 8. Configure the **Scheduling** page if SOLIDWORKS PDM should launch this task automatically. See [Scheduled Items](scheduleditems.md) when the scheduled task should process a saved list of files.
 
    <p align="center">
-     <img src="../images/pdmpublisher/screenshots/task-setup-scheduling.png" alt="SOLIDWORKS PDM task scheduling page" width="800">
+     <img src="../images/pdmpublisher/screenshots/task-setup-scheduling-20261012.png" alt="SOLIDWORKS PDM task scheduling page" width="800">
    </p>
 
    Scheduling is SOLIDWORKS PDM's own scheduling framework. It controls when the task starts.
 
-9. Review the PDMPublisher setup pages listed below.
+9. On **Publish**, configure the output and file-processing rules. Review the PDMPublisher setup pages listed below.
 
-10. Click **OK** to save the task.
+10. On **Integrations**, optionally configure an ERP connector that runs after a successful publish.
+
+11. On **Permissions**, select the users and groups that can start the task.
+
+12. Configure **Success Notification** and **Error Notification** only when the vault's mail system is configured and task notifications are required.
+
+13. Click **OK** to save the task.
 
 The task appears in File Explorer under **Tasks** in the right-click menu.
 
@@ -92,9 +98,13 @@ Use these pages to configure what PDMPublisher exports and how it handles each f
 | [Scheduled Items](scheduleditems.md) | Define files that should be processed when the task runs without selected files. |
 | [Integrations](task-integrations.md) | Optionally push published item data and mapped PDM variables to an ERP connector after a successful publish. |
 
-### Options
+### Publish
 
-![Updated PDMPublisher Options setup page](/images/pdmpublisher/screenshots/task-options-20261009.png)
+![PDMPublisher Publish page showing output settings](/images/pdmpublisher/screenshots/task-setup-publish-output-20261012.png)
+
+The first part of **Publish** defines the export location, filename, output formats, and which documents and PDM file versions are processed.
+
+![PDMPublisher Publish page showing file and configuration settings](/images/pdmpublisher/screenshots/task-setup-publish-files-configurations-20261012.png)
 
 Review the recommended setup items in [Options Task Page](options.md), especially export location, filename, file formats, SOLIDWORKS version, template, and activity tracking.
 
@@ -118,6 +128,17 @@ Use Scheduled Items when this task should always process a saved list of files. 
 
 ### Integrations
 
-![PDMPublisher PDM Task Integrations setup page](/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+![PDMPublisher PDM Task Integrations setup page](/images/pdmpublisher/screenshots/task-setup-integrations-20261012.png)
 
 Use Integrations to run an installed ERP connector only after publishing succeeds. Connections are configured separately under the Windows account that executes the task. See [Integrations Task Page](task-integrations.md).
+
+### Permissions and Notifications
+
+![SOLIDWORKS PDM task permissions page](/images/pdmpublisher/screenshots/task-setup-permissions-20261012.png)
+
+Select who can launch the task. Then use the notification pages only if success or failure messages are useful for your workflow.
+
+| Page | Screenshot |
+| --- | --- |
+| Success Notification | ![SOLIDWORKS PDM task success notification page](/images/pdmpublisher/screenshots/task-setup-success-notification-20261012.png) |
+| Error Notification | ![SOLIDWORKS PDM task error notification page](/images/pdmpublisher/screenshots/task-setup-error-notification-20261012.png) |

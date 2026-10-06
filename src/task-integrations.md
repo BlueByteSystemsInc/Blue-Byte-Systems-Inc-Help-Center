@@ -1,7 +1,7 @@
 ---
 title: Integrations Task Page | PDMPublisher | SOLIDWORKS PDM
 description: Run a configured ERP connector after a successful PDMPublisher PDM Task publish job.
-ms.date: 10/09/2026
+ms.date: 10/12/2026
 ms.topic: how-to
 ---
 
@@ -12,7 +12,7 @@ Use **Integrations** to push published document items and selected PDM variables
 > [!IMPORTANT]
 > This page configures unattended **PDM Task** integration. For interactive Push and Pull inside SOLIDWORKS, see [ERP Sync](pdmpublishersolidworks_erp-sync.md).
 
-![PDMPublisher PDM Task Integrations setup page](/images/pdmpublisher/screenshots/task-integrations-20261009.png)
+![PDMPublisher PDM Task Integrations setup page](/images/pdmpublisher/screenshots/task-setup-integrations-20261012.png)
 
 ## Configure a Connection
 
