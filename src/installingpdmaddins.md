@@ -1,7 +1,7 @@
 ﻿---
 title: How to Install PDM Add-ins
 description: Learn how to install or update Blue Byte Systems SOLIDWORKS PDM add-ins using a CEX file.
-ms.date: 06/19/2026
+ms.date: 10/06/2026
 ms.topic: how-to
 ---
 
@@ -25,6 +25,9 @@ After purchasing one of our PDM add-ins, you will receive an order email with th
 2. Once downloaded, right-click on the file and select Properties.
 
 3. In the Properties window, check for the Unblock option at the bottom. If it is present, click Unblock and then click OK. This step ensures that the file is not blocked by Windows security.
+
+> [!IMPORTANT]
+> When PDMPublisher is supplied as a ZIP package, extract it first and deploy the complete package. Do not upload only `PDMPublisher.dll`. The package includes required dependency DLLs plus `PDMPublisher.Merge.exe`, `PDMPublisher.TOC.exe`, and their configuration files.
 
 ## Step 3: Open the SOLIDWORKS PDM Administration Tool
 

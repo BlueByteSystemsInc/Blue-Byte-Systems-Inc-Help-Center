@@ -1,32 +1,34 @@
 ---
-title: "Détails de la tâche Enregistrez-vous dans l'onglet PDMPublisher"
-description: "Explique l'onglet Détails des tâches Log dans PDMPublisher et comment il lit les informations de fichiers réussies des journaux des tâches."
-ms.date: 06/19/2026
+title: "Onglet Journal des détails de la tâche | PDMPublisher"
+description: "Consultez les sorties enregistrées et les erreurs de publication dans l'onglet Journal des détails de la tâche PDMPublisher."
+ms.date: 10/06/2026
 ms.topic: conceptual
 ---
 
 # Onglet Détails de la tâche
 
 
-L'onglet **Task Details Log** de PDMPublisher fournit un résumé rapide des fichiers qui ont été convertis et sauvegardés avec succès dans SOLIDWORKS PDM.
+L'onglet **Log** de Task Details résume les fichiers enregistrés par PDMPublisher et les erreurs signalées pendant la tâche.
 
-Cette vue vise à faciliter la confirmation des fichiers de sortie créés par la tâche sans ouvrir manuellement le fichier du journal des tâches.
+Utilisez-le pour confirmer les fichiers de sortie et les versions créés sans ouvrir le journal complet.
 
-![PDMPublisher Task Details tab](https://pdmpublisher.com/help/images/detailstab.png)
+![Onglet Log de Task Details montrant les sorties enregistrées et les erreurs](https://pdmpublisher.com/help/images/pdmpublisher/screenshots/task-details-log-20261006.png)
 <a id="what-the-details-tab-shows"></a>
 ## Ce que l'onglet Détails affiche
 
-L'onglet Détails affiche une table des fichiers réussis trouvés dans le journal des tâches PDMPublisher.
+L'en-tête indique le nombre de sorties enregistrées et d'erreurs. Sélectionnez une ligne pour afficher son message sous le tableau.
 
 Le tableau peut comprendre:
 
 | Colonne | Désignation des marchandises |
 |---|---|
-| Timbre | Le moment où le fichier a été enregistré ou enregistré. |
+| Status | Indique si l'opération a été enregistrée ou a échoué. |
+| Time | L'heure à laquelle l'opération a été consignée. |
 | Fichier de destination | Le fichier de sortie créé par PDMPublisher. |
-| Voir | La version PDM du fichier de sortie sauvegardé. |
-| Fichier original | Le fichier source utilisé pour créer la sortie. |
-| Trouvé dans | Le dossier PDM où le fichier de destination a été enregistré. |
+| Version | La version PDM du fichier de sortie enregistré. |
+| Source File | Le document source utilisé pour créer la sortie. |
+
+Les lignes en échec peuvent ne pas afficher de destination, de version ou de source. Sélectionnez une ligne en échec pour lire le message d'erreur sous le tableau.
 
 <a id="important-requirements"></a>
 ## Exigences importantes
@@ -111,4 +113,3 @@ Demandez à votre administrateur PDM de vérifier :
 ## Annexe
 
 L'onglet Détails est une présentation du journal des tâches PDMPublisher. Il ne crée pas d'enregistrements de suivi séparés. Si les informations requises ne sont pas disponibles dans le fichier journal, elles ne peuvent pas être affichées dans l'onglet Détails.
-

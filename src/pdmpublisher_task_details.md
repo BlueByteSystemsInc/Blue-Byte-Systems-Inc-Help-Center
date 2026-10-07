@@ -1,32 +1,34 @@
 ﻿---
 title: Task Details Log tab | PDMPublisher | SOLIDWORKS PDM
-description: Explains the Task Details Log tab in PDMPublisher and how it reads successful file information from task logs.
-ms.date: 06/19/2026
+description: Review saved outputs and publishing errors on the PDMPublisher Task Details Log tab.
+ms.date: 10/06/2026
 ms.topic: conceptual
 ---
 
 # Task Details tab
 
 
-The **Task Details Log** tab in PDMPublisher provides a quick summary of files that were successfully converted and saved back into SOLIDWORKS PDM.
+The **Log** tab in Task Details summarizes the files that PDMPublisher saved and the errors reported during the task.
 
-This view is intended to make it easier to confirm which output files were created by the task without manually opening the task log file.
+Use it to confirm the output files and versions created by the task without opening the full log file.
 
-![PDMPublisher Task Details tab](/images/detailstab.png)
+![PDMPublisher Task Details Log tab showing saved outputs and errors](/images/pdmpublisher/screenshots/task-details-log-20261006.png)
 
 ## What the Details tab shows
 
-The Details tab displays a table of successful files found in the PDMPublisher task log.
+The heading reports the number of saved outputs and errors. Select a row to see its message in the panel below the table.
 
 The table may include:
 
 | Column | Description |
 |---|---|
-| Timestamp | The time the file was saved or checked in. |
+| Status | Whether the operation was saved or failed. |
+| Time | The time the operation was recorded. |
 | Destination File | The output file created by PDMPublisher. |
-| Ver | The PDM version of the saved output file. |
-| Original File | The source file used to create the output. |
-| Found In | The PDM folder where the destination file was saved. |
+| Version | The PDM version of the saved output file. |
+| Source File | The source document used to create the output. |
+
+Failed rows may not have destination, version, or source values. Select the failed row to read the error message below the table.
 
 ## Important requirements
 

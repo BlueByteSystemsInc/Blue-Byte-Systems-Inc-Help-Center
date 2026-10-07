@@ -15,12 +15,22 @@ Versions are identified by their compile date, which represents the build date o
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.26.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.33.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
+
+## 2026.09.33
+*Applies to the **PDM Task***
+
+- Rebuilt the [Task Details Log tab](pdmpublisher_task_details.md) as a structured report of saved outputs and failures. It shows totals, timestamps, destination files, PDM versions, source files, and the selected row's details. Existing task logs remain supported.
+- Added **Cut-list item grouping** to [Split Bodies](pdmpublisher-options/split-bodies.md). Administrators can continue exporting every body or export one representative body for matching geometry and material in each cut-list item. Grouped filenames include the quantity per part; bodies that cannot be verified are exported separately.
+- Fixed task-launch output-format selections and evaluated paths being replaced when publishing started.
+- Improved resizing of the Publish and Integrations pages inside SOLIDWORKS PDM Administration.
+- Fixed keyboard input in embedded Publish fields and inline annotation editing.
+- Made the PDM Task deployment self-contained. Manual deployments must use the complete package, including `PDMPublisher.Merge.exe`, `PDMPublisher.TOC.exe`, their configuration files, and all packaged dependency DLLs.
 
 ## 2026.10.23
 *Applies to the **SOLIDWORKS Add-in***

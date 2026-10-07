@@ -16,12 +16,22 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 | Produit | Version actuelle |
 | --- | --- |
 | [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
-| [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.26.0` |
+| [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.33.0` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
+
+## 2026.09.33
+*S'applique à la **tâche PDM***
+
+- Reconstruction de l'[onglet Log de Task Details](pdmpublisher_task_details.md) sous forme de rapport structuré des sorties enregistrées et des échecs. Il affiche les totaux, l'heure, le fichier de destination, la version PDM, le fichier source et les détails de la ligne sélectionnée. Les anciens journaux de tâches demeurent pris en charge.
+- Ajout de **Cut-list item grouping** à [Split Bodies](pdmpublisher-options/split-bodies.md). L'administrateur peut exporter chaque corps ou un corps représentatif pour la géométrie et le matériau correspondants de chaque article de liste de pièces soudées. Le nom groupé comprend la quantité par pièce; les corps qui ne peuvent pas être vérifiés sont exportés séparément.
+- Correction des formats de sortie choisis au lancement et des chemins évalués afin qu'ils soient conservés au début de la publication.
+- Amélioration du redimensionnement des pages Publish et Integrations dans SOLIDWORKS PDM Administration.
+- Correction de la saisie au clavier dans les champs Publish intégrés et de la modification directe des annotations.
+- La trousse de déploiement de la tâche PDM est maintenant autonome. Un déploiement manuel doit utiliser la trousse complète, y compris `PDMPublisher.Merge.exe`, `PDMPublisher.TOC.exe`, leurs fichiers de configuration et toutes les DLL de dépendance fournies.
 
 <a id="20261023"></a>
 ## 2026.10.23
