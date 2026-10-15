@@ -1,7 +1,7 @@
 ---
 title: BOM Manager | PDMPublisher for SOLIDWORKS
 description: Configure BOM columns, display type, grouping, component exclusions, and Excel export settings in PDMPublisher for SOLIDWORKS.
-ms.date: 10/04/2026
+ms.date: 10/15/2026
 ms.topic: how-to
 ---
 
@@ -27,6 +27,10 @@ BOM Manager defines the default structure used when PDMPublisher produces or dis
 | **Ignore Components** | Opens the condition editor used to omit matching components from the BOM. |
 | **Workbook template** | Selects an optional `.xlsx` or `.xltx` template for Excel exports. Enter the path or select **Browse...** beside the field. |
 | **Include thumbnail** | Includes the available model thumbnail in the exported workbook. |
+
+## Evaluated property values
+
+From **2026.10.40**, BOM Manager retains evaluated custom-property values, including empty results, without substituting the stored expression. The displayed values are also used for grouping, exports, and ERP Sync snapshots.
 
 ## Configure the defaults
 

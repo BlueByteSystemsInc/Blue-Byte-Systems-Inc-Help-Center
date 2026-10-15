@@ -1,7 +1,7 @@
 ---
 title: Run a Publish Job | PDMPublisher for SOLIDWORKS
 description: Publish the active SOLIDWORKS document with the selected PDMPublisher profile and review the resulting job log.
-ms.date: 10/07/2026
+ms.date: 10/15/2026
 ms.topic: how-to
 ---
 
@@ -30,6 +30,24 @@ The arrow beside **Publish** selects the Publish profile used for the job. It do
 When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md) is enabled for an assembly, PDMPublisher displays the references that passed before export begins. Confirm the files to continue or cancel the job.
 
 ![Review files and evaluated output paths before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
+
+## Create SOLIDWORKS drawings
+
+Select **SOLIDWORKS Drawing (*.slddrw)** in the Publish profile's file formats, then open **Drawing Settings**. Drawing creation writes a drawing beside each selected part or assembly, using the model's base filename. Select one configuration per model. PDF, DXF, and DWG exports can use the drawing in the same run.
+
+- **Drawing template (.drwdot):** choose a template discovered from SOLIDWORKS Document Templates folders, type a path, or use Browse.
+- **Existing drawing:** choose whether to skip or overwrite an existing drawing.
+- **Views:** choose standard views using the template's sheet scale. Enable predefined views for a template prepared with predefined views; this disables the standard-view choices.
+- **Add drawing to PDM and check in:** requires the shared PDM vault to be selected and logged in.
+- The option to check out, recreate, and check in existing drawings uses the configured template or macro. It overrides Skip for that drawing; it does not preserve the old sheets and annotations. Drawings checked out by another user or machine cannot be replaced.
+
+### Use an editable SWB macro
+
+Version **2026.10.40** supports custom drawing-creation macros in Drawing Settings. Enable the custom macro option, then edit the code, import an SWB file, or load the example. The code is saved in the Publish profile and can be exported.
+
+PDMPublisher runs `Sub main` with the selected model and configuration active. The macro must create exactly one new, unsaved drawing containing a model view and leave it active. PDMPublisher then saves the drawing and handles destination overwrite and optional PDM check-in. A macro that leaves no valid new drawing fails the output instead of replacing the destination.
+
+In custom macro mode, the built-in template and standard-view controls are disabled; the macro controls drawing creation. Start from the provided example and test on sample files before using it in a production profile. For help writing a macro, [request a quote from Blue Byte Systems](https://bluebyte.biz/request-a-quote/).
 
 ## Review the Result
 

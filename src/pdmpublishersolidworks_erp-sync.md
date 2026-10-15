@@ -1,7 +1,7 @@
 ---
 title: ERP Sync | PDMPublisher for SOLIDWORKS
 description: Configure ERP Sync to push data to ERP and pull mapped ERP properties into SOLIDWORKS with a reviewable diff.
-ms.date: 09/31/2026
+ms.date: 10/15/2026
 ms.topic: conceptual
 ---
 
@@ -104,7 +104,7 @@ To enable BOM Push from CSV, provide recognized item-code and parent columns. Ea
 4. Select the checkbox beside every row to include. Only checked, currently displayed rows are sent. Expand collapsed branches before pushing an indented BOM.
 5. Select the active connector at the bottom of the window.
 6. Open the arrow beside **Push** and select the required operations.
-7. Select **Push**, review the result, and correct any failed item or BOM reported by the connector.
+7. Select **Push** to compare with ERP. Review the proposed changes, then select **Commit changes** to apply them or **Cancel** to write nothing.
 
 ![ERP Sync Push operation choices](/images/pdmpublisher/solidworks/erp-sync-options-20260920.png)
 
@@ -116,6 +116,44 @@ To enable BOM Push from CSV, provide recognized item-code and parent columns. Ea
 | Include cut-list items | Includes supported cut-list rows in the snapshot. |
 
 The snapshot contains plain data captured from SOLIDWORKS; a connector does not receive SOLIDWORKS COM objects. Root custom properties are merged with active-configuration properties, and configuration values take precedence. Mass is supplied in kilograms.
+
+## Review changes before Push
+
+Starting with **2026.10.40**, the main review grid follows the ERP Sync source grid: document rows, thumbnails, configurations, quantities, visible columns, column order, and widths. Item names identify source documents rather than component occurrence names.
+
+| Highlight | Meaning |
+| --- | --- |
+| Green row | A new ERP item will be created. |
+| Green cell | A value will be added. |
+| Red cell | A value will be removed or cleared. Clearing a property does not delete the item. |
+| Orange split cell | An existing value will change. The sections label the **ERP** and **SOLIDWORKS** values. |
+
+Use **Show unchanged** to include unchanged source rows. Expand **All planned changes (including BOM and attachments)** to inspect the complete operation list, including ERP fields outside the visible source columns. BOM operations are not extra document rows in the main grid. The change count counts operations, not documents.
+
+**Commit changes** uses the ERP Sync icon. ERP data is checked again before commit; if it changed after comparison, preview again. Opening the review does not write ERP records.
+
+### Remembered sync options
+
+The four Push-menu selections—**Properties**, **Create items + properties**, **BOM**, and **Include cut-list items**—save automatically in general settings and restore when ERP Sync reopens. No separate settings page is required. Applying a macro's options does not overwrite these saved defaults. Unsupported operations remain disabled for the selected connector or source.
+
+### Column mappings and item identity
+
+Property-column headers show **ERP: field name** for mapped fields, **Item code** when used for matching, or **Not mapped**. Choose **Edit** to open connector settings and edit **Property mappings**. The indicators refresh after saving mappings or changing the active connector.
+
+The mapping dialog loads supported ERP fields automatically. Use **Load ERP fields** to refresh discovery after changing the ERP schema. The destination dropdown lists ERP fields; it does not create custom fields in ERP.
+
+| Item-code choice | Example |
+| --- | --- |
+| `<File>` | `C:\Parts\Bracket.sldprt` |
+| `<File name>` | `Bracket.sldprt` |
+| `<File name without extension>` | `Bracket` |
+| Custom property, such as `PartNumber` | The evaluated property value |
+
+Choose an identity that is unique in the ERP. Filenames in different folders can be identical. A displayed document name does not replace the configured item code.
+
+In feature-tree mode, the top-level assembly appears in **Indented** and **Top-level only** views. **Parts only** omits the assembly row. Custom-property values use evaluated values, including valid empty results, rather than falling back to stored expressions.
+
+Repeated source rows with the same item code can share an ERP item when mapped values are compatible. With **Skip empty values** enabled, an empty value does not conflict with a populated value. Genuine conflicting values stop synchronization and identify the field and values to correct. Display grouping is separate from item matching; feature-tree BOM Push still requires **Indented** with no grouping.
 
 ## Pull ERP properties into SOLIDWORKS
 
@@ -131,7 +169,7 @@ Pull uses the connector's property mappings in reverse: the ERP field is the sou
 
 ![Review ERP pull diff before applying property changes to SOLIDWORKS](/images/pdmpublisher/solidworks/erp-pull-review-20260931.png)
 
-The diff uses green for **Added**, yellow for **Changed**, and red for **Deleted**. Each cell shows the proposed value or an explicit skip reason. Built-in and calculated columns, the property used to match the ERP item, read-only documents, missing or null ERP fields, and unsupported targets are not overwritten.
+The diff uses green for **Added**, orange for **Changed**, and red for **Deleted**. Changed cells label both ERP and SOLIDWORKS values. Built-in and calculated columns, the property used to match the ERP item, read-only documents, missing or null ERP fields, and unsupported targets are not overwritten.
 
 Nothing is written while the diff is being reviewed. After approval, PDMPublisher asks the connector to validate the same ERP snapshot again and rechecks local document identity and values. If ERP data or the SOLIDWORKS target changed, the apply is stopped and you must preview again. Pull changes properties only; it does not change assembly or BOM structure, download attachments, create ERP items, or save SOLIDWORKS documents automatically.
 

@@ -7,6 +7,10 @@ ms.topic: how-to
 
 # ERPNext Connector
 
+In connector **1.2.2.0**, repeated source item codes combine compatible mapped values. When **Skip empty values** is enabled, blank values are ignored rather than treated as conflicts with populated values. Genuine conflicts stop the preview and identify the mapped field and values to correct. Review the source rows or assign distinct item codes before retrying; preview does not write ERP items.
+
+In PDMPublisher **2026.10.40**, the mapping editor loads supported ERP fields automatically. **Load ERP fields** refreshes that list. See [ERP Sync](pdmpublishersolidworks_erp-sync.md#column-mappings-and-item-identity) for filename item-code choices and column mapping indicators.
+
 The ERPNext connector is an official Blue Byte Systems connector available from the PDMPublisher connector catalog. It pushes checked SOLIDWORKS rows to ERPNext and can pull mapped Item fields back into writable SOLIDWORKS custom properties after review.
 
 ![Official ERPNext connector and its settings](../images/pdmpublisher/solidworks/erp-connector-settings-20260920.png)

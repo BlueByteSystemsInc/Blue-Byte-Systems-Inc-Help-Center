@@ -23,6 +23,7 @@ Scroll down to configure PDF merging, table-of-content columns, bookmarks, annot
 | Output | **Locations by file format** | Overrides the main destination for selected output formats. |
 | Output | **Filename** | Builds the output filename. The extension is supplied by the selected format. |
 | Output | **File formats** | Selects one or more output formats and exposes format-specific settings where supported. |
+| Output | **Drawing Settings** | Appears for SOLIDWORKS Drawing output. Configure templates, views, an optional SWB macro, and PDM delivery. See [Create SOLIDWORKS drawings](pdmpublishersolidworks-publish.md#create-solidworks-drawings). |
 | Output | **Show dialog before processing** | Displays the Publish dialog so the user can review the active profile before the job starts. |
 | Output | **Open export location on completion** | Opens the destination folder after a successful job. |
 | Drawing sheets | **Sheets to export** | Chooses all sheets or another supported sheet-selection mode. |

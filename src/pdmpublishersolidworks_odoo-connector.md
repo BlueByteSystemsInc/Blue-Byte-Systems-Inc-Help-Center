@@ -1,7 +1,7 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Install and configure the official Odoo connector for reviewed product, property, attachment, and manufacturing BOM synchronization.
-ms.date: 10/02/2026
+ms.date: 10/15/2026
 ms.topic: how-to
 ---
 
@@ -71,11 +71,15 @@ Treat the API key like a password. Do not include it in screenshots, logs, sourc
 
 | Setting | Behavior |
 | --- | --- |
-| Item code column | ERP Sync column or custom property matched exactly to the Odoo product **Internal Reference** (`default_code`). The default is `PartNumber`. Blank or duplicate references stop Push preview. |
+| Item code column | ERP Sync column or custom property matched exactly to the Odoo product **Internal Reference** (`default_code`). The default is `PartNumber`. Blank source codes or ambiguous matching products in Odoo stop Push preview. Repeated source codes are allowed when their mapped values are compatible. |
 | Skip empty values | When enabled, blank mapped source values do not overwrite existing Odoo values, and blank values read during Pull do not clear local SOLIDWORKS properties. |
 | Property mappings | Maps a SOLIDWORKS property or ERP Sync column to a writable scalar Odoo product field. The default mapping is `Description` → `name`. |
 
-Open **Property mappings > ...** and select **Load ERP fields** to discover the fields available to the current Odoo user. Supported targets include standard scalar fields such as `name`, `description`, `description_sale`, `description_purchase`, `sale_ok`, `purchase_ok`, `weight`, `volume`, and `barcode`, plus writable `x_*` custom fields.
+Open **Property mappings > ...**. Supported fields available to the current Odoo user load automatically; select **Load ERP fields** to refresh them. Supported targets include standard scalar fields such as `name`, `description`, `description_sale`, `description_purchase`, `sale_ok`, `purchase_ok`, `weight`, `volume`, and `barcode`, plus writable `x_*` custom fields.
+
+A SOLIDWORKS Material value needs a writable Odoo destination field, such as a text field named `x_material` or `x_studio_material`. Read-only and relational fields are excluded. If Material is missing from the dropdown, check its technical name, type, and availability to the integration user in Odoo, then reload ERP fields.
+
+Connector **1.0.2.0** combines compatible mapped values for repeated source item codes. With **Skip empty values** enabled, blank values are ignored rather than treated as conflicts. Different nonempty values for the same mapped field still stop the preview with a field-specific message. This does not permit multiple matching Internal References in Odoo itself.
 
 Use stored API field names, not translated labels. Boolean values accept `True/False`, `Yes/No`, or `1/0`. Numeric values use invariant decimal notation, such as `12.5`. Selection fields require the stored Odoo selection key. Relational fields are not generic property-mapping targets, and each Odoo target field can be mapped only once.
 

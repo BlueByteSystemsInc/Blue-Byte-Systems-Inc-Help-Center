@@ -64,7 +64,7 @@ If you received a signed connector package directly, use **Add new...** to selec
 
 ## Item numbers and property mappings
 
-Item numbers are trimmed, converted to uppercase according to Business Central Code-field behavior, and limited to 20 characters. Existing item numbers are never renamed and the connector does not request automatic number assignment. Duplicate source numbers must propose identical values; conflicting rows stop the preview.
+Item numbers are trimmed, converted to uppercase according to Business Central Code-field behavior, and limited to 20 characters. Existing item numbers are never renamed and the connector does not request automatic number assignment. From connector **1.0.2.0**, repeated source numbers combine compatible mapped values. With **Skip empty values** enabled, blank values do not conflict with populated values. Different values for the same mapped field stop the preview with the field and conflicting values identified.
 
 The connector can map these writable fields when they are present in the live item metadata:
 
