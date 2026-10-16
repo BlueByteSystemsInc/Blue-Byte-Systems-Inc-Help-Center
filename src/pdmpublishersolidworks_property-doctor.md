@@ -92,4 +92,6 @@ Material mappings can be imported from or exported to a two-column CSV with `Pat
 
 ## Shared Resources
 
+To calculate a property from other properties, use an [advanced formula with arithmetic](pdmpublishersolidworks_advanced-formulas.md#arithmetic-with-properties), available from **2026.10.45**. For example, `=Property("UnitCost") * Property("Quantity")` multiplies two numeric custom-property values.
+
 Property Doctor can use named [Advanced Formulas](pdmpublishersolidworks_settings.md#settings-pages), SQL Server external sources, and drawing search folders configured under **Shared Resources** in Settings. Complete settings transfer includes these definitions but never includes SQL credentials.
