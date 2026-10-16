@@ -47,6 +47,20 @@ Property Doctor does not show the refresh prompt when Apply contains no changes,
 - Use **Columns** to show, hide, add, and organize property columns.
 - Import an exported Property Doctor CSV, review the pending values, then apply them.
 
+## Find and Replace Property Values
+
+Starting with version **2026.10.42**, right-click a property cell and choose **Find and replace in this column...**. The Find and Replace panel shows the selected column, such as **Column: Cost**.
+
+1. Enter the text in **Find** and the new text in **Replace with**. Leave the replacement empty to remove matching text.
+2. Use **Find next** to inspect a match, then **Replace**, or select **Replace all** to update matching values in the displayed rows.
+3. Review the draft changes in the grid, then select **Apply** or **OK** to commit them.
+
+For example, to change `$6.87` into `6.87` for an ERP price mapping, open Find and Replace from the **Cost** column, find `$`, leave **Replace with** empty, and keep regular expressions disabled. Select **Replace all**. Other property columns remain unchanged.
+
+You can also open the panel with **Ctrl+H** or **Ctrl+F**. Check the displayed scope before replacing. Select **Search all displayed columns** to remove the column restriction. **Match case** and regular expressions are optional; in regular-expression mode, characters such as `$` have special meanings.
+
+Replacements affect draft property values in displayed rows and columns. Hidden rows, hidden columns, removed properties, and read-only values are skipped. Use **Reset to original** on a cell to undo its pending replacement before applying. Find and Replace does not save a reusable profile action.
+
 ## Document Commands
 
 The document menu can load a document in SOLIDWORKS, reopen references for editing, resolve lightweight references, check files in or out, get latest, select the item, zoom to it, or isolate it. Availability depends on document state and PDM access.
