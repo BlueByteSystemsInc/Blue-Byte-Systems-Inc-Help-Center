@@ -38,6 +38,12 @@ A fully deleted property column disappears immediately after Apply, even if you 
 
 Property Doctor does not show the refresh prompt when Apply contains no changes, Apply fails, a profile runs silently, or you select **OK** to close the window.
 
+## Select Multiple Cells
+
+From **2026.10.46**, hold **Ctrl** and click cells to add them to the selection. Ctrl-click a selected cell again to remove it. This works while a cell editor is active; Ctrl-clicking another cell selects it without starting an edit there.
+
+Press **Escape** while the grid has focus to clear all selected cells. This also cancels an active fill drag. Clearing a selection does not discard pending property changes; use **Reset to original** or **Discard changes** for that.
+
 ## Find, Filter, and Fill
 
 - Search document names, configurations, property names, and values.

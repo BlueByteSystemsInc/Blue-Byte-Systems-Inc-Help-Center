@@ -37,6 +37,12 @@ Right-click the file tree to change which rows are included:
 | **Check Selected** | Checks the selected rows. |
 | **Uncheck Selected** | Clears the selected optional rows. A required root document cannot be cleared. |
 
+### Select multiple cells
+
+From **2026.10.46**, hold **Ctrl** and click cells to add them to the selection, or Ctrl-click a selected cell to remove it. Ctrl-click selects the target without starting an edit, including when another cell editor is active. Press **Escape** while the grid has focus to clear the cell selection and cancel any active fill drag.
+
+Cell selection is separate from the file checkboxes that control which documents are copied. Clearing selected cells does not uncheck files or reset pending names and folders.
+
 ## Copy a Value Through a Column
 
 Open an editable cell's menu and choose one of these commands:
