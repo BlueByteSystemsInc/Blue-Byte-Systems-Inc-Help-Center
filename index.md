@@ -212,7 +212,7 @@ description: Official documentation and support resources for Blue Byte Systems 
 <div class="bbs-product">
 <h2>PDMDeploy</h2>
 <p>Install and update Blue Byte Systems PDM add-ins using an activation code.</p>
-<a href="src/cdpdm.md">Open docs &rarr;</a>
+<a href="https://pdmpublisher.com/help/src/cdpdm.html">Open docs &rarr;</a>
 </div>
 
 <div class="bbs-product">

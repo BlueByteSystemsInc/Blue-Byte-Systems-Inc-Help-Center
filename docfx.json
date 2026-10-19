@@ -18,6 +18,7 @@
           "src-fr-ca/**",
           "src-de-de/**",
           "src-pt-br/**",
+          "src/toc.yml",
           "src/introduction.md",
           "src/pdmpublisher*.md",
           "src/propertiespagepdmpublisher.md",
