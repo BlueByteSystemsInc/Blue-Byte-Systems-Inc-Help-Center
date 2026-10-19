@@ -192,9 +192,6 @@ description: Official documentation and support resources for Blue Byte Systems 
 <img class="bbs-hero-logo" src="/images/large_logo.png" alt="Blue Byte Systems Inc."/>
 <h1>Blue Byte Systems Help Center</h1>
 <p>Documentation, downloads, and support resources for Blue Byte Systems SOLIDWORKS PDM tools.</p>
-<div class="bbs-actions">
-<a class="bbs-action bbs-action-primary" href="src/introduction.md">Start here</a>
-</div>
 </section>
 
 <div class="bbs-section-title">Product Documentation</div>
@@ -203,7 +200,7 @@ description: Official documentation and support resources for Blue Byte Systems 
 <div class="bbs-product">
 <h2>PDMPublisher</h2>
 <p>Automated publishing and export for SOLIDWORKS PDM.</p>
-<a href="src/pdmpublisher.md">Open docs &rarr;</a>
+<a href="https://pdmpublisher.com/help/">Open PDMPublisher Help &rarr;</a>
 </div>
 
 <div class="bbs-product">
