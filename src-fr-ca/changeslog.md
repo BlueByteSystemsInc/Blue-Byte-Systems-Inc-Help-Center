@@ -16,9 +16,17 @@ Les versions sont identifiées par leur date de compilation, qui représente la 
 | Produit | Version actuelle |
 | --- | --- |
 | [PDMPublisher pour SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
-| [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.09.33.0` |
+| [Tâche PDM PDMPublisher](pdmpublisher.md) | `2026.10.18.0` |
 
 L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte que leurs numéros de version actuels peuvent différer.
+
+## 2026.10.18 — Tâche PDM
+
+Publié le 18 octobre 2026.
+
+- Mise à jour de l'assembly de la tâche PDM, de l'inscription du complément PDM et du droit de maintenance à la version `2026.10.18.0` (`20261018`).
+- Ajout de la prise en charge de l'activation pour le produit **PDMPublisher (Trial)**, tout en conservant des licences distinctes pour la tâche PDM et le complément SOLIDWORKS.
+- Tri alphabétique des formats de sortie dans la configuration de la tâche et dans la sélection des formats au lancement.
 
 > [!TIP]
 > Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).

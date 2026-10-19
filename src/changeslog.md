@@ -15,7 +15,7 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.33.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.10.18.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
@@ -34,6 +34,14 @@ Released October 18, 2026.
 ### Odoo connector 1.0.8.0
 
 Released separately on October 18, 2026. Numeric comparisons use Odoo's declared precision, and file/thumbnail handling supports the available binary-response format. See [Odoo Connector](pdmpublishersolidworks_odoo-connector.md).
+
+## 2026.10.18 — PDM Task
+
+Released October 18, 2026.
+
+- Updated the PDM Task assembly, PDM add-in registration, and maintenance entitlement to version `2026.10.18.0` (`20261018`).
+- Added activation support for the **PDMPublisher (Trial)** product name while keeping PDM Task and SOLIDWORKS add-in licenses separate.
+- Sorted output formats alphabetically in task setup and task-launch format selection.
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).
