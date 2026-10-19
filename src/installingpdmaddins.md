@@ -22,6 +22,8 @@ After purchasing one of our PDM add-ins, you will receive an order email with th
 
 1. Download the product's file (CEX file or ZIP file) from [your account](https://bluebyte.biz/account).
 
+   The latest public PDMPublisher CEX is also available from the permanent link: [Download PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex).
+
 2. Once downloaded, right-click on the file and select Properties.
 
 3. In the Properties window, check for the Unblock option at the bottom. If it is present, click Unblock and then click OK. This step ensures that the file is not blocked by Windows security.

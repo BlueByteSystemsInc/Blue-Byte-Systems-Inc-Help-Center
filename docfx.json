@@ -21,7 +21,8 @@
       {
         "files": [
           "images/**",
-          "pdmdeploy/**"
+          "pdmdeploy/**",
+          "downloads/**"
         ]
       }
     ],

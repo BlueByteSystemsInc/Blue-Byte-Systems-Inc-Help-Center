@@ -24,6 +24,8 @@ Après avoir acheté un de nos PDM add-ins, vous recevrez un email de commande a
 
 1. Téléchargez le fichier du produit (fichier CEX ou fichier ZIP) depuis [votre compte] (https://bluebyte.biz/account).
 
+   La plus récente version publique du fichier CEX de PDMPublisher est aussi offerte à cette adresse permanente : [Télécharger PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex).
+
 2. Une fois téléchargé, faites un clic droit sur le fichier et sélectionnez Propriétés.
 
 3. Dans la fenêtre Propriétés, vérifiez l'option Débloquer en bas. Si elle est présente, cliquez sur Débloquer puis sur OK. Ce step garantit que le fichier n'est pas bloqué par la sécurité de Windows.
