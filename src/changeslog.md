@@ -19,9 +19,8 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
-## 2026.10.49 — SOLIDWORKS add-in
-
-Released October 18, 2026.
+## 2026.10.49
+*Applies to the **SOLIDWORKS Add-in***
 
 - [ERP Sync](pdmpublishersolidworks_erp-sync.md) Push and Pull previews match the source grid's proportions and hierarchy. Comparisons run SOLIDWORKS → ERP for Push and ERP → SOLIDWORKS for Pull, with system icons.
 - Mapped ERP fields appear in headers. Unmapped columns explain that they will not sync. Invalid mapped values use red cells with **(i)** correction details.
@@ -30,10 +29,7 @@ Released October 18, 2026.
 - Formula chips survive evaluation and editing changes. File-property pickers include properties hidden from the grid.
 - Connector settings open from the adjacent **Edit** button. Updates to loaded connector DLLs are staged for the next SOLIDWORKS session.
 - Trial product names are recognized for the SOLIDWORKS edition.
-
-### Odoo connector 1.0.8.0
-
-Released separately on October 18, 2026. Numeric comparisons use Odoo's declared precision, and file/thumbnail handling supports the available binary-response format. See [Odoo Connector](pdmpublishersolidworks_odoo-connector.md).
+- Updated the [Odoo connector](pdmpublishersolidworks_odoo-connector.md).
 
 ## 2026.10.18 — PDM Task
 
