@@ -20,8 +20,18 @@ $publicUrl = $PublicBaseUrl.TrimEnd('/') + "/" + $StableFileName
 
 function Invoke-Git {
     param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Arguments)
-    $output = & git -C $workspaceRoot @Arguments 2>&1
-    if ($LASTEXITCODE -ne 0) {
+    $previousErrorAction = $ErrorActionPreference
+    try {
+        # Windows PowerShell promotes native stderr (including normal git progress)
+        # to ErrorRecord objects when Stop is active.
+        $ErrorActionPreference = "Continue"
+        $output = & git -C $workspaceRoot @Arguments 2>&1
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorAction
+    }
+    if ($exitCode -ne 0) {
         throw "git $($Arguments -join ' ') failed:`n$($output -join [Environment]::NewLine)"
     }
     return @($output)
@@ -59,6 +69,30 @@ if (-not $latest) {
     throw "No release matching PDMPublisherV########.cex was found in $sourceRoot"
 }
 
+$hash = (Get-FileHash -LiteralPath $latest.File.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+$existingMetadata = $null
+if (Test-Path -LiteralPath $sourceMetadata -PathType Leaf) {
+    try { $existingMetadata = Get-Content -LiteralPath $sourceMetadata -Raw | ConvertFrom-Json }
+    catch { $existingMetadata = $null }
+}
+
+$alreadyPublished = $existingMetadata -and
+    $existingMetadata.version -eq $latest.VersionText -and
+    $existingMetadata.sha256 -eq $hash -and
+    (Test-Path -LiteralPath $sourceDestination -PathType Leaf) -and
+    (Test-Path -LiteralPath $siteDestination -PathType Leaf) -and
+    ((Get-FileHash -LiteralPath $sourceDestination -Algorithm SHA256).Hash.ToLowerInvariant() -eq $hash) -and
+    ((Get-FileHash -LiteralPath $siteDestination -Algorithm SHA256).Hash.ToLowerInvariant() -eq $hash)
+
+if ($alreadyPublished) {
+    if (-not $NoPush) {
+        Invoke-Git push $Remote "HEAD:$Branch" | Write-Host
+    }
+    Write-Host "PDMPublisher $($latest.VersionText) is already published."
+    Write-Host "Static URL: $publicUrl"
+    return
+}
+
 foreach ($directory in @((Split-Path $sourceDestination), (Split-Path $siteDestination))) {
     if (-not (Test-Path -LiteralPath $directory -PathType Container)) {
         New-Item -ItemType Directory -Path $directory | Out-Null
@@ -68,7 +102,6 @@ foreach ($directory in @((Split-Path $sourceDestination), (Split-Path $siteDesti
 Copy-Item -LiteralPath $latest.File.FullName -Destination $sourceDestination -Force
 Copy-Item -LiteralPath $latest.File.FullName -Destination $siteDestination -Force
 
-$hash = (Get-FileHash -LiteralPath $sourceDestination -Algorithm SHA256).Hash.ToLowerInvariant()
 $metadata = [ordered]@{
     product = "PDMPublisher"
     version = $latest.VersionText
