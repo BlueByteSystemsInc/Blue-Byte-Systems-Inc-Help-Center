@@ -212,6 +212,15 @@ if (Test-Path -LiteralPath $sitemapPath) {
         if ($redirectSitePaths.Contains($locationPath)) {
             [void]$urlNode.ParentNode.RemoveChild($urlNode)
             $removedFromSitemap++
+            continue
+        }
+
+        # Docfx stamps every page with the build time, which creates a noisy
+        # sitemap-only commit on every run. Omit lastmod so identical content
+        # produces an identical build.
+        $lastModifiedNode = $urlNode.SelectSingleNode('sm:lastmod', $namespaceManager)
+        if ($null -ne $lastModifiedNode) {
+            [void]$urlNode.RemoveChild($lastModifiedNode)
         }
     }
 
