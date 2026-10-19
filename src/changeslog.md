@@ -15,7 +15,7 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.10.18.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `20261018` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
@@ -35,7 +35,7 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 
 Released October 18, 2026.
 
-- Updated the PDM Task assembly, PDM add-in registration, and maintenance entitlement to version `2026.10.18.0` (`20261018`).
+- Updated the PDM add-in and maintenance entitlement version to `20261018`. The corresponding assembly version is `2026.10.18.0`.
 - Added activation support for the **PDMPublisher (Trial)** product name while keeping PDM Task and SOLIDWORKS add-in licenses separate.
 - Sorted output formats alphabetically in task setup and task-launch format selection.
 

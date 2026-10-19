@@ -16,7 +16,7 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 | Produkt | Aktuelle Fassung |
 | --- | --- |
 | [PDMPublisher für SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `2026.10.18.0` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `20261018` |
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
@@ -24,7 +24,7 @@ Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegebe
 
 Veröffentlicht am 18. Oktober 2026.
 
-- Die PDM-Task-Assembly, die PDM-Add-in-Registrierung und die Wartungsberechtigung wurden auf Version `2026.10.18.0` (`20261018`) aktualisiert.
+- Die Version des PDM-Add-ins und der Wartungsberechtigung wurde auf `20261018` aktualisiert. Die entsprechende Assemblyversion lautet `2026.10.18.0`.
 - Aktivierungsunterstützung für den Produktnamen **PDMPublisher (Trial)** wurde hinzugefügt; die Lizenzen für PDM-Task und SOLIDWORKS-Add-in bleiben getrennt.
 - Ausgabeformate werden in der Task-Einrichtung und bei der Formatauswahl zum Task-Start alphabetisch sortiert.
 
