@@ -3,7 +3,7 @@ param(
     [string]$HostName = "132.148.181.223",
     [int]$Port = 21,
     [string]$RemotePath = "/help",
-    [string]$TlsHostCertificateFingerprint = "d0:f6:71:6b:7a:bf:a1:47:a3:23:72:65:95:d7:f1:83:e2:d8:bc:f7:2b:9d:55:2f:2f:f9:cd:b8:5b:49:91:43",
+    [string]$TlsHostCertificateFingerprint = "f2:63:74:a9:d1:82:c2:30:f3:0e:d0:57:71:6a:b9:29:da:7d:76:f3:44:cc:bc:02:6c:e2:9d:4c:01:0d:b1:d0",
     [switch]$SkipBuild,
     [switch]$Preview,
     [switch]$KeepRemoteFiles

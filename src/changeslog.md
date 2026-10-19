@@ -1,23 +1,39 @@
 ﻿---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/23/2026
+ms.date: 10/18/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
 
 This page tracks all changes, fixes, improvements, and new features introduced in PDMPublisher, the SOLIDWORKS PDM Professional task add-in, and PDMPublisher for SOLIDWORKS, the SOLIDWORKS add-in.
 
-Versions are identified by their compile date, which represents the build date of the released version. Each entry may include updates such as new functionality, bug fixes, performance improvements, compatibility updates, configuration changes, and known behavior changes.
+The SOLIDWORKS add-in and PDM task use independent release sequences. A version's final component is a build number and may not be a calendar day. Entries describe published releases unless explicitly marked as unreleased.
 
 ## Current Versions
 
 | Product | Current version |
 | --- | --- |
-| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.23.0` |
+| [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
 | [PDMPublisher PDM Task](pdmpublisher.md) | `2026.09.33.0` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
+
+## 2026.10.49 — SOLIDWORKS add-in
+
+Released October 18, 2026.
+
+- [ERP Sync](pdmpublishersolidworks_erp-sync.md) Push and Pull previews match the source grid's proportions and hierarchy. Comparisons run SOLIDWORKS → ERP for Push and ERP → SOLIDWORKS for Pull, with system icons.
+- Mapped ERP fields appear in headers. Unmapped columns explain that they will not sync. Invalid mapped values use red cells with **(i)** correction details.
+- Pull defaults to both document custom and configuration-specific properties. Destination details explain changes even when the displayed values match.
+- BOM changes highlight assembly rows. The **Sync BOM >** submenu selects the supported BOM type and stays open after selection.
+- Formula chips survive evaluation and editing changes. File-property pickers include properties hidden from the grid.
+- Connector settings open from the adjacent **Edit** button. Updates to loaded connector DLLs are staged for the next SOLIDWORKS session.
+- Trial product names are recognized for the SOLIDWORKS edition.
+
+### Odoo connector 1.0.8.0
+
+Released separately on October 18, 2026. Numeric comparisons use Odoo's declared precision, and file/thumbnail handling supports the available binary-response format. See [Odoo Connector](pdmpublishersolidworks_odoo-connector.md).
 
 > [!TIP]
 > If you are using PDMPublisher (task), we highly recommend you use PDMDeploy to update PDMPublisher. Please see [here](/src/cdpdm.html).

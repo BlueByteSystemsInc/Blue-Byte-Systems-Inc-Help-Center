@@ -1,7 +1,7 @@
 ---
 title: Property Doctor | PDMPublisher for SOLIDWORKS
 description: Review, edit, validate, import, export, and automate SOLIDWORKS custom properties across a document and its references.
-ms.date: 10/23/2026
+ms.date: 10/18/2026
 ms.topic: how-to
 ---
 
@@ -25,6 +25,16 @@ Open **PDMPublisher > Settings > Property Doctor** to configure the default colu
 6. Select **Apply changes** to write the pending changes, or **Discard changes** to restore the original values.
 
 Gray cells are missing properties. **Clear** keeps the property name and writes an empty value; **Delete Property** removes the property. Formula and linked-value cells are evaluated for the document row where they are applied.
+
+### File properties and expression chips
+
+In version 2026.10.49, **File properties** includes the document's custom and configuration-specific properties even when their columns are hidden. Hiding a column does not remove that property from the picker.
+
+Property and formula references appear as chips with descriptive names. Switching between an evaluated value and its expression, or entering and leaving edit mode, preserves those references. Mixed text and chips wrap within the cell so you can read and edit them without widening the column.
+
+![Property Doctor editing a value containing text and two Description reference chips](/images/pdmpublisher/solidworks/property-chips-20261049.png)
+
+These property-picker and chip changes also apply to the shared editors used by ERP Sync, property templates, and Smart Pack. Evaluating a draft does not write it to the document; review it before applying changes.
 
 To delete one property across multiple documents, right-click its column header or open the column-options menu and select **Mark property for deletion (visible rows)**. To delete several properties together, select their visible column checkboxes and use **Mark selected properties for deletion (visible rows)** from any selected column. Using the command from an unselected column affects only that column. Property Doctor marks the properties in every editable visible row; filtered-out and read-only rows are not changed. Select the checked command again to undo the affected columns, or use a header's delete icon to undo only that column. Select **Apply changes** to remove the properties from the documents.
 

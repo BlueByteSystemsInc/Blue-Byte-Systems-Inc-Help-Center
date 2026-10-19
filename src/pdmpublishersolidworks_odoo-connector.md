@@ -1,13 +1,15 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Install and configure the official Odoo connector for reviewed product, property, attachment, and manufacturing BOM synchronization.
-ms.date: 10/15/2026
+ms.date: 10/18/2026
 ms.topic: how-to
 ---
 
 # Odoo Connector
 
 The Odoo connector is an official Blue Byte Systems connector for Odoo 19+ and Odoo Online sites with JSON-2 external API access. It supports reviewed Push and Pull operations between checked ERP Sync rows and Odoo products.
+
+This guide covers connector **1.0.8.0** with PDMPublisher for SOLIDWORKS **2026.10.49**. The connector and SOLIDWORKS add-in are updated separately; install the add-in update for the new review layout and inline **(i)** explanations.
 
 ![Official Odoo connector and configuration settings](/images/pdmpublisher/solidworks/odoo-connector-settings-20260931.png)
 
@@ -38,7 +40,7 @@ The connector uses Odoo's JSON-2 API, not the deprecated XML-RPC or JSON-RPC end
 7. Select **Test connection**.
 8. Select **Save** to make Odoo the active connector.
 
-Restart SOLIDWORKS before replacing a connector that was already loaded.
+If the connector is already loaded, its update is staged for the next session. Fully close and restart SOLIDWORKS, then verify the installed version. Use **Edit** beside the connector selector in ERP Sync to reopen its settings.
 
 ## Create an Odoo API key
 
@@ -77,19 +79,43 @@ Treat the API key like a password. Do not include it in screenshots, logs, sourc
 
 Open **Property mappings > ...**. Supported fields available to the current Odoo user load automatically; select **Load ERP fields** to refresh them. Supported targets include standard scalar fields such as `name`, `description`, `description_sale`, `description_purchase`, `sale_ok`, `purchase_ok`, `weight`, `volume`, and `barcode`, plus writable `x_*` custom fields.
 
-A SOLIDWORKS Material value needs a writable Odoo destination field, such as a text field named `x_material` or `x_studio_material`. Read-only and relational fields are excluded. If Material is missing from the dropdown, check its technical name, type, and availability to the integration user in Odoo, then reload ERP fields.
+A SOLIDWORKS Material value needs a writable Odoo destination field, such as a text field named `x_material` or `x_studio_material`. Read-only fields and unsupported relations are excluded. If Material is missing from the dropdown, check its technical name, type, and availability to the integration user in Odoo, then reload ERP fields.
 
 Connector **1.0.2.0** combines compatible mapped values for repeated source item codes. With **Skip empty values** enabled, blank values are ignored rather than treated as conflicts. Different nonempty values for the same mapped field still stop the preview with a field-specific message. This does not permit multiple matching Internal References in Odoo itself.
 
-Use stored API field names, not translated labels. Boolean values accept `True/False`, `Yes/No`, or `1/0`. Numeric values use invariant decimal notation, such as `12.5`. Selection fields require the stored Odoo selection key. Relational fields are not generic property-mapping targets, and each Odoo target field can be mapped only once.
+Use stored API field names, not translated labels. Boolean values accept `True/False`, `Yes/No`, or `1/0`. Numeric values use a dot for decimals, such as `12.5`, without currency symbols, thousands separators, or units. Selection fields accept a stored key or a unique label returned by Odoo. Each Odoo target field can be mapped only once.
 
-## BOM setting
+Supported mappings also include Sales Price (`list_price`), Cost (`standard_price`), Product Type, Invoicing Policy, Track Inventory, Category, Sales Taxes, Purchase Taxes, and Tags when available and writable. For supported relations, use an exact unique name or `#ID`; separate multiple tax or tag values with semicolons. These mappings select existing related records and do not create them. Pull returns stable `#ID` references.
+
+### HTML descriptions and numeric precision
+
+Odoo returns JSON, but an HTML field inside that JSON may contain markup such as `<p>Speaker</p>`. The connector extracts its text for Pull and Push comparison. Formatting alone does not make `Speaker` different from `<p>Speaker</p>`; entities and line breaks are handled without executing the markup.
+
+Connector 1.0.8 uses the decimal precision declared by Odoo. If a field stores two decimal places, `0.125` is previewed and sent as `0.13`, preventing a repeated false change after Odoo rounds it. Fields without declared precision are not assigned an assumed precision.
+
+Invalid mapped values are highlighted in the ERP Sync grid with a red cell and **(i)** explanation. Correct the value and preview again; for example, change `$15.93` to `15.93` for Cost.
+
+## BOM types
 
 | Setting | Behavior |
 | --- | --- |
 | Company ID | Optional numeric Odoo company ID used for product and BOM creation and BOM selection. Enter `0` to use the API user's current company context. |
+| BoM type | Manufacture this product, Kit, or Subcontracting. Also available under **Push options > Sync BOM >**. |
+| New BOM subcontractors | Existing Odoo contact names or `#ID` values, separated by semicolons. Required when creating a subcontracting BOM. |
 
 Select a company when BOM selection must be restricted to one company. Odoo access rights continue to apply even when a Company ID is entered.
+
+Choose one BOM type in the **Sync BOM >** submenu. The choice applies to the included assemblies, enables BOM sync, and is saved for the connector. The submenu stays open after selection.
+
+![Sync BOM submenu showing Manufacture, Kit, and Subcontracting choices](/images/pdmpublisher/solidworks/erp-bom-types-20261049.png)
+
+| Type | Use |
+| --- | --- |
+| Manufacture this product | Standard in-house manufacturing BOMs. This is the default. |
+| Kit | A kit BOM containing the selected components. |
+| Subcontracting | Outsourced manufacturing. Subcontracting must be enabled in Odoo and the selected type must be available to the API user. |
+
+The connector finds an active BOM of the selected type for the product and company. If none exists, it proposes a new BOM; it does not convert a BOM of another type. Multiple matching BOMs stop preview. Existing subcontracting BOMs retain their subcontractors; **New BOM subcontractors** applies only when creating one.
 
 ## Upload settings
 
@@ -102,6 +128,8 @@ Select a company when BOM selection must be restricted to one company. Odoo acce
 
 An exported file must have the same base filename as its source model. Existing attachments with the same name are updated; duplicate matching attachment names are rejected. Each file is limited to 20 MB, with a maximum of 64 MB per product. Missing files appear as skipped in the preview.
 
+Connector 1.0.8 discovers the supported attachment content field and handles both older base64 responses and newer structured binary responses. Unchanged file contents do not trigger another upload. Thumbnail differences are omitted from the review count and highlighting; the upload setting still governs thumbnails during a committed sync.
+
 ## Push products and properties
 
 1. Open [ERP Sync](pdmpublishersolidworks_erp-sync.md) and prepare the desired source rows.
@@ -111,7 +139,7 @@ An exported file must have the same base filename as its source model. Existing 
 5. Select **Push** and review the complete diff. Nothing has been written yet.
 6. Select **Commit changes** to revalidate Odoo and apply the reviewed plan, or **Cancel** to write nothing.
 
-![Odoo Push review showing proposed product and property changes before commit](/images/pdmpublisher/solidworks/odoo-push-review-20261002.png)
+![Push review showing SOLIDWORKS to Odoo comparisons and a BOM change on the assembly row](/images/pdmpublisher/solidworks/erp-push-review-20261049.png)
 
 The connector can create products and update mapped product fields. New products use Odoo defaults for unit of measure, category, and product type unless a supported mapping supplies a value. A new product receives the mapped name or the source row name. This version does not generate missing Internal References or create custom Odoo fields.
 
@@ -125,13 +153,17 @@ Every recorded Odoo read is checked again before the first write. A preview plan
 
 Select checked SOLIDWORKS rows and choose **Pull**. The connector reads the matching Odoo products and reverses the property mappings. Review the proposed local changes in **Review ERP pull**, then select **Apply to SOLIDWORKS** or **Cancel**.
 
+![Odoo Pull comparison with ERP values first and SOLIDWORKS values second](/images/pdmpublisher/solidworks/erp-pull-review-20261049.png)
+
+In **Settings > ERP Sync**, **Pull values into** defaults to **Both** custom and configuration-specific properties. Select a single destination if required. The grid displays one value; **(i)** explains which property scopes will change, including changes hidden by an already matching configuration value.
+
 Missing products, missing fields, and null values are skipped. Empty Odoo values can clear local text only when **Skip empty values** is disabled. The Item code property and built-in or calculated destinations remain protected. Pull modifies mapped SOLIDWORKS properties only; it does not pull Odoo BOMs into the SOLIDWORKS assembly structure. Save modified SOLIDWORKS documents afterward.
 
 See [Pull ERP properties into SOLIDWORKS](pdmpublishersolidworks_erp-sync.md#pull-erp-properties-into-solidworks) for the diff and validation workflow.
 
 ## Synchronize manufacturing BOMs
 
-The connector synchronizes explicitly selected assembly relationships to standard Odoo manufacturing BOMs. Preview shows component additions, removals, and quantity changes. Existing BOM-line IDs and unrelated settings are retained when a quantity changes, and an existing BOM's base quantity is preserved.
+The connector synchronizes explicitly selected assembly relationships to the selected Odoo BOM type. Preview highlights the assembly row; select its **(i)** button for component additions, removals, and quantity changes. Existing BOM-line IDs and unrelated settings are retained when a quantity changes, and an existing BOM's base quantity is preserved.
 
 Before Commit, PDMPublisher rejects ambiguous or unsafe cases, including multiple matching BOMs, duplicate lines, proposed graph cycles, unit mismatches, operations, by-products, and variant-specific lines. Writes to multi-variant products and multi-variant parent BOMs are blocked to avoid changing sibling variants through shared template fields.
 
