@@ -10,6 +10,9 @@ Diese Seite verfolgt alle Änderungen, Korrekturen, Verbesserungen und neuen Fun
 
 Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum der veröffentlichten Version darstellt. Jeder Eintrag kann Updates wie neue Funktionen, Fehlerbehebungen, Leistungsverbesserungen, Kompatibilitätsupdates, Konfigurationsänderungen und bekannte Verhaltensänderungen enthalten.
 
+> [!TIP]
+> Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
+
 <a id="current-versions"></a>
 ## Aktuelle Fassungen
 
@@ -26,9 +29,6 @@ Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegebe
 - Die Version des PDM-Add-ins und der Wartungsberechtigung wurde auf `20261018` aktualisiert. Die entsprechende Assemblyversion lautet `2026.10.18.0`.
 - Aktivierungsunterstützung für den Produktnamen **PDMPublisher (Trial)** wurde hinzugefügt; die Lizenzen für PDM-Task und SOLIDWORKS-Add-in bleiben getrennt.
 - Ausgabeformate werden in der Task-Einrichtung und bei der Formatauswahl zum Task-Start alphabetisch sortiert.
-
-> [!TIP]
-> Wenn Sie PDMPublisher (Aufgabe) verwenden, empfehlen wir Ihnen dringend, PDMDeploy zu verwenden, um PDMPublisher zu aktualisieren. Bitte siehe [hier](/src/cdpdm.html).
 
 <a id="20261023"></a>
 ## 2026.10.23

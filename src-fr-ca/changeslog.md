@@ -10,6 +10,9 @@ Cette page suit toutes les modifications, corrections, améliorations et nouvell
 
 Les versions sont identifiées par leur date de compilation, qui représente la date de construction de la version publiée. Chaque entrée peut comprendre des mises à jour telles que de nouvelles fonctionnalités, des corrections de bugs, des améliorations de performance, des mises à jour de compatibilité, des modifications de configuration et des changements de comportement connus.
 
+> [!TIP]
+> Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici](/src/cdpdm.html).
+
 <a id="current-versions"></a>
 ## Versions actuelles
 
@@ -26,9 +29,6 @@ L'extension SOLIDWORKS et la tâche PDM sont publiées indépendamment, de sorte
 - Mise à jour de la version du complément PDM et du droit de maintenance à `20261018`. La version d'assembly correspondante est `2026.10.18.0`.
 - Ajout de la prise en charge de l'activation pour le produit **PDMPublisher (Trial)**, tout en conservant des licences distinctes pour la tâche PDM et le complément SOLIDWORKS.
 - Tri alphabétique des formats de sortie dans la configuration de la tâche et dans la sélection des formats au lancement.
-
-> [!TIP]
-> Si vous utilisez PDMPublisher (task), nous vous recommandons vivement d'utiliser PDMDeploy pour mettre à jour PDMPublisher. Veuillez consulter [ici] (/src/cdpdm.html).
 
 ## 2026.09.33
 *S'applique à la **tâche PDM***
