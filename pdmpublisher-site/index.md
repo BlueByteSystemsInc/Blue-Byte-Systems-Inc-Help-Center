@@ -5,6 +5,12 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 ---
 
 <style>
+[data-layout="landing"] > header,
+[data-layout="landing"] .bbs-content-trials,
+[data-layout="landing"] > footer {
+  display: none !important;
+}
+
 .pdp-home {
   --pdp-border: #d9e3ec;
   --pdp-muted: var(--bs-secondary-color, #5f6b7a);
