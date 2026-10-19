@@ -1,3 +1,16 @@
+param(
+    [string]$SourceDirectory = "P:\BLUE BYTE SYSTEMS INC\PDMPublisher\Public\2026",
+    [string]$StableFileName = "PDMPublisher.cex",
+    [string]$PublicBaseUrl = "https://docs.bluebyte.biz/downloads",
+    [string]$Remote = "origin",
+    [string]$Branch = "main",
+    [switch]$NoPush
+)
+
+$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+
+function Invoke-DocsPostBuild {
 # Safety net: ensure the custom CSS overrides land in the build output
 # (some docfx versions do not merge extra template folders reliably).
 Copy-Item -Path "templates\bluebyte\public\main.css" -Destination "docs\public\main.css" -Force
@@ -208,4 +221,144 @@ if (Test-Path -LiteralPath $sitemapPath) {
     $writer = [System.Xml.XmlWriter]::Create((Resolve-Path $sitemapPath).Path, $writerSettings)
     try { $sitemap.Save($writer) } finally { $writer.Dispose() }
     Write-Host "Removed $removedFromSitemap redirected pages from docs/sitemap.xml."
+}
+}
+
+function Invoke-Git {
+    param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Arguments)
+
+    $previousErrorAction = $ErrorActionPreference
+    try {
+        # Git writes normal progress to stderr on Windows.
+        $ErrorActionPreference = "Continue"
+        $output = & git -C $workspaceRoot @Arguments 2>&1
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorAction
+    }
+
+    if ($exitCode -ne 0) {
+        throw "git $($Arguments -join ' ') failed:`n$($output -join [Environment]::NewLine)"
+    }
+
+    return @($output)
+}
+
+$workspaceRoot = [IO.Path]::GetFullPath($PSScriptRoot).TrimEnd([IO.Path]::DirectorySeparatorChar)
+$sourceRoot = [IO.Path]::GetFullPath($SourceDirectory).TrimEnd([IO.Path]::DirectorySeparatorChar)
+$sourceDestination = Join-Path $workspaceRoot "downloads\$StableFileName"
+$siteDestination = Join-Path $workspaceRoot "docs\downloads\$StableFileName"
+$sourceMetadata = Join-Path $workspaceRoot "downloads\PDMPublisher.latest.json"
+$siteMetadata = Join-Path $workspaceRoot "docs\downloads\PDMPublisher.latest.json"
+$publicUrl = $PublicBaseUrl.TrimEnd('/') + "/" + $StableFileName
+
+if (-not (Test-Path -LiteralPath $sourceRoot -PathType Container)) {
+    throw "The PDMPublisher release folder was not found: $sourceRoot"
+}
+
+if (-not (Test-Path -LiteralPath (Join-Path $workspaceRoot ".git") -PathType Container)) {
+    throw "This script must be run from the documentation repository."
+}
+
+$status = @(Invoke-Git status --porcelain)
+if ($status.Count -gt 0) {
+    throw "The documentation worktree is not clean. Commit or stash existing changes before building.`n$($status -join [Environment]::NewLine)"
+}
+
+$candidates = foreach ($file in Get-ChildItem -LiteralPath $sourceRoot -File -Filter "PDMPublisherV*.cex") {
+    if ($file.BaseName -match '^PDMPublisherV(?<Version>\d{8})$') {
+        [pscustomobject]@{
+            File = $file
+            Version = [Int64]$Matches.Version
+            VersionText = $Matches.Version
+        }
+    }
+}
+
+$latest = $candidates |
+    Sort-Object -Property @{ Expression = "Version"; Descending = $true },
+        @{ Expression = { $_.File.LastWriteTimeUtc }; Descending = $true } |
+    Select-Object -First 1
+
+if (-not $latest) {
+    throw "No release matching PDMPublisherV########.cex was found in $sourceRoot"
+}
+
+Push-Location $workspaceRoot
+try {
+    Write-Host "Building docs.bluebyte.biz..."
+    & ".\bin\docfx.exe" ".\docfx.json"
+    if ($LASTEXITCODE -ne 0) {
+        throw "The docs.bluebyte.biz Docfx build failed with exit code $LASTEXITCODE."
+    }
+
+    Invoke-DocsPostBuild
+}
+finally {
+    Pop-Location
+}
+
+$hash = (Get-FileHash -LiteralPath $latest.File.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+$existingMetadata = $null
+if (Test-Path -LiteralPath $sourceMetadata -PathType Leaf) {
+    try { $existingMetadata = Get-Content -LiteralPath $sourceMetadata -Raw | ConvertFrom-Json }
+    catch { $existingMetadata = $null }
+}
+$publishedUtc = if (
+    $existingMetadata -and
+    $existingMetadata.version -eq $latest.VersionText -and
+    $existingMetadata.sha256 -eq $hash -and
+    $existingMetadata.publishedUtc
+) {
+    $existingMetadata.publishedUtc
+}
+else {
+    [DateTime]::UtcNow.ToString("o")
+}
+
+foreach ($directory in @((Split-Path $sourceDestination), (Split-Path $siteDestination))) {
+    if (-not (Test-Path -LiteralPath $directory -PathType Container)) {
+        New-Item -ItemType Directory -Path $directory | Out-Null
+    }
+}
+
+Copy-Item -LiteralPath $latest.File.FullName -Destination $sourceDestination -Force
+Copy-Item -LiteralPath $latest.File.FullName -Destination $siteDestination -Force
+
+$metadata = [ordered]@{
+    product = "PDMPublisher"
+    version = $latest.VersionText
+    sourceFile = $latest.File.Name
+    fileName = $StableFileName
+    sizeBytes = $latest.File.Length
+    sha256 = $hash
+    publishedUtc = $publishedUtc
+    url = $publicUrl
+}
+$metadataJson = $metadata | ConvertTo-Json
+[IO.File]::WriteAllText($sourceMetadata, $metadataJson + [Environment]::NewLine, [Text.UTF8Encoding]::new($false))
+[IO.File]::WriteAllText($siteMetadata, $metadataJson + [Environment]::NewLine, [Text.UTF8Encoding]::new($false))
+
+Invoke-Git add -- docs downloads | Out-Null
+$staged = @(Invoke-Git diff --cached --name-only -- docs downloads)
+
+if ($staged.Count -gt 0) {
+    Invoke-Git commit -m "Build docs and publish PDMPublisher CEX $($latest.VersionText)" -- docs downloads | Write-Host
+}
+else {
+    Write-Host "Documentation and PDMPublisher $($latest.VersionText) are already current."
+}
+
+if (-not $NoPush) {
+    Invoke-Git push $Remote "HEAD:$Branch" | Write-Host
+}
+
+Write-Host "Docs build completed successfully."
+Write-Host "CEX source: $($latest.File.FullName)"
+Write-Host "CEX version: $($latest.VersionText)"
+Write-Host "CEX SHA-256: $hash"
+Write-Host "Static URL: $publicUrl"
+if ($NoPush) {
+    Write-Host "Push skipped because -NoPush was specified."
 }

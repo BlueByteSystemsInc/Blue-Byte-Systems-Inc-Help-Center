@@ -4,7 +4,6 @@ param(
     [int]$Port = 21,
     [string]$RemotePath = "/help",
     [string]$TlsHostCertificateFingerprint = "f2:63:74:a9:d1:82:c2:30:f3:0e:d0:57:71:6a:b9:29:da:7d:76:f3:44:cc:bc:02:6c:e2:9d:4c:01:0d:b1:d0",
-    [switch]$SkipBuild,
     [switch]$Preview,
     [switch]$KeepRemoteFiles
 )
@@ -51,19 +50,12 @@ if ([string]::IsNullOrWhiteSpace($username) -or [string]::IsNullOrWhiteSpace($pa
     throw "The FTP credential file contains an empty username or password."
 }
 
-if (-not $SkipBuild) {
-    & (Join-Path $workspaceRoot "build-pdmpublisher.ps1")
-    if ($LASTEXITCODE -ne 0) {
-        throw "The PDMPublisher documentation build failed. Deployment was not started."
-    }
-}
-
 if (-not (Test-Path -LiteralPath (Join-Path $localPath "index.html") -PathType Leaf)) {
-    throw "The local deployment folder does not contain index.html: $localPath"
+    throw "The website has not been built. Run .\build-website.ps1 first. Missing: $localPath\index.html"
 }
 
 if (-not (Test-Path -LiteralPath (Join-Path $localPath "sitemap.xml") -PathType Leaf)) {
-    throw "The local deployment folder does not contain sitemap.xml: $localPath"
+    throw "The website build is incomplete. Run .\build-website.ps1 first. Missing: $localPath\sitemap.xml"
 }
 
 $winScpCandidates = @(

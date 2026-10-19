@@ -13,7 +13,32 @@
         "exclude": [
           "docs/**",
           "pdmpublisher-site/**",
-          "pdmpublisher.com/**"
+          "pdmpublisher-site-*/**",
+          "pdmpublisher.com/**",
+          "src-fr-ca/**",
+          "src-de-de/**",
+          "src-pt-br/**",
+          "src/introduction.md",
+          "src/pdmpublisher*.md",
+          "src/propertiespagepdmpublisher.md",
+          "src/licensespdmpublisher.md",
+          "src/options.md",
+          "src/annotations.md",
+          "src/task-integrations.md",
+          "src/conditions.md",
+          "src/conditions_solidworks.md",
+          "src/scheduleditems.md",
+          "src/changeslog.md",
+          "src/eula.md",
+          "src/installingpdmaddins.md",
+          "src/offlineactivator.md",
+          "src/cdpdm.md",
+          "src/cdpdmchangeslog.md",
+          "src/updateaddinswithcdpdm.md",
+          "src/pdmqa.md",
+          "src/pdmpublisher-options/**",
+          "src/pdmpublisher-annotations/**",
+          "src/pdmpublisher-conditions/**"
         ]
       }
     ],
@@ -23,6 +48,9 @@
           "images/**",
           "pdmdeploy/**",
           "downloads/**"
+        ],
+        "exclude": [
+          "images/pdmpublisher/**"
         ]
       }
     ],

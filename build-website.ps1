@@ -1,7 +1,13 @@
+param()
+
+$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+
+function Invoke-WebsitePostBuild {
 param(
-    [string]$OutputPath = "pdmpublisher.com\help",
-    [string]$SiteBaseUrl = "https://pdmpublisher.com/help",
-    [string]$Language = "en-CA"
+    [string]$OutputPath,
+    [string]$SiteBaseUrl,
+    [string]$Language
 )
 
 $siteBaseUrl = $SiteBaseUrl.TrimEnd('/')
@@ -279,3 +285,65 @@ Sitemap: https://pdmpublisher.com/help/sitemap.xml
 
 Write-Host "Processed $($htmlFiles.Count) HTML files for $siteBaseUrl/."
 Write-Host "FTP deployment note written to $deploymentNotePath."
+}
+
+$workspaceRoot = [IO.Path]::GetFullPath($PSScriptRoot).TrimEnd([IO.Path]::DirectorySeparatorChar)
+$outputRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "pdmpublisher.com"))
+$expectedPrefix = $workspaceRoot + [IO.Path]::DirectorySeparatorChar
+
+if (-not $outputRoot.StartsWith($expectedPrefix, [StringComparison]::OrdinalIgnoreCase)) {
+    throw "Refusing to clean an output path outside the workspace: $outputRoot"
+}
+
+if (Test-Path -LiteralPath $outputRoot) {
+    Remove-Item -LiteralPath $outputRoot -Recurse -Force
+}
+
+Push-Location $workspaceRoot
+try {
+    $builds = @(
+        @{
+            Config = ".\docfx.pdmpublisher.json"
+            Output = "pdmpublisher.com\help"
+            BaseUrl = "https://pdmpublisher.com/help"
+            Language = "en-CA"
+        },
+        @{
+            Config = ".\docfx.pdmpublisher.fr-ca.json"
+            Output = "pdmpublisher.com\help\fr-ca"
+            BaseUrl = "https://pdmpublisher.com/help/fr-ca"
+            Language = "fr-CA"
+        },
+        @{
+            Config = ".\docfx.pdmpublisher.de-de.json"
+            Output = "pdmpublisher.com\help\de-de"
+            BaseUrl = "https://pdmpublisher.com/help/de-de"
+            Language = "de-DE"
+        },
+        @{
+            Config = ".\docfx.pdmpublisher.pt-br.json"
+            Output = "pdmpublisher.com\help\pt-br"
+            BaseUrl = "https://pdmpublisher.com/help/pt-br"
+            Language = "pt-BR"
+        }
+    )
+
+    foreach ($build in $builds) {
+        Write-Host "Building $($build.Language) PDMPublisher Help..."
+        & ".\bin\docfx.exe" $build.Config
+        if ($LASTEXITCODE -ne 0) {
+            throw "Docfx failed for $($build.Language) with exit code $LASTEXITCODE."
+        }
+
+        Invoke-WebsitePostBuild `
+            -OutputPath $build.Output `
+            -SiteBaseUrl $build.BaseUrl `
+            -Language $build.Language
+    }
+}
+finally {
+    Pop-Location
+}
+
+Write-Host "PDMPublisher website build completed successfully."
+Write-Host "Output: $outputRoot\help"
