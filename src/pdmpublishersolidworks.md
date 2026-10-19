@@ -14,15 +14,6 @@ PDMPublisher for SOLIDWORKS is an interactive SOLIDWORKS add-in for publishing d
 
 See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md) for a side-by-side comparison and links to the settings shared by both products.
 
-## Release Notes
-
-### 2026.10.46 — Cell selection
-
-- Fixed Ctrl-click multi-selection in [Property Doctor](pdmpublishersolidworks_property-doctor.md#select-multiple-cells) and [Clone Tree](pdmpublishersolidworks_smart-pack.md#select-multiple-cells), also referred to as Copy Tree. Clicking another cell while holding Ctrl now toggles its selection without opening its editor.
-- Escape clears the grid's selected cells even when no fill drag is active.
-
-[Download the 2026.10.46 installer](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.46/pdmpublisher.msi).
-
 ## Current Interface
 
 PDMPublisher commands are located on the **PDMPublisher** tab in the SOLIDWORKS CommandManager and under **Tools > PDMPublisher**. The task pane is now a documentation browser and no longer contains the publishing controls.
@@ -240,7 +231,7 @@ PDMPublisher for SOLIDWORKS can run as the Community Edition without a paid or t
 
 ## Updates and About
 
-[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information.
+[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. See the [PDMPublisher Change Log](changeslog.md) for release notes. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information.
 
 ![Support and Updates settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Support_Updates_Default_Light_100.png)
 
