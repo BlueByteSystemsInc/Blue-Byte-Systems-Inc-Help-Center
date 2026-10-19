@@ -5,6 +5,10 @@ description: Official documentation and support resources for Blue Byte Systems 
 ---
 
 <style>
+body[data-layout="landing"] > header {
+  display: none !important;
+}
+
 .bbs-page {
   --bbs-surface: var(--bs-body-bg, #fff);
   --bbs-surface-soft: #f4f9ff;
@@ -95,8 +99,11 @@ description: Official documentation and support resources for Blue Byte Systems 
 }
 
 .bbs-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 20px 18px;
+  padding: 26px 22px;
   border: 1px solid var(--bbs-border);
   border-radius: 8px;
   background: var(--bbs-surface);
@@ -114,13 +121,31 @@ description: Official documentation and support resources for Blue Byte Systems 
 .bbs-product p {
   font-size: 14px;
   line-height: 1.55;
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   color: var(--bbs-text-muted);
 }
 
 .bbs-product a {
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 42px;
+  margin-top: auto;
+  padding: 9px 16px;
+  border: 1px solid #1f7ed0;
+  border-radius: 6px;
+  background: #1f7ed0;
+  color: #fff !important;
+  font-weight: 600;
   text-decoration: none !important;
+}
+
+.bbs-product a:hover,
+.bbs-product a:focus {
+  border-color: #1769ad;
+  background: #1769ad;
+  color: #fff !important;
 }
 
 .bbs-support {
@@ -200,25 +225,25 @@ description: Official documentation and support resources for Blue Byte Systems 
 <div class="bbs-product">
 <h2>PDMPublisher</h2>
 <p>Automated publishing and export for SOLIDWORKS PDM.</p>
-<a href="https://pdmpublisher.com/help/">Open PDMPublisher Help &rarr;</a>
+<a href="https://pdmpublisher.com/help/">PDMPublisher documentation &rarr;</a>
 </div>
 
 <div class="bbs-product">
 <h2>PDM2Excel</h2>
 <p>Export vault data, variables, and BOM information to Excel or CSV.</p>
-<a href="src/pdm2excel.md">Open docs &rarr;</a>
+<a href="src/pdm2excel.md">PDM2Excel documentation &rarr;</a>
 </div>
 
 <div class="bbs-product">
 <h2>PDMDeploy</h2>
 <p>Install and update Blue Byte Systems PDM add-ins using an activation code.</p>
-<a href="https://pdmpublisher.com/help/src/cdpdm.html">Open docs &rarr;</a>
+<a href="https://pdmpublisher.com/help/src/cdpdm.html">PDMDeploy documentation &rarr;</a>
 </div>
 
 <div class="bbs-product">
 <h2>PDMShell</h2>
 <p>Command-line automation for SOLIDWORKS PDM data management.</p>
-<a href="https://pdmshell.com">Open PDMShell &rarr;</a>
+<a href="https://pdmshell.com">Open PDMShell website &rarr;</a>
 </div>
 </section>
 
