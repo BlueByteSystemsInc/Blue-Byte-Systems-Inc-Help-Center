@@ -20,9 +20,8 @@ As versões são identificadas pela sua data de compilação, que representa a d
 
 A tarefa SOLIDWORKS suplemento e PDM são liberadas de forma independente, então seus números de versão atuais podem diferir.
 
-## 2026.10.18 — Tarefa PDM
-
-Lançada em 18 de outubro de 2026.
+## 2026.10.18
+*Aplica-se à **tarefa PDM***
 
 - Atualização da versão do suplemento PDM e do direito de manutenção para `20261018`. A versão de assembly correspondente é `2026.10.18.0`.
 - Adição de suporte à ativação para o produto **PDMPublisher (Trial)**, mantendo separadas as licenças da tarefa PDM e do suplemento SOLIDWORKS.

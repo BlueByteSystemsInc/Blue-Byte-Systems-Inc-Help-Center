@@ -20,9 +20,8 @@ Versionen werden durch ihr Compilierungsdatum identifiziert, das das Build-Datum
 
 Das SOLIDWORKS-Add-in und die PDM-Task werden unabhängig voneinander freigegeben, sodass ihre aktuellen Versionsnummern abweichen können.
 
-## 2026.10.18 — PDM-Task
-
-Veröffentlicht am 18. Oktober 2026.
+## 2026.10.18
+*Gilt für die **PDM-Task***
 
 - Die Version des PDM-Add-ins und der Wartungsberechtigung wurde auf `20261018` aktualisiert. Die entsprechende Assemblyversion lautet `2026.10.18.0`.
 - Aktivierungsunterstützung für den Produktnamen **PDMPublisher (Trial)** wurde hinzugefügt; die Lizenzen für PDM-Task und SOLIDWORKS-Add-in bleiben getrennt.

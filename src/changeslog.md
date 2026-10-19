@@ -31,9 +31,8 @@ The SOLIDWORKS add-in and PDM task are released independently, so their current 
 - Trial product names are recognized for the SOLIDWORKS edition.
 - Updated the [Odoo connector](pdmpublishersolidworks_odoo-connector.md).
 
-## 2026.10.18 — PDM Task
-
-Released October 18, 2026.
+## 2026.10.18
+*Applies to the **PDM Task***
 
 - Updated the PDM add-in and maintenance entitlement version to `20261018`. The corresponding assembly version is `2026.10.18.0`.
 - Added activation support for the **PDMPublisher (Trial)** product name while keeping PDM Task and SOLIDWORKS add-in licenses separate.
