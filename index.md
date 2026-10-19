@@ -93,7 +93,7 @@ body[data-layout="landing"] > header {
 
 .bbs-products {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   margin: 0 auto 34px;
 }
@@ -192,6 +192,12 @@ body[data-layout="landing"] > header {
   margin: 8px auto 0;
 }
 
+@media (max-width: 900px) {
+  .bbs-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 680px) {
   .bbs-page {
     padding: 0 16px 44px;
@@ -226,12 +232,6 @@ body[data-layout="landing"] > header {
 <h2>PDMPublisher</h2>
 <p>Automated publishing and export for SOLIDWORKS PDM.</p>
 <a href="https://pdmpublisher.com/help/">PDMPublisher documentation &rarr;</a>
-</div>
-
-<div class="bbs-product">
-<h2>PDM2Excel</h2>
-<p>Export vault data, variables, and BOM information to Excel or CSV.</p>
-<a href="src/pdm2excel.md">PDM2Excel documentation &rarr;</a>
 </div>
 
 <div class="bbs-product">
