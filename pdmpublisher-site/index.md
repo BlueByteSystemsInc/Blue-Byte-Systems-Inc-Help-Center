@@ -7,90 +7,39 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 <style>
 .pdp-home {
   --pdp-border: #d9e3ec;
-  --pdp-soft: #f3f8fc;
   --pdp-muted: var(--bs-secondary-color, #5f6b7a);
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 24px 56px;
+  padding: 56px 24px;
 }
 
 [data-bs-theme="dark"] .pdp-home {
   --pdp-border: #344454;
-  --pdp-soft: #172a38;
   --pdp-muted: #b8c4d0;
-}
-
-.pdp-hero {
-  padding: 42px 0 34px;
-  text-align: center;
-}
-
-.pdp-hero-logo {
-  display: block;
-  width: min(300px, 82%);
-  height: auto;
-  margin: 0 auto 22px;
-}
-
-.pdp-hero h1 {
-  margin: 0 0 10px;
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: 650;
-}
-
-.pdp-hero p {
-  max-width: 650px;
-  margin: 0 auto;
-  color: var(--pdp-muted);
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.pdp-quick-links {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 18px;
-  flex-wrap: wrap;
-}
-
-.pdp-quick-links a {
-  color: var(--bs-link-color, #0869b5);
-  text-decoration: none !important;
-  font-weight: 500;
-}
-
-.pdp-quick-links .pdp-primary-link {
-  padding: 9px 16px;
-  border-radius: 6px;
-  background: #1f7ed0;
-  color: #fff;
-}
-
-.pdp-quick-links a:hover,
-.pdp-quick-links a:focus {
-  text-decoration: underline !important;
-}
-
-.pdp-section-title {
-  margin: 0 0 14px;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 .pdp-docs {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  margin-bottom: 30px;
 }
 
 .pdp-doc {
+  display: block;
   padding: 18px;
   border: 1px solid var(--pdp-border);
   border-radius: 8px;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.pdp-doc:hover,
+.pdp-doc:focus-visible {
+  border-color: var(--bs-link-color, #0869b5);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 10%);
+  transform: translateY(-1px);
 }
 
 .pdp-doc h2 {
@@ -102,141 +51,38 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 }
 
 .pdp-doc p {
-  min-height: 66px;
-  margin: 0 0 12px;
-  color: var(--pdp-muted);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.pdp-doc a {
-  text-decoration: none !important;
-  font-weight: 500;
-}
-
-.pdp-connectors {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 30px;
-}
-
-.pdp-connector {
-  padding: 18px;
-  border: 1px solid var(--pdp-border);
-  border-radius: 8px;
-  background: var(--pdp-soft);
-}
-
-.pdp-connector h2 {
-  margin: 0 0 7px;
-  padding: 0 !important;
-  border: 0 !important;
-  font-size: 16px;
-}
-
-.pdp-connector p {
-  margin: 0 0 12px;
-  color: var(--pdp-muted);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
-.pdp-support {
-  padding: 18px 20px;
-  border: 1px solid var(--pdp-border);
-  border-left: 3px solid #2f8fd4;
-  border-radius: 6px;
-  background: var(--pdp-soft);
-}
-
-.pdp-support h2 {
-  margin: 0 0 6px;
-  padding: 0 !important;
-  border: 0 !important;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.pdp-support p {
   margin: 0;
   color: var(--pdp-muted);
+  font-size: 14px;
   line-height: 1.55;
 }
 
 @media (max-width: 760px) {
   .pdp-home {
-    padding: 0 16px 42px;
+    padding: 32px 16px;
   }
 
-  .pdp-hero h1 {
-    font-size: 28px;
-  }
-
-  .pdp-docs,
-  .pdp-connectors {
+  .pdp-docs {
     grid-template-columns: 1fr;
-  }
-
-  .pdp-doc p {
-    min-height: 0;
   }
 }
 </style>
 
 <div class="pdp-home">
-
-<section class="pdp-hero">
-<img class="pdp-hero-logo" src="../images/large_logo.png" alt="Blue Byte Systems Inc."/>
-<h1>PDMPublisher Help Center</h1>
-<p>Get started with PDMPublisher for SOLIDWORKS, then explore PDM Task automation, ERP connectors, and deployment.</p>
-<div class="pdp-quick-links">
-<a class="pdp-primary-link" href="../src/pdmpublishersolidworks.md">Get started with the SOLIDWORKS Add-in</a>
-<a href="../src/pdmpublishertrial.md">Get a 7-day PDM Task trial</a>
-</div>
-</section>
-
-<h2 class="pdp-section-title">Documentation</h2>
-
 <section class="pdp-docs">
-<div class="pdp-doc">
-<h2>PDMPublisher for PDM Professional</h2>
-<p>Configure automated exports, filenames, conditions, annotations, scheduled items, and activity logs.</p>
-<a href="../src/pdmpublisher.md">Open documentation &rarr;</a>
-</div>
-
-<div class="pdp-doc">
+<a class="pdp-doc" href="../src/pdmpublishersolidworks.md">
 <h2>PDMPublisher for SOLIDWORKS</h2>
 <p>Publish from SOLIDWORKS, create native copies, manage properties, build release packages, and share reusable settings.</p>
-<a href="../src/pdmpublishersolidworks.md">Open documentation &rarr;</a>
-</div>
+</a>
 
-<div class="pdp-doc">
+<a class="pdp-doc" href="../src/pdmpublisher.md">
+<h2>PDMPublisher PDM Task</h2>
+<p>Configure automated exports, filenames, conditions, annotations, scheduled items, and activity logs.</p>
+</a>
+
+<a class="pdp-doc" href="../src/cdpdm.md">
 <h2>PDMDeploy</h2>
 <p>Install and update PDMPublisher in SOLIDWORKS PDM using the public or private activation code.</p>
-<a href="../src/cdpdm.md">Open deployment guide &rarr;</a>
-</div>
+</a>
 </section>
-
-<h2 class="pdp-section-title">Connectors</h2>
-
-<section class="pdp-connectors">
-<div class="pdp-connector">
-<h2>PDMPublisher for SOLIDWORKS &rarr; ERPNext</h2>
-<p>Configure reviewed product, property, attachment, and BOM synchronization with ERPNext.</p>
-<a href="../src/pdmpublishersolidworks_erpnext-connector.md">Set up ERPNext &rarr;</a>
-</div>
-
-<div class="pdp-connector">
-<h2>PDMPublisher for SOLIDWORKS &rarr; Odoo</h2>
-<p>Connect Odoo, map SOLIDWORKS properties, and review product and manufacturing BOM changes before synchronization.</p>
-<a href="../src/pdmpublishersolidworks_odoo-connector.md">Set up Odoo &rarr;</a>
-</div>
-</section>
-
-<section class="pdp-support">
-<h2>PDMPublisher support</h2>
-<p>Email <a href="mailto:support@bluebytesystemsinc.zohodesk.com">support@bluebytesystemsinc.zohodesk.com</a> with the task log, screenshots, and a description of the issue.</p>
-</section>
-
 </div>
