@@ -129,8 +129,19 @@ Starting with task **2026.10.23** (`20261023`), the reference check uses the typ
 
 Skipping an embedded entry does not delete it from the parent document. Names such as `Sheet<1>` or `Cut-List-Item1` do not determine whether it is skipped; PDM's reference type does.
 
+### References that cannot be cached
+
+Starting with task **2026.10.24** (`20261024`), a referenced file that cannot be cached or whose local version cannot be verified is reported as **Omitted**. This includes a Released version that PDM cannot retrieve from cold storage. Publishing continues with the remaining components.
+
+The omitted component is suppressed in the temporary publishing copy and excluded from separate exports. Its exclusive subassembly branch is omitted too; a shared component remains eligible when another retained branch references it. Retained BOM quantities are recalculated. The report records the file, selected Released version, and failure reason.
+
+An explicitly selected input document must still cache successfully. Failure to cache a main input, inspect reference history, or safely prepare the publishing copy can still stop the task. The original vault documents are not modified to suppress omitted components.
+
 ### Troubleshooting reference checks
 
 A message such as **Cannot inspect a child reference for released-only publishing** does not mean that the named parent file is unreleased. Read the child details in the task log: name, referenced-as value, found path, file/folder IDs, referenced version, and PDM file type. The log also identifies the parent and the selected Released version.
 
 When requesting support, include this complete diagnostic and the task version from the beginning of the log. Versions before `20261023` used different handling for embedded entries; update the task add-in and rerun before comparing results.
+The task uses the vault's error lookup to translate HRESULT values into readable PDM messages and keeps the hexadecimal code for support. Error messages show only the source-code filename and line number, such as `ReleasedVersionPlan.cs:297`, instead of a stack trace or full source path. Source locations require the matching `PDMPublisher.pdb` from the deployment package; if symbols are unavailable, the error is shown without a source location.
+
+See [Task log filenames and retries](pdmpublisher-options/log-folder-vault-only.md#task-log-filenames-and-retries) for log naming and how repeated runs replace previous log contents.

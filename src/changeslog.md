@@ -18,9 +18,17 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `20261023` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `20261024` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
+
+## 2026.10.24 — PDM Task
+
+- [Cache failures for referenced files](options.md#references-that-cannot-be-cached) are reported as **Omitted** and suppressed in temporary publishing copies. Main selected inputs still must cache successfully.
+- Removed omitted files from exports and recalculated retained BOM quantities; shared dependencies remain available through retained branches.
+- HRESULT errors use the vault's readable error message. Error locations show only a source filename and line number, without full stack traces.
+- [Log filenames](pdmpublisher-options/log-folder-vault-only.md#task-log-filenames-and-retries) use affected document names and the task GUID, with invalid characters removed. Each run clears the prior log text.
+- PDM add-in version: `20261024`; assembly version: `2026.10.24.0`.
 
 ## 2026.10.23
 *Applies to the **PDM Task** — includes changes from task builds 2026.10.19–2026.10.23.*
