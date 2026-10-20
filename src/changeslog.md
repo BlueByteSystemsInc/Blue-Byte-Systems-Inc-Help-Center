@@ -1,7 +1,7 @@
-﻿---
+---
 title: PDMPublisher Change Log | Feature Updates, Enhancements & Fixes
 description: View the PDMPublisher change log with detailed feature updates, enhancements, bug fixes, and improvements across all releases.
-ms.date: 10/18/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 # PDMPublisher Changes Log
@@ -18,9 +18,18 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `20261018` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `20261023` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
+
+## 2026.10.23
+*Applies to the **PDM Task** — includes changes from task builds 2026.10.19–2026.10.23.*
+
+- Added [task input extension filters](options.md#task-input-file-types), with Part, Assembly, and Drawing checkboxes and an additional-extension dialog. An empty selection allows all file types.
+- Cancel interactive launches before queueing when no selected files match. Fixed launch cancellation being overwritten.
+- [Released-only publishing](options.md#use-latest-released-versions-only) now identifies cut-list items and virtual components by PDM reference type and skips their independent release checks and caching.
+- Reference failures identify the child reference, paths, IDs, type, and the parent's selected Released version instead of incorrectly implying that the parent is unreleased.
+- PDM add-in version: `20261023`; assembly version: `2026.10.23.0`.
 
 ## 2026.10.49
 *Applies to the **SOLIDWORKS Add-in***

@@ -1,7 +1,7 @@
 ---
 title: Creating a New Task | PDMPublisher | SOLIDWORKS PDM
 description: Create your first PDMPublisher task in SOLIDWORKS PDM Administration.
-ms.date: 10/12/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 
@@ -68,7 +68,7 @@ ms.topic: conceptual
 
    Scheduling is SOLIDWORKS PDM's own scheduling framework. It controls when the task starts.
 
-9. On **Publish**, configure the output and file-processing rules. Review the PDMPublisher setup pages listed below.
+9. On **Publish**, configure the output and file-processing rules. At the bottom, choose [task input file types](options.md#task-input-file-types), or leave the extension selection empty to allow all file types. For controlled releases, review [Use latest released versions only](options.md#use-latest-released-versions-only). Review the PDMPublisher setup pages listed below.
 
 10. On **Integrations**, optionally configure an ERP connector that runs after a successful publish.
 

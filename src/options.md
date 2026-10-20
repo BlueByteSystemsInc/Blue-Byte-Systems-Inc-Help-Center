@@ -1,7 +1,7 @@
 ---
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: Short reference for every PDMPublisher task setup option available in SOLIDWORKS PDM Professional.
-ms.date: 10/09/2026
+ms.date: 10/20/2026
 ms.topic: conceptual
 ---
 
@@ -99,3 +99,38 @@ Review these settings before saving a new task:
 - [Conditions Task Page](conditions.md)
 - [Scheduled Items Task Page](scheduleditems.md)
 - [Integrations Task Page](task-integrations.md)
+
+## Task input file types
+
+At the bottom of **Publish**, use **Run this task on these file types** to choose which input files the task processes.
+
+- Select **Part (.sldprt)**, **Assembly (.sldasm)**, and **Drawing (.slddrw)** using their checkboxes. All three are selected by default.
+- Choose **Add more extensions…** to enter additional extensions, such as `.docx` or `.xlsx`. The count appears beneath the button. Apply saves the list; Cancel keeps the previous list.
+- Leave all three checkboxes unchecked and remove all additional extensions to allow **all file types**. This removes the input filter; it does not add support for new converters.
+
+The filter applies to selected or scheduled task input files. It does not select output formats or restrict which referenced documents are exported. Input-extension choices are included when task settings are exported and imported.
+
+For an interactive launch, if no selected files match the configured extensions, the task is canceled before it enters the queue. The execution host also checks the filter when processing inputs, including scheduled items. Canceling the file-selection dialog cancels the launch.
+
+## Use latest released versions only
+
+Enable **Use latest released versions only** to select the most recent version that entered the **Released** state for each normal file reference. The state-name comparison ignores capitalization. This overrides **Work with latest version** and the BOM version selection; it does not fall back to a newer work-in-progress version.
+
+A referenced component that has never entered Released is omitted from the publishing copies and recorded in the log. If the affected document itself has no Released version, the task stops.
+
+Starting with task **2026.10.23** (`20261023`), the reference check uses the type reported by PDM:
+
+| Reference type | Handling |
+| --- | --- |
+| Normal file | Check its Released history and cache the selected version. Missing or invalid PDM file/folder IDs stop the task. |
+| Cut-list item | Skip independent release-history checks and caching; the item belongs to its parent file. |
+| Internal/virtual part or assembly | Skip independent release-history checks and caching; the component is embedded in its parent. Its branch is not processed as a separate file dependency. |
+| Unknown or unreadable type | Stop and report the reference details. |
+
+Skipping an embedded entry does not delete it from the parent document. Names such as `Sheet<1>` or `Cut-List-Item1` do not determine whether it is skipped; PDM's reference type does.
+
+### Troubleshooting reference checks
+
+A message such as **Cannot inspect a child reference for released-only publishing** does not mean that the named parent file is unreleased. Read the child details in the task log: name, referenced-as value, found path, file/folder IDs, referenced version, and PDM file type. The log also identifies the parent and the selected Released version.
+
+When requesting support, include this complete diagnostic and the task version from the beginning of the log. Versions before `20261023` used different handling for embedded entries; update the task add-in and rerun before comparing results.
