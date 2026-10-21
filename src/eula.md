@@ -1,13 +1,13 @@
-﻿---
+---
 title: End User License Agreement (EULA)
-description: Review the End User License Agreement for Blue Byte Systems software products.
-ms.date: 06/19/2026
+description: Review the End User License Agreement for PDMPublisher for SOLIDWORKS PDM and PDMPublisher for SOLIDWORKS.
+ms.date: 10/21/2026
 ms.topic: legal
 ---
 
 # End User License Agreement (EULA)
 
-This End User License Agreement ("Agreement") is a legal agreement between you ("User") and Blue Byte Systems Inc. ("Company") for the use of the software products **PDMPublisher**, **PDMPublisher (SOLIDWORKS)**, **PDM2Excel**, and **PDMReminder** ("Software"). By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement.
+This End User License Agreement ("Agreement") is a legal agreement between you ("User") and Blue Byte Systems Inc. ("Company") for the use of the software products **PDMPublisher for SOLIDWORKS PDM** and **PDMPublisher for SOLIDWORKS** ("Software"). By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this Agreement.
 
 ## 1. License Grant
 The Company grants you a non-exclusive, non-transferable license to use the Software in accordance with the terms of this Agreement. This license is for personal or organizational use only and does not include the right to distribute, modify, or reverse-engineer the Software.
@@ -18,12 +18,9 @@ You may not:
 - Modify, adapt, or create derivative works of the Software.
 - Reverse-engineer, decompile, or disassemble the Software, except as permitted by applicable law.
 
-## 3. Data Collection
-The Company may collect certain metadata about your usage of the Software to enhance and improve its functionality. This metadata is limited to:
-- The installed version of the Software.
-- Basic usage statistics.
+## 3. Optional Data Collection for the SOLIDWORKS Add-in
 
-If you enable cloud/server logging, the Software will log data to the Company's servers located in the Western United States (hosted on Microsoft Azure). You may request access to your logged data at any time by contacting the Company.
+Data collection for **PDMPublisher for SOLIDWORKS** is optional and is not a condition of installation. You may install and use the add-in without enabling optional usage-data collection or cloud/server logging. Accepting this Agreement does not require you to enable those features.
 
 ## 4. Ownership
 The Software is the intellectual property of the Company and is protected by copyright laws and international treaties. This Agreement does not grant you ownership of the Software, only a license to use it.

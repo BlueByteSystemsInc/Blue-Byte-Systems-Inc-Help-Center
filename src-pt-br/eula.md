@@ -1,13 +1,13 @@
 ---
 title: "Contrato de licença de usuário final (EULA)"
-description: "Reveja o Contrato de Licença do Usuário Final para produtos de software Blue Byte Systems."
-ms.date: 06/19/2026
+description: Consulte o contrato de licença do PDMPublisher para SOLIDWORKS PDM e do PDMPublisher para SOLIDWORKS.
+ms.date: 10/21/2026
 ms.topic: legal
 ---
 
 # Contrato de licença de usuário final (EULA)
 
-Este Contrato de Licença do Usuário Final ("Acordo") é um acordo legal entre você ("Usuário") e Blue Byte Systems Inc. ("Empresa") para o uso dos produtos de software **PDMPublisher**, **PDMPublisher (SOLIDWORKS)**, **PDM2Excel** e **PDMReminder** ("Software"). Ao instalar, copiar ou utilizar o Software, você concorda em ficar vinculado aos termos deste Contrato.
+Este Contrato de Licença do Usuário Final ("Acordo") é um acordo legal entre você ("Usuário") e Blue Byte Systems Inc. ("Empresa") para o uso dos produtos de software **PDMPublisher para SOLIDWORKS PDM** e **PDMPublisher para SOLIDWORKS** ("Software"). Ao instalar, copiar ou utilizar o Software, você concorda em ficar vinculado aos termos deste Contrato.
 
 <a id="1-license-grant"></a>
 ## 1. Licença Grant
@@ -21,12 +21,9 @@ Não pode:
 - Inverter, descompilar ou desmontar o Software, exceto conforme permitido pela lei aplicável.
 
 <a id="3-data-collection"></a>
-## 3. Coleta de dados
-A Empresa pode coletar determinados metadados sobre seu uso do Software para melhorar e melhorar sua funcionalidade. Estes metadados são limitados a:
-- A versão instalada do Software.
-- Estatísticas básicas de utilização.
+## 3. Coleta opcional de dados no suplemento SOLIDWORKS
 
-Se você habilitar o registro de nuvem/servidor, o Software registrará os dados nos servidores da Companhia localizados nos Estados Unidos ocidentais (hospedados no Microsoft Azure). Você pode solicitar acesso aos seus dados registrados a qualquer momento contatando a Empresa.
+A coleta de dados no **PDMPublisher para SOLIDWORKS** é opcional e não é uma condição para a instalação. Você pode instalar e usar o suplemento sem ativar a coleta opcional de dados de uso ou o registro em nuvem/servidor. A aceitação deste Contrato não exige a ativação desses recursos.
 
 <a id="4-ownership"></a>
 ## 4. Propriedade

@@ -1,13 +1,13 @@
 ---
 title: "Endbenutzer-Lizenzvereinbarung (EULA)"
-description: "Überprüfen Sie die Endbenutzer-Lizenzvereinbarung für Blue Byte Systems Softwareprodukte."
-ms.date: 06/19/2026
+description: Lesen Sie die Lizenzvereinbarung für PDMPublisher für SOLIDWORKS PDM und PDMPublisher für SOLIDWORKS.
+ms.date: 10/21/2026
 ms.topic: legal
 ---
 
 # Endbenutzer-Lizenzvereinbarung (EULA)
 
-Diese Endbenutzer-Lizenzvereinbarung ("Vereinbarung") ist eine rechtliche Vereinbarung zwischen Ihnen ("Benutzer") und Blue Byte Systems Inc. ("Unternehmen") über die Nutzung der Softwareprodukte **PDMPublisher**, **PDMPublisher (SOLIDWORKS)**, **PDM2Excel** und **PDMReminder** ("Software"). Durch die Installation, das Kopieren oder anderweitige Nutzung der Software erklären Sie sich damit einverstanden, an die Bedingungen dieser Vereinbarung gebunden zu sein.
+Diese Endbenutzer-Lizenzvereinbarung ("Vereinbarung") ist eine rechtliche Vereinbarung zwischen Ihnen ("Benutzer") und Blue Byte Systems Inc. ("Unternehmen") über die Nutzung der Softwareprodukte **PDMPublisher für SOLIDWORKS PDM** und **PDMPublisher für SOLIDWORKS** ("Software"). Durch die Installation, das Kopieren oder anderweitige Nutzung der Software erklären Sie sich damit einverstanden, an die Bedingungen dieser Vereinbarung gebunden zu sein.
 
 <a id="1-license-grant"></a>
 ## 1. Lizenzerteilung
@@ -21,12 +21,9 @@ Sie dürfen nicht:
 - Reverse-Engineering, Dekompilieren oder Zerlegen der Software, es sei denn, dies ist nach geltendem Recht zulässig.
 
 <a id="3-data-collection"></a>
-## 3. Datenerhebung
-Das Unternehmen kann bestimmte Metadaten über Ihre Nutzung der Software sammeln, um ihre Funktionalität zu verbessern und zu verbessern. Diese Metadaten beschränken sich auf:
-- Die installierte Version der Software.
-- Basisnutzungsstatistiken.
+## 3. Optionale Datenerhebung beim SOLIDWORKS-Add-in
 
-Wenn Sie die Cloud-/Serverprotokollierung aktivieren, protokolliert die Software die Daten zu den Servern des Unternehmens im Westen der Vereinigten Staaten (gehostet auf Microsoft Azure). Sie können jederzeit Zugriff auf Ihre protokollierten Daten beantragen, indem Sie sich an das Unternehmen wenden.
+Die Datenerhebung bei **PDMPublisher für SOLIDWORKS** ist optional und keine Voraussetzung für die Installation. Sie können das Add-in installieren und verwenden, ohne die optionale Erfassung von Nutzungsdaten oder die Cloud-/Serverprotokollierung zu aktivieren. Die Annahme dieser Vereinbarung verpflichtet Sie nicht zur Aktivierung dieser Funktionen.
 
 <a id="4-ownership"></a>
 ## 4. Eigentum

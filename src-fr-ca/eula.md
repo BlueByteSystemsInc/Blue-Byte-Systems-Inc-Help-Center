@@ -1,13 +1,13 @@
 ---
 title: "Contrat de licence d'utilisateur final (EULA)"
-description: "Consultez le contrat de licence d'utilisateur final pour les produits logiciels Blue Byte Systems."
-ms.date: 06/19/2026
+description: Consultez le contrat de licence de PDMPublisher pour SOLIDWORKS PDM et de PDMPublisher pour SOLIDWORKS.
+ms.date: 10/21/2026
 ms.topic: legal
 ---
 
 # Contrat de licence d'utilisateur final (EULA)
 
-Ce contrat de licence d'utilisateur final ("Accord") est un accord juridique entre vous ("Utilisateur") et Blue Byte Systems Inc. ("Société") pour l'utilisation des produits logiciels **PDMPublisher**, **PDMPublisher (SOLIDWORKS)**, **PDM2Excel** et **PDMReminder** ("Logiciel"). En installant, en copiant ou en utilisant le Logiciel, vous acceptez d'être lié par les termes du présent Contrat.
+Ce contrat de licence d'utilisateur final ("Accord") est un accord juridique entre vous ("Utilisateur") et Blue Byte Systems Inc. ("Société") pour l'utilisation des produits logiciels **PDMPublisher pour SOLIDWORKS PDM** et **PDMPublisher pour SOLIDWORKS** ("Logiciel"). En installant, en copiant ou en utilisant le Logiciel, vous acceptez d'être lié par les termes du présent Contrat.
 
 <a id="1-license-grant"></a>
 ## 1. Octroi de licence
@@ -21,12 +21,9 @@ Vous ne pouvez pas:
 - Moteur inverse, décompiler ou démonter le Logiciel, sauf permis par la loi applicable.
 
 <a id="3-data-collection"></a>
-## 3. Collecte de données
-La Société peut collecter certaines métadonnées concernant votre utilisation du Logiciel pour améliorer et améliorer sa fonctionnalité. Ces métadonnées sont limitées à :
-- La version installée du logiciel.
-- Statistiques d'utilisation de base.
+## 3. Collecte facultative de données pour le complément SOLIDWORKS
 
-Si vous activez l'enregistrement cloud/serveur, le logiciel enregistrera les données sur les serveurs de la Société situés dans l'ouest des États-Unis (hôte sur Microsoft Azure). Vous pouvez à tout moment demander l'accès à vos données enregistrées en contactant la Société.
+La collecte de données pour **PDMPublisher pour SOLIDWORKS** est facultative et ne constitue pas une condition d’installation. Vous pouvez installer et utiliser le complément sans activer la collecte facultative de données d’utilisation ni la journalisation infonuagique ou sur serveur. L’acceptation du présent Contrat ne vous oblige pas à activer ces fonctions.
 
 <a id="4-ownership"></a>
 ## 4. Propriété
