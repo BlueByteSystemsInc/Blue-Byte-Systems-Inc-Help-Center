@@ -1,7 +1,7 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Install and configure the official Odoo connector for reviewed product, property, attachment, and manufacturing BOM synchronization.
-ms.date: 10/18/2026
+ms.date: 10/21/2026
 ms.topic: how-to
 ---
 
@@ -9,7 +9,7 @@ ms.topic: how-to
 
 The Odoo connector is an official Blue Byte Systems connector for Odoo 19+ and Odoo Online sites with JSON-2 external API access. It supports reviewed Push and Pull operations between checked ERP Sync rows and Odoo products.
 
-This guide covers connector **1.0.8.0** with PDMPublisher for SOLIDWORKS **2026.10.49**. The connector and SOLIDWORKS add-in are updated separately; install the add-in update for the new review layout and inline **(i)** explanations.
+This guide covers connector **1.0.13.0** with PDMPublisher for SOLIDWORKS **2026.10.52**. The connector and SOLIDWORKS add-in are updated separately; install the add-in update for the new review layout and inline **(i)** explanations.
 
 ![Official Odoo connector and configuration settings](/images/pdmpublisher/solidworks/odoo-connector-settings-20260931.png)
 
@@ -73,7 +73,7 @@ Treat the API key like a password. Do not include it in screenshots, logs, sourc
 
 | Setting | Behavior |
 | --- | --- |
-| Item code column | ERP Sync column or custom property matched exactly to the Odoo product **Internal Reference** (`default_code`). The default is `PartNumber`. Blank source codes or ambiguous matching products in Odoo stop Push preview. Repeated source codes are allowed when their mapped values are compatible. |
+| Item code column | ERP Sync column or custom property matched exactly to the Odoo product **Internal Reference** (`default_code`). The default is `PartNumber`. Blank source codes stop Push preview unless Odoo-generated references are enabled. Ambiguous matching products in Odoo always stop preview. Repeated source codes are allowed when their mapped values are compatible. |
 | Skip empty values | When enabled, blank mapped source values do not overwrite existing Odoo values, and blank values read during Pull do not clear local SOLIDWORKS properties. |
 | Property mappings | Maps a SOLIDWORKS property or ERP Sync column to a writable scalar Odoo product field. The default mapping is `Description` → `name`. |
 
@@ -181,3 +181,31 @@ Before Commit, PDMPublisher rejects ambiguous or unsafe cases, including multipl
 - [ERP Sync](pdmpublishersolidworks_erp-sync.md)
 - [Create a Custom ERP Connector](pdmpublishersolidworks_erp-connector.md)
 - [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md)
+
+## Odoo-generated references
+
+Enable **Use Odoo-generated references** to create products for source rows whose item code is blank. Set **Item code column** to a writable SOLIDWORKS custom property such as `OdooItemCode`; filename and other built-in columns cannot receive the returned reference. Configure Odoo to assign an Internal Reference when creating a Product Variant before enabling this option.
+
+The connector reads the reference returned by Odoo and writes it to the source configuration property. Save the modified SOLIDWORKS documents. Future Push and Pull operations match that reference, so do not erase it to retry an uncertain creation. Repeated occurrences of the same file/configuration share one product; different configurations can receive separate references.
+
+Creation previews validate required writable fields using mapped values and Odoo defaults. Odoo-managed product relationships and an omitted, computed invoicing policy are not required as manual mappings. Custom required fields still need a value. Odoo performs final server-side validation during creation.
+
+## Open a product in Odoo
+
+With add-in **2026.10.52** and connector **1.0.13.0**, select a product cell in the preview and choose **Open in Odoo**. The button uses the exact database record identified by the connector, not a filename search. Products not yet created have no link until creation succeeds; the result report then provides the link.
+
+![Indented Odoo preview with Open in Odoo](/images/pdmpublisher/solidworks/erp-odoo-preview-20261021.png)
+
+*Release UI shown with sample data. No ERP changes were made to capture this image.*
+
+The button opens your browser and may require you to sign in. It does not edit, push, or pull data. If you edit the product in Odoo, generate a new preview before committing and use Pull to review supported mapped values for SOLIDWORKS. Older add-ins can still synchronize with this connector but do not display the button.
+
+## Omitted rows and warnings
+
+When a missing reference cannot be written back to SOLIDWORKS, that item is omitted while eligible items continue. The warning identifies a suppressed, lightweight, not-loaded, read-only, or outdated component where its state can be determined. Unsuppress, fully resolve, open, or refresh as indicated. The add-in does not suppress components itself.
+
+An affected parent BOM update is also omitted so an incomplete component list does not replace its existing ERP BOM. The parent's item properties may still synchronize. Other connector errors, such as an invalid mapped value or a rejected server request, can still stop the run.
+
+![Odoo report with an omitted component and protected parent BOM](/images/pdmpublisher/solidworks/erp-odoo-report-20261021.png)
+
+*Sample report showing warning rows and Open in Odoo. Hover over truncated details for the complete message, or copy/save the report.*
