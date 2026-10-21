@@ -66,6 +66,28 @@ Review these settings before saving a new task:
 
 ## Drawing Sheets
 
+### Export referenced models from drawings
+
+In **Drawing processing**, enable **Export referenced models from drawings** to publish 3D files from models referenced by a drawing. The checkbox includes an explanation beneath it and is off by default.
+
+For example, run a task on `Bracket.SLDDRW` with PDF and STEP selected and flat-pattern export enabled:
+
+| Output | Source |
+|---|---|
+| PDF | The drawing |
+| STEP | The referenced part or assembly |
+| Flat-pattern DXF | A directly referenced sheet-metal part, using the existing flat-pattern settings |
+
+The task uses each model's configuration recorded in the drawing's PDM reference tree. Repeated views of the same model/configuration produce one export per drawing; distinct models and configurations are processed separately. This option does not recursively export every component inside a referenced assembly. Missing models or unspecified reference configurations are reported rather than guessed.
+
+Folder templates are evaluated against the drawing, including extension-specific locations. Filename templates are evaluated against the model. Include configuration and body placeholders where needed to prevent output filenames from overlapping. Existing body-export and flat-pattern settings apply. Selecting PDF/DXF/DWG alone does not request 3D model conversion; flat-pattern export is controlled by its separate option.
+
+With **Use latest released versions only**, references come from the selected Released drawing version, and the referenced models also undergo Released-version verification before publishing.
+
+This setting is included in the latest task source/build; an older installed task or CEX must be updated before it appears.
+
+### Sheet selection
+
 | Setting | Summary | Details |
 |---|---|---|
 | Sheets to export | Choose all drawing sheets or only sheets matching a pattern. | [Open](pdmpublisher-options/sheets-to-export.md) |
@@ -138,6 +160,8 @@ The omitted component is suppressed in the temporary publishing copy and exclude
 An explicitly selected input document must still cache successfully. Failure to cache a main input, inspect reference history, or safely prepare the publishing copy can still stop the task. The original vault documents are not modified to suppress omitted components.
 
 ### Troubleshooting reference checks
+
+**Cannot safely identify released reference** means the SOLIDWORKS dependency could not be matched uniquely to a child of the current parent. The task first checks full paths and historical PDM reference paths. For references without an extension, it can match a unique child filename without its extension. Omitted children remain available for this lookup. If both `Bracket.SLDPRT` and `Bracket.SLDASM` match, the task stops and lists the parent and candidate paths/IDs instead of guessing. A part and assembly sharing a base name are valid when the reference includes its extension.
 
 A message such as **Cannot inspect a child reference for released-only publishing** does not mean that the named parent file is unreleased. Read the child details in the task log: name, referenced-as value, found path, file/folder IDs, referenced version, and PDM file type. The log also identifies the parent and the selected Released version.
 

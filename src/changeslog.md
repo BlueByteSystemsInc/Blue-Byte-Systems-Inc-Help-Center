@@ -18,9 +18,18 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `20261024` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `20261025` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
+
+## Latest task source changes (not yet included in the published CEX)
+
+- Added [Export referenced models from drawings](options.md#export-referenced-models-from-drawings), off by default, with explanatory text beneath the checkbox. Selected 3D formats and enabled part flat-pattern exports use the drawing's referenced configurations and folder rules.
+- Released-reference matching now uses the current parent's historical children, including omitted references. Missing extensions resolve only when the child can be identified uniquely; ambiguous errors list the candidates.
+
+## 2026.10.25 — PDM Task
+
+- Applying font styles to an annotation preserves newly entered text and SQL filename placeholders. SQL query and connection settings survive saving and reopening.
 
 ## 2026.10.24 — PDM Task
 
