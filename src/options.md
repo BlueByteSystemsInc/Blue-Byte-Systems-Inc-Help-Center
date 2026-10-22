@@ -68,6 +68,10 @@ Review these settings before saving a new task:
 
 ### Export referenced models from drawings
 
+![PDM Task 20261029 drawing processing settings](/images/pdmpublisher/screenshots/task-drawing-models-20261029.png)
+
+*Current task editor rendered with sample settings.*
+
 In **Drawing processing**, enable **Export referenced models from drawings** to publish 3D files from models referenced by a drawing. The checkbox includes an explanation beneath it and is off by default.
 
 For example, run a task on `Bracket.SLDDRW` with PDF and STEP selected and flat-pattern export enabled:
@@ -78,7 +82,7 @@ For example, run a task on `Bracket.SLDDRW` with PDF and STEP selected and flat-
 | STEP | The referenced part or assembly |
 | Flat-pattern DXF | A directly referenced sheet-metal part, using the existing flat-pattern settings |
 
-The task uses each model's configuration recorded in the drawing's PDM reference tree. Repeated views of the same model/configuration produce one export per drawing; distinct models and configurations are processed separately. This option does not recursively export every component inside a referenced assembly. Missing models or unspecified reference configurations are reported rather than guessed.
+The task first reads each model's referenced configuration from SOLIDWORKS drawing views across all sheets. If no view configuration is available, it uses the PDM reference configuration; if neither provides one, it uses `@` and records that fallback in the log. Released-only runs inspect the selected Released drawing version. Repeated views of the same model/configuration produce one export per drawing; distinct models and configurations are processed separately. This option does not recursively export every component inside a referenced assembly. Missing models or unspecified reference configurations are reported rather than guessed.
 
 Folder templates are evaluated against the drawing, including extension-specific locations. Filename templates are evaluated against the model. Include configuration and body placeholders where needed to prevent output filenames from overlapping. Existing body-export and flat-pattern settings apply. Selecting PDF/DXF/DWG alone does not request 3D model conversion; flat-pattern export is controlled by its separate option.
 
@@ -136,7 +140,7 @@ For an interactive launch, if no selected files match the configured extensions,
 
 ## Use latest released versions only
 
-Enable **Use latest released versions only** to select the most recent version that entered the **Released** state for each normal file reference. The state-name comparison ignores capitalization. This overrides **Work with latest version** and the BOM version selection; it does not fall back to a newer work-in-progress version.
+Enable **Use latest released versions only** to select the most recent version that entered the **Released** state for each normal file reference. The state name must contain `Released`, ignoring capitalization. This also matches names such as `Released for Production`, `Pre-Released`, and `Unreleased`; review your workflow state names before enabling this option. This overrides **Work with latest version** and the BOM version selection; it does not fall back to a newer work-in-progress version.
 
 A referenced component that has never entered Released is omitted from the publishing copies and recorded in the log. If the affected document itself has no Released version, the task stops.
 
@@ -144,7 +148,8 @@ Starting with task **2026.10.23** (`20261023`), the reference check uses the typ
 
 | Reference type | Handling |
 | --- | --- |
-| Normal file | Check its Released history and cache the selected version. Missing or invalid PDM file/folder IDs stop the task. |
+| Part referenced by another part | Skip the child's independent Released check and caching. The parent part is the publishing unit. Assembly-to-part references still require validation. |
+| Other normal file | Check its Released history and cache the selected version. Missing or invalid PDM file/folder IDs stop the task. |
 | Cut-list item | Skip independent release-history checks and caching; the item belongs to its parent file. |
 | Internal/virtual part or assembly | Skip independent release-history checks and caching; the component is embedded in its parent. Its branch is not processed as a separate file dependency. |
 | Unknown or unreadable type | Stop and report the reference details. |

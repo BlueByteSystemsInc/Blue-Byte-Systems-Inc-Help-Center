@@ -18,11 +18,24 @@ The SOLIDWORKS add-in and PDM task use independent release sequences. A version'
 | Product | Current version |
 | --- | --- |
 | [PDMPublisher for SOLIDWORKS](pdmpublishersolidworks.md) | `2026.10.49.0` |
-| [PDMPublisher PDM Task](pdmpublisher.md) | `20261025` |
+| [PDMPublisher PDM Task](pdmpublisher.md) | `20261029` |
 
 The SOLIDWORKS add-in and PDM task are released independently, so their current version numbers may differ.
 
-## Latest task source changes (not yet included in the published CEX)
+## 2026.10.29 — PDM Task
+
+- Unified saved-settings lookup between PDM Administration and task execution. Saving also updates the legacy entry for older task hosts.
+- Added startup logging of the settings source, PDF merge setting, and individual reference export setting. Reopen and save the task after upgrading, then launch a fresh instance.
+
+## 2026.10.28 — PDM Task
+
+- Drawing model exports prefer SOLIDWORKS drawing-view configurations, then PDM configuration, then `@`.
+- Released-state matching now accepts any state name containing `Released`, ignoring case, including `Pre-Released` and `Unreleased`.
+- Part-to-part dependencies skip independent release checking and caching; assembly components remain validated.
+- Hardened task-editor resize handling during opening and closing.
+- Task Details can find logs by their instance GUID when saved links are unavailable.
+
+## Drawing model exports and reference matching
 
 - Added [Export referenced models from drawings](options.md#export-referenced-models-from-drawings), off by default, with explanatory text beneath the checkbox. Selected 3D formats and enabled part flat-pattern exports use the drawing's referenced configurations and folder rules.
 - Released-reference matching now uses the current parent's historical children, including omitted references. Missing extensions resolve only when the child can be identified uniquely; ambiguous errors list the candidates.
