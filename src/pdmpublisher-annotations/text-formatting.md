@@ -1,21 +1,10 @@
 ---
-title: Text Formatting | PDMPublisher Annotations
-description: Format annotation text before it is added to exported PDFs.
-ms.date: 08/09/2026
-ms.topic: reference
+title: Text Formatting
+ms.topic: how-to
 ---
 
 # Text Formatting
 
-Use formatting controls to change how the annotation appears on the exported PDF.
+Select a note and use the toolbar to choose its font, point size, bold, and italic styling. Notes without a saved font use Arial.
 
-![Annotation text formatting in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
-
-Common formatting includes:
-
-- Font
-- Text size
-- Bold
-- Italic
-
-Each annotation can use its own formatting. The selected annotation is highlighted so you can see which one is being edited.
+Click the color swatch to open the color picker, or type a complete hexadecimal color such as `#D9D9D9`. The selected note keeps an orange outline while displaying its chosen color. QR codes render in black and white.

@@ -1,18 +1,10 @@
 ---
-title: Add Annotation | PDMPublisher Annotations
-description: Add a new annotation box to the PDMPublisher annotations page.
-ms.date: 08/09/2026
-ms.topic: reference
+title: Add Annotation
+ms.topic: how-to
 ---
 
 # Add Annotation
 
-Use the add annotation button to create a new annotation box.
+Click **A** on the toolbar, then enter the note text. Double-click an existing note to edit it. Drag the editor edges to make more room while editing.
 
-Annotations created here are stored in the selected **PDMPublisher for SOLIDWORKS Publish profile**.
-
-![PDMPublisher for SOLIDWORKS annotation editor](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
-
-New annotations are added to the page preview and can then be edited, positioned, enabled, or changed into a watermark.
-
-Use one annotation for each separate note or watermark you want to place on the exported PDF.
+Select a note to show its properties. Click empty space to hide the sidebar. Outside text editing, **Ctrl+A** selects all notes and **Delete** removes the selected notes.

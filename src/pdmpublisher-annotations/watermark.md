@@ -1,16 +1,12 @@
 ---
-title: Watermark | PDMPublisher Annotations
-description: Turn a PDMPublisher annotation into a watermark.
-ms.date: 08/09/2026
-ms.topic: reference
+title: Watermark
+ms.topic: how-to
 ---
 
 # Watermark
 
-Enable Watermark when the annotation should appear as a watermark on the exported PDF.
+Select a note and check **Watermark** in the sidebar. The preview rotates 45 degrees; exported text is placed behind the drawing. X and Y locate the watermark’s center.
 
-![Watermark control in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
+Watermarks start gray. Use the toolbar swatch or a `#RRGGBB` value to change the color. Clearing Watermark removes the rotation and preserves the font and color.
 
-When Watermark is enabled, PDMPublisher rotates the annotation and makes it semi-transparent so it does not cover the drawing content as heavily as normal text.
-
-Use this for labels such as review copies, preliminary documents, internal use, or release status.
+**QR code** and **Watermark** are alternative renderings of the same note.

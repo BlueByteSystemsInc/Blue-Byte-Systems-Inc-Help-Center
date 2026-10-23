@@ -1,21 +1,10 @@
 ---
-title: Annotation Position | PDMPublisher Annotations
-description: Position annotations on exported PDF pages.
-ms.date: 08/09/2026
-ms.topic: reference
+title: Position
+ms.topic: how-to
 ---
 
-# Annotation Position
+# Position
 
-Annotations can be positioned manually or by X/Y values.
+Select a note to show **Position** in the sidebar. Choose percent, millimeters, or inches and enter X and Y, or drag the note in the preview. X is measured from the left and Y from the bottom. Watermark coordinates locate its center.
 
-![Annotation position controls in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
-
-You can drag the annotation to place it visually on the page.
-
-You can also enter X and Y coordinates:
-
-- X is a percentage of the sheet width.
-- Y is a percentage of the sheet height.
-
-Use coordinates when the annotation must land in the same place every time.
+Percent positions follow the output sheet size. Millimeter and inch positions retain their physical distance. QR width is always a physical size: inches with inch positioning, otherwise millimeters.

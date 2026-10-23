@@ -1,18 +1,8 @@
 ---
-title: Active | PDMPublisher Annotations
-description: Include or skip a PDMPublisher annotation without deleting it.
-ms.date: 08/09/2026
-ms.topic: reference
+title: Include in export
+ms.topic: how-to
 ---
 
-# Active
+# Include in export
 
-The Active checkbox controls whether an annotation is included in the exported PDF.
-
-In PDMPublisher for SOLIDWORKS, the state is saved in the selected Publish profile.
-
-![Active annotation control in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/ui-preview/Publish/Publish_Annotations_Default_Light_100.png)
-
-New annotations are active by default.
-
-Turn Active off when you want to keep the annotation setup but skip it during publishing.
+Select the note and use **Include in export** in the sidebar. Clear it to omit the note while keeping its text and settings for later use.

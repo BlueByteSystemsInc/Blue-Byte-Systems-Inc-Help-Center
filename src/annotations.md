@@ -1,34 +1,24 @@
 ---
-title: Annotations Task Page | PDMPublisher | SOLIDWORKS PDM
-description: Add notes, watermarks, and sheet-specific text to exported PDF documents.
-ms.date: 10/09/2026
+title: Annotations Task Page
 ms.topic: how-to
 ---
 
 # Annotations Task Page
 
-Use the Annotations task page to add text notes or watermarks to exported PDF documents.
+Open **Options > Annotations...** in the Publish task. Notes belong to the task settings and apply to its published drawings.
 
-> [!IMPORTANT]
-> This is the **PDM task** Annotations page. The annotation controls are also used by the SOLIDWORKS add-in, but PDM variables come from the vault task context. See [SOLIDWORKS Add-in Annotations](pdmpublishersolidworks_annotations.md).
+![PDM task annotation editor with selected watermark and QR preview](/images/pdmpublisher/screenshots/task-annotations.png)
 
-![Updated PDMPublisher PDM Task annotation editor](/images/pdmpublisher/screenshots/task-annotations-20261009.png)
+Select a note to show its properties sidebar. Click empty space to hide the sidebar and use the full preview area.
 
-Each annotation can have its own text, formatting, position, sheet rule, and active state.
+- Use **A** to add a note. Double-click a note to edit its text or insert a property from the dropdown. Drag the editor edges to resize the editing box.
+- Choose the font, point size, bold, italic, and text color on the toolbar. Click the color swatch or type a complete `#RRGGBB` color.
+- Set **Position** to percent, millimeters, or inches. X is measured from the left and Y from the bottom; a watermark uses its center as the anchor.
+- **Include in export** keeps or omits the note without deleting its definition. **Sheets** selects all sheets, the first sheet, or named sheets.
+- **Watermark** rotates text 45 degrees behind the drawing. It starts gray; you can change the color. Clearing Watermark keeps the text styling.
+- **QR code** renders the note as an image. Double-click to edit its text. Width is in inches when inch positioning is selected, otherwise millimeters—never percent.
+- Press **Ctrl+A** outside text editing to select every note, then **Delete** to remove them.
 
-The large workspace below the toolbar previews the annotations configured for the task. Drag an annotation to place it, drag its handles to resize it, or double-click it to edit its text. Use **X** and **Y** for an exact output position. The toolbar controls formatting, watermarks, QR codes, width, and sheet selection.
+Property placeholders are evaluated when publishing. The QR preview encodes the template text; the exported QR code encodes the evaluated value.
 
-Open the editor from **Options > Annotations...**. Changes are staged in the editor and saved when you confirm the dialog.
-
-## Annotation Settings
-
-| Setting | Summary | Details |
-|---|---|---|
-| Add Annotation | Create a new annotation box. | [Open](pdmpublisher-annotations/add-annotation.md) |
-| Annotation Text | Enter fixed text or use PDM variables. | [Open](pdmpublisher-annotations/annotation-text.md) |
-| SQL Query Placeholders | Retrieve annotation text from a SQL database using the filename, part, assembly, or drawing value. | [Open](pdmpublisher-annotations/sql-query-placeholders.md) |
-| Text Formatting | Set font, size, and text style. | [Open](pdmpublisher-annotations/text-formatting.md) |
-| Watermark | Rotate and fade an annotation for watermark-style output. | [Open](pdmpublisher-annotations/watermark.md) |
-| Active | Include or skip an annotation without deleting it. | [Open](pdmpublisher-annotations/active.md) |
-| Position | Move the annotation or set X/Y percentages. | [Open](pdmpublisher-annotations/position.md) |
-| Sheets | Choose which drawing sheets receive the annotation. | [Open](pdmpublisher-annotations/sheets.md) |
+The task preview uses an A4 sheet. PDM variables and [SQL placeholders](pdmpublisher-annotations/sql-query-placeholders.md) are evaluated in the task's file context. Confirm the editor and save the task to keep your changes.
