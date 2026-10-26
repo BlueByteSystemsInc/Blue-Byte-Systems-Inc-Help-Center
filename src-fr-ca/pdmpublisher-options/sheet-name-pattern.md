@@ -21,7 +21,7 @@ Modèle Wildcard utilisé lorsque **Sheets to export** est défini pour correspo
 - Si le modèle évalué ne correspond à aucune feuille, PDMPublisher revient à exporter toutes les feuilles.
 
 > [!WARNING]
-> Une erreur d'orthographe, une valeur de propriété manquante ou un nom de configuration inattendu peuvent ne rien faire correspondre. Dans la version `2026.08.09` et plus tard, ce résultat exporte chaque feuille de dessin et écrit un message de retour au journal.
+> Une erreur d'orthographe, une valeur de propriété manquante ou un nom de configuration inattendu peuvent ne rien faire correspondre. Ce résultat exporte chaque feuille de dessin et écrit un message de retour au journal.
 
 Utilisez `*` pour correspondre à n'importe quel texte et `?` pour correspondre à un caractère.
 

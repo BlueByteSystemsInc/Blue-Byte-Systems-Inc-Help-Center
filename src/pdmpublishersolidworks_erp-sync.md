@@ -9,7 +9,6 @@ ms.topic: conceptual
 
 ERP Sync exchanges selected SOLIDWORKS data with an ERP system through an installed connector. Push sends items, properties, files, and supported BOM relationships to ERP. Pull previews mapped ERP property values before applying approved changes to SOLIDWORKS.
 
-This guide describes PDMPublisher for SOLIDWORKS 2026.10.52. The screenshots use sample data; no synchronization is performed to capture a preview.
 
 Open **PDMPublisher > ERP Sync** to prepare a Push or Pull operation. Open **PDMPublisher > Settings > ERP Sync** to choose the connector and configure the default BOM view. Pull is available only when the selected connector supports Pull with preview.
 
@@ -203,10 +202,10 @@ Nothing is written while the diff is being reviewed. After approval, PDMPublishe
 
 To build and load your own C# integration, including Pull-with-preview support, see [Create a Custom ERP Connector](pdmpublishersolidworks_erp-connector.md).
 
-## Preview and report layout (2026.10.52)
+## Preview and report layout
 
 The review preserves the selected source hierarchy, with expandable assembly rows, component icons and source indentation. Its size, shared column widths and row height follow the parent ERP Sync window. A **Preparing preview…** indicator appears before the review grid is displayed. The report keeps source indentation and vertically centered, single-line cell text; hover over details or copy/save the report to read full messages.
 
-For Odoo, **Open in Odoo** opens the selected known product in a browser. Install connector 1.0.13.0 together with add-in 2026.10.52 for this button. It does not perform a synchronization operation. See [Odoo-generated references and warnings](pdmpublishersolidworks_odoo-connector.md#odoo-generated-references) for writeback requirements and omitted BOM behavior.
+For Odoo, **Open in Odoo** opens the selected known product in a browser. It does not perform a synchronization operation. See [Odoo-generated references and warnings](pdmpublishersolidworks_odoo-connector.md#odoo-generated-references) for writeback requirements and omitted BOM behavior.
 
 ![Odoo preview in the release UI, using sample data](/images/pdmpublisher/solidworks/erp-odoo-preview-20261021.png)

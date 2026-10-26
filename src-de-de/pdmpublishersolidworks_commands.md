@@ -10,7 +10,7 @@ ms.topic: overview
 PDMPublisher-Befehle sind über die Registerkarte **PDMPublisher** im SOLIDWORKS CommandManager und im **Tools > PDMPublisher**-Menü verfügbar. Der Aufgabenbereich ist jetzt ein Dokumentationsbrowser; Veröffentlichungs- und Dienstprogrammbefehle laufen nicht mehr innerhalb des Bereichs.
 
 ![PDMPublisher CommandManager und Hilfsaufgabenbereich in SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
-Der Screenshot zeigt den CommandManager und den Hilfe-Aufgabenbereich, die mit Version 2026.09.08 eingeführt wurden. Die folgenden Tabellen beschreiben die aktuelle Version einschließlich ERP Sync und BOM Manager. Befehle werden für das aktive SOLIDWORKS-Dokument ausgeführt. Der Hilfe-Aufgabenbereich auf der rechten Seite enthält Dokumentationslinks und führt keine Befehle aus.
+Befehle werden für das aktive SOLIDWORKS-Dokument ausgeführt. Der Hilfe-Aufgabenbereich auf der rechten Seite enthält Dokumentationslinks und führt keine Befehle aus.
 
 | Gruppe | Kommando | Zweck |
 | --- | --- | --- |

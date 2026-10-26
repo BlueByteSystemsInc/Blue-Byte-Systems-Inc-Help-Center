@@ -16,7 +16,7 @@ ms.topic: how-to
 
 Die Auswahl steuert auch die unterstützte regionale Formatierung, die mit dieser Sprache verbunden ist, wie **English (Canada)**.
 
-Die in Version `2026.09.25` verfügbaren Oberflächensprachen sind Englisch (Kanada), Französisch (Kanada), Deutsch (Deutschland), Niederländisch (Niederlande) und Portugiesisch (Portugal). Im Auswahlfeld mit **Coming soon** gekennzeichnete Sprachen können noch nicht ausgewählt werden.
+Die verfügbaren Oberflächensprachen sind Englisch (Kanada), Französisch (Kanada), Deutsch (Deutschland), Niederländisch (Niederlande) und Portugiesisch (Portugal). Im Auswahlfeld mit **Coming soon** gekennzeichnete Sprachen können noch nicht ausgewählt werden.
 
 Die Spracheinstellung ändert das Interface. Es übersetzt keine SOLIDWORKS-Dokumenteigenschaften, Dateinamen, Profilnamen, Annotationstext, von SOLIDWORKS erstellte Protokolleinträge oder von externen Quellen zurückgegebene Werte.
 

@@ -17,7 +17,7 @@ Open **PDMPublisher > Settings > Languages** to select the language used by PDMP
 
 The selection also controls the supported regional formatting associated with that language, such as **English (Canada)**.
 
-The available interface languages in version `2026.09.25` are English (Canada), French (Canada), German (Germany), Dutch (Netherlands), and Portuguese (Portugal). Languages marked **Coming soon** in the selector cannot be selected yet.
+The available interface languages are English (Canada), French (Canada), German (Germany), Dutch (Netherlands), and Portuguese (Portugal). Languages marked **Coming soon** in the selector cannot be selected yet.
 
 The language setting changes the interface. It does not translate SOLIDWORKS document properties, filenames, profile names, annotation text, log entries produced by SOLIDWORKS, or values returned by external sources.
 

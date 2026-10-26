@@ -1,4 +1,4 @@
-﻿---
+---
 title: Placeholder Reference | PDMPublisher | SOLIDWORKS PDM
 description: Reference every built-in, PDM variable, and SQL placeholder available in PDMPublisher.
 ms.date: 08/13/2026
@@ -60,7 +60,7 @@ For example, when `Speaker.SLDASM` launches a task and PDMPublisher processes `C
 
 `(ConfigurationName)` returns the configuration associated with the current output. It is especially important when [Convert Multiple Configurations](pdmpublisher-options/convert-multiple-configurations.md) is enabled because it prevents outputs from different configurations from using the same name.
 
-The placeholder can also be used by [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets. If the evaluated configuration name matches no sheet, version `2026.08.09` and later exports all drawing sheets and logs the fallback.
+The placeholder can also be used by [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). For a multi-sheet drawing, PDMPublisher evaluates it from the associated model and matches the resulting configuration name against the drawing sheets. If the evaluated configuration name matches no sheet, PDMPublisher exports all drawing sheets and logs the fallback.
 
 ### BOM Quantity
 
@@ -158,7 +158,7 @@ For filenames below `1000`, the range begins at zero. For example, `245.SLDPRT` 
 
 ## File Number Placeholders
 
-Version `2026.08.08` adds placeholders that extract the beginning of the first continuous numeric sequence found anywhere in the filename. The file extension is not included in the search.
+These placeholders extract the beginning of the first continuous numeric sequence found anywhere in the filename. The file extension is not included in the search.
 
 You can find these placeholders under **File Number** in the `>...` placeholder menu.
 

@@ -22,7 +22,7 @@ Padrão Wildcard usado quando **Sheets to export** é definido para nomes de fol
 - Se o padrão avaliado não corresponde a nenhuma folha, PDMPublisher cai de volta para exportar todas as folhas.
 
 > [!WARNING]
-> Um erro ortográfico, o valor da propriedade em falta ou o nome de configuração inesperado podem fazer com que o padrão não corresponda a nada. Na versão `2026.08.09` e posterior, esse resultado exporta cada folha de desenho e escreve uma mensagem de retorno para o log.
+> Um erro ortográfico, o valor da propriedade em falta ou o nome de configuração inesperado podem fazer com que o padrão não corresponda a nada. Esse resultado exporta cada folha de desenho e escreve uma mensagem de retorno para o log.
 
 Use `*` para corresponder a qualquer texto e `?` para corresponder a um caractere.
 

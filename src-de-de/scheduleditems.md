@@ -56,7 +56,7 @@ Wählen Sie eine oder mehrere Zeilen aus und klicken Sie auf **Remove**, um sie 
 <a id="selecting-files-at-task-launch"></a>
 ## Auswählen von Dateien beim Aufgabenstart
 
-Version **2026.06.21** fügt einen interaktiven Dateiauswahldialog für Aufgaben hinzu, die konfiguriert sind, um den Benutzer zu fragen, welche Dateien beim Start verarbeitet werden sollen.
+Ein interaktiver Dateiauswahldialog ermöglicht die Auswahl der beim Start zu verarbeitenden Dateien.
 
 <p align="center">
 <img src="https://pdmpublisher.com/help/images/pdmpublisher_task_launch_selection.png" alt="PDMPublisher task launch file selection dialog" width="900">

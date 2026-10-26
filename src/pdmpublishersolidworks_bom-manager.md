@@ -30,7 +30,7 @@ BOM Manager defines the default structure used when PDMPublisher produces or dis
 
 ## Evaluated property values
 
-From **2026.10.40**, BOM Manager retains evaluated custom-property values, including empty results, without substituting the stored expression. The displayed values are also used for grouping, exports, and ERP Sync snapshots.
+BOM Manager retains evaluated custom-property values, including empty results, without substituting the stored expression. The displayed values are also used for grouping, exports, and ERP Sync snapshots.
 
 ## Configure the defaults
 

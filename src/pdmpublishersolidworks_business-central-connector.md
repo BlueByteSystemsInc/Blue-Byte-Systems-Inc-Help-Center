@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Microsoft Dynamics 365 Business Central Connector
 
-The official Microsoft Dynamics 365 Business Central connector synchronizes items and mapped properties between PDMPublisher for SOLIDWORKS and Business Central. Version `1.0.0.0` supports Business Central Online in the commercial Microsoft cloud through the standard API v2.0.
+The official Microsoft Dynamics 365 Business Central connector synchronizes items and mapped properties between PDMPublisher for SOLIDWORKS and Business Central. It supports Business Central Online in the commercial Microsoft cloud through the standard API v2.0.
 
 The connector uses PDMPublisher's reviewed Push and Pull workflows. Push can create items and update mapped item fields. Pull previews proposed SOLIDWORKS property changes before the user applies them.
 
@@ -64,7 +64,7 @@ If you received a signed connector package directly, use **Add new...** to selec
 
 ## Item numbers and property mappings
 
-Item numbers are trimmed, converted to uppercase according to Business Central Code-field behavior, and limited to 20 characters. Existing item numbers are never renamed and the connector does not request automatic number assignment. From connector **1.0.2.0**, repeated source numbers combine compatible mapped values. With **Skip empty values** enabled, blank values do not conflict with populated values. Different values for the same mapped field stop the preview with the field and conflicting values identified.
+Item numbers are trimmed, converted to uppercase according to Business Central Code-field behavior, and limited to 20 characters. Existing item numbers are never renamed and the connector does not request automatic number assignment. Repeated source numbers combine compatible mapped values. With **Skip empty values** enabled, blank values do not conflict with populated values. Different values for the same mapped field stop the preview with the field and conflicting values identified.
 
 The connector can map these writable fields when they are present in the live item metadata:
 

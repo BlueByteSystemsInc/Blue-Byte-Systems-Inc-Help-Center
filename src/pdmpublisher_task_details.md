@@ -23,6 +23,6 @@ External network logs must be accessible to the user. A local task-host path can
 
 If no log is available, confirm that logging was enabled, the file still exists, and your account can read its folder and workflow state. A structured report may still be visible even when the full text log cannot be opened.
 
-For unexpected PDF merging, look for **Run settings source**, **Merge exported PDFs**, and **Export references individually** in logs from version **20261029** onward. See [PDF merge troubleshooting](pdmpublisher-options/merge-exported-pdfs.md#pdm-task-20261029-merge-setting-differs-from-the-run).
+For unexpected PDF merging, look for **Run settings source**, **Merge exported PDFs**, and **Export references individually** in the task log. See [PDF merge troubleshooting](pdmpublisher-options/merge-exported-pdfs.md#check-a-tasks-merge-setting).
 
 Errors show the source filename and line number when matching debug symbols are available. Omitted rows explain why a component was excluded; they do not necessarily mean the whole task failed.

@@ -10,8 +10,6 @@
 - name: Changes 
 - name: PDMPublisher Roadmap 
   href: pdmpublisher_roadmap.md
-- name: PDMPublisher changes log
-  href: changeslog.md
 - name: PDMDeploy changes log
   href: cdpdmchangeslog.md
 

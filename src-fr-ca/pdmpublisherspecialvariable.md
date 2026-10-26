@@ -63,7 +63,7 @@ Par exemple, lorsque `Speaker.SLDASM` lance une tâche et que PDMPublisher trait
 
 `(ConfigurationName)` retourne la configuration associée à la sortie courante. Il est particulièrement important lorsque [Convert Multiple Configurations](pdmpublisher-options/convert-multiple-configurations.md) est activé car il empêche les sorties de différentes configurations d'utiliser le même nom.
 
-Le détenteur de place peut également être utilisé par [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). Pour un dessin à feuilles multiples, PDMPublisher l'évalue à partir du modèle associé et correspond au nom de configuration résultant par rapport aux feuilles de dessin. Si le nom de configuration évalué ne correspond à aucune feuille, la version `2026.08.09` et plus tard exporte toutes les feuilles de dessin et enregistre le retour.
+Le détenteur de place peut également être utilisé par [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). Pour un dessin à feuilles multiples, PDMPublisher l'évalue à partir du modèle associé et correspond au nom de configuration résultant par rapport aux feuilles de dessin. Si le nom de configuration évalué ne correspond à aucune feuille, PDMPublisher exporte toutes les feuilles de dessin et enregistre le retour.
 
 <a id="bom-quantity"></a>
 ### Quantité BOM
@@ -168,7 +168,7 @@ Pour les noms de fichiers sous `1000`, la plage commence à zéro. Par exemple, 
 <a id="file-number-placeholders"></a>
 ## Numéro de fichier Titulaires
 
-La version `2026.08.08` ajoute des supports qui extrait le début de la première séquence numérique continue trouvée n'importe où dans le nom de fichier. L'extension de fichier n'est pas incluse dans la recherche.
+Ces espaces réservés extraient le début de la première séquence numérique continue trouvée n'importe où dans le nom de fichier. L'extension de fichier n'est pas incluse dans la recherche.
 
 Vous pouvez les trouver sous **File Number** dans le menu `>...`.
 

@@ -9,7 +9,6 @@ ms.topic: how-to
 
 The Odoo connector is an official Blue Byte Systems connector for Odoo 19+ and Odoo Online sites with JSON-2 external API access. It supports reviewed Push and Pull operations between checked ERP Sync rows and Odoo products.
 
-This guide covers connector **1.0.13.0** with PDMPublisher for SOLIDWORKS **2026.10.52**. The connector and SOLIDWORKS add-in are updated separately; install the add-in update for the new review layout and inline **(i)** explanations.
 
 ![Official Odoo connector and configuration settings](/images/pdmpublisher/solidworks/odoo-connector-settings-20260931.png)
 
@@ -81,7 +80,7 @@ Open **Property mappings > ...**. Supported fields available to the current Odoo
 
 A SOLIDWORKS Material value needs a writable Odoo destination field, such as a text field named `x_material` or `x_studio_material`. Read-only fields and unsupported relations are excluded. If Material is missing from the dropdown, check its technical name, type, and availability to the integration user in Odoo, then reload ERP fields.
 
-Connector **1.0.2.0** combines compatible mapped values for repeated source item codes. With **Skip empty values** enabled, blank values are ignored rather than treated as conflicts. Different nonempty values for the same mapped field still stop the preview with a field-specific message. This does not permit multiple matching Internal References in Odoo itself.
+The connector combines compatible mapped values for repeated source item codes. With **Skip empty values** enabled, blank values are ignored rather than treated as conflicts. Different nonempty values for the same mapped field still stop the preview with a field-specific message. This does not permit multiple matching Internal References in Odoo itself.
 
 Use stored API field names, not translated labels. Boolean values accept `True/False`, `Yes/No`, or `1/0`. Numeric values use a dot for decimals, such as `12.5`, without currency symbols, thousands separators, or units. Selection fields accept a stored key or a unique label returned by Odoo. Each Odoo target field can be mapped only once.
 
@@ -128,7 +127,7 @@ The connector finds an active BOM of the selected type for the product and compa
 
 An exported file must have the same base filename as its source model. Existing attachments with the same name are updated; duplicate matching attachment names are rejected. Each file is limited to 20 MB, with a maximum of 64 MB per product. Missing files appear as skipped in the preview.
 
-Connector 1.0.8 discovers the supported attachment content field and handles both older base64 responses and newer structured binary responses. Unchanged file contents do not trigger another upload. Thumbnail differences are omitted from the review count and highlighting; the upload setting still governs thumbnails during a committed sync.
+The connector discovers the supported attachment content field and handles both older base64 responses and newer structured binary responses. Unchanged file contents do not trigger another upload. Thumbnail differences are omitted from the review count and highlighting; the upload setting still governs thumbnails during a committed sync.
 
 ## Push products and properties
 
@@ -141,7 +140,7 @@ Connector 1.0.8 discovers the supported attachment content field and handles bot
 
 ![Push review showing SOLIDWORKS to Odoo comparisons and a BOM change on the assembly row](/images/pdmpublisher/solidworks/erp-push-review-20261049.png)
 
-The connector can create products and update mapped product fields. New products use Odoo defaults for unit of measure, category, and product type unless a supported mapping supplies a value. A new product receives the mapped name or the source row name. This version does not generate missing Internal References or create custom Odoo fields.
+The connector can create products and update mapped product fields. New products use Odoo defaults for unit of measure, category, and product type unless a supported mapping supplies a value. A new product receives the mapped name or the source row name. For automatic Internal References, enable **Use Odoo-generated references** and configure generation in Odoo. Custom Odoo fields must already exist.
 
 After a successful Push, the created or updated products are available in Odoo Inventory. Product names, internal references, mapped properties, and uploaded previews reflect the committed ERP Sync changes.
 
@@ -192,13 +191,13 @@ Creation previews validate required writable fields using mapped values and Odoo
 
 ## Open a product in Odoo
 
-With add-in **2026.10.52** and connector **1.0.13.0**, select a product cell in the preview and choose **Open in Odoo**. The button uses the exact database record identified by the connector, not a filename search. Products not yet created have no link until creation succeeds; the result report then provides the link.
+Select a product cell in the preview and choose **Open in Odoo**. The button uses the exact database record identified by the connector, not a filename search. Products not yet created have no link until creation succeeds; the result report then provides the link.
 
 ![Indented Odoo preview with Open in Odoo](/images/pdmpublisher/solidworks/erp-odoo-preview-20261021.png)
 
-*Release UI shown with sample data. No ERP changes were made to capture this image.*
+*Example preview.*
 
-The button opens your browser and may require you to sign in. It does not edit, push, or pull data. If you edit the product in Odoo, generate a new preview before committing and use Pull to review supported mapped values for SOLIDWORKS. Older add-ins can still synchronize with this connector but do not display the button.
+The button opens your browser and may require you to sign in. It does not edit, push, or pull data. If you edit the product in Odoo, generate a new preview before committing and use Pull to review supported mapped values for SOLIDWORKS.
 
 ## Omitted rows and warnings
 

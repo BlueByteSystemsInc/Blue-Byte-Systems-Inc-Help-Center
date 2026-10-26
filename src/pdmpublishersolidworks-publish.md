@@ -43,7 +43,7 @@ Select **SOLIDWORKS Drawing (*.slddrw)** in the Publish profile's file formats, 
 
 ### Use an editable SWB macro
 
-Version **2026.10.40** supports custom drawing-creation macros in Drawing Settings. Enable the custom macro option, then edit the code, import an SWB file, or load the example. The code is saved in the Publish profile and can be exported.
+Drawing Settings supports custom drawing-creation macros in Drawing Settings. Enable the custom macro option, then edit the code, import an SWB file, or load the example. The code is saved in the Publish profile and can be exported.
 
 PDMPublisher runs `Sub main` with the selected model and configuration active. The macro must create exactly one new, unsaved drawing containing a model view and leave it active. PDMPublisher then saves the drawing and handles destination overwrite and optional PDM check-in. A macro that leaves no valid new drawing fails the output instead of replacing the destination.
 

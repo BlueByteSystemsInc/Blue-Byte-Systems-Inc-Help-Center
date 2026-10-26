@@ -377,7 +377,5 @@
   items:
   - name: PDMPublisher Roadmap
     href: ../../src-de-de/pdmpublisher_roadmap.md
-  - name: PDMPublisher ändert Log
-    href: ../../src-de-de/changeslog.md
   - name: Offline-Aktivator
     href: ../../src-de-de/offlineactivator.md

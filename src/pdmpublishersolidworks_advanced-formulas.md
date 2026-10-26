@@ -29,7 +29,7 @@ Defaults, external sources, and formulas are saved separately from the other uti
 
 ## Arithmetic with Properties
 
-Starting with **2026.10.45**, the shared advanced-formula engine supports addition, subtraction, multiplication, and division. These operators work wherever supported workflows evaluate an advanced formula, including named formulas used by filename, folder, and property menus.
+The advanced-formula engine supports addition, subtraction, multiplication, and division. These operators work wherever supported workflows evaluate an advanced formula, including named formulas used by filename, folder, and property menus.
 
 For example, multiply two custom properties to calculate a total:
 

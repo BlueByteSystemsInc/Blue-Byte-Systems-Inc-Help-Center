@@ -388,7 +388,5 @@
   items:
   - name: Feuille de route PDMPublisher
     href: ../../src-fr-ca/pdmpublisher_roadmap.md
-  - name: Journal des modifications de PDMPublisher
-    href: ../../src-fr-ca/changeslog.md
   - name: Activateur hors ligne
     href: ../../src-fr-ca/offlineactivator.md

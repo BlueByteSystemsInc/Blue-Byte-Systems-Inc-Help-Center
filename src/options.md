@@ -14,9 +14,7 @@ The **Options** task page controls where PDMPublisher writes exported files, whi
 
 ![Updated PDMPublisher Options task page](/images/pdmpublisher/screenshots/task-options-20261009.png)
 
-Use this page as a quick map. Each setting links to its own feature page with the matching screenshot, explanation, and notes.
-
-Select **Pop out...** when you want to edit the complete page in a separate resizable window. The **Additional settings** commands show how many annotations, conditions, and scheduled items are currently configured. Summary counts also appear beside dialogs such as configuration filters, variable mappings, extension-specific locations, and flat-pattern settings.
+Use **Pop out...** for a resizable editor. Counts beside settings show how many items are configured.
 
 ## Recommended First Setup
 
@@ -70,22 +68,18 @@ Review these settings before saving a new task:
 
 ![Task drawing settings with separate referenced model formats](/images/pdmpublisher/screenshots/task-reference-formats.png)
 
-In **Drawing processing**, enable **Export referenced models from drawings**, then choose **Referenced model formats** directly beneath the checkbox. This dropdown uses the same format picker as **File Formats**, but controls only the drawing's referenced parts and assemblies.
+Enable **Export referenced models from drawings**, then choose **Referenced model formats** beneath the checkbox. These formats apply to the referenced parts and assemblies, independently of **File Formats**.
 
-For example, select **PDF** under File Formats and **HTML, STEP and PNG** under Referenced model formats:
-
-| Source | Outputs |
+| Selection | Output |
 |---|---|
-| Drawing | PDF |
-| Referenced part | HTML, STEP and PNG |
+| File Formats: PDF | Drawing PDF |
+| Referenced model formats: HTML, STEP, PNG | Model HTML, STEP and PNG |
 
-Only formats supported by each model type are exported. Flat-pattern DXF is controlled separately by **Export sheet metal parts to 1:1 flat pattern DXF**. Leaving Referenced model formats empty creates no model-format outputs; enabled flat-pattern exports still apply. Existing tasks retain their previous model-format selection until you change it.
+Unsupported formats are skipped. Flat-pattern DXF uses its separate setting and can run with an empty model-format selection.
 
-The task uses the drawing view's configuration, or the PDM reference configuration when no view configuration is available. It checks the referenced file's configuration names before exporting. For a blank configuration or PDM's `@` marker, it chooses **Default** when available, otherwise the first real configuration. The opened SOLIDWORKS model is checked before activation. A named configuration that no longer exists is reported instead of silently exporting a different one.
+The task prefers the drawing view's configuration, then the PDM reference configuration. Blank values and `@` resolve to **Default**, or the first real model configuration. A missing named configuration is reported. Repeated views of the same model/configuration export once per drawing; components inside a referenced assembly are not recursively exported.
 
-Repeated views of the same model/configuration produce one export per drawing. Distinct configurations are processed separately; include `(ConfigurationName)` in the filename template to prevent overlapping names. This setting does not recursively export every component inside a referenced assembly.
-
-Outputs follow the drawing's export-folder rules, including extension-specific locations. Filename templates use the model. **Use latest released versions only** still verifies the drawing and referenced models against their selected Released versions.
+Outputs use the drawing's folder rules and the model's filename template. Include `(ConfigurationName)` when exporting different configurations. Released-only checks still apply.
 
 ### Sheet selection
 
@@ -141,7 +135,7 @@ Enable **Use latest released versions only** to select the most recent version t
 
 A referenced component that has never entered Released is omitted from the publishing copies and recorded in the log. If the affected document itself has no Released version, the task stops.
 
-Starting with task **2026.10.23** (`20261023`), the reference check uses the type reported by PDM:
+References are handled by their PDM type:
 
 | Reference type | Handling |
 | --- | --- |
@@ -155,7 +149,7 @@ Skipping an embedded entry does not delete it from the parent document. Names su
 
 ### References that cannot be cached
 
-Starting with task **2026.10.24** (`20261024`), a referenced file that cannot be cached or whose local version cannot be verified is reported as **Omitted**. This includes a Released version that PDM cannot retrieve from cold storage. Publishing continues with the remaining components.
+A referenced file that cannot be cached or whose local version cannot be verified is reported as **Omitted**. This includes a Released version that PDM cannot retrieve from cold storage. Publishing continues with the remaining components.
 
 The omitted component is suppressed in the temporary publishing copy and excluded from separate exports. Its exclusive subassembly branch is omitted too; a shared component remains eligible when another retained branch references it. Retained BOM quantities are recalculated. The report records the file, selected Released version, and failure reason.
 
@@ -167,7 +161,5 @@ An explicitly selected input document must still cache successfully. Failure to 
 
 A message such as **Cannot inspect a child reference for released-only publishing** does not mean that the named parent file is unreleased. Read the child details in the task log: name, referenced-as value, found path, file/folder IDs, referenced version, and PDM file type. The log also identifies the parent and the selected Released version.
 
-When requesting support, include this complete diagnostic and the task version from the beginning of the log. Versions before `20261023` used different handling for embedded entries; update the task add-in and rerun before comparing results.
-The task uses the vault's error lookup to translate HRESULT values into readable PDM messages and keeps the hexadecimal code for support. Error messages show only the source-code filename and line number, such as `ReleasedVersionPlan.cs:297`, instead of a stack trace or full source path. Source locations require the matching `PDMPublisher.pdb` from the deployment package; if symbols are unavailable, the error is shown without a source location.
-
+Include the task log when requesting support.
 See [Task log filenames and retries](pdmpublisher-options/log-folder-vault-only.md#task-log-filenames-and-retries) for log naming and how repeated runs replace previous log contents.

@@ -10,7 +10,7 @@ ms.topic: overview
 Os comandos PDMPublisher estão disponíveis na guia **PDMPublisher** no menu SOLIDWORKS CommandManager e no menu **Tools > PDMPublisher**. O painel de tarefas agora é um navegador de documentação; os comandos de publicação e utilitário não são mais executados dentro do painel.
 
 ![PDMPublisher CommandManager e painel de tarefas de ajuda em SOLIDWORKS 2026](https://pdmpublisher.com/help/images/pdmpublisher/solidworks/commandmanager-help-pane-20260908.png)
-A imagem mostra o CommandManager e o painel de Ajuda introduzidos na versão 2026.09.08. As tabelas abaixo descrevem a versão atual, incluindo ERP Sync e BOM Manager. Os comandos são executados no documento SOLIDWORKS ativo. O painel de tarefas de Ajuda à direita fornece links para a documentação e não executa os comandos.
+Os comandos são executados no documento SOLIDWORKS ativo. O painel de tarefas de Ajuda à direita fornece links para a documentação e não executa os comandos.
 
 | Grupo | Comando | Objecto |
 | --- | --- | --- |

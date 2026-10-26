@@ -7,7 +7,7 @@ ms.topic: conceptual
 
 # PDMPublisher Roadmap
 
-PDMPublisher is released as two independently versioned products. This page shows planned work only. For features that have already shipped, see the [PDMPublisher Change Log](changeslog.md).
+This page describes planned work. See the product guides below for available features.
 
 ## Current Products
 
@@ -22,8 +22,4 @@ PDMPublisher is released as two independently versioned products. This page show
 | 2026 | SOLIDWORKS add-in | [Translate](pdmpublishersolidworks_translate.md) for document properties, feature names, and other SOLIDWORKS text. |
 
 > [!NOTE]
-> Targets and priorities may change during development and testing. A feature is not guaranteed until it appears in the change log.
-
-## Follow Releases
-
-The [PDMPublisher Change Log](changeslog.md) lists the current version of each product and is the authoritative record of released features and fixes.
+> Targets and priorities may change during development and testing. Planned features are not guaranteed.

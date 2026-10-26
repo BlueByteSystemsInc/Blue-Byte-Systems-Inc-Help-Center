@@ -63,7 +63,7 @@ Zum Beispiel, wenn `Speaker.SLDASM` eine Aufgabe startet und PDMPublisher `Compo
 
 `(ConfigurationName)` gibt die Konfiguration zurück, die dem aktuellen Ausgang zugeordnet ist. Es ist besonders wichtig, wenn [Mehrere Konfigurationen konvertieren](pdmpublisher-options/convert-multiple-configurations.md) aktiviert ist, da es verhindert, dass Ausgaben aus verschiedenen Konfigurationen denselben Namen verwenden.
 
-Der Platzhalter kann auch von [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md) verwendet werden. Bei einer Mehrblattzeichnung wertet PDMPublisher sie aus dem zugehörigen Modell aus und vergleicht den resultierenden Konfigurationsnamen mit den Zeichnungsblättern. Wenn der ausgewertete Konfigurationsname mit keinem Blatt übereinstimmt, exportiert Version `2026.08.09` und höher alle Zeichnungsblätter und protokolliert das Fallback.
+Der Platzhalter kann auch von [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md) verwendet werden. Bei einer Mehrblattzeichnung wertet PDMPublisher sie aus dem zugehörigen Modell aus und vergleicht den resultierenden Konfigurationsnamen mit den Zeichnungsblättern. Wenn der ausgewertete Konfigurationsname mit keinem Blatt übereinstimmt, exportiert PDMPublisher alle Zeichnungsblätter und protokolliert das Fallback.
 
 <a id="bom-quantity"></a>
 ### Stückzahl
@@ -168,7 +168,7 @@ Für Dateinamen unterhalb von `1000` beginnt der Bereich bei Null. `245.SLDPRT` 
 <a id="file-number-placeholders"></a>
 ## Dateinummer Platzhalter
 
-Version `2026.08.08` fügt Platzhalter hinzu, die den Anfang der ersten kontinuierlichen numerischen Sequenz extrahieren, die irgendwo im Dateinamen zu finden ist. Die Dateierweiterung ist nicht in der Suche enthalten.
+Diese Platzhalter extrahieren den Anfang der ersten zusammenhängenden Ziffernfolge im Dateinamen. Die Dateierweiterung ist nicht in der Suche enthalten.
 
 Diese Platzhalter finden Sie unter **File Number** im Platzhaltermenü `>...`.
 

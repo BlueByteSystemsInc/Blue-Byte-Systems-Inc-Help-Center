@@ -28,7 +28,7 @@ Create this folder manually before using the task.
 
 ## Task log filenames and retries
 
-Starting with PDM task **2026.10.24**, the text log filename contains the affected input document filenames followed by the task instance GUID. For example:
+The text log filename contains the affected input document filenames followed by the task instance GUID. For example:
 
 ```text
 Assembly.sldasm + Part.sldprt - 12345678-1234-1234-1234-123456789abc.txt
@@ -36,6 +36,6 @@ Assembly.sldasm + Part.sldprt - 12345678-1234-1234-1234-123456789abc.txt
 
 Invalid filename characters are removed, duplicate document names are included once, and long document-name portions are shortened while retaining the complete GUID. If an input cannot be resolved, its file ID is used instead of its name.
 
-Each run starts a fresh log with a new header. Retrying the same task clears the previous text in that log rather than appending another run. Save a copy first if you need to preserve the earlier attempt. Messages from the current run are appended normally. The task account needs permission to check out and update an existing vault log as well as add new logs.
+Each run starts a fresh log with a new header. Retrying the same task clears the previous text in that log rather than appending another run. Save a copy first if you need to preserve the earlier attempt. The task account needs permission to check out and update an existing vault log as well as add new logs.
 
 Errors include readable PDM messages, HRESULT codes where available, and the source filename and line number when matching debugging symbols are available. Full stack traces are not included. Cache-failed references appear as **Omitted**; see [Released-only publishing](../options.md#references-that-cannot-be-cached).

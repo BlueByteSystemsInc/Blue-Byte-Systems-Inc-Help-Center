@@ -25,15 +25,8 @@ Required setup:
 > [!TIP]
 > Enable [PDF Bookmarks](pdf-bookmarks.md) and [Add Table of Content to Merged PDF](add-table-of-content-to-merged-pdf.md) when the merged PDF needs navigation.
 
-## PDM Task 20261029: merge setting differs from the run
+## Check a task's merge setting
 
-Version **20261029** makes the settings editor and task runner prefer the same saved settings and updates the legacy settings entry when saving. This prevents a stale legacy merge value from overriding the newly saved value.
+Save **Merge exported PDFs into one master PDF** in PDM Administration, then launch a new task instance. Already queued tasks can retain their previous settings. The log entry **Merge exported PDFs: False** confirms that merging is disabled.
 
-After updating the task add-in:
-
-1. Open the task in PDM Administration.
-2. Clear **Merge exported PDFs into one master PDF** and click **OK**.
-3. Launch a fresh task instance. Previously queued instances may contain older settings.
-4. Check the log for **Merge exported PDFs: False**. The same entry identifies the settings source and whether individual reference exports are enabled.
-
-**Began merging PDFs...** followed by **Launching: PDMPublisher.Merge.exe...** confirms that the run entered PDF merging. A message that an individual drawing PDF was saved does not indicate merging.
+Saving an individual drawing PDF does not mean PDFs were merged.

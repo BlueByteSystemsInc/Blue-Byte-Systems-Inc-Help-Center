@@ -63,7 +63,7 @@ Por exemplo, quando `Speaker.SLDASM` lança uma tarefa e PDMPublisher processa `
 
 `(ConfigurationName)` retorna a configuração associada à saída atual. É especialmente importante quando [Convert Multiple Configurations](pdmpublisher-options/convert-multiple-configurations.md) está habilitado porque impede saídas de diferentes configurações de usar o mesmo nome.
 
-O placeholder também pode ser usado por [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). Para um desenho multi-folha, PDMPublisher avalia-o a partir do modelo associado e corresponde ao nome de configuração resultante contra as folhas de desenho. Se o nome de configuração avaliado não corresponder a nenhuma folha, a versão `2026.08.09` e depois exporta todas as folhas de desenho e registra o retorno.
+O placeholder também pode ser usado por [Sheet Name Pattern](pdmpublisher-options/sheet-name-pattern.md). Para um desenho multi-folha, PDMPublisher avalia-o a partir do modelo associado e corresponde ao nome de configuração resultante contra as folhas de desenho. Se o nome de configuração avaliado não corresponder a nenhuma folha, PDMPublisher exporta todas as folhas de desenho e registra o retorno.
 
 <a id="bom-quantity"></a>
 ### Quantidade BOM
@@ -168,7 +168,7 @@ Para nomes de arquivos abaixo de `1000`, o intervalo começa em zero. Por exempl
 <a id="file-number-placeholders"></a>
 ## Número de Ficheiros
 
-Versão `2026.08.08` adiciona placeholders que extraem o início da primeira sequência numérica contínua encontrada em qualquer lugar do nome do arquivo. A extensão do ficheiro não está incluída na pesquisa.
+Estes placeholders extraem o início da primeira sequência numérica contínua encontrada em qualquer lugar do nome do arquivo. A extensão do ficheiro não está incluída na pesquisa.
 
 Você pode encontrar estes placeholders sob **File Number** no menu `>...` placeholder.
 

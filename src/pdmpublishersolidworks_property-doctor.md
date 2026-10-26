@@ -28,7 +28,7 @@ Gray cells are missing properties. **Clear** keeps the property name and writes 
 
 ### File properties and expression chips
 
-In version 2026.10.49, **File properties** includes the document's custom and configuration-specific properties even when their columns are hidden. Hiding a column does not remove that property from the picker.
+**File properties** includes the document's custom and configuration-specific properties even when their columns are hidden. Hiding a column does not remove that property from the picker.
 
 Property and formula references appear as chips with descriptive names. Evaluated values appear by default; the active cut list is read from SOLIDWORKS for current values. Switch a column to its expressions or enter edit mode to inspect the source without replacing it. Mixed text and chips wrap within the cell so you can read and edit them without widening the column.
 
@@ -50,7 +50,7 @@ Property Doctor does not show the refresh prompt when Apply contains no changes,
 
 ## Select Multiple Cells
 
-From **2026.10.46**, hold **Ctrl** and click cells to add them to the selection. Ctrl-click a selected cell again to remove it. This works while a cell editor is active; Ctrl-clicking another cell selects it without starting an edit there.
+Hold **Ctrl** and click cells to add them to the selection. Ctrl-click a selected cell again to remove it. This works while a cell editor is active; Ctrl-clicking another cell selects it without starting an edit there.
 
 Press **Escape** while the grid has focus to clear all selected cells. This also cancels an active fill drag. Clearing a selection does not discard pending property changes; use **Reset to original** or **Discard changes** for that.
 
@@ -108,6 +108,6 @@ Material mappings can be imported from or exported to a two-column CSV with `Pat
 
 ## Shared Resources
 
-To calculate a property from other properties, use an [advanced formula with arithmetic](pdmpublishersolidworks_advanced-formulas.md#arithmetic-with-properties), available from **2026.10.45**. For example, `=Property("UnitCost") * Property("Quantity")` multiplies two numeric custom-property values.
+To calculate a property from other properties, use an [advanced formula with arithmetic](pdmpublishersolidworks_advanced-formulas.md#arithmetic-with-properties). For example, `=Property("UnitCost") * Property("Quantity")` multiplies two numeric custom-property values.
 
 Property Doctor can use named [Advanced Formulas](pdmpublishersolidworks_settings.md#settings-pages), SQL Server external sources, and drawing search folders configured under **Shared Resources** in Settings. Complete settings transfer includes these definitions but never includes SQL credentials.

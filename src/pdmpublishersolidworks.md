@@ -231,7 +231,7 @@ PDMPublisher for SOLIDWORKS can run as the Community Edition without a paid or t
 
 ## Updates and About
 
-[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. See the [PDMPublisher Change Log](changeslog.md) for release notes. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information.
+[Version and Updates](pdmpublishersolidworks-updates.md) reports the installed and available versions and provides the update command. [About](pdmpublishersolidworks_About.md) provides product, support, documentation, and legal information.
 
 ![Support and Updates settings](/images/pdmpublisher/solidworks/ui-preview/Settings/Settings_Support_Updates_Default_Light_100.png)
 

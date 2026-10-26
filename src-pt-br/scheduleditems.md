@@ -58,7 +58,7 @@ Selecione uma ou mais linhas e clique em **Remove** para removê-los da lista de
 <a id="selecting-files-at-task-launch"></a>
 ## Selecionando arquivos no lançamento da tarefa
 
-Versão **2026.06.21** adiciona um diálogo de seleção de arquivos interativo para tarefas configuradas para perguntar ao usuário quais arquivos processar no lançamento.
+Um diálogo interativo permite selecionar arquivos para tarefas configuradas para perguntar ao usuário quais arquivos processar no lançamento.
 
 <p align="center">
 <img src="https://pdmpublisher.com/help/images/pdmpublisher_task_launch_selection.png" alt="PDMPublisher task launch file selection dialog" width="900">

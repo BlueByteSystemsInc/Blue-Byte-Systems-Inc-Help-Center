@@ -1,4 +1,4 @@
-﻿---
+---
 title: Scheduled Items Task Page | PDMPublisher | SOLIDWORKS PDM
 description: Learn how to use the Scheduled Items task setup page in PDMPublisher to define files that should be processed when a task runs without selected files.
 ms.date: 06/21/2026
@@ -53,7 +53,7 @@ Select one or more rows and click **Remove** to remove them from the scheduled i
 
 ## Selecting files at task launch
 
-Version **2026.06.21** adds an interactive file selection dialog for tasks configured to ask the user which files to process at launch.
+An interactive file selection dialog is available for tasks configured to ask the user which files to process at launch.
 
 <p align="center">
   <img src="../images/pdmpublisher_task_launch_selection.png" alt="PDMPublisher task launch file selection dialog" width="900">

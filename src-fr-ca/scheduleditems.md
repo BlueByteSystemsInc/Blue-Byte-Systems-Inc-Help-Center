@@ -56,7 +56,7 @@ Sélectionnez une ou plusieurs lignes et cliquez sur **Remove** pour les supprim
 <a id="selecting-files-at-task-launch"></a>
 ## Sélection des fichiers au lancement de la tâche
 
-La version **2026.06.21** ajoute une boîte de dialogue de sélection interactive des fichiers pour les tâches configurées afin de demander à l'utilisateur quels fichiers traiter au lancement.
+Une boîte de dialogue permet de choisir les fichiers à traiter au lancement de la tâche.
 
 <p align="center">
 <img src="https://pdmpublisher.com/help/images/pdmpublisher_task_launch_selection.png" alt="PDMPublisher task launch file selection dialog" width="900">

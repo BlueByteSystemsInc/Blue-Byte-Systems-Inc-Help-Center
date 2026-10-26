@@ -21,7 +21,7 @@ Wildcard-Muster verwendet, wenn **Sheets to export** auf übereinstimmende Blatt
 - Wenn das ausgewertete Muster ohne Blätter übereinstimmt, greift PDMPublisher auf den Export aller Blätter zurück.
 
 > [!WARNING]
-> Ein Rechtschreibfehler, fehlender Eigenschaftswert oder unerwarteter Konfigurationsname kann dazu führen, dass das Muster mit nichts übereinstimmt. In Version `2026.08.09` und höher exportiert dieses Ergebnis jedes Zeichenblatt und schreibt eine Fallback-Nachricht in das Protokoll.
+> Ein Rechtschreibfehler, fehlender Eigenschaftswert oder unerwarteter Konfigurationsname kann dazu führen, dass das Muster mit nichts übereinstimmt. Dieses Ergebnis exportiert jedes Zeichenblatt und schreibt eine Fallback-Nachricht in das Protokoll.
 
 Verwenden Sie `*`, um einen beliebigen Text und `?`, um ein Zeichen zu passen.
 

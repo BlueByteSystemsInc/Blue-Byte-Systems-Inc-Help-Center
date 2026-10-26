@@ -32,25 +32,7 @@ Le sélecteur complet est organisé comme suit:
 | Dessins | DWG (`dwg`), DXF (`dxf`) |
 | [eDrawings](edrawings-export-settings.md) | eDrawings Part (`eprt`), eDrawings Assemblage (`easm`), eDrawings Dessin (`edrw`) |
 | CAO et échange | STEP (`step`), IGES (`igs`), STL (`stl`), Parasolid Texte (`x_t`), Parasolid Binary (`x_b`), ACIS (`sat`), 3D XML (`3dxml`), 3MF (`3mf`), IFC (`ifc`), Universal 3D (`u3d`), VRML (`wrl`), VDAFS (`vda`), CATIA Graphics (`cgr`), HCG (`hcg`), HOOPS HSF (`hsf`) |
-| Web et images | HTML (`html`), Microsoft XAML (`xaml`), JPEG (`jpg`), TIF (`tif`), Bitmap (`bmp`), Adobe Illustrator (`ai`), Adobe Photoshop (`psd`) |
-
-<a id="added-in-version-20260805"></a>
-## Ajouté dans la version 2026.08.05
-
-La version `2026.08.05` ajoute ces choix de sortie:
-
-- ACIS (`sat`)
-- 3D XML (`3dxml`)
-- VRML (`wrl`)
-- VDAFS (`vda`)
-- Graphiques CATIA (`cgr`)
-- HCG (`hcg`)
-- HOOPS HSF (`hsf`)
-- Microsoft XAML (`xaml`)
-- JPEG (`jpg`)
-- TIF (`tif`)
-- Adobe Illustrator (`ai`)
-- Adobe Photoshop (`psd`)
+| Web et images | HTML (`html`), Microsoft XAML (`xaml`), PNG (`png`), JPEG (`jpg`), TIF (`tif`), Bitmap (`bmp`), Adobe Illustrator (`ai`), Adobe Photoshop (`psd`) |
 
 > [!NOTE]
 > PDMPublisher supprime les formats qui ne sont pas valides pour le type de document source. Certains formats dépendent également de la version SOLIDWORKS et des capacités d'exportation installées sur l'ordinateur. La tâche utilise sa version SOLIDWORKS configurée; le complément utilise la version en cours d'exécution.
@@ -58,9 +40,8 @@ La version `2026.08.05` ajoute ces choix de sortie:
 <a id="edrawings-output"></a>
 ## Sortie eDrawings
 
-PDMPublisher PDM Tâche `2026.08.12` corrige les préférences SOLIDWORKS appliquées lors de la création de fichiers `.eprt`, `.easm` et `.edrw`. Voir [eDrawings Export Settings](edrawings-export-settings.md) pour connaître les préférences et les exigences de l'hôte de tâches concernées.
+Consultez [eDrawings Export Settings](edrawings-export-settings.md) pour les options de mesure et de propriétés.
 
-Cette correction s'applique uniquement à la tâche PDM. Il ne change pas PDMPublisher pour SOLIDWORKS.
 
 Si SOLIDWORKS prend en charge un format d'exportation qui n'est pas actuellement listé ici, contactez Blue Byte Systems et demandez le support pour ce format :
 

@@ -377,7 +377,5 @@
   items:
   - name: Roteiro PDMPublisher
     href: ../../src-pt-br/pdmpublisher_roadmap.md
-  - name: Registo de Alterações do PDMPublisher
-    href: ../../src-pt-br/changeslog.md
   - name: Activador Desligado
     href: ../../src-pt-br/offlineactivator.md

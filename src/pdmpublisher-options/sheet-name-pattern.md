@@ -21,7 +21,7 @@ Wildcard pattern used when **Sheets to export** is set to matching sheet names.
 - If the evaluated pattern matches no sheets, PDMPublisher falls back to exporting all sheets.
 
 > [!WARNING]
-> A spelling error, missing property value, or unexpected configuration name can cause the pattern to match nothing. In version `2026.08.09` and later, that result exports every drawing sheet and writes a fallback message to the log.
+> A spelling error, missing property value, or unexpected configuration name can cause the pattern to match nothing. That result exports every drawing sheet and writes a fallback message to the log.
 
 Use `*` to match any text and `?` to match one character.
 

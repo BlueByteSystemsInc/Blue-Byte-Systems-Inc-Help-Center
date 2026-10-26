@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Connecteur Microsoft Dynamics 365 Business Central
 
-Le connecteur officiel Microsoft Dynamics 365 Business Central synchronise les articles et les propriétés mappées entre PDMPublisher pour SOLIDWORKS et Business Central. La version `1.0.0.0` prend en charge Business Central Online dans le nuage commercial Microsoft au moyen de l'API standard v2.0.
+Le connecteur officiel Microsoft Dynamics 365 Business Central synchronise les articles et les propriétés mappées entre PDMPublisher pour SOLIDWORKS et Business Central. Il prend en charge Business Central Online dans le nuage commercial Microsoft au moyen de l'API standard v2.0.
 
 Push peut créer des articles et mettre à jour les champs mappés. Pull affiche d'abord les changements de propriétés SOLIDWORKS proposés afin que l'utilisateur puisse les réviser.
 
