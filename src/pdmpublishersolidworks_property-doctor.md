@@ -30,7 +30,7 @@ Gray cells are missing properties. **Clear** keeps the property name and writes 
 
 In version 2026.10.49, **File properties** includes the document's custom and configuration-specific properties even when their columns are hidden. Hiding a column does not remove that property from the picker.
 
-Property and formula references appear as chips with descriptive names. Switching between an evaluated value and its expression, or entering and leaving edit mode, preserves those references. Mixed text and chips wrap within the cell so you can read and edit them without widening the column.
+Property and formula references appear as chips with descriptive names. Evaluated values appear by default; the active cut list is read from SOLIDWORKS for current values. Switch a column to its expressions or enter edit mode to inspect the source without replacing it. Mixed text and chips wrap within the cell so you can read and edit them without widening the column.
 
 ![Property Doctor editing a value containing text and two Description reference chips](/images/pdmpublisher/solidworks/property-chips-20261049.png)
 
@@ -65,7 +65,7 @@ Press **Escape** while the grid has focus to clear all selected cells. This also
 
 ## Find and Replace Property Values
 
-Starting with version **2026.10.42**, right-click a property cell and choose **Find and replace in this column...**. The Find and Replace panel shows the selected column, such as **Column: Cost**.
+Right-click a property cell and choose **Find and replace in this column...**. The Find and Replace panel shows the selected column, such as **Column: Cost**. Its Find text is separate from the table filter, so replaced rows stay visible.
 
 1. Enter the text in **Find** and the new text in **Replace with**. Leave the replacement empty to remove matching text.
 2. Use **Find next** to inspect a match, then **Replace**, or select **Replace all** to update matching values in the displayed rows.
