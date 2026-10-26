@@ -68,27 +68,24 @@ Review these settings before saving a new task:
 
 ### Export referenced models from drawings
 
-![PDM Task 20261029 drawing processing settings](/images/pdmpublisher/screenshots/task-drawing-models-20261029.png)
+![Task drawing settings with separate referenced model formats](/images/pdmpublisher/screenshots/task-reference-formats.png)
 
-*Current task editor rendered with sample settings.*
+In **Drawing processing**, enable **Export referenced models from drawings**, then choose **Referenced model formats** directly beneath the checkbox. This dropdown uses the same format picker as **File Formats**, but controls only the drawing's referenced parts and assemblies.
 
-In **Drawing processing**, enable **Export referenced models from drawings** to publish 3D files from models referenced by a drawing. The checkbox includes an explanation beneath it and is off by default.
+For example, select **PDF** under File Formats and **HTML, STEP and PNG** under Referenced model formats:
 
-For example, run a task on `Bracket.SLDDRW` with PDF and STEP selected and flat-pattern export enabled:
-
-| Output | Source |
+| Source | Outputs |
 |---|---|
-| PDF | The drawing |
-| STEP | The referenced part or assembly |
-| Flat-pattern DXF | A directly referenced sheet-metal part, using the existing flat-pattern settings |
+| Drawing | PDF |
+| Referenced part | HTML, STEP and PNG |
 
-The task first reads each model's referenced configuration from SOLIDWORKS drawing views across all sheets. If no view configuration is available, it uses the PDM reference configuration; if neither provides one, it uses `@` and records that fallback in the log. Released-only runs inspect the selected Released drawing version. Repeated views of the same model/configuration produce one export per drawing; distinct models and configurations are processed separately. This option does not recursively export every component inside a referenced assembly. Missing models or unspecified reference configurations are reported rather than guessed.
+Only formats supported by each model type are exported. Flat-pattern DXF is controlled separately by **Export sheet metal parts to 1:1 flat pattern DXF**. Leaving Referenced model formats empty creates no model-format outputs; enabled flat-pattern exports still apply. Existing tasks retain their previous model-format selection until you change it.
 
-Folder templates are evaluated against the drawing, including extension-specific locations. Filename templates are evaluated against the model. Include configuration and body placeholders where needed to prevent output filenames from overlapping. Existing body-export and flat-pattern settings apply. Selecting PDF/DXF/DWG alone does not request 3D model conversion; flat-pattern export is controlled by its separate option.
+The task uses the drawing view's configuration, or the PDM reference configuration when no view configuration is available. It checks the referenced file's configuration names before exporting. For a blank configuration or PDM's `@` marker, it chooses **Default** when available, otherwise the first real configuration. The opened SOLIDWORKS model is checked before activation. A named configuration that no longer exists is reported instead of silently exporting a different one.
 
-With **Use latest released versions only**, references come from the selected Released drawing version, and the referenced models also undergo Released-version verification before publishing.
+Repeated views of the same model/configuration produce one export per drawing. Distinct configurations are processed separately; include `(ConfigurationName)` in the filename template to prevent overlapping names. This setting does not recursively export every component inside a referenced assembly.
 
-This setting is included in the latest task source/build; an older installed task or CEX must be updated before it appears.
+Outputs follow the drawing's export-folder rules, including extension-specific locations. Filename templates use the model. **Use latest released versions only** still verifies the drawing and referenced models against their selected Released versions.
 
 ### Sheet selection
 
