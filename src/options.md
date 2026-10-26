@@ -133,27 +133,27 @@ For an interactive launch, if no selected files match the configured extensions,
 
 Enable **Use latest released versions only** to select the most recent version that entered the **Released** state for each normal file reference. The state name must contain `Released`, ignoring capitalization. This also matches names such as `Released for Production`, `Pre-Released`, and `Unreleased`; review your workflow state names before enabling this option. This overrides **Work with latest version** and the BOM version selection; it does not fall back to a newer work-in-progress version.
 
-A referenced component that has never entered Released is omitted from the publishing copies and recorded in the log. If the affected document itself has no Released version, the task stops.
+![Released-only checkbox with Reference settings and selected-option count](/images/pdmpublisher/screenshots/task-released-settings.png)
 
-References are handled by their PDM type:
+Choose **Reference settings…** beside the checkbox. The count shows how many options are enabled. All five start checked; **OK** saves changes and **Cancel** keeps the previous settings.
 
-| Reference type | Handling |
-| --- | --- |
-| Part referenced by another part | Skip the child's independent Released check and caching. The parent part is the publishing unit. Assembly-to-part references still require validation. |
-| Other normal file | Check its Released history and cache the selected version. Missing or invalid PDM file/folder IDs stop the task. |
-| Cut-list item | Skip independent release-history checks and caching; the item belongs to its parent file. |
-| Internal/virtual part or assembly | Skip independent release-history checks and caching; the component is embedded in its parent. Its branch is not processed as a separate file dependency. |
-| Unknown or unreadable type | Stop and report the reference details. |
+![Released-reference settings dialog](/images/pdmpublisher/screenshots/task-released-reference-dialog.png)
 
-Skipping an embedded entry does not delete it from the parent document. Names such as `Sheet<1>` or `Cut-List-Item1` do not determine whether it is skipped; PDM's reference type does.
+| Setting | When checked |
+|---|---|
+| Skip references outside the vault | Omit confirmed external files that cannot have a PDM Released version. |
+| Skip references with no Released version | Omit references that have never entered a Released state. |
+| Skip references that cannot be cached | Omit references whose Released copy cannot be retrieved or verified, including access-denied and file-not-found failures. |
+| Ignore virtual components and cut-list items | Keep embedded content with its parent without checking it independently. |
+| Ignore part-to-part dependencies | Check the parent part without separately checking its dependent parts. |
+
+Unchecking a **Skip** option stops the task when that case occurs. Unchecking the embedded-content option stops on virtual components or cut-list items. Unchecking part-to-part dependencies enables their independent checks. PDM reference types determine embedded content; names such as `Sheet<1>` do not.
 
 ### References that cannot be cached
 
-A referenced file that cannot be cached or whose local version cannot be verified is reported as **Omitted**. This includes a Released version that PDM cannot retrieve from cold storage. Publishing continues with the remaining components.
+Skipped references appear as **Omitted** in the report and are excluded from separate exports. Components are suppressed only in temporary publishing copies; original files remain unchanged. An omitted subassembly's exclusive branch is also omitted, while shared components can remain through another retained branch.
 
-The omitted component is suppressed in the temporary publishing copy and excluded from separate exports. Its exclusive subassembly branch is omitted too; a shared component remains eligible when another retained branch references it. Retained BOM quantities are recalculated. The report records the file, selected Released version, and failure reason.
-
-An explicitly selected input document must still cache successfully. Failure to cache a main input, inspect reference history, or safely prepare the publishing copy can still stop the task. The original vault documents are not modified to suppress omitted components.
+The selected input document must have a Released version and cache successfully. Unknown or ambiguous references, unreadable history, and failures to prepare a safe publishing copy still stop the task.
 
 ### Troubleshooting reference checks
 
