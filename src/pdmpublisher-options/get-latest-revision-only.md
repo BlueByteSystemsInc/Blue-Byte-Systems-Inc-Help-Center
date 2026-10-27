@@ -1,33 +1,19 @@
 ---
-title: Get Latest Revision Only | PDMPublisher PDM Task
-description: Publish the newest recorded PDM revision and the references saved with that revision instead of unrevised work-in-progress versions.
-ms.date: 09/08/2026
+title: Use Latest Released Versions Only | PDMPublisher PDM Task
+description: Publish Released file versions and omit references that cannot be verified or cached.
 ms.topic: reference
 ---
 
-# Get Latest Revision Only
+# Use Latest Released Versions Only
 
-![Get latest revision only setting](/images/pdmpublisher/screenshots/options-property-get-latest-revision-only.png)
+Enable **Use latest released versions only** to publish the most recent version that entered a state whose name contains `Released` (case-insensitive). This overrides **Work with latest version**; it does not use a newer work-in-progress version.
 
-Use **Get latest revision only** when a task must publish the newest recorded PDM revision instead of the newest checked-in version.
+![Released-only publishing and Reference settings](/images/pdmpublisher/screenshots/task-released-settings.png)
 
-When enabled, PDMPublisher:
+Choose **Reference settings…** to review how references are handled. References outside the vault, without a Released version, or that cannot be cached are always omitted. Virtual components, cut-list items, and part-to-part dependencies are ignored by default.
 
-- Finds the most recently created revision in the file's PDM history.
-- Retrieves the exact file version associated with that revision.
-- Retrieves the references as they were saved with that version.
-- Writes the selected revision name and PDM version number to the task log.
+Reference failures are logged with the filename and reason, while other safe outputs continue. If a reference cannot be safely excluded from a publishing copy, the affected parent output is also omitted. Original files remain unchanged.
 
-## Example
+A selected top-level document without a Released version fails validation. Other task or export errors can still stop processing.
 
-Suppose an assembly has revision `B` at PDM version `12`, but versions `13` through `15` contain unrevised work in progress.
-
-| Setting | Version used by the task |
-| --- | --- |
-| **Get latest revision only** enabled | Version `12`, including the references saved with revision `B` |
-| [Work with latest version](work-with-latest-version.md) enabled | Version `15` |
-
-> [!IMPORTANT]
-> **Get latest revision only** overrides **Work with latest version**. A file without a recorded PDM revision cannot be exported while this option is enabled, and the task reports a failure instead of publishing an unrevised version.
-
-This option applies only to **PDMPublisher PDM Task**.
+See [Released-reference settings and troubleshooting](../options.md#use-latest-released-versions-only) for the complete settings and omission behavior.

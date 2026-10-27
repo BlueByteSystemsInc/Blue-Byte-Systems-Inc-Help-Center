@@ -135,7 +135,7 @@ Enable **Use latest released versions only** to select the most recent version t
 
 ![Released-only checkbox with Reference settings and selected-option count](/images/pdmpublisher/screenshots/task-released-settings.png)
 
-Choose **Reference settings…** beside the checkbox. The count shows how many options are enabled. All five start checked; **OK** saves changes and **Cancel** keeps the previous settings.
+Choose **Reference settings…** beside the checkbox. The count shows how many options are enabled. All five start checked. The three **Skip** options are always enabled; reference failures cannot be made fatal. **OK** saves changes to the remaining options and **Cancel** keeps the previous settings.
 
 ![Released-reference settings dialog](/images/pdmpublisher/screenshots/task-released-reference-dialog.png)
 
@@ -147,17 +147,19 @@ Choose **Reference settings…** beside the checkbox. The count shows how many o
 | Ignore virtual components and cut-list items | Keep embedded content with its parent without checking it independently. |
 | Ignore part-to-part dependencies | Check the parent part without separately checking its dependent parts. |
 
-Unchecking a **Skip** option stops the task when that case occurs. Unchecking the embedded-content option stops on virtual components or cut-list items. Unchecking part-to-part dependencies enables their independent checks. PDM reference types determine embedded content; names such as `Sheet<1>` do not.
+Unchecking either **Ignore** option enables independent checks for those references. If a reference cannot be verified, it is omitted and the reason is logged. PDM reference types determine embedded content; names such as `Sheet<1>` do not.
 
-### References that cannot be cached
+### Reference failures and omissions
 
-Skipped references appear as **Omitted** in the report and are excluded from separate exports. Components are suppressed only in temporary publishing copies; original files remain unchanged. An omitted subassembly's exclusive branch is also omitted, while shared components can remain through another retained branch.
+A reference that cannot be checked, cached, or isolated is reported as **Omitted**, with its filename and the reason in the task log. Other safe outputs continue. This includes missing files, access-denied errors, unreadable history, and references with no Released version.
 
-The selected input document must have a Released version and cache successfully. Unknown or ambiguous references, unreadable history, and failures to prepare a safe publishing copy still stop the task.
+If a reference cannot be safely excluded from a temporary publishing copy, the affected parent output and outputs that depend on it are omitted too. Original files remain unchanged. Shared components can still be exported through another retained branch.
+
+A selected top-level document without a Released version still fails validation. If its Released copy cannot be cached or prepared safely, that output is omitted. Unrelated export or task errors can still fail the task.
 
 ### Troubleshooting reference checks
 
-**Cannot safely identify released reference** means the SOLIDWORKS dependency could not be matched uniquely to a child of the current parent. The task first checks full paths and historical PDM reference paths. For references without an extension, it can match a unique child filename without its extension. Omitted children remain available for this lookup. If both `Bracket.SLDPRT` and `Bracket.SLDASM` match, the task stops and lists the parent and candidate paths/IDs instead of guessing. A part and assembly sharing a base name are valid when the reference includes its extension.
+**Cannot safely identify released reference** means the SOLIDWORKS dependency could not be matched uniquely to a child of the current parent. The task first checks full paths and historical PDM reference paths. For references without an extension, it can match a unique child filename without its extension. Omitted children remain available for this lookup. If both `Bracket.SLDPRT` and `Bracket.SLDASM` match, the affected output is omitted and the log identifies the parent and candidate paths/IDs instead of guessing. A part and assembly sharing a base name are valid when the reference includes its extension.
 
 A message such as **Cannot inspect a child reference for released-only publishing** does not mean that the named parent file is unreleased. Read the child details in the task log: name, referenced-as value, found path, file/folder IDs, referenced version, and PDM file type. The log also identifies the parent and the selected Released version.
 
