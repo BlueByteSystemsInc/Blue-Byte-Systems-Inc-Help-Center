@@ -6,11 +6,11 @@ ms.topic: reference
 
 # Use Latest Released Versions Only
 
-Enable **Use latest released versions only** to publish the most recent version that entered a state whose name contains `Released` (case-insensitive). This overrides **Work with latest version**; it does not use a newer work-in-progress version.
+Enable **Use latest released versions only** to check each file's current PDM state first. If its name contains `Released` (case-insensitive), such as `Chassis Released`, publish the latest version without reading history. Otherwise, publish the most recent version that entered a state containing `Released`. The log identifies which method selected the version. This overrides **Work with latest version**.
 
 ![Released-only publishing and Reference settings](/images/pdmpublisher/screenshots/task-released-settings.png)
 
-Choose **Reference settings…** to review how references are handled. References outside the vault, without a Released version, or that cannot be cached are always omitted. Virtual components, cut-list items, and part-to-part dependencies are ignored by default.
+Choose **Reference settings…** to review how references are handled. References outside the vault, without a Released version, or that cannot be cached are always omitted. Virtual components, cut-list items, and all file dependencies of `.SLDPRT` files are ignored by default, regardless of extension. Assembly and drawing references still follow normal checks.
 
 Reference failures are logged with the filename and reason, while other safe outputs continue. If a reference cannot be safely excluded from a publishing copy, the affected parent output is also omitted. Original files remain unchanged.
 

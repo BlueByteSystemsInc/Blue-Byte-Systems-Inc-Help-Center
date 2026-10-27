@@ -131,7 +131,12 @@ For an interactive launch, if no selected files match the configured extensions,
 
 ## Use latest released versions only
 
-Enable **Use latest released versions only** to select the most recent version that entered the **Released** state for each normal file reference. The state name must contain `Released`, ignoring capitalization. This also matches names such as `Released for Production`, `Pre-Released`, and `Unreleased`; review your workflow state names before enabling this option. This overrides **Work with latest version** and the BOM version selection; it does not fall back to a newer work-in-progress version.
+Enable **Use latest released versions only** to select a version for each input file and normal file reference:
+
+- If the **current state** contains `Released`, use the file's **latest version** without searching history.
+- Otherwise, use the most recent version that entered a state containing `Released`, based on PDM history.
+
+Matching ignores capitalization: `Chassis Released` qualifies, as do `Pre-Released` and `Unreleased`. Review your workflow state names before enabling this option. The task logs the selected version and whether it came from the current state or history. This overrides **Work with latest version** and the BOM version selection.
 
 ![Released-only checkbox with Reference settings and selected-option count](/images/pdmpublisher/screenshots/task-released-settings.png)
 
@@ -142,16 +147,16 @@ Choose **Reference settings…** beside the checkbox. The count shows how many o
 | Setting | When checked |
 |---|---|
 | Skip references outside the vault | Omit confirmed external files that cannot have a PDM Released version. |
-| Skip references with no Released version | Omit references that have never entered a Released state. |
+| Skip references with no Released version | Omit references with neither a qualifying current state nor a Released version in history. |
 | Skip references that cannot be cached | Omit references whose Released copy cannot be retrieved or verified, including access-denied and file-not-found failures. |
 | Ignore virtual components and cut-list items | Keep embedded content with its parent without checking it independently. |
-| Ignore part-to-part dependencies | Check the parent part without separately checking its dependent parts. |
+| Ignore part dependencies | Check the parent `.SLDPRT` without independently checking or replacing its file dependencies, regardless of extension (including STEP). Assembly and drawing references still follow normal checks. |
 
 Unchecking either **Ignore** option enables independent checks for those references. If a reference cannot be verified, it is omitted and the reason is logged. PDM reference types determine embedded content; names such as `Sheet<1>` do not.
 
 ### Reference failures and omissions
 
-A reference that cannot be checked, cached, or isolated is reported as **Omitted**, with its filename and the reason in the task log. Other safe outputs continue. This includes missing files, access-denied errors, unreadable history, and references with no Released version.
+A reference that cannot be checked, cached, or isolated is reported as **Omitted**, with its filename and the reason in the task log. Parent omissions include the failing child path and its underlying reason; if SOLIDWORKS provides no detailed error, the log says so. Other safe outputs continue. This includes missing files, access-denied errors, unreadable history, and references with no Released version.
 
 If a reference cannot be safely excluded from a temporary publishing copy, the affected parent output and outputs that depend on it are omitted too. Original files remain unchanged. Shared components can still be exported through another retained branch.
 
