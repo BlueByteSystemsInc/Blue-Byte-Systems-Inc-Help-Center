@@ -156,9 +156,11 @@ Unchecking either **Ignore** option enables independent checks for those referen
 
 ### Reference failures and omissions
 
-A reference that cannot be checked, cached, or isolated is reported as **Omitted**, with its filename and the reason in the task log. Parent omissions include the failing child path and its underlying reason; if SOLIDWORKS provides no detailed error, the log says so. Other safe outputs continue. This includes missing files, access-denied errors, unreadable history, and references with no Released version.
+A reference that cannot be checked, cached, or isolated is reported as **Omitted**, with its filename and the reason in the task log. Exclusion failures include the child path and underlying reason; if SOLIDWORKS provides no detailed error, the log says so. Other safe outputs continue. This includes missing files, access-denied errors, unreadable history, and references with no Released version.
 
-If a reference cannot be safely excluded from a temporary publishing copy, the affected parent output and outputs that depend on it are omitted too. Original files remain unchanged. Shared components can still be exported through another retained branch.
+Omissions flow **downward only**: an omitted file can exclude descendants used only by that branch, but does not automatically omit its parent assembly or drawing. Shared descendants remain eligible through another retained branch, and independently selected files retain their own output eligibility.
+
+The task excludes a failed child from the parent's temporary publishing copy and verifies the replacement. A parent is omitted only if its own preparation or verification fails, not simply because a child was omitted. Original files remain unchanged.
 
 A selected top-level document without a Released version still fails validation. If its Released copy cannot be cached or prepared safely, that output is omitted. Unrelated export or task errors can still fail the task.
 
