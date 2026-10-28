@@ -156,6 +156,8 @@ Unchecking either **Ignore** option enables independent checks for those referen
 
 ### Reference failures and omissions
 
+The same rules apply to references discovered by SOLIDWORKS that were missing from the PDM reference list. External files, such as a Toolbox bolt outside the vault, are excluded from the temporary publishing copy without automatically omitting their parent assembly. Newly discovered vault files go through Released-version selection and caching; the task closes its SOLIDWORKS session before updating the cache.
+
 A reference that cannot be checked, cached, or isolated is reported as **Omitted**, with its filename and the reason in the task log. Exclusion failures include the child path and underlying reason; if SOLIDWORKS provides no detailed error, the log says so. Other safe outputs continue. This includes missing files, access-denied errors, unreadable history, and references with no Released version.
 
 Omissions flow **downward only**: an omitted file can exclude descendants used only by that branch, but does not automatically omit its parent assembly or drawing. Shared descendants remain eligible through another retained branch, and independently selected files retain their own output eligibility.
@@ -166,7 +168,7 @@ A selected top-level document without a Released version still fails validation.
 
 ### Troubleshooting reference checks
 
-**Cannot safely identify released reference** means the SOLIDWORKS dependency could not be matched uniquely to a child of the current parent. The task first checks full paths and historical PDM reference paths. For references without an extension, it can match a unique child filename without its extension. Omitted children remain available for this lookup. If both `Bracket.SLDPRT` and `Bracket.SLDASM` match, the affected output is omitted and the log identifies the parent and candidate paths/IDs instead of guessing. A part and assembly sharing a base name are valid when the reference includes its extension.
+**Cannot safely identify released reference** means the SOLIDWORKS dependency could not be matched uniquely to a child of the current parent. The task checks full paths, historical PDM reference paths, and unique filenames. If no known child matches, it looks up the discovered path in PDM and applies the reference rules above. An unmatched path is not automatically treated as outside the vault. Omitted children remain available for this lookup. If both `Bracket.SLDPRT` and `Bracket.SLDASM` match, the affected output is omitted and the log identifies the parent and candidate paths/IDs instead of guessing. A part and assembly sharing a base name are valid when the reference includes its extension.
 
 A message such as **Cannot inspect a child reference for released-only publishing** does not mean that the named parent file is unreleased. Read the child details in the task log: name, referenced-as value, found path, file/folder IDs, referenced version, and PDM file type. The log also identifies the parent and the selected Released version.
 
