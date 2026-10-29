@@ -51,6 +51,8 @@ In custom macro mode, the built-in template and standard-view controls are disab
 
 ## Review the Result
 
+Publishing preserves documents that were visible or had unsaved changes when the run started. Hidden, unmodified references release their publishing windows after export to reduce graphics-resource usage.
+
 After processing, use **Publishing results** to review generated files by source document and configuration, search results, filter outcomes, open destinations, or inspect technical details.
 
 ![Publishing results grouped by file and configuration](/images/pdmpublisher/solidworks/publishing-results-20261007.png)
