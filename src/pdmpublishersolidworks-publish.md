@@ -27,7 +27,7 @@ Select **PDMPublisher > Publish** in the CommandManager. Use the command arrow t
 
 The arrow beside **Publish** selects the Publish profile used for the job. It does not select or associate a PDM vault. When a workflow uses PDM values, serial numbers, automatic check-in, or Vault root folder placeholders, configure the shared vault under **PDMPublisher > Settings > PDM**. See [PDM Settings](pdmpublishersolidworks_pdm-settings.md).
 
-When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md) is enabled for an assembly, PDMPublisher displays the references that passed before export begins. Confirm the files to continue or cancel the job.
+When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md) is enabled for an assembly, PDMPublisher displays the references that passed before export begins. Confirm the files to continue or cancel the job. Check **Exclude all Toolbox parts** to uncheck Toolbox components for this run and show their exclusion reason. The option starts unchecked; clearing it restores prior selections without overriding profile conditions.
 
 ![Review files and evaluated output paths before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 

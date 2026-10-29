@@ -23,4 +23,4 @@ Property placeholders are evaluated when publishing. The QR preview encodes the 
 
 **Custom properties** lists document and configuration properties from loaded drawings and models. Publishing uses the associated/reference model and its configuration, falling back to file-level properties. The menu does not bind a placeholder to a particular model.
 
-Choose **OK** to save the profile or **Cancel** to discard the edits. Temporary publishing annotations are removed from the source drawing after export.
+Choose **OK** to save the profile or **Cancel** to discard the edits. Temporary publishing annotations are removed from the source drawing after export. Watermark cleanup refreshes the sheet format and returns to normal sheet mode without saving the drawing.

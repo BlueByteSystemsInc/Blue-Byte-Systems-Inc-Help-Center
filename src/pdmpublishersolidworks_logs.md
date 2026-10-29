@@ -30,3 +30,5 @@ Select **PDMPublisher > Logs** to open **Publishing results** and review success
 
 > [!TIP]
 > Save the log immediately after a failed job and include it when contacting `support@bluebytesystemsinc.zohodesk.com`.
+
+For graphics-resource problems during publishing, attach the `Publishing-GDI-*.tsv` trace from `%LOCALAPPDATA%\Blue Byte Systems\PDMPublisher\Diagnostics` along with the job log. It records resource counts around document activation, export, and cleanup.
