@@ -6,9 +6,9 @@ ms.topic: reference
 
 # Use Latest Released Versions Only
 
-Enable **Use latest released versions only** to check each file's current PDM state first. If its name contains `Released` (case-insensitive), such as `Chassis Released`, publish the latest version without reading history. Otherwise, publish the most recent version that entered a state containing `Released`. The log identifies which method selected the version. This overrides **Work with latest version**.
+Enable **Use latest permitted states**, then choose **Affected states…** to add the state names or text to match. Suggestions load in the background; you can also type and add your own text. The button shows the number of selected entries, and **X** removes an entry.
 
-![Released-only publishing and Reference settings](/images/pdmpublisher/screenshots/task-released-settings.png)
+Matching is case-insensitive and accepts any entry. The default `Released` also matches names such as `Chassis Released` and `Unreleased`. If the current state matches, the latest version is used; otherwise the task searches history for the most recent matching version. This overrides **Work with latest version**.
 
 Choose **Reference settings…** to review how references are handled. References outside the vault, without a Released version, or that cannot be cached are always omitted. Virtual components, cut-list items, and all file dependencies of `.SLDPRT` files are ignored by default, regardless of extension. Assembly and drawing references still follow normal checks.
 

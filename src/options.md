@@ -129,16 +129,19 @@ The filter applies to selected or scheduled task input files. It does not select
 
 For an interactive launch, if no selected files match the configured extensions, the task is canceled before it enters the queue. The execution host also checks the filter when processing inputs, including scheduled items. Canceling the file-selection dialog cancels the launch.
 
+## Multiple selected files
+
+Each selected or scheduled input is published separately, with its own configuration, references, BOM, and evaluated output paths. A task-level configuration choice applies to every input; otherwise each input uses its own configuration.
+
+PDF merging and ZIP creation stay within each input. The task log identifies each file and its progress. Results include all inputs; failed inputs or exports mark the task as failed. Cancellation or a SOLIDWORKS connection failure can stop the remaining inputs.
+
 ## Use latest released versions only
 
-Enable **Use latest released versions only** to select a version for each input file and normal file reference:
+Enable **Use latest permitted states** to choose versions using the state names in **Affected states…**. The count beside the button shows how many entries are selected.
 
-- If the **current state** contains `Released`, use the file's **latest version** without searching history.
-- Otherwise, use the most recent version that entered a state containing `Released`, based on PDM history.
+Type a state name or part of a name, then add it to the list. Suggestions load in the background from the vault's workflows; you can type and add an entry while they load. Use **X** to remove an entry. Matching ignores capitalization and accepts any listed entry. The default is `Released`, which also matches `Chassis Released` and `Unreleased`; choose your text carefully.
 
-Matching ignores capitalization: `Chassis Released` qualifies, as do `Pre-Released` and `Unreleased`. Review your workflow state names before enabling this option. The task logs the selected version and whether it came from the current state or history. This overrides **Work with latest version** and the BOM version selection.
-
-![Released-only checkbox with Reference settings and selected-option count](/images/pdmpublisher/screenshots/task-released-settings.png)
+If the current state matches, the task uses the latest version. Otherwise, it searches history for the most recent version that entered a matching state. The log records the selection. This overrides **Work with latest version** and the BOM version selection.
 
 Choose **Reference settings…** beside the checkbox. The count shows how many options are enabled. All five start checked. The three **Skip** options are always enabled; reference failures cannot be made fatal. **OK** saves changes to the remaining options and **Cancel** keeps the previous settings.
 

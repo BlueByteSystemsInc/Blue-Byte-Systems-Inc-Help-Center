@@ -14,7 +14,7 @@ Combines exported PDFs into a single master PDF.
 > [!NOTE]
 > This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
 
-This option is for assembly processing. In the PDM task, merging and saving individual reference outputs are separate settings. Disabling **Export references to file formats individually** does not disable merging. To prevent a master PDF, turn off **Merge exported PDFs into one master PDF**.
+This option is for assembly processing. When a PDM task has multiple selected inputs, each input produces its own master PDF; inputs are not merged together. In the PDM task, merging and saving individual reference outputs are separate settings. Disabling **Export references to file formats individually** does not disable merging. To prevent a master PDF, turn off **Merge exported PDFs into one master PDF**.
 
 Required setup:
 
