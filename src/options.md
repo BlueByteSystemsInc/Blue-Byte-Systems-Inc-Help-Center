@@ -162,7 +162,7 @@ Choose **Reference settings…** beside the checkbox. The count shows how many o
 | Setting | When checked |
 |---|---|
 | Skip references outside the vault | Omit confirmed external files that cannot have a PDM Released version. |
-| Skip references with no Released version | Omit references with neither a qualifying current state nor a Released version in history. |
+| Skip references with no permitted version | Omit references with neither a qualifying current state nor a Released version in history. |
 | Skip references that cannot be cached | Omit references whose Released copy cannot be retrieved or verified, including access-denied and file-not-found failures. |
 | Ignore virtual components and cut-list items | Keep embedded content with its parent without checking it independently. |
 | Ignore part dependencies | Check the parent `.SLDPRT` without independently checking or replacing its file dependencies, regardless of extension (including STEP). Assembly and drawing references still follow normal checks. |
