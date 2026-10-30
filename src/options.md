@@ -129,6 +129,14 @@ The filter applies to selected or scheduled task input files. It does not select
 
 For an interactive launch, if no selected files match the configured extensions, the task is canceled before it enters the queue. The execution host also checks the filter when processing inputs, including scheduled items. Canceling the file-selection dialog cancels the launch.
 
+## Task timeout
+
+Under **Publish → Task limits**, set **Task timeout (minutes)**. The default is **20 minutes**; enter a value from **1 to 1440**.
+
+The limit covers all selected inputs together. When it expires, the task is marked **Failed**, the timeout is logged, and task-owned SOLIDWORKS processes are stopped. Outputs already created are retained.
+
+![Task timeout setting with the default of 20 minutes](/images/pdmpublisher/screenshots/task-timeout-settings.png)
+
 ## Multiple selected files
 
 Each selected or scheduled input is published separately, with its own configuration, references, BOM, and evaluated output paths. A task-level configuration choice applies to every input; otherwise each input uses its own configuration.
@@ -142,6 +150,10 @@ Enable **Use latest permitted states** to choose versions using the state names 
 Type a state name or part of a name, then add it to the list. Suggestions load in the background from the vault's workflows; you can type and add an entry while they load. Use **X** to remove an entry. Matching ignores capitalization and accepts any listed entry. The default is `Released`, which also matches `Chassis Released` and `Unreleased`; choose your text carefully.
 
 If the current state matches, the task uses the latest version. Otherwise, it searches history for the most recent version that entered a matching state. The log records the selection. This overrides **Work with latest version** and the BOM version selection.
+
+![Permitted-state controls in the Publish settings](/images/pdmpublisher/screenshots/task-permitted-state-settings.png)
+
+![Affected states dialog with editable state text and removable entries](/images/pdmpublisher/screenshots/task-affected-states.png)
 
 Choose **Reference settings…** beside the checkbox. The count shows how many options are enabled. All five start checked. The three **Skip** options are always enabled; reference failures cannot be made fatal. **OK** saves changes to the remaining options and **Cancel** keeps the previous settings.
 

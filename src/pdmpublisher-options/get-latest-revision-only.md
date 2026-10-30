@@ -10,6 +10,12 @@ Enable **Use latest permitted states**, then choose **Affected states…** to ad
 
 Matching is case-insensitive and accepts any entry. The default `Released` also matches names such as `Chassis Released` and `Unreleased`. If the current state matches, the latest version is used; otherwise the task searches history for the most recent matching version. This overrides **Work with latest version**.
 
+![Use latest permitted states and Affected states controls](/images/pdmpublisher/screenshots/task-permitted-state-settings.png)
+
+![Affected states dialog](/images/pdmpublisher/screenshots/task-affected-states.png)
+
+You can still type and add text when vault suggestions are unavailable.
+
 Choose **Reference settings…** to review how references are handled. References outside the vault, without a Released version, or that cannot be cached are always omitted. Virtual components, cut-list items, and all file dependencies of `.SLDPRT` files are ignored by default, regardless of extension. Assembly and drawing references still follow normal checks.
 
 Reference failures are logged with the filename and reason. Omissions flow **downward only** through descendants used exclusively by the omitted branch; parents are not automatically omitted. Shared components and independently selected files remain eligible.
