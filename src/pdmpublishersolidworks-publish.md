@@ -51,7 +51,9 @@ In custom macro mode, the built-in template and standard-view controls are disab
 
 ## Review the Result
 
-Publishing preserves documents that were visible or had unsaved changes when the run started. Hidden, unmodified references release their publishing windows after export to reduce graphics-resource usage.
+Publishing reads saved configurations, properties, and lightweight assembly references without loading every component. Components are resolved when their assembly is exported. Unsaved property changes are read from the open SOLIDWORKS document.
+
+After each export or drawing creation, publishing releases its document windows before continuing. Documents that were already visible or had unsaved changes remain open. If a component cannot be read, the results identify the file and reason.
 
 After processing, use **Publishing results** to review generated files by source document and configuration, search results, filter outcomes, open destinations, or inspect technical details.
 
