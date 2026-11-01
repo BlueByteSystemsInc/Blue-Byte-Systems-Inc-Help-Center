@@ -1,11 +1,13 @@
 ---
 title: Version and Updates | PDMPublisher for SOLIDWORKS
 description: Check the installed PDMPublisher for SOLIDWORKS version and download an available update.
-ms.date: 10/23/2026
+ms.date: 11/01/2026
 ms.topic: how-to
 ---
 
 # Version and Updates
+
+See the [release notes](changeslog.md) for the latest published changes and installer.
 
 Use the **Updates** CommandManager group or open **PDMPublisher > Settings > Support and Updates** to display the installed version and check whether a newer release is available.
 

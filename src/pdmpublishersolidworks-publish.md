@@ -37,11 +37,14 @@ Select **SOLIDWORKS Drawing (*.slddrw)** in the Publish profile's file formats, 
 
 - **Drawing template (.drwdot):** choose a template discovered from SOLIDWORKS Document Templates folders, type a path, or use Browse.
 - **Existing drawing:** choose whether to skip or overwrite an existing drawing.
+- **Sheet format (.slddrt):** optionally replace the sheet format. Browse starts in the configured SOLIDWORKS sheet-format folder. Leave blank to keep the template's format; paper size, view layout, and scales remain controlled by the drawing template.
 - **Views:** choose standard views using the template's sheet scale. Enable predefined views for a template prepared with predefined views; this disables the standard-view choices.
 - **Add drawing to PDM and check in:** requires the shared PDM vault to be selected and logged in.
 - The option to check out, recreate, and check in existing drawings uses the configured template or macro. It overrides Skip for that drawing; it does not preserve the old sheets and annotations. Drawings checked out by another user or machine cannot be replaced.
 
 ### Use an editable SWB macro
+
+Toolbox components are automatically excluded from drawing generation, including when replacing existing drawings.
 
 Drawing Settings supports custom drawing-creation macros in Drawing Settings. Enable the custom macro option, then edit the code, import an SWB file, or load the example. The code is saved in the Publish profile and can be exported.
 
