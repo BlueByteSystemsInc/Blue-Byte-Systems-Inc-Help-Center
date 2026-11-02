@@ -42,3 +42,10 @@ Après le traitement, utilisez **Publishing results** pour examiner les fichiers
 Sélectionnez **PDMPublisher > Logs** pour consulter l'historique complet de la session. Utilisez [Enregistrer et effacer les journaux](pdmpublishersolidworks-log-files.md) pour joindre l'enregistrement complet du travail à une demande de soutien.
 
 Voir [Publishing Workflow and Results](pdmpublishersolidworks_workflow.md) pour la séquence complète, y compris l'examen, l'abandon des fichiers, l'annulation et les résultats de dépannage.
+
+<a id="create-solidworks-drawings"></a>
+## Créer des dessins SOLIDWORKS
+
+Dans Drawing Settings, choisissez le modèle .drwdot et, au besoin, un format de feuille .slddrt. Les vues standard réservent une bande inférieure pour un cartouche conventionnel. Activez Use template's predefined views pour conserver la disposition et l’échelle du modèle.
+
+Les vues standard sont ajustées selon leurs dimensions réelles, avec une échelle commune, des marges et des espaces. Les vues prédéfinies et les macros conservent leur disposition.

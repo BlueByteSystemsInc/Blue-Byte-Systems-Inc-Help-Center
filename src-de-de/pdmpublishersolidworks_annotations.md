@@ -45,3 +45,5 @@ Der Zeichenbereich ist eine Positioniervorschau. Das Hinzufügen oder Verschiebe
 
 > [!NOTE]
 > Annotationssteuerelemente werden mit der PDM-Task geteilt, aber das SOLIDWORKS-Add-in erhält Eigenschaften aus dem aktiven Dokument und speichert Annotationen im ausgewählten Publish-Profil.
+
+Die QR-Position berücksichtigt die Bildgröße. Nur bei der QR-Einfügung neu entstandene Konstruktionsgeometrie wird entfernt; vorhandene Geometrie bleibt erhalten.

@@ -45,3 +45,5 @@ La zone de dessin est un aperçu de positionnement. L'ajout ou le déplacement d
 
 > [!NOTE]
 > Les contrôles d'annotation sont partagés avec la tâche PDM, mais le complément SOLIDWORKS obtient des propriétés du document actif et enregistre des annotations dans le profil Publier sélectionné.
+
+La position du code QR tient compte de la taille de l’image. Seule la géométrie de construction créée lors de son insertion est supprimée; la géométrie existante est préservée.

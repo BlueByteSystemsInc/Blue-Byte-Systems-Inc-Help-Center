@@ -36,3 +36,10 @@ Wenn [Ausgabedialog Bedingungen anzeigen](pdmpublishersolidworks-condition-outpu
 Wählen Sie **PDMPublisher > Logs** aus, um die Verarbeitung von steps, exportierten Dateien, Warnungen und Fehlern zu überprüfen. Verwenden Sie [Speichern und Löschen von Protokollen](pdmpublishersolidworks-log-files.md), um den vollständigen Auftragsdatensatz an eine Supportanforderung anzuhängen.
 
 Siehe [Publishing Workflow and Results](pdmpublishersolidworks_workflow.md) für die vollständige Sequenz, einschließlich Überprüfung, übersprungene Dateien, Stornierung und Fehlerbehebung Ergebnisse.
+
+<a id="create-solidworks-drawings"></a>
+## SOLIDWORKS-Zeichnungen erstellen
+
+Wählen Sie in Drawing Settings eine .drwdot-Vorlage und optional ein .slddrt-Blattformat. Standardansichten lassen unten Platz für einen üblichen Schriftkopf. Use template's predefined views behält Layout und Maßstab der Vorlage bei.
+
+Standardansichten werden anhand ihrer gemessenen Größe mit einem gemeinsamen Maßstab, Rändern und Abständen eingepasst. Vordefinierte Ansichten und Makros behalten ihr Layout.

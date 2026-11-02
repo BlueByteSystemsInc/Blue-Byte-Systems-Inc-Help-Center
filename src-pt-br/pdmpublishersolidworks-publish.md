@@ -37,3 +37,10 @@ Quando o [Mostrar a janela de saída das condições](pdmpublishersolidworks-con
 Selecione **PDMPublisher > Logs** para rever o processamento steps, arquivos exportados, avisos e falhas. Use [Save and Clear Logs](pdmpublishersolidworks-log-files.md) para anexar o registro completo de trabalho a uma solicitação de suporte.
 
 Veja [Publicar fluxo de trabalho e resultados](pdmpublishersolidworks_workflow.md) para a sequência completa, incluindo revisão, arquivos ignorados, cancelamento e resultados de solução de problemas.
+
+<a id="create-solidworks-drawings"></a>
+## Criar desenhos SOLIDWORKS
+
+Em Drawing Settings, escolha o modelo .drwdot e, opcionalmente, um formato de folha .slddrt. As vistas padrão reservam uma faixa inferior para uma legenda convencional. Use template's predefined views mantém o layout e a escala do modelo.
+
+As vistas padrão são ajustadas às dimensões medidas, com escala comum, margens e espaçamento. Vistas predefinidas e macros mantêm seu layout.

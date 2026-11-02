@@ -45,3 +45,5 @@ A área de desenho é uma pré-visualização de posicionamento. Adicionar ou mo
 
 > [!NOTE]
 > Os controles de anotação são compartilhados com a tarefa PDM, mas o suplemento SOLIDWORKS obtém propriedades do documento ativo e salva anotações no perfil de publicação selecionado.
+
+A posição do código QR considera o tamanho da imagem. Somente a geometria de construção criada durante a inserção do QR é removida; a geometria existente é preservada.
