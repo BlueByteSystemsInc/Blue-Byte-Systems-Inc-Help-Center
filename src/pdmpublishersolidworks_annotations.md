@@ -16,7 +16,7 @@ Select a note to show its properties sidebar. Click empty space to hide the side
 - Set **Position** to percent, millimeters, or inches. X is measured from the left and Y from the bottom; a watermark uses its center as the anchor.
 - **Include in export** keeps or omits the note without deleting its definition. **Sheets** selects all sheets, the first sheet, or named sheets.
 - **Watermark** rotates the note's text 45 degrees behind the drawing. It starts gray; you can change the color. Clearing Watermark keeps the text styling. Image and logo watermarks are not supported.
-- **QR code** renders the note as an image. Double-click to edit its text. Width is in inches when inch positioning is selected, otherwise millimeters—never percent.
+- **QR code** renders the note as an image. Double-click to edit its text. Width is in inches when inch positioning is selected, otherwise millimeters—never percent. Placement accounts for the image size so the preview and exported QR use the same bounds.
 - Press **Ctrl+A** outside text editing to select every note, then **Delete** to remove them.
 
 Property placeholders are evaluated when publishing. The QR preview encodes the template text; the exported QR code encodes the evaluated value.
