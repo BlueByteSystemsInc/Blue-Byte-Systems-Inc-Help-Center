@@ -1,11 +1,11 @@
 ---
-title: Use Latest Released Versions Only | PDMPublisher PDM Task
+title: Use Latest Permitted States Only | PDMPublisher PDM Task
 description: Select permitted PDM states and configure how publishing handles file references.
 ms.topic: reference
 ms.date: 11/03/2026
 ---
 
-# Use Latest Released Versions Only
+# Use Latest Permitted States Only
 
 Enable **Use latest permitted states** in the task's Publish settings to select file versions by their PDM workflow state. This overrides **Work with latest version** and the BOM version selection.
 
