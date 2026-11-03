@@ -33,6 +33,8 @@
         href: pdmpublishersolidworks_comparison.md
       - name: Install and Enable the Add-in
         href: pdmpublishersolidworks_installation.md
+      - name: Changelog
+        href: changeslog.md
       - name: Commands
         href: pdmpublishersolidworks_commands.md
       - name: Help Task Pane
