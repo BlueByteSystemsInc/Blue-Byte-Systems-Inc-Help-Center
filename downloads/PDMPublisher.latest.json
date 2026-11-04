@@ -1,10 +1,10 @@
 {
   "product": "PDMPublisher",
-  "version": "20261111",
-  "sourceFile": "PDMPublisherV20261111.cex",
+  "version": "20261112",
+  "sourceFile": "PDMPublisherV20261112.cex",
   "fileName": "PDMPublisher.cex",
-  "sizeBytes": 27657706,
-  "sha256": "30ae1ab34b1f84cd06a5b92324c904a314d1cb07aec4414005f8654a5f341408",
-  "publishedUtc": "2026-10-30T20:42:59.9643714Z",
+  "sizeBytes": 27666410,
+  "sha256": "ad25b16e36c787e2f506c6bd7915a866ccbdb7e1fb81727e6f3fa721ce935575",
+  "publishedUtc": "2026-11-04T22:55:42.0594965Z",
   "url": "https://docs.bluebyte.biz/downloads/PDMPublisher.cex"
 }
