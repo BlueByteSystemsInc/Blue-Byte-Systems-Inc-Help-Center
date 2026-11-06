@@ -1,29 +1,18 @@
 ---
 title: Scheduled Items Task Page | PDMPublisher | SOLIDWORKS PDM
 description: Learn how to use the Scheduled Items task setup page in PDMPublisher to define files that should be processed when a task runs without selected files.
-ms.date: 06/21/2026
+ms.date: 11/06/2026
 ms.topic: conceptual
 ---
 # Scheduled Items Task Page
 
-The **Scheduled Items** page lets administrators define the files PDMPublisher should process when the task launches.
-
-This is useful for scheduled tasks and automated task launches where SOLIDWORKS PDM does not provide a file selection to the task.
+Use Scheduled Items to choose the files to publish when PDM starts the task without any input files. When a workflow transition or File Explorer supplies files, the task uses that selection.
 
 ![Scheduled Items setup page](/images/pdmpublisher/screenshots/task-setup-scheduled-items.png)
 
 Scheduling itself is handled by SOLIDWORKS PDM's own scheduling framework. The **Scheduling** page controls when the task starts. The **Scheduled Items** page controls which saved files PDMPublisher processes when that scheduled task starts.
 
 ![SOLIDWORKS PDM Scheduling page](/images/pdmpublisher/screenshots/task-setup-scheduling.png)
-
-## When to use this page
-
-Use **Scheduled Items** when the task is expected to run on a schedule or from an automation that does not pass selected files to PDMPublisher.
-
-If files are configured on this page, PDMPublisher uses the Scheduled Items list as the task input.
-
-> [!IMPORTANT]
-> Scheduled Items override every other file selection. If this page contains files, PDMPublisher processes the files listed here and ignores files selected from the right-click **Tasks** menu, files selected on task launch, or files passed by another launch method. Only configure Scheduled Items for tasks that should always process the same saved list of files.
 
 ## Adding files
 
@@ -47,8 +36,6 @@ Select one or more rows and click **Remove** to remove them from the scheduled i
 - The selected files must remain available in the vault.
 - The task host must have permission to access the selected files and their folders.
 - The task still uses the settings from the other setup pages, including **Options**, **Annotations**, and **Conditions**.
-- If this page contains files, those files are used even when the task is launched from a selected file in File Explorer.
-- If this page contains files, those files are also used when the task starts from SOLIDWORKS PDM scheduling.
 - If no files are selected at launch and no scheduled items are configured, the task will stop with an error.
 
 ## Selecting files at task launch

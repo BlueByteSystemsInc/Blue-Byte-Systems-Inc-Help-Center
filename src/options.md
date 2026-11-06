@@ -1,7 +1,7 @@
 ---
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: Short reference for every PDMPublisher task setup option available in SOLIDWORKS PDM Professional.
-ms.date: 10/20/2026
+ms.date: 11/06/2026
 ms.topic: conceptual
 ---
 
@@ -139,9 +139,11 @@ The limit covers all selected inputs together. When it expires, the task is mark
 
 ## Multiple selected files
 
-Each selected or scheduled input is published separately, with its own configuration, references, BOM, and evaluated output paths. A task-level configuration choice applies to every input; otherwise each input uses its own configuration.
+When a workflow passes several files to one task, each eligible file gets its own publishing pass, in the order supplied. Parts, assemblies and drawings follow their usual export settings. Each pass uses its own references and output paths. An explicit task-wide configuration applies to every file. Otherwise each file uses its own configuration.
 
-PDF merging and ZIP creation stay within each input. The task log identifies each file and its progress. Results include all inputs; failed inputs or exports mark the task as failed. Cancellation or a SOLIDWORKS connection failure can stop the remaining inputs.
+One log covers the whole task. It starts with a count such as `Processing 3 of 4 input files.` and identifies each eligible file as `Task input 1/3`, `2/3` or `3/3`. Failed inputs or exports mark the task as failed. Cancellation, timeout or loss of the SOLIDWORKS connection can stop the remaining files.
+
+PDF merging and ZIP creation run separately for each input. See [Merge exported PDFs](pdmpublisher-options/merge-exported-pdfs.md) for an example with multiple assemblies.
 
 ## Use latest released versions only
 

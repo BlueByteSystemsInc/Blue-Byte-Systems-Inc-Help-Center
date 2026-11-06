@@ -1,7 +1,7 @@
 ---
 title: Merge Exported PDFs into One Master PDF | PDMPublisher Options
 description: Combine exported PDFs into a single master PDF.
-ms.date: 08/09/2026
+ms.date: 11/06/2026
 ms.topic: reference
 ---
 
@@ -14,7 +14,9 @@ Combines exported PDFs into a single master PDF.
 > [!NOTE]
 > This setting is available in both the **PDM task** and **SOLIDWORKS add-in**.
 
-This option is for assembly processing. When a PDM task has multiple selected inputs, each input produces its own master PDF; inputs are not merged together. In the PDM task, merging and saving individual reference outputs are separate settings. Disabling **Export references to file formats individually** does not disable merging. To prevent a master PDF, turn off **Merge exported PDFs into one master PDF**.
+In a PDM task, each top-level assembly produces its own master when its reference list has more than one entry and at least one PDF exports successfully. For example, selecting Assembly A and Assembly B can produce `Assembly A-master.pdf` and `Assembly B-master.pdf` when the filename pattern uses the model name.
+
+A subassembly processed as a reference can contribute drawing pages to its parent’s master. Select the subassembly as a separate task input to produce its own master. A separately selected part or drawing follows its individual export settings.
 
 Required setup:
 

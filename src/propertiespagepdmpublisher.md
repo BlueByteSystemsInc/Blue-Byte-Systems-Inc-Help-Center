@@ -1,7 +1,7 @@
 ---
 title: Creating a New Task | PDMPublisher | SOLIDWORKS PDM
 description: Create your first PDMPublisher task in SOLIDWORKS PDM Administration.
-ms.date: 10/20/2026
+ms.date: 11/06/2026
 ms.topic: conceptual
 ---
 
@@ -124,7 +124,7 @@ Use conditions to control which referenced files are processed when publishing a
 
 ![PDMPublisher Scheduled Items setup page](/images/pdmpublisher/screenshots/task-setup-scheduled-items.png)
 
-Use Scheduled Items when this task should always process a saved list of files. Scheduled Items override other selected files.
+Use Scheduled Items to provide a saved file list for runs where PDM supplies no files.
 
 ### Integrations
 
