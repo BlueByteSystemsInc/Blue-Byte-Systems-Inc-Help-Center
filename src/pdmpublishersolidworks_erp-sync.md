@@ -14,14 +14,15 @@ Open **PDMPublisher > ERP Sync** to prepare a Push or Pull operation. Open **PDM
 
 ## Configure ERP Sync
 
-![ERP Sync settings in PDMPublisher for SOLIDWORKS](/images/pdmpublisher/solidworks/erp-sync-settings-20260920.png)
+![ERP Sync settings showing destinations for mapped properties and generated part numbers](/images/pdmpublisher/solidworks/erp-sync-property-destinations.png)
 
 The settings page contains:
 
 | Setting | Description |
 | --- | --- |
 | ERP connector | Selects the connector used by ERP Sync. Open the connector settings from the adjacent connector command. |
-| Pull values into | Choose **Custom properties**, **Configuration-specific properties**, or **Both**. The default is **Both**. Each selected row supplies its configuration; cut-list rows always use cut-list properties. |
+| Write mapped properties to (Push and Pull) | Choose the row's property scope, the file's Custom tab, the selected configuration's properties, or both tabs (default). This controls where Pull writes values and where Push creates missing mapped properties. Cut-list rows use their cut-list properties. |
+| Save generated part numbers to | Choose Configuration Specific (default) for a separate number per configuration, or Custom (one part number per file) to share the number across configurations. |
 | Default column template | Selects the BOM Manager column template used when the ERP Sync window opens. The selected columns also provide available values to the connector. |
 | Default BOM display type | Selects the initial **Parts only**, **Top-level only**, or indented BOM view. |
 | Group by | Groups displayed rows by text, a property, or a supported placeholder. Leave it empty for a flat list. |
@@ -33,7 +34,7 @@ Select **OK** to save the defaults. These settings are independent from BOM Mana
 
 ## Install and configure a connector
 
-![ERP connector catalog and settings](/images/pdmpublisher/solidworks/erp-connector-settings-20260920.png)
+![ERP connector catalog and settings](/images/pdmpublisher/solidworks/odoo-relation-settings.png)
 
 1. Open **Settings > ERP Sync**, and open **ERP connector settings**.
 2. Select an official connector and choose **Download**, or choose **Add new...** to browse to a custom connector DLL.
@@ -190,7 +191,7 @@ The diff uses green for **Added**, orange for **Changed**, and red for **Deleted
 
 ### Custom and configuration-specific destinations
 
-Set **Pull values into** in **Settings > ERP Sync**. **Both** writes the mapped value to document custom properties and the selected row's configuration-specific properties. The other choices restrict the write to one scope. Cut-list rows use their cut-list properties.
+Set **Write mapped properties to (Push and Pull)** in **Settings > ERP Sync**. **Both** writes the mapped value to document custom properties and the selected row's configuration-specific properties. The other choices restrict the write to one scope. Cut-list rows use their cut-list properties.
 
 The grid shows one value per property rather than repeating custom and configuration-specific values. Select **(i)** in a changed cell to see which destinations will be updated and which already match. A cell can be highlighted even when its displayed values match: the document custom property may differ while the configuration-specific value already matches ERP.
 

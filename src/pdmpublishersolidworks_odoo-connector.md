@@ -10,7 +10,7 @@ ms.topic: how-to
 The Odoo connector is an official Blue Byte Systems connector for Odoo 19+ and Odoo Online sites with JSON-2 external API access. It supports reviewed Push and Pull operations between checked ERP Sync rows and Odoo products.
 
 
-![Official Odoo connector and configuration settings](/images/pdmpublisher/solidworks/odoo-connector-settings-20260931.png)
+![Odoo connector settings with Use readable relation names selected](/images/pdmpublisher/solidworks/odoo-relation-settings.png)
 
 The API key identifies the Odoo user. The connector does not send a login username or password. PDMPublisher encrypts the saved connector settings for the current Windows user.
 
@@ -73,8 +73,9 @@ Treat the API key like a password. Do not include it in screenshots, logs, sourc
 | Setting | Behavior |
 | --- | --- |
 | Item code column | ERP Sync column or custom property matched exactly to the Odoo product **Internal Reference** (`default_code`). The default is `PartNumber`. Blank source codes stop Push preview unless Odoo-generated references are enabled. Ambiguous matching products in Odoo always stop preview. Repeated source codes are allowed when their mapped values are compatible. |
+| Use readable relation names | On by default. Push preview, Pull, and mapped properties created during Push use Odoo labels, such as the full category path. Turn it off to use record IDs such as `#6`. Push accepts an exact, unique label or a `#ID` in either mode. |
 | Skip empty values | When enabled, blank mapped source values do not overwrite existing Odoo values, and blank values read during Pull do not clear local SOLIDWORKS properties. |
-| Property mappings | Maps a SOLIDWORKS property or ERP Sync column to a writable scalar Odoo product field. The default mapping is `Description` → `name`. |
+| Property mappings | Maps a SOLIDWORKS property or ERP Sync column to a supported writable Odoo product field. The default mapping is `Description` → `name`. |
 
 Open **Property mappings > ...**. Supported fields available to the current Odoo user load automatically; select **Load ERP fields** to refresh them. Supported targets include standard scalar fields such as `name`, `description`, `description_sale`, `description_purchase`, `sale_ok`, `purchase_ok`, `weight`, `volume`, and `barcode`, plus writable `x_*` custom fields.
 
@@ -84,13 +85,13 @@ The connector combines compatible mapped values for repeated source item codes. 
 
 Use stored API field names, not translated labels. Boolean values accept `True/False`, `Yes/No`, or `1/0`. Numeric values use a dot for decimals, such as `12.5`, without currency symbols, thousands separators, or units. Selection fields accept a stored key or a unique label returned by Odoo. Each Odoo target field can be mapped only once.
 
-Supported mappings also include Sales Price (`list_price`), Cost (`standard_price`), Product Type, Invoicing Policy, Track Inventory, Category, Sales Taxes, Purchase Taxes, and Tags when available and writable. For supported relations, use an exact unique name or `#ID`; separate multiple tax or tag values with semicolons. These mappings select existing related records and do not create them. Pull returns stable `#ID` references.
+Supported mappings also include Sales Price (`list_price`), Cost (`standard_price`), Product Type, Invoicing Policy, Track Inventory, Category, Sales Taxes, Purchase Taxes, and Tags when available and writable. For supported relations, use an exact unique name or `#ID`; separate multiple tax or tag values with semicolons. These mappings select existing related records and do not create them. If a label cannot uniquely identify the record on a later Push, Pull keeps the `#ID`. To convert existing SOLIDWORKS values after changing the setting, review and apply a Pull.
 
 ### HTML descriptions and numeric precision
 
 Odoo returns JSON, but an HTML field inside that JSON may contain markup such as `<p>Speaker</p>`. The connector extracts its text for Pull and Push comparison. Formatting alone does not make `Speaker` different from `<p>Speaker</p>`; entities and line breaks are handled without executing the markup.
 
-Connector 1.0.8 uses the decimal precision declared by Odoo. If a field stores two decimal places, `0.125` is previewed and sent as `0.13`, preventing a repeated false change after Odoo rounds it. Fields without declared precision are not assigned an assumed precision.
+The connector uses the decimal precision declared by Odoo. If a field stores two decimal places, `0.125` is previewed and sent as `0.13`, preventing a repeated false change after Odoo rounds it. Fields without declared precision are not assigned an assumed precision.
 
 Invalid mapped values are highlighted in the ERP Sync grid with a red cell and **(i)** explanation. Correct the value and preview again; for example, change `$15.93` to `15.93` for Cost.
 
@@ -142,6 +143,8 @@ The connector discovers the supported attachment content field and handles both 
 
 The connector can create products and update mapped product fields. New products use Odoo defaults for unit of measure, category, and product type unless a supported mapping supplies a value. A new product receives the mapped name or the source row name. For automatic Internal References, enable **Use Odoo-generated references** and configure generation in Odoo. Custom Odoo fields must already exist.
 
+If a mapped property such as Category is missing in SOLIDWORKS, Push proposes creating it with the value from the matching Odoo product. For a new product, Push uses the Odoo default when available.
+
 After a successful Push, the created or updated products are available in Odoo Inventory. Product names, internal references, mapped properties, and uploaded previews reflect the committed ERP Sync changes.
 
 ![Products created in Odoo Inventory after a successful Push](/images/pdmpublisher/solidworks/odoo-push-output-20261002.png)
@@ -154,7 +157,7 @@ Select checked SOLIDWORKS rows and choose **Pull**. The connector reads the matc
 
 ![Odoo Pull comparison with ERP values first and SOLIDWORKS values second](/images/pdmpublisher/solidworks/erp-pull-review-20261049.png)
 
-In **Settings > ERP Sync**, **Pull values into** defaults to **Both** custom and configuration-specific properties. Select a single destination if required. The grid displays one value; **(i)** explains which property scopes will change, including changes hidden by an already matching configuration value.
+In **Settings > ERP Sync**, **Write mapped properties to (Push and Pull)** defaults to **Both** custom and configuration-specific properties. Select a single destination if required. The grid displays one value; **(i)** explains which property scopes will change, including changes hidden by an already matching configuration value.
 
 Missing products, missing fields, and null values are skipped. Empty Odoo values can clear local text only when **Skip empty values** is disabled. The Item code property and built-in or calculated destinations remain protected. Pull modifies mapped SOLIDWORKS properties only; it does not pull Odoo BOMs into the SOLIDWORKS assembly structure. Save modified SOLIDWORKS documents afterward.
 
@@ -185,7 +188,7 @@ Before Commit, PDMPublisher rejects ambiguous or unsafe cases, including multipl
 
 Enable **Use Odoo-generated references** to create products for source rows whose item code is blank. Set **Item code column** to a writable SOLIDWORKS custom property such as `OdooItemCode`; filename and other built-in columns cannot receive the returned reference. Configure Odoo to assign an Internal Reference when creating a Product Variant before enabling this option.
 
-The connector reads the reference returned by Odoo and writes it to the source configuration property. Save the modified SOLIDWORKS documents. Future Push and Pull operations match that reference, so do not erase it to retry an uncertain creation. Repeated occurrences of the same file/configuration share one product; different configurations can receive separate references.
+Under **Settings > ERP Sync > Save generated part numbers to**, choose **Configuration Specific** for a number per configuration or **Custom (one part number per file)** for a shared number. Save the SOLIDWORKS document after Push writes the reference. Future Push and Pull operations use it to match the Odoo product.
 
 Creation previews validate required writable fields using mapped values and Odoo defaults. Odoo-managed product relationships and an omitted, computed invoicing policy are not required as manual mappings. Custom required fields still need a value. Odoo performs final server-side validation during creation.
 
