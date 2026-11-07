@@ -26,6 +26,8 @@ Under Items, set Item code column to the SOLIDWORKS property that holds the Odoo
 
 Open Property mappings and pair each SOLIDWORKS property with a writable Odoo field. For example, map Category to `categ_id`. Select Load ERP fields to refresh the list after adding a field in Odoo.
 
+![Property mapping dialog with sample fields, SOLIDWORKS property and ERP field dropdowns](/images/pdmpublisher/solidworks/erp-property-mapping-dialog.png)
+
 Use readable relation names is on by default. Push preview and Pull show labels such as `Goods`. Turn it off to use record IDs such as `#6`. Push accepts either an exact, unique label or an ID. If a label is ambiguous, Pull keeps the ID. To convert IDs already stored in SOLIDWORKS, turn the option on, run Pull, and select Apply to SOLIDWORKS.
 
 Enable Skip empty values to preserve existing values when the source is blank. If a mapped property is missing in SOLIDWORKS, Push can create it using the existing product's value or, for a new product, the Odoo default when available. The readable names setting applies here too.
