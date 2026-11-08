@@ -1,17 +1,17 @@
 ---
 title: Release Notes | PDMPublisher for SOLIDWORKS
 description: Latest PDMPublisher for SOLIDWORKS release changes.
-ms.date: 11/02/2026
+ms.date: 11/08/2026
 ---
 
 # Release Notes
 
-## 2026.10.62
+## 2026.10.66
 
-- Regular drawing views fit the sheet using their measured bounds, with a common scale, margins, and spacing. Predefined views and custom macros retain their layout settings.
-- QR placement accounts for the image size to match the annotation preview.
-- QR insertion removes newly created construction geometry while preserving existing sheet-format geometry. Cleanup continues to verify the exact temporary QR picture before deleting it.
+BOM Manager's column editor now offers Save As to create a named copy with the selected columns and their order. The original template is preserved, and the saved copy becomes the selected template. Duplicate names are rejected.
 
-Build and automated checks passed. Live SOLIDWORKS validation of view fitting, QR construction-line cleanup, and the reported first-PDF logo loss remains pending.
+Buttons without a recognized action now display text without a fallback icon.
 
-[Download 2026.10.62](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.62/pdmpublisher.msi) · [Installation](pdmpublishersolidworks_installation.md) · [Drawing settings](pdmpublishersolidworks-publish.md#create-solidworks-drawings)
+Build and automated checks passed for template persistence, column order, duplicate names, cancellation, and button icons.
+
+[Download 2026.10.66](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.66/pdmpublisher.msi) · [Installation](pdmpublishersolidworks_installation.md)
