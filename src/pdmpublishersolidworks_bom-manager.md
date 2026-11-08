@@ -1,7 +1,7 @@
 ---
 title: BOM Manager | PDMPublisher for SOLIDWORKS
 description: Configure BOM columns, display type, grouping, component exclusions, and Excel export settings in PDMPublisher for SOLIDWORKS.
-ms.date: 10/15/2026
+ms.date: 11/08/2026
 ms.topic: how-to
 ---
 
@@ -27,6 +27,18 @@ BOM Manager defines the default structure used when PDMPublisher produces or dis
 | **Ignore Components** | Opens the condition editor used to omit matching components from the BOM. |
 | **Workbook template** | Selects an optional `.xlsx` or `.xltx` template for Excel exports. Enter the path or select **Browse...** beside the field. |
 | **Include thumbnail** | Includes the available model thumbnail in the exported workbook. |
+
+## Save column templates
+
+Column templates store the columns to display and their order. Use the Column template dropdown in BOM Manager to switch between saved templates.
+
+1. Select a template and open Columns.
+2. Check the columns to include and arrange their order with Move up and Move down.
+3. Choose Save As, then enter a unique template name.
+4. Select Use by default if you want this template selected by default.
+5. Select Save. The new template becomes selected in BOM Manager.
+
+Save As preserves the original template. To update the selected template, choose Save directly in the column editor. Cancel discards the changes. Duplicate template names are rejected.
 
 ## Evaluated property values
 
