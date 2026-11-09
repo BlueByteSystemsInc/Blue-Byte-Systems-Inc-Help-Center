@@ -1,7 +1,7 @@
 ---
 title: ERP Sync | PDMPublisher for SOLIDWORKS
 description: Configure ERP Sync to push data to ERP and pull mapped ERP properties into SOLIDWORKS with a reviewable diff.
-ms.date: 10/21/2026
+ms.date: 11/09/2026
 ms.topic: conceptual
 ---
 
@@ -188,6 +188,28 @@ Pull uses the connector's property mappings in reverse: the ERP field is the sou
 ![Pull preview with ERP source values on the left and current SOLIDWORKS values on the right](/images/pdmpublisher/solidworks/erp-pull-review-20261049.png)
 
 The diff uses green for **Added**, orange for **Changed**, and red for **Deleted**. Pull comparisons run **ERP → SOLIDWORKS**, with the source value on the left and the current destination value on the right. Built-in and calculated columns, the property used to match the ERP item, read-only documents, missing or null ERP fields, and unsupported targets are not overwritten.
+
+### Generated numbers and saved ERP links
+
+Save generated part numbers to controls file and configuration numbers. Weldment cut-list items always use their own cut-list properties. A missing cut-list number does not inherit the parent model's number. Each cut-list folder can have a separate number; bodies grouped in that folder share its number and quantity.
+
+For Odoo-generated references, the document stores the confirmed product link separately from the visible part-number property. Save the modified document to retain the link. Links are separate for each file, configuration, or cut-list target and for each Odoo server, database, company, and item-code property.
+
+Local recovery records protect against duplicate creation if synchronization is interrupted before the document is saved. Deleting a visible part number alone does not request a new product: Push can recover the existing reference.
+
+A copied document retains its saved ERP links. Clear the link if the copy should become a separate ERP item.
+
+### Clear an ERP link
+
+1. In the ERP Sync grid, select the rows to reset.
+2. Right-click and choose Clear ERP link….
+3. Confirm, then save the modified documents.
+
+This clears the selected saved links and their local recovery records. It keeps the part-number properties and existing ERP products. A file-wide link reset affects all configurations sharing that link; a cut-list reset affects the selected cut-list target.
+
+To request a new number, also clear the part-number property in its destination, enable Create items + properties, and preview Push. Check the proposed changes before committing.
+
+The source documents must be saved and writable. Grouped and phantom rows cannot be reset.
 
 ### Custom and configuration-specific destinations
 

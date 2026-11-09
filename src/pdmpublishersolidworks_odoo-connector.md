@@ -1,7 +1,7 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Connect SOLIDWORKS to Odoo, map product properties, and choose what to send or retrieve.
-ms.date: 11/07/2026
+ms.date: 11/09/2026
 ms.topic: how-to
 ---
 
@@ -39,6 +39,12 @@ Enable Skip empty values to preserve existing values when the source is blank. I
 If Odoo assigns Internal References, enable Use Odoo-generated references and choose a writable SOLIDWORKS property for Item code column. When Push creates a product for a row with a blank item code, it writes the returned reference to that property.
 
 In Settings > ERP Sync, Save generated part numbers to lets you choose one number per file or one per configuration. Write mapped properties to (Push and Pull) separately controls where other properties are written.
+
+A weldment cut-list item uses its own part-number property, not the parent model's number. Items grouped in one cut-list folder share that number and quantity.
+
+Confirmed product links are saved inside the SOLIDWORKS document when you save it. Deleting the part-number property alone can restore the existing Odoo reference on the next Push. To request a different reference, first [clear the ERP link](pdmpublishersolidworks_erp-sync.md#clear-an-erp-link), then clear the part-number property and preview Push.
+
+Update the SOLIDWORKS add-in before updating the connector.
 
 ## BOM types
 
