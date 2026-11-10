@@ -25,9 +25,7 @@ Release history for the PDM task and SOLIDWORKS add-in. The two products use ind
 - Weldment and sheet-metal cut-list rows use separate high-resolution thumbnails for display and ERP uploads.
 - Preview column headers have resize handles, including the warning column.
 
-Built and tested locally. The public installer has not been published.
-
-[ERP Sync](pdmpublishersolidworks_erp-sync.md#cut-list-thumbnails)
+[Download 2026.10.72](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.72/pdmpublisher.msi) · [BOM Manager](pdmpublishersolidworks_bom-manager.md#weldment-and-sheet-metal-parts) · [ERP Sync](pdmpublishersolidworks_erp-sync.md#cut-list-thumbnails)
 
 ## 2026.10.70
 
