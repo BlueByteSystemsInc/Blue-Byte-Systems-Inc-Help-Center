@@ -156,6 +156,20 @@ You can insert this placeholder from the `>...` placeholder menu in fields that 
 
 For filenames below `1000`, the range begins at zero. For example, `245.SLDPRT` returns `0-999`. Leading zeros are not preserved: `00123.SLDPRT` also returns `0-999`.
 
+## Characters (FileName)
+
+In the PDM task, choose Characters (FileName) from the placeholder menu to use the first 1 to 5 characters of the source filename without its extension. Letters, digits, spaces, and punctuation are preserved.
+
+| Menu choice | Placeholder | Result for `AB12345.SLDPRT` |
+| --- | --- | --- |
+| First 1 character | `(FileNameFirst1Characters)` | `A` |
+| First 2 characters | `(FileNameFirst2Characters)` | `AB` |
+| First 3 characters | `(FileNameFirst3Characters)` | `AB1` |
+| First 4 characters | `(FileNameFirst4Characters)` | `AB12` |
+| First 5 characters | `(FileNameFirst5Characters)` | `AB123` |
+
+If the name is shorter than the selected length, the whole name is returned. For example, First 5 characters returns `AB` for `AB.SLDPRT`.
+
 ## File Number Placeholders
 
 These placeholders extract the beginning of the first continuous numeric sequence found anywhere in the filename. The file extension is not included in the search.

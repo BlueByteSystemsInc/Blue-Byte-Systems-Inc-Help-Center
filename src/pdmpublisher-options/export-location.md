@@ -72,6 +72,8 @@ Placeholders are useful when the same task or add-in profile must write files to
 
 Use the **File Number** and **File Number Range** placeholders to organize exports using the first numeric sequence in a source filename. You can extract its first 3, 4, 5, or 6 digits or create a range from that prefix. See [File Number Placeholders](../pdmpublisherspecialvariable.md#file-number-placeholders) for all available placeholders, examples, and fallback behavior.
 
+In the PDM task, [Characters (FileName)](../pdmpublisherspecialvariable.md#characters-filename) extracts the first 1 to 5 characters without the file extension. For example, First 5 characters returns `AB123` for `AB12345.SLDPRT`.
+
 > [!TIP]
 > Use placeholders for repeatable task setups and add-in profiles. Hard-coded paths are fine for one fixed export folder, but placeholders make the path adapt to each source file.
 

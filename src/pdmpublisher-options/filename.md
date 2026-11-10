@@ -18,6 +18,8 @@ Use unique values such as part number, revision, configuration name, or sheet na
 
 Use the **File Number** placeholders to extract the first 3, 4, 5, or 6 digits from the first numeric sequence in a source filename. Use the **File Number Range** placeholders to organize outputs into numeric ranges. See [File Number Placeholders](../pdmpublisherspecialvariable.md#file-number-placeholders) for all available placeholders, examples, and fallback behavior.
 
+In the PDM task, [Characters (FileName)](../pdmpublisherspecialvariable.md#characters-filename) extracts the first 1 to 5 characters without the file extension. For example, First 5 characters returns `AB123` for `AB12345.SLDPRT`.
+
 > [!IMPORTANT]
 > If **Convert multiple configurations** is enabled, include `ConfigurationName` or another configuration-specific value in the filename.
 
