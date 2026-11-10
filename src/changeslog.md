@@ -17,6 +17,17 @@ Release history for the PDM task and SOLIDWORKS add-in. The two products use ind
 
 [Download PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex) · [Filename character placeholders](pdmpublisherspecialvariable.md#characters-filename)
 
+## 2026.10.71
+
+*Applies to the **SOLIDWORKS Add-in***
+
+- Weldment and sheet-metal cut-list rows use separate high-resolution thumbnails for display and ERP uploads.
+- Preview column headers have resize handles, including the warning column.
+
+Built and tested locally. The public installer has not been published.
+
+[ERP Sync](pdmpublishersolidworks_erp-sync.md#cut-list-thumbnails)
+
 ## 2026.10.70
 
 *Applies to the **SOLIDWORKS Add-in***

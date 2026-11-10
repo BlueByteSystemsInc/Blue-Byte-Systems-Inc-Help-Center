@@ -231,9 +231,17 @@ Nothing is written while the diff is being reviewed. After approval, PDMPublishe
 
 To build and load your own C# integration, including Pull-with-preview support, see [Create a Custom ERP Connector](pdmpublishersolidworks_erp-connector.md).
 
+## Cut-list thumbnails
+
+Weldment cut-list rows use a generic weldment image. Sheet-metal cut-list rows use a sheet-metal bracket image. These transparent 512 × 512 thumbnails also upload to ERP when thumbnail upload is enabled. Normal part and assembly rows keep their document previews.
+
+![Generic weldment thumbnail on the left and sheet-metal thumbnail on the right](/images/pdmpublisher/solidworks/cut-list-thumbnails.png)
+
 ## Preview and report layout
 
 The review preserves the selected source hierarchy, with expandable assembly rows, component icons and source indentation. Its size, shared column widths and row height follow the parent ERP Sync window. A **Preparing preview…** indicator appears before the review grid is displayed. The report keeps source indentation and vertically centered, single-line cell text; hover over details or copy/save the report to read full messages.
+
+Drag the right edge of a preview column header to resize it, including the warning column.
 
 For Odoo, **Open in Odoo** opens the selected known product in a browser. It does not perform a synchronization operation. See [Odoo-generated references and warnings](pdmpublishersolidworks_odoo-connector.md#odoo-generated-references) for writeback requirements and omitted BOM behavior.
 
