@@ -4,6 +4,9 @@
   - name: Introduction
     href: ../../src/introduction.md
 
+- name: Release Notes
+  href: ../../src/changeslog.md
+
 - name: SOLIDWORKS Add-in
   expanded: true
   items:
@@ -13,8 +16,6 @@
     href: ../../src/pdmpublishersolidworks_comparison.md
   - name: Install and Enable the Add-in
     href: ../../src/pdmpublishersolidworks_installation.md
-  - name: Changelog
-    href: ../../src/changeslog.md
   - name: Commands
     href: ../../src/pdmpublishersolidworks_commands.md
   - name: Help Task Pane
