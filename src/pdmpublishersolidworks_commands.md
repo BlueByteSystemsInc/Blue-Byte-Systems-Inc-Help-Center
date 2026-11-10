@@ -21,7 +21,7 @@ The screenshot shows the current CommandManager, including Publisher Macros, ERP
 | Utilities | [Clone Tree](pdmpublishersolidworks_smart-pack.md) | Copy a document set with per-file names and destinations, optional companion files, PDM revision handling, and ZIP output. |
 | Integration | [ERP Sync](pdmpublishersolidworks_erp-sync.md) | Push selected SOLIDWORKS or CSV data to ERP and review mapped ERP properties before pulling them into SOLIDWORKS. |
 | Integration | [Publisher Macros](pdmpublishersolidworks_publisher-macros.md) | Edit and run VBA examples that call Save As New, Property Doctor, Clone Tree, and ERP Sync through the loaded add-in. |
-| Bill of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Review, group, edit, and export assembly BOM rows using reusable column templates. |
+| Bill of Materials | [BOM Manager](pdmpublishersolidworks_bom-manager.md) | Review, group, edit, and export assembly BOM rows and part cut-list items using reusable column templates. |
 | Publishing | [Publish](pdmpublishersolidworks-publish.md) | Configure and run a publishing job for the active document. |
 | Publishing | [Annotations](pdmpublishersolidworks_annotations.md) | Edit the annotations stored in a Publish profile. |
 | Publishing | [Conditions](conditions_solidworks.md) | Edit the conditions stored in a Publish profile. |
@@ -41,7 +41,7 @@ The screenshot shows the current CommandManager, including Publisher Macros, ERP
 | **Clone Tree** | Opens the copy/package workflow for the active document set. | Selects a saved Clone Tree profile. |
 | **ERP Sync** | Opens the ERP Sync review window for the active saved part, assembly, or drawing. | None. Select the feature tree, a SOLIDWORKS BOM table, or a CSV file inside the ERP Sync window. |
 | **Publisher Macros** | Opens the editable VBA example and macro runner. | None. |
-| **BOM Manager** | Opens the BOM review and editing workflow for the active assembly. | None. |
+| **BOM Manager** | Opens the BOM review and editing workflow for the active assembly or a part with weldment or sheet-metal cut-list items. | None. |
 | **Publish** | Opens or runs the publishing workflow with the active Publish profile. | Selects a saved Publish profile. |
 | **Annotations** | Edits annotations in the active Publish profile. | None. |
 | **Conditions** | Edits conditions in the active Publish profile. | None. |
@@ -59,7 +59,7 @@ For a component selected in an assembly, the right-click menu also exposes **Pro
 
 ## When a Command Is Available
 
-Document commands require an active part, assembly, or drawing. Save the active document before using workflows that must resolve file paths or references. ERP Sync requires a saved document and an active connector; BOM Manager requires an active assembly. Property Doctor and Clone Tree can wait while SOLIDWORKS finishes loading references; changing the active document during that preparation cancels the operation.
+Document commands require an active part, assembly, or drawing. Save the active document before using workflows that must resolve file paths or references. ERP Sync requires a saved document and an active connector; BOM Manager requires an assembly or a part with populated weldment or sheet-metal cut-list items. Property Doctor and Clone Tree can wait while SOLIDWORKS finishes loading references; changing the active document during that preparation cancels the operation.
 
 > [!NOTE]
 > The **PDMPublisher** CommandManager tab is recreated for parts, assemblies, and drawings. If the tab is hidden, enable the add-in and right-click the CommandManager tab area to show **PDMPublisher**.

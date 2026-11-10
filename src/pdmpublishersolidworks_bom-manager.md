@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # BOM Manager
 
-Open **PDMPublisher > BOM Manager** to review and work with the bill of materials for the active assembly.
+Open **PDMPublisher > BOM Manager** to review and work with the bill of materials for the active assembly or a part containing weldment or sheet-metal cut-list items.
 
 ![BOM Manager main window showing an indented assembly BOM](/images/pdmpublisher/solidworks/ui-preview/BOM/BOM_Main_window_Default_Light_100.png)
 
@@ -27,6 +27,12 @@ BOM Manager defines the default structure used when PDMPublisher produces or dis
 | **Ignore Components** | Opens the condition editor used to omit matching components from the BOM. |
 | **Workbook template** | Selects an optional `.xlsx` or `.xltx` template for Excel exports. Enter the path or select **Browse...** beside the field. |
 | **Include thumbnail** | Includes the available model thumbnail in the exported workbook. |
+
+## Weldment and sheet-metal parts
+
+Open a part with a populated cut list, then choose BOM Manager. Use Indented to show the part and its cut-list items. Each cut-list row shows its quantity and cut-list properties. The Weldments and Sheet Metal filters control which items are displayed.
+
+Cut-list rows use generic weldment or sheet-metal thumbnails. Normal part and assembly rows keep their document previews.
 
 ## Save column templates
 

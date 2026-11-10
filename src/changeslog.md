@@ -17,10 +17,11 @@ Release history for the PDM task and SOLIDWORKS add-in. The two products use ind
 
 [Download PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex) · [Filename character placeholders](pdmpublisherspecialvariable.md#characters-filename)
 
-## 2026.10.71
+## 2026.10.72
 
 *Applies to the **SOLIDWORKS Add-in***
 
+- BOM Manager opens for parts containing weldment or sheet-metal cut-list items.
 - Weldment and sheet-metal cut-list rows use separate high-resolution thumbnails for display and ERP uploads.
 - Preview column headers have resize handles, including the warning column.
 
