@@ -1,7 +1,7 @@
 ---
 title: Export Location | PDMPublisher Options
 description: Configure where the PDMPublisher PDM task or SOLIDWORKS add-in writes exported files.
-ms.date: 08/13/2026
+ms.date: 11/10/2026
 ms.topic: reference
 ---
 
@@ -78,6 +78,16 @@ In the PDM task, [Characters (FileName)](../pdmpublisherspecialvariable.md#chara
 > Use placeholders for repeatable task setups and add-in profiles. Hard-coded paths are fine for one fixed export folder, but placeholders make the path adapt to each source file.
 
 For the PDM task, if the path uses variables stored on the file's `@` tab, see [Use @ Tab to Evaluate Paths](use-at-tab-to-evaluate-paths.md). This task-only option is not shown in the SOLIDWORKS add-in.
+
+## Second export location
+
+In the PDM task, enable Export to a second location beneath Export Location. The Second export location field appears when checked. It uses the same placeholder menu, folder browser, and path evaluation settings as the primary location.
+
+Each file is exported once and copied to both destinations with the same filename. This includes individually exported files, merged PDFs, and ZIP archives. Reference outputs that are not selected for individual export are not copied separately.
+
+Extension-specific locations continue to control the primary destination. The second destination uses its own path, which can contain placeholders. Secondary copies are not added again to PDF merges or archives.
+
+The option is off by default. Turning it off hides the field and retains its saved path. An enabled second location must not be empty. If both locations resolve to the same path, the file is saved only once. The task logs destination failures; duplicate cleanup preserves both intended copies.
 
 ## Extension-Specific Locations
 

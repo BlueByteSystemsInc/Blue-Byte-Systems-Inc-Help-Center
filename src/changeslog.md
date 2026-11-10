@@ -9,6 +9,16 @@ ms.topic: reference
 
 Release history for the PDM task and SOLIDWORKS add-in. The two products use independent version numbers.
 
+## 2026.11.15
+
+*Applies to the **PDM Task***
+
+- Added an optional second export location with the same placeholder editor and folder browser as the primary location.
+- Copies exported files, merged PDFs, and ZIP archives to the second destination without exporting them again.
+- Preserves both intended copies during duplicate cleanup and avoids duplicate writes when the destinations match.
+
+[Second export location](pdmpublisher-options/export-location.md#second-export-location)
+
 ## 2026.11.14
 
 *Applies to the **PDM Task***
