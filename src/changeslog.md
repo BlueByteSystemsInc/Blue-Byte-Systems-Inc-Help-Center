@@ -9,7 +9,10 @@ ms.topic: reference
 
 Release history for the PDM task and SOLIDWORKS add-in. The two products use independent version numbers.
 
-## 2026.10.70 (SOLIDWORKS Add-in)
+## 2026.10.70
+
+*Applies to the **SOLIDWORKS Add-in***
+
 Odoo connector 1.0.19.0 supports syncing existing product variants by Internal Reference. SOLIDWORKS configuration names do not determine variant matching.
 
 Shared-field changes show an (i) indicator explaining that all variants are affected. Conflicting values from selected sibling variants are rejected. Thumbnails and BOM updates target the matched variant.
@@ -18,7 +21,10 @@ Build, connector regression tests, and UI indicator checks passed. Install the a
 
 [Download 2026.10.70](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.70/pdmpublisher.msi) · [Odoo variant sync](pdmpublishersolidworks_odoo-connector.md#sync-product-variants)
 
-## 2026.10.69 (SOLIDWORKS Add-in)
+## 2026.10.69
+
+*Applies to the **SOLIDWORKS Add-in***
+
 ERP Sync saves confirmed Odoo-generated product links inside SOLIDWORKS documents. Clear ERP link in the row context menu resets selected associations without deleting part-number properties or ERP products.
 
 Weldment cut-list items use their own part numbers instead of inheriting the parent model's number.
@@ -29,7 +35,10 @@ Build, automated ERP checks, and a live SOLIDWORKS save and reopen test passed.
 
 [Download 2026.10.69](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.69/pdmpublisher.msi) · [ERP Sync](pdmpublishersolidworks_erp-sync.md) · [Odoo connector](pdmpublishersolidworks_odoo-connector.md)
 
-## 2026.10.66 (SOLIDWORKS Add-in)
+## 2026.10.66
+
+*Applies to the **SOLIDWORKS Add-in***
+
 BOM Manager's column editor now offers Save As to create a named copy with the selected columns and their order. The original template is preserved, and the saved copy becomes the selected template. Duplicate names are rejected.
 
 Buttons without a recognized action now display text without a fallback icon.
@@ -39,7 +48,10 @@ Build and automated checks passed for template persistence, column order, duplic
 [Download 2026.10.66](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.66/pdmpublisher.msi) · [Installation](pdmpublishersolidworks_installation.md)
 
 
-## 2026.10.62 (SOLIDWORKS Add-in)
+## 2026.10.62
+
+*Applies to the **SOLIDWORKS Add-in***
+
 - Regular drawing views fit the sheet using their measured bounds, with a common scale, margins, and spacing. Predefined views and custom macros retain their layout settings.
 - QR placement accounts for the image size to match the annotation preview.
 - QR insertion removes newly created construction geometry while preserving existing sheet-format geometry. Cleanup continues to verify the exact temporary QR picture before deleting it.
@@ -48,7 +60,10 @@ Build and automated checks passed. Live SOLIDWORKS validation of view fitting, Q
 
 [Download 2026.10.62](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.62/pdmpublisher.msi) · [Installation](pdmpublishersolidworks_installation.md) · [Drawing settings](pdmpublishersolidworks-publish.md#create-solidworks-drawings)
 
-## 2026.10.61 (SOLIDWORKS Add-in)
+## 2026.10.61
+
+*Applies to the **SOLIDWORKS Add-in***
+
 - Automatic drawing generation skips Toolbox components.
 - Drawing Settings includes an optional **Sheet format (.slddrt)** picker. Browse starts in the configured SOLIDWORKS sheet-format folder. The drawing template and **Use template's predefined views** option remain available.
 - Temporary QR images have unique IDs. Cleanup verifies the exact tracked picture before deletion, protecting existing title-block images.
@@ -58,12 +73,16 @@ The signed installer and automated checks passed. Live SOLIDWORKS validation, in
 
 [Download 2026.10.61](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.61/pdmpublisher.msi) · [Installation](pdmpublishersolidworks_installation.md) · [Drawing settings](pdmpublishersolidworks-publish.md#create-solidworks-drawings)
 
-## 2026.10.29 — PDM Task
+## 2026.10.29
+
+*Applies to the **PDM Task***
 
 - Unified saved-settings lookup between PDM Administration and task execution. Saving also updates the legacy entry for older task hosts.
 - Added startup logging of the settings source, PDF merge setting, and individual reference export setting. Reopen and save the task after upgrading, then launch a fresh instance.
 
-## 2026.10.28 — PDM Task
+## 2026.10.28
+
+*Applies to the **PDM Task***
 
 - Drawing model exports prefer SOLIDWORKS drawing-view configurations, then PDM configuration, then `@`.
 - Released-state matching now accepts any state name containing `Released`, ignoring case, including `Pre-Released` and `Unreleased`.
@@ -73,14 +92,20 @@ The signed installer and automated checks passed. Live SOLIDWORKS validation, in
 
 ## Drawing model exports and reference matching
 
+*Applies to the **PDM Task***
+
 - Added [Export referenced models from drawings](options.md#export-referenced-models-from-drawings), off by default, with explanatory text beneath the checkbox. Selected 3D formats and enabled part flat-pattern exports use the drawing's referenced configurations and folder rules.
 - Released-reference matching now uses the current parent's historical children, including omitted references. Missing extensions resolve only when the child can be identified uniquely; ambiguous errors list the candidates.
 
-## 2026.10.25 — PDM Task
+## 2026.10.25
+
+*Applies to the **PDM Task***
 
 - Applying font styles to an annotation preserves newly entered text and SQL filename placeholders. SQL query and connection settings survive saving and reopening.
 
-## 2026.10.24 — PDM Task
+## 2026.10.24
+
+*Applies to the **PDM Task***
 
 - [Cache failures for referenced files](options.md#references-that-cannot-be-cached) are reported as **Omitted** and suppressed in temporary publishing copies. Main selected inputs still must cache successfully.
 - Removed omitted files from exports and recalculated retained BOM quantities; shared dependencies remain available through retained branches.
