@@ -9,6 +9,14 @@ ms.topic: reference
 
 Release history for the PDM task and SOLIDWORKS add-in. The two products use independent version numbers.
 
+## 2026.11.14
+
+*Applies to the **PDM Task***
+
+- Added Characters (FileName) to the placeholder menu, with choices for the first 1 to 5 characters of the filename without its extension. Shorter names return all available characters.
+
+[Download PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex) · [Filename character placeholders](pdmpublisherspecialvariable.md#characters-filename)
+
 ## 2026.10.70
 
 *Applies to the **SOLIDWORKS Add-in***
