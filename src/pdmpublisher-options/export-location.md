@@ -81,6 +81,8 @@ For the PDM task, if the path uses variables stored on the file's `@` tab, see [
 
 ## Second export location
 
+![Export to a second location checkbox in the PDM task Publish settings](/images/pdmpublisher/screenshots/task-publish-output.png)
+
 In the PDM task, enable Export to a second location beneath Export Location. The Second export location field appears when checked. It uses the same placeholder menu, folder browser, and path evaluation settings as the primary location.
 
 Each file is exported once and copied to both destinations with the same filename. This includes individually exported files, merged PDFs, and ZIP archives. Reference outputs that are not selected for individual export are not copied separately.

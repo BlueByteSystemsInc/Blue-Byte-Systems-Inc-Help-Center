@@ -1,7 +1,7 @@
 ---
 title: Options | PDMPublisher | SOLIDWORKS PDM
 description: Short reference for every PDMPublisher task setup option available in SOLIDWORKS PDM Professional.
-ms.date: 11/06/2026
+ms.date: 11/10/2026
 ms.topic: conceptual
 ---
 
@@ -12,7 +12,7 @@ The **Options** task page controls where PDMPublisher writes exported files, whi
 > [!IMPORTANT]
 > This is the **PDM task** Options page. Settings shared with the SOLIDWORKS add-in use the same detail pages and identify their product-specific behavior. See [PDM Task vs SOLIDWORKS Add-in](pdmpublisher-product-differences.md).
 
-![Updated PDMPublisher Options task page](/images/pdmpublisher/screenshots/task-options-20261009.png)
+![PDM task Publish settings with the optional second export location](/images/pdmpublisher/screenshots/task-publish-output.png)
 
 Use **Pop out...** for a resizable editor. Counts beside settings show how many items are configured.
 
@@ -32,6 +32,7 @@ Review these settings before saving a new task:
 | Setting | Summary | Details |
 |---|---|---|
 | Export Location | Destination folder or dynamic path pattern for generated files. | [Open](pdmpublisher-options/export-location.md) |
+| Export to a second location | Copies outputs to an additional folder using the same placeholder editor. | [Open](pdmpublisher-options/export-location.md#second-export-location) |
 | Filename | Output filename pattern. Use variables to keep exported files unique. | [Open](pdmpublisher-options/filename.md) |
 | File Formats | Select one or more export formats such as PDF, DXF, DWG, STEP, eDrawings, 3MF, IFC, and others. | [Open](pdmpublisher-options/file-formats.md) |
 | Use @ Tab to Evaluate Paths | Allows the `@` configuration tab to resolve variables used in the export path or filename. | [Open](pdmpublisher-options/use-at-tab-to-evaluate-paths.md) |

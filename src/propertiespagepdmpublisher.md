@@ -100,7 +100,7 @@ Use these pages to configure what PDMPublisher exports and how it handles each f
 
 ### Publish
 
-![PDMPublisher Publish page showing output settings](/images/pdmpublisher/screenshots/task-setup-publish-output-20261012.png)
+![PDM task Publish settings with the optional second export location](/images/pdmpublisher/screenshots/task-publish-output.png)
 
 The first part of **Publish** defines the export location, filename, output formats, and which documents and PDM file versions are processed.
 
