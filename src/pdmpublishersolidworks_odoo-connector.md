@@ -1,7 +1,7 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Connect SOLIDWORKS to Odoo, map product properties, and choose what to send or retrieve.
-ms.date: 11/09/2026
+ms.date: 11/10/2026
 ms.topic: how-to
 ---
 
@@ -31,6 +31,16 @@ Open Property mappings and pair each SOLIDWORKS property with a writable Odoo fi
 Use readable relation names is on by default. Push preview and Pull show labels such as `Goods`. Turn it off to use record IDs such as `#6`. Push accepts either an exact, unique label or an ID. If a label is ambiguous, Pull keeps the ID. To convert IDs already stored in SOLIDWORKS, turn the option on, run Pull, and select Apply to SOLIDWORKS.
 
 Enable Skip empty values to preserve existing values when the source is blank. If a mapped property is missing in SOLIDWORKS, Push can create it using the existing product's value or, for a new product, the Odoo default when available. The readable names setting applies here too.
+
+## Sync product variants
+
+Push and Pull match an existing variant by its unique Internal Reference. SOLIDWORKS configuration names do not select Odoo variants. Duplicate references must be resolved before syncing.
+
+Cost, weight, volume, barcode, and variant-specific custom properties apply to the matched variant. Fields such as name and category are shared across the Odoo product's variants. Select (i) in a changed shared-field cell to see its effect on all variants, including unselected ones. Selected sibling variants must propose the same value for a shared field.
+
+Thumbnails and exported attachments target the matched variant. For products with multiple variants, BOM sync updates a dedicated variant BOM or previews creating one. The shared template BOM remains unchanged. BOM lines with attribute-based applicability filters are not supported.
+
+The connector does not create attribute combinations or map SOLIDWORKS configurations to variants.
 
 <a id="odoo-generated-references"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: ERP Sync | PDMPublisher for SOLIDWORKS
 description: Configure ERP Sync to push data to ERP and pull mapped ERP properties into SOLIDWORKS with a reviewable diff.
-ms.date: 11/09/2026
+ms.date: 11/10/2026
 ms.topic: conceptual
 ---
 
@@ -188,6 +188,12 @@ Pull uses the connector's property mappings in reverse: the ERP field is the sou
 ![Pull preview with ERP source values on the left and current SOLIDWORKS values on the right](/images/pdmpublisher/solidworks/erp-pull-review-20261049.png)
 
 The diff uses green for **Added**, orange for **Changed**, and red for **Deleted**. Pull comparisons run **ERP → SOLIDWORKS**, with the source value on the left and the current destination value on the right. Built-in and calculated columns, the property used to match the ERP item, read-only documents, missing or null ERP fields, and unsupported targets are not overwritten.
+
+### Shared Odoo fields
+
+Push and Pull identify Odoo variants by Internal Reference, independently of configuration names. A changed shared field, such as name or category, shows an (i) indicator. Select it to see the old and new values and that the update affects all variants, including those not selected for sync.
+
+Conflicting values from selected sibling variants stop the preview before any changes are sent. Variant-specific fields update only the matched variant.
 
 ### Generated numbers and saved ERP links
 

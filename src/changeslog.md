@@ -1,10 +1,20 @@
 ---
 title: Release Notes | PDMPublisher for SOLIDWORKS
 description: Latest PDMPublisher for SOLIDWORKS release changes.
-ms.date: 11/09/2026
+ms.date: 11/10/2026
 ---
 
 # Release Notes
+
+## 2026.10.70
+
+Odoo connector 1.0.19.0 supports syncing existing product variants by Internal Reference. SOLIDWORKS configuration names do not determine variant matching.
+
+Shared-field changes show an (i) indicator explaining that all variants are affected. Conflicting values from selected sibling variants are rejected. Thumbnails and BOM updates target the matched variant.
+
+Build, connector regression tests, and UI indicator checks passed. Install the add-in before updating the connector.
+
+[Download 2026.10.70](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.70/pdmpublisher.msi) · [Odoo variant sync](pdmpublishersolidworks_odoo-connector.md#sync-product-variants)
 
 ## 2026.10.69
 
