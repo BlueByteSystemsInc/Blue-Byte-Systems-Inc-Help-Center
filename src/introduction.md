@@ -1,4 +1,4 @@
-﻿---
+---
 title: Getting Started | Blue Byte Systems Help Center | SOLIDWORKS PDM
 description: Welcome to Blue Byte Systems, a provider of solutions for SOLIDWORKS PDM automation, publishing, migration, data quality, and task optimization.
 ms.date: 08/24/2026
@@ -74,22 +74,8 @@ If there is a missing file format that SOLIDWORKS supports, [please reach out to
 > [!TIP]
 > Keep an eye on our roadmap of features for the current year and next year by visiting the [roadmap page](/src/pdmpublisher_roadmap.html) frequently.
 
+## Support
 
-### Getting started 
+Email: [support@bluebytesystemsinc.zohodesk.com](mailto:support@bluebytesystemsinc.zohodesk.com)
 
-Please see our guide for the SOLIDWORKS add-in [here](/src/pdmpublishersolidworks.html) and the PDM task [here](/src/pdmpublisher.html) .
-
-## PDMShell (PDM Professional Only) 
-
-PDMShell is a command-line automation tool for SOLIDWORKS PDM Professional. It helps automate common vault operations such as searching files, updating data cards, running batch processes, and performing migration or maintenance tasks.
-
-For more information, please visit [PDMShell.com](https://pdmshell.com).
-
-## PDM2Excel
-PDM2Excel is a task add-in for exporting SOLIDWORKS assemblies as Excel spreadsheets with thumbnails. Since the introduction of PDM2Excel's core functionality in SOLIDWORKS PDM 2025, we are in the process of retiring this product.
-
-## Getting support 
-
-> [Get Support](https://bluebyte.biz/contact)
-
- 
+Support website: [support.bluebyte.biz](https://support.bluebyte.biz/)
