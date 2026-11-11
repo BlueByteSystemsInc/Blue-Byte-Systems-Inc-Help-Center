@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # Version and Updates
 
-See the [release notes](changeslog.md) for the latest published changes and installer.
+See the [release notes](pdmpublishersolidworks-release-notes.md) for the latest published changes and installer.
 
 Use the **Updates** CommandManager group or open **PDMPublisher > Settings > Support and Updates** to display the installed version and check whether a newer release is available.
 

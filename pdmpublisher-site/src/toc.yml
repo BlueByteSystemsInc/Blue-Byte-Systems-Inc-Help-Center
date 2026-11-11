@@ -6,6 +6,11 @@
 
 - name: Release Notes
   href: ../../src/changeslog.md
+  items:
+  - name: SOLIDWORKS Add-in
+    href: ../../src/pdmpublishersolidworks-release-notes.md
+  - name: PDM Task
+    href: ../../src/pdmpublisher-task-release-notes.md
 
 - name: SOLIDWORKS Add-in
   expanded: true
