@@ -118,6 +118,15 @@ $versionedTocBaseName = "toc.$tocCacheKey"
 Copy-Item -LiteralPath $tocHtmlPath -Destination (Join-Path $tocDirectory "$versionedTocBaseName.html") -Force
 Copy-Item -LiteralPath $tocJsonPath -Destination (Join-Path $tocDirectory "$versionedTocBaseName.json") -Force
 
+# The top menu is cached separately from the sidebar. Version both resources
+# so removed or renamed page links cannot linger in the browser's menu cache.
+$navJsonPath = Join-Path $OutputPath "toc.json"
+$navHtmlPath = Join-Path $OutputPath "toc.html"
+$navCacheKey = (Get-FileHash -LiteralPath $navJsonPath -Algorithm SHA256).Hash.Substring(0, 12).ToLowerInvariant()
+$versionedNavBaseName = "toc.$navCacheKey"
+Copy-Item -LiteralPath $navHtmlPath -Destination (Join-Path $OutputPath "$versionedNavBaseName.html") -Force
+Copy-Item -LiteralPath $navJsonPath -Destination (Join-Path $OutputPath "$versionedNavBaseName.json") -Force
+
 $htmlFiles = Get-ChildItem -LiteralPath $OutputPath -Filter "*.html" -Recurse -File
 
 foreach ($htmlFile in $htmlFiles) {
@@ -150,6 +159,13 @@ foreach ($htmlFile in $htmlFiles) {
         $htmlContent,
         '(<meta\s+name=["'']docfx:tocrel["'']\s+content=["''])([^"'']*?)toc(?:\.[a-f0-9]{12})?\.html(["''])',
         "`$1`$2$versionedTocBaseName.html`$3",
+        [Text.RegularExpressions.RegexOptions]::IgnoreCase
+    )
+
+    $htmlContent = [regex]::Replace(
+        $htmlContent,
+        '(<meta\s+name=["'']docfx:navrel["'']\s+content=["''])([^"'']*?)toc(?:\.[a-f0-9]{12})?\.html(["''])',
+        "`$1`$2$versionedNavBaseName.html`$3",
         [Text.RegularExpressions.RegexOptions]::IgnoreCase
     )
 
