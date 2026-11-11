@@ -1,7 +1,7 @@
 ---
 title: ERP Sync | PDMPublisher for SOLIDWORKS
 description: Configure ERP Sync to push data to ERP and pull mapped ERP properties into SOLIDWORKS with a reviewable diff.
-ms.date: 11/10/2026
+ms.date: 11/11/2026
 ms.topic: conceptual
 ---
 
@@ -23,6 +23,7 @@ The settings page contains:
 | ERP connector | Selects the connector used by ERP Sync. Open the connector settings from the adjacent connector command. |
 | Write mapped properties to (Push and Pull) | Choose the row's property scope, the file's Custom tab, the selected configuration's properties, or both tabs (default). This controls where Pull writes values and where Push creates missing mapped properties. Cut-list rows use their cut-list properties. |
 | Save generated part numbers to | Choose Configuration Specific (default) for a separate number per configuration, or Custom (one part number per file) to share the number across configurations. |
+| Link existing Odoo variants | Off by default. Match existing variants using an item code from the file's Custom tab (Document per variant) or the selected configuration's properties (Configuration per variant). This mode does not create products or variants. See [Odoo variant matching](pdmpublishersolidworks_odoo-connector.md#sync-product-variants). |
 | Default column template | Selects the BOM Manager column template used when the ERP Sync window opens. The selected columns also provide available values to the connector. |
 | Default BOM display type | Selects the initial **Parts only**, **Top-level only**, or indented BOM view. |
 | Group by | Groups displayed rows by text, a property, or a supported placeholder. Leave it empty for a flat list. |
@@ -43,7 +44,7 @@ Select **OK** to save the defaults. These settings are independent from BOM Mana
 5. Choose **Test connection**. Correct any reported authentication, URL, or mapping problem.
 6. Choose **Save** to make that connector active.
 
-Connector settings are saved separately for each connector and encrypted for the current Windows user. The **Edit** button beside the connector selector opens the selected connector's settings directly. If an update is downloaded while its DLL is loaded, it is staged for the next session. Fully close and restart SOLIDWORKS to activate it, then check the installed connector version.
+Connector settings are saved separately for each connector and encrypted for the current Windows user. The **Edit** button beside the connector selector opens the selected connector's settings directly. If an update is downloaded while its DLL is loaded, it is staged for the next session. A restart message appears and the alert remains in the connector window. Closing the message does not cancel the update. Save your work, fully close and restart SOLIDWORKS, then check the installed connector version.
 
 For connectors supplied by Blue Byte Systems, see [ERPNext Connector](pdmpublishersolidworks_erpnext-connector.md), [Odoo Connector](pdmpublishersolidworks_odoo-connector.md), and [Microsoft Dynamics 365 Business Central Connector](pdmpublishersolidworks_business-central-connector.md).
 

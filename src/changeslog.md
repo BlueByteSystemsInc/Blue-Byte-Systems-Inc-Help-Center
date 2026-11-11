@@ -1,7 +1,7 @@
 ---
 title: Release Notes | PDMPublisher
 description: Release history for the PDMPublisher PDM task and SOLIDWORKS add-in.
-ms.date: 11/10/2026
+ms.date: 11/11/2026
 ms.topic: reference
 ---
 
@@ -26,6 +26,16 @@ Release history for the PDM task and SOLIDWORKS add-in. The two products use ind
 - Added Characters (FileName) to the placeholder menu, with choices for the first 1 to 5 characters of the filename without its extension. Shorter names return all available characters.
 
 [Download PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex) · [Filename character placeholders](pdmpublisherspecialvariable.md#characters-filename)
+
+## 2026.10.73
+
+*Applies to the **SOLIDWORKS Add-in***
+
+- Added optional existing Odoo variant matching by document or configuration, using the item code from the selected property tab.
+- Added a restart message after downloading a connector update, while keeping the update alert visible.
+- Released Odoo connector 1.0.20.0 alongside the add-in. Verified both variant modes with Push and Pull against Odoo.
+
+[Download 2026.10.73](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.73/pdmpublisher.msi) · [Odoo variant settings](pdmpublishersolidworks_odoo-connector.md#sync-product-variants)
 
 ## 2026.10.72
 

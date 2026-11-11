@@ -1,7 +1,7 @@
 ---
 title: Odoo Connector | PDMPublisher for SOLIDWORKS
 description: Connect SOLIDWORKS to Odoo, map product properties, and choose what to send or retrieve.
-ms.date: 11/10/2026
+ms.date: 11/11/2026
 ms.topic: how-to
 ---
 
@@ -34,13 +34,22 @@ Enable Skip empty values to preserve existing values when the source is blank. I
 
 ## Sync product variants
 
-Push and Pull match an existing variant by its unique Internal Reference. SOLIDWORKS configuration names do not select Odoo variants. Duplicate references must be resolved before syncing.
+In Settings > ERP Sync, enable Link existing Odoo variants and choose where to read the Item code column property:
+
+| Mode | Item code source |
+| --- | --- |
+| Document per variant | The document's Custom tab. Each file identifies one variant. |
+| Configuration per variant | The selected configuration's properties. Each configuration identifies one variant. |
+
+Push and Pull match that code to an existing variant's unique Internal Reference. Configuration names do not select Odoo variants. A missing or blank code stops the operation; configuration mode does not fall back to the Custom tab. Cut-list items use their own properties.
+
+This option is off by default. When enabled, sync does not create products, variants, or attributes. Write mapped properties to still controls where mapped values are written, independently of the item code source.
 
 Cost, weight, volume, barcode, and variant-specific custom properties apply to the matched variant. Fields such as name and category are shared across the Odoo product's variants. Select (i) in a changed shared-field cell to see its effect on all variants, including unselected ones. Selected sibling variants must propose the same value for a shared field.
 
 Thumbnails and exported attachments target the matched variant. For products with multiple variants, BOM sync updates a dedicated variant BOM or previews creating one. The shared template BOM remains unchanged. BOM lines with attribute-based applicability filters are not supported.
 
-The connector does not create attribute combinations or map SOLIDWORKS configurations to variants.
+Create the variants and give each one a unique Internal Reference in Odoo before syncing.
 
 <a id="odoo-generated-references"></a>
 
