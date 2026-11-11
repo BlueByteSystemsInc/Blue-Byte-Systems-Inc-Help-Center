@@ -8,13 +8,10 @@
   href: eula.md
 
 - name: Changes
-- name: PDMPublisher Release Notes
-  href: changeslog.md
-  items:
-  - name: SOLIDWORKS Add-in
-    href: pdmpublishersolidworks-release-notes.md
-  - name: PDM Task
-    href: pdmpublisher-task-release-notes.md
+- name: SOLIDWORKS Add-in Release Notes
+  href: pdmpublishersolidworks-release-notes.md
+- name: PDM Task Release Notes
+  href: pdmpublisher-task-release-notes.md
 - name: PDMPublisher Roadmap 
   href: pdmpublisher_roadmap.md
 - name: PDMDeploy changes log

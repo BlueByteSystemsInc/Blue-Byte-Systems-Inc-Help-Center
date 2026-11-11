@@ -90,4 +90,8 @@ description: Official PDMPublisher documentation for SOLIDWORKS PDM Professional
 <p>Install and update PDMPublisher in SOLIDWORKS PDM using the public or private activation code.</p>
 </a>
 </section>
+<section aria-label="Support" style="margin-top: 28px; line-height: 1.8;">
+<p>Support website: <a href="https://support.bluebyte.biz/">support.bluebyte.biz</a><br>
+Email: <a href="mailto:support@bluebytesystemsinc.zohodesk.com">support@bluebytesystemsinc.zohodesk.com</a></p>
+</section>
 </div>
