@@ -34,22 +34,24 @@ Enable Skip empty values to preserve existing values when the source is blank. I
 
 ## Sync product variants
 
-In Settings > ERP Sync, enable Link existing Odoo variants and choose where to read the Item code column property:
+In Settings > ERP Sync, enable Choose Odoo product / variant scope and choose where to read the Item code column property:
 
 | Mode | Item code source |
 | --- | --- |
 | Document per variant | The document's Custom tab. Each file identifies one variant. |
 | Configuration per variant | The selected configuration's properties. Each configuration identifies one variant. |
 
-Push and Pull match that code to an existing variant's unique Internal Reference. Configuration names do not select Odoo variants. A missing or blank code stops the operation; configuration mode does not fall back to the Custom tab. Cut-list items use their own properties.
+Push matches the item code to an existing product or variant's unique Internal Reference. When Create items is enabled, an unmatched code creates a product using that reference. A blank code creates a product using Odoo-generated references when enabled, then writes the returned number into the selected property scope. The preview shows updates and new products together. Existing references are not replaced.
 
-This option is off by default. When enabled, sync does not create products, variants, or attributes. Write mapped properties to still controls where mapped values are written, independently of the item code source.
+Pull requires an existing reference. Configuration names do not select Odoo variants, and configuration mode does not fall back to the Custom tab. Cut-list items use their own properties.
+
+This option is off by default. When enabled, its scope controls both item-code lookup and generated-number storage, overriding Save generated part numbers to. Write mapped properties to still controls other mapped values. Save modified SOLIDWORKS documents to retain returned numbers and recovery links.
 
 Cost, weight, volume, barcode, and variant-specific custom properties apply to the matched variant. Fields such as name and category are shared across the Odoo product's variants. Select (i) in a changed shared-field cell to see its effect on all variants, including unselected ones. Selected sibling variants must propose the same value for a shared field.
 
 Thumbnails and exported attachments target the matched variant. For products with multiple variants, BOM sync updates a dedicated variant BOM or previews creating one. The shared template BOM remains unchanged. BOM lines with attribute-based applicability filters are not supported.
 
-Create the variants and give each one a unique Internal Reference in Odoo before syncing.
+To link variants of an existing product, create their attributes and variants in Odoo and assign unique Internal References. New products created by sync are separate products, not additional attribute variants of an existing product. An existing product without a reference cannot be matched automatically.
 
 <a id="odoo-generated-references"></a>
 
@@ -78,3 +80,6 @@ For Pull, review the proposed values, choose Apply to SOLIDWORKS, then save the 
 If a row is omitted, the report gives the reason. A missing component reference can also cause the parent BOM update to be skipped.
 
 [ERP Sync settings and review controls](pdmpublishersolidworks_erp-sync.md)
+
+Exported PDFs and other selected files are attached to the matched product variant and appear in its Documents section. Only files found for the selected export folder, filename and extensions are uploaded. Preview reports missing files as skipped. Repeating an unchanged upload does not create a duplicate.
+

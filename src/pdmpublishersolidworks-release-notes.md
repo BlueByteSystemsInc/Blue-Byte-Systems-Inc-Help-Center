@@ -1,13 +1,23 @@
 ---
 title: SOLIDWORKS Add-in Release Notes | PDMPublisher
 description: Release history for the PDMPublisher SOLIDWORKS Add-in.
-ms.date: 11/11/2026
+ms.date: 11/12/2026
 ms.topic: reference
 ---
 
 # SOLIDWORKS Add-in Release Notes
 
 For the other product, see [PDM task release notes](pdmpublisher-task-release-notes.md).
+
+## 2026.10.74
+
+*Applies to the **SOLIDWORKS Add-in***
+
+- One Odoo sync can update existing products or variants and create new products. Blank item codes use Odoo-generated references when enabled.
+- Document or configuration scope now controls generated-number write-back and recovery links as well as matching.
+- Existing references remain unchanged. New products and updates are shown together before committing.
+
+[Download 2026.10.74](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.74/pdmpublisher.msi) · [Odoo sync settings](pdmpublishersolidworks_odoo-connector.md#sync-product-variants)
 
 ## 2026.10.73
 
@@ -398,3 +408,4 @@ The signed installer and automated checks passed. Live SOLIDWORKS validation, in
 *Applies to the **SOLIDWORKS Add-in***
 
 - Added a new **Flat Pattern export setting** that removes the **outside diameter of countersink holes** when exporting **DXF flat patterns**: This helps produce cleaner DXFs for downstream manufacturing by excluding countersink outer geometry while preserving required cut profiles.
+

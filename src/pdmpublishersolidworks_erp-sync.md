@@ -23,7 +23,7 @@ The settings page contains:
 | ERP connector | Selects the connector used by ERP Sync. Open the connector settings from the adjacent connector command. |
 | Write mapped properties to (Push and Pull) | Choose the row's property scope, the file's Custom tab, the selected configuration's properties, or both tabs (default). This controls where Pull writes values and where Push creates missing mapped properties. Cut-list rows use their cut-list properties. |
 | Save generated part numbers to | Choose Configuration Specific (default) for a separate number per configuration, or Custom (one part number per file) to share the number across configurations. |
-| Link existing Odoo variants | Off by default. Match existing variants using an item code from the file's Custom tab (Document per variant) or the selected configuration's properties (Configuration per variant). This mode does not create products or variants. See [Odoo variant matching](pdmpublishersolidworks_odoo-connector.md#sync-product-variants). |
+| Choose Odoo product / variant scope | Read and write the item code in the Custom tab (Document per variant) or selected configuration (Configuration per variant). Existing references match products or variants; Create items allows new products in the same sync. This scope overrides the generated part-number destination. See [Odoo variant matching](pdmpublishersolidworks_odoo-connector.md#sync-product-variants). |
 | Default column template | Selects the BOM Manager column template used when the ERP Sync window opens. The selected columns also provide available values to the connector. |
 | Default BOM display type | Selects the initial **Parts only**, **Top-level only**, or indented BOM view. |
 | Group by | Groups displayed rows by text, a property, or a supported placeholder. Leave it empty for a flat list. |
@@ -247,3 +247,4 @@ Drag the right edge of a preview column header to resize it, including the warni
 For Odoo, **Open in Odoo** opens the selected known product in a browser. It does not perform a synchronization operation. See [Odoo-generated references and warnings](pdmpublishersolidworks_odoo-connector.md#odoo-generated-references) for writeback requirements and omitted BOM behavior.
 
 ![Odoo preview in the release UI, using sample data](/images/pdmpublisher/solidworks/erp-odoo-preview-20261021.png)
+
