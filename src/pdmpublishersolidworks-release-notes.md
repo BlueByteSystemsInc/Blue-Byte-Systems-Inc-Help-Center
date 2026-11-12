@@ -9,6 +9,15 @@ ms.topic: reference
 
 For the other product, see [PDM task release notes](pdmpublisher-task-release-notes.md).
 
+## 2026.10.75
+
+*Applies to the **SOLIDWORKS Add-in***
+
+- Added Error details to failed ERP sync reports, with selectable text and Copy details.
+- Odoo connector 1.0.21 includes the failed operation, HTTP status, request fields, timing, sanitized server errors and upload context. Credentials and file contents are excluded.
+
+[Download 2026.10.75](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.75/pdmpublisher.msi)
+
 ## 2026.10.74
 
 *Applies to the **SOLIDWORKS Add-in***
@@ -408,4 +417,5 @@ The signed installer and automated checks passed. Live SOLIDWORKS validation, in
 *Applies to the **SOLIDWORKS Add-in***
 
 - Added a new **Flat Pattern export setting** that removes the **outside diameter of countersink holes** when exporting **DXF flat patterns**: This helps produce cleaner DXFs for downstream manufacturing by excluding countersink outer geometry while preserving required cut profiles.
+
 

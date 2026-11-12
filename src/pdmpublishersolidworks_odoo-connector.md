@@ -83,3 +83,8 @@ If a row is omitted, the report gives the reason. A missing component reference 
 
 Exported PDFs and other selected files are attached to the matched product variant and appear in its Documents section. Only files found for the selected export folder, filename and extensions are uploaded. Preview reports missing files as skipped. Repeating an unchanged upload does not create a duplicate.
 
+
+## Error details
+
+When sync fails, select Error details in the report. Copy details includes the operation, HTTP status, connector version, endpoint, timestamp, request field names, timing and confirmed changes. Upload errors also identify the file, size and product or attachment ID. Recognized server messages and stack locations are sanitized; credentials, request values, file contents and raw traceback source are omitted. Details depend on what Odoo returns. Refresh and preview again before retrying a failed write.
+
