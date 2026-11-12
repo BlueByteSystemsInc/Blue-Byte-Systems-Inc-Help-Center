@@ -47,7 +47,7 @@ Review these settings before saving a new task:
 | Export affected document | Exports the top-level file that triggered the task. | [Open](pdmpublisher-options/export-active-document.md) |
 | Export references to file formats individually | Exports referenced documents as separate output files. | [Open](pdmpublisher-options/export-references-individually.md) |
 | Convert multiple configurations | Processes every part and assembly configuration instead of only one configuration. | [Open](pdmpublisher-options/convert-multiple-configurations.md) |
-| Ask user to select configuration on startup | Prompts the user for the configuration when the task starts. | [Open](pdmpublisher-options/ask-user-to-select-configuration-on-startup.md) |
+| Ask user to select configuration on startup | Lets the user select configurations from each input part and assembly before publishing. | [Open](pdmpublisher-options/ask-user-to-select-configuration-on-startup.md) |
 | Ask user to specify files on task launch | Prompts the user to choose files, references, and formats at launch. | [Open](pdmpublisher-options/ask-user-to-specify-files-on-task-launch.md) |
 | Archive all exported documents (.zip) | Creates a ZIP package containing the exported files. | [Open](pdmpublisher-options/archive-all-exported-documents.md) |
 | Export sheet metal parts to 1:1 flat pattern DXF | Exports sheet metal flat patterns as 1:1 DXF files. | [Open](pdmpublisher-options/export-sheet-metal-flat-pattern-dxf.md) |
@@ -192,3 +192,4 @@ A message such as **Cannot inspect a child reference for released-only publishin
 
 Include the task log when requesting support.
 See [Task log filenames and retries](pdmpublisher-options/log-folder-vault-only.md#task-log-filenames-and-retries) for log naming and how repeated runs replace previous log contents.
+

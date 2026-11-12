@@ -9,6 +9,16 @@ ms.topic: reference
 
 For the other product, see [SOLIDWORKS add-in release notes](pdmpublishersolidworks-release-notes.md).
 
+## 2026.11.17
+
+*Applies to the **PDM Task***
+
+- Added searchable configuration checkboxes for all selected parts and assemblies, with SOLIDWORKS icons and filenames.
+- Processes each selected file/configuration pair in one task with a combined log.
+- Added a collapsible quantity multiplier section for the BOMQuantity placeholder.
+
+[Configuration selection](pdmpublisher-options/ask-user-to-select-configuration-on-startup.md)
+
 ## 2026.11.15
 
 *Applies to the **PDM Task***
@@ -280,3 +290,4 @@ For the other product, see [SOLIDWORKS add-in release notes](pdmpublishersolidwo
 *Applies to the **PDM Task***
 
 - Added a new **Flat Pattern export setting** that removes the **outside diameter of countersink holes** when exporting **DXF flat patterns**: This helps produce cleaner DXFs for downstream manufacturing by excluding countersink outer geometry while preserving required cut profiles.
+
