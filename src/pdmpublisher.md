@@ -66,6 +66,10 @@ To install the PDMPublisher, you have two options:
     > [!WARNING]
     > [Make sure to unblock the downloaded file.](/src/pdmqa.html)
 
+## Updating the task
+
+In PDM Administration, right-click PDMPublisher under Add-ins and select Update PDMPublisher. See [Update the PDMPublisher PDM Task](pdmpublisher-task-updater.md).
+
 ## Consuming your license key
 
 - The step requires that you have PDMPublisher added to your vault.

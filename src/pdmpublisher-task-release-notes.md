@@ -1,13 +1,23 @@
 ---
 title: PDM Task Release Notes | PDMPublisher
 description: Release history for the PDMPublisher PDM Task.
-ms.date: 11/11/2026
+ms.date: 11/12/2026
 ms.topic: reference
 ---
 
 # PDM Task Release Notes
 
 For the other product, see [SOLIDWORKS add-in release notes](pdmpublishersolidworks-release-notes.md).
+
+## 2026.11.21
+
+*Applies to the **PDM Task** — includes changes from task builds 2026.11.18–2026.11.21.*
+
+- Added Update PDMPublisher to the add-in's PDM Administration menu.
+- Includes the standalone updater in the task package, with update details and a link to release notes.
+- Uses the PDMDeploy installation sequence with current-user registration.
+
+[Download PDMPublisher.cex](https://docs.bluebyte.biz/downloads/PDMPublisher.cex) · [Updating the task](pdmpublisher-task-updater.md)
 
 ## 2026.11.17
 

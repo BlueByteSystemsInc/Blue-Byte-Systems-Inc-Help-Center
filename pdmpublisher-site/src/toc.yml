@@ -209,6 +209,8 @@
     href: ../../src/licensespdmpublisher.md
   - name: Theme Settings
     href: ../../src/pdmpublisher-theme-settings.md
+  - name: Update the PDM task
+    href: ../../src/pdmpublisher-task-updater.md
   - name: End User License Agreement
     href: ../../src/eula.md
   - name: PDM Task vs SOLIDWORKS Add-in
