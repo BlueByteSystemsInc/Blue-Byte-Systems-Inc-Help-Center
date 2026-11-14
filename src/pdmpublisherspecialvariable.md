@@ -224,3 +224,9 @@ If the filename contains no numeric sequence, a range placeholder returns the co
 When placeholders are used to create paths or filenames, values containing characters that Windows does not permit in a filename are cleaned before the output is saved. The task reports the variable that contained an invalid character.
 
 If a value such as Revision or a PDM variable is empty, the placeholder contributes an empty string. Include separators carefully so an empty value does not leave an unwanted trailing dash or extra folder level.
+
+## Characters (FolderName)
+
+Select Characters (FolderName) in the placeholder menu, then choose the first 1 to 5 characters of the folder containing the source file. Shorter folder names return all available characters.
+
+For a file in a folder named ABC123, the first 3 characters return ABC.

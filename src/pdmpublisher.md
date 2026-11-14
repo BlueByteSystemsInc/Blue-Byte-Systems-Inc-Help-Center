@@ -1,4 +1,4 @@
-﻿---
+---
 title: PDMPublisher | SOLIDWORKS PDM
 description: Learn about PDMPublisher for SOLIDWORKS PDM Professional, including supported export formats, input files, requirements, installation, and licensing.
 ms.date: 08/13/2026
@@ -68,7 +68,7 @@ To install the PDMPublisher, you have two options:
 
 ## Updating the task
 
-In PDM Administration, right-click PDMPublisher under Add-ins and select Update PDMPublisher. See [Update the PDMPublisher PDM Task](pdmpublisher-task-updater.md).
+Use PDMDeploy or import the supplied CEX file in PDM Administration. See [Update the PDMPublisher PDM Task](pdmpublisher-task-updater.md).
 
 ## Consuming your license key
 

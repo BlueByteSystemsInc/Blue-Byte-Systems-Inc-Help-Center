@@ -1,13 +1,24 @@
 ---
 title: PDM Task Release Notes | PDMPublisher
 description: Release history for the PDMPublisher PDM Task.
-ms.date: 11/12/2026
+ms.date: 11/14/2026
 ms.topic: reference
 ---
 
 # PDM Task Release Notes
 
 For the other product, see [SOLIDWORKS add-in release notes](pdmpublishersolidworks-release-notes.md).
+
+## 2026.11.28
+
+*Applies to the **PDM Task** — includes changes from task builds 2026.11.22–2026.11.28.*
+
+- Added Characters (FolderName) placeholders for the first 1 to 5 characters of the containing folder name.
+- Updated connector catalog downloads to use TLS 1.2 and removed the manual Add connection button.
+- Removed the default window icons from the connector catalog and connection settings dialogs.
+- Removed the task's Update PDMPublisher menu and bundled updater. Use PDMDeploy or import a CEX file to update the task.
+
+[Updating the task](pdmpublisher-task-updater.md) · [Folder name placeholders](pdmpublisherspecialvariable.md#characters-foldername)
 
 ## 2026.11.21
 
