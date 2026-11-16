@@ -31,6 +31,18 @@ When [Show conditions output dialog](pdmpublishersolidworks-condition-output.md)
 
 ![Review files and evaluated output paths before publishing](/images/pdmpublisher/solidworks/publish-review-20261007.png)
 
+## BOM quantity multiplier
+
+In the Publish profile's Output section, enable Ask for BOM quantity multiplier to enter a value each time you publish. The option is off by default.
+
+The prompt starts at 1 and accepts positive decimal numbers using your Windows decimal separator. The multiplier applies only to the BOM Quantity placeholder in publishing, including evaluated output paths and annotations. For example, a quantity of 4 and multiplier of 3 produce a placeholder value of 12. It does not change the model BOM or component quantities.
+
+- Continue publishing uses the entered multiplier for this run.
+- Ignore continues with a multiplier of 1 and leaves the profile option enabled.
+- Closing the prompt with X cancels publishing before any exports begin.
+
+![BOM quantity multiplier prompt](/images/pdmpublisher/solidworks/publish-quantity-multiplier.png)
+
 ## Create SOLIDWORKS drawings
 
 Select **SOLIDWORKS Drawing (*.slddrw)** in the Publish profile's file formats, then open **Drawing Settings**. Drawing creation writes a drawing beside each selected part or assembly, using the model's base filename. Select one configuration per model. PDF, DXF, and DWG exports can use the drawing in the same run.

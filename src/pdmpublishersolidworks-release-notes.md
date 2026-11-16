@@ -9,6 +9,16 @@ ms.topic: reference
 
 For the other product, see [PDM task release notes](pdmpublisher-task-release-notes.md).
 
+## 2026.10.76
+
+*Applies to the **SOLIDWORKS Add-in***
+
+- Added an optional BOM quantity multiplier prompt to Publish profiles. The multiplier affects only the BOM Quantity placeholder for the current run.
+- Decimal-only input supports the Windows decimal separator. Ignore publishes with the original quantities; closing the prompt cancels publishing.
+- Continue publishing displays the PDMPublisher logo. Ignore is text-only.
+
+[Publish with a quantity multiplier](pdmpublishersolidworks-publish.md#bom-quantity-multiplier)
+
 ## 2026.10.75
 
 *Applies to the **SOLIDWORKS Add-in***
