@@ -12,3 +12,5 @@ ms.topic: reference
 Uses the Windows **Microsoft Print to PDF** printer path when creating PDFs.
 
 Use this only when the normal PDF export path does not match your environment or output requirements.
+
+For monochrome drawing output, enable [Black-and-white PDF](black-and-white-pdf.md) under **Publish → PDF output** (task build 20261129 and later). This option also works with native PDF export.

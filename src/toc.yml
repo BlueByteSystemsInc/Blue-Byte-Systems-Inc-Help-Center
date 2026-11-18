@@ -292,6 +292,8 @@
           items:
           - name: Microsoft Print To PDF
             href: pdmpublisher-options/use-microsoft-print-to-pdf.md
+          - name: Black-and-white PDF
+            href: pdmpublisher-options/black-and-white-pdf.md
           - name: Merge Exported PDFs
             href: pdmpublisher-options/merge-exported-pdfs.md
           - name: Table of Content
@@ -418,3 +420,4 @@
 - name: Downloads Troubleshooting
   href: pdmqa.md
  
+

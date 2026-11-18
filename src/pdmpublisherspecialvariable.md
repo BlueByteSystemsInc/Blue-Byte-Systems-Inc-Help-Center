@@ -7,6 +7,15 @@ ms.topic: reference
 
 # Placeholders and Dynamic Variables
 
+## Search PDM variable placeholders
+
+In PDM task build **20261129** and later, open a field's placeholder menu and click **PDM Variables**. A separate dialog lets you search the vault's variables by name. Select a result and click **Insert** to add its placeholder at the cursor. This dialog opens regardless of the number of variables. Cancel or close the dialog to leave the field unchanged.
+
+![PDM Variables search dialog with Insert button](/images/pdmpublisher/screenshots/task-placeholder-search.png)
+
+For example, choosing `PartNumber` inserts `($PartNumber)`. Built-in placeholders remain in the normal menu. For copying metadata to exported files, use [variable mapping](pdmpublisher-options/map-variables-between-source-and-destination-file.md) instead.
+
+
 Placeholders let one task create paths, filenames, sheet filters, bookmarks, and annotations from information about the file being processed. PDMPublisher evaluates each placeholder on the machine that processes the task and replaces it with its current value.
 
 >[!Video https://www.loom.com/embed/377f21c2f0b4423c914fae5767b44a21?sid=02cb620e-f91c-421e-8b25-7576d6e5cb0b]
@@ -230,3 +239,5 @@ If a value such as Revision or a PDM variable is empty, the placeholder contribu
 Select Characters (FolderName) in the placeholder menu, then choose the first 1 to 5 characters of the folder containing the source file. Shorter folder names return all available characters.
 
 For a file in a folder named ABC123, the first 3 characters return ABC.
+
+
