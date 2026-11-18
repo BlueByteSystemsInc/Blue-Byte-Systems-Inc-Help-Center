@@ -1,13 +1,25 @@
 ---
 title: PDM Task Release Notes | PDMPublisher
 description: Release history for the PDMPublisher PDM Task.
-ms.date: 11/14/2026
+ms.date: 11/18/2026
 ms.topic: reference
 ---
 
 # PDM Task Release Notes
 
 For the other product, see [SOLIDWORKS add-in release notes](pdmpublishersolidworks-release-notes.md).
+
+## 2026.11.29
+
+*Applies to the **PDM Task** — build 20261129.*
+
+- Added **Black-and-white PDF**, unchecked by default, under **Publish → PDF output**. Supports native PDF export and Microsoft Print To PDF, restoring the previous color setting after the operation.
+- Added searchable **Source** and **Destination** dropdowns to variable mapping. Search matches any part of a name without regard to capitalization; select a result with a click or Enter, or use Escape to retain the existing mapping.
+- Added icons for PDM variables, Free Text, and built-in properties, a green Add Mapping button icon, and instructions at the bottom of the mapping dialog.
+- Changed **PDM Variables** in the placeholder menu to open a separate search dialog with an **Insert** button, regardless of the number of variables.
+- Expanded **Get latest version** logging with local and vault versions for the parent and references, missing or outdated local copies, and cache request results. Caching behavior is unchanged: when the parent is already current, this step does not refresh its references, and the log now states that explicitly.
+
+[Black-and-white PDF](pdmpublisher-options/black-and-white-pdf.md) · [Variable mapping and search](pdmpublisher-options/map-variables-between-source-and-destination-file.md) · [Placeholder search](pdmpublisherspecialvariable.md#search-pdm-variable-placeholders)
 
 ## 2026.11.28
 
@@ -311,4 +323,5 @@ For the other product, see [SOLIDWORKS add-in release notes](pdmpublishersolidwo
 *Applies to the **PDM Task***
 
 - Added a new **Flat Pattern export setting** that removes the **outside diameter of countersink holes** when exporting **DXF flat patterns**: This helps produce cleaner DXFs for downstream manufacturing by excluding countersink outer geometry while preserving required cut profiles.
+
 
