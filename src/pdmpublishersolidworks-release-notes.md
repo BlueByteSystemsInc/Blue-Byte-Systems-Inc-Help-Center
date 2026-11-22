@@ -20,7 +20,7 @@ For the other product, see [PDM task release notes](pdmpublisher-task-release-no
 
 [Annotation zoom and editing](pdmpublishersolidworks_annotations.md#zoom-and-pan)
 
-[Download 2026.10.77](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.77/pdmpublisher.msi)
+[Download 2026.10.77](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.77/pdmpublisher.msi?release=20261077)
 
 ## 2026.10.76
 
