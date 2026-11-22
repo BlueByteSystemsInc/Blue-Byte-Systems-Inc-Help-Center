@@ -1,13 +1,26 @@
 ---
 title: SOLIDWORKS Add-in Release Notes | PDMPublisher
 description: Release history for the PDMPublisher SOLIDWORKS Add-in.
-ms.date: 11/12/2026
+ms.date: 11/22/2026
 ms.topic: reference
 ---
 
 # SOLIDWORKS Add-in Release Notes
 
 For the other product, see [PDM task release notes](pdmpublisher-task-release-notes.md).
+
+## 2026.10.77
+
+*Applies to the **SOLIDWORKS Add-in***
+
+- Added mouse-wheel zoom and middle-button panning to the annotation preview, with a centered **Zoom to fit** button.
+- Selecting an annotation preserves the displayed sheet scale. Zoom to fit keeps an annotation in text-edit mode.
+- Annotation and condition text editors now use a white caret in dark mode and a black caret in light mode.
+- Preview zoom does not change saved annotation coordinates, QR dimensions, or published output size.
+
+[Annotation zoom and editing](pdmpublishersolidworks_annotations.md#zoom-and-pan)
+
+[Download 2026.10.77](https://bluebyte.biz/wp-content/pdmpublisher/2026.10.77/pdmpublisher.msi)
 
 ## 2026.10.76
 
